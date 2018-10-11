@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.47.1" />
-<title>Datadog :: WTF - the terminal dashboard</title>
+<title>Mercurial :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 
     
   </head>
-  <body data-url="/modules/datadog/">
+  <body data-url="/modules/mercurial/">
     
       <header>
   <div class="logo">
@@ -171,7 +171,7 @@
     </li>
         </ul>
     </li>
-      <li data-nav-id="/modules/datadog/" class="dd-item active">
+      <li data-nav-id="/modules/datadog/" class="dd-item">
         <div>
           <a href="/modules/datadog/">
             Datadog
@@ -285,7 +285,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/mercurial/" class="dd-item">
+      <li data-nav-id="/modules/mercurial/" class="dd-item active">
         <div>
           <a href="/modules/mercurial/">
             Mercurial
@@ -427,7 +427,7 @@
     <option value="/modules/cryptocurrencies/" >
   - 
    Crypo Currencies</option>
-      <option value="/modules/datadog/"  selected>- Datadog</option>
+      <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
       <option value="/modules/git/" >- Git</option>
       <option value="/modules/github/" >- GitHub</option>
@@ -443,7 +443,7 @@
       <option value="/modules/jenkins/" >- Jenkins</option>
       <option value="/modules/jira/" >- Jira</option>
       <option value="/modules/logger/" >- Logger</option>
-      <option value="/modules/mercurial/" >- Mercurial</option>
+      <option value="/modules/mercurial/"  selected>- Mercurial</option>
       <option value="/modules/newrelic/" >- New Relic</option>
       <option value="/modules/opsgenie/" >- OpsGenie</option>
       <option value="/modules/power/" >- Power</option>
@@ -482,42 +482,71 @@
       </div>
     
 
-    <h1>Datadog</h1>
+    <h1>Mercurial</h1>
     
     
     
     
 
-<p>Connects to the Datadog API and displays alerting modules.</p>
+<p><img class="screenshot" src="/imgs/modules/mercurial.png" width="710" height="248" alt="mercurial screenshot" /></p>
+
+<p>Displays information about local mercurial repositories: branch, changed
+files, and recent commits.</p>
+
+<h4 id="branch">Branch</h4>
+
+<p>The name of the currently-active mercurial branch.</p>
+
+<h4 id="changed-files">Changed Files</h4>
+
+<p>A list of all the files that have changed since the last
+commit, and their status.</p>
+
+<h4 id="recent-commits">Recent Commits</h4>
+
+<p>A list of <code>n</code> recent commits, who committed it, and when.</p>
 
 <h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/datadog/</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/mercurial/</code></pre></div>
+<h2 id="keyboard-commands">Keyboard Commands</h2>
+
+<p><span class="caption">Key:</span> <code>/</code> <br />
+<span class="caption">Action:</span> Open/close the widget&rsquo;s help window.</p>
+
+<p><span class="caption">Key:</span> <code>h</code> <br />
+<span class="caption">Action:</span> Show the previous mercurial repository.</p>
+
+<p><span class="caption">Key:</span> <code>l</code> <br />
+<span class="caption">Action:</span> Show the next mercurial repository.</p>
+
+<p><span class="caption">Key:</span> <code>←</code> <br />
+<span class="caption">Action:</span> Show the previous mercurial repository.</p>
+
+<p><span class="caption">Key:</span> <code>→</code> <br />
+<span class="caption">Action:</span> Show the next mercurial repository.</p>
+
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">datadog<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;yourapikey&gt;&#34;</span><span class="w">
-</span><span class="w">  </span>applicationKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;yourapplicationkey&gt;&#34;</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">mercurial<span class="p">:</span><span class="w">
+</span><span class="w">  </span>commitCount<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">  </span>commitFormat<span class="p">:</span><span class="w"> </span><span class="s2">&#34;[forestgreen]{rev}:{phase} [white]{desc|firstline|strip} [grey]{author|person} {date|age}[white]&#34;</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>monitors<span class="p">:</span><span class="w">
-</span><span class="w">    </span>tags<span class="p">:</span><span class="w">
-</span><span class="w">      </span>-<span class="w"> </span><span class="s2">&#34;team:ops&#34;</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
 </span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span></code></pre></div>
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">8</span><span class="w">
+</span><span class="w">  </span>repositories<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;/Users/user/fakelib&#34;</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;/Users/user/fakeapp&#34;</span></code></pre></div>
 <h3 id="attributes">Attributes</h3>
 
-<p><code>apiKey</code> <br />
-Value: Your <a href="https://docs.datadoghq.com/api/?lang=python#overview">Datadog API</a> key.</p>
+<p><code>commitCount</code> <br />
+The number of past commits to display. <br />
+Values: A positive integer, <code>0..n</code>.</p>
 
-<p><code>applicationKey</code> <br />
-Value: Your <a href="https://docs.datadoghq.com/api/?lang=python#overview">Datadog Application</a> key.</p>
-
-<p><code>monitors</code> <br />
-Configuration for the monitors functionality.</p>
-
-<p><code>tags</code> <br />
-Array of tags you want to query monitors by.</p>
+<p><code>commitFormat</code> <br />
+<em>Optional</em> The string format for the commit message. <br /></p>
 
 <p><code>enabled</code> <br />
 Determines whether or not this module is executed and if its data displayed onscreen. <br />
@@ -530,13 +559,17 @@ Defines where in the grid this module&rsquo;s widget will be displayed. <br /></
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, <code>0..n</code>.</p>
 
+<p><code>repositories</code> <br />
+Defines which mercurial repositories to watch. <br />
+Values: A list of zero or more local file paths pointing to valid mercurial repositories.</p>
+
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/modules/cryptocurrencies/cryptolive/" title="CryptoLive"> <i class="fa fa-chevron-left"></i><label>CryptoLive</label></a>
-    <a class="nav nav-next" href="/modules/gerrit/" title="Gerrit" style="margin-right: 0px;"><label>Gerrit</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/logger/" title="Logger"> <i class="fa fa-chevron-left"></i><label>Logger</label></a>
+    <a class="nav nav-next" href="/modules/newrelic/" title="New Relic" style="margin-right: 0px;"><label>New Relic</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -551,12 +584,12 @@ Values: A positive integer, <code>0..n</code>.</p>
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 18/08/2018
+        <i class='fa fa-calendar'></i> Last update on 09/05/2018
     </div>
     
 
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/modules/datadog.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/modules/mercurial.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
   </div>

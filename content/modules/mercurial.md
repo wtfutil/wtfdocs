@@ -2,7 +2,7 @@
 title: "Mercurial"
 date: 2018-05-09T14:20:48-07:00
 draft: false
-weight: 80
+weight: 155
 ---
 
 <img class="screenshot" src="/imgs/modules/mercurial.png" width="710" height="248" alt="mercurial screenshot" />

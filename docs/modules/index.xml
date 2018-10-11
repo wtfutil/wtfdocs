@@ -214,6 +214,20 @@ Configuration logger:enabled:trueposition:top:5left:4height:2width:1refreshInter
     </item>
     
     <item>
+      <title>Mercurial</title>
+      <link>https://wtfutil.com/modules/mercurial/</link>
+      <pubDate>Wed, 09 May 2018 14:20:48 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/mercurial/</guid>
+      <description>Displays information about local mercurial repositories: branch, changed files, and recent commits.
+Branch The name of the currently-active mercurial branch.
+Changed Files A list of all the files that have changed since the last commit, and their status.
+Recent Commits A list of n recent commits, who committed it, and when.
+Source Code wtf/mercurial/ Keyboard Commands Key: / Action: Open/close the widget&amp;rsquo;s help window.
+Key: h Action: Show the previous mercurial repository.</description>
+    </item>
+    
+    <item>
       <title>New Relic</title>
       <link>https://wtfutil.com/modules/newrelic/</link>
       <pubDate>Wed, 09 May 2018 09:01:14 -0700</pubDate>
