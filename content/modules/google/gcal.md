@@ -108,6 +108,9 @@ Values: `true`, or `false`
 `position` <br />
 Where in the grid this module's widget will be displayed. <br />
 
+`focusChar` <br />
+Define one of the number keys as a short cut key to access the widget. <br />
+
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.

@@ -66,6 +66,9 @@ Maximum number of _(newest)_ messages to be displayed. Default is `10`<br />
 `position` <br />
 Defines where in the grid this module's widget will be displayed. <br />
 
+`focusChar` <br />
+Define one of the number keys as a short cut key to access the widget. <br />
+
 `roomUri` <br />
 _Optional_ <br /
 URI of the room you would like to see the chat messages from. Default is `wtfutil/Lobby`<br />

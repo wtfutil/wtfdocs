@@ -64,6 +64,9 @@ Values: `true`, `false`.
 `position` <br />
 Defines where in the grid this module's widget will be displayed. <br />
 
+`focusChar` <br />
+Define one of the number keys as a short cut key to access the widget. <br />
+
 `pro` <br />
 Determines whether or not this module will use the Pro version of Travis CI.<br />
 Values: `true`, `false`.

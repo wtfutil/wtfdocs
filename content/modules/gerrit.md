@@ -108,6 +108,9 @@ Value: Your <a href="https://gerrit-review.googlesource.com/Documentation/user-u
 `position` <br />
 Defines where in the grid this module's widget will be displayed. <br />
 
+`focusChar` <br />
+Define one of the number keys as a short cut key to access the widget. <br />
+
 `projects` <br />
 A list of Gerrit project names to fetch data for. <br />
 

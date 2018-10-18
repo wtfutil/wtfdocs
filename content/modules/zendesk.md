@@ -60,6 +60,9 @@ Values: `true`, `false`.
 `position` <br />
 Defines where in the grid this module's widget will be displayed. <br />
 
+`focusChar` <br />
+Define one of the number keys as a short cut key to access the widget. <br />
+
 `status` <br />
 The status of tickets you want to retrieve.
 Values: `new`, `open`, `pending`, `hold`.
