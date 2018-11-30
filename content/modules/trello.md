@@ -9,12 +9,6 @@ weight: 250
 
 Displays all Trello cards on specified lists.
 
-## Source Code
-
-```bash
-wtf/trello/
-```
-
 ## Configuration
 
 ### Single Trello List
@@ -83,3 +77,9 @@ Your Trello username. <br />
 
 `position` <br />
 Where in the grid this module's widget will be displayed. <br />
+
+## Source Code
+
+```bash
+wtf/trello/
+```

@@ -7,12 +7,6 @@ weight: 205
 
 Control the Spotify client.
 
-## Source Code
-
-```bash
-wtf/spotify/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `/` <br />
@@ -56,3 +50,9 @@ Define one of the number keys as a short cut key to access the widget. <br />
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+## Source Code
+
+```bash
+wtf/spotify/
+```

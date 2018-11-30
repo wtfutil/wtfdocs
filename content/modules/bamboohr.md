@@ -7,12 +7,6 @@ weight: 10
 
 Connects to the BambooHR API and displays who will be Away today.
 
-## Source Code
-
-```bash
-wtf/bamboohr/
-```
-
 ## Configuration
 
 ```yaml
@@ -46,3 +40,10 @@ Values: Any positive integer, `0..n`.
 
 `subdomain` <br />
 Value: Your <a href="https://www.bamboohr.com/api/documentation/">BambooHR API</a> subdomain name.
+
+## Source Code
+
+```bash
+wtf/bamboohr/
+```
+

@@ -9,12 +9,6 @@ Added in `v0.1.0`.
 
 Displays tickets in the "New" status - i.e. have not yet been assigned.
 
-## Source Code
-
-```bash
-wtf/zendesk/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `[return]` <br />
@@ -74,3 +68,8 @@ Value: Your Zendesk subdomain.
 Your Zendesk username
 Values: A valid Zendesk username (usually an email address).
 
+## Source Code
+
+```bash
+wtf/zendesk/
+```

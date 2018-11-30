@@ -11,12 +11,6 @@ Added in `v0.0.12`.
 
 Displays build information for your Travis CI account.
 
-## Source Code
-
-```bash
-wtf/travisci/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `[return]` <br />
@@ -74,3 +68,9 @@ Values: `true`, `false`.
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+## Source Code
+
+```bash
+wtf/travisci/
+```

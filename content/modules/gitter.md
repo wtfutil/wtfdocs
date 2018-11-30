@@ -11,12 +11,6 @@ Displays chat messages from Gitter.
 
 <img src="/imgs/modules/gitter.png" width="847" height="160" alt="gitter screenshot" />
 
-## Source Code
-
-```bash
-wtf/gitter/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `j` <br />
@@ -77,3 +71,9 @@ Values: `new`, `top`, `job`, `ask`
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+## Source Code
+
+```bash
+wtf/gitter/
+```

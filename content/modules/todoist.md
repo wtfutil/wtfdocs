@@ -11,12 +11,6 @@ Added in `v0.0.11`.
 
 Displays all items on specified project.
 
-## Source Code
-
-```bash
-wtf/todoist/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `h` <br />
@@ -90,3 +84,9 @@ Values: The integer ID of the project.
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+## Source Code
+
+```bash
+wtf/todoist/
+```

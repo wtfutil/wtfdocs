@@ -10,12 +10,6 @@ weight: 160
 Connects to the New Relic API and displays the last n deploys of the
 monitored application: deploy ID, deploy time, and who deployed it.
 
-## Source Code
-
-```bash
-wtf/newrelic/
-```
-
 ## Configuration
 
 ```yaml
@@ -56,3 +50,9 @@ Defines where in the grid this module's widget will be displayed. <br />
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+## Source Code
+
+```bash
+wtf/newrelic/
+```

@@ -7,15 +7,7 @@ weight: 10
 
 <img class="screenshot" src="/imgs/modules/prettyweather.png" width="320" height="191" alt="prettyweather screenshot" />
 
-Displays weather information as ASCII art from
-[Wttr.in](http://wttr.in).
-
-
-## Source Code
-
-```bash
-wtf/prettyweather/
-```
+Displays weather information as ASCII art from [Wttr.in](http://wttr.in).
 
 ## Configuration
 
@@ -64,3 +56,9 @@ Values: See `curl wttr.in/:help` for more details.
 `language` <br />
 _Optional_ Wttr.in language configuration. <br />
 Values: See `curl wttr.in/:translation` for more details.
+
+## Source Code
+
+```bash
+wtf/prettyweather/
+```

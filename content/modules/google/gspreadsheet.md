@@ -9,10 +9,6 @@ Added in `v0.0.7`.
 
 Display information from cells in a Google Spreadsheet.
 
-```bash
-wtf/gspreadsheets/
-```
-
 ## Configuration
 
 ```yaml
@@ -61,3 +57,9 @@ Values: A positive integer, `0..n`.
 `secretFile` <br />
 Your <a href="https://developers.google.com/sheets/api/quickstart/go">Google client secret</a> JSON file. <br />
 Values: A string representing a file path to the JSON secret file.
+
+## Source Code
+
+```bash
+wtf/gspreadsheets/
+```

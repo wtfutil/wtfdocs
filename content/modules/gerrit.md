@@ -17,12 +17,6 @@ All open reviews that are requesting your approval.
 
 All open reviews created by you.
 
-## Source Code
-
-```bash
-wtf/gerrit/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `/` <br />
@@ -125,3 +119,9 @@ Your Gerrit username.
 _Optional_ <br />
 Determines whether or not the server's certificate chain and host name are verified. <br />
 Values: `true`, `false`.
+
+## Source Code
+
+```bash
+wtf/gerrit/
+```

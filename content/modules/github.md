@@ -17,12 +17,6 @@ All open code review requests assigned to you.
 
 All open pull requests created by you.
 
-## Source Code
-
-```bash
-wtf/github/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `/` <br />
@@ -105,3 +99,9 @@ Value: Your <a href="https://developer.github.com/enterprise/2.13/v3/enterprise-
 `username` <br />
 Your GitHub username. Used to figure out which review requests you've
 been added to.
+
+## Source Code
+
+```bash
+wtf/github/
+```

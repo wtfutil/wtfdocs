@@ -12,12 +12,6 @@ Added in `v0.0.7`.
 Displays build information for your CircleCI account.
 
 
-## Source Code
-
-```bash
-wtf/circleci/
-```
-
 ## Configuration
 
 ```yaml
@@ -47,3 +41,9 @@ Defines where in the grid this module's widget will be displayed. <br />
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+## Source Code
+
+```bash
+wtf/circleci/
+```

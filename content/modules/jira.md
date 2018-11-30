@@ -9,12 +9,6 @@ weight: 140
 
 Displays all Jira issues assigned to you for the specified project.
 
-## Source Code
-
-```bash
-wtf/jira/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `[return]` <br />
@@ -137,3 +131,9 @@ Your Jira username. <br />
 _Optional_ <br />
 Determines whether or not the server's certificate chain and host name are verified. <br />
 Values: `true`, `false`.
+
+## Source Code
+
+```bash
+wtf/jira/
+```

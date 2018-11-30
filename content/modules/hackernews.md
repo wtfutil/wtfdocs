@@ -11,12 +11,6 @@ Displays stories from Hacker News.
 
 <img src="/imgs/modules/hackernews.png" width="843" height="201" alt="hackernews screenshot" />
 
-## Source Code
-
-```bash
-wtf/hackernews/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `[return]` <br />
@@ -76,3 +70,9 @@ Values: `new`, `top`, `job`, `ask`
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+## Source Code
+
+```bash
+wtf/hackernews/
+```

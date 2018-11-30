@@ -9,12 +9,6 @@ weight: 210
 
 Displays the contents of the specified text file in the widget.
 
-## Source Code
-
-```bash
-wtf/textfile/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `/` <br />
@@ -70,3 +64,9 @@ Define one of the number keys as a short cut key to access the widget. <br />
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+## Source Code
+
+```bash
+wtf/textfile/
+```

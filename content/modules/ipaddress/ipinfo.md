@@ -11,13 +11,6 @@ Displays your current IP address information, from ipinfo.io.
 
 **Note:** IPInfo.io has a free-plan rate limit of 1000 requests per day.
 
-
-## Source Code
-
-```bash
-wtf/ipinfo/
-```
-
 ## Configuration
 
 ```yaml
@@ -54,3 +47,9 @@ Defines where in the grid this module's widget will be displayed. <br />
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+## Source Code
+
+```bash
+wtf/ipinfo/
+```

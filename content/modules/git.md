@@ -23,12 +23,6 @@ commit, and their status.
 
 A list of `n` recent commits, who committed it, and when.
 
-## Source Code
-
-```bash
-wtf/git/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `/` <br />
@@ -95,3 +89,9 @@ Values: A positive integer, `0..n`.
 `repositories` <br />
 Defines which git repositories to watch. <br />
 Values: A list of zero or more local file paths pointing to valid git repositories.
+
+## Source Code
+
+```bash
+wtf/git/
+```

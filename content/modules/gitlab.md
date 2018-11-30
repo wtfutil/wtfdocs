@@ -19,12 +19,6 @@ All open merge requests that are requesting your approval.
 
 All open merge requests created by you.
 
-## Source Code
-
-```bash
-wtf/gitlab/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `/` <br />
@@ -91,3 +85,9 @@ for. <br />
 
 `username` <br />
 Your GitLab username. Used to figure out which requests require your approval
+
+## Source Code
+
+```bash
+wtf/gitlab/
+```

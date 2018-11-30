@@ -19,12 +19,6 @@ To make this work, you'll need a couple of things:
 Once you have your developer account, a relatively painless way to get a
 bearer token is to use [TBT](https://github.com/Trinergy/twitter_bearer_token).
 
-## Source Code
-
-```bash
-wtf/twitter/
-```
-
 ## Configuration
 
 ```yaml
@@ -62,3 +56,9 @@ Values: Any positive integer, `0..n`.
 `screenName` <br />
 The screen name of the Twitter user who's tweets you want to follow. <br />
 Values: Any valid Twitter user's screen name.
+
+## Source Code
+
+```bash
+wtf/twitter/
+```

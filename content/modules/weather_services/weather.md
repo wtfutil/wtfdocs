@@ -11,12 +11,6 @@ Displays a configurable list of current weather report, including
 current temperature, sunrise time, and sunset time.
 
 
-## Source Code
-
-```bash
-wtf/weather/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `/` <br />
@@ -95,3 +89,9 @@ Values: A positive integer, `0..n`.
 `tempUnit` <br />
 The temperature scale in which to display temperature values. <br />
 Values: `F` for Fahrenheit, `C` for Celcius.
+
+## Source Code
+
+```bash
+wtf/weather/
+```

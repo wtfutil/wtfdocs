@@ -10,12 +10,6 @@ weight: 170
 Connects to the OpsGenie API and displays all your scheduled rotations
 and who's currently on call.
 
-## Source Code
-
-```bash
-wtf/opsgenie/
-```
-
 ## Configuration
 
 ```yaml
@@ -50,3 +44,9 @@ Where in the grid this module's widget will be displayed. <br />
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+## Source Code
+
+```bash
+wtf/opsgenie/
+```

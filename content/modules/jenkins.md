@@ -11,12 +11,6 @@ Added in `v0.0.8`.
 
 Displays jenkins status of given builds in a project or view
 
-## Source Code
-
-```bash
-wtf/jenkins/
-```
-
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `[return]` <br />
@@ -84,3 +78,9 @@ Values: A valid URI.
 _Optional_ <br />
 Determines whether or not the server's certificate chain and host name are verified. <br />
 Values: `true`, `false`.
+
+## Source Code
+
+```bash
+wtf/jenkins/
+```

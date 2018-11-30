@@ -12,12 +12,6 @@ Displays your current IP address information, from [IP-APIcom](http://ip-api.com
 **Note:** IP-API.com has a free-plan rate limit of 120 requests per
 minute.
 
-## Source Code
-
-```bash
-wtf/ipapi/
-```
-
 ## Configuration
 
 ```yaml
@@ -53,3 +47,9 @@ Defines where in the grid this module's widget will be displayed. <br />
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+## Source Code
+
+```bash
+wtf/ipapi/
+```
