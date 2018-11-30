@@ -80,6 +80,9 @@ Values: `true`, `false`.
 `position` <br />
 Where in the grid this module's widget will be displayed. <br />
 
+`focusChar` <br />
+Define one of the number keys as a short cut key to access the widget. <br />
+
 `projects` <br />
 The todoist projects to fetch items from. <br />
 Values: The integer ID of the project.

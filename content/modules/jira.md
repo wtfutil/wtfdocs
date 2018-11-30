@@ -120,6 +120,9 @@ Values: See <a href="https://confluence.atlassian.com/jiracore/blog/2015/07/sear
 `position` <br />
 Defines where in the grid this module's widget will be displayed. <br />
 
+`focusChar` <br />
+Define one of the number keys as a short cut key to access the widget. <br />
+
 `project` <br />
 The Jira project to fetch information for. <br />
 

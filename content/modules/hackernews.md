@@ -65,6 +65,9 @@ Defines number of stories to be displayed. Default is `10`<br />
 `position` <br />
 Defines where in the grid this module's widget will be displayed. <br />
 
+`focusChar` <br />
+Define one of the number keys as a short cut key to access the widget. <br />
+
 `storyType` <br />
 _Optional_ <br /
 Defines type of stories to be displayed. Default is `top` stories<br />
