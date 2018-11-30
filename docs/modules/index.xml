@@ -286,7 +286,7 @@ Key: space Action: Play/pause the currently-selected track
 Key: h Action: Play previous song
 Key: l Action: Play next song
 Configuration spotify:enabled:trueposition:top:1left:2height:1width:1refreshInterval:0 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.
-position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data.</description>
+position Defines where in the grid this module&amp;rsquo;s widget will be displayed. focusChar Define one of the number keys as a short cut key to access the widget.</description>
     </item>
     
     <item>
@@ -331,6 +331,18 @@ Key: → Action: Show the next project.
 Key: j Action: Select the next item in the list.
 Key: ↓ Action: Select the next item in the list.
 Key: k Action: Select the previous item in the list.</description>
+    </item>
+    
+    <item>
+      <title>Resource Usage</title>
+      <link>https://wtfutil.com/modules/resourceusage/</link>
+      <pubDate>Mon, 12 Nov 2018 14:36:08 -0400</pubDate>
+      
+      <guid>https://wtfutil.com/modules/resourceusage/</guid>
+      <description>Added in v0.4.1.
+Displays cpu and memory usage.
+Source Code wtf/resourceusage/ Configuration resourceusage:enabled:trueposition:top:1left:1height:1width:1refreshInterval:1 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.
+position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.</description>
     </item>
     
     <item>

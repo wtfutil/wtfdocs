@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.47.1" />
-<title>Getting Started :: WTF - the terminal dashboard</title>
+<title>Resource Usage :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 
     
   </head>
-  <body data-url="/getting_started/">
+  <body data-url="/modules/resourceusage/">
     
       <header>
   <div class="logo">
@@ -63,11 +63,10 @@
             <i class="fa fa-fw fa-home"></i>
           </a>
           </li>
-    <li data-nav-id="/getting_started/" class="dd-item parent active haschildren
+    <li data-nav-id="/getting_started/" class="dd-item haschildren
         ">
       <div>
-      <a href="/getting_started/">Getting Started</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/getting_started/">Getting Started</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/getting_started/installation/" class="dd-item">
@@ -108,10 +107,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item haschildren
+    <li data-nav-id="/modules/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/modules/">Modules</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/">Modules</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/modules/bamboohr/" class="dd-item">
@@ -348,7 +348,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/resourceusage/" class="dd-item">
+      <li data-nav-id="/modules/resourceusage/" class="dd-item active">
         <div>
           <a href="/modules/resourceusage/">
             Resource Usage
@@ -421,15 +421,53 @@
       <center>Navigation : 
         <select onchange="javascript:location.href = this.value;">
           
-    <option value="/getting_started/"  selected>
-   Getting Started</option> 
-      <option value="/getting_started/installation/" >- Installation</option>
-      <option value="/getting_started/glossary/" >- Glossary</option>
-  
+    <option value="/getting_started/" >
+   Getting Started</option>
     <option value="/configuration/" >
    Configuration</option>
     <option value="/modules/" >
-   Modules</option>
+   Modules</option> 
+      <option value="/modules/bamboohr/" >- BambooHR</option>
+      <option value="/modules/circleci/" >- CircleCI</option>
+      <option value="/modules/clocks/" >- Clocks</option>
+      <option value="/modules/cmdrunner/" >- CmdRunner</option>
+    <option value="/modules/cryptocurrencies/" >
+  - 
+   Crypo Currencies</option>
+      <option value="/modules/datadog/" >- Datadog</option>
+      <option value="/modules/gerrit/" >- Gerrit</option>
+      <option value="/modules/git/" >- Git</option>
+      <option value="/modules/github/" >- GitHub</option>
+      <option value="/modules/gitlab/" >- GitLab</option>
+      <option value="/modules/gitter/" >- Gitter</option>
+    <option value="/modules/google/" >
+  - 
+   Google Apps</option>
+      <option value="/modules/hackernews/" >- Hacker News</option>
+    <option value="/modules/ipaddress/" >
+  - 
+   IP Addresses</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
+      <option value="/modules/jira/" >- Jira</option>
+      <option value="/modules/logger/" >- Logger</option>
+      <option value="/modules/mercurial/" >- Mercurial</option>
+      <option value="/modules/newrelic/" >- New Relic</option>
+      <option value="/modules/opsgenie/" >- OpsGenie</option>
+      <option value="/modules/power/" >- Power</option>
+      <option value="/modules/security/" >- Security</option>
+      <option value="/modules/spotify/" >- Spotify</option>
+      <option value="/modules/textfile/" >- Textfile</option>
+      <option value="/modules/todo/" >- Todo</option>
+      <option value="/modules/todoist/" >- Todoist</option>
+      <option value="/modules/resourceusage/"  selected>- Resource Usage</option>
+      <option value="/modules/travisci/" >- TravisCI</option>
+      <option value="/modules/trello/" >- Trello</option>
+      <option value="/modules/twitter/" >- Twitter</option>
+    <option value="/modules/weather_services/" >
+  - 
+   Weather Services</option>
+      <option value="/modules/zendesk/" >- Zendesk</option>
+  
 
 
 
@@ -452,63 +490,49 @@
       </div>
     
 
-    <h1>Getting Started</h1>
+    <h1>Resource Usage</h1>
     
     
     
+    
 
+<p><img class="screenshot" src="/imgs/modules/resource_usage.png" width="279" height="193" alt="resource usage screenshot" /></p>
 
+<p>Added in <code>v0.4.1</code>.</p>
 
-<h2 id="quick-start">Quick Start</h2>
+<p>Displays cpu and memory usage.</p>
 
-<ol>
-<li><a href="https://github.com/wtfutil/wtf/releases">Download</a> the stand-alone, compiled binary.</li>
-<li>Unzip the downloaded file.</li>
-<li>From the command line, <code>cd</code> into the newly-created <code>/wtf</code> directory.</li>
-<li>From the command line, run the app: <code>./wtf</code></li>
-</ol>
+<h2 id="source-code">Source Code</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/resourceusage/</code></pre></div>
+<h2 id="configuration">Configuration</h2>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">resourceusage<span class="p">:</span><span class="w">
+</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>position<span class="p">:</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">1</span></code></pre></div>
+<h3 id="attributes">Attributes</h3>
 
-<p>This should launch the app in your terminal using the default simple
-configuration. See <a href="/posts/configuration/">Configuration</a> for
-more details.</p>
+<p><code>enabled</code> <br />
+Determines whether or not this module is executed and if its data displayed onscreen. <br />
+Values: <code>true</code>, <code>false</code>.</p>
 
-<h2 id="command-line-options">Command-line Options</h2>
+<p><code>position</code> <br />
+Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
 
-<p><code>--config, -c</code> <br />
-Allows you to define a custom config file to use. See <a href="/posts/configuration/">Configuration</a> for more details.</p>
-
-<p><code>--help, -h</code> <br />
-Shows help information for the command-line arguments that WTF
-takes.</p>
-
-<p><code>--module, -m</code> <br />
-Shows help information for the specific named module, if that module
-supports help text. <br />
-Example: <code>wtf --module=todo</code>.</p>
-
-<p><code>--version, -v</code> <br />
-Shows version info.</p>
-
-<h2 id="keyboard-commands">Keyboard Commands</h2>
-
-<p><span class="caption">Key:</span> <code>Ctrl-R</code> <br />
-<span class="caption">Action:</span> Force-refresh the data for all modules.</p>
-
-<p><span class="caption">Key:</span> <code>Esc</code> <br />
-<span class="caption">Action:</span> Unfocus the currently-focused
-widget.</p>
-
-<p><span class="caption">Key:</span> <code>Tab</code> <br />
-<span class="caption">Action:</span> Move between focusable modules (<code>Shift-Tab</code> to move backwards).</p>
-
+<p><code>refreshInterval</code> <br />
+How often, in seconds, this module will update its data. <br />
+Values: A positive integer, <code>0..n</code>.</p>
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/" title="WTF"> <i class="fa fa-chevron-left"></i><label>WTF</label></a>
-    <a class="nav nav-next" href="/getting_started/installation/" title="Installation" style="margin-right: 0px;"><label>Installation</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/todoist/" title="Todoist"> <i class="fa fa-chevron-left"></i><label>Todoist</label></a>
+    <a class="nav nav-next" href="/modules/travisci/" title="TravisCI" style="margin-right: 0px;"><label>TravisCI</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -523,12 +547,12 @@ widget.</p>
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 21/05/2018
+        <i class='fa fa-calendar'></i> Last update on 12/11/2018
     </div>
     
 
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/getting_started/_index.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/modules/resourceusage.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
   </div>
