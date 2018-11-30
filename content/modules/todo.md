@@ -104,6 +104,9 @@ Values: `true`, `false`.
 The name for the todo file. <br />
 Values: Any valid filename, ideally ending in `yml`.
 
+`focusChar` <br />
+Define one of the number keys as a short cut key to access the widget. <br />
+
 `position` <br />
 Where in the grid this module's widget will be displayed. <br />
 

@@ -102,14 +102,14 @@ Values: A valid URI.
 Determines whether or not this module is executed and if its data displayed onscreen. <br />
 Values: `true`, `false`.
 
+`focusChar` <br />
+Define one of the number keys as a short cut key to access the widget. <br />
+
 `password` <br />
 Value: Your <a href="https://gerrit-review.googlesource.com/Documentation/user-upload.html#http">Gerrit HTTP Password</a>.
 
 `position` <br />
 Defines where in the grid this module's widget will be displayed. <br />
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
 
 `projects` <br />
 A list of Gerrit project names to fetch data for. <br />
