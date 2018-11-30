@@ -7,7 +7,7 @@ weight: 1
 
 ## Quick Start
 
-1. <a href="https://github.com/senorprogrammer/wtf/releases">Download</a> the stand-alone, compiled binary.
+1. <a href="https://github.com/wtfutil/wtf/releases">Download</a> the stand-alone, compiled binary.
 2. Unzip the downloaded file.
 3. From the command line, `cd` into the newly-created `/wtf` directory.
 4. From the command line, run the app: `./wtf`

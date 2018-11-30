@@ -59,9 +59,9 @@ github:
   refreshInterval: 300
   repositories:
     wesker-api: "UmbrellaCorp"
-    wtf: "senorprogrammer"
+    wtf: "wtfutil"
   uploadURL: ""
-  username: "senorprogrammer"
+  username: "wtfutil"
 ```
 
 ### Attributes

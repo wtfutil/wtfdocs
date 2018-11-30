@@ -1,6 +1,6 @@
 # WTF Documentation
 
-This is the documentation repository for [WTF](https://github.com/senorprogrammer/wtf), the terminal-based dashboard utility written in [Go](https://golang.org). The output of this repository is [https://wtfutil.com](https://wtfutil.com).
+This is the documentation repository for [WTF](https://github.com/wtfutil/wtf), the terminal-based dashboard utility written in [Go](https://golang.org). The output of this repository is [https://wtfutil.com](https://wtfutil.com).
 
 This documentation is built atop [Hugo](https://gohugo.io), the static site generator, and served up by GitHub pages.
 

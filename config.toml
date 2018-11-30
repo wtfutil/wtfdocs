@@ -45,15 +45,15 @@ home = [ "HTML", "RSS", "JSON"]
 pre = "<h3>More</h3>"
 name = "<i class='fa fa-github'></i> <label>WTF on Github</label>"
 identifier = "ds"
-url = "https://github.com/senorprogrammer/wtf"
+url = "https://github.com/wtfutil/wtf"
 weight = 10
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-cloud-download'></i> <label>Download WTF</label>"
-url = "https://github.com/senorprogrammer/wtf/releases"
+url = "https://github.com/wtfutil/wtf/releases"
 weight = 11
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-bullhorn'></i> <label>Credits</label>"
-url = "https://github.com/senorprogrammer/wtf/blob/master/README.md#contributors"
+url = "https://github.com/wtfutil/wtf/blob/master/README.md#contributors"
 weight = 30

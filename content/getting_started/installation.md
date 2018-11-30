@@ -9,7 +9,7 @@ draft: false
 Grab the latest version from here:
 
 ```bash
-https://github.com/senorprogrammer/wtf/releases
+https://github.com/wtfutil/wtf/releases
 ```
 
 expand it, and `cd` into the resulting directory. Then run:
@@ -25,8 +25,8 @@ and that should also do it.
 Download the source code repo and install the dependencies:
 
 ```bash
-go get -u github.com/senorprogrammer/wtf
-cd $GOPATH/src/github.com/senorprogrammer/wtf
+go get -u github.com/wtfutil/wtf
+cd $GOPATH/src/github.com/wtfutil/wtf
 go install -ldflags="-s -w"
 make run
 ```

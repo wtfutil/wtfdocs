@@ -57,7 +57,7 @@ gitlab:
   projects:
     tasks: "gitlab-org/release"
     gitlab-ce: "gitlab-org"
-  username: "senorprogrammer"
+  username: "wtfutil"
 ```
 
 ### Attributes

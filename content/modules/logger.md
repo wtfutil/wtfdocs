@@ -10,7 +10,7 @@ Displays the contents of the WTF log file. The log file is located at `~/.config
 To log to this file in your own modules:
 
 ```golang
-require "github.com/senorprogrammer/wtf/logger"
+require "github.com/wtfutil/wtf/logger"
 logger.Log("This is a log entry")
 ```
 

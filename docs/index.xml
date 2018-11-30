@@ -359,7 +359,7 @@ Configuration Single Jira Project jira:apiKey:&amp;#34;3276d7155dd9ee27b8b14f874
       <guid>https://wtfutil.com/modules/logger/</guid>
       <description>Displays the contents of the WTF log file. The log file is located at ~/.config/wtf/log.txt.
 To log to this file in your own modules:
-require &amp;#34;github.com/senorprogrammer/wtf/logger&amp;#34; logger.Log(&amp;#34;This is a log entry&amp;#34;) Source Code wtf/logger/ Keyboard Commands Arrow keys scroll through the log file.
+require &amp;#34;github.com/wtfutil/wtf/logger&amp;#34; logger.Log(&amp;#34;This is a log entry&amp;#34;) Source Code wtf/logger/ Keyboard Commands Arrow keys scroll through the log file.
 Configuration logger:enabled:trueposition:top:5left:4height:2width:1refreshInterval:1 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Note: If you&amp;rsquo;re using logging and logging is disabled, your logs will still be written to file, the widget just won&amp;rsquo;t be shown onscreen.</description>
     </item>
     
@@ -549,10 +549,10 @@ Configuration zendesk:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;e
       
       <guid>https://wtfutil.com/getting_started/installation/</guid>
       <description>As a Binary Grab the latest version from here:
-https://github.com/senorprogrammer/wtf/releases expand it, and cd into the resulting directory. Then run:
+https://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:
 ./wtf and that should also do it.
 From Source Download the source code repo and install the dependencies:
-go get -u github.com/senorprogrammer/wtf cd $GOPATH/src/github.com/senorprogrammer/wtf go install -ldflags=&amp;#34;-s -w&amp;#34; make run and that should do it.</description>
+go get -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf go install -ldflags=&amp;#34;-s -w&amp;#34; make run and that should do it.</description>
     </item>
     
     <item>
