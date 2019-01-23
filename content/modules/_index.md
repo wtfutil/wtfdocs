@@ -5,7 +5,7 @@ draft: false
 weight: 10
 ---
 
-The heart of WTF is the modules. A module is a discreet unit of
+The heart of WTF is the modules. A module is a discrete unit of
 functionality that extracts data from some source and packages that data
 for display.
 

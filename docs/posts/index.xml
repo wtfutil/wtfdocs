@@ -556,7 +556,7 @@ enabled Determines whether or not this module is executed and if its data displa
       <pubDate>Mon, 07 May 2018 18:04:58 -0700</pubDate>
       
       <guid>https://wtfutil.com/posts/modules/</guid>
-      <description>The heart of WTF is the modules. A module is a discreet unit of functionality that extracts data from some source and packages that data for display.
+      <description>The heart of WTF is the modules. A module is a discrete unit of functionality that extracts data from some source and packages that data for display.
 For example, the New Relic module uses New Relic&amp;rsquo;s API to retrieve a list of the latest deploys and packages that information as a list for display in the &amp;ldquo;New Relic&amp;rdquo; widget.
 The Clocks module takes a list of timezones and packages that information as a list of city/time pairs for display in the &amp;ldquo;Clocks&amp;rdquo; widget.</description>
     </item>
@@ -567,7 +567,7 @@ The Clocks module takes a list of timezones and packages that information as a l
       <pubDate>Tue, 17 Apr 2018 12:34:51 -0700</pubDate>
       
       <guid>https://wtfutil.com/posts/glossary/</guid>
-      <description>Module A discreet unit of data collection and display. A data interface concept. A package inside the app.
+      <description>Module A discrete unit of data collection and display. A data interface concept. A package inside the app.
 Examples: New Relic, Git, Weather.
 Widget The onscreen representation of a Module. The widget is responsible for being the interface between the app and the data collection.
 Widgets are defined by a required widget.go file in a Module.</description>
