@@ -39,6 +39,19 @@ wtf:colors:background:&amp;#34;red&amp;#34;border:focusable:&amp;#34;darkslatebl
     </item>
     
     <item>
+      <title>VictorOps OnCall</title>
+      <link>https://wtfutil.com/modules/victorops/</link>
+      <pubDate>Sun, 20 Jan 2019 00:28:41 -0800</pubDate>
+      
+      <guid>https://wtfutil.com/modules/victorops/</guid>
+      <description>Connects to the VictorOps API and determines who is on call
+Configuration victorops:apiID:a3c5dd63apiKey:3276d7155dd9ee27b8b14f8743a408a9enabled:trueposition:top:0left:1height:2width:1refreshInterval:3600team:devops Attributes apiID Value: Your VictorOps API ID token.
+apiKey Value: Your VictorOps API Key token.
+enabled Whether or not this module is executed and if its data displayed onscreen. Values: true, false.
+position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: Any positive integer, 0.</description>
+    </item>
+    
+    <item>
       <title>Blockfolio</title>
       <link>https://wtfutil.com/modules/cryptocurrencies/blockfolio/</link>
       <pubDate>Wed, 13 Jun 2018 09:29:59 -0700</pubDate>
@@ -585,6 +598,17 @@ go get -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf go instal
 Examples: New Relic, Git, Weather.
 Widget The onscreen representation of a Module. The widget is responsible for being the interface between the app and the data collection.
 Widgets are defined by a required widget.go file in a Module.</description>
+    </item>
+    
+    <item>
+      <title>Uninstall</title>
+      <link>https://wtfutil.com/getting_started/uninstall/</link>
+      <pubDate>Sun, 28 Jan 2018 09:59:40 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/getting_started/uninstall/</guid>
+      <description>Remove the Binary and Configuration wtf ships as a single binary. Assuming you have installed the binary, you can run:
+rm $(which wtf) If you have configured wtf, you will also want to delete your configs:
+rm ~/.config/wtf and that should also do it.</description>
     </item>
     
     <item>

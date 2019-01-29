@@ -36,5 +36,16 @@ Widget The onscreen representation of a Module. The widget is responsible for be
 Widgets are defined by a required widget.go file in a Module.</description>
     </item>
     
+    <item>
+      <title>Uninstall</title>
+      <link>https://wtfutil.com/getting_started/uninstall/</link>
+      <pubDate>Sun, 28 Jan 2018 09:59:40 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/getting_started/uninstall/</guid>
+      <description>Remove the Binary and Configuration wtf ships as a single binary. Assuming you have installed the binary, you can run:
+rm $(which wtf) If you have configured wtf, you will also want to delete your configs:
+rm ~/.config/wtf and that should also do it.</description>
+    </item>
+    
   </channel>
 </rss>
