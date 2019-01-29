@@ -581,7 +581,7 @@ go get -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf go instal
       <pubDate>Tue, 17 Apr 2018 12:34:51 -0700</pubDate>
       
       <guid>https://wtfutil.com/getting_started/glossary/</guid>
-      <description>Module A discreet unit of data collection and display. A data interface concept. A package inside the app.
+      <description>Module A discrete unit of data collection and display. A data interface concept. A package inside the app.
 Examples: New Relic, Git, Weather.
 Widget The onscreen representation of a Module. The widget is responsible for being the interface between the app and the data collection.
 Widgets are defined by a required widget.go file in a Module.</description>

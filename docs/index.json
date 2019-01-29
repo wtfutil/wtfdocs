@@ -74,7 +74,7 @@
 	"title": "Modules",
 	"tags": [],
 	"description": "",
-	"content": "The heart of WTF is the modules. A module is a discreet unit of functionality that extracts data from some source and packages that data for display.\nFor example, the New Relic module uses New Relic\u0026rsquo;s API to retrieve a list of the latest deploys and packages that information as a list for display in the \u0026ldquo;New Relic\u0026rdquo; widget.\nThe Clocks module takes a list of timezones and packages that information as a list of city/time pairs for display in the \u0026ldquo;Clocks\u0026rdquo; widget.\nSee available modules at left.\n"
+	"content": "The heart of WTF is the modules. A module is a discrete unit of functionality that extracts data from some source and packages that data for display.\nFor example, the New Relic module uses New Relic\u0026rsquo;s API to retrieve a list of the latest deploys and packages that information as a list for display in the \u0026ldquo;New Relic\u0026rdquo; widget.\nThe Clocks module takes a list of timezones and packages that information as a list of city/time pairs for display in the \u0026ldquo;Clocks\u0026rdquo; widget.\nSee available modules at left.\n"
 },
 {
 	"uri": "https://wtfutil.com/modules/cryptocurrencies/cryptolive/",
@@ -340,7 +340,7 @@
 	"title": "Glossary",
 	"tags": [],
 	"description": "",
-	"content": " Module A discreet unit of data collection and display. A data interface concept. A package inside the app.\nExamples: New Relic, Git, Weather.\nWidget The onscreen representation of a Module. The widget is responsible for being the interface between the app and the data collection.\nWidgets are defined by a required widget.go file in a Module.\n"
+	"content": " Module A discrete unit of data collection and display. A data interface concept. A package inside the app.\nExamples: New Relic, Git, Weather.\nWidget The onscreen representation of a Module. The widget is responsible for being the interface between the app and the data collection.\nWidgets are defined by a required widget.go file in a Module.\n"
 },
 {
 	"uri": "https://wtfutil.com/_footer/",

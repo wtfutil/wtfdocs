@@ -5,7 +5,7 @@ draft: false
 ---
 
 ### Module
-A discreet unit of data collection and display. A data interface
+A discrete unit of data collection and display. A data interface
 concept. A package inside the app.
 
 Examples: New Relic, Git, Weather.
