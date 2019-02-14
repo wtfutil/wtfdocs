@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.47.1" />
-<title>TravisCI :: WTF - the terminal dashboard</title>
+<title>Pagerduty :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 
     
   </head>
-  <body data-url="/modules/travisci/">
+  <body data-url="/modules/pagerduty/">
     
       <header>
   <div class="logo">
@@ -192,7 +192,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/pagerduty/" class="dd-item">
+      <li data-nav-id="/modules/pagerduty/" class="dd-item active">
         <div>
           <a href="/modules/pagerduty/">
             Pagerduty
@@ -376,7 +376,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/travisci/" class="dd-item active">
+      <li data-nav-id="/modules/travisci/" class="dd-item">
         <div>
           <a href="/modules/travisci/">
             TravisCI
@@ -457,7 +457,7 @@
   - 
    Crypo Currencies</option>
       <option value="/modules/datadog/" >- Datadog</option>
-      <option value="/modules/pagerduty/" >- Pagerduty</option>
+      <option value="/modules/pagerduty/"  selected>- Pagerduty</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
       <option value="/modules/git/" >- Git</option>
       <option value="/modules/github/" >- GitHub</option>
@@ -483,7 +483,7 @@
       <option value="/modules/todo/" >- Todo</option>
       <option value="/modules/todoist/" >- Todoist</option>
       <option value="/modules/resourceusage/" >- Resource Usage</option>
-      <option value="/modules/travisci/"  selected>- TravisCI</option>
+      <option value="/modules/travisci/" >- TravisCI</option>
       <option value="/modules/trello/" >- Trello</option>
       <option value="/modules/twitter/" >- Twitter</option>
     <option value="/modules/weather_services/" >
@@ -513,53 +513,32 @@
       </div>
     
 
-    <h1>TravisCI</h1>
+    <h1>Pagerduty</h1>
     
     
     
     
 
-<p><img class="screenshot" src="/imgs/modules/travisci.png" width="640" height="187" alt="travisci screenshot" /></p>
-
-<p>Added in <code>v0.0.12</code>.</p>
-
-<p>Displays build information for your Travis CI account.</p>
-
-<h2 id="keyboard-commands">Keyboard Commands</h2>
-
-<p><span class="caption">Key:</span> <code>[return]</code> <br />
-<span class="caption">Action:</span> Open the selected build in the browser.</p>
-
-<p><span class="caption">Key:</span> <code>j</code> <br />
-<span class="caption">Action:</span> Select the next build in the list.</p>
-
-<p><span class="caption">Key:</span> <code>k</code> <br />
-<span class="caption">Action:</span> Select the previous build in the list.</p>
-
-<p><span class="caption">Key:</span> <code>r</code> <br />
-<span class="caption">Action:</span> Refresh the data.</p>
-
-<p><span class="caption">Key:</span> <code>↓</code> <br />
-<span class="caption">Action:</span> Select the next build in the list.</p>
-
-<p><span class="caption">Key:</span> <code>↑</code> <br />
-<span class="caption">Action:</span> Select the previous build in the list.</p>
+<p>Connects to the Pagerduty API and shows schedules</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">travisci<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">pagerDuty<span class="p">:</span><span class="w">
+</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;yourapikey&gt;&#34;</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">  </span>pro<span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span></code></pre></div>
+</span><span class="w">  </span>escalationFilter<span class="p">:</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>&lt;Schedules<span class="w"> </span>you<span class="w"> </span>care<span class="w"> </span>about<span class="sd">&gt;
+</span><span class="sd">  position:
+</span><span class="sd">    top: 4
+</span><span class="sd">    left: 3
+</span><span class="sd">    height: 1
+</span><span class="sd">    width: 2</span></code></pre></div>
 <h3 id="attributes">Attributes</h3>
 
 <p><code>apiKey</code> <br />
-Value: Your <a href="https://developer.travis-ci.org/authentication">Travis CI API</a> access token.</p>
+Value: Your <a href="https://v2.developer.pagerduty.com/docs/authentication">PagerDuty API</a> key.</p>
+
+<p><code>escalationFilter</code> <br />
+Array of schedules you want to filter on.</p>
 
 <p><code>enabled</code> <br />
 Determines whether or not this module is executed and if its data displayed onscreen. <br />
@@ -568,26 +547,19 @@ Values: <code>true</code>, <code>false</code>.</p>
 <p><code>position</code> <br />
 Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
 
-<p><code>focusChar</code> <br />
-Define one of the number keys as a short cut key to access the widget. <br /></p>
-
-<p><code>pro</code> <br />
-Determines whether or not this module will use the Pro version of Travis CI.<br />
-Values: <code>true</code>, <code>false</code>.</p>
-
 <p><code>refreshInterval</code> <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, <code>0..n</code>.</p>
 
 <h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/travisci/</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/pagerduty/</code></pre></div>
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/modules/resourceusage/" title="Resource Usage"> <i class="fa fa-chevron-left"></i><label>Resource Usage</label></a>
-    <a class="nav nav-next" href="/modules/trello/" title="Trello" style="margin-right: 0px;"><label>Trello</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/datadog/" title="Datadog"> <i class="fa fa-chevron-left"></i><label>Datadog</label></a>
+    <a class="nav nav-next" href="/modules/gerrit/" title="Gerrit" style="margin-right: 0px;"><label>Gerrit</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -602,12 +574,12 @@ Values: A positive integer, <code>0..n</code>.</p>
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 18/07/2018
+        <i class='fa fa-calendar'></i> Last update on 18/08/2018
     </div>
     
 
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/modules/travisci.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/modules/pagerduty.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
   </div>

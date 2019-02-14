@@ -243,6 +243,19 @@ position Defines where in the grid this module&amp;rsquo;s widget will be displa
     </item>
     
     <item>
+      <title>Pagerduty</title>
+      <link>https://wtfutil.com/modules/pagerduty/</link>
+      <pubDate>Sat, 18 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://wtfutil.com/modules/pagerduty/</guid>
+      <description>Connects to the Pagerduty API and shows schedules
+Configuration pagerDuty:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;enabled:trueescalationFilter:-&amp;lt;Schedulesyoucareabout&amp;gt; position: top: 4 left: 3 height: 1 width: 2 Attributes apiKey Value: Your PagerDuty API key.
+escalationFilter Array of schedules you want to filter on.
+enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.
+position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data.</description>
+    </item>
+    
+    <item>
       <title>Gerrit</title>
       <link>https://wtfutil.com/modules/gerrit/</link>
       <pubDate>Wed, 27 Jun 2018 15:55:42 -0700</pubDate>
