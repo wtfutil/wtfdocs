@@ -347,7 +347,7 @@
 	"title": "Installation",
 	"tags": [],
 	"description": "",
-	"content": " As a Binary Grab the latest version from here:\nhttps://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:\n./wtf and that should also do it.\nFrom Source Download the source code repo and install the dependencies:\ngo get -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf go install -ldflags=\u0026#34;-s -w\u0026#34; make run and that should do it.\n"
+	"content": " As a Binary Grab the latest version from here:\nhttps://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:\n./wtf and that should also do it.\nFrom Source Download the source code repo and install the dependencies:\ngo get -v -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf go install -ldflags=\u0026#34;-s -w\u0026#34; make run and that should do it.\n"
 },
 {
 	"uri": "https://wtfutil.com/getting_started/glossary/",

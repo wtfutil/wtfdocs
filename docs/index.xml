@@ -598,7 +598,7 @@ Configuration zendesk:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;e
 https://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:
 ./wtf and that should also do it.
 From Source Download the source code repo and install the dependencies:
-go get -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf go install -ldflags=&amp;#34;-s -w&amp;#34; make run and that should do it.</description>
+go get -v -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf go install -ldflags=&amp;#34;-s -w&amp;#34; make run and that should do it.</description>
     </item>
     
     <item>

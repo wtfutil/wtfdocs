@@ -25,7 +25,7 @@ and that should also do it.
 Download the source code repo and install the dependencies:
 
 ```bash
-go get -u github.com/wtfutil/wtf
+go get -v -u github.com/wtfutil/wtf
 cd $GOPATH/src/github.com/wtfutil/wtf
 go install -ldflags="-s -w"
 make run
