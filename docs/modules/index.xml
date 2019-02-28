@@ -364,6 +364,22 @@ Key: k Action: Select the previous item in the list.</description>
     </item>
     
     <item>
+      <title>Rollbar</title>
+      <link>https://wtfutil.com/modules/rollbar/</link>
+      <pubDate>Wed, 13 Feb 2019 14:36:08 -0400</pubDate>
+      
+      <guid>https://wtfutil.com/modules/rollbar/</guid>
+      <description>Displays item information for your rollbar account.
+Keyboard Commands Key: [return] Action: Open the selected item in the browser.
+Key: j Action: Select the next item in the list.
+Key: k Action: Select the previous item in the list.
+Key: r Action: Refresh the data.
+Key: ↓ Action: Select the next item in the list.
+Key: ↑ Action: Select the previous item in the list.
+Configuration rollbar:accessToken:&amp;#34;abjsdfoia7sdg8fy7g&amp;#34;enabled:trueprojectOwner:&amp;#34;ENCOM&amp;#34;projectName:&amp;#34;MCP&amp;#34;activeOnly:trueassignedToName:&amp;#34;dillinger&amp;#34;count:3position:top:4left:1height:2width:2refreshInterval:900 Attributes accessToken Value: Your Rollbar project access token(Only needs read capabilities).</description>
+    </item>
+    
+    <item>
       <title>Resource Usage</title>
       <link>https://wtfutil.com/modules/resourceusage/</link>
       <pubDate>Mon, 12 Nov 2018 14:36:08 -0400</pubDate>

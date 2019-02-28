@@ -370,6 +370,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/modules/rollbar/" class="dd-item">
+        <div>
+          <a href="/modules/rollbar/">
+            Rollbar
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/modules/resourceusage/" class="dd-item">
         <div>
           <a href="/modules/resourceusage/">
@@ -486,6 +493,7 @@
       <option value="/modules/textfile/" >- Textfile</option>
       <option value="/modules/todo/" >- Todo</option>
       <option value="/modules/todoist/" >- Todoist</option>
+      <option value="/modules/rollbar/" >- Rollbar</option>
       <option value="/modules/resourceusage/" >- Resource Usage</option>
       <option value="/modules/travisci/" >- TravisCI</option>
       <option value="/modules/trello/" >- Trello</option>
@@ -527,8 +535,7 @@
 
 <p>Displays your upcoming Google calendar events.</p>
 
-<p><strong>Not:</strong> Setting up access to Google Calendars for Go is a bit unobvious. Check out Google&rsquo;s <a href="https://developers.google.com/calendar/quickstart/go">Go Quickstart</a>
-first and if you have problems, then take a look at this <a href="https://github.com/wtfutil/wtf/issues/83#issuecomment-393665229">comment by WesleydeSouza</a> which offers a slightly different approach.</p>
+<p><strong>Note:</strong> Setting up access to Google Calendars for Go is a bit unobvious. Check out Google&rsquo;s <a href="https://developers.google.com/calendar/quickstart/go">Go Quickstart</a>, and follow <code>Enable The Google Calendar API</code>. The configuration file downloaded is the file you use for the <code>secretFile</code> configuration option.</p>
 
 <h2 id="configuration">Configuration</h2>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">gcal<span class="p">:</span><span class="w">

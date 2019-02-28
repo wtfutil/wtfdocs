@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.47.1" />
-<title>Jenkins :: WTF - the terminal dashboard</title>
+<title>Rollbar :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 
     
   </head>
-  <body data-url="/modules/jenkins/">
+  <body data-url="/modules/rollbar/">
     
       <header>
   <div class="logo">
@@ -285,7 +285,7 @@
     </li>
         </ul>
     </li>
-      <li data-nav-id="/modules/jenkins/" class="dd-item active">
+      <li data-nav-id="/modules/jenkins/" class="dd-item">
         <div>
           <a href="/modules/jenkins/">
             Jenkins
@@ -369,7 +369,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/rollbar/" class="dd-item">
+      <li data-nav-id="/modules/rollbar/" class="dd-item active">
         <div>
           <a href="/modules/rollbar/">
             Rollbar
@@ -477,7 +477,7 @@
     <option value="/modules/ipaddress/" >
   - 
    IP Addresses</option>
-      <option value="/modules/jenkins/"  selected>- Jenkins</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
       <option value="/modules/jira/" >- Jira</option>
       <option value="/modules/logger/" >- Logger</option>
       <option value="/modules/mercurial/" >- Mercurial</option>
@@ -489,7 +489,7 @@
       <option value="/modules/textfile/" >- Textfile</option>
       <option value="/modules/todo/" >- Todo</option>
       <option value="/modules/todoist/" >- Todoist</option>
-      <option value="/modules/rollbar/" >- Rollbar</option>
+      <option value="/modules/rollbar/"  selected>- Rollbar</option>
       <option value="/modules/resourceusage/" >- Resource Usage</option>
       <option value="/modules/travisci/" >- TravisCI</option>
       <option value="/modules/trello/" >- Trello</option>
@@ -521,91 +521,96 @@
       </div>
     
 
-    <h1>Jenkins</h1>
+    <h1>Rollbar</h1>
     
     
     
     
 
-<p><img class="screenshot" src="/imgs/modules/jenkins.png" alt="jenkins screenshot" width="320" height="68" /></p>
+<p><img class="screenshot" src="/imgs/modules/rollbar.png" width="640" height="187" alt="rollbar screenshot" /></p>
 
-<p>Added in <code>v0.0.8</code>.</p>
-
-<p>Displays jenkins status of given builds in a project or view</p>
+<p>Displays item information for your rollbar account.</p>
 
 <h2 id="keyboard-commands">Keyboard Commands</h2>
 
 <p><span class="caption">Key:</span> <code>[return]</code> <br />
-<span class="caption">Action:</span> Open the selected job in the browser.</p>
+<span class="caption">Action:</span> Open the selected item in the browser.</p>
 
 <p><span class="caption">Key:</span> <code>j</code> <br />
-<span class="caption">Action:</span> Select the next job in the list.</p>
+<span class="caption">Action:</span> Select the next item in the list.</p>
 
 <p><span class="caption">Key:</span> <code>k</code> <br />
-<span class="caption">Action:</span> Select the previous job in the list.</p>
+<span class="caption">Action:</span> Select the previous item in the list.</p>
 
 <p><span class="caption">Key:</span> <code>r</code> <br />
 <span class="caption">Action:</span> Refresh the data.</p>
 
 <p><span class="caption">Key:</span> <code>↓</code> <br />
-<span class="caption">Action:</span> Select the next job in the list.</p>
+<span class="caption">Action:</span> Select the next item in the list.</p>
 
 <p><span class="caption">Key:</span> <code>↑</code> <br />
-<span class="caption">Action:</span> Select the previous job in the list.</p>
+<span class="caption">Action:</span> Select the previous item in the list.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">jenkins<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">rollbar<span class="p">:</span><span class="w">
+</span><span class="w">  </span>accessToken<span class="p">:</span><span class="w"> </span><span class="s2">&#34;abjsdfoia7sdg8fy7g&#34;</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>projectOwner<span class="p">:</span><span class="w"> </span><span class="s2">&#34;ENCOM&#34;</span><span class="w">
+</span><span class="w">  </span>projectName<span class="p">:</span><span class="w"> </span><span class="s2">&#34;MCP&#34;</span><span class="w">
+</span><span class="w">  </span>activeOnly<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>assignedToName<span class="p">:</span><span class="w"> </span><span class="s2">&#34;dillinger&#34;</span><span class="w">
+</span><span class="w">  </span>count<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
-</span><span class="w">  </span>url<span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://jenkins.domain.com/jenkins/view_url&#34;</span><span class="w">
-</span><span class="w">  </span>user<span class="p">:</span><span class="w"> </span><span class="s2">&#34;username&#34;</span><span class="w">
-</span><span class="w">  </span>verifyServerCertificate<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span></code></pre></div>
 <h3 id="attributes">Attributes</h3>
 
-<p><code>apiKey</code> <br />
-Value: Your <a href="https://wiki.jenkins.io/display/JENKINS/Remote+access+API">Jenkins API</a> key.</p>
+<p><code>accessToken</code> <br />
+Value: Your Rollbar project access token(Only needs read capabilities).</p>
 
 <p><code>enabled</code> <br />
 Determines whether or not this module is executed and if its data displayed onscreen. <br />
 Values: <code>true</code>, <code>false</code>.</p>
 
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed.</p>
+<p><code>projectOwner</code> <br />
+This is used to create a link to the item <br />
+Values: A string of project owners name.</p>
 
-<p><code>focusChar</code> <br />
-Define one of the number keys as a short cut key to access the widget. <br /></p>
+<p><code>projectName</code> <br />
+This is used to create a link to the item <br />
+Values: A string of the projects name</p>
+
+<p><code>activeOnly</code> <br />
+Only show items that are active <br />
+Values: <code>true</code>, <code>false</code>.</p>
+
+<p><code>assignedToName</code> <br />
+Set this to your username if you only want to see items assigned to you <br />
+Values: A string of your user_name</p>
+
+<p><code>count</code> <br />
+How many items you want to see. 100 is max <br />
+Values: A positive integer, <code>0..100</code>.</p>
+
+<p><code>position</code> <br />
+Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
 
 <p><code>refreshInterval</code> <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, <code>0..n</code>.</p>
 
-<p><code>user</code> <br />
-Your Jenkins username. <br /></p>
-
-<p><code>url</code> <br />
-The url to your Jenkins project or view. <br />
-Values: A valid URI.</p>
-
-<p><code>verifyServerCertificate</code> <br />
-<em>Optional</em> <br />
-Determines whether or not the server&rsquo;s certificate chain and host name are verified. <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
 <h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/jenkins/</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/rollbar/</code></pre></div>
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/modules/ipaddress/ipinfo/" title="IPInfo"> <i class="fa fa-chevron-left"></i><label>IPInfo</label></a>
-    <a class="nav nav-next" href="/modules/jira/" title="Jira" style="margin-right: 0px;"><label>Jira</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/todoist/" title="Todoist"> <i class="fa fa-chevron-left"></i><label>Todoist</label></a>
+    <a class="nav nav-next" href="/modules/resourceusage/" title="Resource Usage" style="margin-right: 0px;"><label>Resource Usage</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -620,12 +625,12 @@ Values: <code>true</code>, <code>false</code>.</p>
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 09/06/2018
+        <i class='fa fa-calendar'></i> Last update on 13/02/2019
     </div>
     
 
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/modules/jenkins.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/modules/rollbar.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
   </div>
