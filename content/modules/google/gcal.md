@@ -9,8 +9,7 @@ weight: 10
 
 Displays your upcoming Google calendar events.
 
-**Not:** Setting up access to Google Calendars for Go is a bit unobvious. Check out Google's [Go Quickstart](https://developers.google.com/calendar/quickstart/go)
-first and if you have problems, then take a look at this [comment by WesleydeSouza](https://github.com/wtfutil/wtf/issues/83#issuecomment-393665229) which offers a slightly different approach.
+**Note:** Setting up access to Google Calendars for Go is a bit unobvious. Check out Google's [Go Quickstart](https://developers.google.com/calendar/quickstart/go), and follow `Enable The Google Calendar API`. The configuration file downloaded is the file you use for the `secretFile` configuration option.
 
 ## Configuration
 
