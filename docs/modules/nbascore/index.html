@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.47.1" />
-<title>iTerm2 :: WTF - the terminal dashboard</title>
+<title>NBA Score :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 
     
   </head>
-  <body data-url="/configuration/iterm2/">
+  <body data-url="/modules/nbascore/">
     
       <header>
   <div class="logo">
@@ -92,11 +92,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/configuration/" class="dd-item parent haschildren
+    <li data-nav-id="/configuration/" class="dd-item haschildren
         ">
       <div>
-      <a href="/configuration/">Configuration</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/configuration/">Configuration</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/configuration/attributes/" class="dd-item">
@@ -106,7 +105,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/configuration/iterm2/" class="dd-item active">
+      <li data-nav-id="/configuration/iterm2/" class="dd-item">
         <div>
           <a href="/configuration/iterm2/">
             iTerm2
@@ -115,10 +114,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item haschildren
+    <li data-nav-id="/modules/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/modules/">Modules</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/">Modules</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/modules/victorops/" class="dd-item">
@@ -313,7 +313,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/nbascore/" class="dd-item">
+      <li data-nav-id="/modules/nbascore/" class="dd-item active">
         <div>
           <a href="/modules/nbascore/">
             NBA Score
@@ -459,12 +459,54 @@
     <option value="/getting_started/" >
    Getting Started</option>
     <option value="/configuration/" >
-   Configuration</option> 
-      <option value="/configuration/attributes/" >- Attributes</option>
-      <option value="/configuration/iterm2/"  selected>- iTerm2</option>
-  
+   Configuration</option>
     <option value="/modules/" >
-   Modules</option>
+   Modules</option> 
+      <option value="/modules/victorops/" >- VictorOps OnCall</option>
+      <option value="/modules/bamboohr/" >- BambooHR</option>
+      <option value="/modules/circleci/" >- CircleCI</option>
+      <option value="/modules/clocks/" >- Clocks</option>
+      <option value="/modules/cmdrunner/" >- CmdRunner</option>
+    <option value="/modules/cryptocurrencies/" >
+  - 
+   Crypo Currencies</option>
+      <option value="/modules/datadog/" >- Datadog</option>
+      <option value="/modules/pagerduty/" >- Pagerduty</option>
+      <option value="/modules/gerrit/" >- Gerrit</option>
+      <option value="/modules/git/" >- Git</option>
+      <option value="/modules/github/" >- GitHub</option>
+      <option value="/modules/gitlab/" >- GitLab</option>
+      <option value="/modules/gitter/" >- Gitter</option>
+    <option value="/modules/google/" >
+  - 
+   Google Apps</option>
+      <option value="/modules/hackernews/" >- Hacker News</option>
+    <option value="/modules/ipaddress/" >
+  - 
+   IP Addresses</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
+      <option value="/modules/jira/" >- Jira</option>
+      <option value="/modules/logger/" >- Logger</option>
+      <option value="/modules/mercurial/" >- Mercurial</option>
+      <option value="/modules/nbascore/"  selected>- NBA Score</option>
+      <option value="/modules/newrelic/" >- New Relic</option>
+      <option value="/modules/opsgenie/" >- OpsGenie</option>
+      <option value="/modules/power/" >- Power</option>
+      <option value="/modules/security/" >- Security</option>
+      <option value="/modules/spotify/" >- Spotify</option>
+      <option value="/modules/textfile/" >- Textfile</option>
+      <option value="/modules/todo/" >- Todo</option>
+      <option value="/modules/todoist/" >- Todoist</option>
+      <option value="/modules/rollbar/" >- Rollbar</option>
+      <option value="/modules/resourceusage/" >- Resource Usage</option>
+      <option value="/modules/travisci/" >- TravisCI</option>
+      <option value="/modules/trello/" >- Trello</option>
+      <option value="/modules/twitter/" >- Twitter</option>
+    <option value="/modules/weather_services/" >
+  - 
+   Weather Services</option>
+      <option value="/modules/zendesk/" >- Zendesk</option>
+  
 
 
 
@@ -487,36 +529,62 @@
       </div>
     
 
-    <h1>iTerm2</h1>
+    <h1>NBA Score</h1>
     
     
     
-    <p>Many terminal apps don&rsquo;t properly display multibyte emoji characters
-properly. This <strong>may</strong> fix the issue for you in iTerm2, it also may not.</p>
+    
 
-<p>By default iTerm2 uses a unicode rendering format
-that is not comletely compatible with some emoji characters. Instead what you&rsquo;ll
-see is the emoji over-lapping normal text characters, or drawing outside
-the bounds of where they should be.</p>
+<p>Displays NBA game scores.</p>
 
-<p>In iTerm2 open:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">Preferences -&gt; Profiles -&gt; Text</code></pre></div>
-<p>and check <strong>on</strong> the &ldquo;Use Unicode Version 9 Widths&rdquo; checkbox. Then
-restart WTF.</p>
+<h2 id="keyboard-commands">Keyboard Commands</h2>
 
-<p><img src="/imgs/iterm2prefs.png" width="800" height="437" alt="iTerm2
-Prefs" /></p>
+<p><span class="caption">Key:</span> <code>/</code> <br />
+<span class="caption">Action:</span> Open/close the widget&rsquo;s help window.</p>
 
-<p>(<em>Note:</em> This issue is not unique to iTerm2. As of this writing it also
-affects <a href="https://en.wikipedia.org/wiki/Terminal_(macOS)">Terminal</a>, and <a href="https://hyper.is">Hyper</a>.)</p>
+<p><span class="caption">Key:</span> <code>h</code> <br />
+<span class="caption">Action:</span> Go to previous day</p>
 
+<p><span class="caption">Key:</span> <code>l</code> <br />
+<span class="caption">Action:</span> Go to next day</p>
+
+<p><span class="caption">Key:</span> <code>c</code> <br />
+<span class="caption">Action:</span> Go back to current day</p>
+
+<h2 id="configuration">Configuration</h2>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">spotify<span class="p">:</span><span class="w">
+</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>position<span class="p">:</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">600</span></code></pre></div>
+<h2 id="attributes">Attributes</h2>
+
+<p><code>enabled</code> <br />
+Determines whether or not this module is executed and if its data displayed onscreen. <br />
+Values: <code>true</code>, <code>false</code>.</p>
+
+<p><code>position</code> <br />
+Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
+
+<p><code>focusChar</code> <br />
+Define one of the number keys as a short cut key to access the widget. <br /></p>
+
+<p><code>refreshInterval</code> <br />
+How often, in seconds, this module will update its data. <br />
+Values: A positive integer, <code>0..n</code>.</p>
+
+<h2 id="source-code">Source Code</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/nbascore/</code></pre></div>
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/configuration/attributes/" title="Attributes"> <i class="fa fa-chevron-left"></i><label>Attributes</label></a>
-    <a class="nav nav-next" href="/modules/" title="Modules" style="margin-right: 0px;"><label>Modules</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/mercurial/" title="Mercurial"> <i class="fa fa-chevron-left"></i><label>Mercurial</label></a>
+    <a class="nav nav-next" href="/modules/newrelic/" title="New Relic" style="margin-right: 0px;"><label>New Relic</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -531,12 +599,12 @@ affects <a href="https://en.wikipedia.org/wiki/Terminal_(macOS)">Terminal</a>, a
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 24/05/2018
+        <i class='fa fa-calendar'></i> Last update on 07/03/2019
     </div>
     
 
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/configuration/iterm2.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/modules/nbascore.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
   </div>

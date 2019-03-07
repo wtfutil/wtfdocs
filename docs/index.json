@@ -238,6 +238,13 @@
 	"content": " Displays information about local mercurial repositories: branch, changed files, and recent commits.\nBranch The name of the currently-active mercurial branch.\nChanged Files A list of all the files that have changed since the last commit, and their status.\nRecent Commits A list of n recent commits, who committed it, and when.\nKeyboard Commands Key: / Action: Open/close the widget\u0026rsquo;s help window.\nKey: h Action: Show the previous mercurial repository.\nKey: l Action: Show the next mercurial repository.\nKey: ← Action: Show the previous mercurial repository.\nKey: → Action: Show the next mercurial repository.\nConfiguration mercurial:commitCount:5commitFormat:\u0026#34;[forestgreen]{rev}:{phase} [white]{desc|firstline|strip} [grey]{author|person} {date|age}[white]\u0026#34;enabled:trueposition:top:0left:3height:2width:2refreshInterval:8repositories:-\u0026#34;/Users/user/fakelib\u0026#34;-\u0026#34;/Users/user/fakeapp\u0026#34; Attributes commitCount The number of past commits to display. Values: A positive integer, 0..n.\ncommitFormat Optional The string format for the commit message. enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. focusChar Define one of the number keys as a short cut key to access the widget. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nrepositories Defines which mercurial repositories to watch. Values: A list of zero or more local file paths pointing to valid mercurial repositories.\nSource Code wtf/mercurial/"
 },
 {
+	"uri": "https://wtfutil.com/modules/nbascore/",
+	"title": "NBA Score",
+	"tags": [],
+	"description": "",
+	"content": " Displays NBA game scores.\nKeyboard Commands Key: / Action: Open/close the widget\u0026rsquo;s help window.\nKey: h Action: Go to previous day\nKey: l Action: Go to next day\nKey: c Action: Go back to current day\nConfiguration spotify:enabled:trueposition:top:1left:2height:1width:1refreshInterval:600 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. focusChar Define one of the number keys as a short cut key to access the widget. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nSource Code wtf/modules/nbascore/"
+},
+{
 	"uri": "https://wtfutil.com/modules/newrelic/",
 	"title": "New Relic",
 	"tags": [],
@@ -270,7 +277,7 @@
 	"title": "Spotify",
 	"tags": [],
 	"description": "",
-	"content": " Control the Spotify client.\nKeyboard Commands Key: / Action: Open/close the widget\u0026rsquo;s help window.\nKey: space Action: Play/pause the currently-selected track\nKey: h Action: Play previous song\nKey: l Action: Play next song\nConfiguration spotify:enabled:trueposition:top:1left:2height:1width:1refreshInterval:0 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. focusChar Define one of the number keys as a short cut key to access the widget. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nSource Code wtf/spotify/"
+	"content": " Control the Spotify client.\nKeyboard Commands Key: / Action: Open/close the widget\u0026rsquo;s help window.\nKey: space Action: Play/pause the currently-selected track\nKey: h Action: Play previous song\nKey: l Action: Play next song\nConfiguration spotify:enabled:trueposition:top:1left:2height:1width:1refreshInterval:0 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. focusChar Define one of the number keys as a short cut key to access the widget. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nSource Code wtf/modules/spotify/"
 },
 {
 	"uri": "https://wtfutil.com/modules/textfile/",

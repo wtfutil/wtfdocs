@@ -257,6 +257,21 @@ Key: h Action: Show the previous mercurial repository.</description>
     </item>
     
     <item>
+      <title>NBA Score</title>
+      <link>https://wtfutil.com/modules/nbascore/</link>
+      <pubDate>Thu, 07 Mar 2019 05:32:11 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/nbascore/</guid>
+      <description>Displays NBA game scores.
+Keyboard Commands Key: / Action: Open/close the widget&amp;rsquo;s help window.
+Key: h Action: Go to previous day
+Key: l Action: Go to next day
+Key: c Action: Go back to current day
+Configuration spotify:enabled:trueposition:top:1left:2height:1width:1refreshInterval:600 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.
+position Defines where in the grid this module&amp;rsquo;s widget will be displayed. focusChar Define one of the number keys as a short cut key to access the widget.</description>
+    </item>
+    
+    <item>
       <title>New Relic</title>
       <link>https://wtfutil.com/modules/newrelic/</link>
       <pubDate>Wed, 09 May 2018 09:01:14 -0700</pubDate>
