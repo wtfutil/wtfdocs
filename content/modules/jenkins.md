@@ -37,6 +37,7 @@ Displays jenkins status of given builds in a project or view
 jenkins:
   apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
   enabled: true
+  greenBalls: true
   position:
     top: 2
     left: 3
@@ -55,6 +56,10 @@ Value: Your <a href="https://wiki.jenkins.io/display/JENKINS/Remote+access+API">
 
 `enabled` <br />
 Determines whether or not this module is executed and if its data displayed onscreen. <br />
+Values: `true`, `false`.
+
+`greenBalls` <br />
+Changes the default color of successful Jenkins jobs to green, mirroring the behavior of the Green Balls plugin. <br />
 Values: `true`, `false`.
 
 `position` <br />
