@@ -43,6 +43,7 @@ jenkins:
     height: 2
     width: 3
   refreshInterval: 300
+  successBallColor: "green"
   url: "https://jenkins.domain.com/jenkins/view_url"
   user: "username"
   verifyServerCertificate: true
@@ -56,6 +57,10 @@ Value: Your <a href="https://wiki.jenkins.io/display/JENKINS/Remote+access+API">
 `enabled` <br />
 Determines whether or not this module is executed and if its data displayed onscreen. <br />
 Values: `true`, `false`.
+
+`successBallColor` <br />
+Changes the default color of successful Jenkins jobs to the color of your choosing. <br />
+Values: `blue`, `green`, `purple`, `yellow`, etc.
 
 `position` <br />
 Defines where in the grid this module's widget will be displayed.
