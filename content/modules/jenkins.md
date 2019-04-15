@@ -37,13 +37,13 @@ Displays jenkins status of given builds in a project or view
 jenkins:
   apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
   enabled: true
-  greenBalls: true
   position:
     top: 2
     left: 3
     height: 2
     width: 3
   refreshInterval: 300
+  successBallColor: "green"
   url: "https://jenkins.domain.com/jenkins/view_url"
   user: "username"
   verifyServerCertificate: true
