@@ -58,9 +58,9 @@ Value: Your <a href="https://wiki.jenkins.io/display/JENKINS/Remote+access+API">
 Determines whether or not this module is executed and if its data displayed onscreen. <br />
 Values: `true`, `false`.
 
-`greenBalls` <br />
-Changes the default color of successful Jenkins jobs to green, mirroring the behavior of the Green Balls plugin. <br />
-Values: `true`, `false`.
+`successBallColor` <br />
+Changes the default color of successful Jenkins jobs to the color of your choosing. <br />
+Values: `blue`, `green`, `purple`, `yellow`, etc.
 
 `position` <br />
 Defines where in the grid this module's widget will be displayed.
