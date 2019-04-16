@@ -23,6 +23,8 @@ opsgenie:
     height: 2
     width: 1
   refreshInterval: 21600
+  schedule:
+  scheduleIdentifierType:
 ```
 
 ### Attributes
@@ -44,6 +46,11 @@ Where in the grid this module's widget will be displayed. <br />
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+`schedule` <br />
+
+`scheduleIdentifierType` <br />
+
 
 ## Source Code
 
