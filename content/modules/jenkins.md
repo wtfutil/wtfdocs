@@ -44,6 +44,7 @@ jenkins:
     width: 3
   refreshInterval: 300
   successBallColor: "green"
+  jobNameRegex: ^[a-z]+\[[0-9]+\]$
   url: "https://jenkins.domain.com/jenkins/view_url"
   user: "username"
   verifyServerCertificate: true
@@ -61,6 +62,10 @@ Values: `true`, `false`.
 `successBallColor` <br />
 Changes the default color of successful Jenkins jobs to the color of your choosing. <br />
 Values: `blue`, `green`, `purple`, `yellow`, etc.
+
+`jobNameRegex` <br />
+An optional regex that filters the jobs shown in the widget. Any jobs matching the regular expression will be shown. <br />
+Values: A valid regex, e.g. `^[a-z]+\[[0-9]+\]$`
 
 `position` <br />
 Defines where in the grid this module's widget will be displayed.
