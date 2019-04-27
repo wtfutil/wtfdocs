@@ -29,8 +29,7 @@ Displays weather information as ASCII art from [Wttr.in](http://wttr.in).
 ### Attributes
 
 `city` <br />
-_Optional_. It will grab the current location from your IP address if
-omitted.<br />
+_Optional_. It will use Barcelona if omitted.<br />
 Values: The name of any city supported by [Wttr.in](http://wttr.in).
 
 `enabled` <br />
@@ -47,7 +46,7 @@ Values: A positive integer, `0..n`.
 `unit` <br />
 _Optional_. It will use metric if you are out of US and imperial for US.<br />
 The temperature scale in which to display temperature values. <br />
-Values: `F` for Fahrenheit, `C` for Celcius.
+Values: `u` for Fahrenheit, `m` for Celsius.
 
 `view` <br />
 _Optional_ Wttr.in view configuration. <br />
@@ -60,5 +59,5 @@ Values: See `curl wttr.in/:translation` for more details.
 ## Source Code
 
 ```bash
-wtf/prettyweather/
+wtf/weatherservices/prettyweather/
 ```
