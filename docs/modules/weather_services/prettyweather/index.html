@@ -70,6 +70,13 @@
       <a href="/getting_started/">Getting Started</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/getting_started/generate-module/" class="dd-item">
+        <div>
+          <a href="/getting_started/generate-module/">
+            Generate new modules
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/getting_started/installation/" class="dd-item">
         <div>
           <a href="/getting_started/installation/">
@@ -560,8 +567,7 @@
 <h3 id="attributes">Attributes</h3>
 
 <p><code>city</code> <br />
-<em>Optional</em>. It will grab the current location from your IP address if
-omitted.<br />
+<em>Optional</em>. It will use Barcelona if omitted.<br />
 Values: The name of any city supported by <a href="http://wttr.in">Wttr.in</a>.</p>
 
 <p><code>enabled</code> <br />
@@ -578,7 +584,7 @@ Values: A positive integer, <code>0..n</code>.</p>
 <p><code>unit</code> <br />
 <em>Optional</em>. It will use metric if you are out of US and imperial for US.<br />
 The temperature scale in which to display temperature values. <br />
-Values: <code>F</code> for Fahrenheit, <code>C</code> for Celcius.</p>
+Values: <code>u</code> for Fahrenheit, <code>m</code> for Celsius.</p>
 
 <p><code>view</code> <br />
 <em>Optional</em> Wttr.in view configuration. <br />
@@ -589,7 +595,7 @@ Values: See <code>curl wttr.in/:help</code> for more details.</p>
 Values: See <code>curl wttr.in/:translation</code> for more details.</p>
 
 <h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/prettyweather/</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/weatherservices/prettyweather/</code></pre></div>
 
     
     

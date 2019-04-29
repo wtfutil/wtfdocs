@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.55.2" />
-<title>Trello :: WTF - the terminal dashboard</title>
+<title>Generate new modules :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 
     
   </head>
-  <body data-url="/modules/trello/">
+  <body data-url="/getting_started/generate-module/">
     
       <header>
   <div class="logo">
@@ -64,13 +64,14 @@
             <i class="fa fa-fw fa-home"></i>
           </a>
           </li>
-    <li data-nav-id="/getting_started/" class="dd-item haschildren
+    <li data-nav-id="/getting_started/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/getting_started/">Getting Started</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/getting_started/">Getting Started</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/getting_started/generate-module/" class="dd-item">
+      <li data-nav-id="/getting_started/generate-module/" class="dd-item active">
         <div>
           <a href="/getting_started/generate-module/">
             Generate new modules
@@ -122,11 +123,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item parent haschildren
+    <li data-nav-id="/modules/" class="dd-item haschildren
         ">
       <div>
-      <a href="/modules/">Modules</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/">Modules</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/modules/victorops/" class="dd-item">
@@ -405,7 +405,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/trello/" class="dd-item active">
+      <li data-nav-id="/modules/trello/" class="dd-item">
         <div>
           <a href="/modules/trello/">
             Trello
@@ -465,56 +465,16 @@
         <select onchange="javascript:location.href = this.value;">
           
     <option value="/getting_started/" >
-   Getting Started</option>
+   Getting Started</option> 
+      <option value="/getting_started/generate-module/"  selected>- Generate new modules</option>
+      <option value="/getting_started/installation/" >- Installation</option>
+      <option value="/getting_started/glossary/" >- Glossary</option>
+      <option value="/getting_started/uninstall/" >- Uninstall</option>
+  
     <option value="/configuration/" >
    Configuration</option>
     <option value="/modules/" >
-   Modules</option> 
-      <option value="/modules/victorops/" >- VictorOps OnCall</option>
-      <option value="/modules/bamboohr/" >- BambooHR</option>
-      <option value="/modules/circleci/" >- CircleCI</option>
-      <option value="/modules/clocks/" >- Clocks</option>
-      <option value="/modules/cmdrunner/" >- CmdRunner</option>
-    <option value="/modules/cryptocurrencies/" >
-  - 
-   Crypo Currencies</option>
-      <option value="/modules/datadog/" >- Datadog</option>
-      <option value="/modules/pagerduty/" >- Pagerduty</option>
-      <option value="/modules/gerrit/" >- Gerrit</option>
-      <option value="/modules/git/" >- Git</option>
-      <option value="/modules/github/" >- GitHub</option>
-      <option value="/modules/gitlab/" >- GitLab</option>
-      <option value="/modules/gitter/" >- Gitter</option>
-    <option value="/modules/google/" >
-  - 
-   Google Apps</option>
-      <option value="/modules/hackernews/" >- Hacker News</option>
-    <option value="/modules/ipaddress/" >
-  - 
-   IP Addresses</option>
-      <option value="/modules/jenkins/" >- Jenkins</option>
-      <option value="/modules/jira/" >- Jira</option>
-      <option value="/modules/logger/" >- Logger</option>
-      <option value="/modules/mercurial/" >- Mercurial</option>
-      <option value="/modules/nbascore/" >- NBA Score</option>
-      <option value="/modules/newrelic/" >- New Relic</option>
-      <option value="/modules/opsgenie/" >- OpsGenie</option>
-      <option value="/modules/power/" >- Power</option>
-      <option value="/modules/security/" >- Security</option>
-      <option value="/modules/spotify/" >- Spotify</option>
-      <option value="/modules/textfile/" >- Textfile</option>
-      <option value="/modules/todo/" >- Todo</option>
-      <option value="/modules/todoist/" >- Todoist</option>
-      <option value="/modules/rollbar/" >- Rollbar</option>
-      <option value="/modules/resourceusage/" >- Resource Usage</option>
-      <option value="/modules/travisci/" >- TravisCI</option>
-      <option value="/modules/trello/"  selected>- Trello</option>
-      <option value="/modules/twitter/" >- Twitter</option>
-    <option value="/modules/weather_services/" >
-  - 
-   Weather Services</option>
-      <option value="/modules/zendesk/" >- Zendesk</option>
-  
+   Modules</option>
 
 
 
@@ -537,86 +497,47 @@
       </div>
     
 
-    <h1>Trello</h1>
+    <h1>Generate new modules</h1>
     
     
     
     
 
-<p><img class="screenshot" src="/imgs/modules/trello.png" width="640" height="197" alt="trello screenshot" /></p>
+<p>The <a href="../glossary/#widget">widgets</a> that you see on the screen are displayed using <a href="../glossary/#module">modules</a>. To make it easier to create new modules there is a generator which creates a stub (an empty module). The Go package <em>generators</em> contains generator scripts for different types of widgets.</p>
 
-<p>Displays all Trello cards on specified lists.</p>
+<h2 id="prerequisites">Prerequisites</h2>
 
-<h2 id="configuration">Configuration</h2>
+<p>Before you can generate new modules, you&rsquo;ll need to have:</p>
 
-<h3 id="single-trello-list">Single Trello List</h3>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">trello<span class="p">:</span><span class="w">
-</span><span class="w">  </span>accessToken<span class="p">:</span><span class="w"> </span><span class="s2">&#34;7b8b14f8743a408a93276d7155dd9ee2&#34;</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
-</span><span class="w">  </span>board<span class="p">:</span><span class="w"> </span>Main<span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>list<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Todo&#34;</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">3600</span><span class="w">
-</span><span class="w">  </span>username<span class="p">:</span><span class="w"> </span>myname</code></pre></div>
-<h3 id="multiple-trello-lists">Multiple Trello Lists</h3>
+<ul>
+<li>Go version 1.11 or higher</li>
+<li>The source code of WTF (<code>git clone https://github.com/wtfutil/wtf</code>)</li>
+</ul>
 
-<p>If you want to monitor multiple Trello lists, use the following
-configuration (note the difference in <code>list</code>):</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">trello<span class="p">:</span><span class="w">
-</span><span class="w">  </span>accessToken<span class="p">:</span><span class="w"> </span><span class="s2">&#34;7b8b14f8743a408a93276d7155dd9ee2&#34;</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
-</span><span class="w">  </span>board<span class="p">:</span><span class="w"> </span>Main<span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>list<span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;Todo&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;Done&#34;</span><span class="p">]</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">3600</span><span class="w">
-</span><span class="w">  </span>username<span class="p">:</span><span class="w"> </span>myname</code></pre></div>
-<h3 id="attributes">Attributes</h3>
+<h2 id="new-textwidgets">New TextWidgets</h2>
 
-<p><code>accessToken</code> <br />
-Value: Your Trello access token.</p>
+<p>You can run <code>go generate -run=text</code> to create a new widget called <strong>NewTextWidget</strong>. You can change the name of the generated widget by setting an environment variable called <code>WTF_WIDGET_NAME</code>.</p>
 
-<p><code>apiKey</code> <br />
-Value: Your Trello API key.</p>
-
-<p><code>board</code> <br />
-The name of the Trello board. <br /></p>
-
-<p><code>enabled</code> <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>list</code> <br />
-The Trello lists to fetch cards from. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
-
-<p><code>username</code> <br />
-Your Trello username. <br /></p>
-
-<p><code>position</code> <br />
-Where in the grid this module&rsquo;s widget will be displayed. <br /></p>
+<p>For example, to generate a new widget called <em>MySuperAwesomeWidget</em> on macOs or linux, the command would be:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># as a single line</span>
+<span class="nv">WTF_WIDGET_NAME</span><span class="o">=</span>MySuperAwesomeWidget go generate -run<span class="o">=</span>text
+<span class="c1"># setting the name separately</span>
+<span class="nb">export</span> <span class="nv">WTF_WIDGET_NAME</span><span class="o">=</span>MySuperAwesomeWidget
+go generate -run<span class="o">=</span>text</code></pre></div>
+<p>The equivalent using Windows PowerShell would be</p>
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nv">$env:WTF_WIDGET_NAME</span> <span class="p">=</span> <span class="s2">&#34;MySuperAwesomeWidget&#34;</span>
+<span class="n">go</span> <span class="n">generate</span> <span class="n">-run</span><span class="p">=</span><span class="n">text</span></code></pre></div>
+<p>The new widget is generated using the template in <code>textwidget.tpl</code></p>
 
 <h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/trello/</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/generator/</code></pre></div>
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/modules/travisci/" title="TravisCI"> <i class="fa fa-chevron-left"></i><label>TravisCI</label></a>
-    <a class="nav nav-next" href="/modules/twitter/" title="Twitter" style="margin-right: 0px;"><label>Twitter</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/getting_started/" title="Getting Started"> <i class="fa fa-chevron-left"></i><label>Getting Started</label></a>
+    <a class="nav nav-next" href="/getting_started/installation/" title="Installation" style="margin-right: 0px;"><label>Installation</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -631,12 +552,12 @@ Where in the grid this module&rsquo;s widget will be displayed. <br /></p>
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 10/05/2018
+        <i class='fa fa-calendar'></i> Last update on 28/04/2019
     </div>
     
 
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/modules/trello.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/getting_started/generate-module.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
   </div>

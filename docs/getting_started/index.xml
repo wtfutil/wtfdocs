@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Generate new modules</title>
+      <link>https://wtfutil.com/getting_started/generate-module/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wtfutil.com/getting_started/generate-module/</guid>
+      <description>The widgets that you see on the screen are displayed using modules. To make it easier to create new modules there is a generator which creates a stub (an empty module). The Go package generators contains generator scripts for different types of widgets.
+Prerequisites Before you can generate new modules, you&amp;rsquo;ll need to have:
+ Go version 1.11 or higher The source code of WTF (git clone https://github.com/wtfutil/wtf)  New TextWidgets You can run go generate -run=text to create a new widget called NewTextWidget.</description>
+    </item>
+    
+    <item>
       <title>Installation</title>
       <link>https://wtfutil.com/getting_started/installation/</link>
       <pubDate>Fri, 18 May 2018 09:59:40 -0700</pubDate>

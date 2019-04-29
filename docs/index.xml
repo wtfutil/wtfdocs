@@ -88,10 +88,10 @@ enabled Determines whether or not this module is executed and if its data displa
       
       <guid>https://wtfutil.com/modules/weather_services/prettyweather/</guid>
       <description>Displays weather information as ASCII art from Wttr.in.
-Configuration prettyweather:enabled:truecity:&amp;#34;tehran&amp;#34;position:top:3left:5height:1width:1refreshInterval:300unit:&amp;#34;c&amp;#34;view:0language:&amp;#34;en&amp;#34; Attributes city Optional. It will grab the current location from your IP address if omitted.
+Configuration prettyweather:enabled:truecity:&amp;#34;tehran&amp;#34;position:top:3left:5height:1width:1refreshInterval:300unit:&amp;#34;c&amp;#34;view:0language:&amp;#34;en&amp;#34; Attributes city Optional. It will use Barcelona if omitted.
 Values: The name of any city supported by Wttr.in.
 enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.
-position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data.</description>
+position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0.</description>
     </item>
     
     <item>
@@ -617,6 +617,17 @@ Key: k Action: Select the previous item in the list.
 Key: ↓ Action: Scroll down the list.
 Key: ↑ Action: Scroll up the list.
 Configuration zendesk:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:0left:2height:1width:1status:&amp;#34;new&amp;#34;subdomain:&amp;#34;your_domain&amp;#34;username:&amp;#34;your_email@acme.com&amp;#34; Attributes apiKey Value: Your Zendesk API token.</description>
+    </item>
+    
+    <item>
+      <title>Generate new modules</title>
+      <link>https://wtfutil.com/getting_started/generate-module/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wtfutil.com/getting_started/generate-module/</guid>
+      <description>The widgets that you see on the screen are displayed using modules. To make it easier to create new modules there is a generator which creates a stub (an empty module). The Go package generators contains generator scripts for different types of widgets.
+Prerequisites Before you can generate new modules, you&amp;rsquo;ll need to have:
+ Go version 1.11 or higher The source code of WTF (git clone https://github.com/wtfutil/wtf)  New TextWidgets You can run go generate -run=text to create a new widget called NewTextWidget.</description>
     </item>
     
     <item>
