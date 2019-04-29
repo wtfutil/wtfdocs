@@ -13,13 +13,13 @@ weight: 1
 4. From the command line, run the app: `./wtf`
 
 This should launch the app in your terminal using the default simple
-configuration. See <a href="/posts/configuration/">Configuration</a> for
+configuration. See <a href="/configuration/">Configuration</a> for
 more details.
 
 ## Command-line Options
 
 `--config, -c` <br />
-Allows you to define a custom config file to use. See <a href="/posts/configuration/">Configuration</a> for more details.
+Allows you to define a custom config file to use. See <a href="/configuration/">Configuration</a> for more details.
 
 `--help, -h` <br />
 Shows help information for the command-line arguments that WTF
