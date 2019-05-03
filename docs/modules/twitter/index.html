@@ -543,8 +543,6 @@
     
     
 
-<p>Added in <code>v0.2.0</code>.</p>
-
 <p>Connects to the Twitter API and displays a single user&rsquo;s tweets.</p>
 
 <p>NOTE: This only works for single-application developer accounts for now.</p>
@@ -559,9 +557,32 @@
 <p>Once you have your developer account, a relatively painless way to get a
 bearer token is to use <a href="https://github.com/Trinergy/twitter_bearer_token">TBT</a>.</p>
 
+<h2 id="keyboard-commands">Keyboard Commands</h2>
+
+<p><span class="caption">Key:</span> <code>/</code> <br />
+<span class="caption">Action:</span> Open/close the widget&rsquo;s help window.</p>
+
+<p><span class="caption">Key:</span> <code>h</code> <br />
+<span class="caption">Action:</span> Display the previous Twitter account.</p>
+
+<p><span class="caption">Key:</span> <code>l</code> <br />
+<span class="caption">Action:</span> Display the next Twitter account.</p>
+
+<p><span class="caption">Key:</span> <code>o</code> <br />
+<span class="caption">Action:</span> Opens the account in your local browser.</p>
+
+<p><span class="caption">Key:</span> <code>←</code> <br />
+<span class="caption">Action:</span> Display the previous Twitter account.</p>
+
+<p><span class="caption">Key:</span> `→ <br />
+<span class="caption">Action:</span> Display the next Twitter account.</p>
+
 <h2 id="configuration">Configuration</h2>
+
+<h3 id="single-account">Single Account</h3>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">twitter<span class="p">:</span><span class="w">
 </span><span class="w">  </span>bearerToken<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
+</span><span class="w">  </span>count<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
 </span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
@@ -570,10 +591,28 @@ bearer token is to use <a href="https://github.com/Trinergy/twitter_bearer_token
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">20000</span><span class="w">
 </span><span class="w">  </span>screenName<span class="p">:</span><span class="w"> </span><span class="s2">&#34;wtfutil&#34;</span></code></pre></div>
+<h3 id="multiple-accounts">Multiple Accounts</h3>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">twitter<span class="p">:</span><span class="w">
+</span><span class="w">  </span>bearerToken<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
+</span><span class="w">  </span>count<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>position<span class="p">:</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">20000</span><span class="w">
+</span><span class="w">  </span>screenNames<span class="p">:</span><span class="w"> 
+</span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;golang&#34;</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;wtfutil&#34;</span></code></pre></div>
 <h3 id="attributes">Attributes</h3>
 
 <p><code>bearerToken</code> <br />
 Value: Your <a href="https://developer.twitter.com/en/docs/basics/authentication/overview/application-only.html">Twitter single-application Bearer Token</a></p>
+
+<p><code>count</code> <br />
+The number of tweets to return per account. <br />
+Default: 5</p>
 
 <p><code>enabled</code> <br />
 Whether or not this module is executed and if its data displayed onscreen. <br />
@@ -592,6 +631,10 @@ Values: Any positive integer, <code>0..n</code>.</p>
 <p><code>screenName</code> <br />
 The screen name of the Twitter user who&rsquo;s tweets you want to follow. <br />
 Values: Any valid Twitter user&rsquo;s screen name.</p>
+
+<p><code>screenNames</code> <br />
+The screen names of the Twitter users who&rsquo;s tweets you want to follow. <br />
+Values: A list of any valid Twitter user&rsquo;s screen names.</p>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/twitter/</code></pre></div>
