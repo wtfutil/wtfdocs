@@ -2,7 +2,7 @@
 title: "Rollbar"
 date: 2019-02-13T14:36:08-04:00
 draft: false
-weight: 240
+weight: 202
 ---
 
 <img class="screenshot" src="/imgs/modules/rollbar.png" width="640" height="187" alt="rollbar screenshot" />

@@ -259,6 +259,13 @@
 	"content": " Displays information about the current power source.\nFor battery, also displays the current charge, estimated time remaining, and whether it is charging or discharging.\nConfiguration power:enabled:trueposition:top:5left:0height:2width:1refreshInterval:15 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nSource Code wtf/power/"
 },
 {
+	"uri": "https://wtfutil.com/modules/rollbar/",
+	"title": "Rollbar",
+	"tags": [],
+	"description": "",
+	"content": " Displays item information for your rollbar account.\nKeyboard Commands Key: [return] Action: Open the selected item in the browser.\nKey: j Action: Select the next item in the list.\nKey: k Action: Select the previous item in the list.\nKey: r Action: Refresh the data.\nKey: ↓ Action: Select the next item in the list.\nKey: ↑ Action: Select the previous item in the list.\nConfiguration rollbar:accessToken:\u0026#34;abjsdfoia7sdg8fy7g\u0026#34;enabled:trueprojectOwner:\u0026#34;ENCOM\u0026#34;projectName:\u0026#34;MCP\u0026#34;activeOnly:trueassignedToName:\u0026#34;dillinger\u0026#34;count:3position:top:4left:1height:2width:2refreshInterval:900 Attributes accessToken Value: Your Rollbar project access token(Only needs read capabilities).\nenabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nprojectOwner This is used to create a link to the item Values: A string of project owners name.\nprojectName This is used to create a link to the item Values: A string of the projects name\nactiveOnly Only show items that are active Values: true, false.\nassignedToName Set this to your username if you only want to see items assigned to you Values: A string of your user_name\ncount How many items you want to see. 100 is max Values: A positive integer, 0..100.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nSource Code wtf/rollbar/"
+},
+{
 	"uri": "https://wtfutil.com/modules/security/",
 	"title": "Security",
 	"tags": [],
@@ -292,13 +299,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Added in v0.0.11.\nDisplays all items on specified project.\nKeyboard Commands Key: h Action: Show the previous project.\nKey: ← Action: Show the previous project.\nKey: l Action: Show the next project.\nKey: → Action: Show the next project.\nKey: j Action: Select the next item in the list.\nKey: ↓ Action: Select the next item in the list.\nKey: k Action: Select the previous item in the list.\nKey: ↑ Action: Select the previous item in the list.\nKey: c Action: Close current item.\nKey: d Action: Delete current item.\nKey: r Action: Reload all projects.\nConfiguration todoist:apiKey:\u0026#34;3276d7155dd9ee27b8b14f8743a408a9\u0026#34;enabled:trueposition:top:0left:2height:1width:1projects:-122247497refreshInterval:3600 Attributes apiKey Value: Your Todoist API token.\nenabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Where in the grid this module\u0026rsquo;s widget will be displayed. focusChar Define one of the number keys as a short cut key to access the widget. projects The todoist projects to fetch items from. Values: The integer ID of the project.\nrefreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nSource Code wtf/todoist/"
-},
-{
-	"uri": "https://wtfutil.com/modules/rollbar/",
-	"title": "Rollbar",
-	"tags": [],
-	"description": "",
-	"content": " Displays item information for your rollbar account.\nKeyboard Commands Key: [return] Action: Open the selected item in the browser.\nKey: j Action: Select the next item in the list.\nKey: k Action: Select the previous item in the list.\nKey: r Action: Refresh the data.\nKey: ↓ Action: Select the next item in the list.\nKey: ↑ Action: Select the previous item in the list.\nConfiguration rollbar:accessToken:\u0026#34;abjsdfoia7sdg8fy7g\u0026#34;enabled:trueprojectOwner:\u0026#34;ENCOM\u0026#34;projectName:\u0026#34;MCP\u0026#34;activeOnly:trueassignedToName:\u0026#34;dillinger\u0026#34;count:3position:top:4left:1height:2width:2refreshInterval:900 Attributes accessToken Value: Your Rollbar project access token(Only needs read capabilities).\nenabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nprojectOwner This is used to create a link to the item Values: A string of project owners name.\nprojectName This is used to create a link to the item Values: A string of the projects name\nactiveOnly Only show items that are active Values: true, false.\nassignedToName Set this to your username if you only want to see items assigned to you Values: A string of your user_name\ncount How many items you want to see. 100 is max Values: A positive integer, 0..100.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nSource Code wtf/rollbar/"
 },
 {
 	"uri": "https://wtfutil.com/modules/resourceusage/",

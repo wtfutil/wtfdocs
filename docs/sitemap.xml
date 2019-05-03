@@ -188,6 +188,11 @@
   </url>
   
   <url>
+    <loc>https://wtfutil.com/modules/rollbar/</loc>
+    <lastmod>2019-02-13T14:36:08-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wtfutil.com/modules/security/</loc>
     <lastmod>2018-05-08T20:33:28-07:00</lastmod>
   </url>
@@ -210,11 +215,6 @@
   <url>
     <loc>https://wtfutil.com/modules/todoist/</loc>
     <lastmod>2018-07-05T22:55:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wtfutil.com/modules/rollbar/</loc>
-    <lastmod>2019-02-13T14:36:08-04:00</lastmod>
   </url>
   
   <url>
