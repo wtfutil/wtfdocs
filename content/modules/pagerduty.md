@@ -20,6 +20,8 @@ pagerDuty:
     left: 3
     height: 1
     width: 2
+  showIncidents: true
+  showSchedules: true
 ```
 
 ### Attributes
@@ -40,6 +42,14 @@ Defines where in the grid this module's widget will be displayed. <br />
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+`showIncidents` <br />
+Whether or not to list incidents. <br />
+Values: true or false
+
+`showSchedules` <br />
+Whether or not to show schedules. <br />
+Values: true or false
 
 ## Source Code
 

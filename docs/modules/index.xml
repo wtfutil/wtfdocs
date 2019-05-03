@@ -90,19 +90,6 @@ position Defines where in the grid this module&amp;rsquo;s widget will be displa
     </item>
     
     <item>
-      <title>Pagerduty</title>
-      <link>https://wtfutil.com/modules/pagerduty/</link>
-      <pubDate>Sat, 18 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://wtfutil.com/modules/pagerduty/</guid>
-      <description>Connects to the Pagerduty API and shows schedules
-Configuration pagerDuty:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;enabled:trueescalationFilter:-&amp;lt;Schedulesyoucareabout&amp;gt; position:top:4left:3height:1width:2 Attributes apiKey Value: Your PagerDuty API key.
-escalationFilter Array of schedules you want to filter on.
-enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.
-position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0.</description>
-    </item>
-    
-    <item>
       <title>Gerrit</title>
       <link>https://wtfutil.com/modules/gerrit/</link>
       <pubDate>Wed, 27 Jun 2018 15:55:42 -0700</pubDate>
@@ -295,6 +282,19 @@ Configuration opsgenie:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;
 displayEmpty Whether schedules with no assigned person on-call should be displayed. Values: true, false.
 enabled Whether or not this module is executed and if its data displayed onscreen. Values: true, false.
 position Where in the grid this module&amp;rsquo;s widget will be displayed.</description>
+    </item>
+    
+    <item>
+      <title>Pagerduty</title>
+      <link>https://wtfutil.com/modules/pagerduty/</link>
+      <pubDate>Sat, 18 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://wtfutil.com/modules/pagerduty/</guid>
+      <description>Connects to the Pagerduty API and shows schedules
+Configuration pagerDuty:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;enabled:trueescalationFilter:-&amp;lt;Schedulesyoucareabout&amp;gt; position:top:4left:3height:1width:2showIncidents:trueshowSchedules:true Attributes apiKey Value: Your PagerDuty API key.
+escalationFilter Array of schedules you want to filter on.
+enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.
+position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0.</description>
     </item>
     
     <item>

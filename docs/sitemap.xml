@@ -108,11 +108,6 @@
   </url>
   
   <url>
-    <loc>https://wtfutil.com/modules/pagerduty/</loc>
-    <lastmod>2018-08-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wtfutil.com/modules/gerrit/</loc>
     <lastmod>2018-06-27T15:55:42-07:00</lastmod>
   </url>
@@ -185,6 +180,11 @@
   <url>
     <loc>https://wtfutil.com/modules/opsgenie/</loc>
     <lastmod>2018-05-08T20:53:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/modules/pagerduty/</loc>
+    <lastmod>2018-08-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>

@@ -147,13 +147,6 @@
 	"content": " Connects to the Datadog API and displays alerting modules.\nConfiguration datadog:apiKey:\u0026#34;\u0026lt;yourapikey\u0026gt;\u0026#34;applicationKey:\u0026#34;\u0026lt;yourapplicationkey\u0026gt;\u0026#34;enabled:truemonitors:tags:-\u0026#34;team:ops\u0026#34;position:top:4left:3height:1width:2 Attributes apiKey Value: Your Datadog API key.\napplicationKey Value: Your Datadog Application key.\nmonitors Configuration for the monitors functionality.\ntags Array of tags you want to query monitors by.\nenabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nSource Code wtf/datadog/"
 },
 {
-	"uri": "https://wtfutil.com/modules/pagerduty/",
-	"title": "Pagerduty",
-	"tags": [],
-	"description": "",
-	"content": " Connects to the Pagerduty API and shows schedules\nConfiguration pagerDuty:apiKey:\u0026#34;\u0026lt;yourapikey\u0026gt;\u0026#34;enabled:trueescalationFilter:-\u0026lt;Schedulesyoucareabout\u0026gt; position:top:4left:3height:1width:2 Attributes apiKey Value: Your PagerDuty API key.\nescalationFilter Array of schedules you want to filter on.\nenabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nSource Code wtf/pagerduty/"
-},
-{
 	"uri": "https://wtfutil.com/modules/gerrit/",
 	"title": "Gerrit",
 	"tags": [],
@@ -257,6 +250,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Connects to the OpsGenie API and displays all your scheduled rotations and who\u0026rsquo;s currently on call.\nConfiguration opsgenie:apiKey:\u0026#34;3276d7155dd9ee27b8b14f8743a408a9\u0026#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600schedule:scheduleIdentifierType: Attributes apiKey \u0026lt; br /\u0026gt; Value: Your OpsGenie API token.\ndisplayEmpty Whether schedules with no assigned person on-call should be displayed. Values: true, false.\nenabled Whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Where in the grid this module\u0026rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nschedule scheduleIdentifierType Source Code wtf/opsgenie/"
+},
+{
+	"uri": "https://wtfutil.com/modules/pagerduty/",
+	"title": "Pagerduty",
+	"tags": [],
+	"description": "",
+	"content": " Connects to the Pagerduty API and shows schedules\nConfiguration pagerDuty:apiKey:\u0026#34;\u0026lt;yourapikey\u0026gt;\u0026#34;enabled:trueescalationFilter:-\u0026lt;Schedulesyoucareabout\u0026gt; position:top:4left:3height:1width:2showIncidents:trueshowSchedules:true Attributes apiKey Value: Your PagerDuty API key.\nescalationFilter Array of schedules you want to filter on.\nenabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nshowIncidents Whether or not to list incidents. Values: true or false\nshowSchedules Whether or not to show schedules. Values: true or false\nSource Code wtf/pagerduty/"
 },
 {
 	"uri": "https://wtfutil.com/modules/power/",

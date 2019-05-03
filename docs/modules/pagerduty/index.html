@@ -200,13 +200,6 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/pagerduty/" class="dd-item active">
-        <div>
-          <a href="/modules/pagerduty/">
-            Pagerduty
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/modules/gerrit/" class="dd-item">
         <div>
           <a href="/modules/gerrit/">
@@ -339,6 +332,13 @@
         <div>
           <a href="/modules/opsgenie/">
             OpsGenie
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/pagerduty/" class="dd-item active">
+        <div>
+          <a href="/modules/pagerduty/">
+            Pagerduty
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -479,7 +479,6 @@
   - 
    Crypo Currencies</option>
       <option value="/modules/datadog/" >- Datadog</option>
-      <option value="/modules/pagerduty/"  selected>- Pagerduty</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
       <option value="/modules/git/" >- Git</option>
       <option value="/modules/github/" >- GitHub</option>
@@ -499,6 +498,7 @@
       <option value="/modules/nbascore/" >- NBA Score</option>
       <option value="/modules/newrelic/" >- New Relic</option>
       <option value="/modules/opsgenie/" >- OpsGenie</option>
+      <option value="/modules/pagerduty/"  selected>- Pagerduty</option>
       <option value="/modules/power/" >- Power</option>
       <option value="/modules/security/" >- Security</option>
       <option value="/modules/spotify/" >- Spotify</option>
@@ -555,7 +555,9 @@
 </span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
 </span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span></code></pre></div>
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span>showIncidents<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>showSchedules<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
 <h3 id="attributes">Attributes</h3>
 
 <p><code>apiKey</code> <br />
@@ -575,6 +577,14 @@ Defines where in the grid this module&rsquo;s widget will be displayed. <br /></
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, <code>0..n</code>.</p>
 
+<p><code>showIncidents</code> <br />
+Whether or not to list incidents. <br />
+Values: true or false</p>
+
+<p><code>showSchedules</code> <br />
+Whether or not to show schedules. <br />
+Values: true or false</p>
+
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/pagerduty/</code></pre></div>
 
@@ -582,8 +592,8 @@ Values: A positive integer, <code>0..n</code>.</p>
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/modules/datadog/" title="Datadog"> <i class="fa fa-chevron-left"></i><label>Datadog</label></a>
-    <a class="nav nav-next" href="/modules/gerrit/" title="Gerrit" style="margin-right: 0px;"><label>Gerrit</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/opsgenie/" title="OpsGenie"> <i class="fa fa-chevron-left"></i><label>OpsGenie</label></a>
+    <a class="nav nav-next" href="/modules/power/" title="Power" style="margin-right: 0px;"><label>Power</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
