@@ -259,6 +259,13 @@
 	"content": " Displays information about the current power source.\nFor battery, also displays the current charge, estimated time remaining, and whether it is charging or discharging.\nConfiguration power:enabled:trueposition:top:5left:0height:2width:1refreshInterval:15 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nSource Code wtf/power/"
 },
 {
+	"uri": "https://wtfutil.com/modules/resourceusage/",
+	"title": "Resource Usage",
+	"tags": [],
+	"description": "",
+	"content": " Added in v0.4.1.\nDisplays cpu and memory usage.\nConfiguration resourceusage:enabled:trueposition:top:1left:1height:1width:1refreshInterval:1 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nSource Code wtf/resourceusage/"
+},
+{
 	"uri": "https://wtfutil.com/modules/rollbar/",
 	"title": "Rollbar",
 	"tags": [],
@@ -299,13 +306,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Added in v0.0.11.\nDisplays all items on specified project.\nKeyboard Commands Key: h Action: Show the previous project.\nKey: ← Action: Show the previous project.\nKey: l Action: Show the next project.\nKey: → Action: Show the next project.\nKey: j Action: Select the next item in the list.\nKey: ↓ Action: Select the next item in the list.\nKey: k Action: Select the previous item in the list.\nKey: ↑ Action: Select the previous item in the list.\nKey: c Action: Close current item.\nKey: d Action: Delete current item.\nKey: r Action: Reload all projects.\nConfiguration todoist:apiKey:\u0026#34;3276d7155dd9ee27b8b14f8743a408a9\u0026#34;enabled:trueposition:top:0left:2height:1width:1projects:-122247497refreshInterval:3600 Attributes apiKey Value: Your Todoist API token.\nenabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Where in the grid this module\u0026rsquo;s widget will be displayed. focusChar Define one of the number keys as a short cut key to access the widget. projects The todoist projects to fetch items from. Values: The integer ID of the project.\nrefreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nSource Code wtf/todoist/"
-},
-{
-	"uri": "https://wtfutil.com/modules/resourceusage/",
-	"title": "Resource Usage",
-	"tags": [],
-	"description": "",
-	"content": " Added in v0.4.1.\nDisplays cpu and memory usage.\nConfiguration resourceusage:enabled:trueposition:top:1left:1height:1width:1refreshInterval:1 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.\nSource Code wtf/resourceusage/"
 },
 {
 	"uri": "https://wtfutil.com/modules/travisci/",

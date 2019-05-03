@@ -2,7 +2,7 @@
 title: "Resource Usage"
 date: 2018-11-12T14:36:08-04:00
 draft: false
-weight: 240
+weight: 190
 ---
 
 <img class="screenshot" src="/imgs/modules/resource_usage.png" width="279" height="193" alt="resource usage screenshot" />
