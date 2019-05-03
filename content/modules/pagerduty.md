@@ -2,7 +2,7 @@
 title: "Pagerduty"
 date: 2018-08-18T00:00:00Z
 draft: false
-weight: 60
+weight: 175
 ---
 
 Connects to the Pagerduty API and shows schedules
