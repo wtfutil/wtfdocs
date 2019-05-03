@@ -12,19 +12,6 @@
     
     
     <item>
-      <title>VictorOps OnCall</title>
-      <link>https://wtfutil.com/modules/victorops/</link>
-      <pubDate>Sun, 20 Jan 2019 00:28:41 -0800</pubDate>
-      
-      <guid>https://wtfutil.com/modules/victorops/</guid>
-      <description>Connects to the VictorOps API and determines who is on call
-Configuration victorops:apiID:a3c5dd63apiKey:3276d7155dd9ee27b8b14f8743a408a9enabled:trueposition:top:0left:1height:2width:1refreshInterval:3600team:devops Attributes apiID Value: Your VictorOps API ID token.
-apiKey Value: Your VictorOps API Key token.
-enabled Whether or not this module is executed and if its data displayed onscreen. Values: true, false.
-position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: Any positive integer, 0.</description>
-    </item>
-    
-    <item>
       <title>BambooHR</title>
       <link>https://wtfutil.com/modules/bamboohr/</link>
       <pubDate>Mon, 07 May 2018 20:17:37 -0700</pubDate>
@@ -447,6 +434,19 @@ NOTE: This only works for single-application developer accounts for now.
 To make this work, you&amp;rsquo;ll need a couple of things:
  A Twitter developer account A Twitter bearer token.  Once you have your developer account, a relatively painless way to get a bearer token is to use TBT.
 Keyboard Commands Key: / Action: Open/close the widget&amp;rsquo;s help window.</description>
+    </item>
+    
+    <item>
+      <title>VictorOps OnCall</title>
+      <link>https://wtfutil.com/modules/victorops/</link>
+      <pubDate>Sun, 20 Jan 2019 00:28:41 -0800</pubDate>
+      
+      <guid>https://wtfutil.com/modules/victorops/</guid>
+      <description>Connects to the VictorOps API and determines who is on call
+Configuration victorops:apiID:a3c5dd63apiKey:3276d7155dd9ee27b8b14f8743a408a9enabled:trueposition:top:0left:1height:2width:1refreshInterval:3600team:devops Attributes apiID Value: Your VictorOps API ID token.
+apiKey Value: Your VictorOps API Key token.
+enabled Whether or not this module is executed and if its data displayed onscreen. Values: true, false.
+position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: Any positive integer, 0.</description>
     </item>
     
     <item>

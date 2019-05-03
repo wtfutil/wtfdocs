@@ -23,11 +23,6 @@
   </url>
   
   <url>
-    <loc>https://wtfutil.com/modules/victorops/</loc>
-    <lastmod>2019-01-20T00:28:41-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wtfutil.com/modules/cryptocurrencies/blockfolio/</loc>
     <lastmod>2018-06-13T09:29:59-07:00</lastmod>
   </url>
@@ -240,6 +235,11 @@
   <url>
     <loc>https://wtfutil.com/modules/twitter/</loc>
     <lastmod>2018-07-31T20:21:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/modules/victorops/</loc>
+    <lastmod>2019-01-20T00:28:41-08:00</lastmod>
   </url>
   
   <url>
