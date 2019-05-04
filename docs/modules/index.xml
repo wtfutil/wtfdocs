@@ -265,10 +265,10 @@ enabled Determines whether or not this module is executed and if its data displa
       
       <guid>https://wtfutil.com/modules/opsgenie/</guid>
       <description>Connects to the OpsGenie API and displays all your scheduled rotations and who&amp;rsquo;s currently on call.
-Configuration opsgenie:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600schedule:scheduleIdentifierType: Attributes apiKey &amp;lt; br /&amp;gt; Value: Your OpsGenie API token.
+See Who is on Call API for details.
+Configuration Single Schedule opsgenie:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600schedule:&amp;#34;Primary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34; Multiple Schedules opsgenie:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600schedule:-&amp;#34;Primary&amp;#34;-&amp;#34;Secondary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34; Attributes apiKey &amp;lt; br /&amp;gt; Value: Your OpsGenie API token.
 displayEmpty Whether schedules with no assigned person on-call should be displayed. Values: true, false.
-enabled Whether or not this module is executed and if its data displayed onscreen. Values: true, false.
-position Where in the grid this module&amp;rsquo;s widget will be displayed.</description>
+enabled Whether or not this module is executed and if its data displayed onscreen. Values: true, false.</description>
     </item>
     
     <item>

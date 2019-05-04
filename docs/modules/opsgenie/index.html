@@ -548,7 +548,24 @@
 <p>Connects to the OpsGenie API and displays all your scheduled rotations
 and who&rsquo;s currently on call.</p>
 
+<p>See <a href="https://docs.opsgenie.com/docs/who-is-on-call-api">Who is on Call API</a> for details.</p>
+
 <h2 id="configuration">Configuration</h2>
+
+<h3 id="single-schedule">Single Schedule</h3>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">opsgenie<span class="p">:</span><span class="w">
+</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
+</span><span class="w">  </span>displayEmpty<span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>position<span class="p">:</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">21600</span><span class="w">
+</span><span class="w">  </span>schedule<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Primary&#34;</span><span class="w">
+</span><span class="w">  </span>scheduleIdentifierType<span class="p">:</span><span class="w"> </span><span class="s2">&#34;id&#34;</span></code></pre></div>
+<h3 id="multiple-schedules">Multiple Schedules</h3>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">opsgenie<span class="p">:</span><span class="w">
 </span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
 </span><span class="w">  </span>displayEmpty<span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
@@ -560,7 +577,9 @@ and who&rsquo;s currently on call.</p>
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">21600</span><span class="w">
 </span><span class="w">  </span>schedule<span class="p">:</span><span class="w">
-</span><span class="w">  </span>scheduleIdentifierType<span class="p">:</span></code></pre></div>
+</span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;Primary&#34;</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;Secondary&#34;</span><span class="w">
+</span><span class="w">  </span>scheduleIdentifierType<span class="p">:</span><span class="w"> </span><span class="s2">&#34;id&#34;</span></code></pre></div>
 <h3 id="attributes">Attributes</h3>
 
 <p><code>apiKey</code> &lt; br /&gt;
@@ -581,9 +600,12 @@ Where in the grid this module&rsquo;s widget will be displayed. <br /></p>
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, <code>0..n</code>.</p>
 
-<p><code>schedule</code> <br /></p>
+<p><code>schedule</code> <br />
+The name or list of names of the schedule(s) to retrieve. <br /></p>
 
-<p><code>scheduleIdentifierType</code> <br /></p>
+<p><code>scheduleIdentifierType</code> <br />
+Type of the schedule identifier. <br />
+Values: <code>id</code> or <code>name</code>.</p>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/opsgenie/</code></pre></div>
