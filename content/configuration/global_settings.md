@@ -1,11 +1,11 @@
 ---
-title: "Attributes"
+title: "Global Settings"
 date: 2018-05-16T21:51:23-07:00
 draft: false
 weight: 5
 ---
 
-The following top-level attributes are configurable in `config.yml`.
+The following top-level global attributes are configurable in `config.yml`.
 See this <a href="https://github.com/wtfutil/wtf/blob/master/_sample_configs/simple_config.yml">example config file</a> for more details.
 
 ```yaml

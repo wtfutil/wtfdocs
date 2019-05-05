@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.55.2" />
-<title>Weather Services :: WTF - the terminal dashboard</title>
+<title>Global Settings :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 
     
   </head>
-  <body data-url="/modules/weather_services/">
+  <body data-url="/configuration/global_settings/">
     
       <header>
   <div class="logo">
@@ -100,13 +100,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/configuration/" class="dd-item haschildren
+    <li data-nav-id="/configuration/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/configuration/">Configuration</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/configuration/">Configuration</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/configuration/global_settings/" class="dd-item">
+      <li data-nav-id="/configuration/global_settings/" class="dd-item active">
         <div>
           <a href="/configuration/global_settings/">
             Global Settings
@@ -122,11 +123,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item parent haschildren
+    <li data-nav-id="/modules/" class="dd-item haschildren
         ">
       <div>
-      <a href="/modules/">Modules</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/">Modules</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/modules/bamboohr/" class="dd-item">
@@ -419,11 +419,10 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-    <li data-nav-id="/modules/weather_services/" class="dd-item parent active haschildren
+    <li data-nav-id="/modules/weather_services/" class="dd-item haschildren
         ">
       <div>
-      <a href="/modules/weather_services/">Weather Services</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/weather_services/">Weather Services</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/modules/weather_services/prettyweather/" class="dd-item">
@@ -468,57 +467,12 @@
     <option value="/getting_started/" >
    Getting Started</option>
     <option value="/configuration/" >
-   Configuration</option>
+   Configuration</option> 
+      <option value="/configuration/global_settings/"  selected>- Global Settings</option>
+      <option value="/configuration/grid_layout/" >- Grid Layout</option>
+  
     <option value="/modules/" >
-   Modules</option> 
-      <option value="/modules/bamboohr/" >- BambooHR</option>
-      <option value="/modules/circleci/" >- CircleCI</option>
-      <option value="/modules/clocks/" >- Clocks</option>
-      <option value="/modules/cmdrunner/" >- CmdRunner</option>
-    <option value="/modules/cryptocurrencies/" >
-  - 
-   Crypo Currencies</option>
-      <option value="/modules/datadog/" >- Datadog</option>
-      <option value="/modules/gerrit/" >- Gerrit</option>
-      <option value="/modules/git/" >- Git</option>
-      <option value="/modules/github/" >- GitHub</option>
-      <option value="/modules/gitlab/" >- GitLab</option>
-      <option value="/modules/gitter/" >- Gitter</option>
-    <option value="/modules/google/" >
-  - 
-   Google Apps</option>
-      <option value="/modules/hackernews/" >- Hacker News</option>
-    <option value="/modules/ipaddress/" >
-  - 
-   IP Addresses</option>
-      <option value="/modules/jenkins/" >- Jenkins</option>
-      <option value="/modules/jira/" >- Jira</option>
-      <option value="/modules/logger/" >- Logger</option>
-      <option value="/modules/mercurial/" >- Mercurial</option>
-      <option value="/modules/nbascore/" >- NBA Score</option>
-      <option value="/modules/newrelic/" >- New Relic</option>
-      <option value="/modules/opsgenie/" >- OpsGenie</option>
-      <option value="/modules/pagerduty/" >- Pagerduty</option>
-      <option value="/modules/power/" >- Power</option>
-      <option value="/modules/resourceusage/" >- Resource Usage</option>
-      <option value="/modules/rollbar/" >- Rollbar</option>
-      <option value="/modules/security/" >- Security</option>
-      <option value="/modules/spotify/" >- Spotify</option>
-      <option value="/modules/textfile/" >- Textfile</option>
-      <option value="/modules/todo/" >- Todo</option>
-      <option value="/modules/todoist/" >- Todoist</option>
-      <option value="/modules/travisci/" >- TravisCI</option>
-      <option value="/modules/trello/" >- Trello</option>
-      <option value="/modules/twitter/" >- Twitter</option>
-      <option value="/modules/victorops/" >- VictorOps OnCall</option>
-    <option value="/modules/weather_services/"  selected>
-  - 
-   Weather Services</option> 
-      <option value="/modules/weather_services/prettyweather/" >-- Pretty Weather</option>
-      <option value="/modules/weather_services/weather/" >-- Weather</option>
-  
-      <option value="/modules/zendesk/" >- Zendesk</option>
-  
+   Modules</option>
 
 
 
@@ -541,32 +495,94 @@
       </div>
     
 
-    <h1>Weather Services</h1>
+    <h1>Global Settings</h1>
     
     
     
+    
 
-<p>For all modules weather-related.</p>
+<p>The following top-level global attributes are configurable in <code>config.yml</code>.
+See this <a href="https://github.com/wtfutil/wtf/blob/master/_sample_configs/simple_config.yml">example config file</a> for more details.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">wtf<span class="p">:</span><span class="w">
+</span><span class="w">  </span>colors<span class="p">:</span><span class="w">
+</span><span class="w">    </span>background<span class="p">:</span><span class="w"> </span><span class="s2">&#34;red&#34;</span><span class="w">
+</span><span class="w">    </span>border<span class="p">:</span><span class="w">
+</span><span class="w">      </span>focusable<span class="p">:</span><span class="w"> </span><span class="s2">&#34;darkslateblue&#34;</span><span class="w">
+</span><span class="w">      </span>focused<span class="p">:</span><span class="w"> </span><span class="s2">&#34;orange&#34;</span><span class="w">
+</span><span class="w">      </span>normal<span class="p">:</span><span class="w"> </span><span class="s2">&#34;gray&#34;</span><span class="w">
+</span><span class="w">  </span>grid<span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="c"># How _wide_ the columns are, in terminal characters. In this case we have</span><span class="w">
+</span><span class="w">    </span><span class="c"># six columns, each of which are 35 characters wide</span><span class="w">
+</span><span class="w">    </span>columns<span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">]</span><span class="w">
+</span><span class="w">
+</span><span class="w">    </span><span class="c"># How _high_ the rows are, in terminal lines. In this case we have five rows</span><span class="w">
+</span><span class="w">    </span><span class="c"># that support ten line of text, one of three lines, and one of four</span><span class="w">
+</span><span class="w">    </span>rows<span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">]</span><span class="w">
+</span><span class="w">  </span>openFileUtil<span class="p">:</span><span class="w"> </span>open<span class="w">      </span><span class="c"># the name of the utility to call to open files</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">      </span><span class="c"># the app refreshes once per second</span><span class="w">
+</span><span class="w">  </span>term<span class="p">:</span><span class="w"> </span><span class="s2">&#34;xterm-256color&#34;</span></code></pre></div>
+<h3 id="attributes">Attributes</h3>
 
-<ul class="children children-li">
+<p><code>colors.background</code> <br />
+The color to draw the background of the app in. Use this to match your
+terminal colors. May be over-written by individual module
+configurations. <br />
+Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
+color name</a>.</p>
 
-<span><li>
-        <a href="/modules/weather_services/prettyweather/" >Pretty Weather</a></li>
-</span>
+<p><code>colors.border.focusable</code> <br />
+The color in which to draw the border of widgets that can accept
+keyboard focus. <br />
+Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
+color name</a>.</p>
 
-<span><li>
-        <a href="/modules/weather_services/weather/" >Weather</a></li>
-</span>
-</ul>
+<p><code>colors.border.focused</code> <br />
+The color in which to draw the border of the widget that currently has
+keyboard focus. <br />
+Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
+color name</a>.</p>
 
+<p><code>colors.border.normal</code> <br />
+The color in which to draw the borders of the widgets that cannot accept
+focus. <br/>
+Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
+color name</a>.</p>
+
+<p><code>grid.columns</code> <br />
+An array that defines the widths of all the columns. <br />
+Values: See <a href="https://github.com/rivo/tview/wiki/Grid">tview&rsquo;s
+Grid</a> for details.</p>
+
+<p><code>grid.rows</code> <br />
+An array that defines the heights of all the rows. <br />
+Values: See <a href="https://github.com/rivo/tview/wiki/Grid">tview&rsquo;s
+Grid</a> for details.</p>
+
+<p><code>openFileUtil</code> <br />
+Command to use to open a file or URL</p>
+
+<p><code>refreshInterval</code> <br />
+How often, in seconds, the UI refreshes itself. <br />
+<strong>Note:</strong> This implementation is probably wrong and buggy and likely to
+change. <br />
+Values: A positive integer, <code>0..n</code>.</p>
+
+<p><code>term</code> <br />
+<em>Optional</em>. <br />
+Sets a custom value for the terminal type this app runs in. Leave this entry out of the config if you simply want to use your terminal&rsquo;s
+default setting. <br />
+<strong>Note:</strong> If an invalid value is provided for this setting, the app will
+ crash with a <code>&quot;terminal entry not found&quot;</code> error. <br />
+Values: Any valid terminal type (ie: vt100, xterm, xterm-256color, ansi,
+etc.).</p>
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/modules/victorops/" title="VictorOps OnCall"> <i class="fa fa-chevron-left"></i><label>VictorOps OnCall</label></a>
-    <a class="nav nav-next" href="/modules/weather_services/prettyweather/" title="Pretty Weather" style="margin-right: 0px;"><label>Pretty Weather</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/configuration/" title="Configuration"> <i class="fa fa-chevron-left"></i><label>Configuration</label></a>
+    <a class="nav nav-next" href="/configuration/grid_layout/" title="Grid Layout" style="margin-right: 0px;"><label>Grid Layout</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -581,7 +597,7 @@
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 07/05/2018
+        <i class='fa fa-calendar'></i> Last update on 16/05/2018
     </div>
     
   </div>

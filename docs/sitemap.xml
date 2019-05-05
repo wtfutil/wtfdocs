@@ -13,13 +13,18 @@
   </url>
   
   <url>
-    <loc>https://wtfutil.com/configuration/attributes/</loc>
+    <loc>https://wtfutil.com/configuration/global_settings/</loc>
     <lastmod>2018-05-16T21:51:23-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://wtfutil.com/configuration/</loc>
     <lastmod>2018-04-15T21:17:16-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/configuration/grid_layout/</loc>
+    <lastmod>2019-05-05T12:01:04-07:00</lastmod>
   </url>
   
   <url>
@@ -35,11 +40,6 @@
   <url>
     <loc>https://wtfutil.com/modules/weather_services/prettyweather/</loc>
     <lastmod>2018-06-02T05:32:04-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wtfutil.com/configuration/iterm2/</loc>
-    <lastmod>2018-05-24T09:57:40-07:00</lastmod>
   </url>
   
   <url>
