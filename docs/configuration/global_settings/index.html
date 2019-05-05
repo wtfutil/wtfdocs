@@ -510,6 +510,12 @@ See this <a href="https://github.com/wtfutil/wtf/blob/master/_sample_configs/sim
 </span><span class="w">      </span>focusable<span class="p">:</span><span class="w"> </span><span class="s2">&#34;darkslateblue&#34;</span><span class="w">
 </span><span class="w">      </span>focused<span class="p">:</span><span class="w"> </span><span class="s2">&#34;orange&#34;</span><span class="w">
 </span><span class="w">      </span>normal<span class="p">:</span><span class="w"> </span><span class="s2">&#34;gray&#34;</span><span class="w">
+</span><span class="w">    </span>checked<span class="p">:</span><span class="w"> </span><span class="s2">&#34;gray&#34;</span><span class="w">
+</span><span class="w">    </span>highlight<span class="p">:</span><span class="w">
+</span><span class="w">      </span>fore<span class="p">:</span><span class="w"> </span><span class="s2">&#34;black&#34;</span><span class="w">
+</span><span class="w">      </span>back<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
+</span><span class="w">    </span>text<span class="p">:</span><span class="w"> </span><span class="s2">&#34;white&#34;</span><span class="w">
+</span><span class="w">    </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;white&#34;</span><span class="w">
 </span><span class="w">  </span>grid<span class="p">:</span><span class="w">
 </span><span class="w">    </span><span class="c"># How _wide_ the columns are, in terminal characters. In this case we have</span><span class="w">
 </span><span class="w">    </span><span class="c"># six columns, each of which are 35 characters wide</span><span class="w">
@@ -518,8 +524,16 @@ See this <a href="https://github.com/wtfutil/wtf/blob/master/_sample_configs/sim
 </span><span class="w">    </span><span class="c"># How _high_ the rows are, in terminal lines. In this case we have five rows</span><span class="w">
 </span><span class="w">    </span><span class="c"># that support ten line of text, one of three lines, and one of four</span><span class="w">
 </span><span class="w">    </span>rows<span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">]</span><span class="w">
-</span><span class="w">  </span>openFileUtil<span class="p">:</span><span class="w"> </span>open<span class="w">      </span><span class="c"># the name of the utility to call to open files</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">      </span><span class="c"># the app refreshes once per second</span><span class="w">
+</span><span class="w">  </span>navigation<span class="p">:</span><span class="w">
+</span><span class="w">    </span>shortcuts<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>openFileUtil<span class="p">:</span><span class="w"> </span><span class="s2">&#34;open&#34;</span><span class="w">
+</span><span class="w">  </span>sigils<span class="p">:</span><span class="w">
+</span><span class="w">    </span>checkbox<span class="p">:</span><span class="w">
+</span><span class="w">      </span>checked<span class="p">:</span><span class="w"> </span><span class="s2">&#34;x&#34;</span><span class="w">
+</span><span class="w">      </span>unchecked<span class="p">:</span><span class="w"> </span><span class="s2">&#34; &#34;</span><span class="w">
+</span><span class="w">    </span>paging<span class="p">:</span><span class="w">
+</span><span class="w">      </span>normal<span class="p">:</span><span class="w"> </span><span class="s2">&#34;*&#34;</span><span class="w">
+</span><span class="w">      </span>selected<span class="p">:</span><span class="w"> </span><span class="s2">&#34;_&#34;</span><span class="w">
 </span><span class="w">  </span>term<span class="p">:</span><span class="w"> </span><span class="s2">&#34;xterm-256color&#34;</span></code></pre></div>
 <h3 id="attributes">Attributes</h3>
 
@@ -559,13 +573,7 @@ Values: See <a href="https://github.com/rivo/tview/wiki/Grid">tview&rsquo;s
 Grid</a> for details.</p>
 
 <p><code>openFileUtil</code> <br />
-Command to use to open a file or URL</p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, the UI refreshes itself. <br />
-<strong>Note:</strong> This implementation is probably wrong and buggy and likely to
-change. <br />
-Values: A positive integer, <code>0..n</code>.</p>
+Which local utility to use to open a file or URL.</p>
 
 <p><code>term</code> <br />
 <em>Optional</em>. <br />

@@ -16,6 +16,12 @@ wtf:
       focusable: "darkslateblue"
       focused: "orange"
       normal: "gray"
+    checked: "gray"
+    highlight:
+      fore: "black"
+      back: "green"
+    text: "white"
+    title: "white"
   grid:
     # How _wide_ the columns are, in terminal characters. In this case we have
     # six columns, each of which are 35 characters wide
@@ -24,8 +30,16 @@ wtf:
     # How _high_ the rows are, in terminal lines. In this case we have five rows
     # that support ten line of text, one of three lines, and one of four
     rows: [10, 10, 10, 10, 10, 3, 4]
-  openFileUtil: open      # the name of the utility to call to open files
-  refreshInterval: 1      # the app refreshes once per second
+  navigation:
+    shortcuts: true
+  openFileUtil: "open"
+  sigils:
+    checkbox:
+      checked: "x"
+      unchecked: " "
+    paging:
+      normal: "*"
+      selected: "_"
   term: "xterm-256color"
 ```
 
@@ -67,13 +81,7 @@ Values: See <a href="https://github.com/rivo/tview/wiki/Grid">tview's
 Grid</a> for details.
 
 `openFileUtil` <br />
-Command to use to open a file or URL
-
-`refreshInterval` <br />
-How often, in seconds, the UI refreshes itself. <br />
-**Note:** This implementation is probably wrong and buggy and likely to
-change. <br />
-Values: A positive integer, `0..n`.
+Which local utility to use to open a file or URL.
 
 `term` <br />
 _Optional_. <br />
