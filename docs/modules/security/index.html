@@ -565,7 +565,7 @@ connection, firewall, DNS settings, and logged-in users.</p>
 <h4 id="dns">DNS</h4>
 
 <ul class="list-ornate">
-<li>Which <a hre="https://developers.cloudflare.com/1.1.1.1/what-is-1.1.1.1/">DNS resolvers</a> (servers) the machine is configured to use</li>
+<li>Which <a href="https://developers.cloudflare.com/1.1.1.1/what-is-1.1.1.1/">DNS resolvers</a> (servers) the machine is configured to use</li>
 </ul>
 
 <h4 id="users">Users</h4>
@@ -596,6 +596,30 @@ Defines where in the grid this module&rsquo;s widget will be displayed. <br /></
 <p><code>refreshInterval</code> <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, <code>0..n</code>.</p>
+
+<h2 id="for-linux-firewall-users">For Linux Firewall Users</h2>
+
+<p>For most Linux distributions, to get the correct firewall settings by default, the program needs to be run as root.
+This is obviously a bad idea. Here&rsquo;s is one potetial solution:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo visudo -f /etc/sudoers.d/ufwstatus
+
+<span class="c1"># Then add the following to that file:</span>
+
+<span class="c1"># We need to add the &#34;full&#34; command as alias:</span>
+Cmnd_Alias      <span class="nv">UFWSTATUS</span> <span class="o">=</span> /usr/sbin/ufw status
+
+<span class="c1"># Group privilege specification</span>
+%ufwstatus      <span class="nv">ALL</span><span class="o">=</span>NOPASSWD: UFWSTATUS</code></pre></div>
+<p>Now run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Add new group: &#34;ufwstatus&#34;</span>
+sudo groupadd -r ufwstatus
+
+<span class="c1"># Add the username (here &#34;xxxx&#34;) to the &#34;ufwstatus&#34; group</span>
+sudo gpasswd --add xxxx ufwstatus
+
+<span class="c1"># We add all &#34;root&#34; user sbin paths for convenience</span>
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="si">${</span><span class="nv">PATH</span><span class="si">}</span>:/usr/local/sbin:/usr/sbin:/sbin</code></pre></div>
+<p>Thanks to <a href="https://github.com/E3V3A">@E3V3A</a> for <a href="">Security Widget gives wrong firewall info for non-root linux users</a> which described the original issue and solution.</p>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/security/</code></pre></div>

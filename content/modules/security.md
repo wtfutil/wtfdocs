@@ -27,7 +27,7 @@ connection, firewall, DNS settings, and logged-in users.
 #### DNS
 
 <ul class="list-ornate">
-<li>Which <a hre="https://developers.cloudflare.com/1.1.1.1/what-is-1.1.1.1/">DNS resolvers</a> (servers) the machine is configured to use</li>
+<li>Which <a href="https://developers.cloudflare.com/1.1.1.1/what-is-1.1.1.1/">DNS resolvers</a> (servers) the machine is configured to use</li>
 </ul>
 
 #### Users
@@ -62,6 +62,36 @@ Defines where in the grid this module's widget will be displayed. <br />
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+## For Linux Firewall Users
+
+For most Linux distributions, to get the correct firewall settings by default, the program needs to be run as root. 
+This is obviously a bad idea. Here's is one potetial solution:
+
+```bash
+sudo visudo -f /etc/sudoers.d/ufwstatus
+
+# Then add the following to that file:
+
+# We need to add the "full" command as alias:
+Cmnd_Alias      UFWSTATUS = /usr/sbin/ufw status
+
+# Group privilege specification
+%ufwstatus      ALL=NOPASSWD: UFWSTATUS
+```
+Now run:
+```bash
+# Add new group: "ufwstatus"
+sudo groupadd -r ufwstatus
+
+# Add the username (here "xxxx") to the "ufwstatus" group
+sudo gpasswd --add xxxx ufwstatus
+
+# We add all "root" user sbin paths for convenience
+export PATH=${PATH}:/usr/local/sbin:/usr/sbin:/sbin
+```
+
+Thanks to [@E3V3A](https://github.com/E3V3A) for <a href="">Security Widget gives wrong firewall info for non-root linux users</a> which described the original issue and solution.
 
 ## Source Code
 
