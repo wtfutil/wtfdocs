@@ -15,7 +15,7 @@ monitored application: deploy ID, deploy time, and who deployed it.
 ```yaml
 newrelic:
   apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
-  applicationId: 10549735
+  applicationID: 10549735
   deployCount: 6
   enabled: true
   position:
