@@ -10,7 +10,7 @@ Connects to the Pagerduty API and shows schedules
 ## Configuration
 
 ```yaml
-pagerDuty:
+pagerduty:
   apiKey: "<yourapikey>"
   enabled: true
   escalationFilter:
@@ -35,6 +35,8 @@ Array of schedules you want to filter on.
 `enabled` <br />
 Determines whether or not this module is executed and if its data displayed onscreen. <br />
 Values: `true`, `false`.
+
+`escalationFilter` <br />
 
 `position` <br />
 Defines where in the grid this module's widget will be displayed. <br />
