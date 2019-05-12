@@ -14,12 +14,15 @@ pagerduty:
   apiKey: "<yourapikey>"
   enabled: true
   escalationFilter:
-    - <Schedules you care about>
+  - "client-eng"
   position:
     top: 4
     left: 3
     height: 1
     width: 2
+  scheduleIDs:
+  - "R2D24CD"
+  - "C3P05MF"
   showIncidents: true
   showSchedules: true
 ```
@@ -29,14 +32,12 @@ pagerduty:
 `apiKey` <br />
 Value: Your <a href="https://v2.developer.pagerduty.com/docs/authentication">PagerDuty API</a> key.
 
-`escalationFilter` <br />
-Array of schedules you want to filter on.
-
 `enabled` <br />
 Determines whether or not this module is executed and if its data displayed onscreen. <br />
 Values: `true`, `false`.
 
 `escalationFilter` <br />
+An array of schedule names you want to filter on. 
 
 `position` <br />
 Defines where in the grid this module's widget will be displayed. <br />
@@ -44,6 +45,9 @@ Defines where in the grid this module's widget will be displayed. <br />
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+`scheduleIDs` <br />
+An array of schedule IDs you want to restrict the query to.>
 
 `showIncidents` <br />
 Whether or not to list incidents. <br />

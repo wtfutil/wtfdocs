@@ -550,12 +550,15 @@
 </span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;yourapikey&gt;&#34;</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>escalationFilter<span class="p">:</span><span class="w">
-</span><span class="w">    </span>-<span class="w"> </span>&lt;Schedules<span class="w"> </span>you<span class="w"> </span>care<span class="w"> </span>about<span class="sd">&gt;
-</span><span class="sd">  position:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;client-eng&#34;</span><span class="w">
+</span><span class="w">  </span>position<span class="p">:</span><span class="w">
 </span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
 </span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span>scheduleIDs<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;R2D24CD&#34;</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;C3P05MF&#34;</span><span class="w">
 </span><span class="w">  </span>showIncidents<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>showSchedules<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
 <h3 id="attributes">Attributes</h3>
@@ -563,14 +566,12 @@
 <p><code>apiKey</code> <br />
 Value: Your <a href="https://v2.developer.pagerduty.com/docs/authentication">PagerDuty API</a> key.</p>
 
-<p><code>escalationFilter</code> <br />
-Array of schedules you want to filter on.</p>
-
 <p><code>enabled</code> <br />
 Determines whether or not this module is executed and if its data displayed onscreen. <br />
 Values: <code>true</code>, <code>false</code>.</p>
 
-<p><code>escalationFilter</code> <br /></p>
+<p><code>escalationFilter</code> <br />
+An array of schedule names you want to filter on.</p>
 
 <p><code>position</code> <br />
 Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
@@ -578,6 +579,9 @@ Defines where in the grid this module&rsquo;s widget will be displayed. <br /></
 <p><code>refreshInterval</code> <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, <code>0..n</code>.</p>
+
+<p><code>scheduleIDs</code> <br />
+An array of schedule IDs you want to restrict the query to.&gt;</p>
 
 <p><code>showIncidents</code> <br />
 Whether or not to list incidents. <br />

@@ -278,10 +278,10 @@ enabled Whether or not this module is executed and if its data displayed onscree
       
       <guid>https://wtfutil.com/modules/pagerduty/</guid>
       <description>Connects to the Pagerduty API and shows schedules
-Configuration pagerduty:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;enabled:trueescalationFilter:-&amp;lt;Schedulesyoucareabout&amp;gt; position:top:4left:3height:1width:2showIncidents:trueshowSchedules:true Attributes apiKey Value: Your PagerDuty API key.
-escalationFilter Array of schedules you want to filter on.
+Configuration pagerduty:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;enabled:trueescalationFilter:-&amp;#34;client-eng&amp;#34;position:top:4left:3height:1width:2scheduleIDs:-&amp;#34;R2D24CD&amp;#34;-&amp;#34;C3P05MF&amp;#34;showIncidents:trueshowSchedules:true Attributes apiKey Value: Your PagerDuty API key.
 enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.
-escalationFilter position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0.</description>
+escalationFilter An array of schedule names you want to filter on.
+position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0.</description>
     </item>
     
     <item>
