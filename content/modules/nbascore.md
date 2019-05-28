@@ -24,7 +24,7 @@ Displays NBA game scores.
 ## Configuration
 
 ```yaml
-spotify:
+nbascore:
   enabled: true
   position:
     top: 1
