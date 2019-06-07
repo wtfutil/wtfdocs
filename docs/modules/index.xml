@@ -115,11 +115,11 @@ Key: h Action: Show the previous git repository.</description>
       <description>Displays information about your git repositories hosted on GitHub:
 Open Review Requests All open code review requests assigned to you.
 Open Pull Requests All open pull requests created by you.
+Custom Queries Create filters to manage PRs and issues however you like.
 Keyboard Commands Key: / Action: Open/close the widget&amp;rsquo;s help window.
 Key: h Action: Show the previous git repository.
 Key: l Action: Show the next git repository.
-Key: ← Action: Show the previous git repository.
-Key: → Action: Show the next git repository.</description>
+Key: ← Action: Show the previous git repository.</description>
     </item>
     
     <item>

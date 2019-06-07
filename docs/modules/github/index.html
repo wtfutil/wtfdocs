@@ -555,6 +555,10 @@
 
 <p>All open pull requests created by you.</p>
 
+<h4 id="custom-queries">Custom Queries</h4>
+
+<p>Create filters to manage PRs and issues however you like.</p>
+
 <h2 id="keyboard-commands">Keyboard Commands</h2>
 
 <p><span class="caption">Key:</span> <code>/</code> <br />
@@ -579,6 +583,10 @@
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">github<span class="p">:</span><span class="w">
 </span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
 </span><span class="w">  </span>baseURL<span class="p">:</span><span class="w"> </span><span class="s2">&#34;&#34;</span><span class="w">
+</span><span class="w">  </span>customQueries<span class="p">:</span><span class="w">
+</span><span class="w">    </span>othersPRs<span class="p">:</span><span class="w">
+</span><span class="w">      </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Others Pull Requests&#34;</span><span class="w">
+</span><span class="w">      </span>filter<span class="p">:</span><span class="w"> </span><span class="s2">&#34;is:open is:pr&#34;</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>enableStatus<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
@@ -633,6 +641,27 @@ Value: Your <a href="https://developer.github.com/enterprise/2.13/v3/enterprise-
 <p><code>username</code> <br />
 Your GitHub username. Used to figure out which review requests you&rsquo;ve
 been added to.</p>
+
+<h2 id="custom-query-examples">Custom Query Examples</h2>
+
+<p>Custom queries allow you to filter pull requests and issues however you like. Give the query a
+title and a filter. Filters can be copied directly from GitHub&rsquo;s UI.</p>
+
+<pre><code>customQueries:
+  othersPRs:
+    # Displays pull requests that are not assigned to you
+    title: &quot;Others Pull Requests&quot;
+    filter: &quot;is:open is:pr -author:[your github username]&quot;
+  openIssues:
+    # Displays issues that are assigned to you
+    title: &quot;My Issues&quot;
+    filter: &quot;is:issue state:open author:[your github username]&quot;
+  otherIssues:
+    # Displays issues not assigned to you, order by their updated_at date
+    perPage: 10
+    title: &quot;Others Issues&quot;
+    filter: &quot;is:issue state:open -author:[your github username] sort:updated-desc&quot;
+</code></pre>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/github/</code></pre></div>

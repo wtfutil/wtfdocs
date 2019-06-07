@@ -17,6 +17,10 @@ All open code review requests assigned to you.
 
 All open pull requests created by you.
 
+#### Custom Queries
+
+Create filters to manage PRs and issues however you like.
+
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `/` <br />
@@ -43,6 +47,10 @@ All open pull requests created by you.
 github:
   apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
   baseURL: ""
+  customQueries:
+    othersPRs:
+      title: "Others Pull Requests"
+      filter: "is:open is:pr"
   enabled: true
   enableStatus: true
   position:
@@ -99,6 +107,28 @@ Value: Your <a href="https://developer.github.com/enterprise/2.13/v3/enterprise-
 `username` <br />
 Your GitHub username. Used to figure out which review requests you've
 been added to.
+
+## Custom Query Examples
+
+Custom queries allow you to filter pull requests and issues however you like. Give the query a 
+title and a filter. Filters can be copied directly from GitHub's UI.
+
+```
+customQueries:
+  othersPRs:
+    # Displays pull requests that are not assigned to you
+    title: "Others Pull Requests"
+    filter: "is:open is:pr -author:[your github username]"
+  openIssues:
+    # Displays issues that are assigned to you
+    title: "My Issues"
+    filter: "is:issue state:open author:[your github username]"
+  otherIssues:
+    # Displays issues not assigned to you, order by their updated_at date
+    perPage: 10
+    title: "Others Issues"
+    filter: "is:issue state:open -author:[your github username] sort:updated-desc"
+```
 
 ## Source Code
 
