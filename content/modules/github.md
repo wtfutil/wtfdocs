@@ -50,7 +50,7 @@ github:
   customQueries:
     othersPRs:
       title: "Others Pull Requests"
-      filter: "is:open is:pr"
+      filter: "is:open is:pr -author:wtfutil"
   enabled: true
   enableStatus: true
   position:
