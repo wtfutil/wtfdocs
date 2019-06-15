@@ -512,7 +512,7 @@ position Defines where in the grid this module&amp;rsquo;s widget will be displa
       <description>Displays the contents of the specified text file in the widget.
 Keyboard Commands Key: / Action: Open/close the widget&amp;rsquo;s help window.
 Key: o Action: Opens the text file in whichever text editor is associated with that file type.
-Configuration textfile:enabled:truefilePaths:-&amp;#34;~/Desktop/notes.md&amp;#34;-&amp;#34;~/.config/wtf/config.yml&amp;#34;format:trueformatStyle:&amp;#34;dracula&amp;#34;position:top:5left:4height:2width:1refreshInterval:15 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.
+Configuration textfile:enabled:truefilePaths:-&amp;#34;~/Desktop/notes.md&amp;#34;-&amp;#34;~/.config/wtf/config.yml&amp;#34;format:trueformatStyle:&amp;#34;dracula&amp;#34;position:top:5left:4height:2width:1refreshInterval:15wrapText:true Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.
 filePaths An array of paths to the files to be displayed in the widget.</description>
     </item>
     

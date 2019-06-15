@@ -33,6 +33,7 @@ textfile:
     height: 2
     width: 1
   refreshInterval: 15
+  wrapText: true
 ```
 
 ### Attributes
@@ -64,6 +65,10 @@ Define one of the number keys as a short cut key to access the widget. <br />
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
+
+`wrapText` <br />
+Whether to wrap the text when it hits the widget boundary or not.
+Values: `true`, `false`.
 
 ## Source Code
 
