@@ -5,11 +5,9 @@ draft: false
 weight: 123
 ---
 
-Added in `v0.1.2`.
+<img class="screenshot" src="/imgs/modules/hackernews.png" width="320" height="76" alt="hackernews screenshot" />
 
 Displays stories from Hacker News.
-
-<img src="/imgs/modules/hackernews.png" width="843" height="201" alt="hackernews screenshot" />
 
 ## Keyboard Commands
 
@@ -49,7 +47,7 @@ hackernews:
 ### Attributes
 
 `enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
+Whether or not this module is executed and if its data displayed onscreen. <br />
 Values: `true`, `false`.
 
 `numberOfStories` <br />

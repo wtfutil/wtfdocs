@@ -162,15 +162,26 @@ enabled Determines whether or not this module is executed and if its data displa
       <pubDate>Thu, 02 Aug 2018 16:36:08 -0400</pubDate>
       
       <guid>https://wtfutil.com/modules/hackernews/</guid>
-      <description>Added in v0.1.2.
-Displays stories from Hacker News.
+      <description>Displays stories from Hacker News.
 Keyboard Commands Key: [return] Action: Open the selected story in the browser.
 Key: j Action: Select the next story in the list.
 Key: k Action: Select the previous story in the list.
 Key: r Action: Refresh the data.
 Key: ↓ Action: Select the next story in the list.
 Key: ↑ Action: Select the previous story in the list.
-Configuration hackernews:enabled:truenumberOfStories:10position:top:4left:1height:1width:2storyType:toprefreshInterval:900 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration hackernews:enabled:truenumberOfStories:10position:top:4left:1height:1width:2storyType:toprefreshInterval:900 Attributes enabled Whether or not this module is executed and if its data displayed onscreen.</description>
+    </item>
+    
+    <item>
+      <title>Have I Been Pwned (HIBP)</title>
+      <link>https://wtfutil.com/modules/hibp/</link>
+      <pubDate>Sat, 22 Jun 2019 15:47:08 -0400</pubDate>
+      
+      <guid>https://wtfutil.com/modules/hibp/</guid>
+      <description>Indicates whether or not your listed email addresses appear in the Have I Been Pwned breach database.
+Configuration hibp:accounts:-test@example.com-pwned@gmail.comcolors:ok:&amp;#34;green&amp;#34;pwned:&amp;#34;red&amp;#34;enabled:trueposition:top:4left:1height:1width:2refreshInterval:43200since:&amp;#34;2019-06-22&amp;#34; Attributes accounts A list of the accounts to check the HIBP database for.
+colors Optional The colors to display for accounts that have not been pwned and ones that have. Defaults to &amp;ldquo;white&amp;rdquo; for unpwned accounts, &amp;ldquo;red&amp;rdquo; for pwned accounts.
+enabled Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>

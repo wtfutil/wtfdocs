@@ -5,7 +5,7 @@ draft: false
 weight: 140
 ---
 
-<img class="screenshot" src="/imgs/modules/jira.png" width="640" height="188" alt="jira screenshot" />
+<img class="screenshot" src="/imgs/modules/jira.png" width="320" height="94" alt="jira screenshot" />
 
 Displays all Jira issues assigned to you for the specified project.
 
