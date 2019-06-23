@@ -368,7 +368,7 @@
 	"title": "WTF",
 	"tags": [],
 	"description": "",
-	"content": "WTF WTF is a personal information dashboard for your terminal, developed for those who spend most of their day in the command line.\nIt allows you to monitor systems, services, and important information that you otherwise might keep browser tabs open for, the kinds of things you don\u0026rsquo;t always need visible, but do check in on every now and then.\nKeep an eye on your OpsGenie schedules, Google Calendar, Git and GitHub repositories, and New Relic deployments.\nSee who\u0026rsquo;s away in BambooHR, which Jira tickets are assigned to you, and what time it is in Barcelona.\nIt even has weather. And clocks. And emoji.\n"
+	"content": " WTF WTF is a personal information dashboard for your terminal, developed for those who spend most of their day in the command line.\nIt allows you to monitor systems, services, and important information that you otherwise might keep browser tabs open for, the kinds of things you don\u0026rsquo;t always need visible, but do check in on every now and then.\nKeep an eye on your OpsGenie schedules, Google Calendar, Git and GitHub repositories, and New Relic deployments.\nSee who\u0026rsquo;s away in BambooHR, which Jira tickets are assigned to you, and what time it is in Barcelona.\nIt even has weather. And clocks. And emoji.\nSponsorship WTF is and always will be free and open-source. However your sponsorship of this project is greatly appreciated and will fund the caffeine and pizzas that fuel its development.\nTo sponsor WTF, just click the button below.\nBecome a Patron!\n"
 },
 {
 	"uri": "https://wtfutil.com/getting_started/installation/",

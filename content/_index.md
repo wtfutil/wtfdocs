@@ -18,3 +18,11 @@ Keep an eye on your **OpsGenie** schedules, **Google Calendar**, **Git** and **G
 See who's away in **BambooHR**, which **Jira** tickets are assigned to you, and what time it is in Barcelona.
 
 It even has weather. And clocks. And emoji.
+
+### Sponsorship
+
+WTF is and always will be free and open-source. However your sponsorship of this project is greatly appreciated and will fund the caffeine and pizzas that fuel its development.
+
+To sponsor WTF, just click the button below.
+
+<a href="https://www.patreon.com/bePatron?u=21477577" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
