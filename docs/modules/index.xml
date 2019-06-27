@@ -406,6 +406,21 @@ Key: k Action: Select the previous item in the list.</description>
     </item>
     
     <item>
+      <title>Transmission</title>
+      <link>https://wtfutil.com/modules/transmission/</link>
+      <pubDate>Tue, 25 Jun 2019 23:56:08 -0400</pubDate>
+      
+      <guid>https://wtfutil.com/modules/transmission/</guid>
+      <description>View and manage your Transmission bittorrent daemon. This widget shows you the currently-loaded torrents, their &amp;ldquo;download complete&amp;rdquo; percentage, and their seeding status.
+Keyboard Commands Key: [return] Action: Pause/unpause the selected torrent.
+Key: j Action: Select the next torrent in the list.
+Key: k Action: Select the previous torrent in the list.
+Key: r Action: Refresh the data.
+Key: ↓ Action: Select the next torrent in the list.
+Key: ↑ Action: Select the previous torrent in the list.</description>
+    </item>
+    
+    <item>
       <title>TravisCI</title>
       <link>https://wtfutil.com/modules/travisci/</link>
       <pubDate>Wed, 18 Jul 2018 14:36:08 -0400</pubDate>

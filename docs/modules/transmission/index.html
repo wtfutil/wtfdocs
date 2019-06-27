@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.55.2" />
-<title>404 Page not found :: WTF - the terminal dashboard</title>
+<title>Transmission :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 
     
   </head>
-  <body data-url="/404.html">
+  <body data-url="/modules/transmission/">
     
       <header>
   <div class="logo">
@@ -122,10 +122,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item haschildren
+    <li data-nav-id="/modules/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/modules/">Modules</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/">Modules</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/modules/bamboohr/" class="dd-item">
@@ -397,7 +398,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/transmission/" class="dd-item">
+      <li data-nav-id="/modules/transmission/" class="dd-item active">
         <div>
           <a href="/modules/transmission/">
             Transmission
@@ -482,7 +483,54 @@
     <option value="/configuration/" >
    Configuration</option>
     <option value="/modules/" >
-   Modules</option>
+   Modules</option> 
+      <option value="/modules/bamboohr/" >- BambooHR</option>
+      <option value="/modules/circleci/" >- CircleCI</option>
+      <option value="/modules/clocks/" >- Clocks</option>
+      <option value="/modules/cmdrunner/" >- CmdRunner</option>
+    <option value="/modules/cryptocurrencies/" >
+  - 
+   Crypo Currencies</option>
+      <option value="/modules/datadog/" >- Datadog</option>
+      <option value="/modules/gerrit/" >- Gerrit</option>
+      <option value="/modules/git/" >- Git</option>
+      <option value="/modules/github/" >- GitHub</option>
+      <option value="/modules/gitlab/" >- GitLab</option>
+      <option value="/modules/gitter/" >- Gitter</option>
+    <option value="/modules/google/" >
+  - 
+   Google Apps</option>
+      <option value="/modules/hackernews/" >- Hacker News</option>
+      <option value="/modules/hibp/" >- Have I Been Pwned (HIBP)</option>
+    <option value="/modules/ipaddress/" >
+  - 
+   IP Addresses</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
+      <option value="/modules/jira/" >- Jira</option>
+      <option value="/modules/logger/" >- Logger</option>
+      <option value="/modules/mercurial/" >- Mercurial</option>
+      <option value="/modules/nbascore/" >- NBA Score</option>
+      <option value="/modules/newrelic/" >- New Relic</option>
+      <option value="/modules/opsgenie/" >- OpsGenie</option>
+      <option value="/modules/pagerduty/" >- Pagerduty</option>
+      <option value="/modules/power/" >- Power</option>
+      <option value="/modules/resourceusage/" >- Resource Usage</option>
+      <option value="/modules/rollbar/" >- Rollbar</option>
+      <option value="/modules/security/" >- Security</option>
+      <option value="/modules/spotify/" >- Spotify</option>
+      <option value="/modules/textfile/" >- Textfile</option>
+      <option value="/modules/todo/" >- Todo</option>
+      <option value="/modules/todoist/" >- Todoist</option>
+      <option value="/modules/transmission/"  selected>- Transmission</option>
+      <option value="/modules/travisci/" >- TravisCI</option>
+      <option value="/modules/trello/" >- Trello</option>
+      <option value="/modules/twitter/" >- Twitter</option>
+      <option value="/modules/victorops/" >- VictorOps OnCall</option>
+    <option value="/modules/weather_services/" >
+  - 
+   Weather Services</option>
+      <option value="/modules/zendesk/" >- Zendesk</option>
+  
 
 
 
@@ -505,21 +553,83 @@
       </div>
     
 
-    <h1>404 Page not found</h1>
+    <h1>Transmission</h1>
     
     
-	<h1>Error</h1>
-	<p>
-	</p>
-	<p>Woops. Looks like this page doesn&#39;t exist.</p>
-	<p></p>
-	<p><a href="https://wtfutil.com/">Go to homepage</a></p>
-	<p><img src="/images/gopher-404.jpg" style="width:50%"></img></p>    
+    
+    
+
+<p><img class="screenshot" src="/imgs/modules/transmission.png" width="320" height="190" alt="transmission screenshot" /></p>
+
+<p>View and manage your <a href="https://transmissionbt.com">Transmission</a> bittorrent daemon. This widget shows you the currently-loaded
+torrents, their &ldquo;download complete&rdquo; percentage, and their seeding status.</p>
+
+<h2 id="keyboard-commands">Keyboard Commands</h2>
+
+<p><span class="caption">Key:</span> <code>[return]</code> <br />
+<span class="caption">Action:</span> Pause/unpause the selected torrent.</p>
+
+<p><span class="caption">Key:</span> <code>j</code> <br />
+<span class="caption">Action:</span> Select the next torrent in the list.</p>
+
+<p><span class="caption">Key:</span> <code>k</code> <br />
+<span class="caption">Action:</span> Select the previous torrent in the list.</p>
+
+<p><span class="caption">Key:</span> <code>r</code> <br />
+<span class="caption">Action:</span> Refresh the data.</p>
+
+<p><span class="caption">Key:</span> <code>↓</code> <br />
+<span class="caption">Action:</span> Select the next torrent in the list.</p>
+
+<p><span class="caption">Key:</span> <code>↑</code> <br />
+<span class="caption">Action:</span> Select the previous torrent in the list.</p>
+
+<p><span class="caption">Key:</span> <code>Ctrl-d</code> <br />
+<span class="caption">Action:</span> Delete the selected torrent. This is a non-destructive operation. It removes the torrent from Transmission, it does not remove files from the file system.</p>
+
+<h2 id="configuration">Configuration</h2>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">transmission<span class="p">:</span><span class="w">
+</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>host<span class="p">:</span><span class="w"> </span><span class="s2">&#34;192.168.1.5&#34;</span><span class="w">
+</span><span class="w">  </span>password<span class="p">:</span><span class="w"> </span><span class="s2">&#34;passwordpassword&#34;</span><span class="w">
+</span><span class="w">  </span>position<span class="p">:</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">  </span>username<span class="p">:</span><span class="w"> </span><span class="s2">&#34;transmission&#34;</span></code></pre></div>
+<h3 id="attributes">Attributes</h3>
+
+<p><code>enabled</code> <br />
+Determines whether or not this module is executed and if its data displayed onscreen. <br />
+Values: <code>true</code>, <code>false</code>.</p>
+
+<p><code>host</code> <br />
+Value: The IP address of the machine that your Transmission daemon is running on.</p>
+
+<p><code>password</code> <br />
+Value: The password you use to connect to your Transmission daemon.</p>
+
+<p><code>position</code> <br />
+Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
+
+<p><code>refreshInterval</code> <br />
+How often, in seconds, this module will update its data. <br />
+Values: A positive integer, <code>0..n</code>.</p>
+
+<p><code>username</code> <br />
+Value: The username you use to connect to your Transmission daemon.</p>
+
+<h2 id="source-code">Source Code</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/transmission/</code></pre></div>
+
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-next" href="/getting_started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/todoist/" title="Todoist"> <i class="fa fa-chevron-left"></i><label>Todoist</label></a>
+    <a class="nav nav-next" href="/modules/travisci/" title="TravisCI" style="margin-right: 0px;"><label>TravisCI</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -533,6 +643,10 @@
     
 
   
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 25/06/2019
+    </div>
+    
   </div>
 
 
@@ -566,5 +680,3 @@
     
   </body>
 </html>
-
-
