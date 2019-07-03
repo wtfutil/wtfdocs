@@ -44,6 +44,11 @@ Defines where in the grid this module's widget will be displayed.
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
 
+## Examples
+
+ * [iStats](/modules/cmdrunner/istats)
+ * [Status Pages](/modules/cmdrunner/statuspages)
+
 ## Source Code
 
 ```bash
