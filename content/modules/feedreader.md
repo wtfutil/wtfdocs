@@ -1,11 +1,11 @@
 ---
-title: "Hacker News"
-date: 2018-08-02T16:36:08-04:00
+title: "Feed Reader"
+date: 2019-07-04T05:53:08-04:00
 draft: false
-weight: 123
+weight: 65
 ---
 
-<img class="screenshot" src="/imgs/modules/hackernews.png" width="320" height="76" alt="hackernews screenshot" />
+<img class="screenshot" src="/imgs/modules/feedreader.png" width="320" height="76" alt="feedreader screenshot" />
 
 Displays stories from Hacker News.
 
@@ -13,9 +13,6 @@ Displays stories from Hacker News.
 
 <span class="caption">Key:</span> `[return]` <br />
 <span class="caption">Action:</span> Open the selected story in the browser.
-
-<span class="caption">Key:</span> `c` <br />
-<span class="caption">Action:</span> Open the selected story's comments in the browser.
 
 <span class="caption">Key:</span> `j` <br />
 <span class="caption">Action:</span> Select the next story in the list.
@@ -38,16 +35,18 @@ Displays stories from Hacker News.
 ## Configuration
 
 ```yaml
-hackernews:
+feedreader:
   enabled: true
-  numberOfStories: 10
+  feeds:
+  - https://news.ycombinator.com/rss
+  - http://feeds.reuters.com/Reuters/worldNews
+  feedLimit: 10
   position:
     top: 4
     left: 1
     height: 1
     width: 2
-  storyType: top
-  refreshInterval: 900
+  refreshInterval: 14400
 ```
 
 ### Attributes
@@ -59,9 +58,13 @@ Values: `true`, `false`.
 `focusChar` <br />
 Define one of the number keys as a short cut key to access the widget. <br />
 
-`numberOfStories` <br />
+`feedLimit` <br />
 _Optional_ <br />
-Defines number of stories to be displayed. Default is `10`<br />
+Defines number of stories from each feed to be displayed. Default is `-1`, which will display all available stories.<br />
+Values: Any integer greater than zero. Values zero or less will display all.
+
+`feeds` <br />
+An array of RSS or Atom feed URLs.
 
 `position` <br />
 Defines where in the grid this module's widget will be displayed. <br />
@@ -70,13 +73,8 @@ Defines where in the grid this module's widget will be displayed. <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
 
-`storyType` <br />
-_Optional_ <br /
-Defines type of stories to be displayed. Default is `top` stories<br />
-Values: `new`, `top`, `job`, `ask`
-
 ## Source Code
 
 ```bash
-wtf/hackernews/
+wtf/feedreader/
 ```

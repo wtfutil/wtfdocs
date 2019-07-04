@@ -193,6 +193,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/modules/feedreader/" class="dd-item">
+        <div>
+          <a href="/modules/feedreader/">
+            Feed Reader
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/modules/gerrit/" class="dd-item">
         <div>
           <a href="/modules/gerrit/">
@@ -492,6 +499,7 @@
   - 
    Crypo Currencies</option>
       <option value="/modules/datadog/" >- Datadog</option>
+      <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
       <option value="/modules/git/" >- Git</option>
       <option value="/modules/github/" >- GitHub</option>
@@ -568,11 +576,17 @@
 <p><span class="caption">Key:</span> <code>[return]</code> <br />
 <span class="caption">Action:</span> Open the selected story in the browser.</p>
 
+<p><span class="caption">Key:</span> <code>c</code> <br />
+<span class="caption">Action:</span> Open the selected story&rsquo;s comments in the browser.</p>
+
 <p><span class="caption">Key:</span> <code>j</code> <br />
 <span class="caption">Action:</span> Select the next story in the list.</p>
 
 <p><span class="caption">Key:</span> <code>k</code> <br />
 <span class="caption">Action:</span> Select the previous story in the list.</p>
+
+<p><span class="caption">Key:</span> <code>o</code> <br />
+<span class="caption">Action:</span> Open the selected story in the browser.</p>
 
 <p><span class="caption">Key:</span> <code>r</code> <br />
 <span class="caption">Action:</span> Refresh the data.</p>
@@ -600,6 +614,9 @@
 Whether or not this module is executed and if its data displayed onscreen. <br />
 Values: <code>true</code>, <code>false</code>.</p>
 
+<p><code>focusChar</code> <br />
+Define one of the number keys as a short cut key to access the widget. <br /></p>
+
 <p><code>numberOfStories</code> <br />
 <em>Optional</em> <br />
 Defines number of stories to be displayed. Default is <code>10</code><br /></p>
@@ -607,17 +624,14 @@ Defines number of stories to be displayed. Default is <code>10</code><br /></p>
 <p><code>position</code> <br />
 Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
 
-<p><code>focusChar</code> <br />
-Define one of the number keys as a short cut key to access the widget. <br /></p>
+<p><code>refreshInterval</code> <br />
+How often, in seconds, this module will update its data. <br />
+Values: A positive integer, <code>0..n</code>.</p>
 
 <p><code>storyType</code> <br />
 <em>Optional</em> <br /
 Defines type of stories to be displayed. Default is `top` stories<br />
 Values: <code>new</code>, <code>top</code>, <code>job</code>, <code>ask</code></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/hackernews/</code></pre></div>
