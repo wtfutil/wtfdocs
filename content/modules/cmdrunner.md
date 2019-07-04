@@ -47,6 +47,6 @@ Values: A positive integer, `0..n`.
 ## Source Code
 
 ```bash
-wtf/cmdrunner/
+wtf/modules/cmdrunner/
 ```
 

@@ -81,5 +81,5 @@ Values: `id` or `name`.
 ## Source Code
 
 ```bash
-wtf/opsgenie/
+wtf/modules/opsgenie/
 ```

@@ -123,5 +123,5 @@ Values: `true`, `false`.
 ## Source Code
 
 ```bash
-wtf/gerrit/
+wtf/modules/gerrit/
 ```

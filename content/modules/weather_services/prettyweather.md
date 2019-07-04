@@ -59,5 +59,5 @@ Values: See `curl wttr.in/:translation` for more details.
 ## Source Code
 
 ```bash
-wtf/weatherservices/prettyweather/
+wtf/modules/weatherservices/prettyweather/
 ```

@@ -51,5 +51,5 @@ Values: A positive integer, `0..n`.
 ## Source Code
 
 ```bash
-wtf/ipinfo/
+wtf/modules/ipaddresses/ipinfo/
 ```

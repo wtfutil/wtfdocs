@@ -49,6 +49,6 @@ Values: The team slug that can be found in the URL after `/#/team/`
 ## Source Code
 
 ```bash
-wtf/victorops/
+wtf/modules/victorops/
 ```
 

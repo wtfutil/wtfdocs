@@ -73,5 +73,5 @@ Values: `true`, `false`.
 ## Source Code
 
 ```bash
-wtf/textfile/
+wtf/modules/textfile/
 ```

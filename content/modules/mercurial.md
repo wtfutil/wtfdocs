@@ -88,5 +88,5 @@ Values: A list of zero or more local file paths pointing to valid mercurial repo
 ## Source Code
 
 ```bash
-wtf/mercurial/
+wtf/modules/mercurial/
 ```

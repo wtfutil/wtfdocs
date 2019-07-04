@@ -56,3 +56,9 @@ _Optional_ Only check for breaches after this date. Set this if you've been brea
 have taken steps to mitigate that (changing passwords, cancelling accounts, etc.) and now only 
 want to know about future breaches. <br />
 Values: A date string in the format "yyyy-mm-dd", ie: "2019-06-22"
+
+## Source Code
+
+```bash
+wtf/modules/hibp/
+```

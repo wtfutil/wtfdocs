@@ -76,5 +76,5 @@ Values: A positive integer, `0..n`.
 ## Source Code
 
 ```bash
-wtf/cryptoexchanges/bittrex/
+wtf/modules/cryptoexchanges/bittrex/
 ```

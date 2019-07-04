@@ -92,5 +92,5 @@ Values: `true`, `false`.
 ## Source Code
 
 ```bash
-wtf/jenkins/
+wtf/modules/jenkins/
 ```

@@ -88,5 +88,5 @@ Values: A positive integer, `0..n`.
 ## Source Code
 
 ```bash
-wtf/rollbar/
+wtf/modules/rollbar/
 ```

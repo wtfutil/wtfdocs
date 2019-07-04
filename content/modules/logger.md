@@ -54,5 +54,5 @@ Values: A positive integer, `0..n`.
 ## Source Code
 
 ```bash
-wtf/logger/
+wtf/modules/logger/
 ```

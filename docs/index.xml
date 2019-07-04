@@ -145,7 +145,7 @@ Displays build information for your CircleCI account.
 Configuration circleci:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:4left:1height:1width:2refreshInterval:900 Attributes apiKey Value: Your CircleCI API token.
 enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.
 position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.
-Source Code wtf/circleci/</description>
+Source Code wtf/modules/circleci/</description>
     </item>
     
     <item>
@@ -486,7 +486,7 @@ position Defines where in the grid this module&amp;rsquo;s widget will be displa
 Displays cpu and memory usage.
 Configuration resourceusage:enabled:trueposition:top:1left:1height:1width:1refreshInterval:1 Attributes enabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.
 position Defines where in the grid this module&amp;rsquo;s widget will be displayed. refreshInterval How often, in seconds, this module will update its data. Values: A positive integer, 0..n.
-Source Code wtf/resourceusage/</description>
+Source Code wtf/modules/resourceusage/</description>
     </item>
     
     <item>

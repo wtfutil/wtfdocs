@@ -96,5 +96,5 @@ Thanks to [@E3V3A](https://github.com/E3V3A) for <a href="">Security Widget give
 ## Source Code
 
 ```bash
-wtf/security/
+wtf/modules/security/
 ```

@@ -94,5 +94,5 @@ Values: A positive integer, `0..n`.
 ## Source Code
 
 ```bash
-wtf/cryptoexchanges/cryptolive/
+wtf/modules/cryptoexchanges/cryptolive/
 ```

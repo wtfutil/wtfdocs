@@ -71,5 +71,5 @@ Values: A valid Zendesk username (usually an email address).
 ## Source Code
 
 ```bash
-wtf/zendesk/
+wtf/modules/zendesk/
 ```

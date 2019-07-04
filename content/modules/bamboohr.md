@@ -44,6 +44,6 @@ Value: Your <a href="https://www.bamboohr.com/api/documentation/">BambooHR API</
 ## Source Code
 
 ```bash
-wtf/bamboohr/
+wtf/modules/bamboohr/
 ```
 

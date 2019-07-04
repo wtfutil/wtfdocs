@@ -78,5 +78,5 @@ Values: `new`, `top`, `job`, `ask`
 ## Source Code
 
 ```bash
-wtf/hackernews/
+wtf/modules/hackernews/
 ```

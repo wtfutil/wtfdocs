@@ -89,5 +89,5 @@ Your GitLab username. Used to figure out which requests require your approval
 ## Source Code
 
 ```bash
-wtf/gitlab/
+wtf/modules/gitlab/
 ```

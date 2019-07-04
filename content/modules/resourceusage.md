@@ -40,5 +40,5 @@ Values: A positive integer, `0..n`.
 ## Source Code
 
 ```bash
-wtf/resourceusage/
+wtf/modules/resourceusage/
 ```

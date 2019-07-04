@@ -93,5 +93,5 @@ Values: A list of zero or more local file paths pointing to valid git repositori
 ## Source Code
 
 ```bash
-wtf/git/
+wtf/modules/git/
 ```

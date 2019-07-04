@@ -72,5 +72,5 @@ Values: A positive integer, `0..n`.
 ## Source Code
 
 ```bash
-wtf/travisci/
+wtf/modules/travisci/
 ```

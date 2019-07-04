@@ -93,5 +93,5 @@ Values: `F` for Fahrenheit, `C` for Celcius.
 ## Source Code
 
 ```bash
-wtf/weather/
+wtf/modules/weatherservices/weather/
 ```

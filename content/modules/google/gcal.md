@@ -123,5 +123,5 @@ Values: `true`, or `false`
 ## Source Code
 
 ```bash
-wtf/gcal/
+wtf/modules/google/gcal/
 ```

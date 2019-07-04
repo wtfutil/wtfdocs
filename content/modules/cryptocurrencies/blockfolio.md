@@ -64,5 +64,5 @@ Values: A positive integer, `0..n`.
 ## Source
 
 ```bash
-wtf/blockfolio/
+wtf/modules/cryptoexchanges/blockfolio/
 ```

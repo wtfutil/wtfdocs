@@ -74,5 +74,5 @@ Value: The username you use to connect to your Transmission daemon.
 ## Source Code
 
 ```bash
-wtf/transmission/
+wtf/modules/transmission/
 ```

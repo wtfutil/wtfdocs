@@ -135,5 +135,5 @@ Values: `true`, `false`.
 ## Source Code
 
 ```bash
-wtf/jira/
+wtf/modules/jira/
 ```

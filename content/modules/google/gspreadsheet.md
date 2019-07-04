@@ -61,5 +61,5 @@ Values: A string representing a file path to the JSON secret file.
 ## Source Code
 
 ```bash
-wtf/gspreadsheets/
+wtf/modules/google/gspreadsheets/
 ```

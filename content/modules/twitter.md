@@ -107,5 +107,5 @@ Values: A list of any valid Twitter user's screen names.
 ## Source Code
 
 ```bash
-wtf/twitter/
+wtf/modules/twitter/
 ```

@@ -60,5 +60,5 @@ Values: true or false
 ## Source Code
 
 ```bash
-wtf/pagerduty/
+wtf/modules/pagerduty/
 ```

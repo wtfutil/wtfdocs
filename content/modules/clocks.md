@@ -82,6 +82,6 @@ Values: Any valid Go time layout which is handled by <a href="https://golang.org
 ## Source Code
 
 ```bash
-wtf/clocks/
+wtf/modules/clocks/
 ```
 

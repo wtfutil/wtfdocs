@@ -133,5 +133,5 @@ customQueries:
 ## Source Code
 
 ```bash
-wtf/github/
+wtf/modules/github/
 ```

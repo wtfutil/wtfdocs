@@ -81,5 +81,5 @@ Where in the grid this module's widget will be displayed. <br />
 ## Source Code
 
 ```bash
-wtf/trello/
+wtf/modules/trello/
 ```
