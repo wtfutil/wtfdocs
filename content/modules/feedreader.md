@@ -5,7 +5,7 @@ draft: false
 weight: 65
 ---
 
-<img class="screenshot" src="/imgs/modules/feedreader.png" width="320" height="76" alt="feedreader screenshot" />
+<img class="screenshot" src="/imgs/modules/feedreader.png" width="320" height="94" alt="feedreader screenshot" />
 
 Displays stories from Hacker News.
 
