@@ -235,7 +235,7 @@ position Defines where in the grid this module&amp;rsquo;s widget will be displa
       <pubDate>Thu, 04 Jul 2019 05:53:08 -0400</pubDate>
       
       <guid>https://wtfutil.com/modules/feedreader/</guid>
-      <description>Displays stories from Hacker News.
+      <description>A rudimentary RSS &amp;amp; Atom feed reader.
 Keyboard Commands Key: [return] Action: Open the selected story in the browser.
 Key: j Action: Select the next story in the list.
 Key: k Action: Select the previous story in the list.

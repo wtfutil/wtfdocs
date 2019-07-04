@@ -7,7 +7,7 @@ weight: 65
 
 <img class="screenshot" src="/imgs/modules/feedreader.png" width="320" height="94" alt="feedreader screenshot" />
 
-Displays stories from Hacker News.
+A rudimentary RSS & Atom feed reader.
 
 ## Keyboard Commands
 
