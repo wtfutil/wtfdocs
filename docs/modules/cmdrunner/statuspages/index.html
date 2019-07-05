@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.55.2" />
-<title> :: WTF - the terminal dashboard</title>
+<title>Status Pages :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 
     
   </head>
-  <body data-url="/_footer/">
+  <body data-url="/modules/cmdrunner/statuspages/">
     
       <header>
   <div class="logo">
@@ -122,10 +122,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item haschildren
+    <li data-nav-id="/modules/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/modules/">Modules</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/">Modules</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/modules/bamboohr/" class="dd-item">
@@ -489,7 +490,55 @@
     <option value="/configuration/" >
    Configuration</option>
     <option value="/modules/" >
-   Modules</option>
+   Modules</option> 
+      <option value="/modules/bamboohr/" >- BambooHR</option>
+      <option value="/modules/circleci/" >- CircleCI</option>
+      <option value="/modules/clocks/" >- Clocks</option>
+      <option value="/modules/cmdrunner/" >- CmdRunner</option>
+    <option value="/modules/cryptocurrencies/" >
+  - 
+   Crypo Currencies</option>
+      <option value="/modules/datadog/" >- Datadog</option>
+      <option value="/modules/feedreader/" >- Feed Reader</option>
+      <option value="/modules/gerrit/" >- Gerrit</option>
+      <option value="/modules/git/" >- Git</option>
+      <option value="/modules/github/" >- GitHub</option>
+      <option value="/modules/gitlab/" >- GitLab</option>
+      <option value="/modules/gitter/" >- Gitter</option>
+    <option value="/modules/google/" >
+  - 
+   Google Apps</option>
+      <option value="/modules/hackernews/" >- Hacker News</option>
+      <option value="/modules/hibp/" >- Have I Been Pwned (HIBP)</option>
+    <option value="/modules/ipaddress/" >
+  - 
+   IP Addresses</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
+      <option value="/modules/jira/" >- Jira</option>
+      <option value="/modules/logger/" >- Logger</option>
+      <option value="/modules/mercurial/" >- Mercurial</option>
+      <option value="/modules/nbascore/" >- NBA Score</option>
+      <option value="/modules/newrelic/" >- New Relic</option>
+      <option value="/modules/opsgenie/" >- OpsGenie</option>
+      <option value="/modules/pagerduty/" >- Pagerduty</option>
+      <option value="/modules/power/" >- Power</option>
+      <option value="/modules/resourceusage/" >- Resource Usage</option>
+      <option value="/modules/rollbar/" >- Rollbar</option>
+      <option value="/modules/security/" >- Security</option>
+      <option value="/modules/spotify/" >- Spotify</option>
+      <option value="/modules/textfile/" >- Textfile</option>
+      <option value="/modules/todo/" >- Todo</option>
+      <option value="/modules/todoist/" >- Todoist</option>
+      <option value="/modules/transmission/" >- Transmission</option>
+      <option value="/modules/travisci/" >- TravisCI</option>
+      <option value="/modules/trello/" >- Trello</option>
+      <option value="/modules/twitter/" >- Twitter</option>
+      <option value="/modules/victorops/" >- VictorOps OnCall</option>
+    <option value="/modules/weather_services/" >
+  - 
+   Weather Services</option>
+      <option value="/modules/zendesk/" >- Zendesk</option>
+  
 
 
 
@@ -512,17 +561,42 @@
       </div>
     
 
-    <h1></h1>
+    <h1>Status Pages</h1>
     
     
     
-    
+    <p>Various services provide status apis which are accessible. For example, the
+slack status api at <code>https://status.slack.com/api/v2.0.0/current</code></p>
+
+<p>This can be accomplished with <a href="https://stedolan.github.io/jq/">jq</a> and the
+cmdrunner module.</p>
+
+<p>First, create a shell script:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/sh
+</span><span class="cp"></span>
+curl -s https://status.slack.com/api/v2.0.0/current <span class="p">|</span> <span class="se">\
+</span><span class="se"></span>  jq -r <span class="s1">&#39;&#34;Status: &#34; + (if (.status == &#34;active&#34;) then &#34;Active Incident&#34; else &#34;Ok&#34; end),&#34;Last Updated: &#34; + .date_updated,if (.active_incidents[] | length) &gt; 0 then &#34;Active Incidents\n&#34; + .active_incidents[] .title else &#34;&#34; end&#39;</span></code></pre></div>
+<p>Second, the following wtfutil config:</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">slack_status<span class="p">:</span><span class="w">
+</span><span class="w">  </span>cmd<span class="p">:</span><span class="w"> </span><span class="s2">&#34;slack_status_check.sh&#34;</span><span class="w">
+</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>type<span class="p">:</span><span class="w"> </span><span class="s2">&#34;cmdrunner&#34;</span><span class="w">
+</span><span class="w">  </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Slack Status&#34;</span><span class="w">
+</span><span class="w">  </span>position<span class="p">:</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">30</span></code></pre></div>
+<p><img class="screenshot" src="/imgs/modules/cmdrunner/slackstatus.png" alt="status screenshot" /></p>
+
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-next" href="/getting_started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/clocks/" title="Clocks"> <i class="fa fa-chevron-left"></i><label>Clocks</label></a>
+    <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypo Currencies" style="margin-right: 0px;"><label>Crypo Currencies</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -536,6 +610,10 @@
     
 
   
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 09/05/2018
+    </div>
+    
   </div>
 
 

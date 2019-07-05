@@ -191,6 +191,16 @@ dateFormat The format of the date string for all clocks. Values: Any valid Go da
     </item>
     
     <item>
+      <title>iStats</title>
+      <link>https://wtfutil.com/modules/cmdrunner/istats/</link>
+      <pubDate>Mon, 01 Jul 2019 17:17:10 -0400</pubDate>
+      
+      <guid>https://wtfutil.com/modules/cmdrunner/istats/</guid>
+      <description> iStats is a command line tool to view system stats on OSX
+Config Example istats:args:[&amp;#34;all&amp;#34;]cmd:&amp;#34;istats&amp;#34;enabled:truetype:&amp;#34;cmdrunner&amp;#34;position:top:0left:3height:2width:2refreshInterval:1</description>
+    </item>
+    
+    <item>
       <title>CmdRunner</title>
       <link>https://wtfutil.com/modules/cmdrunner/</link>
       <pubDate>Thu, 17 May 2018 17:17:10 -0700</pubDate>
@@ -273,6 +283,18 @@ Changed Files A list of all the files that have changed since the last commit, a
 Recent Commits A list of n recent commits, who committed it, and when.
 Keyboard Commands Key: / Action: Open/close the widget&amp;rsquo;s help window.
 Key: h Action: Show the previous git repository.</description>
+    </item>
+    
+    <item>
+      <title>Status Pages</title>
+      <link>https://wtfutil.com/modules/cmdrunner/statuspages/</link>
+      <pubDate>Wed, 09 May 2018 14:20:48 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/cmdrunner/statuspages/</guid>
+      <description>Various services provide status apis which are accessible. For example, the slack status api at https://status.slack.com/api/v2.0.0/current
+This can be accomplished with jq and the cmdrunner module.
+First, create a shell script:
+#!/bin/sh  curl -s https://status.slack.com/api/v2.0.0/current | \  jq -r &amp;#39;&amp;#34;Status: &amp;#34; + (if (.status == &amp;#34;active&amp;#34;) then &amp;#34;Active Incident&amp;#34; else &amp;#34;Ok&amp;#34; end),&amp;#34;Last Updated: &amp;#34; + .date_updated,if (.active_incidents[] | length) &amp;gt; 0 then &amp;#34;Active Incidents\n&amp;#34; + .active_incidents[] .title else &amp;#34;&amp;#34; end&amp;#39; Second, the following wtfutil config:</description>
     </item>
     
     <item>

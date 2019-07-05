@@ -83,6 +83,11 @@
   </url>
   
   <url>
+    <loc>https://wtfutil.com/modules/cmdrunner/istats/</loc>
+    <lastmod>2019-07-01T17:17:10-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wtfutil.com/modules/cmdrunner/</loc>
     <lastmod>2018-05-17T17:17:10-07:00</lastmod>
   </url>
@@ -114,6 +119,11 @@
   
   <url>
     <loc>https://wtfutil.com/modules/git/</loc>
+    <lastmod>2018-05-09T14:20:48-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/modules/cmdrunner/statuspages/</loc>
     <lastmod>2018-05-09T14:20:48-07:00</lastmod>
   </url>
   
