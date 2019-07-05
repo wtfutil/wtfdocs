@@ -71,10 +71,6 @@ Values: Any displayable unicode character.
 The icon displayed beside the current calendar event. <br />
 Values: Any displayable unicode character.
 
-`displayLocation` <br />
-Whether or not to display the location of the calendar event. <br />
-Values: `true`, `false`.
-
 `displayResponseStatus` <br />
 Whether or not to display your response status to the calendar event.
 <br />

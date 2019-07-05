@@ -95,10 +95,8 @@ How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
 
 `repositories` <br />
-A list of key/value pairs each describing a GitHub repository to fetch data
-for. <br />
-<span class="caption">Key:</span> The name of the repository. <br />
-<span class="caption">Value:</span> The name of the account or organization that owns the repository.
+A list of github repos to fetch data for. <br />
+Example: `wtfutil/wtf` 
 
 `uploadURL` <br />
 _Optional_ <br />
