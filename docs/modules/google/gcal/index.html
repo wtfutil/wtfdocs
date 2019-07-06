@@ -603,6 +603,7 @@
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
 </span><span class="w">  </span>secretFile<span class="p">:</span><span class="w"> </span><span class="s2">&#34;~/.config/wtf/gcal/client_secret.json&#34;</span><span class="w">
 </span><span class="w">  </span>showDeclined<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>timezone<span class="p">:</span><span class="w"> </span><span class="s2">&#34;America/Vancouver&#34;</span><span class="w">
 </span><span class="w">  </span>withLocation<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
 <h3 id="attributes">Attributes</h3>
 
@@ -651,6 +652,9 @@ Values: <code>true</code>, <code>false</code>.</p>
 The number of calendar events to display. <br />
 Values: A positive integer, <code>0..n</code>.</p>
 
+<p><code>focusChar</code> <br />
+Define one of the number keys as a short cut key to access the widget. <br /></p>
+
 <p><code>multiCalendar</code> <br />
 Whether or not to display your primary calendar or all calendars you
 have access to. <br />
@@ -658,9 +662,6 @@ Values: <code>true</code>, or <code>false</code></p>
 
 <p><code>position</code> <br />
 Where in the grid this module&rsquo;s widget will be displayed. <br /></p>
-
-<p><code>focusChar</code> <br />
-Define one of the number keys as a short cut key to access the widget. <br /></p>
 
 <p><code>refreshInterval</code> <br />
 How often, in seconds, this module will update its data. <br />
@@ -673,6 +674,10 @@ Values: A string representing a file path to the JSON secret file.</p>
 <p><code>showDeclined</code> <br />
 <em>Optional</em>. Whether or not to display events you&rsquo;ve declined to attend. <br />
 Values: <code>true</code>, or <code>false</code></p>
+
+<p><code>timezone</code> <br />
+<em>Optional</em>. The timezone to display calendar event times in. <br />
+Values: Any valid <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">TZ database name</a>.</p>
 
 <p><code>withLocation</code> <br />
 Whether or not to show the location of the appointment. <br />

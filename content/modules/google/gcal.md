@@ -39,6 +39,7 @@ gcal:
   refreshInterval: 300
   secretFile: "~/.config/wtf/gcal/client_secret.json"
   showDeclined: true
+  timezone: "America/Vancouver"
   withLocation: true
 ```
 
@@ -89,6 +90,9 @@ Values: `true`, `false`.
 The number of calendar events to display. <br />
 Values: A positive integer, `0..n`.
 
+`focusChar` <br />
+Define one of the number keys as a short cut key to access the widget. <br />
+
 `multiCalendar` <br />
 Whether or not to display your primary calendar or all calendars you
 have access to. <br />
@@ -96,9 +100,6 @@ Values: `true`, or `false`
 
 `position` <br />
 Where in the grid this module's widget will be displayed. <br />
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
 
 `refreshInterval` <br />
 How often, in seconds, this module will update its data. <br />
@@ -111,6 +112,10 @@ Values: A string representing a file path to the JSON secret file.
 `showDeclined` <br />
 _Optional_. Whether or not to display events you've declined to attend. <br />
 Values: `true`, or `false`
+
+`timezone` <br />
+_Optional_. The timezone to display calendar event times in. <br />
+Values: Any valid [TZ database name](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
 `withLocation` <br />
 Whether or not to show the location of the appointment. <br />
