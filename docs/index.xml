@@ -216,7 +216,7 @@ WTF An acronym for &amp;ldquo;What The F*ck?&amp;ldquo;, as in &amp;ldquo;what t
     </item>
     
     <item>
-      <title>Creating new modules</title>
+      <title>Creating New Modules</title>
       <link>https://wtfutil.com/getting_started/generate-module/</link>
       <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -728,6 +728,16 @@ Key: k Action: Select the previous item in the list.
 Key: ↓ Action: Scroll down the list.
 Key: ↑ Action: Scroll up the list.
 Configuration zendesk:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:0left:2height:1width:1status:&amp;#34;new&amp;#34;subdomain:&amp;#34;your_domain&amp;#34;username:&amp;#34;your_email@acme.com&amp;#34; Attributes apiKey Value: Your Zendesk API token.</description>
+    </item>
+    
+    <item>
+      <title>v0.14.0 Released</title>
+      <link>https://wtfutil.com/blog/2019-07-09-v0-14-0/</link>
+      <pubDate>Tue, 09 Jul 2019 14:41:58 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/blog/2019-07-09-v0-14-0/</guid>
+      <description> July 9, 2019  v0.14.0 contains the following changes:
+ CmdRunner module now supports custom titles FeedReader module added Cryptolive module works again gCal module now supports setting an explicit time zone via the &amp;ldquo;timezone&amp;rdquo; config attribute Misconfigured module positions in config.yaml now attempt to provide informative error messages on launch  </description>
     </item>
     
     <item>

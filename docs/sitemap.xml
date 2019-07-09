@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://wtfutil.com/blog/</loc>
+    <lastmod>2019-07-09T14:41:58-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wtfutil.com/modules/cryptocurrencies/bittrex/</loc>
     <lastmod>2018-06-04T20:06:40-07:00</lastmod>
   </url>
@@ -295,6 +300,11 @@
   <url>
     <loc>https://wtfutil.com/modules/zendesk/</loc>
     <lastmod>2018-07-23T18:55:37-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/blog/2019-07-09-v0-14-0/</loc>
+    <lastmod>2019-07-09T14:41:58-07:00</lastmod>
   </url>
   
   <url>
