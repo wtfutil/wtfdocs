@@ -44,7 +44,8 @@ rm ~/.config/wtf and that should also do it.</description>
       <description>Module A discrete unit of data collection and display. A data interface concept. A package inside the app.
 Examples: New Relic, Git, Weather.
 Widget The onscreen representation of a Module. The widget is responsible for being the interface between the app and the data collection.
-Widgets are defined by a required widget.go file in a Module.</description>
+Widgets are defined by a required widget.go file in a Module.
+WTF An acronym for &amp;ldquo;What The F*ck?&amp;ldquo;, as in &amp;ldquo;what the f*ck are all these browser tabs open for?</description>
     </item>
     
     <item>
