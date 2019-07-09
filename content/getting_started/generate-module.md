@@ -1,5 +1,5 @@
 ---
-title: "Creating new modules"
+title: "Creating New Modules"
 date: 2019-04-28
 draft: false
 weight: 30

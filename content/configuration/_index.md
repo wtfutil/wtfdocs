@@ -1,5 +1,6 @@
 ---
 title: "Configuration"
+head: "&nbsp;"
 date: 2018-04-15T21:17:16-07:00
 draft: false
 weight: 5

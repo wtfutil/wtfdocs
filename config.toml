@@ -43,17 +43,22 @@ home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
-name = "<i class='fa fa-github'></i> <label>WTF on Github</label>"
+name = "<i class='fab fa-github'>&nbsp;</i> <label>WTF on Github</label>"
 identifier = "ds"
 url = "https://github.com/wtfutil/wtf"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-cloud-download'></i> <label>Download WTF</label>"
+name = "<i class='fa fa-cloud-download-alt'></i> <label>Download WTF</label>"
 url = "https://github.com/wtfutil/wtf/releases"
-weight = 11
+weight = 20
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-bullhorn'></i> <label>Credits</label>"
 url = "https://github.com/wtfutil/wtf/blob/master/README.md#contributors"
 weight = 30
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-blog'>&nbsp;</i> <label>Blog</label>"
+url = "/blog"
+weight = 40
