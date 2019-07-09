@@ -2,6 +2,7 @@
 title: "Installation"
 date: 2018-05-18T09:59:40-07:00
 draft: false
+weight: 1
 ---
 
 ## As a Binary

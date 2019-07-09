@@ -1,7 +1,8 @@
 ---
-title: "Uninstall"
+title: "Uninstallation"
 date: 2018-01-28T09:59:40-07:00
 draft: false
+weight: 10
 ---
 
 ## Remove the Binary and Configuration

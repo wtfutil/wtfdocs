@@ -2,6 +2,7 @@
 title: "Glossary"
 date: 2018-04-17T12:34:51-07:00
 draft: false
+weight: 20
 ---
 
 ### Module

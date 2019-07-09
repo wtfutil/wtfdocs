@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://wtfutil.com/getting_started/installation/</loc>
+    <lastmod>2018-05-18T09:59:40-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wtfutil.com/modules/cryptocurrencies/bittrex/</loc>
     <lastmod>2018-06-04T20:06:40-07:00</lastmod>
   </url>
@@ -58,6 +63,11 @@
   </url>
   
   <url>
+    <loc>https://wtfutil.com/getting_started/uninstall/</loc>
+    <lastmod>2018-01-28T09:59:40-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wtfutil.com/modules/cryptocurrencies/cryptolive/</loc>
     <lastmod>2018-06-03T20:06:40-07:00</lastmod>
   </url>
@@ -75,6 +85,16 @@
   <url>
     <loc>https://wtfutil.com/modules/weather_services/weather/</loc>
     <lastmod>2018-05-09T11:44:13-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/getting_started/glossary/</loc>
+    <lastmod>2018-04-17T12:34:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/getting_started/generate-module/</loc>
+    <lastmod>2019-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -278,28 +298,8 @@
   </url>
   
   <url>
-    <loc>https://wtfutil.com/getting_started/generate-module/</loc>
-    <lastmod>2019-04-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wtfutil.com/</loc>
     <lastmod>2018-08-14T01:51:58-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wtfutil.com/getting_started/installation/</loc>
-    <lastmod>2018-05-18T09:59:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wtfutil.com/getting_started/glossary/</loc>
-    <lastmod>2018-04-17T12:34:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wtfutil.com/getting_started/uninstall/</loc>
-    <lastmod>2018-01-28T09:59:40-07:00</lastmod>
   </url>
   
   <url>

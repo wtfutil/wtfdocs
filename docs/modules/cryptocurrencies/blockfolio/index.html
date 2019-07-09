@@ -64,23 +64,24 @@
             <i class="fa fa-fw fa-home"></i>
           </a>
           </li>
-    <li data-nav-id="/getting_started/" class="dd-item haschildren
+    <li data-nav-id="/getting_started/" class="dd-item alwaysopen haschildren
         ">
       <div>
-      <a href="/getting_started/">Getting Started</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/getting_started/">Getting Started</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/getting_started/generate-module/" class="dd-item">
-        <div>
-          <a href="/getting_started/generate-module/">
-            Generate new modules
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/getting_started/installation/" class="dd-item">
         <div>
           <a href="/getting_started/installation/">
             Installation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/getting_started/uninstall/" class="dd-item">
+        <div>
+          <a href="/getting_started/uninstall/">
+            Uninstallation
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -91,19 +92,20 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/getting_started/uninstall/" class="dd-item">
+      <li data-nav-id="/getting_started/generate-module/" class="dd-item">
         <div>
-          <a href="/getting_started/uninstall/">
-            Uninstall
+          <a href="/getting_started/generate-module/">
+            Creating new modules
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
         </ul>
     </li>
-    <li data-nav-id="/configuration/" class="dd-item haschildren
+    <li data-nav-id="/configuration/" class="dd-item alwaysopen haschildren
         ">
       <div>
-      <a href="/configuration/">Configuration</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/configuration/">Configuration</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/configuration/global_settings/" class="dd-item">
@@ -122,7 +124,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item parent haschildren
+    <li data-nav-id="/modules/" class="dd-item parent alwaysopen haschildren
         ">
       <div>
       <a href="/modules/">Modules</a>
@@ -487,9 +489,17 @@
         <select onchange="javascript:location.href = this.value;">
           
     <option value="/getting_started/" >
-   Getting Started</option>
+   Getting Started</option> 
+      <option value="/getting_started/installation/" >- Installation</option>
+      <option value="/getting_started/uninstall/" >- Uninstallation</option>
+      <option value="/getting_started/glossary/" >- Glossary</option>
+      <option value="/getting_started/generate-module/" >- Creating new modules</option>
+  
     <option value="/configuration/" >
-   Configuration</option>
+   Configuration</option> 
+      <option value="/configuration/global_settings/" >- Global Settings</option>
+      <option value="/configuration/grid_layout/" >- Grid Layout</option>
+  
     <option value="/modules/" >
    Modules</option> 
       <option value="/modules/bamboohr/" >- BambooHR</option>
