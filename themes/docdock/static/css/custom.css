@@ -18,9 +18,18 @@
   cursor: pointer !important;
 }
 
+.blog-post a {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-top: 4px;
+}
+
+.blog-post .blog-date {
+  color: rgb(100, 100, 100) !important;
+}
+
 a.highlight {
   border-bottom: none !important;
-  padding-left: 6px !important;
 }
 
 code {

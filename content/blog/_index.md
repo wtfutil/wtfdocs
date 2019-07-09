@@ -1,5 +1,5 @@
 ---
-title: "Blog"
+title: "WTF Blog"
 head: "&nbsp;"
 date: 2019-07-09T14:41:58-07:00
 draft: false
@@ -8,6 +8,7 @@ hidden: true
 alwaysopen: false
 ---
 
-<ul>
-    <li><a href="/blog/2019-07-09-v0-14-0">v0.14.0 Released</a></li>
-</ul>
+<div class="blog-post">
+    <small class="blog-date">July 9, 2019</small>
+    <div><a href="/blog/2019-07-09-v0-14-0">v0.14.0 Released</a></div>
+</div>

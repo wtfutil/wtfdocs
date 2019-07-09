@@ -1,7 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 {{ .Hugo.Generator }}
-
 <title>{{ .Title }} :: {{ .Site.Title }}</title>
 <link rel="shortcut icon" href="{{"images/favicon.png" | relURL}}" type="image/x-icon" />
 <link href="{{"css/nucleus.css" | relURL}}" rel="stylesheet">
@@ -13,6 +12,9 @@
 <link href="{{(printf "theme-original/variant-%s.css" .) | relURL}}" rel="stylesheet">
 {{end}}
 <link rel="stylesheet" href="{{"css/bootstrap.min.css" | relURL}}">
+{{ range .AlternativeOutputFormats -}}
+{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
 <script src="{{"js/jquery-2.x.min.js" | relURL}}"></script>
 <script src="https://kit.fontawesome.com/461d56314b.js"></script>
 <style type="text/css">
