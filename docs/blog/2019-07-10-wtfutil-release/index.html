@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.55.2" />
-<title>Transmission || WTF - the terminal dashboard</title>
+<title>Binary Renamed to &#39;wtfutil&#39; || WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -24,7 +24,7 @@
 
     
   </head>
-  <body data-url="/modules/transmission/">
+  <body data-url="/blog/2019-07-10-wtfutil-release/">
     
       <header>
   <div class="logo">
@@ -127,7 +127,7 @@
     </li>
         </ul>
     </li>&nbsp;
-    <li data-nav-id="/modules/" class="dd-item parent alwaysopen haschildren
+    <li data-nav-id="/modules/" class="dd-item alwaysopen haschildren
         ">
       <div>
       <a href="/modules/">Modules</a>
@@ -410,7 +410,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/transmission/" class="dd-item active">
+      <li data-nav-id="/modules/transmission/" class="dd-item">
         <div>
           <a href="/modules/transmission/">
             Transmission
@@ -498,7 +498,11 @@
       <option value="/getting_started/generate-module/" >- Creating New Modules</option>
   
     <option value="/blog/" >
-   WTF Blog</option>
+   WTF Blog</option> 
+      <option value="/blog/2019-07-10-wtfutil-release/"  selected>- Binary Renamed to &#39;wtfutil&#39;</option>
+      <option value="/blog/2019-07-09-rss-for-releases/" >- Using WTF&#39;s FeedReader to Track WTF Releases</option>
+      <option value="/blog/2019-07-09-v0-14-0/" >- v0.14.0 Released</option>
+  
     <option value="/configuration/" >
    Configuration</option> 
       <option value="/configuration/global_settings/" >- Global Settings</option>
@@ -544,7 +548,7 @@
       <option value="/modules/textfile/" >- Textfile</option>
       <option value="/modules/todo/" >- Todo</option>
       <option value="/modules/todoist/" >- Todoist</option>
-      <option value="/modules/transmission/"  selected>- Transmission</option>
+      <option value="/modules/transmission/" >- Transmission</option>
       <option value="/modules/travisci/" >- TravisCI</option>
       <option value="/modules/trello/" >- Trello</option>
       <option value="/modules/twitter/" >- Twitter</option>
@@ -576,83 +580,28 @@
       </div>
     
 
-    <h1>Transmission</h1>
+    <h1>Binary Renamed to &#39;wtfutil&#39;</h1>
     
     
     
-    
+    <p><small>July 10, 2019</small></p>
 
-<p><img class="screenshot" src="/imgs/modules/transmission.png" width="320" height="190" alt="transmission screenshot" /></p>
+<p>With the release of <a href="https://github.com/wtfutil/wtf/releases/tag/v0.15.0">v0.15.0</a>, the installed binary has been renamed from <code>wtf</code> to <code>wtfutil</code>.</p>
 
-<p>View and manage your <a href="https://transmissionbt.com">Transmission</a> bittorrent daemon. This widget shows you the currently-loaded
-torrents, their &ldquo;download complete&rdquo; percentage, and their seeding status.</p>
+<p>To execute it, you must now use:</p>
+<div class="highlight"><pre class="chroma"><code class="language-console" data-lang="console">wtfutil</code></pre></div>
+<p>The name has changed because calling it <code>wtf</code> caused a collision with the venerable and amusing <a href="https://sourceforge.net/projects/bsdwtf/">bsd-wtf</a> utility. This wasn&rsquo;t a problem back when there was only one person using WTF and no one else knew about it, but with the rise in popularity this collision has been causing problems for some people.</p>
 
-<h2 id="keyboard-commands">Keyboard Commands</h2>
+<p>Given that <code>bsd-wtf</code> was created long before WTF, it only seems proper to abdicate the name.</p>
 
-<p><span class="caption">Key:</span> <code>[return]</code> <br />
-<span class="caption">Action:</span> Pause/unpause the selected torrent.</p>
+<p>(And if you want to check out the original <code>wtf</code>, it&rsquo;s available via <a href="https://formulae.brew.sh/formula/wtf">Homebrew</a> on macOS, and presumably via <code>apt-get</code> on Linux).</p>
 
-<p><span class="caption">Key:</span> <code>j</code> <br />
-<span class="caption">Action:</span> Select the next torrent in the list.</p>
-
-<p><span class="caption">Key:</span> <code>k</code> <br />
-<span class="caption">Action:</span> Select the previous torrent in the list.</p>
-
-<p><span class="caption">Key:</span> <code>r</code> <br />
-<span class="caption">Action:</span> Refresh the data.</p>
-
-<p><span class="caption">Key:</span> <code>↓</code> <br />
-<span class="caption">Action:</span> Select the next torrent in the list.</p>
-
-<p><span class="caption">Key:</span> <code>↑</code> <br />
-<span class="caption">Action:</span> Select the previous torrent in the list.</p>
-
-<p><span class="caption">Key:</span> <code>Ctrl-d</code> <br />
-<span class="caption">Action:</span> Delete the selected torrent. This is a non-destructive operation. It removes the torrent from Transmission, it does not remove files from the file system.</p>
-
-<h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">transmission<span class="p">:</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>host<span class="p">:</span><span class="w"> </span><span class="s2">&#34;192.168.1.5&#34;</span><span class="w">
-</span><span class="w">  </span>password<span class="p">:</span><span class="w"> </span><span class="s2">&#34;passwordpassword&#34;</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">  </span>username<span class="p">:</span><span class="w"> </span><span class="s2">&#34;transmission&#34;</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
-
-<p><code>enabled</code> <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>host</code> <br />
-Value: The IP address of the machine that your Transmission daemon is running on.</p>
-
-<p><code>password</code> <br />
-Value: The password you use to connect to your Transmission daemon.</p>
-
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
-
-<p><code>username</code> <br />
-Value: The username you use to connect to your Transmission daemon.</p>
-
-<h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/transmission/</code></pre></div>
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/modules/todoist/" title="Todoist"> <i class="fa fa-chevron-left"></i><label>Todoist</label></a>
-    <a class="nav nav-next" href="/modules/travisci/" title="TravisCI" style="margin-right: 0px;"><label>TravisCI</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-next" href="/getting_started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -667,7 +616,7 @@ Value: The username you use to connect to your Transmission daemon.</p>
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 25/06/2019
+        <i class='fa fa-calendar'></i> Last update on 10/07/2019
     </div>
     
   </div>

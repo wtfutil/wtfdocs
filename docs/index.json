@@ -420,11 +420,11 @@
 	"content": " Added in v0.1.0.\nDisplays tickets in the \u0026ldquo;New\u0026rdquo; status - i.e. have not yet been assigned.\nKeyboard Commands Key: [return] Action: Open the selected ticket in the browser.\nKey: j Action: Select the next item in the list.\nKey: k Action: Select the previous item in the list.\nKey: ↓ Action: Scroll down the list.\nKey: ↑ Action: Scroll up the list.\nConfiguration zendesk:apiKey:\u0026#34;3276d7155dd9ee27b8b14f8743a408a9\u0026#34;enabled:trueposition:top:0left:2height:1width:1status:\u0026#34;new\u0026#34;subdomain:\u0026#34;your_domain\u0026#34;username:\u0026#34;your_email@acme.com\u0026#34; Attributes apiKey Value: Your Zendesk API token.\nenabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. focusChar Define one of the number keys as a short cut key to access the widget. status The status of tickets you want to retrieve. Values: new, open, pending, hold.\nsubdomain Value: Your Zendesk subdomain.\nusername Your Zendesk username Values: A valid Zendesk username (usually an email address).\nSource Code wtf/modules/zendesk/"
 },
 {
-	"uri": "https://wtfutil.com/blog/2019-09-10-wtfutil-release/",
+	"uri": "https://wtfutil.com/blog/2019-07-10-wtfutil-release/",
 	"title": "Binary Renamed to &#39;wtfutil&#39;",
 	"tags": [],
 	"description": "",
-	"content": "July 10, 2019\nWith the release of v0.15.0, the installed binary has been renamed from wtf to wtfutil.\nThis is because the name wtf collided with the venerable and amusing bsd-wtf utility, installable via Homebrew, and that collision was causing some people some problems.\nGiven that bsd-wtf was created long before WTF, it seemed only proper to abdicate the name.\n"
+	"content": "July 10, 2019\nWith the release of v0.15.0, the installed binary has been renamed from wtf to wtfutil.\nTo execute it, you must now use:\nwtfutil The name has changed because calling it wtf caused a collision with the venerable and amusing bsd-wtf utility. This wasn\u0026rsquo;t a problem back when there was only one person using WTF and no one else knew about it, but with the rise in popularity this collision has been causing problems for some people.\nGiven that bsd-wtf was created long before WTF, it only seems proper to abdicate the name.\n(And if you want to check out the original wtf, it\u0026rsquo;s available via Homebrew on macOS, and presumably via apt-get on Linux).\n"
 },
 {
 	"uri": "https://wtfutil.com/blog/2019-07-09-rss-for-releases/",

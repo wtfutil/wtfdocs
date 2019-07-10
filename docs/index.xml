@@ -732,14 +732,14 @@ Configuration zendesk:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;e
     
     <item>
       <title>Binary Renamed to &#39;wtfutil&#39;</title>
-      <link>https://wtfutil.com/blog/2019-09-10-wtfutil-release/</link>
+      <link>https://wtfutil.com/blog/2019-07-10-wtfutil-release/</link>
       <pubDate>Wed, 10 Jul 2019 10:09:34 -0700</pubDate>
       
-      <guid>https://wtfutil.com/blog/2019-09-10-wtfutil-release/</guid>
+      <guid>https://wtfutil.com/blog/2019-07-10-wtfutil-release/</guid>
       <description>July 10, 2019
 With the release of v0.15.0, the installed binary has been renamed from wtf to wtfutil.
-This is because the name wtf collided with the venerable and amusing bsd-wtf utility, installable via Homebrew, and that collision was causing some people some problems.
-Given that bsd-wtf was created long before WTF, it seemed only proper to abdicate the name.</description>
+To execute it, you must now use:
+wtfutil The name has changed because calling it wtf caused a collision with the venerable and amusing bsd-wtf utility. This wasn&amp;rsquo;t a problem back when there was only one person using WTF and no one else knew about it, but with the rise in popularity this collision has been causing problems for some people.</description>
     </item>
     
     <item>
