@@ -19,9 +19,9 @@
       <guid>https://wtfutil.com/getting_started/installation/</guid>
       <description>As a Binary Grab the latest version from here:
 https://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:
-./wtf and that should also do it.
+./wtfutil and that should also do it.
 From Source Download the source code repo and install the dependencies:
-go get -v -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf go install -ldflags=&amp;#34;-s -w&amp;#34; make run and that should do it.</description>
+# Set the Go proxy variable to GoCenter export GOPROXY=&amp;#34;https://gocenter.io&amp;#34; # Enable Go modules export GO111MODULE=on go get -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf make install make run and that should do it.</description>
     </item>
     
     <item>
@@ -30,8 +30,8 @@ go get -v -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf go ins
       <pubDate>Sun, 28 Jan 2018 09:59:40 -0700</pubDate>
       
       <guid>https://wtfutil.com/getting_started/uninstall/</guid>
-      <description>Remove the Binary and Configuration wtf ships as a single binary. Assuming you have installed the binary, you can run:
-rm $(which wtf) If you have configured wtf, you will also want to delete your configs:
+      <description>Remove the Binary and Configuration WTF ships as a single binary named wtfutil. Assuming you have installed the binary, run:
+rm $(which wtfutil) If you have configured WTF, you will also want to delete your configs:
 rm ~/.config/wtf and that should also do it.</description>
     </item>
     

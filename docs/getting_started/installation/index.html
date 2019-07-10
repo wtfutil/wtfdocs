@@ -587,15 +587,21 @@
 <p>Grab the latest version from here:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">https://github.com/wtfutil/wtf/releases</code></pre></div>
 <p>expand it, and <code>cd</code> into the resulting directory. Then run:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">./wtf</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">./wtfutil</code></pre></div>
 <p>and that should also do it.</p>
 
 <h2 id="from-source">From Source</h2>
 
 <p>Download the source code repo and install the dependencies:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">go get -v -u github.com/wtfutil/wtf
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Set the Go proxy variable to GoCenter</span>
+<span class="nb">export</span> <span class="nv">GOPROXY</span><span class="o">=</span><span class="s2">&#34;https://gocenter.io&#34;</span>
+
+<span class="c1"># Enable Go modules</span>
+<span class="nb">export</span> <span class="nv">GO111MODULE</span><span class="o">=</span>on
+
+go get -u github.com/wtfutil/wtf
 <span class="nb">cd</span> <span class="nv">$GOPATH</span>/src/github.com/wtfutil/wtf
-go install -ldflags<span class="o">=</span><span class="s2">&#34;-s -w&#34;</span>
+make install
 make run</code></pre></div>
 <p>and that should do it.</p>
 

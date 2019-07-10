@@ -9,7 +9,7 @@ weight: 20
 A discrete unit of data collection and display. A data interface
 concept. A package inside the app.
 
-Examples: New Relic, Git, Weather.
+Examples: [New Relic](/modules/newrelic), [Git](/modules/git), [Weather](/modules/weather).
 
 ### Widget
 The onscreen representation of a Module. The widget is responsible for

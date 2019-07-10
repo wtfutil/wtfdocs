@@ -4,14 +4,14 @@
 	"title": "Getting Started",
 	"tags": [],
 	"description": "",
-	"content": " Quick Start  Download the stand-alone, compiled binary. Unzip the downloaded file. From the command line, cd into the newly-created /wtf directory. From the command line, run the app: ./wtf  This should launch the app in your terminal using the default simple configuration. See Configuration for more details.\nCommand-line Options --config, -c Allows you to define a custom config file to use. See Configuration for more details.\n--help, -h Shows help information for the command-line arguments that WTF takes.\n--module, -m Shows help information for the specific named module, if that module supports help text. Example: wtf --module=todo.\n--version, -v Shows version info.\nKeyboard Commands Key: Ctrl-R Action: Force-refresh the data for all modules.\nKey: Esc Action: Unfocus the currently-focused widget.\nKey: Tab Action: Move between focusable modules (Shift-Tab to move backwards).\n"
+	"content": " Quick Start  Download the stand-alone, compiled binary. Unzip the downloaded file. From the command line, cd into the newly-created /wtf directory. From the command line, run the app: ./wtfutil  This should launch the app in your terminal using the default simple configuration. See Configuration for more details.\nCommand-line Options --config, -c Allows you to define a custom config file to use. See Configuration for more details.\n--help, -h Shows help information for the command-line arguments that WTF takes.\n--module, -m Shows help information for the specific named module, if that module supports help text. Example: wtf --module=todo.\n--version, -v Shows version info.\nKeyboard Commands Key: Ctrl-R Action: Force-refresh the data for all modules.\nKey: Esc Action: Unfocus the currently-focused widget.\nKey: Tab Action: Move between focusable modules (Shift-Tab to move backwards).\n"
 },
 {
 	"uri": "https://wtfutil.com/getting_started/installation/",
 	"title": "Installation",
 	"tags": [],
 	"description": "",
-	"content": " As a Binary Grab the latest version from here:\nhttps://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:\n./wtf and that should also do it.\nFrom Source Download the source code repo and install the dependencies:\ngo get -v -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf go install -ldflags=\u0026#34;-s -w\u0026#34; make run and that should do it.\n"
+	"content": " As a Binary Grab the latest version from here:\nhttps://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:\n./wtfutil and that should also do it.\nFrom Source Download the source code repo and install the dependencies:\n# Set the Go proxy variable to GoCenter export GOPROXY=\u0026#34;https://gocenter.io\u0026#34; # Enable Go modules export GO111MODULE=on go get -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf make install make run and that should do it.\n"
 },
 {
 	"uri": "https://wtfutil.com/blog/",
@@ -95,7 +95,7 @@
 	"title": "Uninstallation",
 	"tags": [],
 	"description": "",
-	"content": " Remove the Binary and Configuration wtf ships as a single binary. Assuming you have installed the binary, you can run:\nrm $(which wtf) If you have configured wtf, you will also want to delete your configs:\nrm ~/.config/wtf and that should also do it.\n"
+	"content": " Remove the Binary and Configuration WTF ships as a single binary named wtfutil. Assuming you have installed the binary, run:\nrm $(which wtfutil) If you have configured WTF, you will also want to delete your configs:\nrm ~/.config/wtf and that should also do it.\n"
 },
 {
 	"uri": "https://wtfutil.com/modules/cryptocurrencies/cryptolive/",
