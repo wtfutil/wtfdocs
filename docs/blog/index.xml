@@ -17,7 +17,8 @@
       <pubDate>Tue, 09 Jul 2019 17:07:58 -0700</pubDate>
       
       <guid>https://wtfutil.com/blog/2019-07-09-rss-for-releases/</guid>
-      <description>With the release of v0.14.0, WTF has the ability to track and display RSS and Atom feeds via the FeedReader module.
+      <description>July 9, 2019
+With the release of v0.14.0, WTF has the ability to track and display RSS and Atom feeds via the FeedReader module.
 And if you&amp;rsquo;re reading this, you know that wtfutil.com now has a blog, and that blog is available via RSS at https://wtfutil.com/blog/index.xml.
 Putting the two together, you now have a great way to keep up-to-date on the most recent WTF releases, because all of them will be announced, with changlog details, on this very blog.</description>
     </item>
@@ -28,7 +29,8 @@ Putting the two together, you now have a great way to keep up-to-date on the mos
       <pubDate>Tue, 09 Jul 2019 14:41:58 -0700</pubDate>
       
       <guid>https://wtfutil.com/blog/2019-07-09-v0-14-0/</guid>
-      <description> July 9, 2019  v0.14.0 contains the following changes:
+      <description>July 9, 2019
+v0.14.0 contains the following changes:
  CmdRunner module now supports custom titles FeedReader module added Cryptolive module works again gCal module now supports setting an explicit time zone via the &amp;ldquo;timezone&amp;rdquo; config attribute Misconfigured module positions in config.yaml now attempt to provide informative error messages on launch  </description>
     </item>
     

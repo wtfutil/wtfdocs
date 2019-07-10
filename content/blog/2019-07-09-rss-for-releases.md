@@ -4,6 +4,8 @@ date: 2019-07-09T17:07:58-07:00
 draft: false
 ---
 
+<small>July 9, 2019</small>
+
 With the release of [v0.14.0](https://github.com/wtfutil/wtf/releases/tag/v0.14.0), WTF has the ability to track and display RSS and Atom feeds via the [FeedReader module](/modules/feedreader/).
 
 And if you're reading this, you know that [wtfutil.com](https://wtfutil.com) now has a blog, and that blog is available via RSS at [https://wtfutil.com/blog/index.xml](https://wtfutil.com/blog/index.xml).
