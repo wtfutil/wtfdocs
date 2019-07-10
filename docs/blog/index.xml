@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Using WTF&#39;s FeedReader to Track WTF Releases</title>
+      <link>https://wtfutil.com/blog/2019-07-09-rss-for-releases/</link>
+      <pubDate>Tue, 09 Jul 2019 17:07:58 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/blog/2019-07-09-rss-for-releases/</guid>
+      <description>With the release of v0.14.0, WTF has the ability to track and display RSS and Atom feeds via the FeedReader module.
+And if you&amp;rsquo;re reading this, you know that wtfutil.com now has a blog, and that blog is available via RSS at https://wtfutil.com/blog/index.xml.
+Putting the two together, you now have a great way to keep up-to-date on the most recent WTF releases, because all of them will be announced, with changlog details, on this very blog.</description>
+    </item>
+    
+    <item>
       <title>v0.14.0 Released</title>
       <link>https://wtfutil.com/blog/2019-07-09-v0-14-0/</link>
       <pubDate>Tue, 09 Jul 2019 14:41:58 -0700</pubDate>

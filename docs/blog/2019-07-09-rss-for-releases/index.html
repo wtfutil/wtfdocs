@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.55.2" />
-<title>Status Pages || WTF - the terminal dashboard</title>
+<title>Using WTF&#39;s FeedReader to Track WTF Releases || WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -24,7 +24,7 @@
 
     
   </head>
-  <body data-url="/modules/cmdrunner/statuspages/">
+  <body data-url="/blog/2019-07-09-rss-for-releases/">
     
       <header>
   <div class="logo">
@@ -127,7 +127,7 @@
     </li>
         </ul>
     </li>&nbsp;
-    <li data-nav-id="/modules/" class="dd-item parent alwaysopen haschildren
+    <li data-nav-id="/modules/" class="dd-item alwaysopen haschildren
         ">
       <div>
       <a href="/modules/">Modules</a>
@@ -498,7 +498,10 @@
       <option value="/getting_started/generate-module/" >- Creating New Modules</option>
   
     <option value="/blog/" >
-   WTF Blog</option>
+   WTF Blog</option> 
+      <option value="/blog/2019-07-09-rss-for-releases/"  selected>- Using WTF&#39;s FeedReader to Track WTF Releases</option>
+      <option value="/blog/2019-07-09-v0-14-0/" >- v0.14.0 Released</option>
+  
     <option value="/configuration/" >
    Configuration</option> 
       <option value="/configuration/global_settings/" >- Global Settings</option>
@@ -576,42 +579,40 @@
       </div>
     
 
-    <h1>Status Pages</h1>
+    <h1>Using WTF&#39;s FeedReader to Track WTF Releases</h1>
     
     
     
-    <p>Various services provide status apis which are accessible. For example, the
-slack status api at <code>https://status.slack.com/api/v2.0.0/current</code></p>
+    <p>With the release of <a href="https://github.com/wtfutil/wtf/releases/tag/v0.14.0">v0.14.0</a>, WTF has the ability to track and display RSS and Atom feeds via the <a href="/modules/feedreader/">FeedReader module</a>.</p>
 
-<p>This can be accomplished with <a href="https://stedolan.github.io/jq/">jq</a> and the
-cmdrunner module.</p>
+<p>And if you&rsquo;re reading this, you know that <a href="https://wtfutil.com">wtfutil.com</a> now has a blog, and that blog is available via RSS at <a href="https://wtfutil.com/blog/index.xml">https://wtfutil.com/blog/index.xml</a>.</p>
 
-<p>First, create a shell script:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/sh
-</span><span class="cp"></span>
-curl -s https://status.slack.com/api/v2.0.0/current <span class="p">|</span> <span class="se">\
-</span><span class="se"></span>  jq -r <span class="s1">&#39;&#34;Status: &#34; + (if (.status == &#34;active&#34;) then &#34;Active Incident&#34; else &#34;Ok&#34; end),&#34;Last Updated: &#34; + .date_updated,if (.active_incidents[] | length) &gt; 0 then &#34;Active Incidents\n&#34; + .active_incidents[] .title else &#34;&#34; end&#39;</span></code></pre></div>
-<p>Second, the following wtfutil config:</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">slack_status<span class="p">:</span><span class="w">
-</span><span class="w">  </span>cmd<span class="p">:</span><span class="w"> </span><span class="s2">&#34;slack_status_check.sh&#34;</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>type<span class="p">:</span><span class="w"> </span><span class="s2">&#34;cmdrunner&#34;</span><span class="w">
-</span><span class="w">  </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Slack Status&#34;</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">30</span></code></pre></div>
-<p><img class="screenshot" src="/imgs/modules/cmdrunner/slackstatus.png" alt="status screenshot" /></p>
+<p>Putting the two together, you now have a great way to keep up-to-date on the most recent WTF releases, because all of them will be announced, with changlog details, on this very blog.</p>
+
+<p>To configure WTF to do so, add the following <code>feedreader</code> configuration to your <code>config.yml</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-console" data-lang="console">feedreader:
+  enabled: true
+  feeds:
+  - https://wtfutil.com/blog/index.xml
+  feedLimit: 10
+  position:
+    top: 2
+    left: 1
+    width: 2
+    height: 1
+  updateInterval: 14400</code></pre></div>
+<p>Modify the <code>position</code> values accordingly for where you want it to appear onscreen.</p>
+
+<p><code>feedLimit</code> limits the number of stories displayed for any given feed. Without a feed limit, FeedReader will display all the stories returned by the feed.</p>
+
+<p>I&rsquo;ve set <code>updateInterval</code> to a fairly reasonable 14,400 seconds, or four hours, because most RSS content doesn&rsquo;t change that often.</p>
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/modules/clocks/" title="Clocks"> <i class="fa fa-chevron-left"></i><label>Clocks</label></a>
-    <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypo Currencies" style="margin-right: 0px;"><label>Crypo Currencies</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-next" href="/getting_started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -626,7 +627,7 @@ curl -s https://status.slack.com/api/v2.0.0/current <span class="p">|</span> <sp
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 09/05/2018
+        <i class='fa fa-calendar'></i> Last update on 09/07/2019
     </div>
     
   </div>

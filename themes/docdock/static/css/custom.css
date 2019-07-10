@@ -18,6 +18,10 @@
   cursor: pointer !important;
 }
 
+.blog-post {
+  margin: 0px 0px 24px 0px;
+}
+
 .blog-post a {
   display: inline-block;
   font-size: 1.5em;
@@ -35,7 +39,7 @@ a.highlight {
 code {
   color: #b97208;
   display: inline-block;
-  margin: 0 4px !important;
+  margin: 0 2px !important;
   padding-left: 0px !important;
 }
 

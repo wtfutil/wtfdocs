@@ -18,7 +18,7 @@
 	"title": "WTF Blog",
 	"tags": [],
 	"description": "",
-	"content": "July 9, 2019 v0.14.0 Released  "
+	"content": "July 9, 2019 Using WTF's FeedReader to Track WTF Releases  July 9, 2019 v0.14.0 Released  "
 },
 {
 	"uri": "https://wtfutil.com/modules/cryptocurrencies/bittrex/",
@@ -418,6 +418,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Added in v0.1.0.\nDisplays tickets in the \u0026ldquo;New\u0026rdquo; status - i.e. have not yet been assigned.\nKeyboard Commands Key: [return] Action: Open the selected ticket in the browser.\nKey: j Action: Select the next item in the list.\nKey: k Action: Select the previous item in the list.\nKey: ↓ Action: Scroll down the list.\nKey: ↑ Action: Scroll up the list.\nConfiguration zendesk:apiKey:\u0026#34;3276d7155dd9ee27b8b14f8743a408a9\u0026#34;enabled:trueposition:top:0left:2height:1width:1status:\u0026#34;new\u0026#34;subdomain:\u0026#34;your_domain\u0026#34;username:\u0026#34;your_email@acme.com\u0026#34; Attributes apiKey Value: Your Zendesk API token.\nenabled Determines whether or not this module is executed and if its data displayed onscreen. Values: true, false.\nposition Defines where in the grid this module\u0026rsquo;s widget will be displayed. focusChar Define one of the number keys as a short cut key to access the widget. status The status of tickets you want to retrieve. Values: new, open, pending, hold.\nsubdomain Value: Your Zendesk subdomain.\nusername Your Zendesk username Values: A valid Zendesk username (usually an email address).\nSource Code wtf/modules/zendesk/"
+},
+{
+	"uri": "https://wtfutil.com/blog/2019-07-09-rss-for-releases/",
+	"title": "Using WTF&#39;s FeedReader to Track WTF Releases",
+	"tags": [],
+	"description": "",
+	"content": "With the release of v0.14.0, WTF has the ability to track and display RSS and Atom feeds via the FeedReader module.\nAnd if you\u0026rsquo;re reading this, you know that wtfutil.com now has a blog, and that blog is available via RSS at https://wtfutil.com/blog/index.xml.\nPutting the two together, you now have a great way to keep up-to-date on the most recent WTF releases, because all of them will be announced, with changlog details, on this very blog.\nTo configure WTF to do so, add the following feedreader configuration to your config.yml file:\nfeedreader: enabled: true feeds: - https://wtfutil.com/blog/index.xml feedLimit: 10 position: top: 2 left: 1 width: 2 height: 1 updateInterval: 14400 Modify the position values accordingly for where you want it to appear onscreen.\nfeedLimit limits the number of stories displayed for any given feed. Without a feed limit, FeedReader will display all the stories returned by the feed.\nI\u0026rsquo;ve set updateInterval to a fairly reasonable 14,400 seconds, or four hours, because most RSS content doesn\u0026rsquo;t change that often.\n"
 },
 {
 	"uri": "https://wtfutil.com/blog/2019-07-09-v0-14-0/",
