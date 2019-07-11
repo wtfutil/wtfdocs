@@ -23,6 +23,7 @@ power:
     width: 1
   refreshInterval: 15
 ```
+
 {{% attributes %}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
