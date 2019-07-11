@@ -7,9 +7,33 @@ weight: 230
 
 <img class="screenshot" src="/imgs/modules/todoist.png" alt="todoist screenshot" />
 
-Added in `v0.0.11`.
-
 Displays all items on specified project.
+
+## Configuration
+
+```yaml
+todoist:
+  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  enabled: true
+  position:
+    top: 0
+    left: 2
+    height: 1
+    width: 1
+  projects:
+    - 122247497
+  refreshInterval: 3600
+```
+
+{{% attributes %}}
+  {{< attributes/apikey name="Todoist" link="https://developer.todoist.com/sync/v7/" >}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/custom name="projects" desc="The todoist projects to fetch items from." value="The integer ID of the project" >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
 ## Keyboard Commands
 
@@ -45,44 +69,5 @@ Displays all items on specified project.
 
 <span class="caption">Key:</span> `r` <br />
 <span class="caption">Action:</span> Reload all projects.
-
-## Configuration
-
-```yaml
-todoist:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
-  enabled: true
-  position:
-    top: 0
-    left: 2
-    height: 1
-    width: 1
-  projects:
-    - 122247497
-  refreshInterval: 3600
-```
-
-### Attributes
-
-`apiKey` <br />
-Value: Your <a href="https://developer.todoist.com/sync/v7/">Todoist API</a> token.
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Where in the grid this module's widget will be displayed. <br />
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
-
-`projects` <br />
-The todoist projects to fetch items from. <br />
-Values: The integer ID of the project.
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
 
 {{% sourcePath module="todoist" %}}
