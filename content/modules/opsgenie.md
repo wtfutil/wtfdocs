@@ -77,9 +77,4 @@ The name or list of names of the schedule(s) to retrieve. <br />
 Type of the schedule identifier. <br />
 Values: `id` or `name`.
 
-
-## Source Code
-
-```bash
-wtf/modules/opsgenie/
-```
+{{% sourcePath module="opsgenie" %}}

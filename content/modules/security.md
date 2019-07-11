@@ -93,8 +93,4 @@ export PATH=${PATH}:/usr/local/sbin:/usr/sbin:/sbin
 
 Thanks to [@E3V3A](https://github.com/E3V3A) for <a href="">Security Widget gives wrong firewall info for non-root linux users</a> which described the original issue and solution.
 
-## Source Code
-
-```bash
-wtf/modules/security/
-```
+{{% sourcePath module="security" %}}

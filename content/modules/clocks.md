@@ -79,9 +79,4 @@ date/time.
 The format of the time string for all clocks. <br />
 Values: Any valid Go time layout which is handled by <a href="https://golang.org/pkg/time/#Time.Format">Time.Format</a>. Defaults to 15:04 MST.
 
-## Source Code
-
-```bash
-wtf/modules/clocks/
-```
-
+{{% sourcePath module="clocks" %}}

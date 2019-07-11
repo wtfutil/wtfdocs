@@ -49,9 +49,4 @@ Values: A positive integer, `0..n`.
  * [iStats](/modules/cmdrunner/istats)
  * [Status Pages](/modules/cmdrunner/statuspages)
 
-## Source Code
-
-```bash
-wtf/modules/cmdrunner/
-```
-
+{{% sourcePath module="cmdrunner" %}}

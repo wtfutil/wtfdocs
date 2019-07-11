@@ -70,8 +70,4 @@ Values: A positive integer, `0..n`.
 Whether to wrap the text when it hits the widget boundary or not.
 Values: `true`, `false`.
 
-## Source Code
-
-```bash
-wtf/modules/textfile/
-```
+{{% sourcePath module="textfile" %}}

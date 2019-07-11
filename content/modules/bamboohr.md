@@ -41,9 +41,4 @@ Values: Any positive integer, `0..n`.
 `subdomain` <br />
 Value: Your <a href="https://www.bamboohr.com/api/documentation/">BambooHR API</a> subdomain name.
 
-## Source Code
-
-```bash
-wtf/modules/bamboohr/
-```
-
+{{% sourcePath module="bamboohr" %}}

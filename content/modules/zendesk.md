@@ -68,8 +68,4 @@ Value: Your Zendesk subdomain.
 Your Zendesk username
 Values: A valid Zendesk username (usually an email address).
 
-## Source Code
-
-```bash
-wtf/modules/zendesk/
-```
+{{% sourcePath module="zendesk" %}}

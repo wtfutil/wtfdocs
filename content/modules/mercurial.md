@@ -85,8 +85,4 @@ Values: A positive integer, `0..n`.
 Defines which mercurial repositories to watch. <br />
 Values: A list of zero or more local file paths pointing to valid mercurial repositories.
 
-## Source Code
-
-```bash
-wtf/modules/mercurial/
-```
+{{% sourcePath module="mercurial" %}}

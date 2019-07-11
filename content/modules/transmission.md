@@ -71,8 +71,4 @@ Values: A positive integer, `0..n`.
 `username` <br />
 Value: The username you use to connect to your Transmission daemon.
 
-## Source Code
-
-```bash
-wtf/modules/transmission/
-```
+{{% sourcePath module="transmission" %}}

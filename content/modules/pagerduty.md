@@ -57,8 +57,4 @@ Values: true or false
 Whether or not to show schedules. <br />
 Values: true or false
 
-## Source Code
-
-```bash
-wtf/modules/pagerduty/
-```
+{{% sourcePath module="pagerduty" %}}

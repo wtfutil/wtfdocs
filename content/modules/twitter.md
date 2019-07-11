@@ -104,8 +104,4 @@ Values: Any valid Twitter user's screen name.
 The screen names of the Twitter users who's tweets you want to follow. <br />
 Values: A list of any valid Twitter user's screen names.
 
-## Source Code
-
-```bash
-wtf/modules/twitter/
-```
+{{% sourcePath module="twitter" %}}

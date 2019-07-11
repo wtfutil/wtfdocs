@@ -128,8 +128,4 @@ customQueries:
     filter: "is:issue state:open -author:[your github username] sort:updated-desc"
 ```
 
-## Source Code
-
-```bash
-wtf/modules/github/
-```
+{{% sourcePath module="github" %}}

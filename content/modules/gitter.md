@@ -72,8 +72,4 @@ Values: `new`, `top`, `job`, `ask`
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
 
-## Source Code
-
-```bash
-wtf/modules/gitter/
-```
+{{% sourcePath module="gitter" %}}

@@ -85,8 +85,4 @@ Values: The integer ID of the project.
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
 
-## Source Code
-
-```bash
-wtf/modules/todoist/
-```
+{{% sourcePath module="todoist" %}}

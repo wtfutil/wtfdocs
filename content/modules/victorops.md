@@ -46,9 +46,4 @@ Values: Any positive integer, `0..n`.
 Value: An optional value to only show a specific team. By default, all teams are shown. <br />
 Values: The team slug that can be found in the URL after `/#/team/`
 
-## Source Code
-
-```bash
-wtf/modules/victorops/
-```
-
+{{% sourcePath module="victorops" %}}

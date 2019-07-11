@@ -111,8 +111,4 @@ Define one of the number keys as a short cut key to access the widget. <br />
 How often, in seconds, this module will update its data. <br />
 Values: A positive integer, `0..n`.
 
-## Source Code
-
-```bash
-wtf/modules/todo/
-```
+{{% sourcePath module="todo" %}}

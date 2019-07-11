@@ -78,8 +78,4 @@ Your Trello username. <br />
 `position` <br />
 Where in the grid this module's widget will be displayed. <br />
 
-## Source Code
-
-```bash
-wtf/modules/trello/
-```
+{{% sourcePath module="trello" %}}

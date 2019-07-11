@@ -75,8 +75,4 @@ _Optional_ <br /
 Defines type of stories to be displayed. Default is `top` stories<br />
 Values: `new`, `top`, `job`, `ask`
 
-## Source Code
-
-```bash
-wtf/modules/hackernews/
-```
+{{% sourcePath module="hackernews" %}}

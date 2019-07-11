@@ -89,8 +89,4 @@ _Optional_ <br />
 Determines whether or not the server's certificate chain and host name are verified. <br />
 Values: `true`, `false`.
 
-## Source Code
-
-```bash
-wtf/modules/jenkins/
-```
+{{% sourcePath module="jenkins" %}}
