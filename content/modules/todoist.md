@@ -13,7 +13,7 @@ Displays all items on specified project.
 
 ```yaml
 todoist:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "3276d7155dxxxxxxxxxx4f8743a408a9"
   enabled: true
   position:
     top: 0

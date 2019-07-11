@@ -341,7 +341,7 @@ Configuration todo:checkedIcon:&amp;#34;X&amp;#34;colors:checked:grayhighlight:f
       
       <guid>https://wtfutil.com/modules/todoist/</guid>
       <description>Displays all items on specified project.
-Configuration todoist:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:0left:2height:1width:1projects:-122247497refreshInterval:3600   Name Description Value     apiKey Your Todoist API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
+Configuration todoist:apiKey:&amp;#34;3276d7155dxxxxxxxxxx4f8743a408a9&amp;#34;enabled:trueposition:top:0left:2height:1width:1projects:-122247497refreshInterval:3600   Name Description Value     apiKey Your Todoist API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
     </item>
     
     <item>
