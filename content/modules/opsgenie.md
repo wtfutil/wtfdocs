@@ -49,32 +49,15 @@ opsgenie:
   - "Secondary"
   scheduleIdentifierType: "id"
 ```
-
-### Attributes
-
-`apiKey` < br />
-Value: Your <a href="https://docs.opsgenie.com/docs/api-integration">OpsGenie API</a> token.
-
-`displayEmpty` <br />
-Whether schedules with no assigned person on-call should be displayed. <br />
-Values:  `true`, `false`.
-
-`enabled` <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`schedule` <br />
-The name or list of names of the schedule(s) to retrieve. <br />
-
-`scheduleIdentifierType` <br />
-Type of the schedule identifier. <br />
-Values: `id` or `name`.
+{{% attributes %}}
+  {{< attributes/apikey name="OpsGenie" link="https://docs.opsgenie.com/docs/api-integration" >}}
+  {{< attributes/border >}}
+  {{< attributes/custom name="displayEmpty" desc="Whether schedules with no assigned person on-call should be displayed." value="true, false" >}}
+  {{< attributes/enabled >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="schedule" desc="The name or list of names of the schedule(s) to retrieve." value="" >}}
+  {{< attributes/custom name="scheduleIdentifierType" desc="Type of the schedule identifier." value="`id` or `name`" >}}
+{{% /attributes %}}
 
 {{% sourcePath module="opsgenie" %}}
