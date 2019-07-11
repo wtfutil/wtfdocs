@@ -35,6 +35,7 @@ feedreader:
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
+
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `[return]` <br />

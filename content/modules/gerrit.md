@@ -17,6 +17,44 @@ All open reviews that are requesting your approval.
 
 All open reviews created by you.
 
+## Configuration
+
+```yaml
+gerrit:
+  colors:
+    rows:
+      even: "lightblue"
+      odd: "white"
+  domain: https://gerrit-review.googlesource.com
+  enabled: true
+  password: "mypassword"
+  position:
+    top: 2
+    left: 3
+    height: 2
+    width: 2
+  projects:
+  - org/test-project"
+  - dotfiles
+  refreshInterval: 300
+  username: "myname"
+  verifyServerCertificate: false
+```
+
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/colors/rows >}}
+  {{< attributes/custom name="domain" description="Your Gerrit corporate domain." value="A valid URI." >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/password name="Gerrit" >}}
+  {{< attributes/position >}}
+  {{< attributes/custom name="projects" description="A list of Gerrit project names to fetch data for." >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/username name="Gerrit" >}}
+  {{< attributes/custom name="verifyServerCertificate" description="Whether or not to verify the server's certificate chain and hostname." value="true, false" >}}
+{{% /attributes %}}
+
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `/` <br />
@@ -52,72 +90,5 @@ All open reviews created by you.
 <span class="caption">Key:</span> `[return]` <br />
 <span class="caption">Action:</span> Open the selected review in the browser.
 
-## Configuration
-
-```yaml
-gerrit:
-  colors:
-    rows:
-      even: "lightblue"
-      odd: "white"
-  domain: https://gerrit-review.googlesource.com
-  enabled: true
-  password: "mypassword"
-  position:
-    top: 2
-    left: 3
-    height: 2
-    width: 2
-  projects:
-  - org/test-project"
-  - dotfiles
-  refreshInterval: 300
-  username: "myname"
-  verifyServerCertificate: false
-```
-
-### Attributes
-
-`colors.rows.even` <br />
-Define the foreground color for even-numbered rows. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
-
-`colors.rows.odd` <br />
-Define the foreground color for odd-numbered rows. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
-
-`domain` <br />
-Your Gerrit corporate domain. <br />
-Values: A valid URI.
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
-
-`password` <br />
-Value: Your <a href="https://gerrit-review.googlesource.com/Documentation/user-upload.html#http">Gerrit HTTP Password</a>.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`projects` <br />
-A list of Gerrit project names to fetch data for. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`username` <br />
-Your Gerrit username.
-
-`verifyServerCertificate` <br />
-_Optional_ <br />
-Determines whether or not the server's certificate chain and host name are verified. <br />
-Values: `true`, `false`.
 
 {{% sourcePath module="gerrit" %}}
