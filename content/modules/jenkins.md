@@ -42,24 +42,20 @@ jenkins:
   {{< attributes/verifyServerCert >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open the selected job in the browser" >}}
 
-<span class="caption">Key:</span> `[return]` <br />
-<span class="caption">Action:</span> Open the selected job in the browser.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next job in the list.
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
+  {{< keyboard/r >}}
 
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous job in the list.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `r` <br />
-<span class="caption">Action:</span> Refresh the data.
-
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next job in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous job in the list.
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="jenkins" %}}
