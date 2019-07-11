@@ -10,6 +10,33 @@ weight: 235
 View and manage your [Transmission](https://transmissionbt.com) bittorrent daemon. This widget shows you the currently-loaded 
 torrents, their "download complete" percentage, and their seeding status.
 
+## Configuration
+
+```yaml
+transmission:
+  enabled: true
+  host: "192.168.1.5"
+  password: "passwordpassword"
+  position:
+    top: 4
+    left: 3
+    width: 2
+    height: 1
+  refreshInterval: 3
+  username: "transmission"
+```
+
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/custom name="host" desc="The IP address of the machine that your Transmission daemon is running on." value="" >}}
+  {{< attributes/custom name="password" desc="The password you use to connect to your Transmission daemon." value="" >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="username" desc="The username you use to connect to your Transmission daemon." value="" >}}
+{{% /attributes %}}
+
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `[return]` <br />
@@ -32,43 +59,5 @@ torrents, their "download complete" percentage, and their seeding status.
 
 <span class="caption">Key:</span> `Ctrl-d` <br />
 <span class="caption">Action:</span> Delete the selected torrent. This is a non-destructive operation. It removes the torrent from Transmission, it does not remove files from the file system.
-
-## Configuration
-
-```yaml
-transmission:
-  enabled: true
-  host: "192.168.1.5"
-  password: "passwordpassword"
-  position:
-    top: 4
-    left: 3
-    width: 2
-    height: 1
-  refreshInterval: 3
-  username: "transmission"
-```
-
-### Attributes
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`host` <br />
-Value: The IP address of the machine that your Transmission daemon is running on.
-
-`password` <br />
-Value: The password you use to connect to your Transmission daemon.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`username` <br />
-Value: The username you use to connect to your Transmission daemon.
 
 {{% sourcePath module="transmission" %}}
