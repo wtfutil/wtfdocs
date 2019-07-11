@@ -52,21 +52,19 @@ mercurial:
   {{< attributes/custom name="repositories" desc="A list of Mercurial repositories to watch." value="A list of zero or more local file paths pointing to valid mercurial repositories." >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
 
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous mercurial repository.
+  {{< keyboard/h desc="Show the previous Mercurial repository" >}}
+  {{< keyboard/l desc="Show the next Mercurial repository" >}}
+  {{< keyboard/r >}}
 
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next mercurial repository.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous mercurial repository.
-
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next mercurial repository.
+  {{< keyboard/arrowBack desc="Show the previous Mercurial repository" >}}
+  {{< keyboard/arrowFore desc="Show the next Mercurial repository" >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="mercurial" %}}

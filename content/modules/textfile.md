@@ -46,12 +46,12 @@ textfile:
   {{< attributes/wrapText >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
 
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `o` <br />
-<span class="caption">Action:</span> Opens the text file in whichever text editor is associated  with that file type.
+  {{< keyboard/o desc="Opens the text file in whichever text editor is associated  with that file type" >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="textfile" %}}

@@ -26,18 +26,20 @@ nbascore:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
 
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Go to previous day
+  {{< keyboard/c desc="Go to current day" >}}
+  {{< keyboard/h desc="Go to previous day" >}}
+  {{< keyboard/l desc="Go to next day" >}}
+  {{< keyboard/r >}}
 
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Go to next day
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `c` <br />
-<span class="caption">Action:</span> Go back to current day
+  {{< keyboard/arrowBack desc="Go to previous day" >}}
+  {{< keyboard/arrowFore desc="Go to next day" >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="nbascore" %}}

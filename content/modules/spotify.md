@@ -27,19 +27,16 @@ spotify:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open the selected item in the browser" >}}
+  {{< keyboard/space desc="Play/pause the currently-selected" >}}
 
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `space` <br />
-<span class="caption">Action:</span> Play/pause the currently-selected
-track
-
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Play previous song
-
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Play next song
+  {{< keyboard/custom name="h" desc="Play previous song" >}}
+  {{< keyboard/custom name="l" desc="Play next song" >}}
+  {{< keyboard/r >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="spotify" %}}

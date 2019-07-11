@@ -49,6 +49,7 @@ opsgenie:
   - "Secondary"
   scheduleIdentifierType: "id"
 ```
+
 {{% attributes %}}
   {{< attributes/apikey name="OpsGenie" link="https://docs.opsgenie.com/docs/api-integration" >}}
   {{< attributes/border >}}

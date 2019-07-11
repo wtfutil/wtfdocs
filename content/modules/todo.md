@@ -47,48 +47,32 @@ todo:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/esc desc="Remove focus from the selected item" >}}
+  {{< keyboard/esc desc="Close the modal item dialog without saving changes" >}}
+  {{< keyboard/return desc="Edit the selected item" >}}
+  {{< keyboard/return desc="Close the modal item dialog and save changes" >}}
+  {{< keyboard/space desc="Check/uncheck the selected item" >}}
 
-<span class="caption">Key:</span> `[return]` <br />
-<span class="caption">Action:</span> Edit the selected item. <br />
-<span class="caption">Action:</span> Close the modal item dialog and save changes. <br />
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `[esc]` <br />
-<span class="caption">Action:</span> Remove focus from the selected item. <br />
-<span class="caption">Action:</span> Close the modal item dialog without saving changes.
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
+  {{< keyboard/n desc="Create a new list item" >}}
+  {{< keyboard/o desc="Opens the todo list file in whichever text editor is associated with that file type" >}}
 
-<span class="caption">Key:</span> `[space]` <br />
-<span class="caption">Action:</span> Check/uncheck the selected item.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
 
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next item in the list.
 
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous item in the list.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `n` <br />
-<span class="caption">Action:</span> Create a new list item.
-
-<span class="caption">Key:</span> `o` <br />
-<span class="caption">Action:</span> Opens the todo list file in
-whichever text editor is associated with that file type.
-
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next item in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous item in the list.
-
-<span class="caption">Key:</span> `Ctrl-d` <br />
-<span class="caption">Action:</span> Delete the selected item.
-
-<span class="caption">Key:</span> `Ctrl-J` <br />
-<span class="caption">Action:</span> Move the selected item down the list.
-
-<span class="caption">Key:</span> `Ctrl-K` <br />
-<span class="caption">Action:</span> Move the selected item up the list.
+  {{< keyboard/ctrlD >}}
+  {{< keyboard/custom name="Ctrl-j" desc="Move the selected item down the list" >}}
+  {{< keyboard/custom name="Ctrl-k" desc="Move the selected item up the list" >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="todo" %}}
