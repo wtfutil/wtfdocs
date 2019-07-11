@@ -35,39 +35,37 @@ todoist:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/esc desc="Remove focus from the selected item" >}}
+  {{< keyboard/esc desc="Close the modal item dialog without saving changes" >}}
+  {{< keyboard/return desc="Edit the selected item" >}}
+  {{< keyboard/return desc="Close the modal item dialog and save changes" >}}
+  {{< keyboard/space desc="Check/uncheck the selected item" >}}
 
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous project.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous project.
+  {{< keyboard/c desc="Close current item" >}}
+  {{< keyboard/d desc="Delete current item" >}}
+  {{< keyboard/h desc="Show the previous project" >}}
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
+  {{< keyboard/l desc="Show the next project" >}}
+  {{< keyboard/n desc="Create a new list item" >}}
+  {{< keyboard/o desc="Opens the todo list file in whichever text editor is associated with that file type" >}}
+  {{< keyboard/r >}}
 
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next project.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next project.
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
+  {{< keyboard/arrowBack desc="Show the previous project" >}}
+  {{< keyboard/arrowFore desc="Show the next project" >}}
 
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next item in the list.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next item in the list.
-
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous item in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous item in the list.
-
-<span class="caption">Key:</span> `c` <br />
-<span class="caption">Action:</span> Close current item.
-
-<span class="caption">Key:</span> `d` <br />
-<span class="caption">Action:</span> Delete current item.
-
-<span class="caption">Key:</span> `r` <br />
-<span class="caption">Action:</span> Reload all projects.
+  {{< keyboard/custom name="Ctrl-j" desc="Move the selected item down the list" >}}
+  {{< keyboard/custom name="Ctrl-k" desc="Move the selected item up the list" >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="todoist" %}}

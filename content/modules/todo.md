@@ -61,12 +61,12 @@ todo:
   {{< keyboard/k >}}
   {{< keyboard/n desc="Create a new list item" >}}
   {{< keyboard/o desc="Opens the todo list file in whichever text editor is associated with that file type" >}}
+  {{< keyboard/r >}}
 
   {{< keyboard/spacer >}}
 
   {{< keyboard/arrowDown >}}
   {{< keyboard/arrowUp >}}
-
 
   {{< keyboard/spacer >}}
 

@@ -9,23 +9,6 @@ weight: 20
 
 Displays a configurable list of current weather report, including current temperature, sunrise time, and sunset time.
 
-## Keyboard Commands
-
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
-
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous weather location.
-
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next weather location.
-
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous weather location.
-
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next weather location.
-
 ## Configuration
 
 ```yaml
@@ -75,6 +58,21 @@ weather:
 
   {{< attributes/custom name="tempUnit" desc="_Optional_ The temperature scale in which to display temperature values. Default: C." value="`F` for Fahrenheit, `C` for Celcius" >}}
 {{% /attributes %}}
+
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+
+  {{< keyboard/spacer >}}
+
+  {{< keyboard/h desc="Show the previous weather location" >}}
+  {{< keyboard/l desc="Show the next weather location" >}}
+  {{< keyboard/r >}}
+
+  {{< keyboard/spacer >}}
+
+  {{< keyboard/arrowBack desc="Show the previous Twitter account" >}} 
+  {{< keyboard/arrowFore desc="Show the next Twitter account" >}}
+{{% /keyboard %}}
 
 ## Source Code
 

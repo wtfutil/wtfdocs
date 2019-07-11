@@ -37,27 +37,24 @@ transmission:
   {{< attributes/custom name="username" desc="The username you use to connect to your Transmission daemon." value="" >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Pause/unpause the selected torrent" >}}
 
-<span class="caption">Key:</span> `[return]` <br />
-<span class="caption">Action:</span> Pause/unpause the selected torrent.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next torrent in the list.
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
+  {{< keyboard/r >}}
 
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous torrent in the list.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `r` <br />
-<span class="caption">Action:</span> Refresh the data.
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
 
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next torrent in the list.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous torrent in the list.
-
-<span class="caption">Key:</span> `Ctrl-d` <br />
-<span class="caption">Action:</span> Delete the selected torrent. This is a non-destructive operation. It removes the torrent from Transmission, it does not remove files from the file system.
+  {{< keyboard/custom name="Ctrl-d" desc="Delete the selected torrent. This is a non-destructive operation. It removes the torrent from Transmission, it does not remove files from the file system" >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="transmission" %}}

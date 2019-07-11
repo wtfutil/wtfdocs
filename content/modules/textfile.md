@@ -48,10 +48,19 @@ textfile:
 
 {{% keyboard %}}
   {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open current file" >}}
 
   {{< keyboard/spacer >}}
 
+  {{< keyboard/h desc="Select previous file" >}}
+  {{< keyboard/l desc="Select next file" >}}
   {{< keyboard/o desc="Opens the text file in whichever text editor is associated  with that file type" >}}
+  {{< keyboard/r >}}
+
+  {{< keyboard/spacer >}}
+
+  {{< keyboard/arrowBack desc="Select previous file" >}} 
+  {{< keyboard/arrowFore desc="Select next file" >}} 
 {{% /keyboard %}}
 
 {{% sourcePath module="textfile" %}}

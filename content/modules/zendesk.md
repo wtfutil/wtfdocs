@@ -35,21 +35,19 @@ zendesk:
   {{< attributes/username name="Zendesk" >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open the selected ticket in the browser" >}}
 
-<span class="caption">Key:</span> `[return]` <br />
-<span class="caption">Action:</span> Open the selected ticket in the browser.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next item in the list.
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
 
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous item in the list.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Scroll down the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Scroll up the list.
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="zendesk" %}}

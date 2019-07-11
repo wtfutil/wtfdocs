@@ -70,24 +70,21 @@ twitter:
   {{< attributes/custom name="screenNames" desc="The screen names of the Twitter users who's tweets you want to follow." value="A list of any valid Twitter user's screen names" >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open the current Twitter account in the browser" >}}
 
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Display the previous Twitter account.
+  {{< keyboard/h desc="Show the previous Twitter account" >}}
+  {{< keyboard/l desc="Show the next Twitter account" >}}
+  {{< keyboard/o desc="Open the current Twitter account in the browser" >}}
+  {{< keyboard/r >}}
 
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Display the next Twitter account.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `o` <br />
-<span class="caption">Action:</span> Opens the account in your local browser.
-
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Display the previous Twitter account.
-
-<span class="caption">Key:</span> `→ <br />
-<span class="caption">Action:</span> Display the next Twitter account.
+  {{< keyboard/arrowBack desc="Show the previous Twitter account" >}} 
+  {{< keyboard/arrowFore desc="Show the next Twitter account" >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="twitter" %}}

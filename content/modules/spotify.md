@@ -34,8 +34,8 @@ spotify:
 
   {{< keyboard/spacer >}}
 
-  {{< keyboard/custom name="h" desc="Play previous song" >}}
-  {{< keyboard/custom name="l" desc="Play next song" >}}
+  {{< keyboard/h desc="Play previous song" >}}
+  {{< keyboard/l desc="Play next song" >}}
   {{< keyboard/r >}}
 {{% /keyboard %}}
 
