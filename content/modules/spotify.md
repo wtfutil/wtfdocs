@@ -7,6 +7,26 @@ weight: 205
 
 Control the Spotify client.
 
+## Configuration
+
+```yaml
+spotify:
+  enabled: true
+  position:
+    top: 1
+    left: 2
+    height: 1
+    width: 1
+  refreshInterval: 0
+```
+
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
+
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `/` <br />
@@ -21,34 +41,5 @@ track
 
 <span class="caption">Key:</span> `l` <br />
 <span class="caption">Action:</span> Play next song
-
-## Configuration
-
-```yaml
-spotify:
-  enabled: true
-  position:
-    top: 1
-    left: 2
-    height: 1
-    width: 1
-  refreshInterval: 0
-```
-
-## Attributes
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
 
 {{% sourcePath module="spotify" %}}
