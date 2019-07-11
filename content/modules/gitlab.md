@@ -59,22 +59,19 @@ gitlab:
   {{< attributes/username name="GitLab" desc="Used to figure out which requests require your approval." >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
 
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous project.
+  {{< keyboard/h desc="Show the previous git repository" >}}
+  {{< keyboard/l desc="Show the next git repository" >}}
+  {{< keyboard/r >}}
 
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next project.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous project.
-
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next project.
-
+  {{< keyboard/arrowBack desc="Show the previous git repository" >}}
+  {{< keyboard/arrowFore desc="Show the next git repository" >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="gitlab" %}}

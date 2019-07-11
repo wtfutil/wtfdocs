@@ -72,25 +72,21 @@ github:
   {{< attributes/username name="GitHub" desc="Used to figure out which review requests you've been added to." >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open the selected repository in a browser" >}}
 
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous git repository.
+  {{< keyboard/h desc="Show the previous git repository" >}}
+  {{< keyboard/l desc="Show the next git repository" >}}
+  {{< keyboard/r >}}
 
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next git repository.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous git repository.
-
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next git repository.
-
-<span class="caption">Key:</span> `Return` <br />
-<span class="caption">Action:</span> Open the selected repository in a browser.
+  {{< keyboard/arrowBack desc="Show the previous git repository" >}}
+  {{< keyboard/arrowFore desc="Show the next git repository" >}}
+{{% /keyboard %}}
 
 ## Custom Query Examples
 

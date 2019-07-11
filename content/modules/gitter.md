@@ -36,22 +36,19 @@ gitter:
   {{< attributes/custom name="roomURI" desc="_Optional_ URI of the room you would like to see the chat messages from. Default is `wtfutil/Lobby`" value="" >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
 
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next message in the list.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous message in the list.
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
+  {{< keyboard/r >}}
 
-<span class="caption">Key:</span> `r` <br />
-<span class="caption">Action:</span> Refresh the data.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next message in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous message in the list.
-
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="gitter" %}}

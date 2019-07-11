@@ -54,22 +54,21 @@ git:
   {{< attributes/custom name="repositories" desc="A list of git repositories to watch." value="Zero or more local file paths pointing to valid git repositories." >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
 
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous git repository.
+  {{< keyboard/c desc="Check out branch" >}}
+  {{< keyboard/h desc="Show the previous git repository" >}}
+  {{< keyboard/l desc="Show the next git repository" >}}
+  {{< keyboard/p desc="Pull repo" >}}
+  {{< keyboard/r >}}
 
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next git repository.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous git repository.
-
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next git repository.
-
+  {{< keyboard/arrowBack desc="Show the previous git repository" >}}
+  {{< keyboard/arrowFore desc="Show the next git repository" >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="git" %}}
