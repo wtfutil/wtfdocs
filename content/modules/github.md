@@ -65,46 +65,36 @@ github:
   uploadURL: ""
   username: "wtfutil"
 ```
+{{% attributes %}}
+  {{< attributes/apikey name="GitHub" link="https://blog.github.com/2013-05-16-personal-api-tokens/" >}}
 
-### Attributes
+  <tr>
+    <td>`baseURL`</td>
+    <td>_Optional_ Your <a href="https://developer.github.com/enterprise/2.13/v3/enterprise-admin/">GitHub Enterprise</a> API URL.</td>
+  </tr>
 
-`apiKey` <br />
-Value: Your <a href="https://blog.github.com/2013-05-16-personal-api-tokens/">GitHub API</a> token.
+  {{< attributes/border >}}
+  
+  {{< attributes/custom name="customQueries" description="Filters for pull requests and issues." value="" >}}
 
-`baseURL` <br />
-_Optional_ <br />
-Value: Your <a href="https://developer.github.com/enterprise/2.13/v3/enterprise-admin/">GitHub Enterprise</a> API URL.
+  {{< attributes/enabled >}}
 
-`enabled` <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< attributes/custom name="enableStatus" description="Whether or not to display pull request mergeability status (`dirty`, `clean`, `unstable`, `blocked`)." value="true, false" >}}
 
-`enableStatus` <br />
-Display pull request mergeability status ('dirty', 'clean', 'unstable',
-'blocked').<br />
-Values: `true`, `false`.
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
 
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
+  {{< attributes/custom name="repositories" description="A list of github repos to fetch data for." value="" >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  <tr>
+    <td>`uploadURL`</td>
+    <td>_Optional_ Your <a href="https://developer.github.com/enterprise/2.13/v3/enterprise-admin/">GitHub Enterprise</a> upload URL (often the same as the API URL).</td>
+    <td></td>
+  </tr>
 
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`repositories` <br />
-A list of github repos to fetch data for. <br />
-Example: `wtfutil/wtf` 
-
-`uploadURL` <br />
-_Optional_ <br />
-Value: Your <a href="https://developer.github.com/enterprise/2.13/v3/enterprise-admin/">GitHub Enterprise</a> upload URL (often the same as API URL).
-
-`username` <br />
-Your GitHub username. Used to figure out which review requests you've
-been added to.
+  {{< attributes/username name="GitHub" description="Used to figure out which review requests you've been added to." >}}
+{{% /attributes %}}
 
 ## Custom Query Examples
 
