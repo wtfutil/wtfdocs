@@ -22,6 +22,15 @@ cmdrunner:
   refreshInterval: 30
 ```
 
+{{% attributes %}}
+  {{< attributes/custom name="args" description="The arguments to the command, with each item as an element in an array." value="" >}}
+  {{< attributes/border >}}
+  {{< attributes/custom name="cmd" description="The terminal command to be run, withouth the arguments. Ie: `ping`, `whoami`, `curl`." value="" >}}
+  {{< attributes/enabled >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
+
 ### Attributes
 
 `args` <br />
@@ -31,18 +40,6 @@ Example: for `curl -I cisco.com`, the arguments array would be `["-I", "cisco.co
 `cmd` <br />
 The terminal command to be run, withouth the arguments. Ie: `ping`,
 `whoami`, `curl`. <br />
-
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed.
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
 
 ## Examples
 

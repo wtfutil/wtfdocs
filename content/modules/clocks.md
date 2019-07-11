@@ -48,9 +48,7 @@ clocks:
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
 
-  <tr><td>`sort`</td><td>The order in which to sort the clocks.</td><td>`alphabetical` or `chronological`. `alphabetical` will sort in
-acending order by `key`, `chronological` will sort in ascending order by
-date/time.</td></tr>
+  {{< attributes/custom name="sort" description="The order in which to sort the clocks." value="`alphabetical` or `chronological`. `alphabetical` will sort in acending order by `key`, `chronological` will sort in ascending order by date/time." >}}
   
   {{< attributes/timeFormat >}}
 {{% /attributes %}}
