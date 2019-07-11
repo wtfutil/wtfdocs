@@ -7,10 +7,7 @@ weight: 20
 
 <img src="/imgs/modules/circleci.png" class="screenshot" width="609" height="150" alt="circleci screenshot" />
 
-Added in `v0.0.7`.
-
 Displays build information for your CircleCI account.
-
 
 ## Configuration
 

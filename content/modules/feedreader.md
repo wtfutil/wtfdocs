@@ -9,6 +9,32 @@ weight: 65
 
 A rudimentary RSS & Atom feed reader.
 
+## Configuration
+
+```yaml
+feedreader:
+  enabled: true
+  feeds:
+  - https://news.ycombinator.com/rss
+  - http://feeds.reuters.com/Reuters/worldNews
+  feedLimit: 10
+  position:
+    top: 4
+    left: 1
+    height: 1
+    width: 2
+  refreshInterval: 14400
+```
+
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/custom name="feedLimit" description="The number of stories from each feed to be displayed. Default is `-1`, which will display all available stories." value="Any integer greater than zero. Values zero or less will display all." >}}
+  {{< attributes/custom name="feeds" description="List of RSS or Atom feed URLs." value="" >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `[return]` <br />
@@ -31,46 +57,5 @@ A rudimentary RSS & Atom feed reader.
 
 <span class="caption">Key:</span> `↑` <br />
 <span class="caption">Action:</span> Select the previous story in the list.
-
-## Configuration
-
-```yaml
-feedreader:
-  enabled: true
-  feeds:
-  - https://news.ycombinator.com/rss
-  - http://feeds.reuters.com/Reuters/worldNews
-  feedLimit: 10
-  position:
-    top: 4
-    left: 1
-    height: 1
-    width: 2
-  refreshInterval: 14400
-```
-
-### Attributes
-
-`enabled` <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
-
-`feedLimit` <br />
-_Optional_ <br />
-Defines number of stories from each feed to be displayed. Default is `-1`, which will display all available stories.<br />
-Values: Any integer greater than zero. Values zero or less will display all.
-
-`feeds` <br />
-An array of RSS or Atom feed URLs.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
 
 {{% sourcePath module="feedreader" %}}
