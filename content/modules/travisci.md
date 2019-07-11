@@ -7,9 +7,32 @@ weight: 240
 
 <img class="screenshot" src="/imgs/modules/travisci.png" width="640" height="187" alt="travisci screenshot" />
 
-Added in `v0.0.12`.
-
 Displays build information for your Travis CI account.
+
+## Configuration
+
+```yaml
+travisci:
+  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  enabled: true
+  position:
+    top: 4
+    left: 1
+    height: 1
+    width: 2
+  pro: false
+  refreshInterval: 900
+```
+
+{{% attributes %}}
+  {{< attributes/apikey name="TravisCI" link="https://developer.travis-ci.org/authentication" >}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/custom name="pro" desc="Determines whether or not this module will use the Pro version of Travis CI." value="true, false" >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
 ## Keyboard Commands
 
@@ -30,43 +53,5 @@ Displays build information for your Travis CI account.
 
 <span class="caption">Key:</span> `↑` <br />
 <span class="caption">Action:</span> Select the previous build in the list.
-
-## Configuration
-
-```yaml
-travisci:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
-  enabled: true
-  position:
-    top: 4
-    left: 1
-    height: 1
-    width: 2
-  pro: false
-  refreshInterval: 900
-```
-
-### Attributes
-
-`apiKey` <br />
-Value: Your <a href="https://developer.travis-ci.org/authentication">Travis CI API</a> access token.
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
-
-`pro` <br />
-Determines whether or not this module will use the Pro version of Travis CI.<br />
-Values: `true`, `false`.
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
 
 {{% sourcePath module="travisci" %}}
