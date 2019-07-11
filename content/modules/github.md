@@ -21,26 +21,6 @@ All open pull requests created by you.
 
 Create filters to manage PRs and issues however you like.
 
-## Keyboard Commands
-
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
-
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous git repository.
-
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next git repository.
-
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous git repository.
-
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next git repository.
-
-<span class="caption">Key:</span> `Return` <br />
-<span class="caption">Action:</span> Open the selected repository in a browser.
-
 ## Configuration
 
 ```yaml
@@ -65,6 +45,7 @@ github:
   uploadURL: ""
   username: "wtfutil"
 ```
+
 {{% attributes %}}
   {{< attributes/apikey name="GitHub" link="https://blog.github.com/2013-05-16-personal-api-tokens/" >}}
 
@@ -74,17 +55,12 @@ github:
   </tr>
 
   {{< attributes/border >}}
-  
   {{< attributes/custom name="customQueries" description="Filters for pull requests and issues." value="" >}}
-
   {{< attributes/enabled >}}
-
   {{< attributes/custom name="enableStatus" description="Whether or not to display pull request mergeability status (`dirty`, `clean`, `unstable`, `blocked`)." value="true, false" >}}
-
   {{< attributes/focusChar >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
-
   {{< attributes/custom name="repositories" description="A list of github repos to fetch data for." value="" >}}
 
   <tr>
@@ -95,6 +71,26 @@ github:
 
   {{< attributes/username name="GitHub" description="Used to figure out which review requests you've been added to." >}}
 {{% /attributes %}}
+
+## Keyboard Commands
+
+<span class="caption">Key:</span> `/` <br />
+<span class="caption">Action:</span> Open/close the widget's help window.
+
+<span class="caption">Key:</span> `h` <br />
+<span class="caption">Action:</span> Show the previous git repository.
+
+<span class="caption">Key:</span> `l` <br />
+<span class="caption">Action:</span> Show the next git repository.
+
+<span class="caption">Key:</span> `←` <br />
+<span class="caption">Action:</span> Show the previous git repository.
+
+<span class="caption">Key:</span> `→` <br />
+<span class="caption">Action:</span> Show the next git repository.
+
+<span class="caption">Key:</span> `Return` <br />
+<span class="caption">Action:</span> Open the selected repository in a browser.
 
 ## Custom Query Examples
 
