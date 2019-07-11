@@ -1,10 +1,11 @@
 ---
 title: "Using WTF's FeedReader to Track WTF Releases"
 date: 2019-07-09T17:07:58-07:00
+description: "Cats and dogs"
 draft: false
 ---
 
-<small>July 9, 2019</small>
+{{< publishedDate >}}
 
 With the release of [v0.14.0](https://github.com/wtfutil/wtf/releases/tag/v0.14.0), WTF has the ability to track and display RSS and Atom feeds via the [FeedReader module](/modules/feedreader/).
 

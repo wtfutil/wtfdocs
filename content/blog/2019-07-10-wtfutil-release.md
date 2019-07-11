@@ -4,7 +4,7 @@ date: 2019-07-10T10:09:34-07:00
 draft: false
 ---
 
-<small>July 10, 2019</small>
+{{< publishedDate >}}
 
 With the release of [v0.15.0](https://github.com/wtfutil/wtf/releases/tag/v0.15.0), the installed binary has been renamed from `wtf` to `wtfutil`.
 
