@@ -9,23 +9,6 @@ weight: 140
 
 Displays all Jira issues assigned to you for the specified project.
 
-## Keyboard Commands
-
-<span class="caption">Key:</span> `[return]` <br />
-<span class="caption">Action:</span> Open the selected issue in the browser.
-
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next item in the list.
-
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous item in the list.
-
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next item in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous item in the list.
-
 ## Configuration
 
 ### Single Jira Project
@@ -78,58 +61,43 @@ jira:
   username: "chris.cummer"
   verifyServerCertificate: true
 ```
+{{% attributes %}}
+  {{< attributes/apikey name="Jira" link="https://confluence.atlassian.com/cloud/api-tokens-938839638.html" >}}
+  {{< attributes/border >}}
+  {{< attributes/colors/rows >}}
+  {{< attributes/custom name="domain" desc="Your Jira corporate domain." value="A valid URI." >}}
+  {{< attributes/email name="Jira" >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
 
-### Attributes
+  <tr>
+    <td>`jql`</td>
+    <td>_Optional_ Custom JQL to be appended to the search query.</td>
+    <td>See <a href="https://confluence.atlassian.com/jiracore/blog/2015/07/search-jira-like-a-boss-with-jql">Search Jira like a boss with JQL</a> for details.</td>
+  </tr>
 
-`apiKey` <br />
-Value: Your <a href="https://confluence.atlassian.com/cloud/api-tokens-938839638.html">Jira API</a> key.
+  {{< attributes/position >}}
+  {{< attributes/custom name="project" desc="The Jira project to fetch information for." >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/username name="Jira" >}}
+  {{< attributes/verifyServerCert >}}
+{{% /attributes %}}
 
-`colors.rows.even` <br />
-Define the foreground color for even-numbered rows. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
+## Keyboard Commands
 
-`colors.rows.odd` <br />
-Define the foreground color for odd-numbered rows. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
+<span class="caption">Key:</span> `[return]` <br />
+<span class="caption">Action:</span> Open the selected issue in the browser.
 
-`domain` <br />
-Your Jira corporate domain. <br />
-Values: A valid URI.
+<span class="caption">Key:</span> `j` <br />
+<span class="caption">Action:</span> Select the next item in the list.
 
-`email` <br />
-The email address associated with your Jira account. <br />
-Values: A valid email address string.
+<span class="caption">Key:</span> `k` <br />
+<span class="caption">Action:</span> Select the previous item in the list.
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+<span class="caption">Key:</span> `↓` <br />
+<span class="caption">Action:</span> Select the next item in the list.
 
-`jql` <br />
-_Optional_ <br />
-Custom JQL to be appended to the search query. <br />
-Values: See <a href="https://confluence.atlassian.com/jiracore/blog/2015/07/search-jira-like-a-boss-with-jql">Search Jira like a boss with JQL</a> for details.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
-
-`project` <br />
-The Jira project to fetch information for. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`username` <br />
-Your Jira username. <br />
-
-`verifyServerCertificate` <br />
-_Optional_ <br />
-Determines whether or not the server's certificate chain and host name are verified. <br />
-Values: `true`, `false`.
+<span class="caption">Key:</span> `↑` <br />
+<span class="caption">Action:</span> Select the previous item in the list.
 
 {{% sourcePath module="jira" %}}
