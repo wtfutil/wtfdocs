@@ -7,16 +7,14 @@ weight: 150
 
 Displays the contents of the WTF log file. The log file is located at `~/.config/wtf/log.txt`.
 
+## Usage
+
 To log to this file in your own modules:
 
 ```golang
 require "github.com/wtfutil/wtf/logger"
 logger.Log("This is a log entry")
 ```
-
-## Keyboard Commands
-
-Arrow keys scroll through the log file.
 
 ## Configuration
 
@@ -30,25 +28,15 @@ logger:
     width: 1
   refreshInterval: 1
 ```
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
-### Attributes
+## Keyboard Commands
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-**Note:** If you're using logging and logging is _disabled_, your logs
-will still be written to file, the widget just won't be shown onscreen.
-If you have `logger.Log` calls in your code, regardless of this setting,
-they will be written out. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
+Arrow keys scroll through the log file.
 
 {{% sourcePath module="logger" %}}
