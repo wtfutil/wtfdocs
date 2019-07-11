@@ -9,6 +9,30 @@ weight: 123
 
 Displays stories from Hacker News.
 
+## Configuration
+
+```yaml
+hackernews:
+  enabled: true
+  numberOfStories: 10
+  position:
+    top: 4
+    left: 1
+    height: 1
+    width: 2
+  storyType: top
+  refreshInterval: 900
+```
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/custom name="numberOfStories" desc="_Optional_ Defines number of stories to be displayed. Default: 10." value="Any positive integer" >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="storyType" desc="_Optional_ Defines type of stories to be displayed. Default: top." value="`new`, `top`, `job`, `ask`" >}}
+{{% /attributes %}}
+
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `[return]` <br />
@@ -35,44 +59,5 @@ Displays stories from Hacker News.
 <span class="caption">Key:</span> `↑` <br />
 <span class="caption">Action:</span> Select the previous story in the list.
 
-## Configuration
-
-```yaml
-hackernews:
-  enabled: true
-  numberOfStories: 10
-  position:
-    top: 4
-    left: 1
-    height: 1
-    width: 2
-  storyType: top
-  refreshInterval: 900
-```
-
-### Attributes
-
-`enabled` <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
-
-`numberOfStories` <br />
-_Optional_ <br />
-Defines number of stories to be displayed. Default is `10`<br />
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`storyType` <br />
-_Optional_ <br /
-Defines type of stories to be displayed. Default is `top` stories<br />
-Values: `new`, `top`, `job`, `ask`
 
 {{% sourcePath module="hackernews" %}}

@@ -33,7 +33,7 @@ gitter:
   {{< attributes/custom name="numberOfMessages" desc="_Optional_ Maximum number of _(newest)_ messages to be displayed. Default is `10`." value="Any positive integer" >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
-  {{< attributes/custom name="roomURI" desc="_Optional_ URI of the room you would like to see the chat messages from. Default is `wtfutil/Lobby`" value="`new`, `top`, `job`, `ask`" >}}
+  {{< attributes/custom name="roomURI" desc="_Optional_ URI of the room you would like to see the chat messages from. Default is `wtfutil/Lobby`" value="" >}}
 {{% /attributes %}}
 
 ## Keyboard Commands
