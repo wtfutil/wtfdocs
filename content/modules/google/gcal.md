@@ -9,7 +9,9 @@ weight: 10
 
 Displays your upcoming Google calendar events.
 
-**Note:** Setting up access to Google Calendars for Go is a bit unobvious. Check out Google's [Go Quickstart](https://developers.google.com/calendar/quickstart/go), and follow `Enable The Google Calendar API`. The configuration file downloaded is the file you use for the `secretFile` configuration option.
+**Note:** Setting up access to Google Calendars for Go is a bit unobvious. Check out Google's [Go Quickstart](https://developers.google.com/calendar/quickstart/go), and follow `Enable The Google Calendar API`. 
+
+The configuration file downloaded is the file you use for the `secretFile` configuration option.
 
 ## Configuration
 
@@ -43,83 +45,39 @@ gcal:
   withLocation: true
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/colors/custom name="colors.description" desc="The default color for calendar event descriptions." >}}
+  {{< attributes/colors/custom name="colors.past" desc="The color for calendar events that have passed." >}}
+  {{< attributes/colors/custom name="colors.title" desc="The default colour for calendar event titles." >}}
 
-`colors.title` <br />
-The default colour for calendar event titles. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.
+  <tr>
+    <td>`colors.highlights`</td>
+    <td>A list of arrays that define a regular expression pattern and a color. If a calendar event title matches a regular expression, the title will be drawn in that colour. Over-rides the default title colour.</td>
+    <td>[a valid regular expression, any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.]</td>
+  </tr>
 
-`colors.description` <br />
-The default color for calendar event descriptions. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.
+  {{< attributes/custom name="conflictIcon" desc="_Optional_ The icon displayed beside calendar events that have conflicting times (they intersect or overlap in some way)." value="Any displayable unicode character." >}}
+  {{< attributes/custom name="currentIcon" desc="_Optional_ The icon displayed beside the current calendar event." value="Any displayable unicode character." >}}
+  {{< attributes/custom name="displayResponseStatus" desc="_Optional_ Whether or not to display your response status to the calendar event. Default: true." value="true, false" >}}
+  {{< attributes/custom name="email" desc="The email address associated with your Google account. Necessary for determining `responseStatus`." value="A valid email address string.">}}
+  {{< attributes/enabled >}}
+  {{< attributes/custom name="eventCount" desc="The number of calendar events to display." value="Any positive integer">}}
+  {{< attributes/focusChar >}}
+  {{< attributes/custom name="multiCalendar" desc="_Optional_ Whether or not to display your primary calendar or all calendars you have access to. Default: false." value="true, false">}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
 
-`colors.highlights` <br />
-A list of arrays that define a regular expression pattern and a color.
-If a calendar event title matches a regular expression, the title will
-be drawn in that colour. Over-rides the default title colour. <br />
-Values: [a valid regular expression, any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.]
+  <tr>
+    <td>`secretFile`</td>
+    <td>Your <a href="https://developers.google.com/calendar/quickstart/go">Google client secret</a> JSON file.</td>
+    <td>A string representing a file path to the JSON secret file.</td>
+  </tr>
 
-`colors.past` <br />
-The color for calendar events that have passed. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.
-
-`conflictIcon` <br />
-The icon displayed beside calendar events that have conflicting times
-(they intersect or overlap in some way). <br />
-Values: Any displayable unicode character.
-
-`currentIcon` <br />
-The icon displayed beside the current calendar event. <br />
-Values: Any displayable unicode character.
-
-`displayResponseStatus` <br />
-Whether or not to display your response status to the calendar event.
-<br />
-Values: `true`, `false`.
-
-`email` <br />
-The email address associated with your Google account. Necessary for
-determining `responseStatus`. <br />
-Values: A valid email address string.
-
-`enabled` <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`eventCount` <br />
-The number of calendar events to display. <br />
-Values: A positive integer, `0..n`.
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
-
-`multiCalendar` <br />
-Whether or not to display your primary calendar or all calendars you
-have access to. <br />
-Values: `true`, or `false`
-
-`position` <br />
-Where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`secretFile` <br />
-Your <a href="https://developers.google.com/calendar/quickstart/go">Google client secret</a> JSON file. <br />
-Values: A string representing a file path to the JSON secret file.
-
-`showDeclined` <br />
-_Optional_. Whether or not to display events you've declined to attend. <br />
-Values: `true`, or `false`
-
-`timezone` <br />
-_Optional_. The timezone to display calendar event times in. <br />
-Values: Any valid [TZ database name](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
-
-`withLocation` <br />
-Whether or not to show the location of the appointment. <br />
-Values: `true`, or `false`
+  {{< attributes/custom name="showDeclined" desc="_Optional_ Whether or not to show the location of the appointment. Default: true." value="true, false" >}}
+  {{< attributes/timezone >}}
+  {{< attributes/custom name="withLocation" desc="_Optional_ Whether or not to show the location of the appointment. Default: true." value="true, false" >}}
+{{% /attributes %}}
 
 ## Source Code
 
