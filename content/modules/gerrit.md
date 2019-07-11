@@ -55,40 +55,25 @@ gerrit:
   {{< attributes/verifyServerCert >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open the selected review in the browser" >}}
 
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous project.
+  {{< keyboard/h desc="Show the previous project" >}}
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
+  {{< keyboard/l desc="Show the next project" >}}
+  {{< keyboard/o desc="Open the selected story in the browser" >}}
+  {{< keyboard/r >}}
 
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next project.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next review in the list.
-
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous review in the list.
-
-<span class="caption">Key:</span> `r` <br />
-<span class="caption">Action:</span> Refresh the data.
-
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous project.
-
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next project.
-
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next review in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous review in the list.
-
-<span class="caption">Key:</span> `[return]` <br />
-<span class="caption">Action:</span> Open the selected review in the browser.
-
+  {{< keyboard/arrowBack desc="Show the previous project" >}}
+  {{< keyboard/arrowFore desc="Show the next project" >}}
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="gerrit" %}}

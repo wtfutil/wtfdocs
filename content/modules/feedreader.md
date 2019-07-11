@@ -36,27 +36,21 @@ feedreader:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open the selected story in the browser" >}}
 
-<span class="caption">Key:</span> `[return]` <br />
-<span class="caption">Action:</span> Open the selected story in the browser.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next story in the list.
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
+  {{< keyboard/o desc="Open the selected story in the browser" >}}
+  {{< keyboard/r >}}
 
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous story in the list.
+  {{< keyboard/spacer >}}
 
-<span class="caption">Key:</span> `o` <br />
-<span class="caption">Action:</span> Open the selected story in the browser.
-
-<span class="caption">Key:</span> `r` <br />
-<span class="caption">Action:</span> Refresh the data.
-
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next story in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous story in the list.
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
+{{% /keyboard %}}
 
 {{% sourcePath module="feedreader" %}}

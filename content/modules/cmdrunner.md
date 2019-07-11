@@ -31,16 +31,6 @@ cmdrunner:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-### Attributes
-
-`args` <br />
-The arguments to the command, with each item as an element in an array.
-Example: for `curl -I cisco.com`, the arguments array would be `["-I", "cisco.com"]`.
-
-`cmd` <br />
-The terminal command to be run, withouth the arguments. Ie: `ping`,
-`whoami`, `curl`. <br />
-
 ## Examples
 
  * [iStats](/modules/cmdrunner/istats)
