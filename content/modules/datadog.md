@@ -24,29 +24,15 @@ datadog:
     width: 2
 ```
 
-### Attributes
-
-`apiKey` <br />
-Value: Your <a href="https://docs.datadoghq.com/api/?lang=python#overview">Datadog API</a> key.
-
-`applicationKey` <br />
-Value: Your <a href="https://docs.datadoghq.com/api/?lang=python#overview">Datadog Application</a> key.
-
-`monitors` <br />
-Configuration for the monitors functionality.
-
-`tags` <br />
-Array of tags you want to query monitors by.
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
+{{% attributes %}}
+  {{< attributes/apikey name="DataDog" link="https://docs.datadoghq.com/api/" >}}
+  {{< attributes/custom name="applicationKey" description="Your DataDog application key" value="" >}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/custom name="monitors" description="Configuration for the monitors functionality." value="" >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="tags" description="List of tags you want to query monitors by." value="" >}}
+{{% /attributes %}}
 
 {{% sourcePath module="datadog" %}}
