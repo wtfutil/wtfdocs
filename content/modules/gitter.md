@@ -5,11 +5,36 @@ draft: false
 weight: 110
 ---
 
-Added in `v0.2.1`.
+<img src="/imgs/modules/gitter.png" width="847" height="160" alt="gitter screenshot" />
 
 Displays chat messages from Gitter.
 
-<img src="/imgs/modules/gitter.png" width="847" height="160" alt="gitter screenshot" />
+## Configuration
+
+```yaml
+gitter:
+  apiToken: "ab345546asdfasb465234fgjgh068f39a35c3e4139ee383f7"
+  enabled: true
+  numberOfMessages: 10
+  position:
+    top: 4
+    left: 1
+    height: 1
+    width: 4
+  roomUri: wtfutil/Lobby
+  refreshInterval: 300
+```
+
+{{% attributes %}}
+  {{< attributes/apiToken name="Gitter" link="https://developer.gitter.im/apps" >}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/custom name="numberOfMessages" desc="_Optional_ Maximum number of _(newest)_ messages to be displayed. Default is `10`." value="Any positive integer" >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="roomURI" desc="_Optional_ URI of the room you would like to see the chat messages from. Default is `wtfutil/Lobby`" value="`new`, `top`, `job`, `ask`" >}}
+{{% /attributes %}}
 
 ## Keyboard Commands
 
@@ -28,48 +53,5 @@ Displays chat messages from Gitter.
 <span class="caption">Key:</span> `↑` <br />
 <span class="caption">Action:</span> Select the previous message in the list.
 
-## Configuration
-
-```yaml
-gitter:
-  apiToken: "ab345546asdfasb465234fgjgh068f39a35c3e4139ee383f7"
-  enabled: true
-  numberOfMessages: 10
-  position:
-    top: 4
-    left: 1
-    height: 1
-    width: 4
-  roomUri: wtfutil/Lobby
-  refreshInterval: 300
-```
-
-### Attributes
-
-`apiToken` <br />
-Value: Your <a href="https://developer.gitter.im/apps">Gitter</a>Personal Access Token.
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`numberOfMessages` <br />
-_Optional_ <br />
-Maximum number of _(newest)_ messages to be displayed. Default is `10`<br />
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
-
-`roomUri` <br />
-_Optional_ <br /
-URI of the room you would like to see the chat messages from. Default is `wtfutil/Lobby`<br />
-Values: `new`, `top`, `job`, `ask`
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
 
 {{% sourcePath module="gitter" %}}

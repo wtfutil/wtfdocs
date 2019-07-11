@@ -38,7 +38,7 @@ gitlab:
 {{% attributes %}}
   {{< attributes/apikey name="GitLab" link="https://docs.gitlab.com/ce/user/profile/personal_access_tokens.html" >}}
   {{< attributes/border >}}
-  {{< attributes/custom name="domain" description="_Optional_. Your GitLab corporate domain." value="A valid URI." >}}
+  {{< attributes/custom name="domain" desc="_Optional_. Your GitLab corporate domain." value="A valid URI." >}}
   {{< attributes/enabled >}}
   {{< attributes/focusChar >}}
   {{< attributes/position >}}
@@ -56,7 +56,7 @@ gitlab:
   </tr>
 
   {{< attributes/refreshInterval >}}
-  {{< attributes/username name="GitLab" description="Used to figure out which requests require your approval." >}}
+  {{< attributes/username name="GitLab" desc="Used to figure out which requests require your approval." >}}
 {{% /attributes %}}
 
 ## Keyboard Commands

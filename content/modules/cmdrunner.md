@@ -23,9 +23,9 @@ cmdrunner:
 ```
 
 {{% attributes %}}
-  {{< attributes/custom name="args" description="The arguments to the command, with each item as an element in an array." value="" >}}
+  {{< attributes/custom name="args" desc="The arguments to the command, with each item as an element in an array." value="" >}}
   {{< attributes/border >}}
-  {{< attributes/custom name="cmd" description="The terminal command to be run, withouth the arguments. Ie: `ping`, `whoami`, `curl`." value="" >}}
+  {{< attributes/custom name="cmd" desc="The terminal command to be run, withouth the arguments. Ie: `ping`, `whoami`, `curl`." value="" >}}
   {{< attributes/enabled >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}

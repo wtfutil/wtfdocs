@@ -55,13 +55,13 @@ github:
   </tr>
 
   {{< attributes/border >}}
-  {{< attributes/custom name="customQueries" description="Filters for pull requests and issues." value="" >}}
+  {{< attributes/custom name="customQueries" desc="Filters for pull requests and issues." value="" >}}
   {{< attributes/enabled >}}
-  {{< attributes/custom name="enableStatus" description="Whether or not to display pull request mergeability status (`dirty`, `clean`, `unstable`, `blocked`)." value="true, false" >}}
+  {{< attributes/custom name="enableStatus" desc="Whether or not to display pull request mergeability status (`dirty`, `clean`, `unstable`, `blocked`)." value="true, false" >}}
   {{< attributes/focusChar >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
-  {{< attributes/custom name="repositories" description="A list of github repos to fetch data for." value="" >}}
+  {{< attributes/custom name="repositories" desc="A list of github repos to fetch data for." value="" >}}
 
   <tr>
     <td>`uploadURL`</td>
@@ -69,7 +69,7 @@ github:
     <td></td>
   </tr>
 
-  {{< attributes/username name="GitHub" description="Used to figure out which review requests you've been added to." >}}
+  {{< attributes/username name="GitHub" desc="Used to figure out which review requests you've been added to." >}}
 {{% /attributes %}}
 
 ## Keyboard Commands

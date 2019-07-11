@@ -26,13 +26,13 @@ datadog:
 
 {{% attributes %}}
   {{< attributes/apikey name="DataDog" link="https://docs.datadoghq.com/api/" >}}
-  {{< attributes/custom name="applicationKey" description="Your DataDog application key" value="" >}}
+  {{< attributes/custom name="applicationKey" desc="Your DataDog application key" value="" >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
-  {{< attributes/custom name="monitors" description="Configuration for the monitors functionality." value="" >}}
+  {{< attributes/custom name="monitors" desc="Configuration for the monitors functionality." value="" >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
-  {{< attributes/custom name="tags" description="List of tags you want to query monitors by." value="" >}}
+  {{< attributes/custom name="tags" desc="List of tags you want to query monitors by." value="" >}}
 {{% /attributes %}}
 
 {{% sourcePath module="datadog" %}}

@@ -29,8 +29,8 @@ feedreader:
 {{% attributes %}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
-  {{< attributes/custom name="feedLimit" description="The number of stories from each feed to be displayed. Default is `-1`, which will display all available stories." value="Any integer greater than zero. Values zero or less will display all." >}}
-  {{< attributes/custom name="feeds" description="List of RSS or Atom feed URLs." value="" >}}
+  {{< attributes/custom name="feedLimit" desc="The number of stories from each feed to be displayed. Default is `-1`, which will display all available stories." value="Any integer greater than zero. Values zero or less will display all." >}}
+  {{< attributes/custom name="feeds" desc="List of RSS or Atom feed URLs." value="" >}}
   {{< attributes/focusChar >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}

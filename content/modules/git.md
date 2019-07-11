@@ -44,14 +44,14 @@ git:
 
 {{% attributes %}}
   {{< attributes/border >}}
-  {{< attributes/custom name="commitCount" description="The number of past commits to display." value="Any positive integer" >}}
-  {{< attributes/custom name="commitFormat" description="_Optional_ The string format for the commit message." value="" >}}
+  {{< attributes/custom name="commitCount" desc="The number of past commits to display." value="Any positive integer" >}}
+  {{< attributes/custom name="commitFormat" desc="_Optional_ The string format for the commit message." value="" >}}
   {{< attributes/dateFormat >}}
   {{< attributes/enabled >}}
   {{< attributes/focusChar >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
-  {{< attributes/custom name="repositories" description="A list of git repositories to watch." value="Zero or more local file paths pointing to valid git repositories." >}}
+  {{< attributes/custom name="repositories" desc="A list of git repositories to watch." value="Zero or more local file paths pointing to valid git repositories." >}}
 {{% /attributes %}}
 
 ## Keyboard Commands

@@ -44,15 +44,15 @@ gerrit:
 {{% attributes %}}
   {{< attributes/border >}}
   {{< attributes/colors/rows >}}
-  {{< attributes/custom name="domain" description="Your Gerrit corporate domain." value="A valid URI." >}}
+  {{< attributes/custom name="domain" desc="Your Gerrit corporate domain." value="A valid URI." >}}
   {{< attributes/enabled >}}
   {{< attributes/focusChar >}}
   {{< attributes/password name="Gerrit" >}}
   {{< attributes/position >}}
-  {{< attributes/custom name="projects" description="A list of Gerrit project names to fetch data for." >}}
+  {{< attributes/custom name="projects" desc="A list of Gerrit project names to fetch data for." >}}
   {{< attributes/refreshInterval >}}
   {{< attributes/username name="Gerrit" >}}
-  {{< attributes/custom name="verifyServerCertificate" description="Whether or not to verify the server's certificate chain and hostname." value="true, false" >}}
+  {{< attributes/custom name="verifyServerCertificate" desc="Whether or not to verify the server's certificate chain and hostname." value="true, false" >}}
 {{% /attributes %}}
 
 ## Keyboard Commands
