@@ -52,7 +52,7 @@ gerrit:
   {{< attributes/custom name="projects" desc="A list of Gerrit project names to fetch data for." >}}
   {{< attributes/refreshInterval >}}
   {{< attributes/username name="Gerrit" >}}
-  {{< attributes/custom name="verifyServerCertificate" desc="Whether or not to verify the server's certificate chain and hostname." value="true, false" >}}
+  {{< attributes/verifyServerCert >}}
 {{% /attributes %}}
 
 ## Keyboard Commands

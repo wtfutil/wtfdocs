@@ -7,29 +7,7 @@ weight: 130
 
 <img class="screenshot" src="/imgs/modules/jenkins.png" alt="jenkins screenshot" width="320" height="68" />
 
-Added in `v0.0.8`.
-
 Displays jenkins status of given builds in a project or view
-
-## Keyboard Commands
-
-<span class="caption">Key:</span> `[return]` <br />
-<span class="caption">Action:</span> Open the selected job in the browser.
-
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next job in the list.
-
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous job in the list.
-
-<span class="caption">Key:</span> `r` <br />
-<span class="caption">Action:</span> Refresh the data.
-
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next job in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous job in the list.
 
 ## Configuration
 
@@ -50,43 +28,38 @@ jenkins:
   verifyServerCertificate: true
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/apikey name="Jenkins" link="https://wiki.jenkins.io/display/JENKINS/Remote+access+API" >}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/custom name="jobNameRegex" desc="_Optional_ A regex that filters the jobs shown in the widget. Any jobs matching the regular expression will be shown." value="A valid regex, e.g. `^[a-z]+\[[0-9]+\]$`" >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="successBallColor" desc="Changes the default color of successful Jenkins jobs to the color of your choosing." value="Any valid color name, `blue`, `green`, `purple`, `yellow`, etc." >}}
+  {{< attributes/custom name="url" desc="The url to your Jenkins project or view." value="A valid URI." >}}
+  {{< attributes/custom name="user" desc="Your Jenkins username." value="" >}}
+  {{< attributes/verifyServerCert >}}
+{{% /attributes %}}
 
-`apiKey` <br />
-Value: Your <a href="https://wiki.jenkins.io/display/JENKINS/Remote+access+API">Jenkins API</a> key.
+## Keyboard Commands
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+<span class="caption">Key:</span> `[return]` <br />
+<span class="caption">Action:</span> Open the selected job in the browser.
 
-`successBallColor` <br />
-Changes the default color of successful Jenkins jobs to the color of your choosing. <br />
-Values: `blue`, `green`, `purple`, `yellow`, etc.
+<span class="caption">Key:</span> `j` <br />
+<span class="caption">Action:</span> Select the next job in the list.
 
-`jobNameRegex` <br />
-An optional regex that filters the jobs shown in the widget. Any jobs matching the regular expression will be shown. <br />
-Values: A valid regex, e.g. `^[a-z]+\[[0-9]+\]$`
+<span class="caption">Key:</span> `k` <br />
+<span class="caption">Action:</span> Select the previous job in the list.
 
-`position` <br />
-Defines where in the grid this module's widget will be displayed.
+<span class="caption">Key:</span> `r` <br />
+<span class="caption">Action:</span> Refresh the data.
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+<span class="caption">Key:</span> `↓` <br />
+<span class="caption">Action:</span> Select the next job in the list.
 
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`user` <br />
-Your Jenkins username. <br />
-
-`url` <br />
-The url to your Jenkins project or view. <br />
-Values: A valid URI.
-
-`verifyServerCertificate` <br />
-_Optional_ <br />
-Determines whether or not the server's certificate chain and host name are verified. <br />
-Values: `true`, `false`.
+<span class="caption">Key:</span> `↑` <br />
+<span class="caption">Action:</span> Select the previous job in the list.
 
 {{% sourcePath module="jenkins" %}}
