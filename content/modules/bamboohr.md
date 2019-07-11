@@ -22,23 +22,14 @@ bamboohr:
   subdomain: "testco"
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/apikey name="BambooHR" link="https://www.bamboohr.com/api/documentation/" >}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
 
-`apiKey` <br />
-Value: Your <a href="https://www.bamboohr.com/api/documentation/">BambooHR API</a> token.
-
-`enabled` <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: Any positive integer, `0..n`.
-
-`subdomain` <br />
-Value: Your <a href="https://www.bamboohr.com/api/documentation/">BambooHR API</a> subdomain name.
+  <tr><td>subdomain</td><td>Your <a href="https://www.bamboohr.com/api/documentation/">BambooHR API</a> subdomain name.</td><td></td></tr>
+{{% /attributes %}}
 
 {{% sourcePath module="bamboohr" %}}
