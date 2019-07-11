@@ -10,20 +10,6 @@ pygmentsStyle = "monokailight"
 theme = "docdock"
 title = "WTF - the terminal dashboard"
 
-# [Languages]
-# [Languages.en]
-# title = "Documentation for WTF"
-# weight = 1
-# languageName = "English"
-#
-# [Languages.fr]
-# title = "Documentation du WTF"
-# weight = 2
-# languageName = "Français"
-
-
-
-
 [params]
 editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 showVisitedLinks = true # default is false
@@ -39,7 +25,6 @@ enableGitInfo = true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
-
 
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
