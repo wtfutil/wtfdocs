@@ -9,6 +9,44 @@ weight: 220
 
 An interactive todo list.
 
+## Configuration
+
+```yaml
+todo:
+  checkedIcon: "X"
+  colors:
+    checked: gray
+    highlight:
+      fore: "black"
+      back: "orange"
+  enabled: true
+  filename: "todo.yml"
+  position:
+    top: 2
+    left: 2
+    height: 2
+    width: 1
+  refreshInterval: 3600
+```
+
+{{% attributes %}}
+  {{< attributes/border >}}
+
+  <row>
+    <td>`colors.checked`</td>
+    <td>The foreground color for checked rows.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
+  </row>
+
+  {{< attributes/colors/highlight >}}
+  {{< attributes/custom name="checkedIcon" desc="_Optional_ The icon used to denote a 'checked' todo item." value="Any displayable unicode character." >}}
+  {{< attributes/enabled >}}
+  {{< attributes/custom name="filename" desc="The name for the todo file." value="Any valid filename, ideally ending in `yml`." >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
+
 ## Keyboard Commands
 
 <span class="caption">Key:</span> `[return]` <br />
@@ -52,63 +90,5 @@ whichever text editor is associated with that file type.
 
 <span class="caption">Key:</span> `Ctrl-K` <br />
 <span class="caption">Action:</span> Move the selected item up the list.
-
-## Configuration
-
-```yaml
-todo:
-  checkedIcon: "X"
-  colors:
-    checked: gray
-    highlight:
-      fore: "black"
-      back: "orange"
-  enabled: true
-  filename: "todo.yml"
-  position:
-    top: 2
-    left: 2
-    height: 2
-    width: 1
-  refreshInterval: 3600
-```
-
-### Attributes
-
-`checkedIcon` <br />
-The icon used to denote a "checked" todo item. <br />
-Values: Any displayable unicode character.
-
-`colors.checked` <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.
-
-`colors.highlight.fore` <br />
-The foreground color for the currently-selected row. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.
-
-`colors.highlight.back` <br />
-The background color for the currently-selected row. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.
-
-`enabled` <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`filename` <br />
-The name for the todo file. <br />
-Values: Any valid filename, ideally ending in `yml`.
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
-
-`position` <br />
-Where in the grid this module's widget will be displayed. <br />
-
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
 
 {{% sourcePath module="todo" %}}
