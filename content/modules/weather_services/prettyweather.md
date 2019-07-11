@@ -26,35 +26,25 @@ Displays weather information as ASCII art from [Wttr.in](http://wttr.in).
       language: "en"
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/border >}}
 
-`city` <br />
-_Optional_. It will use Barcelona if omitted.<br />
-Values: The name of any city supported by [Wttr.in](http://wttr.in).
+  <tr>
+    <td>`city`</td>
+    <td>_Optional_ The name of the city to display weather for. Default: Barcelona.</td>
+    <td>The name of any city supported by [Wttr.in](http://wttr.in)</td>
+  </tr>
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< attributes/enabled >}}
 
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
+  {{< attributes/custom name="language" desc="_Optional_ Wttr.in language configuration. Default: en." value="See `curl wttr.in/:translation` for more details" >}}
 
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
 
-`unit` <br />
-_Optional_. It will use metric if you are out of US and imperial for US.<br />
-The temperature scale in which to display temperature values. <br />
-Values: `u` for Fahrenheit, `m` for Celsius.
-
-`view` <br />
-_Optional_ Wttr.in view configuration. <br />
-Values: See `curl wttr.in/:help` for more details.
-
-`language` <br />
-_Optional_ Wttr.in language configuration. <br />
-Values: See `curl wttr.in/:translation` for more details.
+  {{< attributes/custom name="unit" desc="_Optional_ The scale to display temperatures in. Default: m." value="`u` for Fahrenheit, `m` for Celsius" >}}
+  {{< attributes/custom name="view" desc="_Optional_ Wttr.in view configuration." value="See `curl wttr.in/:help` for more details" >}}
+{{% /attributes %}}
 
 ## Source Code
 
