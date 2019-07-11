@@ -50,32 +50,16 @@ trello:
   username: myname
 ```
 
-### Attributes
-
-`accessToken` <br />
-Value: Your Trello access token.
-
-`apiKey` <br />
-Value: Your Trello API key.
-
-`board` <br />
-The name of the Trello board. <br />
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`list` <br />
-The Trello lists to fetch cards from. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`username` <br />
-Your Trello username. <br />
-
-`position` <br />
-Where in the grid this module's widget will be displayed. <br />
+{{% attributes %}}
+  {{< attributes/apikey name="Trello" link="" >}}
+  {{< attributes/custom name="accessToken" desc="Your Trello access token." >}}
+  {{< attributes/custom name="board" desc="The name of the Trello board." >}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/custom name="list" desc="The Trello lists to fetch cards from." >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/username name="Trello" >}}
+{{% /attributes %}}
 
 {{% sourcePath module="trello" %}}
