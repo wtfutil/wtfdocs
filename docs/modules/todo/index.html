@@ -510,9 +510,6 @@
       <option value="/modules/circleci/" >- CircleCI</option>
       <option value="/modules/clocks/" >- Clocks</option>
       <option value="/modules/cmdrunner/" >- CmdRunner</option>
-    <option value="/modules/cryptocurrencies/" >
-  - 
-   Crypo Currencies</option>
       <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -520,14 +517,8 @@
       <option value="/modules/github/" >- GitHub</option>
       <option value="/modules/gitlab/" >- GitLab</option>
       <option value="/modules/gitter/" >- Gitter</option>
-    <option value="/modules/google/" >
-  - 
-   Google Apps</option>
       <option value="/modules/hackernews/" >- Hacker News</option>
       <option value="/modules/hibp/" >- Have I Been Pwned (HIBP)</option>
-    <option value="/modules/ipaddress/" >
-  - 
-   IP Addresses</option>
       <option value="/modules/jenkins/" >- Jenkins</option>
       <option value="/modules/jira/" >- Jira</option>
       <option value="/modules/logger/" >- Logger</option>
@@ -549,9 +540,6 @@
       <option value="/modules/trello/" >- Trello</option>
       <option value="/modules/twitter/" >- Twitter</option>
       <option value="/modules/victorops/" >- VictorOps OnCall</option>
-    <option value="/modules/weather_services/" >
-  - 
-   Weather Services</option>
       <option value="/modules/zendesk/" >- Zendesk</option>
   
 
@@ -585,6 +573,87 @@
 <p><img class="screenshot" src="/imgs/modules/todo.png" width="320" height="388" alt="todo screenshot" /></p>
 
 <p>An interactive todo list.</p>
+
+<h2 id="configuration">Configuration</h2>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">todo<span class="p">:</span><span class="w">
+</span><span class="w">  </span>checkedIcon<span class="p">:</span><span class="w"> </span><span class="s2">&#34;X&#34;</span><span class="w">
+</span><span class="w">  </span>colors<span class="p">:</span><span class="w">
+</span><span class="w">    </span>checked<span class="p">:</span><span class="w"> </span>gray<span class="w">
+</span><span class="w">    </span>highlight<span class="p">:</span><span class="w">
+</span><span class="w">      </span>fore<span class="p">:</span><span class="w"> </span><span class="s2">&#34;black&#34;</span><span class="w">
+</span><span class="w">      </span>back<span class="p">:</span><span class="w"> </span><span class="s2">&#34;orange&#34;</span><span class="w">
+</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>filename<span class="p">:</span><span class="w"> </span><span class="s2">&#34;todo.yml&#34;</span><span class="w">
+</span><span class="w">  </span>position<span class="p">:</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">3600</span></code></pre></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <p><tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr></p>
+
+<p><row>
+    <td><code>colors.checked</code></td>
+    <td>The foreground color for checked rows.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
+  </row></p>
+
+<p><tr>
+    <td><code>colors.highlight.fore</code></td>
+    <td>The foreground color for the currently-selected row.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr>
+<tr>
+    <td><code>colors.highlight.back</code></td>
+    <td>The background color for the currently-selected row.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr>
+  <tr>
+    <td><code>checkedIcon</code></td>
+    <td><em>Optional</em> The icon used to denote a &#39;checked&#39; todo item.</td>
+    <td>Any displayable unicode character.</td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>filename</code></td>
+    <td>The name for the todo file.</td>
+    <td>Any valid filename, ideally ending in <code>yml</code>.</td>
+</tr>
+  <tr>
+    <td><code>focusChar</code></td>
+    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr></p>
+
+    </tbody>
+</table>
 
 <h2 id="keyboard-commands">Keyboard Commands</h2>
 
@@ -629,60 +698,6 @@ whichever text editor is associated with that file type.</p>
 
 <p><span class="caption">Key:</span> <code>Ctrl-K</code> <br />
 <span class="caption">Action:</span> Move the selected item up the list.</p>
-
-<h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">todo<span class="p">:</span><span class="w">
-</span><span class="w">  </span>checkedIcon<span class="p">:</span><span class="w"> </span><span class="s2">&#34;X&#34;</span><span class="w">
-</span><span class="w">  </span>colors<span class="p">:</span><span class="w">
-</span><span class="w">    </span>checked<span class="p">:</span><span class="w"> </span>gray<span class="w">
-</span><span class="w">    </span>highlight<span class="p">:</span><span class="w">
-</span><span class="w">      </span>fore<span class="p">:</span><span class="w"> </span><span class="s2">&#34;black&#34;</span><span class="w">
-</span><span class="w">      </span>back<span class="p">:</span><span class="w"> </span><span class="s2">&#34;orange&#34;</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>filename<span class="p">:</span><span class="w"> </span><span class="s2">&#34;todo.yml&#34;</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">3600</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
-
-<p><code>checkedIcon</code> <br />
-The icon used to denote a &ldquo;checked&rdquo; todo item. <br />
-Values: Any displayable unicode character.</p>
-
-<p><code>colors.checked</code> <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</p>
-
-<p><code>colors.highlight.fore</code> <br />
-The foreground color for the currently-selected row. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</p>
-
-<p><code>colors.highlight.back</code> <br />
-The background color for the currently-selected row. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</p>
-
-<p><code>enabled</code> <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>filename</code> <br />
-The name for the todo file. <br />
-Values: Any valid filename, ideally ending in <code>yml</code>.</p>
-
-<p><code>focusChar</code> <br />
-Define one of the number keys as a short cut key to access the widget. <br /></p>
-
-<p><code>position</code> <br />
-Where in the grid this module&rsquo;s widget will be displayed. <br /></p>
-
-<p><code>focusChar</code> <br />
-Define one of the number keys as a short cut key to access the widget. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/todo/</code></pre></div>

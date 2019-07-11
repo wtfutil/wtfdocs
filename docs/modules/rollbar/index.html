@@ -586,6 +586,88 @@
 
 <p>Displays item information for your rollbar account.</p>
 
+<h2 id="configuration">Configuration</h2>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">rollbar<span class="p">:</span><span class="w">
+</span><span class="w">  </span>accessToken<span class="p">:</span><span class="w"> </span><span class="s2">&#34;abjsdfoia7sdg8fy7g&#34;</span><span class="w">
+</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>projectOwner<span class="p">:</span><span class="w"> </span><span class="s2">&#34;ENCOM&#34;</span><span class="w">
+</span><span class="w">  </span>projectName<span class="p">:</span><span class="w"> </span><span class="s2">&#34;MCP&#34;</span><span class="w">
+</span><span class="w">  </span>activeOnly<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>assignedToName<span class="p">:</span><span class="w"> </span><span class="s2">&#34;dillinger&#34;</span><span class="w">
+</span><span class="w">  </span>count<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">  </span>position<span class="p">:</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span></code></pre></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td><code>accessToken</code></td>
+    <td>Your Rollbar project access token (only needs read capabilities).</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>activeOnly</code></td>
+    <td>Only show items that are active.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>assignedToName</code></td>
+    <td>Set this to your username if you only want to see items assigned to you.</td>
+    <td>A string of your username</td>
+</tr>
+  <tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>count</code></td>
+    <td>How many items you want to see. 100 is max.</td>
+    <td>Any positive integer up to 100 inclusive.</td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>focusChar</code></td>
+    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>projectName</code></td>
+    <td>This is used to create a link to the item</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>projectOwner</code></td>
+    <td>This is used to create a link to the item</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr>
+    </tbody>
+</table>
+
 <h2 id="keyboard-commands">Keyboard Commands</h2>
 
 <p><span class="caption">Key:</span> <code>[return]</code> <br />
@@ -605,57 +687,6 @@
 
 <p><span class="caption">Key:</span> <code>↑</code> <br />
 <span class="caption">Action:</span> Select the previous item in the list.</p>
-
-<h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">rollbar<span class="p">:</span><span class="w">
-</span><span class="w">  </span>accessToken<span class="p">:</span><span class="w"> </span><span class="s2">&#34;abjsdfoia7sdg8fy7g&#34;</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>projectOwner<span class="p">:</span><span class="w"> </span><span class="s2">&#34;ENCOM&#34;</span><span class="w">
-</span><span class="w">  </span>projectName<span class="p">:</span><span class="w"> </span><span class="s2">&#34;MCP&#34;</span><span class="w">
-</span><span class="w">  </span>activeOnly<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>assignedToName<span class="p">:</span><span class="w"> </span><span class="s2">&#34;dillinger&#34;</span><span class="w">
-</span><span class="w">  </span>count<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
-
-<p><code>accessToken</code> <br />
-Value: Your Rollbar project access token(Only needs read capabilities).</p>
-
-<p><code>enabled</code> <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>projectOwner</code> <br />
-This is used to create a link to the item <br />
-Values: A string of project owners name.</p>
-
-<p><code>projectName</code> <br />
-This is used to create a link to the item <br />
-Values: A string of the projects name</p>
-
-<p><code>activeOnly</code> <br />
-Only show items that are active <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>assignedToName</code> <br />
-Set this to your username if you only want to see items assigned to you <br />
-Values: A string of your user_name</p>
-
-<p><code>count</code> <br />
-How many items you want to see. 100 is max <br />
-Values: A positive integer, <code>0..100</code>.</p>
-
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/rollbar/</code></pre></div>

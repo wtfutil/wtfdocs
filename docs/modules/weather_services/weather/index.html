@@ -507,6 +507,56 @@
   
     <option value="/modules/" >
    Modules</option> 
+      <option value="/modules/bamboohr/" >- BambooHR</option>
+      <option value="/modules/circleci/" >- CircleCI</option>
+      <option value="/modules/clocks/" >- Clocks</option>
+      <option value="/modules/cmdrunner/" >- CmdRunner</option>
+    <option value="/modules/cryptocurrencies/" >
+  - 
+   Crypo Currencies</option>
+      <option value="/modules/datadog/" >- Datadog</option>
+      <option value="/modules/feedreader/" >- Feed Reader</option>
+      <option value="/modules/gerrit/" >- Gerrit</option>
+      <option value="/modules/git/" >- Git</option>
+      <option value="/modules/github/" >- GitHub</option>
+      <option value="/modules/gitlab/" >- GitLab</option>
+      <option value="/modules/gitter/" >- Gitter</option>
+    <option value="/modules/google/" >
+  - 
+   Google Apps</option>
+      <option value="/modules/hackernews/" >- Hacker News</option>
+      <option value="/modules/hibp/" >- Have I Been Pwned (HIBP)</option>
+    <option value="/modules/ipaddress/" >
+  - 
+   IP Addresses</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
+      <option value="/modules/jira/" >- Jira</option>
+      <option value="/modules/logger/" >- Logger</option>
+      <option value="/modules/mercurial/" >- Mercurial</option>
+      <option value="/modules/nbascore/" >- NBA Score</option>
+      <option value="/modules/newrelic/" >- New Relic</option>
+      <option value="/modules/opsgenie/" >- OpsGenie</option>
+      <option value="/modules/pagerduty/" >- Pagerduty</option>
+      <option value="/modules/power/" >- Power</option>
+      <option value="/modules/resourceusage/" >- Resource Usage</option>
+      <option value="/modules/rollbar/" >- Rollbar</option>
+      <option value="/modules/security/" >- Security</option>
+      <option value="/modules/spotify/" >- Spotify</option>
+      <option value="/modules/textfile/" >- Textfile</option>
+      <option value="/modules/todo/" >- Todo</option>
+      <option value="/modules/todoist/" >- Todoist</option>
+      <option value="/modules/transmission/" >- Transmission</option>
+      <option value="/modules/travisci/" >- TravisCI</option>
+      <option value="/modules/trello/" >- Trello</option>
+      <option value="/modules/twitter/" >- Twitter</option>
+      <option value="/modules/victorops/" >- VictorOps OnCall</option>
+    <option value="/modules/weather_services/" >
+  - 
+   Weather Services</option> 
+      <option value="/modules/weather_services/prettyweather/" >-- Pretty Weather</option>
+      <option value="/modules/weather_services/weather/"  selected>-- Weather</option>
+  
+      <option value="/modules/zendesk/" >- Zendesk</option>
   
 
 
@@ -538,8 +588,7 @@
 
 <p><img class="screenshot" src="/imgs/modules/weather.png" width="320" height="187" alt="weather screenshot" /></p>
 
-<p>Displays a configurable list of current weather report, including
-current temperature, sunrise time, and sunset time.</p>
+<p>Displays a configurable list of current weather report, including current temperature, sunrise time, and sunset time.</p>
 
 <h2 id="keyboard-commands">Keyboard Commands</h2>
 
@@ -578,43 +627,74 @@ current temperature, sunrise time, and sunset time.</p>
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span><span class="w">
 </span><span class="w">  </span>tempUnit<span class="p">:</span><span class="w"> </span><span class="s2">&#34;C&#34;</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <p><tr>
+    <td><code>apiKey</code></td>
+    <td>Your <a href="https://openweathermap.org/appid">OpenWeatherMap API</a> token.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr></p>
 
-<p><code>apiKey</code> <br />
-Your <a href="https://openweathermap.org/appid">OpenWeatherMap API</a> key.</p>
+<p><tr>
+    <td><code>cityids</code></td>
+    <td>A list of the <a href="http://openweathermap.org/help/city_list.txt">OpenWeatherMap city IDs</a> for the cities you want to view.</td>
+    <td>A list of positive integers</td>
+  </tr></p>
 
-<p><code>cityids</code> <br />
-A list of the <a
-href="http://openweathermap.org/help/city_list.txt">OpenWeatherMap city
-IDs</a> for the cities you want to view. <br />
-Values: A list of positive integers, <code>0..n</code></p>
+<p><tr>
+    <td><code>colors.current</code></td>
+    <td><em>Optional</em> The color to highlight the current temperature in. Default: green.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr></p>
 
-<p><code>colors.current</code> <br />
-The color to highlight the current temperature in. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.</p>
+<p><tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>focusChar</code></td>
+    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr></p>
 
-<p><code>enabled</code> <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
+<p><tr>
+    <td><code>language</code></td>
+    <td><em>Optional</em> The human language in which to present the weather data. Default: EN.</td>
+    <td>Any <a href="https://openweathermap.org/current">language identifier</a> specified by OpenWeatherMap&rdquo;</td>
+  </tr></p>
 
-<p><code>language</code> <br />
-The human language in which to present the weather data. <br />
-Values: Any <a href="https://openweathermap.org/current">language identifier</a> specified by OpenWeatherMap.</p>
+<p><tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr></p>
 
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
+<p><tr>
+    <td><code>tempUnit</code></td>
+    <td><em>Optional</em> The temperature scale in which to display temperature values. Default: C.</td>
+    <td><code>F</code> for Fahrenheit, <code>C</code> for Celcius</td>
+</tr></p>
 
-<p><code>focusChar</code> <br />
-Define one of the number keys as a short cut key to access the widget. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
-
-<p><code>tempUnit</code> <br />
-The temperature scale in which to display temperature values. <br />
-Values: <code>F</code> for Fahrenheit, <code>C</code> for Celcius.</p>
+    </tbody>
+</table>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/weatherservices/weather/</code></pre></div>

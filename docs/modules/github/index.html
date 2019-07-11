@@ -506,6 +506,53 @@
   
     <option value="/modules/" >
    Modules</option> 
+      <option value="/modules/bamboohr/" >- BambooHR</option>
+      <option value="/modules/circleci/" >- CircleCI</option>
+      <option value="/modules/clocks/" >- Clocks</option>
+      <option value="/modules/cmdrunner/" >- CmdRunner</option>
+    <option value="/modules/cryptocurrencies/" >
+  - 
+   Crypo Currencies</option>
+      <option value="/modules/datadog/" >- Datadog</option>
+      <option value="/modules/feedreader/" >- Feed Reader</option>
+      <option value="/modules/gerrit/" >- Gerrit</option>
+      <option value="/modules/git/" >- Git</option>
+      <option value="/modules/github/"  selected>- GitHub</option>
+      <option value="/modules/gitlab/" >- GitLab</option>
+      <option value="/modules/gitter/" >- Gitter</option>
+    <option value="/modules/google/" >
+  - 
+   Google Apps</option>
+      <option value="/modules/hackernews/" >- Hacker News</option>
+      <option value="/modules/hibp/" >- Have I Been Pwned (HIBP)</option>
+    <option value="/modules/ipaddress/" >
+  - 
+   IP Addresses</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
+      <option value="/modules/jira/" >- Jira</option>
+      <option value="/modules/logger/" >- Logger</option>
+      <option value="/modules/mercurial/" >- Mercurial</option>
+      <option value="/modules/nbascore/" >- NBA Score</option>
+      <option value="/modules/newrelic/" >- New Relic</option>
+      <option value="/modules/opsgenie/" >- OpsGenie</option>
+      <option value="/modules/pagerduty/" >- Pagerduty</option>
+      <option value="/modules/power/" >- Power</option>
+      <option value="/modules/resourceusage/" >- Resource Usage</option>
+      <option value="/modules/rollbar/" >- Rollbar</option>
+      <option value="/modules/security/" >- Security</option>
+      <option value="/modules/spotify/" >- Spotify</option>
+      <option value="/modules/textfile/" >- Textfile</option>
+      <option value="/modules/todo/" >- Todo</option>
+      <option value="/modules/todoist/" >- Todoist</option>
+      <option value="/modules/transmission/" >- Transmission</option>
+      <option value="/modules/travisci/" >- TravisCI</option>
+      <option value="/modules/trello/" >- Trello</option>
+      <option value="/modules/twitter/" >- Twitter</option>
+      <option value="/modules/victorops/" >- VictorOps OnCall</option>
+    <option value="/modules/weather_services/" >
+  - 
+   Weather Services</option>
+      <option value="/modules/zendesk/" >- Zendesk</option>
   
 
 
@@ -551,26 +598,6 @@
 
 <p>Create filters to manage PRs and issues however you like.</p>
 
-<h2 id="keyboard-commands">Keyboard Commands</h2>
-
-<p><span class="caption">Key:</span> <code>/</code> <br />
-<span class="caption">Action:</span> Open/close the widget&rsquo;s help window.</p>
-
-<p><span class="caption">Key:</span> <code>h</code> <br />
-<span class="caption">Action:</span> Show the previous git repository.</p>
-
-<p><span class="caption">Key:</span> <code>l</code> <br />
-<span class="caption">Action:</span> Show the next git repository.</p>
-
-<p><span class="caption">Key:</span> <code>←</code> <br />
-<span class="caption">Action:</span> Show the previous git repository.</p>
-
-<p><span class="caption">Key:</span> <code>→</code> <br />
-<span class="caption">Action:</span> Show the next git repository.</p>
-
-<p><span class="caption">Key:</span> <code>Return</code> <br />
-<span class="caption">Action:</span> Open the selected repository in a browser.</p>
-
 <h2 id="configuration">Configuration</h2>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">github<span class="p">:</span><span class="w">
 </span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
@@ -592,45 +619,101 @@
 </span><span class="w">    </span>wtf<span class="p">:</span><span class="w"> </span><span class="s2">&#34;wtfutil&#34;</span><span class="w">
 </span><span class="w">  </span>uploadURL<span class="p">:</span><span class="w"> </span><span class="s2">&#34;&#34;</span><span class="w">
 </span><span class="w">  </span>username<span class="p">:</span><span class="w"> </span><span class="s2">&#34;wtfutil&#34;</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <p><tr>
+    <td><code>apiKey</code></td>
+    <td>Your <a href="https://blog.github.com/2013-05-16-personal-api-tokens/">GitHub API</a> token.</td>
+    <td></td>
+</tr></p>
 
-<p><code>apiKey</code> <br />
-Value: Your <a href="https://blog.github.com/2013-05-16-personal-api-tokens/">GitHub API</a> token.</p>
+<p><tr>
+    <td><code>baseURL</code></td>
+    <td><em>Optional</em> Your <a href="https://developer.github.com/enterprise/2.13/v3/enterprise-admin/">GitHub Enterprise</a> API URL.</td>
+  </tr></p>
 
-<p><code>baseURL</code> <br />
-<em>Optional</em> <br />
-Value: Your <a href="https://developer.github.com/enterprise/2.13/v3/enterprise-admin/">GitHub Enterprise</a> API URL.</p>
+<p><tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>customQueries</code></td>
+    <td>Filters for pull requests and issues.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>enableStatus</code></td>
+    <td>Whether or not to display pull request mergeability status (<code>dirty</code>, <code>clean</code>, <code>unstable</code>, <code>blocked</code>).</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>focusChar</code></td>
+    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr>
+  <tr>
+    <td><code>repositories</code></td>
+    <td>A list of github repos to fetch data for.</td>
+    <td></td>
+</tr></p>
 
-<p><code>enabled</code> <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
+<p><tr>
+    <td><code>uploadURL</code></td>
+    <td><em>Optional</em> Your <a href="https://developer.github.com/enterprise/2.13/v3/enterprise-admin/">GitHub Enterprise</a> upload URL (often the same as the API URL).</td>
+    <td></td>
+  </tr></p>
 
-<p><code>enableStatus</code> <br />
-Display pull request mergeability status (&lsquo;dirty&rsquo;, &lsquo;clean&rsquo;, &lsquo;unstable&rsquo;,
-&lsquo;blocked&rsquo;).<br />
-Values: <code>true</code>, <code>false</code>.</p>
+<p><tr>
+    <td><code>username</code></td>
+    <td>Your GitHub username. </td>
+    <td></td>
+</tr></p>
 
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
+    </tbody>
+</table>
 
-<p><code>focusChar</code> <br />
-Define one of the number keys as a short cut key to access the widget. <br /></p>
+<h2 id="keyboard-commands">Keyboard Commands</h2>
 
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
+<p><span class="caption">Key:</span> <code>/</code> <br />
+<span class="caption">Action:</span> Open/close the widget&rsquo;s help window.</p>
 
-<p><code>repositories</code> <br />
-A list of github repos to fetch data for. <br />
-Example: <code>wtfutil/wtf</code></p>
+<p><span class="caption">Key:</span> <code>h</code> <br />
+<span class="caption">Action:</span> Show the previous git repository.</p>
 
-<p><code>uploadURL</code> <br />
-<em>Optional</em> <br />
-Value: Your <a href="https://developer.github.com/enterprise/2.13/v3/enterprise-admin/">GitHub Enterprise</a> upload URL (often the same as API URL).</p>
+<p><span class="caption">Key:</span> <code>l</code> <br />
+<span class="caption">Action:</span> Show the next git repository.</p>
 
-<p><code>username</code> <br />
-Your GitHub username. Used to figure out which review requests you&rsquo;ve
-been added to.</p>
+<p><span class="caption">Key:</span> <code>←</code> <br />
+<span class="caption">Action:</span> Show the previous git repository.</p>
+
+<p><span class="caption">Key:</span> <code>→</code> <br />
+<span class="caption">Action:</span> Show the next git repository.</p>
+
+<p><span class="caption">Key:</span> <code>Return</code> <br />
+<span class="caption">Action:</span> Open the selected repository in a browser.</p>
 
 <h2 id="custom-query-examples">Custom Query Examples</h2>
 

@@ -603,35 +603,63 @@
 </span><span class="w">      </span>unit<span class="p">:</span><span class="w"> </span><span class="s2">&#34;c&#34;</span><span class="w">
 </span><span class="w">      </span>view<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
 </span><span class="w">      </span>language<span class="p">:</span><span class="w"> </span><span class="s2">&#34;en&#34;</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <p><tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr></p>
 
-<p><code>city</code> <br />
-<em>Optional</em>. It will use Barcelona if omitted.<br />
-Values: The name of any city supported by <a href="http://wttr.in">Wttr.in</a>.</p>
+<p><tr>
+    <td><code>city</code></td>
+    <td><em>Optional</em> The name of the city to display weather for. Default: Barcelona.</td>
+    <td>The name of any city supported by <a href="http://wttr.in">Wttr.in</a></td>
+  </tr></p>
 
-<p><code>enabled</code> <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
+<p><tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr></p>
 
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
+<p><tr>
+    <td><code>language</code></td>
+    <td><em>Optional</em> Wttr.in language configuration. Default: en.</td>
+    <td>See <code>curl wttr.in/:translation</code> for more details</td>
+</tr></p>
 
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
+<p><tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr></p>
 
-<p><code>unit</code> <br />
-<em>Optional</em>. It will use metric if you are out of US and imperial for US.<br />
-The temperature scale in which to display temperature values. <br />
-Values: <code>u</code> for Fahrenheit, <code>m</code> for Celsius.</p>
+<p><tr>
+    <td><code>unit</code></td>
+    <td><em>Optional</em> The scale to display temperatures in. Default: m.</td>
+    <td><code>u</code> for Fahrenheit, <code>m</code> for Celsius</td>
+</tr>
+  <tr>
+    <td><code>view</code></td>
+    <td><em>Optional</em> Wttr.in view configuration.</td>
+    <td>See <code>curl wttr.in/:help</code> for more details</td>
+</tr></p>
 
-<p><code>view</code> <br />
-<em>Optional</em> Wttr.in view configuration. <br />
-Values: See <code>curl wttr.in/:help</code> for more details.</p>
-
-<p><code>language</code> <br />
-<em>Optional</em> Wttr.in language configuration. <br />
-Values: See <code>curl wttr.in/:translation</code> for more details.</p>
+    </tbody>
+</table>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/weatherservices/prettyweather/</code></pre></div>

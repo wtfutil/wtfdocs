@@ -584,13 +584,11 @@
 
 <p>Displays the contents of the WTF log file. The log file is located at <code>~/.config/wtf/log.txt</code>.</p>
 
+<h2 id="usage">Usage</h2>
+
 <p>To log to this file in your own modules:</p>
 <div class="highlight"><pre class="chroma"><code class="language-golang" data-lang="golang"><span class="nx">require</span> <span class="s">&#34;github.com/wtfutil/wtf/logger&#34;</span>
 <span class="nx">logger</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">&#34;This is a log entry&#34;</span><span class="p">)</span></code></pre></div>
-<h2 id="keyboard-commands">Keyboard Commands</h2>
-
-<p>Arrow keys scroll through the log file.</p>
-
 <h2 id="configuration">Configuration</h2>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">logger<span class="p">:</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
@@ -600,25 +598,41 @@
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">1</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr>
+    </tbody>
+</table>
 
-<p><code>enabled</code> <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-<strong>Note:</strong> If you&rsquo;re using logging and logging is <em>disabled</em>, your logs
-will still be written to file, the widget just won&rsquo;t be shown onscreen.
-If you have <code>logger.Log</code> calls in your code, regardless of this setting,
-they will be written out. <br />
-Values: <code>true</code>, <code>false</code>.</p>
+<h2 id="keyboard-commands">Keyboard Commands</h2>
 
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
-
-<p><code>focusChar</code> <br />
-Define one of the number keys as a short cut key to access the widget. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
+<p>Arrow keys scroll through the log file.</p>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/logger/</code></pre></div>

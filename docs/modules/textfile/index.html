@@ -586,14 +586,6 @@
 
 <p>Displays the contents of the specified text file in the widget.</p>
 
-<h2 id="keyboard-commands">Keyboard Commands</h2>
-
-<p><span class="caption">Key:</span> <code>/</code> <br />
-<span class="caption">Action:</span> Open/close the widget&rsquo;s help window.</p>
-
-<p><span class="caption">Key:</span> <code>o</code> <br />
-<span class="caption">Action:</span> Opens the text file in whichever text editor is associated  with that file type.</p>
-
 <h2 id="configuration">Configuration</h2>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">textfile<span class="p">:</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
@@ -609,39 +601,73 @@
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">15</span><span class="w">
 </span><span class="w">  </span>wrapText<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <p><tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>filePaths</code></td>
+    <td>An array of paths to the files to be displayed in the widget.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>focusChar</code></td>
+    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td><code>format</code></td>
+    <td><em>Optional</em> Whether or not to try and format and syntax highlight the displayedtext. Default: false.</td>
+    <td>true, false</td>
+</tr></p>
 
-<p><code>enabled</code> <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
+<p><tr>
+    <td><code>formatStyle</code></td>
+    <td><em>Optional</em> The style of syntax highlighting to format the text with. Default: <code>vim</code>.</td>
+    <td>See <a href="https://github.com/alecthomas/chroma/tree/master/styles">Chroma styles</a> for all valid options.</td>
+  </tr></p>
 
-<p><code>filePaths</code> <br />
-An array of paths to the files to be displayed in the widget. <br /></p>
+<p><tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr>
+  <tr>
+    <td><code>wrapText</code></td>
+    <td><em>Optional</em> Whether or not to wrap the text when it hits the widget boundary. Default: true.</td>
+    <td>true, false</td>
+</tr></p>
 
-<p><code>format</code> <br />
-Whether or not to try and format and syntax highlight the displayedtext. <br />
-Values: <code>true</code>, <code>false</code>. <br />
-Default: <code>false</code>.</p>
+    </tbody>
+</table>
 
-<p><code>formatStyle</code> <br />
-The style of syntax highlighting to format the text with. <br />
-Values: See <a href="https://github.com/alecthomas/chroma/tree/master/styles">Chroma styles</a> for all
-valid options. <br />
-Default: <code>vim</code>.</p>
+<h2 id="keyboard-commands">Keyboard Commands</h2>
 
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
+<p><span class="caption">Key:</span> <code>/</code> <br />
+<span class="caption">Action:</span> Open/close the widget&rsquo;s help window.</p>
 
-<p><code>focusChar</code> <br />
-Define one of the number keys as a short cut key to access the widget. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
-
-<p><code>wrapText</code> <br />
-Whether to wrap the text when it hits the widget boundary or not.
-Values: <code>true</code>, <code>false</code>.</p>
+<p><span class="caption">Key:</span> <code>o</code> <br />
+<span class="caption">Action:</span> Opens the text file in whichever text editor is associated  with that file type.</p>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/textfile/</code></pre></div>

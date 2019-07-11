@@ -511,6 +511,9 @@
       <option value="/modules/circleci/" >- CircleCI</option>
       <option value="/modules/clocks/" >- Clocks</option>
       <option value="/modules/cmdrunner/" >- CmdRunner</option>
+    <option value="/modules/cryptocurrencies/" >
+  - 
+   Crypo Currencies</option>
       <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -518,8 +521,17 @@
       <option value="/modules/github/" >- GitHub</option>
       <option value="/modules/gitlab/" >- GitLab</option>
       <option value="/modules/gitter/" >- Gitter</option>
+    <option value="/modules/google/" >
+  - 
+   Google Apps</option> 
+      <option value="/modules/google/gcal/" >-- Google Calendar</option>
+      <option value="/modules/google/gspreadsheet/"  selected>-- Google Spreadsheets</option>
+  
       <option value="/modules/hackernews/" >- Hacker News</option>
       <option value="/modules/hibp/" >- Have I Been Pwned (HIBP)</option>
+    <option value="/modules/ipaddress/" >
+  - 
+   IP Addresses</option>
       <option value="/modules/jenkins/" >- Jenkins</option>
       <option value="/modules/jira/" >- Jira</option>
       <option value="/modules/logger/" >- Logger</option>
@@ -541,6 +553,9 @@
       <option value="/modules/trello/" >- Trello</option>
       <option value="/modules/twitter/" >- Twitter</option>
       <option value="/modules/victorops/" >- VictorOps OnCall</option>
+    <option value="/modules/weather_services/" >
+  - 
+   Weather Services</option>
       <option value="/modules/zendesk/" >- Zendesk</option>
   
 
@@ -571,8 +586,6 @@
     
     
 
-<p>Added in <code>v0.0.7</code>.</p>
-
 <p>Display information from cells in a Google Spreadsheet.</p>
 
 <h2 id="configuration">Configuration</h2>
@@ -595,30 +608,64 @@
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="s2">&#34;300&#34;</span><span class="w">
 </span><span class="w">  </span>secretFile<span class="p">:</span><span class="w"> </span><span class="s2">&#34;~/.config/wtf/gspreadsheets/client_secret.json&#34;</span><span class="w">
 </span><span class="w">  </span>sheetId<span class="p">:</span><span class="w"> </span><span class="s2">&#34;id_of_google_spreadsheet&#34;</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <p><tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>colors.values</code></td>
+    <td>The color to display the cell values in.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr>
+  <tr>
+    <td><code>cells.names</code></td>
+    <td></td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>cells.addresses</code></td>
+    <td></td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>focusChar</code></td>
+    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr></p>
 
-<p><code>colors.values</code> <br />
-The color to display the cell values in. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</p>
+<p><tr>
+    <td><code>secretFile</code></td>
+    <td>Your <a href="https://developers.google.com/sheets/api/quickstart/go">Google client secret</a> JSON file.</td>
+    <td>A string representing a file path to the JSON secret file.</td>
+  </tr></p>
 
-<p><code>cells.names</code> <br /></p>
-
-<p><code>cells.addresses</code> <br /></p>
-
-<p><code>enabled</code> <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>position</code> <br />
-Where in the grid this module&rsquo;s widget will be displayed. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
-
-<p><code>secretFile</code> <br />
-Your <a href="https://developers.google.com/sheets/api/quickstart/go">Google client secret</a> JSON file. <br />
-Values: A string representing a file path to the JSON secret file.</p>
+    </tbody>
+</table>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/google/gspreadsheets/</code></pre></div>

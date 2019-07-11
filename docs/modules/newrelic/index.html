@@ -582,7 +582,7 @@
     
     
 
-<p><img class="screenshot" src="/imgs/modules/newrelic.png" width="640" height="189" alt="newrelic screenshot" /></p>
+<p><img class="screenshot" src="/imgs/modules/newrelic.png" width="640" height="189" alt="newrelic screenshot" class="clearfix" /></p>
 
 <p>Connects to the New Relic API and displays the last n deploys of the
 monitored application: deploy ID, deploy time, and who deployed it.</p>
@@ -599,30 +599,52 @@ monitored application: deploy ID, deploy time, and who deployed it.</p>
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
-
-<p><code>apiKey</code> <br />
-Value: Your <a href="https://docs.newrelic.com/docs/apis/getting-started/intro-apis/access-rest-api-keys">New Relic API</a> token.</p>
-
-<p><code>applicationId</code> <br />
-The integer ID of the New Relic application you wish to report on. <br
-/>
-Values: A positive integer, <code>0..n</code>.</p>
-
-<p><code>deployCount</code> <br />
-The number of past deploys to display on screen. <br />
-Values: A positive integer, <code>0..n</code>.</p>
-
-<p><code>enabled</code> <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td><code>apiKey</code></td>
+    <td>Your <a href="https://docs.newrelic.com/docs/apis/getting-started/intro-apis/access-rest-api-keys">New Relic API</a> token.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>applicationId</code></td>
+    <td>The integer ID of the New Relic application you wish to report on.</td>
+    <td>Any positive integer</td>
+</tr>
+  <tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>deployCount</code></td>
+    <td>The number of past deploys to display on screen.</td>
+    <td>Any positive integer</td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr>
+    </tbody>
+</table>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/newrelic/</code></pre></div>

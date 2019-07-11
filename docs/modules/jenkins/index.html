@@ -584,9 +584,89 @@
 
 <p><img class="screenshot" src="/imgs/modules/jenkins.png" alt="jenkins screenshot" width="320" height="68" /></p>
 
-<p>Added in <code>v0.0.8</code>.</p>
-
 <p>Displays jenkins status of given builds in a project or view</p>
+
+<h2 id="configuration">Configuration</h2>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">jenkins<span class="p">:</span><span class="w">
+</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
+</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>position<span class="p">:</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
+</span><span class="w">  </span>successBallColor<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
+</span><span class="w">  </span>jobNameRegex<span class="p">:</span><span class="w"> </span>^<span class="p">[</span>a-z<span class="p">]</span>+\<span class="p">[[</span><span class="m">0</span>-<span class="m">9</span><span class="p">]</span>+\<span class="p">]</span>$<span class="w">
+</span><span class="w">  </span>url<span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://jenkins.domain.com/jenkins/view_url&#34;</span><span class="w">
+</span><span class="w">  </span>user<span class="p">:</span><span class="w"> </span><span class="s2">&#34;username&#34;</span><span class="w">
+</span><span class="w">  </span>verifyServerCertificate<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td><code>apiKey</code></td>
+    <td>Your <a href="https://wiki.jenkins.io/display/JENKINS/Remote&#43;access&#43;API">Jenkins API</a> token.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>focusChar</code></td>
+    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td><code>jobNameRegex</code></td>
+    <td><em>Optional</em> A regex that filters the jobs shown in the widget. Any jobs matching the regular expression will be shown.</td>
+    <td>A valid regex, e.g. <code>^[a-z]&amp;#43;\[[0-9]&amp;#43;\]$</code></td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr>
+  <tr>
+    <td><code>successBallColor</code></td>
+    <td>Changes the default color of successful Jenkins jobs to the color of your choosing.</td>
+    <td>Any valid color name, <code>blue</code>, <code>green</code>, <code>purple</code>, <code>yellow</code>, etc.</td>
+</tr>
+  <tr>
+    <td><code>url</code></td>
+    <td>The url to your Jenkins project or view.</td>
+    <td>A valid URI.</td>
+</tr>
+  <tr>
+    <td><code>user</code></td>
+    <td>Your Jenkins username.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>verifyServerCertificate</code></td>
+    <td>Whether or not to verify the server&rsquo;s certificate chain and hostname.</td>
+    <td>true, false</td>
+</tr>
+    </tbody>
+</table>
 
 <h2 id="keyboard-commands">Keyboard Commands</h2>
 
@@ -607,60 +687,6 @@
 
 <p><span class="caption">Key:</span> <code>↑</code> <br />
 <span class="caption">Action:</span> Select the previous job in the list.</p>
-
-<h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">jenkins<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
-</span><span class="w">  </span>successBallColor<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
-</span><span class="w">  </span>jobNameRegex<span class="p">:</span><span class="w"> </span>^<span class="p">[</span>a-z<span class="p">]</span>+\<span class="p">[[</span><span class="m">0</span>-<span class="m">9</span><span class="p">]</span>+\<span class="p">]</span>$<span class="w">
-</span><span class="w">  </span>url<span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://jenkins.domain.com/jenkins/view_url&#34;</span><span class="w">
-</span><span class="w">  </span>user<span class="p">:</span><span class="w"> </span><span class="s2">&#34;username&#34;</span><span class="w">
-</span><span class="w">  </span>verifyServerCertificate<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
-
-<p><code>apiKey</code> <br />
-Value: Your <a href="https://wiki.jenkins.io/display/JENKINS/Remote+access+API">Jenkins API</a> key.</p>
-
-<p><code>enabled</code> <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>successBallColor</code> <br />
-Changes the default color of successful Jenkins jobs to the color of your choosing. <br />
-Values: <code>blue</code>, <code>green</code>, <code>purple</code>, <code>yellow</code>, etc.</p>
-
-<p><code>jobNameRegex</code> <br />
-An optional regex that filters the jobs shown in the widget. Any jobs matching the regular expression will be shown. <br />
-Values: A valid regex, e.g. <code>^[a-z]+\[[0-9]+\]$</code></p>
-
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed.</p>
-
-<p><code>focusChar</code> <br />
-Define one of the number keys as a short cut key to access the widget. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
-
-<p><code>user</code> <br />
-Your Jenkins username. <br /></p>
-
-<p><code>url</code> <br />
-The url to your Jenkins project or view. <br />
-Values: A valid URI.</p>
-
-<p><code>verifyServerCertificate</code> <br />
-<em>Optional</em> <br />
-Determines whether or not the server&rsquo;s certificate chain and host name are verified. <br />
-Values: <code>true</code>, <code>false</code>.</p>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/jenkins/</code></pre></div>

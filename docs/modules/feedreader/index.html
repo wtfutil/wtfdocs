@@ -586,6 +586,66 @@
 
 <p>A rudimentary RSS &amp; Atom feed reader.</p>
 
+<h2 id="configuration">Configuration</h2>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">feedreader<span class="p">:</span><span class="w">
+</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>feeds<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>https<span class="p">:</span>//news.ycombinator.com/rss<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>http<span class="p">:</span>//feeds.reuters.com/Reuters/worldNews<span class="w">
+</span><span class="w">  </span>feedLimit<span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">  </span>position<span class="p">:</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">14400</span></code></pre></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>feedLimit</code></td>
+    <td>The number of stories from each feed to be displayed. Default is <code>-1</code>, which will display all available stories.</td>
+    <td>Any integer greater than zero. Values zero or less will display all.</td>
+</tr>
+  <tr>
+    <td><code>feeds</code></td>
+    <td>List of RSS or Atom feed URLs.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>focusChar</code></td>
+    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr>
+    </tbody>
+</table>
+
 <h2 id="keyboard-commands">Keyboard Commands</h2>
 
 <p><span class="caption">Key:</span> <code>[return]</code> <br />
@@ -608,43 +668,6 @@
 
 <p><span class="caption">Key:</span> <code>↑</code> <br />
 <span class="caption">Action:</span> Select the previous story in the list.</p>
-
-<h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">feedreader<span class="p">:</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>feeds<span class="p">:</span><span class="w">
-</span><span class="w">  </span>-<span class="w"> </span>https<span class="p">:</span>//news.ycombinator.com/rss<span class="w">
-</span><span class="w">  </span>-<span class="w"> </span>http<span class="p">:</span>//feeds.reuters.com/Reuters/worldNews<span class="w">
-</span><span class="w">  </span>feedLimit<span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">14400</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
-
-<p><code>enabled</code> <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>focusChar</code> <br />
-Define one of the number keys as a short cut key to access the widget. <br /></p>
-
-<p><code>feedLimit</code> <br />
-<em>Optional</em> <br />
-Defines number of stories from each feed to be displayed. Default is <code>-1</code>, which will display all available stories.<br />
-Values: Any integer greater than zero. Values zero or less will display all.</p>
-
-<p><code>feeds</code> <br />
-An array of RSS or Atom feed URLs.</p>
-
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/feedreader/</code></pre></div>

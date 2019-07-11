@@ -597,30 +597,57 @@
 </span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
-
-<p><code>apiKey</code> <br />
-Value: Your <a href="https://docs.datadoghq.com/api/?lang=python#overview">Datadog API</a> key.</p>
-
-<p><code>applicationKey</code> <br />
-Value: Your <a href="https://docs.datadoghq.com/api/?lang=python#overview">Datadog Application</a> key.</p>
-
-<p><code>monitors</code> <br />
-Configuration for the monitors functionality.</p>
-
-<p><code>tags</code> <br />
-Array of tags you want to query monitors by.</p>
-
-<p><code>enabled</code> <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td><code>apiKey</code></td>
+    <td>Your <a href="https://docs.datadoghq.com/api/">DataDog API</a> token.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>applicationKey</code></td>
+    <td>Your DataDog application key</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>monitors</code></td>
+    <td>Configuration for the monitors functionality.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr>
+  <tr>
+    <td><code>tags</code></td>
+    <td>List of tags you want to query monitors by.</td>
+    <td></td>
+</tr>
+    </tbody>
+</table>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/datadog/</code></pre></div>

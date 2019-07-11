@@ -590,7 +590,9 @@
 
 <p>Displays your upcoming Google calendar events.</p>
 
-<p><strong>Note:</strong> Setting up access to Google Calendars for Go is a bit unobvious. Check out Google&rsquo;s <a href="https://developers.google.com/calendar/quickstart/go">Go Quickstart</a>, and follow <code>Enable The Google Calendar API</code>. The configuration file downloaded is the file you use for the <code>secretFile</code> configuration option.</p>
+<p><strong>Note:</strong> Setting up access to Google Calendars for Go is a bit unobvious. Check out Google&rsquo;s <a href="https://developers.google.com/calendar/quickstart/go">Go Quickstart</a>, and follow <code>Enable The Google Calendar API</code>.</p>
+
+<p>The configuration file downloaded is the file you use for the <code>secretFile</code> configuration option.</p>
 
 <h2 id="configuration">Configuration</h2>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">gcal<span class="p">:</span><span class="w">
@@ -620,83 +622,117 @@
 </span><span class="w">  </span>showDeclined<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>timezone<span class="p">:</span><span class="w"> </span><span class="s2">&#34;America/Vancouver&#34;</span><span class="w">
 </span><span class="w">  </span>withLocation<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <p><tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>colors.description</code></td>
+    <td>The default color for calendar event descriptions.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr>
+  <tr>
+    <td><code>colors.past</code></td>
+    <td>The color for calendar events that have passed.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr>
+  <tr>
+    <td><code>colors.title</code></td>
+    <td>The default colour for calendar event titles.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr></p>
 
-<p><code>colors.title</code> <br />
-The default colour for calendar event titles. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</p>
+<p><tr>
+    <td><code>colors.highlights</code></td>
+    <td>A list of arrays that define a regular expression pattern and a color. If a calendar event title matches a regular expression, the title will be drawn in that colour. Over-rides the default title colour.</td>
+    <td>[a valid regular expression, any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.]</td>
+  </tr></p>
 
-<p><code>colors.description</code> <br />
-The default color for calendar event descriptions. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</p>
+<p><tr>
+    <td><code>conflictIcon</code></td>
+    <td><em>Optional</em> The icon displayed beside calendar events that have conflicting times (they intersect or overlap in some way).</td>
+    <td>Any displayable unicode character.</td>
+</tr>
+  <tr>
+    <td><code>currentIcon</code></td>
+    <td><em>Optional</em> The icon displayed beside the current calendar event.</td>
+    <td>Any displayable unicode character.</td>
+</tr>
+  <tr>
+    <td><code>displayResponseStatus</code></td>
+    <td><em>Optional</em> Whether or not to display your response status to the calendar event. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>email</code></td>
+    <td>The email address associated with your Google account. Necessary for determining <code>responseStatus</code>.</td>
+    <td>A valid email address string.</td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>eventCount</code></td>
+    <td>The number of calendar events to display.</td>
+    <td>Any positive integer</td>
+</tr>
+  <tr>
+    <td><code>focusChar</code></td>
+    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td><code>multiCalendar</code></td>
+    <td><em>Optional</em> Whether or not to display your primary calendar or all calendars you have access to. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr></p>
 
-<p><code>colors.highlights</code> <br />
-A list of arrays that define a regular expression pattern and a color.
-If a calendar event title matches a regular expression, the title will
-be drawn in that colour. Over-rides the default title colour. <br />
-Values: [a valid regular expression, any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.]</p>
+<p><tr>
+    <td><code>secretFile</code></td>
+    <td>Your <a href="https://developers.google.com/calendar/quickstart/go">Google client secret</a> JSON file.</td>
+    <td>A string representing a file path to the JSON secret file.</td>
+  </tr></p>
 
-<p><code>colors.past</code> <br />
-The color for calendar events that have passed. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</p>
+<p><tr>
+    <td><code>showDeclined</code></td>
+    <td><em>Optional</em> Whether or not to show the location of the appointment. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>timezone</code></td>
+    <td><em>Optional</em>. The timezone to display calendar event times in.</td>
+    <td>Any valid <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">TZ database name</a>.</td>
+</tr>
+  <tr>
+    <td><code>withLocation</code></td>
+    <td><em>Optional</em> Whether or not to show the location of the appointment. Default: true.</td>
+    <td>true, false</td>
+</tr></p>
 
-<p><code>conflictIcon</code> <br />
-The icon displayed beside calendar events that have conflicting times
-(they intersect or overlap in some way). <br />
-Values: Any displayable unicode character.</p>
-
-<p><code>currentIcon</code> <br />
-The icon displayed beside the current calendar event. <br />
-Values: Any displayable unicode character.</p>
-
-<p><code>displayResponseStatus</code> <br />
-Whether or not to display your response status to the calendar event.
-<br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>email</code> <br />
-The email address associated with your Google account. Necessary for
-determining <code>responseStatus</code>. <br />
-Values: A valid email address string.</p>
-
-<p><code>enabled</code> <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>eventCount</code> <br />
-The number of calendar events to display. <br />
-Values: A positive integer, <code>0..n</code>.</p>
-
-<p><code>focusChar</code> <br />
-Define one of the number keys as a short cut key to access the widget. <br /></p>
-
-<p><code>multiCalendar</code> <br />
-Whether or not to display your primary calendar or all calendars you
-have access to. <br />
-Values: <code>true</code>, or <code>false</code></p>
-
-<p><code>position</code> <br />
-Where in the grid this module&rsquo;s widget will be displayed. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
-
-<p><code>secretFile</code> <br />
-Your <a href="https://developers.google.com/calendar/quickstart/go">Google client secret</a> JSON file. <br />
-Values: A string representing a file path to the JSON secret file.</p>
-
-<p><code>showDeclined</code> <br />
-<em>Optional</em>. Whether or not to display events you&rsquo;ve declined to attend. <br />
-Values: <code>true</code>, or <code>false</code></p>
-
-<p><code>timezone</code> <br />
-<em>Optional</em>. The timezone to display calendar event times in. <br />
-Values: Any valid <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">TZ database name</a>.</p>
-
-<p><code>withLocation</code> <br />
-Whether or not to show the location of the appointment. <br />
-Values: <code>true</code>, or <code>false</code></p>
+    </tbody>
+</table>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/google/gcal/</code></pre></div>

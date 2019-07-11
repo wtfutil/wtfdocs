@@ -589,8 +589,6 @@
 
 <p><img class="screenshot" src="/imgs/modules/blockfolio.png" width="320" height="185" alt="blockfolio screenshot" /></p>
 
-<p>Added in <code>v0.0.8</code>.</p>
-
 <p>Display your Blockfolio crypto holdings.</p>
 
 <h2 id="configuration">Configuration</h2>
@@ -608,36 +606,60 @@
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">400</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <p><tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>colors.drop</code></td>
+    <td></td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr>
+  <tr>
+    <td><code>colors.grows</code></td>
+    <td></td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr>
+  <tr>
+    <td><code>colors.name</code></td>
+    <td></td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr></p>
 
-<p><code>colors.name</code> <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.</p>
+<p><tr>
+    <td><code>device_token</code></td>
+    <td>See <a href="https://github.com/bob6664569/blockfolio-api-client">this gist</a> for details on how to get your Blockfolio API token.</td>
+    <td></td>
+  </tr></p>
 
-<p><code>colors.grows</code> <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.</p>
+<p><tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr></p>
 
-<p><code>colors.drop</code> <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.</p>
-
-<p><code>device_token</code> <br />
-Value: See <a href="https://github.com/bob6664569/blockfolio-api-client">this gist</a> for
-details on how to get your Blockfolio API token.</p>
-
-<p><code>displayHoldings</code> <br /></p>
-
-<p><code>enabled</code> <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
+    </tbody>
+</table>
 
 <h2 id="source">Source</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/cryptoexchanges/blockfolio/</code></pre></div>

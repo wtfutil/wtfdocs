@@ -619,32 +619,57 @@ and who&rsquo;s currently on call.</p>
 </span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;Primary&#34;</span><span class="w">
 </span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;Secondary&#34;</span><span class="w">
 </span><span class="w">  </span>scheduleIdentifierType<span class="p">:</span><span class="w"> </span><span class="s2">&#34;id&#34;</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
-
-<p><code>apiKey</code> &lt; br /&gt;
-Value: Your <a href="https://docs.opsgenie.com/docs/api-integration">OpsGenie API</a> token.</p>
-
-<p><code>displayEmpty</code> <br />
-Whether schedules with no assigned person on-call should be displayed. <br />
-Values:  <code>true</code>, <code>false</code>.</p>
-
-<p><code>enabled</code> <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
-
-<p><code>position</code> <br />
-Where in the grid this module&rsquo;s widget will be displayed. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
-
-<p><code>schedule</code> <br />
-The name or list of names of the schedule(s) to retrieve. <br /></p>
-
-<p><code>scheduleIdentifierType</code> <br />
-Type of the schedule identifier. <br />
-Values: <code>id</code> or <code>name</code>.</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td><code>apiKey</code></td>
+    <td>Your <a href="https://docs.opsgenie.com/docs/api-integration">OpsGenie API</a> token.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>displayEmpty</code></td>
+    <td>Whether schedules with no assigned person on-call should be displayed.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer</td>
+</tr>
+  <tr>
+    <td><code>schedule</code></td>
+    <td>The name or list of names of the schedule(s) to retrieve.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>scheduleIdentifierType</code></td>
+    <td>Type of the schedule identifier.</td>
+    <td><code>id</code> or <code>name</code></td>
+</tr>
+    </tbody>
+</table>
 
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/opsgenie/</code></pre></div>
