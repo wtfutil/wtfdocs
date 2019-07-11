@@ -7,8 +7,6 @@ weight: 15
 
 <img class="screenshot" src="/imgs/modules/cryptolive.png" width="320" height="203" alt="cryptolive screenshot" />
 
-Added in `v0.0.5`.
-
 Compare crypto currencies using [CryptoCompare](https://cryptocompare.com).
 
 ## Configuration
@@ -60,36 +58,17 @@ cryptolive:
         value: green
 ```
 
-### Attributes
-
-`colors.from.name` <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
-
-`colors.from.dispayName` <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
-
-`colors.to.name` <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
-
-`colors.to.price` <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
-
-`currencies` <br />
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/colors/custom name="colors.from.displayName" >}}
+  {{< attributes/colors/custom name="colors.from.name" >}}
+  {{< attributes/colors/custom name="colors.to.name" >}}
+  {{< attributes/colors/custom name="colors.to.price" >}}
+  {{< attributes/custom name="currencies" desc="" value="" >}}
+  {{< attributes/enabled >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
 ## Source Code
 
