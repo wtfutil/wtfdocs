@@ -3,18 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://wtfutil.com/getting_started/</loc>
-    <lastmod>2018-05-21T16:11:58-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://wtfutil.com/getting_started/installation/</loc>
     <lastmod>2018-05-18T09:59:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wtfutil.com/blog/</loc>
-    <lastmod>2019-07-09T14:41:58-07:00</lastmod>
   </url>
   
   <url>
@@ -25,11 +15,6 @@
   <url>
     <loc>https://wtfutil.com/configuration/global_settings/</loc>
     <lastmod>2018-05-16T21:51:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wtfutil.com/configuration/</loc>
-    <lastmod>2018-04-15T21:17:16-07:00</lastmod>
   </url>
   
   <url>
@@ -53,6 +38,11 @@
   </url>
   
   <url>
+    <loc>https://wtfutil.com/getting_started/</loc>
+    <lastmod>2018-05-21T16:11:58-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wtfutil.com/modules/google/gcal/</loc>
     <lastmod>2018-05-10T08:25:33-07:00</lastmod>
   </url>
@@ -60,11 +50,6 @@
   <url>
     <loc>https://wtfutil.com/modules/bamboohr/</loc>
     <lastmod>2018-05-07T20:17:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wtfutil.com/modules/</loc>
-    <lastmod>2018-05-07T18:04:58-07:00</lastmod>
   </url>
   
   <url>
@@ -98,7 +83,17 @@
   </url>
   
   <url>
-    <loc>https://wtfutil.com/getting_started/generate-module/</loc>
+    <loc>https://wtfutil.com/configuration/</loc>
+    <lastmod>2018-04-15T21:17:16-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/blog/</loc>
+    <lastmod>2019-07-09T14:41:58-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/configuration/generate-module/</loc>
     <lastmod>2019-04-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -115,6 +110,11 @@
   <url>
     <loc>https://wtfutil.com/modules/cmdrunner/</loc>
     <lastmod>2018-05-17T17:17:10-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/modules/</loc>
+    <lastmod>2018-05-07T18:04:58-07:00</lastmod>
   </url>
   
   <url>

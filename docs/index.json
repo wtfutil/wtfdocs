@@ -1,24 +1,10 @@
 [
 {
-	"uri": "https://wtfutil.com/getting_started/",
-	"title": "Getting Started",
-	"tags": [],
-	"description": "",
-	"content": " Quick Start  Download the stand-alone, compiled binary. Unzip the downloaded file. From the command line, cd into the newly-created /wtf directory. From the command line, run the app: ./wtfutil  This should launch the app in your terminal using the default simple configuration. See Configuration for more details.\nCommand-line Options --config, -c Allows you to define a custom config file to use. See Configuration for more details.\n--help, -h Shows help information for the command-line arguments that WTF takes.\n--module, -m Shows help information for the specific named module, if that module supports help text. Example: wtf --module=todo.\n--version, -v Shows version info.\nKeyboard Commands Key: Ctrl-R Action: Force-refresh the data for all modules.\nKey: Esc Action: Unfocus the currently-focused widget.\nKey: Tab Action: Move between focusable modules (Shift-Tab to move backwards).\n"
-},
-{
 	"uri": "https://wtfutil.com/getting_started/installation/",
 	"title": "Installation",
 	"tags": [],
 	"description": "",
 	"content": " Homebrew brew tap wtfutil/wtfutil brew install wtfutil wtfutil As a Binary Grab the latest version from here:\nhttps://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:\n./wtfutil and that should also do it.\nFrom Source Download the source code repo and install the dependencies:\n# Set the Go proxy variable to GoCenter export GOPROXY=\u0026#34;https://gocenter.io\u0026#34; # Enable Go modules export GO111MODULE=on go get -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf make install make run and that should do it.\n"
-},
-{
-	"uri": "https://wtfutil.com/blog/",
-	"title": "WTF Blog",
-	"tags": [],
-	"description": "",
-	"content": "July 12, 2019 Installing With Homebrew  July 10, 2019 Binary Renamed to \u0026#39;wtfutil\u0026#39;  July 9, 2019 Using WTF\u0026#39;s FeedReader to Track WTF Releases  July 9, 2019 v0.14.0 Released \n"
 },
 {
 	"uri": "https://wtfutil.com/modules/cryptocurrencies/bittrex/",
@@ -33,13 +19,6 @@
 	"tags": [],
 	"description": "",
 	"content": " The following top-level global attributes are configurable in config.yml. See this example config file for more details.\nwtf:colors:background:\u0026#34;red\u0026#34;border:focusable:\u0026#34;darkslateblue\u0026#34;focused:\u0026#34;orange\u0026#34;normal:\u0026#34;gray\u0026#34;checked:\u0026#34;gray\u0026#34;highlight:fore:\u0026#34;black\u0026#34;back:\u0026#34;green\u0026#34;text:\u0026#34;white\u0026#34;title:\u0026#34;white\u0026#34;grid:# How _wide_ the columns are, in terminal characters. In this case we have# six columns, each of which are 35 characters widecolumns:[35,35,35,35,35,35]# How _high_ the rows are, in terminal lines. In this case we have five rows# that support ten line of text, one of three lines, and one of fourrows:[10,10,10,10,10,3,4]navigation:shortcuts:trueopenFileUtil:\u0026#34;open\u0026#34;sigils:checkbox:checked:\u0026#34;x\u0026#34;unchecked:\u0026#34; \u0026#34;paging:normal:\u0026#34;*\u0026#34;selected:\u0026#34;_\u0026#34;term:\u0026#34;xterm-256color\u0026#34; Attributes colors.background The color to draw the background of the app in. Use this to match your terminal colors. May be over-written by individual module configurations. Values: Any X11 color name.\ncolors.border.focusable The color in which to draw the border of widgets that can accept keyboard focus. Values: Any X11 color name.\ncolors.border.focused The color in which to draw the border of the widget that currently has keyboard focus. Values: Any X11 color name.\ncolors.border.normal The color in which to draw the borders of the widgets that cannot accept focus.  Values: Any X11 color name.\ngrid.columns An array that defines the widths of all the columns. Values: See tview\u0026rsquo;s Grid for details.\ngrid.rows An array that defines the heights of all the rows. Values: See tview\u0026rsquo;s Grid for details.\nopenFileUtil Which local utility to use to open a file or URL.\nterm Optional. Sets a custom value for the terminal type this app runs in. Leave this entry out of the config if you simply want to use your terminal\u0026rsquo;s default setting. Note: If an invalid value is provided for this setting, the app will crash with a \u0026quot;terminal entry not found\u0026quot; error. Values: Any valid terminal type (ie: vt100, xterm, xterm-256color, ansi, etc.).\n"
-},
-{
-	"uri": "https://wtfutil.com/configuration/",
-	"title": "Configuration",
-	"tags": [],
-	"description": "",
-	"content": " Index  Configuration Files  Example Configuration Files Custom Configuration Files  Global Settings Grid Layout  Configuration Files By default WTF looks in a ~/.config/wtf/ directory for a YAML file called config.yml. If the ~/.config/wtf/ directory doesn\u0026rsquo;t exist, WTF will create that directory on start-up, and then display instructions for creating a new configuration file.\nIn other words, WTF expects to have a YAML config file at: ~/.config/wtf/config.yml.\nExample Configuration Files A couple of example config files are provided in the _sample_configs/ directory of the Git repository.\nTo try out WTF quickly, copy simple_config.yml into ~/.config/wtf/ as config.yml and relaunch WTF. You should see the app launch and display the Security, Clocks and Status widgets onscreen.\nCustom Configuration Files To try out different configurations (or run multiple instances of WTF), you can pass the path to a config file via command line arguments on start-up.\nTo load a custom configuration file (ie: one that\u0026rsquo;s not ~/.config/wtf/config.yml), pass in the path to configuration file as a parameter on launch:\n$\u0026gt; wtf --config=path/to/custom/config.yml"
 },
 {
 	"uri": "https://wtfutil.com/configuration/grid_layout/",
@@ -70,6 +49,13 @@
 	"content": " Displays weather information as ASCII art from Wttr.in.\nConfiguration prettyweather:enabled:truecity:\u0026#34;tehran\u0026#34;position:top:3left:5height:1width:1refreshInterval:300unit:\u0026#34;c\u0026#34;view:0language:\u0026#34;en\u0026#34;   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false \n city Optional The name of the city to display weather for. Default: Barcelona. The name of any city supported by Wttr.in \n enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false \n language Optional Wttr.in language configuration. Default: en. See curl wttr.in/:translation for more details \n position Defines where in the grid this module\u0026rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer \n unit Optional The scale to display temperatures in. Default: m. u for Fahrenheit, m for Celsius   view Optional Wttr.in view configuration. See curl wttr.in/:help for more details \n  Source Code wtf/modules/weatherservices/prettyweather/"
 },
 {
+	"uri": "https://wtfutil.com/getting_started/",
+	"title": "Getting Started",
+	"tags": [],
+	"description": "",
+	"content": " Quick Start  Download the stand-alone, compiled binary. Unzip the downloaded file. From the command line, cd into the newly-created /wtf directory. From the command line, run the app: ./wtfutil  This should launch the app in your terminal using the default simple configuration. See Configuration for more details.\nCommand-line Options --config, -c Allows you to define a custom config file to use. See Configuration for more details.\n--help, -h Shows help information for the command-line arguments that WTF takes.\n--module, -m Shows help information for the specific named module, if that module supports help text. Example: wtf --module=todo.\n--version, -v Shows version info.\nKeyboard Commands Key: Ctrl-R Action: Force-refresh the data for all modules.\nKey: Esc Action: Unfocus the currently-focused widget.\nKey: Tab Action: Move between focusable modules (Shift-Tab to move backwards).\n"
+},
+{
 	"uri": "https://wtfutil.com/modules/google/gcal/",
 	"title": "Google Calendar",
 	"tags": [],
@@ -82,13 +68,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Connects to the BambooHR API and displays who will be Away today.\nConfiguration bamboohr:apiKey:\u0026#34;3276d7155dd9ee27b8b14f8743a408a9\u0026#34;enabled:trueposition:top:0left:1height:2width:1refreshInterval:900subdomain:\u0026#34;testco\u0026#34;   Name Description Value     apiKey Your BambooHR API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module\u0026rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer \nsubdomainYour BambooHR API subdomain name.\n  Source Code wtf/modules/bamboohr/"
-},
-{
-	"uri": "https://wtfutil.com/modules/",
-	"title": "Modules",
-	"tags": [],
-	"description": "",
-	"content": "The heart of WTF is the modules. A module is a discrete unit of functionality that extracts data from some source and packages that data for display.\nFor example, the New Relic module uses New Relic\u0026rsquo;s API to retrieve a list of the latest deploys and packages that information as a list for display in the \u0026ldquo;New Relic\u0026rdquo; widget.\nThe Clocks module takes a list of timezones and packages that information as a list of city/time pairs for display in the \u0026ldquo;Clocks\u0026rdquo; widget.\nSee available modules at left.\n"
 },
 {
 	"uri": "https://wtfutil.com/getting_started/uninstall/",
@@ -133,7 +112,21 @@
 	"content": " Module A discrete unit of data collection and display. A data interface concept. A package inside the app.\nExamples: New Relic, Git, Weather.\nWidget The onscreen representation of a Module. The widget is responsible for being the interface between the app and the data collection.\nWidgets are defined by a required widget.go file in a Module.\nWTF An acronym for \u0026ldquo;What The F*ck?\u0026ldquo;, as in \u0026ldquo;what the f*ck are all these browser tabs open for?\u0026rdquo; and \u0026ldquo;what the f*ck am I doing today?\u0026rdquo;\n"
 },
 {
-	"uri": "https://wtfutil.com/getting_started/generate-module/",
+	"uri": "https://wtfutil.com/configuration/",
+	"title": "Configuration",
+	"tags": [],
+	"description": "",
+	"content": " Index  Configuration Files  Example Configuration Files Custom Configuration Files  Global Settings Grid Layout  Configuration Files By default WTF looks in a ~/.config/wtf/ directory for a YAML file called config.yml. If the ~/.config/wtf/ directory doesn\u0026rsquo;t exist, WTF will create that directory on start-up, and then display instructions for creating a new configuration file.\nIn other words, WTF expects to have a YAML config file at: ~/.config/wtf/config.yml.\nExample Configuration Files A couple of example config files are provided in the _sample_configs/ directory of the Git repository.\nTo try out WTF quickly, copy simple_config.yml into ~/.config/wtf/ as config.yml and relaunch WTF. You should see the app launch and display the Security, Clocks and Status widgets onscreen.\nCustom Configuration Files To try out different configurations (or run multiple instances of WTF), you can pass the path to a config file via command line arguments on start-up.\nTo load a custom configuration file (ie: one that\u0026rsquo;s not ~/.config/wtf/config.yml), pass in the path to configuration file as a parameter on launch:\n$\u0026gt; wtf --config=path/to/custom/config.yml"
+},
+{
+	"uri": "https://wtfutil.com/blog/",
+	"title": "WTF Blog",
+	"tags": [],
+	"description": "",
+	"content": "July 12, 2019 Installing With Homebrew  July 10, 2019 Binary Renamed to \u0026#39;wtfutil\u0026#39;  July 9, 2019 Using WTF\u0026#39;s FeedReader to Track WTF Releases  July 9, 2019 v0.14.0 Released \n"
+},
+{
+	"uri": "https://wtfutil.com/configuration/generate-module/",
 	"title": "Creating New Modules",
 	"tags": [],
 	"description": "",
@@ -159,6 +152,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Runs a terminal command on a schedule.\nConfiguration cmdrunner:args:[\u0026#34;-g\u0026#34;,\u0026#34;batt\u0026#34;]cmd:\u0026#34;pmset\u0026#34;enabled:trueposition:top:6left:1height:1width:3refreshInterval:30   Name Description Value     args The arguments to the command, with each item as an element in an array.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   cmd The terminal command to be run, withouth the arguments. Ie: ping, whoami, curl.    enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module\u0026rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer    Examples  iStats Status Pages  Source Code wtf/modules/cmdrunner/"
+},
+{
+	"uri": "https://wtfutil.com/modules/",
+	"title": "Modules",
+	"tags": [],
+	"description": "",
+	"content": "The heart of WTF is the modules. A module is a discrete unit of functionality that extracts data from some source and packages that data for display.\nFor example, the New Relic module uses New Relic\u0026rsquo;s API to retrieve a list of the latest deploys and packages that information as a list for display in the \u0026ldquo;New Relic\u0026rdquo; widget.\nThe Clocks module takes a list of timezones and packages that information as a list of city/time pairs for display in the \u0026ldquo;Clocks\u0026rdquo; widget.\nSee available modules at left.\n"
 },
 {
 	"uri": "https://wtfutil.com/modules/google/gspreadsheet/",

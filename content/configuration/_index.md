@@ -2,8 +2,8 @@
 title: "Configuration"
 date: 2018-04-15T21:17:16-07:00
 draft: false
-weight: 5
-alwaysopen: true
+weight: 20
+alwaysopen: false
 ---
 
 ## Index

@@ -2,7 +2,7 @@
 title: "Getting Started"
 date: 2018-05-21T16:11:58-07:00
 draft: false
-weight: 1
+weight: 10
 alwaysopen: true
 ---
 

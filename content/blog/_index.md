@@ -1,10 +1,9 @@
 ---
 title: "WTF Blog"
-head: "&nbsp;"
 date: 2019-07-09T14:41:58-07:00
 draft: false
-weight: 5
-hidden: true
+weight: 30
+hidden: false
 alwaysopen: false
 ---
 
