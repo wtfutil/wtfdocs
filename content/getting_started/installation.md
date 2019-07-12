@@ -5,6 +5,15 @@ draft: false
 weight: 1
 ---
 
+## Homebrew
+
+```console
+brew tap wtfutil/wtfutil
+brew install wtfutil
+
+wtfutil
+```
+
 ## As a Binary
 
 Grab the latest version from here:

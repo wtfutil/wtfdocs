@@ -17,7 +17,7 @@
       <pubDate>Fri, 18 May 2018 09:59:40 -0700</pubDate>
       
       <guid>https://wtfutil.com/getting_started/installation/</guid>
-      <description>As a Binary Grab the latest version from here:
+      <description>Homebrew brew tap wtfutil/wtfutil brew install wtfutil wtfutil As a Binary Grab the latest version from here:
 https://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:
 ./wtfutil and that should also do it.
 From Source Download the source code repo and install the dependencies:

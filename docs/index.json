@@ -11,7 +11,7 @@
 	"title": "Installation",
 	"tags": [],
 	"description": "",
-	"content": " As a Binary Grab the latest version from here:\nhttps://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:\n./wtfutil and that should also do it.\nFrom Source Download the source code repo and install the dependencies:\n# Set the Go proxy variable to GoCenter export GOPROXY=\u0026#34;https://gocenter.io\u0026#34; # Enable Go modules export GO111MODULE=on go get -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf make install make run and that should do it.\n"
+	"content": " Homebrew brew tap wtfutil/wtfutil brew install wtfutil wtfutil As a Binary Grab the latest version from here:\nhttps://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:\n./wtfutil and that should also do it.\nFrom Source Download the source code repo and install the dependencies:\n# Set the Go proxy variable to GoCenter export GOPROXY=\u0026#34;https://gocenter.io\u0026#34; # Enable Go modules export GO111MODULE=on go get -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf make install make run and that should do it.\n"
 },
 {
 	"uri": "https://wtfutil.com/blog/",
