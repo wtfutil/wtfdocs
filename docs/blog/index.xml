@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Installing With Homebrew</title>
+      <link>https://wtfutil.com/blog/2019-07-12-homebrew-installation/</link>
+      <pubDate>Fri, 12 Jul 2019 07:27:20 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/blog/2019-07-12-homebrew-installation/</guid>
+      <description>July 12, 2019 As of today WTF can be installed on macOS using Homebrew:
+brew tap wtfutil/wtfutil brew install wtfutil wtfutil If everything goes according to plan, you should now find wtfutil on your system as an executable binary:
+❯ which wtfutil /usr/local/bin/wtfutil ❯ ls /usr/local/bin/wtfutil lrwxr-xr-x 1 xxxxxx admin 36 11 Jul 17:29 /usr/local/bin/wtfutil -&amp;gt; ../Cellar/wtfutil/0.16.1/bin/wtfutil  </description>
+    </item>
+    
+    <item>
       <title>Binary Renamed to &#39;wtfutil&#39;</title>
       <link>https://wtfutil.com/blog/2019-07-10-wtfutil-release/</link>
       <pubDate>Wed, 10 Jul 2019 10:09:34 -0700</pubDate>

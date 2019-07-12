@@ -8,17 +8,7 @@ hidden: true
 alwaysopen: false
 ---
 
-<div class="blog-post">
-    <small class="blog-date">July 10, 2019</small>
-    <div><a href="/blog/2019-07-10-wtfutil-release">Binary Renamed to 'wtfutil'</a></div>
-</div>
-
-<div class="blog-post">
-    <small class="blog-date">July 9, 2019</small>
-    <div><a href="/blog/2019-07-09-rss-for-releases">Using WTF's FeedReader to Track WTF Releases</a></div>
-</div>
-
-<div class="blog-post">
-    <small class="blog-date">July 9, 2019</small>
-    <div><a href="/blog/2019-07-09-v0-14-0">v0.14.0 Released</a></div>
-</div>
+{{< blog/indexcard date="July 12, 2019" title="Installing With Homebrew" page="2019-07-12-homebrew-installation" >}}
+{{< blog/indexcard date="July 10, 2019" title="Binary Renamed to 'wtfutil'" page="2019-07-10-wtfutil-release" >}}
+{{< blog/indexcard date="July 9, 2019" title="Using WTF's FeedReader to Track WTF Releases" page="2019-07-09-rss-for-releases" >}}
+{{< blog/indexcard date="July 9, 2019" title="v0.14.0 Released" page="2019-07-09-v0-14-0" >}}

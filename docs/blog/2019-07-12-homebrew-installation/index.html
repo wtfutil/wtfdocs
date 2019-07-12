@@ -6,14 +6,12 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.55.2" />
-<title>WTF :: WTF - the terminal dashboard</title>
+<title>Installing With Homebrew :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="alternate" type="application/rss+xml" href="https://wtfutil.com/index.xml" title="WTF - the terminal dashboard" />
-<link rel="alternate" type="application/json" href="https://wtfutil.com/index.json" title="WTF - the terminal dashboard" />
 <script src="/js/jquery-2.x.min.js"></script>
 <script src="https://kit.fontawesome.com/461d56314b.js"></script>
 <script type="text/javascript">
@@ -27,7 +25,7 @@
   
 </head>
 
-<body data-url="/">
+<body data-url="/blog/2019-07-12-homebrew-installation/">
   
   <header>
   <div class="logo">
@@ -501,7 +499,12 @@
       <option value="/getting_started/generate-module/" >- Creating New Modules</option>
   
     <option value="/blog/" >
-   WTF Blog</option>
+   WTF Blog</option> 
+      <option value="/blog/2019-07-12-homebrew-installation/"  selected>- Installing With Homebrew</option>
+      <option value="/blog/2019-07-10-wtfutil-release/" >- Binary Renamed to &#39;wtfutil&#39;</option>
+      <option value="/blog/2019-07-09-rss-for-releases/" >- Using WTF&#39;s FeedReader to Track WTF Releases</option>
+      <option value="/blog/2019-07-09-v0-14-0/" >- v0.14.0 Released</option>
+  
     <option value="/configuration/" >
    Configuration</option> 
       <option value="/configuration/global_settings/" >- Global Settings</option>
@@ -509,6 +512,53 @@
   
     <option value="/modules/" >
    Modules</option> 
+      <option value="/modules/bamboohr/" >- BambooHR</option>
+      <option value="/modules/circleci/" >- CircleCI</option>
+      <option value="/modules/clocks/" >- Clocks</option>
+      <option value="/modules/cmdrunner/" >- CmdRunner</option>
+    <option value="/modules/cryptocurrencies/" >
+  - 
+   Crypo Currencies</option>
+      <option value="/modules/datadog/" >- Datadog</option>
+      <option value="/modules/feedreader/" >- Feed Reader</option>
+      <option value="/modules/gerrit/" >- Gerrit</option>
+      <option value="/modules/git/" >- Git</option>
+      <option value="/modules/github/" >- GitHub</option>
+      <option value="/modules/gitlab/" >- GitLab</option>
+      <option value="/modules/gitter/" >- Gitter</option>
+    <option value="/modules/google/" >
+  - 
+   Google Apps</option>
+      <option value="/modules/hackernews/" >- Hacker News</option>
+      <option value="/modules/hibp/" >- Have I Been Pwned (HIBP)</option>
+    <option value="/modules/ipaddress/" >
+  - 
+   IP Addresses</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
+      <option value="/modules/jira/" >- Jira</option>
+      <option value="/modules/logger/" >- Logger</option>
+      <option value="/modules/mercurial/" >- Mercurial</option>
+      <option value="/modules/nbascore/" >- NBA Score</option>
+      <option value="/modules/newrelic/" >- New Relic</option>
+      <option value="/modules/opsgenie/" >- OpsGenie</option>
+      <option value="/modules/pagerduty/" >- Pagerduty</option>
+      <option value="/modules/power/" >- Power</option>
+      <option value="/modules/resourceusage/" >- Resource Usage</option>
+      <option value="/modules/rollbar/" >- Rollbar</option>
+      <option value="/modules/security/" >- Security</option>
+      <option value="/modules/spotify/" >- Spotify</option>
+      <option value="/modules/textfile/" >- Textfile</option>
+      <option value="/modules/todo/" >- Todo</option>
+      <option value="/modules/todoist/" >- Todoist</option>
+      <option value="/modules/transmission/" >- Transmission</option>
+      <option value="/modules/travisci/" >- TravisCI</option>
+      <option value="/modules/trello/" >- Trello</option>
+      <option value="/modules/twitter/" >- Twitter</option>
+      <option value="/modules/victorops/" >- VictorOps OnCall</option>
+    <option value="/modules/weather_services/" >
+  - 
+   Weather Services</option>
+      <option value="/modules/zendesk/" >- Zendesk</option>
   
 
 
@@ -532,37 +582,23 @@
       </div>
     
 
-    
+    <h1>Installing With Homebrew</h1>
   
 
   
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
-</span>
- 
+    <small>July 12, 2019</small>
 
+<p>As of today WTF can be installed on macOS using <a href="https://brew.sh">Homebrew</a>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-console" data-lang="console">brew tap wtfutil/wtfutil
+brew install wtfutil
 
-<p><img src='/imgs/screenshot.jpg' width="900" height="524" style="border-radius: 5px; box-shadow: 5px 5px 11px #666;" /></p>
-
-<p><span style="font-family: monospace; font-size: 1.8em;">WTF</span> is a personal information dashboard for your terminal, developed for those who spend most of their day in the command line.</p>
-
-<p>It allows you to monitor systems, services, and important information that you otherwise might keep browser tabs open for, the kinds of things you don&rsquo;t always need visible, but do check in on every now and then.</p>
-
-<p>Keep an eye on your <strong>OpsGenie</strong> schedules, <strong>Google Calendar</strong>, <strong>Git</strong> and <strong>GitHub</strong> repositories, and <strong>New Relic</strong> deployments.</p>
-
-<p>See who&rsquo;s away in <strong>BambooHR</strong>, which <strong>Jira</strong> tickets are assigned to you, and what time it is in Barcelona.</p>
-
-<p>It even has weather. And clocks. And emoji.</p>
-
-<h3 id="sponsorship">Sponsorship</h3>
-
-<p>WTF is and always will be free and open-source. However your sponsorship of this project is greatly appreciated and will fund the caffeine and pizzas that fuel its development.</p>
-
-<p>To sponsor WTF, just click the button below.</p>
-
-<p><a href="https://www.patreon.com/bePatron?u=21477577" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></p>
-
-
+wtfutil</code></pre></div>
+<p>If everything goes according to plan, you should now find <code>wtfutil</code> on your system as an executable binary:</p>
+<div class="highlight"><pre class="chroma"><code class="language-console" data-lang="console">❯ which wtfutil
+/usr/local/bin/wtfutil</code></pre></div>
+<pre><code>❯ ls /usr/local/bin/wtfutil
+lrwxr-xr-x  1 xxxxxx  admin  36 11 Jul 17:29 /usr/local/bin/wtfutil -&gt; ../Cellar/wtfutil/0.16.1/bin/wtfutil
+</code></pre>
 
 
 
@@ -584,7 +620,7 @@
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 14/08/2018
+        <i class='fa fa-calendar'></i> Last update on 12/07/2019
     </div>
     
   </div>
