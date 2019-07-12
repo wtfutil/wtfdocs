@@ -5,6 +5,12 @@ draft: false
 weight: 10
 ---
 
+## Homebrew
+
+```console
+brew uninstall wtfutil
+```
+
 ## Remove the Binary and Configuration
 
 WTF ships as a single binary named `wtfutil`. Assuming you have installed the binary, run:

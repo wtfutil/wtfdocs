@@ -30,7 +30,7 @@ From Source Download the source code repo and install the dependencies:
       <pubDate>Sun, 28 Jan 2018 09:59:40 -0700</pubDate>
       
       <guid>https://wtfutil.com/getting_started/uninstall/</guid>
-      <description>Remove the Binary and Configuration WTF ships as a single binary named wtfutil. Assuming you have installed the binary, run:
+      <description>Homebrew brew uninstall wtfutil Remove the Binary and Configuration WTF ships as a single binary named wtfutil. Assuming you have installed the binary, run:
 rm $(which wtfutil) If you have configured WTF, you will also want to delete your configs:
 rm ~/.config/wtf and that should also do it.</description>
     </item>

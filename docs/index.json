@@ -95,7 +95,7 @@
 	"title": "Uninstallation",
 	"tags": [],
 	"description": "",
-	"content": " Remove the Binary and Configuration WTF ships as a single binary named wtfutil. Assuming you have installed the binary, run:\nrm $(which wtfutil) If you have configured WTF, you will also want to delete your configs:\nrm ~/.config/wtf and that should also do it.\n"
+	"content": " Homebrew brew uninstall wtfutil Remove the Binary and Configuration WTF ships as a single binary named wtfutil. Assuming you have installed the binary, run:\nrm $(which wtfutil) If you have configured WTF, you will also want to delete your configs:\nrm ~/.config/wtf and that should also do it.\n"
 },
 {
 	"uri": "https://wtfutil.com/modules/cryptocurrencies/cryptolive/",
