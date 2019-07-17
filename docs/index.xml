@@ -582,10 +582,10 @@ Configuration zendesk:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;e
     
     <item>
       <title>v0.17.1 Released</title>
-      <link>https://wtfutil.com/blog/2019-09-16-v0-17-1/</link>
+      <link>https://wtfutil.com/blog/2019-07-16-v0-17-1/</link>
       <pubDate>Tue, 16 Jul 2019 18:05:18 -0700</pubDate>
       
-      <guid>https://wtfutil.com/blog/2019-09-16-v0-17-1/</guid>
+      <guid>https://wtfutil.com/blog/2019-07-16-v0-17-1/</guid>
       <description>July 16, 2019 v0.17.1 contains the following changes:
  Fixes an issue with the default config file not being created on first run  </description>
     </item>

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.55.2" />
-<title>CryptoLive :: WTF - the terminal dashboard</title>
+<title>v0.17.1 Released :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/cryptocurrencies/cryptolive/">
+<body data-url="/blog/2019-07-16-v0-17-1/">
   
   <header>
   <div class="logo">
@@ -127,13 +127,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/blog/" class="dd-item haschildren
+    <li data-nav-id="/blog/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/blog/">WTF Blog</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/blog/2019-07-16-v0-17-1/" class="dd-item">
+      <li data-nav-id="/blog/2019-07-16-v0-17-1/" class="dd-item active">
         <div>
           <a href="/blog/2019-07-16-v0-17-1/">
             v0.17.1 Released
@@ -170,7 +171,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item parent alwaysopen haschildren
+    <li data-nav-id="/modules/" class="dd-item alwaysopen haschildren
         ">
       <div>
       <a href="/modules/">Modules</a>
@@ -205,11 +206,10 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-    <li data-nav-id="/modules/cryptocurrencies/" class="dd-item parent haschildren
+    <li data-nav-id="/modules/cryptocurrencies/" class="dd-item haschildren
         ">
       <div>
-      <a href="/modules/cryptocurrencies/">Crypo Currencies</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/cryptocurrencies/">Crypo Currencies</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/modules/cryptocurrencies/bittrex/" class="dd-item">
@@ -226,7 +226,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/cryptocurrencies/cryptolive/" class="dd-item active">
+      <li data-nav-id="/modules/cryptocurrencies/cryptolive/" class="dd-item">
         <div>
           <a href="/modules/cryptocurrencies/cryptolive/">
             CryptoLive
@@ -543,7 +543,13 @@
     <option value="/configuration/" >
    Configuration</option>
     <option value="/blog/" >
-   WTF Blog</option>
+   WTF Blog</option> 
+      <option value="/blog/2019-07-16-v0-17-1/"  selected>- v0.17.1 Released</option>
+      <option value="/blog/2019-07-12-homebrew-installation/" >- Installing With Homebrew</option>
+      <option value="/blog/2019-07-10-wtfutil-release/" >- Binary Renamed to &#39;wtfutil&#39;</option>
+      <option value="/blog/2019-07-09-rss-for-releases/" >- Using WTF&#39;s FeedReader to Track WTF Releases</option>
+      <option value="/blog/2019-07-09-v0-14-0/" >- v0.14.0 Released</option>
+  
     <option value="/modules/" >
    Modules</option> 
       <option value="/modules/bamboohr/" >- BambooHR</option>
@@ -552,11 +558,7 @@
       <option value="/modules/cmdrunner/" >- CmdRunner</option>
     <option value="/modules/cryptocurrencies/" >
   - 
-   Crypo Currencies</option> 
-      <option value="/modules/cryptocurrencies/bittrex/" >-- Bittrex</option>
-      <option value="/modules/cryptocurrencies/blockfolio/" >-- Blockfolio</option>
-      <option value="/modules/cryptocurrencies/cryptolive/"  selected>-- CryptoLive</option>
-  
+   Crypo Currencies</option>
       <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -620,127 +622,25 @@
       </div>
     
 
-    <h1>CryptoLive</h1>
+    <h1>v0.17.1 Released</h1>
   
 
   
-    
+    <small>July 16, 2019</small>
 
-<p><img class="screenshot" src="/imgs/modules/cryptolive.png" width="320" height="203" alt="cryptolive screenshot" /></p>
+<p><a href="https://github.com/wtfutil/wtf/releases/tag/v0.17.1">v0.17.1</a> contains the following changes:</p>
 
-<p>Compare crypto currencies using <a href="https://cryptocompare.com">CryptoCompare</a>.</p>
+<ul>
+<li>Fixes an issue with the default config file not being created on first run</li>
+</ul>
 
-<h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">cryptolive<span class="p">:</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">  </span>updateInterval<span class="p">:</span><span class="w"> </span><span class="m">15</span><span class="w">
-</span><span class="w">  </span>currencies<span class="p">:</span><span class="w">
-</span><span class="w">    </span>BTC<span class="p">:</span><span class="w">
-</span><span class="w">      </span>displayName<span class="p">:</span><span class="w"> </span>Bitcoin<span class="w">
-</span><span class="w">      </span>to<span class="p">:</span><span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>USD<span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>EUR<span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>ETH<span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>LTC<span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>DOGE<span class="w">
-</span><span class="w">    </span>LTC<span class="p">:</span><span class="w">
-</span><span class="w">      </span>displayName<span class="p">:</span><span class="w"> </span>Ethereum<span class="w">
-</span><span class="w">      </span>to<span class="p">:</span><span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>USD<span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>EUR<span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>BTC<span class="w">
-</span><span class="w">  </span>top<span class="p">:</span><span class="w">
-</span><span class="w">    </span>BTC<span class="p">:</span><span class="w">
-</span><span class="w">      </span>displayName<span class="p">:</span><span class="w"> </span>Bitcoin<span class="w">
-</span><span class="w">      </span>limit<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
-</span><span class="w">      </span>to<span class="p">:</span><span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>USD<span class="w">
-</span><span class="w">  </span>colors<span class="p">:</span><span class="w">
-</span><span class="w">    </span>from<span class="p">:</span><span class="w">
-</span><span class="w">      </span>name<span class="p">:</span><span class="w"> </span>coral<span class="w">
-</span><span class="w">      </span>displayName<span class="p">:</span><span class="w"> </span>grey<span class="w">
-</span><span class="w">    </span>to<span class="p">:</span><span class="w">
-</span><span class="w">      </span>name<span class="p">:</span><span class="w"> </span>white<span class="w">
-</span><span class="w">      </span>price<span class="p">:</span><span class="w"> </span>green<span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w">
-</span><span class="w">      </span>from<span class="p">:</span><span class="w">
-</span><span class="w">        </span>name<span class="p">:</span><span class="w"> </span>grey<span class="w">
-</span><span class="w">        </span>displayName<span class="p">:</span><span class="w"> </span>coral<span class="w">
-</span><span class="w">      </span>to<span class="p">:</span><span class="w">
-</span><span class="w">        </span>name<span class="p">:</span><span class="w"> </span>red<span class="w">
-</span><span class="w">        </span>field<span class="p">:</span><span class="w"> </span>white<span class="w">
-</span><span class="w">        </span>value<span class="p">:</span><span class="w"> </span>green</code></pre></div>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Value</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-    <td><code>border</code></td>
-    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>colors.from.displayName</code></td>
-    <td></td>
-    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
-</tr>
-  <tr>
-    <td><code>colors.from.name</code></td>
-    <td></td>
-    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
-</tr>
-  <tr>
-    <td><code>colors.to.name</code></td>
-    <td></td>
-    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
-</tr>
-  <tr>
-    <td><code>colors.to.price</code></td>
-    <td></td>
-    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
-</tr>
-  <tr>
-    <td><code>currencies</code></td>
-    <td></td>
-    <td></td>
-</tr>
-  <tr>
-    <td><code>enabled</code></td>
-    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>position</code></td>
-    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
-    <td></td>
-</tr>
-  <tr>
-    <td><code>refreshInterval</code></td>
-    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
-    <td>Any positive integer</td>
-</tr>
-    </tbody>
-</table>
-
-<h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/cryptoexchanges/cryptolive/</code></pre></div>
 
 
   
     <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/modules/cryptocurrencies/blockfolio/" title="Blockfolio"> <i class="fa fa-chevron-left"></i><label>Blockfolio</label></a>
-    <a class="nav nav-next" href="/modules/datadog/" title="Datadog" style="margin-right: 0px;"><label>Datadog</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/blog/" title="WTF Blog"> <i class="fa fa-chevron-left"></i><label>WTF Blog</label></a>
+    <a class="nav nav-next" href="/blog/2019-07-12-homebrew-installation/" title="Installing With Homebrew" style="margin-right: 0px;"><label>Installing With Homebrew</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -755,7 +655,7 @@
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 03/06/2018
+        <i class='fa fa-calendar'></i> Last update on 16/07/2019
     </div>
     
   </div>
