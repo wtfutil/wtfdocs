@@ -7,6 +7,7 @@ hidden: false
 alwaysopen: false
 ---
 
+{{< blog/indexcard date="July 16, 2019" title="v0.17.1 Released" page="2019-07-16-v0-17-1" >}}
 {{< blog/indexcard date="July 12, 2019" title="Installing With Homebrew" page="2019-07-12-homebrew-installation" >}}
 {{< blog/indexcard date="July 10, 2019" title="Binary Renamed to 'wtfutil'" page="2019-07-10-wtfutil-release" >}}
 {{< blog/indexcard date="July 9, 2019" title="Using WTF's FeedReader to Track WTF Releases" page="2019-07-09-rss-for-releases" >}}
