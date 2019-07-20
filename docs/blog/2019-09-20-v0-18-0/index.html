@@ -6,14 +6,12 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.55.2" />
-<title>WTF :: WTF - the terminal dashboard</title>
+<title>v0.18.0 Released :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="alternate" type="application/rss+xml" href="https://wtfutil.com/index.xml" title="WTF - the terminal dashboard" />
-<link rel="alternate" type="application/json" href="https://wtfutil.com/index.json" title="WTF - the terminal dashboard" />
 <script src="/js/jquery-2.x.min.js"></script>
 <script src="https://kit.fontawesome.com/461d56314b.js"></script>
 <script type="text/javascript">
@@ -27,7 +25,7 @@
   
 </head>
 
-<body data-url="/">
+<body data-url="/blog/2019-09-20-v0-18-0/">
   
   <header>
   <div class="logo">
@@ -129,13 +127,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/blog/" class="dd-item haschildren
+    <li data-nav-id="/blog/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/blog/">WTF Blog</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/blog/2019-09-20-v0-18-0/" class="dd-item">
+      <li data-nav-id="/blog/2019-09-20-v0-18-0/" class="dd-item active">
         <div>
           <a href="/blog/2019-09-20-v0-18-0/">
             v0.18.0 Released
@@ -558,7 +557,14 @@
     <option value="/configuration/" >
    Configuration</option>
     <option value="/blog/" >
-   WTF Blog</option>
+   WTF Blog</option> 
+      <option value="/blog/2019-09-20-v0-18-0/"  selected>- v0.18.0 Released</option>
+      <option value="/blog/2019-07-16-v0-17-1/" >- v0.17.1 Released</option>
+      <option value="/blog/2019-07-12-homebrew-installation/" >- Installing With Homebrew</option>
+      <option value="/blog/2019-07-10-wtfutil-release/" >- Binary Renamed to &#39;wtfutil&#39;</option>
+      <option value="/blog/2019-07-09-rss-for-releases/" >- Using WTF&#39;s FeedReader to Track WTF Releases</option>
+      <option value="/blog/2019-07-09-v0-14-0/" >- v0.14.0 Released</option>
+  
     <option value="/modules/" >
    Modules</option> 
       <option value="/modules/bamboohr/" >- BambooHR</option>
@@ -631,44 +637,26 @@
       </div>
     
 
-    
+    <h1>v0.18.0 Released</h1>
   
 
   
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
-</span>
- 
+    <small>July 20, 2019</small>
 
+<p><a href="https://github.com/wtfutil/wtf/releases/tag/v0.18.0">v0.18.0</a> contains the following changes:</p>
 
-<p><img src='/imgs/screenshot.jpg' width="900" height="524" style="border-radius: 5px; box-shadow: 5px 5px 11px #666;" /></p>
-
-<p><span style="font-family: monospace; font-size: 1.8em;">WTF</span> is a personal information dashboard for your terminal, developed for those who spend most of their day in the command line.</p>
-
-<p>It allows you to monitor systems, services, and important information that you otherwise might keep browser tabs open for, the kinds of things you don&rsquo;t always need visible, but do check in on every now and then.</p>
-
-<p>Keep an eye on your <strong>OpsGenie</strong> schedules, <strong>Google Calendar</strong>, <strong>Git</strong> and <strong>GitHub</strong> repositories, and <strong>New Relic</strong> deployments.</p>
-
-<p>See who&rsquo;s away in <strong>BambooHR</strong>, which <strong>Jira</strong> tickets are assigned to you, and what time it is in Barcelona.</p>
-
-<p>It even has weather. And clocks. And emoji.</p>
-
-<h3 id="sponsorship">Sponsorship</h3>
-
-<p>WTF is and always will be free and open-source. However your sponsorship of this project is greatly appreciated and will fund the caffeine and pizzas that fuel its development.</p>
-
-<p>To sponsor WTF, just click the button below.</p>
-
-<p><a href="https://www.patreon.com/bePatron?u=21477577" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></p>
-
-
+<ul>
+<li>Adds a Google Analytics module</li>
+<li>Fixes a bug with config file creation that would happen if the <code>~/.config</code> directory did not already exist</li>
+</ul>
 
 
 
   
     <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-next" href="/getting_started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/blog/" title="WTF Blog"> <i class="fa fa-chevron-left"></i><label>WTF Blog</label></a>
+    <a class="nav nav-next" href="/blog/2019-07-16-v0-17-1/" title="v0.17.1 Released" style="margin-right: 0px;"><label>v0.17.1 Released</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -683,7 +671,7 @@
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 14/08/2018
+        <i class='fa fa-calendar'></i> Last update on 20/07/2019
     </div>
     
   </div>
