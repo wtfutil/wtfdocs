@@ -29,7 +29,7 @@ A couple of example config files are provided in the `_sample_configs/`
 directory of the Git repository.
 
 To try out WTF quickly, copy
-`simple_config.yml` into `~/.config/wtf/` as `config.yml` and relaunch WTF. You
+`sample_config.yml` into `~/.config/wtf/` as `config.yml` and relaunch WTF. You
 should see the app launch and display the <a href="/modules/security/">Security</a>,
 <a href="/posts/modules/clocks/">Clocks</a> and <a href="/modules/status/">Status</a> widgets onscreen.
 
