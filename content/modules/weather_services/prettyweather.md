@@ -21,7 +21,7 @@ Displays weather information as ASCII art from [Wttr.in](http://wttr.in).
         height: 1
         width: 1
       refreshInterval: 300
-      unit: "c"
+      unit: "m"
       view: 0
       language: "en"
 ```
