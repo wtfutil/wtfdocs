@@ -223,6 +223,17 @@ Configuration cmdrunner:args:[&amp;#34;-g&amp;#34;,&amp;#34;batt&amp;#34;]cmd:&a
     </item>
     
     <item>
+      <title>Google Analytics</title>
+      <link>https://wtfutil.com/modules/google/ganalytics/</link>
+      <pubDate>Mon, 10 Jun 2019 18:26:26 -0400</pubDate>
+      
+      <guid>https://wtfutil.com/modules/google/ganalytics/</guid>
+      <description>Display website visitors information from Google Analytics API
+To make this work, you&amp;rsquo;ll need a google API credential, link it to google analytics and find your website viewID.
+ Open the Service accounts page and create a project named wtfutil. Navigation menu &amp;gt; IAM &amp;amp; admin &amp;gt; Service accounts Click add Create Service Account, enter a name (wtfutil) for the service account. The Service account permissions (optional) section that follows is not required.</description>
+    </item>
+    
+    <item>
       <title>Google Spreadsheets</title>
       <link>https://wtfutil.com/modules/google/gspreadsheet/</link>
       <pubDate>Sun, 10 Jun 2018 18:26:26 -0400</pubDate>
