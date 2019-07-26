@@ -19,6 +19,7 @@ To make this work, you'll need a google API credential, link it to google analyt
 5. In the side panel that appears, select the format for your key: JSON.
 6. Click Create. Your new public/private key pair is generated and downloaded to your machine; it serves as the only copy of this key.
 7. Copy this json to indicated filepath in wtfutil googleanalytics module Configuration.
+8. Enable the Google Analytics APIS and Services (Navigation menu > APIS and Services > +Enable APIS and Services > Google Analytics Reporting API > Enable)
 
 The newly created service account will have an email address that looks similar to:
 
