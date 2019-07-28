@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.55.2" />
-<title>Glossary :: WTF - the terminal dashboard</title>
+<title>v0.18.0 Released :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/getting_started/glossary/">
+<body data-url="/blog/2019-07-20-v0-18-0/">
   
   <header>
   <div class="logo">
@@ -68,7 +68,7 @@
             <i class="fa fa-fw fa-home"></i>
           </a>
           </li>
-    <li data-nav-id="/getting_started/" class="dd-item parent alwaysopen haschildren
+    <li data-nav-id="/getting_started/" class="dd-item alwaysopen haschildren
         ">
       <div>
       <a href="/getting_started/">Getting Started</a>
@@ -89,7 +89,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/getting_started/glossary/" class="dd-item active">
+      <li data-nav-id="/getting_started/glossary/" class="dd-item">
         <div>
           <a href="/getting_started/glossary/">
             Glossary
@@ -127,10 +127,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/blog/" class="dd-item haschildren
+    <li data-nav-id="/blog/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/blog/">WTF Blog</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/blog/2019-07-27-v0-19-0/" class="dd-item">
@@ -140,7 +141,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/blog/2019-07-20-v0-18-0/" class="dd-item">
+      <li data-nav-id="/blog/2019-07-20-v0-18-0/" class="dd-item active">
         <div>
           <a href="/blog/2019-07-20-v0-18-0/">
             v0.18.0 Released
@@ -558,12 +559,20 @@
    Getting Started</option> 
       <option value="/getting_started/installation/" >- Installation</option>
       <option value="/getting_started/uninstall/" >- Uninstallation</option>
-      <option value="/getting_started/glossary/"  selected>- Glossary</option>
+      <option value="/getting_started/glossary/" >- Glossary</option>
   
     <option value="/configuration/" >
    Configuration</option>
     <option value="/blog/" >
-   WTF Blog</option>
+   WTF Blog</option> 
+      <option value="/blog/2019-07-27-v0-19-0/" >- v0.19.0 Released</option>
+      <option value="/blog/2019-07-20-v0-18-0/"  selected>- v0.18.0 Released</option>
+      <option value="/blog/2019-07-16-v0-17-1/" >- v0.17.1 Released</option>
+      <option value="/blog/2019-07-12-homebrew-installation/" >- Installing With Homebrew</option>
+      <option value="/blog/2019-07-10-wtfutil-release/" >- Binary Renamed to &#39;wtfutil&#39;</option>
+      <option value="/blog/2019-07-09-rss-for-releases/" >- Using WTF&#39;s FeedReader to Track WTF Releases</option>
+      <option value="/blog/2019-07-09-v0-14-0/" >- v0.14.0 Released</option>
+  
     <option value="/modules/" >
    Modules</option> 
       <option value="/modules/bamboohr/" >- BambooHR</option>
@@ -636,37 +645,26 @@
       </div>
     
 
-    <h1>Glossary</h1>
+    <h1>v0.18.0 Released</h1>
   
 
   
-    
+    <small>July 20, 2019</small>
 
-<h3 id="module">Module</h3>
+<p><a href="https://github.com/wtfutil/wtf/releases/tag/v0.18.0">v0.18.0</a> contains the following changes:</p>
 
-<p>A discrete unit of data collection and display. A data interface
-concept. A package inside the app.</p>
-
-<p>Examples: <a href="/modules/newrelic">New Relic</a>, <a href="/modules/git">Git</a>, <a href="/modules/weather">Weather</a>.</p>
-
-<h3 id="widget">Widget</h3>
-
-<p>The onscreen representation of a Module. The widget is responsible for
-being the interface between the app and the data collection.</p>
-
-<p>Widgets are defined by a required <code>widget.go</code> file in a Module.</p>
-
-<h3 id="wtf">WTF</h3>
-
-<p>An acronym for &ldquo;What The F*ck?&ldquo;, as in &ldquo;what the f*ck are all these browser tabs open for?&rdquo; and &ldquo;what the f*ck am I doing today?&rdquo;</p>
+<ul>
+<li>Adds a Google Analytics module</li>
+<li>Fixes a bug with config file creation that would happen if the <code>~/.config</code> directory did not already exist</li>
+</ul>
 
 
 
   
     <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/getting_started/uninstall/" title="Uninstallation"> <i class="fa fa-chevron-left"></i><label>Uninstallation</label></a>
-    <a class="nav nav-next" href="/configuration/" title="Configuration" style="margin-right: 0px;"><label>Configuration</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/blog/2019-07-27-v0-19-0/" title="v0.19.0 Released"> <i class="fa fa-chevron-left"></i><label>v0.19.0 Released</label></a>
+    <a class="nav nav-next" href="/blog/2019-07-16-v0-17-1/" title="v0.17.1 Released" style="margin-right: 0px;"><label>v0.17.1 Released</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -681,7 +679,7 @@ being the interface between the app and the data collection.</p>
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 17/04/2018
+        <i class='fa fa-calendar'></i> Last update on 20/07/2019
     </div>
     
   </div>
