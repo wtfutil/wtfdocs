@@ -27,6 +27,7 @@ opsgenie:
     height: 2
     width: 1
   refreshInterval: 21600
+  region: "us"
   schedule: "Primary"
   scheduleIdentifierType: "id"
 ```
@@ -44,6 +45,7 @@ opsgenie:
     height: 2
     width: 1
   refreshInterval: 21600
+  region: "us"
   schedule:
   - "Primary"
   - "Secondary"
@@ -57,7 +59,7 @@ opsgenie:
   {{< attributes/enabled >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
-  {{< attributes/custom name="schedule" desc="The name or list of names of the schedule(s) to retrieve." value="" >}}
+  {{< attributes/custom name="region" desc="The region of the servers to connect to" value="`eu` or `us`" >}}
   {{< attributes/custom name="scheduleIdentifierType" desc="Type of the schedule identifier." value="`id` or `name`" >}}
 {{% /attributes %}}
 

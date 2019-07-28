@@ -9,6 +9,8 @@ weight: 125
 
 Indicates whether or not your listed email addresses appear in the [Have I Been Pwned](https://haveibeenpwned.com) breach database.
 
+**Note:** As of v0.19.0, WTF requires you use a Have I Been Pwned API key to conenct to the service. See details below.
+
 ## Configuration
 
 ```yaml
@@ -16,6 +18,7 @@ hibp:
   accounts:
   - test@example.com
   - pwned@gmail.com
+  apiKey: "ef9cb8d7-0941-4633-b056-3bobcatd3c78"
   colors:
     ok: "green"
     pwned: "red"
@@ -28,8 +31,10 @@ hibp:
   refreshInterval: 43200
   since: "2019-06-22"
 ```
+
 {{% attributes %}}
   {{< attributes/custom name="accounts" desc="A list of the accounts to check the HIBP database for." >}}
+  {{< attributes/apikey name="Have I Been Pwned" link="https://haveibeenpwned.com/API/Key" >}}
   {{< attributes/custom name="colors" desc="_Optional_ The colors to display for accounts that have not been pwned and ones that have. Defaults to `white` for unpwned accounts, `red` for pwned accounts." >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}

@@ -171,7 +171,8 @@ Configuration hackernews:enabled:truenumberOfStories:10position:top:4left:1heigh
       
       <guid>https://wtfutil.com/modules/hibp/</guid>
       <description>Indicates whether or not your listed email addresses appear in the Have I Been Pwned breach database.
-Configuration hibp:accounts:-test@example.com-pwned@gmail.comcolors:ok:&amp;#34;green&amp;#34;pwned:&amp;#34;red&amp;#34;enabled:trueposition:top:4left:1height:1width:2refreshInterval:43200since:&amp;#34;2019-06-22&amp;#34;   Name Description Value     accounts A list of the accounts to check the HIBP database for.    colors Optional The colors to display for accounts that have not been pwned and ones that have. Defaults to white for unpwned accounts, red for pwned accounts.</description>
+Note: As of v0.19.0, WTF requires you use a Have I Been Pwned API key to conenct to the service. See details below.
+Configuration hibp:accounts:-test@example.com-pwned@gmail.comapiKey:&amp;#34;ef9cb8d7-0941-4633-b056-3bobcatd3c78&amp;#34;colors:ok:&amp;#34;green&amp;#34;pwned:&amp;#34;red&amp;#34;enabled:trueposition:top:4left:1height:1width:2refreshInterval:43200since:&amp;#34;2019-06-22&amp;#34;   Name Description Value     accounts A list of the accounts to check the HIBP database for.    apiKey Your Have I Been Pwned API token.</description>
     </item>
     
     <item>
@@ -247,7 +248,7 @@ Configuration newrelic:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;
       <guid>https://wtfutil.com/modules/opsgenie/</guid>
       <description>Connects to the OpsGenie API and displays all your scheduled rotations and who&amp;rsquo;s currently on call.
 See Who is on Call API for details.
-Configuration Single Schedule opsgenie:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600schedule:&amp;#34;Primary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34; Multiple Schedules opsgenie:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600schedule:-&amp;#34;Primary&amp;#34;-&amp;#34;Secondary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34;   Name Description Value     apiKey Your OpsGenie API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   displayEmpty Whether schedules with no assigned person on-call should be displayed.</description>
+Configuration Single Schedule opsgenie:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600region:&amp;#34;us&amp;#34;schedule:&amp;#34;Primary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34; Multiple Schedules opsgenie:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600region:&amp;#34;us&amp;#34;schedule:-&amp;#34;Primary&amp;#34;-&amp;#34;Secondary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34;   Name Description Value     apiKey Your OpsGenie API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   displayEmpty Whether schedules with no assigned person on-call should be displayed.</description>
     </item>
     
     <item>

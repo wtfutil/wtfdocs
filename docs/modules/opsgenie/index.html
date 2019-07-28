@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.55.2" />
+<meta name="generator" content="Hugo 0.56.0" />
 <title>OpsGenie :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -662,6 +662,7 @@ and who&rsquo;s currently on call.</p>
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">21600</span><span class="w">
+</span><span class="w">  </span>region<span class="p">:</span><span class="w"> </span><span class="s2">&#34;us&#34;</span><span class="w">
 </span><span class="w">  </span>schedule<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Primary&#34;</span><span class="w">
 </span><span class="w">  </span>scheduleIdentifierType<span class="p">:</span><span class="w"> </span><span class="s2">&#34;id&#34;</span></code></pre></div>
 <h3 id="multiple-schedules">Multiple Schedules</h3>
@@ -675,6 +676,7 @@ and who&rsquo;s currently on call.</p>
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">21600</span><span class="w">
+</span><span class="w">  </span>region<span class="p">:</span><span class="w"> </span><span class="s2">&#34;us&#34;</span><span class="w">
 </span><span class="w">  </span>schedule<span class="p">:</span><span class="w">
 </span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;Primary&#34;</span><span class="w">
 </span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;Secondary&#34;</span><span class="w">
@@ -719,9 +721,9 @@ and who&rsquo;s currently on call.</p>
     <td>Any positive integer</td>
 </tr>
   <tr>
-    <td><code>schedule</code></td>
-    <td>The name or list of names of the schedule(s) to retrieve.</td>
-    <td></td>
+    <td><code>region</code></td>
+    <td>The region of the servers to connect to</td>
+    <td><code>eu</code> or <code>us</code></td>
 </tr>
   <tr>
     <td><code>scheduleIdentifierType</code></td>
