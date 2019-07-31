@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.56.0" />
-<title>New Relic :: WTF - the terminal dashboard</title>
+<title>v0.19.1 Released :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/newrelic/">
+<body data-url="/blog/2019-07-31-v0-19-1/">
   
   <header>
   <div class="logo">
@@ -127,13 +127,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/blog/" class="dd-item haschildren
+    <li data-nav-id="/blog/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/blog/">WTF Blog</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/blog/2019-07-31-v0-19-1/" class="dd-item">
+      <li data-nav-id="/blog/2019-07-31-v0-19-1/" class="dd-item active">
         <div>
           <a href="/blog/2019-07-31-v0-19-1/">
             v0.19.1 Released
@@ -191,7 +192,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item parent alwaysopen haschildren
+    <li data-nav-id="/modules/" class="dd-item alwaysopen haschildren
         ">
       <div>
       <a href="/modules/">Modules</a>
@@ -404,7 +405,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/newrelic/" class="dd-item active">
+      <li data-nav-id="/modules/newrelic/" class="dd-item">
         <div>
           <a href="/modules/newrelic/">
             New Relic
@@ -570,7 +571,16 @@
     <option value="/configuration/" >
    Configuration</option>
     <option value="/blog/" >
-   WTF Blog</option>
+   WTF Blog</option> 
+      <option value="/blog/2019-07-31-v0-19-1/"  selected>- v0.19.1 Released</option>
+      <option value="/blog/2019-07-27-v0-19-0/" >- v0.19.0 Released</option>
+      <option value="/blog/2019-07-20-v0-18-0/" >- v0.18.0 Released</option>
+      <option value="/blog/2019-07-16-v0-17-1/" >- v0.17.1 Released</option>
+      <option value="/blog/2019-07-12-homebrew-installation/" >- Installing With Homebrew</option>
+      <option value="/blog/2019-07-10-wtfutil-release/" >- Binary Renamed to &#39;wtfutil&#39;</option>
+      <option value="/blog/2019-07-09-rss-for-releases/" >- Using WTF&#39;s FeedReader to Track WTF Releases</option>
+      <option value="/blog/2019-07-09-v0-14-0/" >- v0.14.0 Released</option>
+  
     <option value="/modules/" >
    Modules</option> 
       <option value="/modules/bamboohr/" >- BambooHR</option>
@@ -600,7 +610,7 @@
       <option value="/modules/logger/" >- Logger</option>
       <option value="/modules/mercurial/" >- Mercurial</option>
       <option value="/modules/nbascore/" >- NBA Score</option>
-      <option value="/modules/newrelic/"  selected>- New Relic</option>
+      <option value="/modules/newrelic/" >- New Relic</option>
       <option value="/modules/opsgenie/" >- OpsGenie</option>
       <option value="/modules/pagerduty/" >- Pagerduty</option>
       <option value="/modules/power/" >- Power</option>
@@ -643,85 +653,29 @@
       </div>
     
 
-    <h1>New Relic</h1>
+    <h1>v0.19.1 Released</h1>
   
 
   
     
 
-<p><img class="screenshot" src="/imgs/modules/newrelic.png" width="640" height="189" alt="newrelic screenshot" class="clearfix" /></p>
+<small>July 31, 2019</small>
 
-<p>Connects to the New Relic API and displays the last n deploys of the
-monitored application: deploy ID, deploy time, and who deployed it.</p>
+<p><a href="https://github.com/wtfutil/wtf/releases/tag/v0.19.1">v0.19.1</a> contains the following changes:</p>
 
-<h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">newrelic<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
-</span><span class="w">  </span>applicationID<span class="p">:</span><span class="w"> </span><span class="m">10549735</span><span class="w">
-</span><span class="w">  </span>deployCount<span class="p">:</span><span class="w"> </span><span class="m">6</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span></code></pre></div>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Value</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-    <td><code>apiKey</code></td>
-    <td>Your <a href="https://docs.newrelic.com/docs/apis/getting-started/intro-apis/access-rest-api-keys">New Relic API</a> token.</td>
-    <td></td>
-</tr>
-  <tr>
-    <td><code>applicationId</code></td>
-    <td>The integer ID of the New Relic application you wish to report on.</td>
-    <td>Any positive integer</td>
-</tr>
-  <tr>
-    <td><code>border</code></td>
-    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>deployCount</code></td>
-    <td>The number of past deploys to display on screen.</td>
-    <td>Any positive integer</td>
-</tr>
-  <tr>
-    <td><code>enabled</code></td>
-    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>position</code></td>
-    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
-    <td></td>
-</tr>
-  <tr>
-    <td><code>refreshInterval</code></td>
-    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
-    <td>Any positive integer</td>
-</tr>
-    </tbody>
-</table>
+<h3 id="added">⚡️ Added</h3>
 
-<h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/newrelic/</code></pre></div>
+<ul>
+<li>New versions now include binaries built for <code>arm</code> and <code>arm64</code> architectures</li>
+</ul>
+
 
 
   
     <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/modules/nbascore/" title="NBA Score"> <i class="fa fa-chevron-left"></i><label>NBA Score</label></a>
-    <a class="nav nav-next" href="/modules/opsgenie/" title="OpsGenie" style="margin-right: 0px;"><label>OpsGenie</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/blog/" title="WTF Blog"> <i class="fa fa-chevron-left"></i><label>WTF Blog</label></a>
+    <a class="nav nav-next" href="/blog/2019-07-27-v0-19-0/" title="v0.19.0 Released" style="margin-right: 0px;"><label>v0.19.0 Released</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -736,7 +690,7 @@ monitored application: deploy ID, deploy time, and who deployed it.</p>
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 09/05/2018
+        <i class='fa fa-calendar'></i> Last update on 31/07/2019
     </div>
     
   </div>
