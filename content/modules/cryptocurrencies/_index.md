@@ -1,5 +1,5 @@
 ---
-title: "Crypo Currencies"
+title: "Crypto Currencies"
 date: 2018-05-07T18:04:58-07:00
 draft: false
 weight: 50
