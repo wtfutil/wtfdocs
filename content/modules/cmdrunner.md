@@ -33,7 +33,8 @@ cmdrunner:
 
 ## Examples
 
- * [iStats](/modules/cmdrunner/istats)
- * [Status Pages](/modules/cmdrunner/statuspages)
+* [brew outdated](/modules/cmdrunner/brew_outdated)
+* [iStats](/modules/cmdrunner/istats)
+* [Status Pages](/modules/cmdrunner/statuspages)
 
 {{% sourcePath module="cmdrunner" %}}

@@ -45,6 +45,16 @@ wtf:colors:background:&amp;#34;red&amp;#34;border:focusable:&amp;#34;darkslatebl
     </item>
     
     <item>
+      <title>brew outdated</title>
+      <link>https://wtfutil.com/modules/cmdrunner/brew_outdated/</link>
+      <pubDate>Sat, 03 Aug 2019 12:39:10 -0800</pubDate>
+      
+      <guid>https://wtfutil.com/modules/cmdrunner/brew_outdated/</guid>
+      <description> Displays a list of all the installed Homebrew recipes that have an update available for them.
+Config Example brew_outdated:args:[&amp;#34;outdated&amp;#34;]cmd:&amp;#34;brew&amp;#34;enabled:trueposition:top:3left:1width:2height:1type:cmdrunner</description>
+    </item>
+    
+    <item>
       <title>Grid Layout</title>
       <link>https://wtfutil.com/configuration/grid_layout/</link>
       <pubDate>Sun, 05 May 2019 12:01:04 -0700</pubDate>
@@ -208,7 +218,7 @@ Configuration clocks:colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;wh
       <pubDate>Mon, 01 Jul 2019 17:17:10 -0400</pubDate>
       
       <guid>https://wtfutil.com/modules/cmdrunner/istats/</guid>
-      <description> iStats is a command line tool to view system stats on OSX
+      <description> iStats is a command line tool to view system stats on OSX.
 Config Example istats:args:[&amp;#34;all&amp;#34;]cmd:&amp;#34;istats&amp;#34;enabled:truetype:&amp;#34;cmdrunner&amp;#34;position:top:0left:3height:2width:2refreshInterval:1</description>
     </item>
     

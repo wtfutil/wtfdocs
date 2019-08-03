@@ -7,7 +7,7 @@ weight: 40
 ---
 
 [iStats](https://github.com/Chris911/iStats) is a command line tool to view
-system stats on OSX
+system stats on OSX.
 
 <img class="screenshot" src="/imgs/modules/cmdrunner/iStats.png" alt="istats screenshot" />
 
