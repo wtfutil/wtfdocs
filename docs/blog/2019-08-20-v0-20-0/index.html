@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.56.3" />
-<title>Grid Layout :: WTF - the terminal dashboard</title>
+<title>v0.20.0 Released :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/configuration/grid_layout/">
+<body data-url="/blog/2019-08-20-v0-20-0/">
   
   <header>
   <div class="logo">
@@ -98,11 +98,10 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/configuration/" class="dd-item parent haschildren
+    <li data-nav-id="/configuration/" class="dd-item haschildren
         ">
       <div>
-      <a href="/configuration/">Configuration</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/configuration/">Configuration</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/configuration/global_settings/" class="dd-item">
@@ -112,7 +111,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/configuration/grid_layout/" class="dd-item active">
+      <li data-nav-id="/configuration/grid_layout/" class="dd-item">
         <div>
           <a href="/configuration/grid_layout/">
             Grid Layout
@@ -128,13 +127,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/blog/" class="dd-item haschildren
+    <li data-nav-id="/blog/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/blog/">WTF Blog</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/blog/2019-08-20-v0-20-0/" class="dd-item">
+      <li data-nav-id="/blog/2019-08-20-v0-20-0/" class="dd-item active">
         <div>
           <a href="/blog/2019-08-20-v0-20-0/">
             v0.20.0 Released
@@ -583,13 +583,19 @@
       <option value="/getting_started/glossary/" >- Glossary</option>
   
     <option value="/configuration/" >
-   Configuration</option> 
-      <option value="/configuration/global_settings/" >- Global Settings</option>
-      <option value="/configuration/grid_layout/"  selected>- Grid Layout</option>
-      <option value="/configuration/generate-module/" >- Creating New Modules</option>
-  
+   Configuration</option>
     <option value="/blog/" >
-   WTF Blog</option>
+   WTF Blog</option> 
+      <option value="/blog/2019-08-20-v0-20-0/"  selected>- v0.20.0 Released</option>
+      <option value="/blog/2019-07-31-v0-19-1/" >- v0.19.1 Released</option>
+      <option value="/blog/2019-07-27-v0-19-0/" >- v0.19.0 Released</option>
+      <option value="/blog/2019-07-20-v0-18-0/" >- v0.18.0 Released</option>
+      <option value="/blog/2019-07-16-v0-17-1/" >- v0.17.1 Released</option>
+      <option value="/blog/2019-07-12-homebrew-installation/" >- Installing With Homebrew</option>
+      <option value="/blog/2019-07-10-wtfutil-release/" >- Binary Renamed to &#39;wtfutil&#39;</option>
+      <option value="/blog/2019-07-09-rss-for-releases/" >- Using WTF&#39;s FeedReader to Track WTF Releases</option>
+      <option value="/blog/2019-07-09-v0-14-0/" >- v0.14.0 Released</option>
+  
     <option value="/modules/" >
    Modules</option> 
       <option value="/modules/bamboohr/" >- BambooHR</option>
@@ -663,41 +669,35 @@
       </div>
     
 
-    <h1>Grid Layout</h1>
+    <h1>v0.20.0 Released</h1>
   
 
   
-    <p>WTF uses the <code>Grid</code> layout system from <a href="https://github.com/rivo/tview/blob/master/grid.go">tview</a> to position widgets
-onscreen. It&rsquo;s not immediately obvious how this works, so here&rsquo;s an
-explanation:</p>
+    <small>August 20, 2019</small>
 
-<p>Think of your terminal screen as a matrix of letter positions, say <code>100</code> chrs wide and <code>58</code> chrs tall.</p>
+<p><a href="https://github.com/wtfutil/wtf/releases/tag/v0.20.0">v0.20.0</a> contains the following changes:</p>
 
-<p>Columns breaks up the width of the screen into chunks, each chunk a specified number of characters wide. use</p>
+<p>⚡️ Added</p>
 
-<p><code>[10, 10, 10, 10, 10, 10, 10, 10, 10, 10]</code></p>
+<ul>
+<li>Kubernetes module</li>
+</ul>
 
-<p>Ten columns that are ten characters wide</p>
+<p>🐞 Fixed</p>
 
-<p>Rows break up the height of the screen into chunks, each chunk a specified number of characters tall. If we wanted to have five rows:</p>
-
-<p><code>[10, 10, 10, 10, 18]</code></p>
-
-<p>The co-ordinate system starts at top-left and defines how wide and tall a widget is. If we wanted to put a 2-col, 2-row widget in the bottom of the screen, we&rsquo;d position it at:</p>
-
-<pre><code>  top:    4  // top starts in the 4th row
-  left:   9  // left starts in the 9th column
-  height: 2  // span down rows 4 &amp; 5 (18 characters in size, total)
-  width:  2  // span across cols 9 &amp; 10 (20 characters in size, total)
-</code></pre>
+<ul>
+<li>Tab and Esc keys work properly in modal dialogs</li>
+<li><code>wtfutil -m</code> flag now works with non-enabled modules</li>
+<li>Jenkins job filtering preserved across redraws</li>
+</ul>
 
 
 
   
     <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/configuration/global_settings/" title="Global Settings"> <i class="fa fa-chevron-left"></i><label>Global Settings</label></a>
-    <a class="nav nav-next" href="/configuration/generate-module/" title="Creating New Modules" style="margin-right: 0px;"><label>Creating New Modules</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/blog/" title="WTF Blog"> <i class="fa fa-chevron-left"></i><label>WTF Blog</label></a>
+    <a class="nav nav-next" href="/blog/2019-07-31-v0-19-1/" title="v0.19.1 Released" style="margin-right: 0px;"><label>v0.19.1 Released</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -712,7 +712,7 @@ explanation:</p>
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 05/05/2019
+        <i class='fa fa-calendar'></i> Last update on 20/08/2019
     </div>
     
   </div>
