@@ -29,6 +29,7 @@ cmdrunner:
   {{< attributes/enabled >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
+  {{< attributes/title >}}
 {{% /attributes %}}
 
 ## Examples
