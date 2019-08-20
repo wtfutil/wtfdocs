@@ -207,6 +207,16 @@ jira:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;colors:rows:even:&
     </item>
     
     <item>
+      <title>Kubernetes</title>
+      <link>https://wtfutil.com/modules/kubernetes/</link>
+      <pubDate>Mon, 19 Aug 2019 14:33:21 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/kubernetes/</guid>
+      <description>Displays information about a Kubernetes cluster.
+Configuration kubernetes:enabled:truekubeconfig:&amp;#34;/Users/testuser/.kube/config&amp;#34;namespaces:-internal-public-systemsobjects:-deployments-nodes-podsposition:top:4left:1height:1width:2refreshInterval:300title:&amp;#34;Build System&amp;#34;   Name Description Value     enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   kubeconfig The absolute path to your Kubernetes config file.    namespaces A list of namespaces to monitor. Defaults to all if empty.    objects A list of Kubernetes objects to display.</description>
+    </item>
+    
+    <item>
       <title>Logger</title>
       <link>https://wtfutil.com/modules/logger/</link>
       <pubDate>Sat, 16 Jun 2018 14:22:18 -0700</pubDate>

@@ -208,6 +208,11 @@
   </url>
   
   <url>
+    <loc>https://wtfutil.com/modules/kubernetes/</loc>
+    <lastmod>2019-08-19T14:33:21-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wtfutil.com/modules/logger/</loc>
     <lastmod>2018-06-16T14:22:18-07:00</lastmod>
   </url>

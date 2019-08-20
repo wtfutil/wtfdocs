@@ -6,13 +6,12 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.56.3" />
-<title>Getting Started :: WTF - the terminal dashboard</title>
+<title>Kubernetes :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="alternate" type="application/rss+xml" href="https://wtfutil.com/getting_started/index.xml" title="WTF - the terminal dashboard" />
 <script src="/js/jquery-2.x.min.js"></script>
 <script src="https://kit.fontawesome.com/461d56314b.js"></script>
 <script type="text/javascript">
@@ -26,7 +25,7 @@
   
 </head>
 
-<body data-url="/getting_started/">
+<body data-url="/modules/kubernetes/">
   
   <header>
   <div class="logo">
@@ -69,7 +68,7 @@
             <i class="fa fa-fw fa-home"></i>
           </a>
           </li>
-    <li data-nav-id="/getting_started/" class="dd-item parent active alwaysopen haschildren
+    <li data-nav-id="/getting_started/" class="dd-item alwaysopen haschildren
         ">
       <div>
       <a href="/getting_started/">Getting Started</a>
@@ -192,7 +191,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item alwaysopen haschildren
+    <li data-nav-id="/modules/" class="dd-item parent alwaysopen haschildren
         ">
       <div>
       <a href="/modules/">Modules</a>
@@ -311,27 +310,6 @@
       <a href="/modules/google/">Google Apps</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/modules/google/gcal/" class="dd-item">
-        <div>
-          <a href="/modules/google/gcal/">
-            Google Calendar
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/google/ganalytics/" class="dd-item">
-        <div>
-          <a href="/modules/google/ganalytics/">
-            Google Analytics
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/google/gspreadsheet/" class="dd-item">
-        <div>
-          <a href="/modules/google/gspreadsheet/">
-            Google Spreadsheets
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
       <li data-nav-id="/modules/hackernews/" class="dd-item">
@@ -384,7 +362,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/kubernetes/" class="dd-item">
+      <li data-nav-id="/modules/kubernetes/" class="dd-item active">
         <div>
           <a href="/modules/kubernetes/">
             Kubernetes
@@ -569,7 +547,7 @@
       <center>Navigation : 
         <select onchange="javascript:location.href = this.value;">
           
-    <option value="/getting_started/"  selected>
+    <option value="/getting_started/" >
    Getting Started</option> 
       <option value="/getting_started/installation/" >- Installation</option>
       <option value="/getting_started/uninstall/" >- Uninstallation</option>
@@ -605,7 +583,7 @@
    IP Addresses</option>
       <option value="/modules/jenkins/" >- Jenkins</option>
       <option value="/modules/jira/" >- Jira</option>
-      <option value="/modules/kubernetes/" >- Kubernetes</option>
+      <option value="/modules/kubernetes/"  selected>- Kubernetes</option>
       <option value="/modules/logger/" >- Logger</option>
       <option value="/modules/mercurial/" >- Mercurial</option>
       <option value="/modules/nbascore/" >- NBA Score</option>
@@ -652,63 +630,89 @@
       </div>
     
 
-    <h1>Getting Started</h1>
+    <h1>Kubernetes</h1>
   
 
   
+    
 
+<p>Displays information about a Kubernetes cluster.</p>
 
+<h2 id="configuration">Configuration</h2>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">kubernetes<span class="p">:</span><span class="w">
+</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>kubeconfig<span class="p">:</span><span class="w"> </span><span class="s2">&#34;/Users/testuser/.kube/config&#34;</span><span class="w">
+</span><span class="w">  </span>namespaces<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>internal<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>public<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>systems<span class="w">
+</span><span class="w">  </span>objects<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>deployments<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>nodes<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>pods<span class="w">
+</span><span class="w">  </span>position<span class="p">:</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
+</span><span class="w">  </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Build System&#34;</span></code></pre></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>kubeconfig</code></td>
+    <td>The absolute path to your Kubernetes config file.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>namespaces</code></td>
+    <td>A list of namespaces to monitor. Defaults to all if empty.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>objects</code></td>
+    <td>A list of Kubernetes objects to display.</td>
+    <td>Any of <code>nodes</code>, <code>pods</code>, and/or <code>deployments</code>.</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td><code>title</code></td>
+    <td><em>Optional</em> The title to display in the widget&rsquo;s onscreen box</td>
+    <td></td>
+</tr>
+    </tbody>
+</table>
 
-<h2 id="quick-start">Quick Start</h2>
-
-<ol>
-<li><a href="https://github.com/wtfutil/wtf/releases">Download</a> the stand-alone, compiled binary.</li>
-<li>Unzip the downloaded file.</li>
-<li>From the command line, <code>cd</code> into the newly-created <code>/wtf</code> directory.</li>
-<li>From the command line, run the app: <code>./wtfutil</code></li>
-</ol>
-
-<p>This should launch the app in your terminal using the default simple
-configuration. See <a href="/configuration/">Configuration</a> for
-more details.</p>
-
-<h2 id="command-line-options">Command-line Options</h2>
-
-<p><code>--config, -c</code> <br />
-Allows you to define a custom config file to use. See <a href="/configuration/">Configuration</a> for more details.</p>
-
-<p><code>--help, -h</code> <br />
-Shows help information for the command-line arguments that WTF
-takes.</p>
-
-<p><code>--module, -m</code> <br />
-Shows help information for the specific named module, if that module
-supports help text. <br />
-Example: <code>wtf --module=todo</code>.</p>
-
-<p><code>--version, -v</code> <br />
-Shows version info.</p>
-
-<h2 id="keyboard-commands">Keyboard Commands</h2>
-
-<p><span class="caption">Key:</span> <code>Ctrl-R</code> <br />
-<span class="caption">Action:</span> Force-refresh the data for all modules.</p>
-
-<p><span class="caption">Key:</span> <code>Esc</code> <br />
-<span class="caption">Action:</span> Unfocus the currently-focused
-widget.</p>
-
-<p><span class="caption">Key:</span> <code>Tab</code> <br />
-<span class="caption">Action:</span> Move between focusable modules (<code>Shift-Tab</code> to move backwards).</p>
-
-
+<h2 id="source-code">Source Code</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/kubernetes/</code></pre></div>
 
 
   
     <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/" title="WTF"> <i class="fa fa-chevron-left"></i><label>WTF</label></a>
-    <a class="nav nav-next" href="/getting_started/installation/" title="Installation" style="margin-right: 0px;"><label>Installation</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/jira/" title="Jira"> <i class="fa fa-chevron-left"></i><label>Jira</label></a>
+    <a class="nav nav-next" href="/modules/logger/" title="Logger" style="margin-right: 0px;"><label>Logger</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -723,7 +727,7 @@ widget.</p>
 
   
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 21/05/2018
+        <i class='fa fa-calendar'></i> Last update on 19/08/2019
     </div>
     
   </div>
