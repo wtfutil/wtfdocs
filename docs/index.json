@@ -21,6 +21,13 @@
 	"content": " The following top-level global attributes are configurable in config.yml. See this example config file for more details.\nwtf:colors:background:\u0026#34;red\u0026#34;border:focusable:\u0026#34;darkslateblue\u0026#34;focused:\u0026#34;orange\u0026#34;normal:\u0026#34;gray\u0026#34;checked:\u0026#34;gray\u0026#34;highlight:fore:\u0026#34;black\u0026#34;back:\u0026#34;green\u0026#34;text:\u0026#34;white\u0026#34;title:\u0026#34;white\u0026#34;grid:# How _wide_ the columns are, in terminal characters. In this case we have# six columns, each of which are 35 characters widecolumns:[35,35,35,35,35,35]# How _high_ the rows are, in terminal lines. In this case we have five rows# that support ten line of text, one of three lines, and one of fourrows:[10,10,10,10,10,3,4]navigation:shortcuts:trueopenFileUtil:\u0026#34;open\u0026#34;sigils:checkbox:checked:\u0026#34;x\u0026#34;unchecked:\u0026#34; \u0026#34;paging:normal:\u0026#34;*\u0026#34;selected:\u0026#34;_\u0026#34;term:\u0026#34;xterm-256color\u0026#34; Attributes colors.background The color to draw the background of the app in. Use this to match your terminal colors. May be over-written by individual module configurations. Values: Any X11 color name.\ncolors.border.focusable The color in which to draw the border of widgets that can accept keyboard focus. Values: Any X11 color name.\ncolors.border.focused The color in which to draw the border of the widget that currently has keyboard focus. Values: Any X11 color name.\ncolors.border.normal The color in which to draw the borders of the widgets that cannot accept focus.  Values: Any X11 color name.\ngrid.columns An array that defines the widths of all the columns. Values: See tview\u0026rsquo;s Grid for details.\ngrid.rows An array that defines the heights of all the rows. Values: See tview\u0026rsquo;s Grid for details.\nopenFileUtil Which local utility to use to open a file or URL.\nterm Optional. Sets a custom value for the terminal type this app runs in. Leave this entry out of the config if you simply want to use your terminal\u0026rsquo;s default setting. Note: If an invalid value is provided for this setting, the app will crash with a \u0026quot;terminal entry not found\u0026quot; error. Values: Any valid terminal type (ie: vt100, xterm, xterm-256color, ansi, etc.).\n"
 },
 {
+	"uri": "https://wtfutil.com/modules/weather_services/arpansagovau/",
+	"title": "ARPANSA",
+	"tags": [],
+	"description": "",
+	"content": " Displays Ultraviolet radiation index information from ARPANSA for an Australian city to help determine what level of sun protection or avoidance is necessary.\nThe Australian Radiation Protection and Nuclear Safety Agency (ARPANSA) is the Australian Government\u0026rsquo;s primary authority on radiation protection and nuclear safety.\nInterpreting the information:\n Index is specified in units of Standard Erthermal Dose. If the UV index is less than 3 you can safely stay outdoors with minimal protection. If the UV index is 3 or more: wear sun protective clothing, a hat, sunglasses, sunscreen, seek shade.  Configuration arpansagovau:enabled:truelocationid:\u0026#34;Sydney\u0026#34;refreshInterval:900position:top:0left:0height:1width:1   Name Description Value     locationid One of the ARPANSA location ids as seen on the id attribute of the location tag. e.g. \u0026ldquo;Sydney\u0026rdquo; \n position Defines where in the grid this module\u0026rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer. \n  Source Code wtf/modules/weatherservices/arpansagovau/"
+},
+{
 	"uri": "https://wtfutil.com/modules/cmdrunner/brew_outdated/",
 	"title": "brew outdated",
 	"tags": [],
@@ -431,7 +438,7 @@
 	"title": "Weather Services",
 	"tags": [],
 	"description": "",
-	"content": "For all modules weather-related.\n Pretty Weather   Weather   "
+	"content": "For all modules weather-related.\n ARPANSA   Pretty Weather   Weather   "
 },
 {
 	"uri": "https://wtfutil.com/modules/zendesk/",

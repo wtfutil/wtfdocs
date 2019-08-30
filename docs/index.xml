@@ -45,6 +45,18 @@ wtf:colors:background:&amp;#34;red&amp;#34;border:focusable:&amp;#34;darkslatebl
     </item>
     
     <item>
+      <title>ARPANSA</title>
+      <link>https://wtfutil.com/modules/weather_services/arpansagovau/</link>
+      <pubDate>Wed, 09 May 2018 11:44:13 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/weather_services/arpansagovau/</guid>
+      <description>Displays Ultraviolet radiation index information from ARPANSA for an Australian city to help determine what level of sun protection or avoidance is necessary.
+The Australian Radiation Protection and Nuclear Safety Agency (ARPANSA) is the Australian Government&amp;rsquo;s primary authority on radiation protection and nuclear safety.
+Interpreting the information:
+ Index is specified in units of Standard Erthermal Dose. If the UV index is less than 3 you can safely stay outdoors with minimal protection.</description>
+    </item>
+    
+    <item>
       <title>brew outdated</title>
       <link>https://wtfutil.com/modules/cmdrunner/brew_outdated/</link>
       <pubDate>Sat, 03 Aug 2019 12:39:10 -0800</pubDate>

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.56.3" />
-<title>Blockfolio :: WTF - the terminal dashboard</title>
+<title>ARPANSA :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/cryptocurrencies/blockfolio/">
+<body data-url="/modules/weather_services/arpansagovau/">
   
   <header>
   <div class="logo">
@@ -240,11 +240,10 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-    <li data-nav-id="/modules/cryptocurrencies/" class="dd-item parent haschildren
+    <li data-nav-id="/modules/cryptocurrencies/" class="dd-item haschildren
         ">
       <div>
-      <a href="/modules/cryptocurrencies/">Crypto Currencies</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/cryptocurrencies/">Crypto Currencies</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/modules/cryptocurrencies/bittrex/" class="dd-item">
@@ -254,7 +253,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/cryptocurrencies/blockfolio/" class="dd-item active">
+      <li data-nav-id="/modules/cryptocurrencies/blockfolio/" class="dd-item">
         <div>
           <a href="/modules/cryptocurrencies/blockfolio/">
             Blockfolio
@@ -538,13 +537,14 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-    <li data-nav-id="/modules/weather_services/" class="dd-item haschildren
+    <li data-nav-id="/modules/weather_services/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/modules/weather_services/">Weather Services</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/weather_services/">Weather Services</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/modules/weather_services/arpansagovau/" class="dd-item">
+      <li data-nav-id="/modules/weather_services/arpansagovau/" class="dd-item active">
         <div>
           <a href="/modules/weather_services/arpansagovau/">
             ARPANSA
@@ -608,11 +608,7 @@
       <option value="/modules/cmdrunner/" >- CmdRunner</option>
     <option value="/modules/cryptocurrencies/" >
   - 
-   Crypto Currencies</option> 
-      <option value="/modules/cryptocurrencies/bittrex/" >-- Bittrex</option>
-      <option value="/modules/cryptocurrencies/blockfolio/"  selected>-- Blockfolio</option>
-      <option value="/modules/cryptocurrencies/cryptolive/" >-- CryptoLive</option>
-  
+   Crypto Currencies</option>
       <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -652,7 +648,11 @@
       <option value="/modules/victorops/" >- VictorOps OnCall</option>
     <option value="/modules/weather_services/" >
   - 
-   Weather Services</option>
+   Weather Services</option> 
+      <option value="/modules/weather_services/arpansagovau/"  selected>-- ARPANSA</option>
+      <option value="/modules/weather_services/prettyweather/" >-- Pretty Weather</option>
+      <option value="/modules/weather_services/weather/" >-- Weather</option>
+  
       <option value="/modules/zendesk/" >- Zendesk</option>
   
 
@@ -677,31 +677,36 @@
       </div>
     
 
-    <h1>Blockfolio</h1>
+    <h1>ARPANSA</h1>
   
 
   
     
 
-<p><img class="screenshot" src="/imgs/modules/blockfolio.png" width="320" height="185" alt="blockfolio screenshot" /></p>
+<p><img class="screenshot" src="/imgs/modules/arpansa.png" width="350" height="150" alt="arpansagovau module screenshot" /></p>
 
-<p>Display your Blockfolio crypto holdings.</p>
+<p>Displays Ultraviolet radiation index information from ARPANSA for an Australian city to help determine what level of sun protection or avoidance is necessary.</p>
+
+<p>The <a href="https://www.arpansa.gov.au">Australian Radiation Protection and Nuclear Safety Agency</a> (ARPANSA) is the Australian Government&rsquo;s primary authority on radiation protection and nuclear safety.</p>
+
+<p>Interpreting the information:</p>
+
+<ul>
+<li>Index is specified in units of <a href="https://www.arpansa.gov.au/services/monitoring/ultraviolet-radiation-monitoring/ultraviolet-radiation-dose/ultraviolet">Standard Erthermal Dose</a>.</li>
+<li>If the UV index is less than 3 you can safely stay outdoors with minimal protection.</li>
+<li>If the UV index is 3 or more: wear sun protective clothing, a hat, sunglasses, sunscreen, seek shade.</li>
+</ul>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">blockfolio<span class="p">:</span><span class="w">
-</span><span class="w">  </span>colors<span class="p">:</span><span class="w">
-</span><span class="w">    </span>name<span class="p">:</span><span class="w"> </span>blue<span class="w">
-</span><span class="w">    </span>grows<span class="p">:</span><span class="w"> </span>green<span class="w">
-</span><span class="w">    </span>drop<span class="p">:</span><span class="w"> </span>red<span class="w">
-</span><span class="w">  </span>device_token<span class="p">:</span><span class="w"> </span><span class="s2">&#34;device token&#34;</span><span class="w">
-</span><span class="w">  </span>displayHoldings<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">400</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="w">    </span>arpansagovau<span class="p">:</span><span class="w">
+</span><span class="w">      </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">      </span>locationid<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Sydney&#34;</span><span class="w">
+</span><span class="w">      </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span><span class="w">
+</span><span class="w">      </span>position<span class="p">:</span><span class="w">
+</span><span class="w">        </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">        </span>left<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">        </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">        </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span></code></pre></div>
 <table class="table">
     <thead>
         <tr>
@@ -712,38 +717,11 @@
     </thead>
     <tbody>
         <p><tr>
-    <td><code>border</code></td>
-    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>colors.drop</code></td>
-    <td></td>
-    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
-</tr>
-  <tr>
-    <td><code>colors.grows</code></td>
-    <td></td>
-    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
-</tr>
-  <tr>
-    <td><code>colors.name</code></td>
-    <td></td>
-    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
-</tr></p>
-
-<p><tr>
-    <td><code>device_token</code></td>
-    <td>See <a href="https://github.com/bob6664569/blockfolio-api-client">this gist</a> for details on how to get your Blockfolio API token.</td>
-    <td></td>
+    <td><code>locationid</code></td>
+    <td>One of the <a href="https://uvdata.arpansa.gov.au/xml/uvvalues.xml">ARPANSA location ids as seen on the id attribute of the location tag. e.g. &ldquo;Sydney&rdquo;</td>
   </tr></p>
 
 <p><tr>
-    <td><code>enabled</code></td>
-    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
     <td><code>position</code></td>
     <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
     <td></td>
@@ -757,15 +735,15 @@
     </tbody>
 </table>
 
-<h2 id="source">Source</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/cryptoexchanges/blockfolio/</code></pre></div>
+<h2 id="source-code">Source Code</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/weatherservices/arpansagovau/</code></pre></div>
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/cryptocurrencies/bittrex/" title="Bittrex"> <i class="fa fa-chevron-left"></i><label>Bittrex</label></a>
-    <a class="nav nav-next" href="/modules/cryptocurrencies/cryptolive/" title="CryptoLive" style="margin-right: 0px;"><label>CryptoLive</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/weather_services/" title="Weather Services"> <i class="fa fa-chevron-left"></i><label>Weather Services</label></a>
+    <a class="nav nav-next" href="/modules/weather_services/prettyweather/" title="Pretty Weather" style="margin-right: 0px;"><label>Pretty Weather</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>
