@@ -1,6 +1,6 @@
 ---
 title: "Google Analytics"
-date: 2019-06-10T18:26:26-04:00
+date: 2019-08-31T01:46:10.010Z
 draft: false
 weight: 50
 ---
@@ -12,20 +12,24 @@ Display website visitors information from Google Analytics API
 To make this work, you'll need a google API credential, link it to google analytics and find your website viewID.
 
 1. Open the [Service accounts page](https://console.developers.google.com/iam-admin/serviceaccounts) and create a project named wtfutil.
-2. Navigation menu > IAM & admin > Service accounts
-3. Click add Create Service Account, enter a name (wtfutil) for the service account.
-3. The Service account permissions (optional) section that follows is not required. Click Continue.
-4. On the Grant users access to this service account screen, scroll down to the Create key section. Click add Create key.
-5. In the side panel that appears, select the format for your key: JSON.
-6. Click Create. Your new public/private key pair is generated and downloaded to your machine; it serves as the only copy of this key.
-7. Copy this json to indicated filepath in wtfutil googleanalytics module Configuration.
-8. Enable the Google Analytics APIS and Services (Navigation menu > APIS and Services > +Enable APIS and Services > Google Analytics Reporting API > Enable)
+1. Navigation menu > IAM & admin > Service accounts
+1. Click add Create Service Account, enter a name (wtfutil) for the service account.
+1. The Service account permissions (optional) section that follows is not required. Click Continue.
+1. On the Grant users access to this service account screen, scroll down to the Create key section. Click add Create key.
+1. In the side panel that appears, select the format for your key: JSON.
+1. Click Create. Your new public/private key pair is generated and downloaded to your machine; it serves as the only copy of this key.
+1. Copy this json to indicated filepath in wtfutil googleanalytics module Configuration.
+1. Enable the Google Analytics APIS and Services (Navigation menu > APIS and Services > +Enable APIS and Services > Google Analytics Reporting API > Enable)
 
 The newly created service account will have an email address that looks similar to:
 
 something@PROJECT-ID.iam.gserviceaccount.com
 
 Use this email address to add a user to the [Google analytics view](https://analytics.google.com/analytics/web/) you want to access via the API (admin > user management > add users). Only Read & Analyze permissions are needed. Get the website viewID and put it in the config file.
+
+## Real Time Data
+
+This module also supports displaying the number of visitors on each view live via the Google Analytics Real Time Reporting API Beta. In order to use this feature, you must [sign up](https://docs.google.com/forms/d/1qfRFysCikpgCMGqgF3yXdUyQW4xAlLyjKuOoOEFN2Uw/viewform) for the beta and wait for your whitelist application to be approved (which takes less than 24 hours). Once you're approved, all you need to do is set `enableRealtime: true` in the module settings.
 
 ## Configuration
 
@@ -40,6 +44,7 @@ googleanalytics:
     height: 1
   refreshInterval: 400
   secretFile: "~/.config/wtf/google_analytics/client_secret.json"
+  enableRealtime: true
   viewIds:
     tessellation: "00000000"
     dylanbartels.com: "111111111"
@@ -58,6 +63,11 @@ googleanalytics:
     <td>`secretFile`</td>
     <td>Your <a href="https://developers.google.com/sheets/api/quickstart/go">Google client secret</a> JSON file.</td>
     <td>A string representing a file path to the JSON secret file.</td>
+  </tr>
+  <tr>
+    <td>`enableRealtime`</td>
+    <td>If set to `true`, the live count of users on each listed view will be displayed in addition to historical visitor counts.  This requires you to [sign up](https://docs.google.com/forms/d/1qfRFysCikpgCMGqgF3yXdUyQW4xAlLyjKuOoOEFN2Uw/viewform) for the Real Time Reporting API Beta.</td>
+    <td>A boolean representing whether real time data should be enabled or not</td>
   </tr>
   <tr>
     <td>`viewIds`</td>
