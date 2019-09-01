@@ -702,6 +702,7 @@
 </span><span class="w">    </span>-<span class="w"> </span><span class="p">[</span><span class="s1">&#39;interview|meet&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;magenta&#39;</span><span class="p">]</span><span class="w">
 </span><span class="w">    </span>-<span class="w"> </span><span class="p">[</span><span class="s1">&#39;lunch&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;yellow&#39;</span><span class="p">]</span><span class="w">
 </span><span class="w">    </span>past<span class="p">:</span><span class="w"> </span><span class="s2">&#34;gray&#34;</span><span class="w">
+</span><span class="w">  </span>calendarReadLevel<span class="p">:</span><span class="w"> </span><span class="s2">&#34;reader&#34;</span><span class="w">
 </span><span class="w">  </span>conflictIcon<span class="p">:</span><span class="w"> </span><span class="s2">&#34;🚨&#34;</span><span class="w">
 </span><span class="w">  </span>currentIcon<span class="p">:</span><span class="w"> </span><span class="s2">&#34;💥&#34;</span><span class="w">
 </span><span class="w">  </span>displayResponseStatus<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
@@ -756,6 +757,11 @@
   </tr></p>
 
 <p><tr>
+    <td><code>calendarReadLevel</code></td>
+    <td><em>Optional</em> The calender read level specifies level you want to read events. Default: reader.</td>
+    <td>reader, writer</td>
+</tr>
+  <tr>
     <td><code>conflictIcon</code></td>
     <td><em>Optional</em> The icon displayed beside calendar events that have conflicting times (they intersect or overlap in some way).</td>
     <td>Any displayable unicode character.</td>

@@ -26,6 +26,7 @@ gcal:
     - ['interview|meet', 'magenta']
     - ['lunch', 'yellow']
     past: "gray"
+  calendarReadLevel: "reader"
   conflictIcon: "🚨"
   currentIcon: "💥"
   displayResponseStatus: true
@@ -57,6 +58,7 @@ gcal:
     <td>[a valid regular expression, any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.]</td>
   </tr>
 
+  {{< attributes/custom name="calendarReadLevel" desc="_Optional_ The calender read level specifies level you want to read events. Default: reader." value="reader, writer" >}}
   {{< attributes/custom name="conflictIcon" desc="_Optional_ The icon displayed beside calendar events that have conflicting times (they intersect or overlap in some way)." value="Any displayable unicode character." >}}
   {{< attributes/custom name="currentIcon" desc="_Optional_ The icon displayed beside the current calendar event." value="Any displayable unicode character." >}}
   {{< attributes/custom name="displayResponseStatus" desc="_Optional_ Whether or not to display your response status to the calendar event. Default: true." value="true, false" >}}
