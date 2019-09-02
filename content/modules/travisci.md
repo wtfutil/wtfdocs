@@ -11,10 +11,15 @@ Displays build information for your Travis CI account.
 
 ## Configuration
 
+This module pulls information from api.travis-ci.com (when pro: true) or api.travis-ci.org (when pro: false)
+
 ```yaml
 travisci:
   apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
   enabled: true
+  compact: true
+  limit: 8
+  sort_by: "id:desc"
   position:
     top: 4
     left: 1
@@ -28,6 +33,8 @@ travisci:
   {{< attributes/apikey name="TravisCI" link="https://developer.travis-ci.org/authentication" >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
+  {{< attributes/custom name="compact" desc="True: display one line per build entry, false: two lines per build.">}}
+  {{< attributes/custom name="sort_by" desc="Sortable by: id, created_at, started_at, finished_at, number, append :desc to any attribute to reverse order. The default value is id:desc. See https://developer.travis-ci.com/resource/builds for more information." >}}
   {{< attributes/focusChar >}}
   {{< attributes/position >}}
   {{< attributes/custom name="pro" desc="Determines whether or not this module will use the Pro version of Travis CI." value="true, false" >}}
