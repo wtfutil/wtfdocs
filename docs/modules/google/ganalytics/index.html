@@ -702,9 +702,7 @@
 </ol>
 
 <p>The newly created service account will have an email address that looks similar to:</p>
-
-<p>something@PROJECT-ID.iam.gserviceaccount.com</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-console" data-lang="console">something@PROJECT-ID.iam.gserviceaccount.com</code></pre></div>
 <p>Use this email address to add a user to the <a href="https://analytics.google.com/analytics/web/">Google analytics view</a> you want to access via the API (admin &gt; user management &gt; add users). Only Read &amp; Analyze permissions are needed. Get the website viewID and put it in the config file.</p>
 
 <h2 id="real-time-data">Real Time Data</h2>
@@ -714,6 +712,7 @@
 <h2 id="configuration">Configuration</h2>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">googleanalytics<span class="p">:</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>enableRealtime<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>months<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
 </span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
@@ -722,7 +721,6 @@
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">400</span><span class="w">
 </span><span class="w">  </span>secretFile<span class="p">:</span><span class="w"> </span><span class="s2">&#34;~/.config/wtf/google_analytics/client_secret.json&#34;</span><span class="w">
-</span><span class="w">  </span>enableRealtime<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>viewIds<span class="p">:</span><span class="w">
 </span><span class="w">    </span>tessellation<span class="p">:</span><span class="w"> </span><span class="s2">&#34;00000000&#34;</span><span class="w">
 </span><span class="w">    </span>dylanbartels.com<span class="p">:</span><span class="w"> </span><span class="s2">&#34;111111111&#34;</span></code></pre></div>
@@ -738,6 +736,11 @@
         <tr>
     <td><code>enabled</code></td>
     <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>enableRealtime</code></td>
+    <td>When set to <code>true</code>, the live count of users on each listed view will be displayed in addition to historical visitor counts.  This requires you to <a href="https://docs.google.com/forms/d/1qfRFysCikpgCMGqgF3yXdUyQW4xAlLyjKuOoOEFN2Uw/viewform">sign up</a> for the Real Time Reporting API Beta. Default: false.</td>
     <td>true, false</td>
 </tr>
   <tr>
@@ -759,11 +762,6 @@
     <td><code>secretFile</code></td>
     <td>Your <a href="https://developers.google.com/sheets/api/quickstart/go">Google client secret</a> JSON file.</td>
     <td>A string representing a file path to the JSON secret file.</td>
-  </tr>
-  <tr>
-    <td><code>enableRealtime</code></td>
-    <td>If set to <code>true</code>, the live count of users on each listed view will be displayed in addition to historical visitor counts.  This requires you to <a href="https://docs.google.com/forms/d/1qfRFysCikpgCMGqgF3yXdUyQW4xAlLyjKuOoOEFN2Uw/viewform">sign up</a> for the Real Time Reporting API Beta.</td>
-    <td>A boolean representing whether real time data should be enabled or not</td>
   </tr>
   <tr>
     <td><code>viewIds</code></td>

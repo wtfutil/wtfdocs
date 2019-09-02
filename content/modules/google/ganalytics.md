@@ -23,7 +23,9 @@ To make this work, you'll need a google API credential, link it to google analyt
 
 The newly created service account will have an email address that looks similar to:
 
+```console
 something@PROJECT-ID.iam.gserviceaccount.com
+```
 
 Use this email address to add a user to the [Google analytics view](https://analytics.google.com/analytics/web/) you want to access via the API (admin > user management > add users). Only Read & Analyze permissions are needed. Get the website viewID and put it in the config file.
 
@@ -36,6 +38,7 @@ This module also supports displaying the number of visitors on each view live vi
 ```yaml
 googleanalytics:
   enabled: true
+  enableRealtime: true
   months: 5
   position:
     top: 0
@@ -44,7 +47,6 @@ googleanalytics:
     height: 1
   refreshInterval: 400
   secretFile: "~/.config/wtf/google_analytics/client_secret.json"
-  enableRealtime: true
   viewIds:
     tessellation: "00000000"
     dylanbartels.com: "111111111"
@@ -52,6 +54,7 @@ googleanalytics:
 
 {{% attributes %}}
   {{< attributes/enabled >}}
+  {{< attributes/custom name="enableRealtime" desc="When set to `true`, the live count of users on each listed view will be displayed in addition to historical visitor counts.  This requires you to [sign up](https://docs.google.com/forms/d/1qfRFysCikpgCMGqgF3yXdUyQW4xAlLyjKuOoOEFN2Uw/viewform) for the Real Time Reporting API Beta. Default: false." value="true, false" >}}
   <tr>
     <td>`months`</td>
     <td>The amount of months being displayed with website session data.</td>
@@ -63,11 +66,6 @@ googleanalytics:
     <td>`secretFile`</td>
     <td>Your <a href="https://developers.google.com/sheets/api/quickstart/go">Google client secret</a> JSON file.</td>
     <td>A string representing a file path to the JSON secret file.</td>
-  </tr>
-  <tr>
-    <td>`enableRealtime`</td>
-    <td>If set to `true`, the live count of users on each listed view will be displayed in addition to historical visitor counts.  This requires you to [sign up](https://docs.google.com/forms/d/1qfRFysCikpgCMGqgF3yXdUyQW4xAlLyjKuOoOEFN2Uw/viewform) for the Real Time Reporting API Beta.</td>
-    <td>A boolean representing whether real time data should be enabled or not</td>
   </tr>
   <tr>
     <td>`viewIds`</td>
