@@ -570,17 +570,6 @@ Configuration transmission:enabled:truehost:&amp;#34;192.168.1.5&amp;#34;passwor
     </item>
     
     <item>
-      <title>TravisCI</title>
-      <link>https://wtfutil.com/modules/travisci/</link>
-      <pubDate>Wed, 18 Jul 2018 14:36:08 -0400</pubDate>
-      
-      <guid>https://wtfutil.com/modules/travisci/</guid>
-      <description>Displays build information for your Travis CI account.
-Configuration This module pulls information from api.travis-ci.com (when pro: true) or api.travis-ci.org (when pro: false)
-travisci:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:truecompact:truelimit:8sort_by:&amp;#34;id:desc&amp;#34;position:top:4left:1height:1width:2pro:falserefreshInterval:900   Name Description Value     apiKey Your TravisCI API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
-    </item>
-    
-    <item>
       <title>Trello</title>
       <link>https://wtfutil.com/modules/trello/</link>
       <pubDate>Thu, 10 May 2018 10:44:35 -0700</pubDate>
