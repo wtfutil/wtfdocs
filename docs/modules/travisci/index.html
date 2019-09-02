@@ -683,9 +683,14 @@
 <p>Displays build information for your Travis CI account.</p>
 
 <h2 id="configuration">Configuration</h2>
+
+<p>This module pulls information from api.travis-ci.com (when pro: true) or api.travis-ci.org (when pro: false)</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">travisci<span class="p">:</span><span class="w">
 </span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>compact<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>limit<span class="p">:</span><span class="w"> </span><span class="m">8</span><span class="w">
+</span><span class="w">  </span>sort_by<span class="p">:</span><span class="w"> </span><span class="s2">&#34;id:desc&#34;</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
 </span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
 </span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
@@ -716,6 +721,16 @@
     <td><code>enabled</code></td>
     <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
     <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>compact</code></td>
+    <td>True: display one line per build entry, false: two lines per build.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>sort_by</code></td>
+    <td>Sortable by: id, created_at, started_at, finished_at, number, append :desc to any attribute to reverse order. The default value is id:desc. See <a href="https://developer.travis-ci.com/resource/builds">https://developer.travis-ci.com/resource/builds</a> for more information.</td>
+    <td></td>
 </tr>
   <tr>
     <td><code>focusChar</code></td>
