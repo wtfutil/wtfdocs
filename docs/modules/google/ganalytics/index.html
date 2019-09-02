@@ -510,6 +510,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/modules/travisci/" class="dd-item">
+        <div>
+          <a href="/modules/travisci/">
+            TravisCI
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/modules/trello/" class="dd-item">
         <div>
           <a href="/modules/trello/">
@@ -639,6 +646,7 @@
       <option value="/modules/todo/" >- Todo</option>
       <option value="/modules/todoist/" >- Todoist</option>
       <option value="/modules/transmission/" >- Transmission</option>
+      <option value="/modules/travisci/" >- TravisCI</option>
       <option value="/modules/trello/" >- Trello</option>
       <option value="/modules/twitter/" >- Twitter</option>
       <option value="/modules/victorops/" >- VictorOps OnCall</option>
@@ -699,6 +707,10 @@
 
 <p>Use this email address to add a user to the <a href="https://analytics.google.com/analytics/web/">Google analytics view</a> you want to access via the API (admin &gt; user management &gt; add users). Only Read &amp; Analyze permissions are needed. Get the website viewID and put it in the config file.</p>
 
+<h2 id="real-time-data">Real Time Data</h2>
+
+<p>This module also supports displaying the number of visitors on each view live via the Google Analytics Real Time Reporting API Beta. In order to use this feature, you must <a href="https://docs.google.com/forms/d/1qfRFysCikpgCMGqgF3yXdUyQW4xAlLyjKuOoOEFN2Uw/viewform">sign up</a> for the beta and wait for your whitelist application to be approved (which takes less than 24 hours). Once you&rsquo;re approved, all you need to do is set <code>enableRealtime: true</code> in the module settings.</p>
+
 <h2 id="configuration">Configuration</h2>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">googleanalytics<span class="p">:</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
@@ -710,6 +722,7 @@
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">400</span><span class="w">
 </span><span class="w">  </span>secretFile<span class="p">:</span><span class="w"> </span><span class="s2">&#34;~/.config/wtf/google_analytics/client_secret.json&#34;</span><span class="w">
+</span><span class="w">  </span>enableRealtime<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>viewIds<span class="p">:</span><span class="w">
 </span><span class="w">    </span>tessellation<span class="p">:</span><span class="w"> </span><span class="s2">&#34;00000000&#34;</span><span class="w">
 </span><span class="w">    </span>dylanbartels.com<span class="p">:</span><span class="w"> </span><span class="s2">&#34;111111111&#34;</span></code></pre></div>
@@ -746,6 +759,11 @@
     <td><code>secretFile</code></td>
     <td>Your <a href="https://developers.google.com/sheets/api/quickstart/go">Google client secret</a> JSON file.</td>
     <td>A string representing a file path to the JSON secret file.</td>
+  </tr>
+  <tr>
+    <td><code>enableRealtime</code></td>
+    <td>If set to <code>true</code>, the live count of users on each listed view will be displayed in addition to historical visitor counts.  This requires you to <a href="https://docs.google.com/forms/d/1qfRFysCikpgCMGqgF3yXdUyQW4xAlLyjKuOoOEFN2Uw/viewform">sign up</a> for the Real Time Reporting API Beta.</td>
+    <td>A boolean representing whether real time data should be enabled or not</td>
   </tr>
   <tr>
     <td><code>viewIds</code></td>

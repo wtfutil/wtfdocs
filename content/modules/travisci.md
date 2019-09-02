@@ -33,7 +33,7 @@ travisci:
   {{< attributes/apikey name="TravisCI" link="https://developer.travis-ci.org/authentication" >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
-  {{< attributes/custom name="compact" desc="When true, displays one line per build entry. When false, displays two lines per entry. Default: false.", value="true, false" >}}
+  {{< attributes/custom name="compact" desc="When true, displays one line per build entry. When false, displays two lines per entry. Default: false." value="true, false" >}}
   {{< attributes/custom name="sort_by" desc="Sortable by: id, created_at, started_at, finished_at, number, append :desc to any attribute to reverse order. The default value is id:desc. See https://developer.travis-ci.com/resource/builds for more information." >}}
   {{< attributes/focusChar >}}
   {{< attributes/position >}}
