@@ -200,7 +200,7 @@ Configuration weather:apiKey:&amp;#34;2dfb3e3650a1950adddb6badf5ba1aaa&amp;#34;#
 Examples: New Relic, Git, Weather.
 Widget The onscreen representation of a Module. The widget is responsible for being the interface between the app and the data collection.
 Widgets are defined by a required widget.go file in a Module.
-WTF An acronym for &amp;ldquo;What The F*ck?&amp;ldquo;, as in &amp;ldquo;what the f*ck are all these browser tabs open for?</description>
+WTF An acronym for &amp;ldquo;What The Fsck?&amp;rdquo;, as in &amp;ldquo;What the fsck are all these browser tabs open for?</description>
     </item>
     
     <item>

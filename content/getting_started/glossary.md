@@ -18,4 +18,6 @@ being the interface between the app and the data collection.
 Widgets are defined by a required `widget.go` file in a Module.
 
 ### WTF
-An acronym for "What The F*ck?", as in "what the f*ck are all these browser tabs open for?" and "what the f*ck am I doing today?"
+An acronym for "What The Fsck?", as in "What the fsck are all these browser tabs open for?" and "What the fsck am I doing today?"
+
+(And if you're not a fan of that, then it actually stands for "What are The Facts?"). 
