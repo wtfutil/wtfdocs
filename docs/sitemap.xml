@@ -384,12 +384,10 @@
   
   <url>
     <loc>https://wtfutil.com/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wtfutil.com/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

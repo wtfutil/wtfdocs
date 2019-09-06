@@ -40,8 +40,9 @@ github:
     width: 2
   refreshInterval: 300
   repositories:
-    wesker-api: "UmbrellaCorp"
-    wtf: "wtfutil"
+    - "wtfutil/wtf"
+    - "wtfutil/docs"
+    - "umbrella-corp/wesker-api"
   uploadURL: ""
   username: "wtfutil"
 ```
