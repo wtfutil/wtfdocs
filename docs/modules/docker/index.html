@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.57.2" />
-<title>iStats :: WTF - the terminal dashboard</title>
+<title>Docker :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/cmdrunner/istats/">
+<body data-url="/modules/docker/">
   
   <header>
   <div class="logo">
@@ -246,27 +246,6 @@
       <a href="/modules/cryptocurrencies/">Crypto Currencies</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/modules/cryptocurrencies/bittrex/" class="dd-item">
-        <div>
-          <a href="/modules/cryptocurrencies/bittrex/">
-            Bittrex
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/cryptocurrencies/blockfolio/" class="dd-item">
-        <div>
-          <a href="/modules/cryptocurrencies/blockfolio/">
-            Blockfolio
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/cryptocurrencies/cryptolive/" class="dd-item">
-        <div>
-          <a href="/modules/cryptocurrencies/cryptolive/">
-            CryptoLive
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
       <li data-nav-id="/modules/datadog/" class="dd-item">
@@ -276,7 +255,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/docker/" class="dd-item">
+      <li data-nav-id="/modules/docker/" class="dd-item active">
         <div>
           <a href="/modules/docker/">
             Docker
@@ -616,7 +595,7 @@
   - 
    Crypto Currencies</option>
       <option value="/modules/datadog/" >- Datadog</option>
-      <option value="/modules/docker/" >- Docker</option>
+      <option value="/modules/docker/"  selected>- Docker</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
       <option value="/modules/git/" >- Git</option>
@@ -680,29 +659,67 @@
       </div>
     
 
-    <h1>iStats</h1>
+    <h1>Docker</h1>
   
 
   
     
 
-<p><a href="https://github.com/Chris911/iStats">iStats</a> is a command line tool to view
-system stats on OSX.</p>
+<p><img class="screenshot" src="/imgs/modules/docker.png" width="275" height="320" alt="github screenshot" /></p>
 
-<p><img class="screenshot" src="/imgs/modules/cmdrunner/iStats.png" alt="istats screenshot" /></p>
+<p>Displays information about currently-running Docker processes.</p>
 
-<h2 id="config-example">Config Example</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">istats<span class="p">:</span><span class="w">
-</span><span class="w">  </span>args<span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;all&#34;</span><span class="p">]</span><span class="w">
-</span><span class="w">  </span>cmd<span class="p">:</span><span class="w"> </span><span class="s2">&#34;istats&#34;</span><span class="w">
+<h2 id="configuration">Configuration</h2>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">docker<span class="p">:</span><span class="w">
+</span><span class="w">  </span>type<span class="p">:</span><span class="w"> </span>docker<span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>type<span class="p">:</span><span class="w"> </span><span class="s2">&#34;cmdrunner&#34;</span><span class="w">
+</span><span class="w">  </span>labelColor<span class="p">:</span><span class="w"> </span>lightblue<span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
 </span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">1</span></code></pre></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>labelColor</code></td>
+    <td>The color to display the row labels in.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a> or long-form hex value (i.e.:
+        <code>#ff0000</code>).</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td><code>title</code></td>
+    <td><em>Optional</em> The title to display in the widget&rsquo;s onscreen box</td>
+    <td></td>
+</tr>
+    </tbody>
+</table>
+
+<h2 id="source-code">Source Code</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/docker/</code></pre></div>
 
 
   
