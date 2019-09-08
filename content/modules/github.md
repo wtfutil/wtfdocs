@@ -75,16 +75,21 @@ github:
 
 {{% keyboard %}}
   {{< keyboard/foreSlash >}}
-  {{< keyboard/return desc="Open the selected repository in a browser" >}}
+  {{< keyboard/return desc="Open the selected pull request or issue in a browser" >}}
+  {{< keyboard/insert desc="Open the selected GitHub repo in a browser" >}}
 
   {{< keyboard/spacer >}}
 
+  {{< keyboard/j desc="Select the next item in the list" >}}
+  {{< keyboard/k desc="Select the previous item in the list" >}}
   {{< keyboard/h desc="Show the previous git repository" >}}
   {{< keyboard/l desc="Show the next git repository" >}}
   {{< keyboard/r >}}
 
   {{< keyboard/spacer >}}
 
+  {{< keyboard/arrowUp desc="Select the next item in the list" >}}
+  {{< keyboard/arrowBack desc="Select the previous item in the list" >}}
   {{< keyboard/arrowBack desc="Show the previous git repository" >}}
   {{< keyboard/arrowFore desc="Show the next git repository" >}}
 {{% /keyboard %}}
