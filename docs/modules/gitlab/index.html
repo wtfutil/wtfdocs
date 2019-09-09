@@ -246,27 +246,6 @@
       <a href="/modules/cryptocurrencies/">Crypto Currencies</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/modules/cryptocurrencies/bittrex/" class="dd-item">
-        <div>
-          <a href="/modules/cryptocurrencies/bittrex/">
-            Bittrex
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/cryptocurrencies/blockfolio/" class="dd-item">
-        <div>
-          <a href="/modules/cryptocurrencies/blockfolio/">
-            Blockfolio
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/cryptocurrencies/cryptolive/" class="dd-item">
-        <div>
-          <a href="/modules/cryptocurrencies/cryptolive/">
-            CryptoLive
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
       <li data-nav-id="/modules/datadog/" class="dd-item">
@@ -709,8 +688,8 @@
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
 </span><span class="w">  </span>projects<span class="p">:</span><span class="w">
-</span><span class="w">    </span>tasks<span class="p">:</span><span class="w"> </span><span class="s2">&#34;gitlab-org/release&#34;</span><span class="w">
-</span><span class="w">    </span>gitlab-ce<span class="p">:</span><span class="w"> </span><span class="s2">&#34;gitlab-org&#34;</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span><span class="s2">&#34;gitlab-org/release/tasks&#34;</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span><span class="s2">&#34;gitlab-org/gitlab-ce&#34;</span><span class="w">
 </span><span class="w">  </span>username<span class="p">:</span><span class="w"> </span><span class="s2">&#34;wtfutil&#34;</span></code></pre></div>
 <table class="table">
     <thead>
@@ -721,7 +700,7 @@
         </tr>
     </thead>
     <tbody>
-        <p><tr>
+        <tr>
     <td><code>apiKey</code></td>
     <td>Your <a href="https://docs.gitlab.com/ce/user/profile/personal_access_tokens.html">GitLab API</a> token.</td>
     <td></td>
@@ -750,21 +729,13 @@
     <td><code>position</code></td>
     <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
     <td></td>
-</tr></p>
-
-<p><tr>
+</tr>
+  <tr>
     <td><code>projects</code></td>
-    <td>
-      A list of key/value pairs each describing a GitLab project to fetch data for.
-      <br />
-      <br />
-      <span class="caption">Key:</span> The name of the project. <br />
-      <span class="caption">Value:</span> The namespace of the project.
-    </td>
+    <td>A list of GitLab project paths to fetch data for.</td>
     <td></td>
-  </tr></p>
-
-<p><tr>
+</tr>
+  <tr>
     <td><code>refreshInterval</code></td>
     <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
     <td>Any positive integer.</td>
@@ -773,8 +744,7 @@
     <td><code>username</code></td>
     <td>Your GitLab username. </td>
     <td></td>
-</tr></p>
-
+</tr>
     </tbody>
 </table>
 

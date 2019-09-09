@@ -30,8 +30,8 @@ gitlab:
     width: 2
   refreshInterval: 300
   projects:
-    tasks: "gitlab-org/release"
-    gitlab-ce: "gitlab-org"
+    - "gitlab-org/release/tasks"
+    - "gitlab-org/gitlab-ce"
   username: "wtfutil"
 ```
 
@@ -42,19 +42,7 @@ gitlab:
   {{< attributes/enabled >}}
   {{< attributes/focusChar >}}
   {{< attributes/position >}}
-
-  <tr>
-    <td>`projects`</td>
-    <td>
-      A list of key/value pairs each describing a GitLab project to fetch data for. 
-      <br />
-      <br />
-      <span class="caption">Key:</span> The name of the project. <br />
-      <span class="caption">Value:</span> The namespace of the project.
-    </td>
-    <td></td>
-  </tr>
-
+  {{< attributes/custom name="projects" desc="A list of GitLab project paths to fetch data for." value="" >}}
   {{< attributes/refreshInterval >}}
   {{< attributes/username name="GitLab" desc="Used to figure out which requests require your approval." >}}
 {{% /attributes %}}

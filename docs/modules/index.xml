@@ -161,7 +161,7 @@ Configuration github:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;ba
       <description>Displays information about your projects hosted on GitLab:
 Open Approval Requests All open merge requests that are requesting your approval.
 Open Merge Requests All open merge requests created by you.
-Configuration gitlab:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:2left:3height:2width:2refreshInterval:300projects:tasks:&amp;#34;gitlab-org/release&amp;#34;gitlab-ce:&amp;#34;gitlab-org&amp;#34;username:&amp;#34;wtfutil&amp;#34;   Name Description Value     apiKey Your GitLab API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   domain Optional. Your GitLab corporate domain.</description>
+Configuration gitlab:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:2left:3height:2width:2refreshInterval:300projects:-&amp;#34;gitlab-org/release/tasks&amp;#34;-&amp;#34;gitlab-org/gitlab-ce&amp;#34;username:&amp;#34;wtfutil&amp;#34;   Name Description Value     apiKey Your GitLab API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   domain Optional. Your GitLab corporate domain.</description>
     </item>
     
     <item>
