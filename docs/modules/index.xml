@@ -265,8 +265,11 @@ Configuration nbascore:enabled:trueposition:top:1left:2height:1width:1refreshInt
       <pubDate>Wed, 09 May 2018 09:01:14 -0700</pubDate>
       
       <guid>https://wtfutil.com/modules/newrelic/</guid>
-      <description>Connects to the New Relic API and displays the last n deploys of the monitored application: deploy ID, deploy time, and who deployed it.
-Configuration newrelic:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;applicationID:10549735deployCount:6enabled:trueposition:top:4left:3height:1width:2refreshInterval:900   Name Description Value     apiKey Your New Relic API token.  Your API key or leave it empty to use the WTF_NEW_RELIC_API_KEY environment variable.    applicationId The integer ID of the New Relic application you wish to report on.</description>
+      <description>Connects to the New Relic API and displays the last n deploys of the monitored applications: deploy ID, deploy time, and who deployed it.
+Keyboard Commands Key: / Action: Open/close the widget&amp;rsquo;s help window.
+Key: ← Action: Show the previous application.
+Key: → Action: Show the next application.
+Configuration newrelic:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;applicationIDs:-10549735-499785deployCount:6enabled:trueposition:top:4left:3height:1width:2refreshInterval:900   Name Description Value     apiKey Your New Relic API token.  Your API key or leave it empty to use the WTF_NEW_RELIC_API_KEY environment variable.</description>
     </item>
     
     <item>
