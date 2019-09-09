@@ -25,7 +25,7 @@ datadog:
 ```
 
 {{% attributes %}}
-  {{< attributes/apikey name="DataDog" link="https://docs.datadoghq.com/api/" >}}
+  {{< attributes/apikey name="DataDog" link="https://docs.datadoghq.com/api/" envvar="WTF_DATADOG_API_KEY" >}}
   {{< attributes/custom name="applicationKey" desc="Your DataDog application key" value="" >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}

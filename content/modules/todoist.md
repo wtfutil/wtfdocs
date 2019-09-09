@@ -26,7 +26,7 @@ todoist:
 ```
 
 {{% attributes %}}
-  {{< attributes/apikey name="Todoist" link="https://developer.todoist.com/sync/v7/" >}}
+  {{< attributes/apikey name="Todoist" link="https://developer.todoist.com/sync/v7/" envvar="WTF_TODOIST_TOKEN" >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
   {{< attributes/focusChar >}}

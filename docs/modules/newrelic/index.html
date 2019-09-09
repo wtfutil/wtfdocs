@@ -331,27 +331,6 @@
       <a href="/modules/google/">Google Apps</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/modules/google/gcal/" class="dd-item">
-        <div>
-          <a href="/modules/google/gcal/">
-            Google Calendar
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/google/ganalytics/" class="dd-item">
-        <div>
-          <a href="/modules/google/ganalytics/">
-            Google Analytics
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/google/gspreadsheet/" class="dd-item">
-        <div>
-          <a href="/modules/google/gspreadsheet/">
-            Google Spreadsheets
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
       <li data-nav-id="/modules/hackernews/" class="dd-item">
@@ -715,7 +694,9 @@ monitored application: deploy ID, deploy time, and who deployed it.</p>
         <tr>
     <td><code>apiKey</code></td>
     <td>Your <a href="https://docs.newrelic.com/docs/apis/getting-started/intro-apis/access-rest-api-keys">New Relic API</a> token.</td>
-    <td></td>
+    <td>
+        Your API key <strong>or</strong> leave it empty to use the <code>WTF_NEW_RELIC_API_KEY</code> environment variable.
+    </td>
 </tr>
   <tr>
     <td><code>applicationId</code></td>

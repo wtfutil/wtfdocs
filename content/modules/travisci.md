@@ -30,7 +30,7 @@ travisci:
 ```
 
 {{% attributes %}}
-  {{< attributes/apikey name="TravisCI" link="https://developer.travis-ci.org/authentication" >}}
+  {{< attributes/apikey name="TravisCI" link="https://developer.travis-ci.org/authentication" envvar="WTF_TRAVIS_API_TOKEN" >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
   {{< attributes/custom name="compact" desc="When true, displays one line per build entry. When false, displays two lines per entry. Default: false." value="true, false" >}}

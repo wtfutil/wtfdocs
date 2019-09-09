@@ -53,7 +53,7 @@ opsgenie:
 ```
 
 {{% attributes %}}
-  {{< attributes/apikey name="OpsGenie" link="https://docs.opsgenie.com/docs/api-integration" >}}
+  {{< attributes/apikey name="OpsGenie" link="https://docs.opsgenie.com/docs/api-integration" envvar="WTF_OPS_GENIE_API_KEY" >}}
   {{< attributes/border >}}
   {{< attributes/custom name="displayEmpty" desc="Whether schedules with no assigned person on-call should be displayed." value="true, false" >}}
   {{< attributes/enabled >}}

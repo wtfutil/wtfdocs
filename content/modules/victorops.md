@@ -30,7 +30,7 @@ victorops:
     <td></td>
   </tr>
 
-  {{< attributes/apikey name="VictorOps" link="https://help.victorops.com/knowledge-base/api/" >}}
+  {{< attributes/apikey name="VictorOps" link="https://help.victorops.com/knowledge-base/api/" envvar="WTF_VICTOROPS_API_KEY" >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
   {{< attributes/position >}}

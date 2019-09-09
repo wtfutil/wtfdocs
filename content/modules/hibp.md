@@ -34,7 +34,7 @@ hibp:
 
 {{% attributes %}}
   {{< attributes/custom name="accounts" desc="A list of the accounts to check the HIBP database for." >}}
-  {{< attributes/apikey name="Have I Been Pwned" link="https://haveibeenpwned.com/API/Key" >}}
+  {{< attributes/apikey name="Have I Been Pwned" link="https://haveibeenpwned.com/API/Key" envvar="WTF_HIBP_TOKEN" >}}
   {{< attributes/custom name="colors" desc="_Optional_ The colors to display for accounts that have not been pwned and ones that have. Defaults to `white` for unpwned accounts, `red` for pwned accounts." >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}

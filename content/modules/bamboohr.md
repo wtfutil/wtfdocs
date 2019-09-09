@@ -23,7 +23,7 @@ bamboohr:
 ```
 
 {{% attributes %}}
-  {{< attributes/apikey name="BambooHR" link="https://www.bamboohr.com/api/documentation/" >}}
+  {{< attributes/apikey name="BambooHR" link="https://www.bamboohr.com/api/documentation/" envvar="WTF_BAMBOO_HR_TOKEN" >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
   {{< attributes/position >}}

@@ -29,7 +29,7 @@ jenkins:
 ```
 
 {{% attributes %}}
-  {{< attributes/apikey name="Jenkins" link="https://wiki.jenkins.io/display/JENKINS/Remote+access+API" >}}
+  {{< attributes/apikey name="Jenkins" link="https://wiki.jenkins.io/display/JENKINS/Remote+access+API" envvar="WTF_JENKINS_API_KEY" >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
   {{< attributes/focusChar >}}

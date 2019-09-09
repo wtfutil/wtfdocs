@@ -48,7 +48,7 @@ github:
 ```
 
 {{% attributes %}}
-  {{< attributes/apikey name="GitHub" link="https://blog.github.com/2013-05-16-personal-api-tokens/" >}}
+  {{< attributes/apikey name="GitHub" link="https://blog.github.com/2013-05-16-personal-api-tokens/" envvar="WTF_GITHUB_TOKEN" >}}
 
   <tr>
     <td>`baseURL`</td>

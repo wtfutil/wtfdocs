@@ -28,7 +28,7 @@ pagerduty:
 ```
 
 {{% attributes %}}
-  {{< attributes/apikey name="PagerDuty" link="https://v2.developer.pagerduty.com/docs/authentication" >}}
+  {{< attributes/apikey name="PagerDuty" link="https://v2.developer.pagerduty.com/docs/authentication" envvar="WTF_PAGERDUTY_API_KEY" >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
   {{< attributes/custom name="escalationFilter" desc="An array of schedule names you want to filter on." value="" >}}

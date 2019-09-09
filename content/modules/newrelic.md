@@ -26,7 +26,7 @@ newrelic:
   refreshInterval: 900
 ```
 {{% attributes %}}
-  {{< attributes/apikey name="New Relic" link="https://docs.newrelic.com/docs/apis/getting-started/intro-apis/access-rest-api-keys" >}}
+  {{< attributes/apikey name="New Relic" link="https://docs.newrelic.com/docs/apis/getting-started/intro-apis/access-rest-api-keys" envvar="WTF_NEW_RELIC_API_KEY" >}}
   {{< attributes/custom name="applicationId" desc="The integer ID of the New Relic application you wish to report on." value="Any positive integer" >}}
   {{< attributes/border >}}
   {{< attributes/custom name="deployCount" desc="The number of past deploys to display on screen." value="Any positive integer" >}}

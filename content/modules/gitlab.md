@@ -36,7 +36,7 @@ gitlab:
 ```
 
 {{% attributes %}}
-  {{< attributes/apikey name="GitLab" link="https://docs.gitlab.com/ce/user/profile/personal_access_tokens.html" >}}
+  {{< attributes/apikey name="GitLab" link="https://docs.gitlab.com/ce/user/profile/personal_access_tokens.html" envvar="WTF_GITLAB_TOKEN" >}}
   {{< attributes/border >}}
   {{< attributes/custom name="domain" desc="_Optional_. Your GitLab corporate domain." value="A valid URI." >}}
   {{< attributes/enabled >}}

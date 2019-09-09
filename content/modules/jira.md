@@ -62,7 +62,7 @@ jira:
   verifyServerCertificate: true
 ```
 {{% attributes %}}
-  {{< attributes/apikey name="Jira" link="https://confluence.atlassian.com/cloud/api-tokens-938839638.html" >}}
+  {{< attributes/apikey name="Jira" link="https://confluence.atlassian.com/cloud/api-tokens-938839638.html" envvar="WTF_JIRA_API_KEY" >}}
   {{< attributes/border >}}
   {{< attributes/colors/rows >}}
   {{< attributes/custom name="domain" desc="Your Jira corporate domain." value="A valid URI." >}}

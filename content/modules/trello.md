@@ -51,7 +51,7 @@ trello:
 ```
 
 {{% attributes %}}
-  {{< attributes/apikey name="Trello" link="" >}}
+  {{< attributes/apikey name="Trello" link="" envvar="WTF_TRELLO_APP_KEY" >}}
   {{< attributes/custom name="accessToken" desc="Your Trello access token." >}}
   {{< attributes/custom name="board" desc="The name of the Trello board." >}}
   {{< attributes/border >}}

@@ -33,7 +33,7 @@ weather:
   tempUnit: "C"
 ```
 {{% attributes %}}
-  {{< attributes/apikey name="OpenWeatherMap" link="https://openweathermap.org/appid" >}}
+  {{< attributes/apikey name="OpenWeatherMap" link="https://openweathermap.org/appid" envvar="WTF_OWM_API_KEY" >}}
   {{< attributes/border >}}
 
   <tr>

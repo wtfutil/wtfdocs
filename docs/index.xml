@@ -132,7 +132,7 @@ Configuration gcal:colors:title:&amp;#34;red&amp;#34;description:&amp;#34;lightb
       
       <guid>https://wtfutil.com/modules/bamboohr/</guid>
       <description>Connects to the BambooHR API and displays who will be Away today.
-Configuration bamboohr:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:0left:1height:2width:1refreshInterval:900subdomain:&amp;#34;testco&amp;#34;   Name Description Value     apiKey Your BambooHR API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module&amp;rsquo;s widget will be displayed.</description>
+Configuration bamboohr:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:0left:1height:2width:1refreshInterval:900subdomain:&amp;#34;testco&amp;#34;   Name Description Value     apiKey Your BambooHR API token.  Your API key or leave it empty to use the WTF_BAMBOO_HR_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>
@@ -163,7 +163,7 @@ Configuration cryptolive:enabled:trueposition:top:5left:2height:1width:2updateIn
       
       <guid>https://wtfutil.com/modules/circleci/</guid>
       <description>Displays build information for your CircleCI account.
-Configuration circleci:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:4left:1height:1width:2refreshInterval:900   Name Description Value     apiKey Your CircleCI API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module&amp;rsquo;s widget will be displayed.</description>
+Configuration circleci:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:4left:1height:1width:2refreshInterval:900   Name Description Value     apiKey Your CircleCI API token.  Your API key or leave it empty to use the WTF_CIRCLE_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>
@@ -185,7 +185,7 @@ Configuration ipinfo:colors:name:redvalue:whiteenabled:trueposition:top:1left:2h
       
       <guid>https://wtfutil.com/modules/weather_services/weather/</guid>
       <description>Displays a configurable list of current weather report, including current temperature, sunrise time, and sunset time.
-Configuration weather:apiKey:&amp;#34;2dfb3e3650a1950adddb6badf5ba1aaa&amp;#34;# From http://openweathermap.org/help/city_list.txtcityids:-6173331-3128760-6167865-6176823colors:current:&amp;#34;lightblue&amp;#34;enabled:truelanguage:&amp;#34;EN&amp;#34;position:top:0left:2height:1width:1refreshInterval:900tempUnit:&amp;#34;C&amp;#34;   Name Description Value     apiKey Your OpenWeatherMap API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false 
+Configuration weather:apiKey:&amp;#34;2dfb3e3650a1950adddb6badf5ba1aaa&amp;#34;# From http://openweathermap.org/help/city_list.txtcityids:-6173331-3128760-6167865-6176823colors:current:&amp;#34;lightblue&amp;#34;enabled:truelanguage:&amp;#34;EN&amp;#34;position:top:0left:2height:1width:1refreshInterval:900tempUnit:&amp;#34;C&amp;#34;   Name Description Value     apiKey Your OpenWeatherMap API token.  Your API key or leave it empty to use the WTF_OWM_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false 
  cityids A list of the OpenWeatherMap city IDs for the cities you want to view.</description>
     </item>
     
@@ -271,7 +271,7 @@ Configuration gspreadsheets:colors:values:&amp;#34;green&amp;#34;cells:names:-&a
       
       <guid>https://wtfutil.com/modules/datadog/</guid>
       <description>Connects to the Datadog API and displays alerting modules.
-Configuration datadog:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;applicationKey:&amp;#34;&amp;lt;yourapplicationkey&amp;gt;&amp;#34;enabled:truemonitors:tags:-&amp;#34;team:ops&amp;#34;position:top:4left:3height:1width:2   Name Description Value     apiKey Your DataDog API token.    applicationKey Your DataDog application key    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false.</description>
+Configuration datadog:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;applicationKey:&amp;#34;&amp;lt;yourapplicationkey&amp;gt;&amp;#34;enabled:truemonitors:tags:-&amp;#34;team:ops&amp;#34;position:top:4left:3height:1width:2   Name Description Value     apiKey Your DataDog API token.  Your API key or leave it empty to use the WTF_DATADOG_API_KEY environment variable.    applicationKey Your DataDog application key    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>
@@ -341,8 +341,7 @@ First, create a shell script:
 Open Review Requests All open code review requests assigned to you.
 Open Pull Requests All open pull requests created by you.
 Custom Queries Create filters to manage PRs and issues however you like.
-Configuration github:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;baseURL:&amp;#34;&amp;#34;customQueries:othersPRs:title:&amp;#34;Others Pull Requests&amp;#34;filter:&amp;#34;is:open is:pr -author:wtfutil&amp;#34;enabled:trueenableStatus:trueposition:top:2left:3height:2width:2refreshInterval:300repositories:-&amp;#34;wtfutil/wtf&amp;#34;-&amp;#34;wtfutil/docs&amp;#34;-&amp;#34;umbrella-corp/wesker-api&amp;#34;uploadURL:&amp;#34;&amp;#34;username:&amp;#34;wtfutil&amp;#34;   Name Description Value     apiKey Your GitHub API token.  
- baseURL Optional Your GitHub Enterprise API URL.</description>
+Configuration github:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;baseURL:&amp;#34;&amp;#34;customQueries:othersPRs:title:&amp;#34;Others Pull Requests&amp;#34;filter:&amp;#34;is:open is:pr -author:wtfutil&amp;#34;enabled:trueenableStatus:trueposition:top:2left:3height:2width:2refreshInterval:300repositories:-&amp;#34;wtfutil/wtf&amp;#34;-&amp;#34;wtfutil/docs&amp;#34;-&amp;#34;umbrella-corp/wesker-api&amp;#34;uploadURL:&amp;#34;&amp;#34;username:&amp;#34;wtfutil&amp;#34;   Name Description Value     apiKey Your GitHub API token.  Your API key or leave it empty to use the WTF_GITHUB_TOKEN environment variable.</description>
     </item>
     
     <item>
@@ -354,7 +353,7 @@ Configuration github:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;ba
       <description>Displays information about your projects hosted on GitLab:
 Open Approval Requests All open merge requests that are requesting your approval.
 Open Merge Requests All open merge requests created by you.
-Configuration gitlab:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:2left:3height:2width:2refreshInterval:300projects:-&amp;#34;gitlab-org/release/tasks&amp;#34;-&amp;#34;gitlab-org/gitlab-ce&amp;#34;username:&amp;#34;wtfutil&amp;#34;   Name Description Value     apiKey Your GitLab API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   domain Optional. Your GitLab corporate domain.</description>
+Configuration gitlab:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:2left:3height:2width:2refreshInterval:300projects:-&amp;#34;gitlab-org/release/tasks&amp;#34;-&amp;#34;gitlab-org/gitlab-ce&amp;#34;username:&amp;#34;wtfutil&amp;#34;   Name Description Value     apiKey Your GitLab API token.  Your API key or leave it empty to use the WTF_GITLAB_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -395,7 +394,7 @@ Configuration hibp:accounts:-test@example.com-pwned@gmail.comapiKey:&amp;#34;ef9
       
       <guid>https://wtfutil.com/modules/jenkins/</guid>
       <description>Displays jenkins status of given builds in a project or view
-Configuration jenkins:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:2left:3height:2width:3refreshInterval:300successBallColor:&amp;#34;green&amp;#34;jobNameRegex:^[a-z]+\[[0-9]+\]$url:&amp;#34;https://jenkins.domain.com/jenkins/view_url&amp;#34;user:&amp;#34;username&amp;#34;verifyServerCertificate:true   Name Description Value     apiKey Your Jenkins API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
+Configuration jenkins:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:2left:3height:2width:3refreshInterval:300successBallColor:&amp;#34;green&amp;#34;jobNameRegex:^[a-z]+\[[0-9]+\]$url:&amp;#34;https://jenkins.domain.com/jenkins/view_url&amp;#34;user:&amp;#34;username&amp;#34;verifyServerCertificate:true   Name Description Value     apiKey Your Jenkins API token.  Your API key or leave it empty to use the WTF_JENKINS_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>
@@ -406,7 +405,7 @@ Configuration jenkins:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;e
       <guid>https://wtfutil.com/modules/jira/</guid>
       <description>Displays all Jira issues assigned to you for the specified project.
 Configuration Single Jira Project jira:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;white&amp;#34;domain:&amp;#34;https://umbrellacorp.atlassian.net&amp;#34;email:&amp;#34;chriscummer@me.com&amp;#34;enabled:truejql:&amp;#34;issueType = Story&amp;#34;position:top:4left:1height:1width:2project:&amp;#34;ProjectA&amp;#34;refreshInterval:900username:&amp;#34;chris.cummer&amp;#34;verifyServerCertificate:true Multiple Jira Projects If you want to monitor multiple Jira projects, use the following configuration (note the difference in project):
-jira:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;white&amp;#34;domain:&amp;#34;https://umbrellacorp.atlassian.net&amp;#34;email:&amp;#34;chriscummer@me.com&amp;#34;enabled:truejql:&amp;#34;issueType = Story&amp;#34;position:top:4left:1height:1width:2project:[&amp;#34;ProjectA&amp;#34;,&amp;#34;ProjectB&amp;#34;]refreshInterval:900username:&amp;#34;chris.cummer&amp;#34;verifyServerCertificate:true   Name Description Value     apiKey Your Jira API token.    border Optional Whether or not to draw this widget with a border.</description>
+jira:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;white&amp;#34;domain:&amp;#34;https://umbrellacorp.atlassian.net&amp;#34;email:&amp;#34;chriscummer@me.com&amp;#34;enabled:truejql:&amp;#34;issueType = Story&amp;#34;position:top:4left:1height:1width:2project:[&amp;#34;ProjectA&amp;#34;,&amp;#34;ProjectB&amp;#34;]refreshInterval:900username:&amp;#34;chris.cummer&amp;#34;verifyServerCertificate:true   Name Description Value     apiKey Your Jira API token.  Your API key or leave it empty to use the WTF_JIRA_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -460,7 +459,7 @@ Configuration nbascore:enabled:trueposition:top:1left:2height:1width:1refreshInt
       
       <guid>https://wtfutil.com/modules/newrelic/</guid>
       <description>Connects to the New Relic API and displays the last n deploys of the monitored application: deploy ID, deploy time, and who deployed it.
-Configuration newrelic:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;applicationID:10549735deployCount:6enabled:trueposition:top:4left:3height:1width:2refreshInterval:900   Name Description Value     apiKey Your New Relic API token.    applicationId The integer ID of the New Relic application you wish to report on. Any positive integer   border Optional Whether or not to draw this widget with a border.</description>
+Configuration newrelic:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;applicationID:10549735deployCount:6enabled:trueposition:top:4left:3height:1width:2refreshInterval:900   Name Description Value     apiKey Your New Relic API token.  Your API key or leave it empty to use the WTF_NEW_RELIC_API_KEY environment variable.    applicationId The integer ID of the New Relic application you wish to report on.</description>
     </item>
     
     <item>
@@ -471,7 +470,7 @@ Configuration newrelic:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;
       <guid>https://wtfutil.com/modules/opsgenie/</guid>
       <description>Connects to the OpsGenie API and displays all your scheduled rotations and who&amp;rsquo;s currently on call.
 See Who is on Call API for details.
-Configuration Single Schedule opsgenie:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600region:&amp;#34;us&amp;#34;schedule:&amp;#34;Primary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34; Multiple Schedules opsgenie:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600region:&amp;#34;us&amp;#34;schedule:-&amp;#34;Primary&amp;#34;-&amp;#34;Secondary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34;   Name Description Value     apiKey Your OpsGenie API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   displayEmpty Whether schedules with no assigned person on-call should be displayed.</description>
+Configuration Single Schedule opsgenie:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600region:&amp;#34;us&amp;#34;schedule:&amp;#34;Primary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34; Multiple Schedules opsgenie:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600region:&amp;#34;us&amp;#34;schedule:-&amp;#34;Primary&amp;#34;-&amp;#34;Secondary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34;   Name Description Value     apiKey Your OpsGenie API token.  Your API key or leave it empty to use the WTF_OPS_GENIE_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -481,7 +480,7 @@ Configuration Single Schedule opsgenie:apiKey:&amp;#34;3276d7155dd9ee27b8b14f874
       
       <guid>https://wtfutil.com/modules/pagerduty/</guid>
       <description>Connects to the Pagerduty API and shows schedules
-Configuration pagerduty:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;enabled:trueescalationFilter:-&amp;#34;client-eng&amp;#34;position:top:4left:3height:1width:2scheduleIDs:-&amp;#34;R2D24CD&amp;#34;-&amp;#34;C3P05MF&amp;#34;showIncidents:trueshowSchedules:true   Name Description Value     apiKey Your PagerDuty API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   escalationFilter An array of schedule names you want to filter on.</description>
+Configuration pagerduty:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;enabled:trueescalationFilter:-&amp;#34;client-eng&amp;#34;position:top:4left:3height:1width:2scheduleIDs:-&amp;#34;R2D24CD&amp;#34;-&amp;#34;C3P05MF&amp;#34;showIncidents:trueshowSchedules:true   Name Description Value     apiKey Your PagerDuty API token.  Your API key or leave it empty to use the WTF_PAGERDUTY_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>
@@ -565,7 +564,7 @@ Configuration todo:checkedIcon:&amp;#34;X&amp;#34;colors:checked:grayhighlight:f
       
       <guid>https://wtfutil.com/modules/todoist/</guid>
       <description>Displays all items on specified project.
-Configuration todoist:apiKey:&amp;#34;3276d7155dxxxxxxxxxx4f8743a408a9&amp;#34;enabled:trueposition:top:0left:2height:1width:1projects:-122247497refreshInterval:3600   Name Description Value     apiKey Your Todoist API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
+Configuration todoist:apiKey:&amp;#34;3276d7155dxxxxxxxxxx4f8743a408a9&amp;#34;enabled:trueposition:top:0left:2height:1width:1projects:-122247497refreshInterval:3600   Name Description Value     apiKey Your Todoist API token.  Your API key or leave it empty to use the WTF_TODOIST_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>
@@ -586,7 +585,7 @@ Configuration transmission:enabled:truehost:&amp;#34;192.168.1.5&amp;#34;passwor
       <guid>https://wtfutil.com/modules/travisci/</guid>
       <description>Displays build information for your Travis CI account.
 Configuration This module pulls information from api.travis-ci.com (when pro: true) or api.travis-ci.org (when pro: false)
-travisci:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:truecompact:truelimit:8sort_by:&amp;#34;id:desc&amp;#34;position:top:4left:1height:1width:2pro:falserefreshInterval:900   Name Description Value     apiKey Your TravisCI API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+travisci:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:truecompact:truelimit:8sort_by:&amp;#34;id:desc&amp;#34;position:top:4left:1height:1width:2pro:falserefreshInterval:900   Name Description Value     apiKey Your TravisCI API token.  Your API key or leave it empty to use the WTF_TRAVIS_API_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>
@@ -597,7 +596,7 @@ travisci:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueco
       <guid>https://wtfutil.com/modules/trello/</guid>
       <description>Displays all Trello cards on specified lists.
 Configuration Single Trello List trello:accessToken:&amp;#34;7b8b14f8743a408a93276d7155dd9ee2&amp;#34;apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;board:Mainenabled:truelist:&amp;#34;Todo&amp;#34;position:height:1left:2top:0width:1refreshInterval:3600username:myname Multiple Trello Lists If you want to monitor multiple Trello lists, use the following configuration (note the difference in list):
-trello:accessToken:&amp;#34;7b8b14f8743a408a93276d7155dd9ee2&amp;#34;apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;board:Mainenabled:truelist:[&amp;#34;Todo&amp;#34;,&amp;#34;Done&amp;#34;]position:height:1left:2top:0width:1refreshInterval:3600username:myname   Name Description Value     apiKey Your Trello API token.    accessToken Your Trello access token.    board The name of the Trello board.    border Optional Whether or not to draw this widget with a border.</description>
+trello:accessToken:&amp;#34;7b8b14f8743a408a93276d7155dd9ee2&amp;#34;apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;board:Mainenabled:truelist:[&amp;#34;Todo&amp;#34;,&amp;#34;Done&amp;#34;]position:height:1left:2top:0width:1refreshInterval:3600username:myname   Name Description Value     apiKey Your Trello API token.  Your API key or leave it empty to use the WTF_TRELLO_APP_KEY environment variable.    accessToken Your Trello access token.    board The name of the Trello board.</description>
     </item>
     
     <item>
@@ -621,7 +620,7 @@ Configuration Single Account twitter:bearerToken:&amp;#34;3276d7155dd9ee27b8b14f
       <guid>https://wtfutil.com/modules/victorops/</guid>
       <description>Connects to the VictorOps API and determines who is on call
 Configuration victorops:apiID:a3c5dd63apiKey:3276d7155dd9ee27b8b14f8743a408a9enabled:trueposition:top:0left:1height:2width:1refreshInterval:3600team:devops   Name Description Value     apiID Your VictorOps API ID token.  
- apiKey Your VictorOps API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+ apiKey Your VictorOps API token.  Your API key or leave it empty to use the WTF_VICTOROPS_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>
@@ -631,7 +630,7 @@ Configuration victorops:apiID:a3c5dd63apiKey:3276d7155dd9ee27b8b14f8743a408a9ena
       
       <guid>https://wtfutil.com/modules/zendesk/</guid>
       <description>Displays Zendesk tickets.
-Configuration zendesk:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:0left:2height:1width:1status:&amp;#34;new&amp;#34;subdomain:&amp;#34;your_domain&amp;#34;username:&amp;#34;your_email@acme.com&amp;#34;   Name Description Value     apiKey Your Zendesk API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
+Configuration zendesk:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueposition:top:0left:2height:1width:1status:&amp;#34;new&amp;#34;subdomain:&amp;#34;your_domain&amp;#34;username:&amp;#34;your_email@acme.com&amp;#34;   Name Description Value     apiKey Your Zendesk API token.  Your API key or leave it empty to use the ZENDESK_API environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false.</description>
     </item>
     
     <item>

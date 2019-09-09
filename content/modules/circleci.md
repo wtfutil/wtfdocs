@@ -24,7 +24,7 @@ circleci:
 ```
 
 {{% attributes %}}
-  {{< attributes/apikey name="CircleCI" link="https://circleci.com/account/api" >}}
+  {{< attributes/apikey name="CircleCI" link="https://circleci.com/account/api" envvar="WTF_CIRCLE_API_KEY" >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
   {{< attributes/position >}}

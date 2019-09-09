@@ -24,7 +24,7 @@ zendesk:
 ```
 
 {{% attributes %}}
-  {{< attributes/apikey name="Zendesk" link="" >}}
+  {{< attributes/apikey name="Zendesk" link="" envvar="ZENDESK_API" >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
   {{< attributes/focusChar >}}
