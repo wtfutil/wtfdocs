@@ -50,10 +50,7 @@ github:
 {{% attributes %}}
   {{< attributes/apikey name="GitHub" link="https://blog.github.com/2013-05-16-personal-api-tokens/" envvar="WTF_GITHUB_TOKEN" >}}
 
-  <tr>
-    <td>`baseURL`</td>
-    <td>_Optional_ Your <a href="https://developer.github.com/enterprise/2.13/v3/enterprise-admin/">GitHub Enterprise</a> API URL.</td>
-  </tr>
+  {{< attributes/custom name="baseURL" desc="_Optional_ Your GitHub Enterprise API URL." value="Your API URL **or** leave it empty to use the `WTF_GITHUB_BASE_URL` environment variable." >}}
 
   {{< attributes/border >}}
   {{< attributes/custom name="customQueries" desc="Filters for pull requests and issues." value="" >}}
@@ -64,11 +61,7 @@ github:
   {{< attributes/refreshInterval >}}
   {{< attributes/custom name="repositories" desc="A list of github repos to fetch data for." value="" >}}
 
-  <tr>
-    <td>`uploadURL`</td>
-    <td>_Optional_ Your <a href="https://developer.github.com/enterprise/2.13/v3/enterprise-admin/">GitHub Enterprise</a> upload URL (often the same as the API URL).</td>
-    <td></td>
-  </tr>
+  {{< attributes/custom name="uploadURL" desc="_Optional_ Your GitHub Enterprise upload URL (often the same as the API URL)." value="Your API URL **or** leave it empty to use the `WTF_GITHUB_UPLOAD_URL` environment variable." >}}
 
   {{< attributes/username name="GitHub" desc="Used to figure out which review requests you've been added to." >}}
 {{% /attributes %}}
