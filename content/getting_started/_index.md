@@ -2,7 +2,8 @@
 title: "Getting Started"
 date: 2018-05-21T16:11:58-07:00
 draft: false
-weight: 1
+weight: 10
+alwaysopen: true
 ---
 
 ## Quick Start
@@ -10,7 +11,7 @@ weight: 1
 1. <a href="https://github.com/wtfutil/wtf/releases">Download</a> the stand-alone, compiled binary.
 2. Unzip the downloaded file.
 3. From the command line, `cd` into the newly-created `/wtf` directory.
-4. From the command line, run the app: `./wtf`
+4. From the command line, run the app: `./wtfutil`
 
 This should launch the app in your terminal using the default simple
 configuration. See <a href="/configuration/">Configuration</a> for

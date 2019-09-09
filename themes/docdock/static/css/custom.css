@@ -18,20 +18,36 @@
   cursor: pointer !important;
 }
 
+.blog-post {
+  margin: 0px 0px 24px 0px;
+}
+
+.blog-post a {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-top: 4px;
+}
+
+.blog-post .blog-date {
+  color: rgb(100, 100, 100) !important;
+}
+
 a.highlight {
   border-bottom: none !important;
-  padding-left: 6px !important;
 }
 
 code {
   color: #b97208;
   display: inline-block;
-  margin: 0 4px !important;
+  margin: 0 2px !important;
   padding-left: 0px !important;
 }
 
 h1 {
+  font-size: 3rem !important;
+  line-height: 1.2em !important;
   text-align: left !important;
+  /* text-transform: none !important; */
 }
 
 h2 {

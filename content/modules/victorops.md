@@ -23,32 +23,19 @@ victorops:
   team: devops
 ```
 
-### Attributes
+{{% attributes %}}
+  <tr>
+    <td>`apiID`</td>
+    <td>Your <a href="https://help.victorops.com/knowledge-base/api/">VictorOps API ID</a> token.</td>
+    <td></td>
+  </tr>
 
-`apiID` <br />
-Value: Your <a href="https://help.victorops.com/knowledge-base/api/">VictorOps API ID</a> token.
+  {{< attributes/apikey name="VictorOps" link="https://help.victorops.com/knowledge-base/api/" envvar="WTF_VICTOROPS_API_KEY" >}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="team" desc="_Optional_ Whether or not to only show a specific team. Default: all teams are shown." value="The team slug that can be found in the URL after `/#/team/`" >}}
+{{% /attributes %}}
 
-`apiKey` <br />
-Value: Your <a href="https://help.victorops.com/knowledge-base/api/">VictorOps API Key</a> token.
-
-`enabled` <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: Any positive integer, `0..n`.
-
-`team` <br />
-Value: An optional value to only show a specific team. By default, all teams are shown. <br />
-Values: The team slug that can be found in the URL after `/#/team/`
-
-## Source Code
-
-```bash
-wtf/victorops/
-```
-
+{{% sourcePath module="victorops" %}}

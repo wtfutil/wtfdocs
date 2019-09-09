@@ -36,52 +36,21 @@ clocks:
   # Valid options are: alphabetical, chronological
   sort: "alphabetical"
 ```
-### Attributes
 
-`colors.rows.even` <br />
-The foreground color for even-numbered rows. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/colors/rows >}}
+  {{< attributes/dateFormat >}}
+  {{< attributes/enabled >}}
 
-`colors.rows.odd` <br />
-The foreground color for the odd-numbered rows. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
+  <tr><td>`locations`</td><td>A list of timezone for the clocks to be displayed.</td><td>Any <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">TZ database timezone.</td></tr>
 
-`dateFormat` <br />
-The format of the date string for all clocks. <br />
-Values: Any valid Go date layout which is handled by <a href="https://golang.org/pkg/time/#Time.Format">Time.Format</a>. Defaults to Jan 2.
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< attributes/custom name="sort" desc="The order in which to sort the clocks." value="`alphabetical` or `chronological`. `alphabetical` will sort in acending order by `key`, `chronological` will sort in ascending order by date/time." >}}
+  
+  {{< attributes/timeFormat >}}
+{{% /attributes %}}
 
-`locations` <br />
-Defines the timezones for the world clocks that you want to display.
-`key` is a unique label that will be displayed in the UI. `value` is a
-timezone name. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">TZ database timezone</a>.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed.
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`sort` <br />
-Defines the display order of the clocks in the widget. <br />
-Values: `alphabetical` or `chronological`. `alphabetical` will sort in
-acending order by `key`, `chronological` will sort in ascending order by
-date/time.
-
-`timeFormat` <br />
-The format of the time string for all clocks. <br />
-Values: Any valid Go time layout which is handled by <a href="https://golang.org/pkg/time/#Time.Format">Time.Format</a>. Defaults to 15:04 MST.
-
-## Source Code
-
-```bash
-wtf/clocks/
-```
-
+{{% sourcePath module="clocks" %}}

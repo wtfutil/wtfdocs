@@ -27,29 +27,19 @@ ipinfo:
   refreshInterval: 150
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/border >}}
 
-`colors.name` <br />
-The default colour for the row names. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.
-
-`colors.value` <br />
-The default colour for the row values. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
+  {{< attributes/colors/custom name="colors.name" desc="_Optional_ The default colour for the row names. Default: red." >}}
+  {{< attributes/colors/custom name="colors.value" desc="_Optional_ The default colour for the row values. Default: white." >}}
+  
+  {{< attributes/enabled >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
 ## Source Code
 
 ```bash
-wtf/ipinfo/
+wtf/modules/ipaddresses/ipinfo/
 ```

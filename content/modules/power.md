@@ -9,8 +9,7 @@ weight: 180
 
 Displays information about the current power source.
 
-For battery, also displays the current charge, estimated time remaining,
-and whether it is charging or discharging.
+For battery, also displays the current charge, estimated time remaining, and whether it is charging or discharging.
 
 ## Configuration
 
@@ -25,20 +24,11 @@ power:
   refreshInterval: 15
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-## Source Code
-```bash
-wtf/power/
-```
+{{% sourcePath module="power" %}}

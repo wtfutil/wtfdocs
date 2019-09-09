@@ -7,8 +7,6 @@ weight: 10
 
 <img class="screenshot" src="/imgs/modules/blockfolio.png" width="320" height="185" alt="blockfolio screenshot" />
 
-Added in `v0.0.8`.
-
 Display your Blockfolio crypto holdings.
 
 ## Configuration
@@ -30,39 +28,25 @@ blockfolio:
   refreshInterval: 400
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/colors/custom name="colors.drop" >}}
+  {{< attributes/colors/custom name="colors.grows" >}}
+  {{< attributes/colors/custom name="colors.name" >}}
 
-`colors.name` <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
+  <tr>
+    <td>`device_token`</td>
+    <td>See [this gist](https://github.com/bob6664569/blockfolio-api-client) for details on how to get your Blockfolio API token.</td>
+    <td></td>
+  </tr>
 
-`colors.grows` <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
-
-`colors.drop` <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
-
-`device_token` <br />
-Value: See [this gist](https://github.com/bob6664569/blockfolio-api-client) for
-details on how to get your Blockfolio API token.
-
-`displayHoldings` <br />
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
+  {{< attributes/enabled >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
 ## Source
 
 ```bash
-wtf/blockfolio/
+wtf/modules/cryptoexchanges/blockfolio/
 ```

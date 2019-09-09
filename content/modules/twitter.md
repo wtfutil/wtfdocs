@@ -17,26 +17,6 @@ To make this work, you'll need a couple of things:
 Once you have your developer account, a relatively painless way to get a
 bearer token is to use [TBT](https://github.com/Trinergy/twitter_bearer_token).
 
-## Keyboard Commands
-
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
-
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Display the previous Twitter account.
-
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Display the next Twitter account.
-
-<span class="caption">Key:</span> `o` <br />
-<span class="caption">Action:</span> Opens the account in your local browser.
-
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Display the previous Twitter account.
-
-<span class="caption">Key:</span> `→ <br />
-<span class="caption">Action:</span> Display the next Twitter account.
-
 ## Configuration
 
 ### Single Account
@@ -73,39 +53,38 @@ twitter:
   - "wtfutil"
 ```
 
-### Attributes
+{{% attributes %}}
+  <tr>
+    <td>`bearerToken`</td>
+    <td>Your <a href="https://developer.twitter.com/en/docs/basics/authentication/overview/application-only.html">Twitter single-application Bearer Token</a></td>
+    <td></td>
+  </tr>
 
-`bearerToken` <br />
-Value: Your <a href="https://developer.twitter.com/en/docs/basics/authentication/overview/application-only.html">Twitter single-application Bearer Token</a>
+  {{< attributes/border >}}
+  {{< attributes/custom name="count" desc="_Optional_ The number of tweets to return per account. Default: 5." value="Any positive integer" >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="screenName" desc="The screen name of the Twitter user who's tweets you want to follow." value="Any valid Twitter user's screen name" >}}
+  {{< attributes/custom name="screenNames" desc="The screen names of the Twitter users who's tweets you want to follow." value="A list of any valid Twitter user's screen names" >}}
+{{% /attributes %}}
 
-`count` <br />
-The number of tweets to return per account. <br />
-Default: 5
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open the current Twitter account in the browser" >}}
 
-`enabled` <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< keyboard/spacer >}}
 
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
+  {{< keyboard/h desc="Show the previous Twitter account" >}}
+  {{< keyboard/l desc="Show the next Twitter account" >}}
+  {{< keyboard/o desc="Open the current Twitter account in the browser" >}}
+  {{< keyboard/r >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  {{< keyboard/spacer >}}
 
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: Any positive integer, `0..n`.
+  {{< keyboard/arrowBack desc="Show the previous Twitter account" >}} 
+  {{< keyboard/arrowFore desc="Show the next Twitter account" >}}
+{{% /keyboard %}}
 
-`screenName` <br />
-The screen name of the Twitter user who's tweets you want to follow. <br />
-Values: Any valid Twitter user's screen name.
-
-`screenNames` <br />
-The screen names of the Twitter users who's tweets you want to follow. <br />
-Values: A list of any valid Twitter user's screen names.
-
-## Source Code
-
-```bash
-wtf/twitter/
-```
+{{% sourcePath module="twitter" %}}

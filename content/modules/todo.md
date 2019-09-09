@@ -9,50 +9,6 @@ weight: 220
 
 An interactive todo list.
 
-## Keyboard Commands
-
-<span class="caption">Key:</span> `[return]` <br />
-<span class="caption">Action:</span> Edit the selected item. <br />
-<span class="caption">Action:</span> Close the modal item dialog and save changes. <br />
-
-<span class="caption">Key:</span> `[esc]` <br />
-<span class="caption">Action:</span> Remove focus from the selected item. <br />
-<span class="caption">Action:</span> Close the modal item dialog without saving changes.
-
-<span class="caption">Key:</span> `[space]` <br />
-<span class="caption">Action:</span> Check/uncheck the selected item.
-
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
-
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next item in the list.
-
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous item in the list.
-
-<span class="caption">Key:</span> `n` <br />
-<span class="caption">Action:</span> Create a new list item.
-
-<span class="caption">Key:</span> `o` <br />
-<span class="caption">Action:</span> Opens the todo list file in
-whichever text editor is associated with that file type.
-
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next item in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous item in the list.
-
-<span class="caption">Key:</span> `Ctrl-d` <br />
-<span class="caption">Action:</span> Delete the selected item.
-
-<span class="caption">Key:</span> `Ctrl-J` <br />
-<span class="caption">Action:</span> Move the selected item down the list.
-
-<span class="caption">Key:</span> `Ctrl-K` <br />
-<span class="caption">Action:</span> Move the selected item up the list.
-
 ## Configuration
 
 ```yaml
@@ -73,46 +29,50 @@ todo:
   refreshInterval: 3600
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/border >}}
 
-`checkedIcon` <br />
-The icon used to denote a "checked" todo item. <br />
-Values: Any displayable unicode character.
+  <row>
+    <td>`colors.checked`</td>
+    <td>The foreground color for checked rows.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
+  </row>
 
-`colors.checked` <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.
+  {{< attributes/colors/highlight >}}
+  {{< attributes/custom name="checkedIcon" desc="_Optional_ The icon used to denote a 'checked' todo item." value="Any displayable unicode character." >}}
+  {{< attributes/enabled >}}
+  {{< attributes/custom name="filename" desc="The name for the todo file." value="Any valid filename, ideally ending in `yml`." >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
-`colors.highlight.fore` <br />
-The foreground color for the currently-selected row. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/esc desc="Remove focus from the selected item" >}}
+  {{< keyboard/esc desc="Close the modal item dialog without saving changes" >}}
+  {{< keyboard/return desc="Edit the selected item" >}}
+  {{< keyboard/return desc="Close the modal item dialog and save changes" >}}
+  {{< keyboard/space desc="Check/uncheck the selected item" >}}
 
-`colors.highlight.back` <br />
-The background color for the currently-selected row. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.
+  {{< keyboard/spacer >}}
 
-`enabled` <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
+  {{< keyboard/n desc="Create a new list item" >}}
+  {{< keyboard/o desc="Opens the todo list file in whichever text editor is associated with that file type" >}}
+  {{< keyboard/r >}}
 
-`filename` <br />
-The name for the todo file. <br />
-Values: Any valid filename, ideally ending in `yml`.
+  {{< keyboard/spacer >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
 
-`position` <br />
-Where in the grid this module's widget will be displayed. <br />
+  {{< keyboard/spacer >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  {{< keyboard/ctrlD >}}
+  {{< keyboard/custom name="Ctrl-j" desc="Move the selected item down the list" >}}
+  {{< keyboard/custom name="Ctrl-k" desc="Move the selected item up the list" >}}
+{{% /keyboard %}}
 
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-## Source Code
-
-```bash
-wtf/todo/
-```
+{{% sourcePath module="todo" %}}

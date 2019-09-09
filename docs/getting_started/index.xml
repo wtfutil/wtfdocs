@@ -12,27 +12,27 @@
     
     
     <item>
-      <title>Generate new modules</title>
-      <link>https://wtfutil.com/getting_started/generate-module/</link>
-      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://wtfutil.com/getting_started/generate-module/</guid>
-      <description>The widgets that you see on the screen are displayed using modules. To make it easier to create new modules there is a generator which creates a stub (an empty module). The Go package generators contains generator scripts for different types of widgets.
-Prerequisites Before you can generate new modules, you&amp;rsquo;ll need to have:
- Go version 1.11 or higher The source code of WTF (git clone https://github.com/wtfutil/wtf)  New TextWidgets You can run go generate -run=text to create a new widget called NewTextWidget.</description>
-    </item>
-    
-    <item>
       <title>Installation</title>
       <link>https://wtfutil.com/getting_started/installation/</link>
       <pubDate>Fri, 18 May 2018 09:59:40 -0700</pubDate>
       
       <guid>https://wtfutil.com/getting_started/installation/</guid>
-      <description>As a Binary Grab the latest version from here:
+      <description>Homebrew brew tap wtfutil/wtfutil brew install wtfutil wtfutil As a Binary Grab the latest version from here:
 https://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:
-./wtf and that should also do it.
+./wtfutil and that should also do it.
 From Source Download the source code repo and install the dependencies:
-go get -v -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf go install -ldflags=&amp;#34;-s -w&amp;#34; make run and that should do it.</description>
+# Set the Go proxy variable to GoCenter export GOPROXY=&amp;#34;https://gocenter.io&amp;#34; # Enable Go modules export GO111MODULE=on go get -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf make install make run and that should do it.</description>
+    </item>
+    
+    <item>
+      <title>Uninstallation</title>
+      <link>https://wtfutil.com/getting_started/uninstall/</link>
+      <pubDate>Sun, 28 Jan 2018 09:59:40 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/getting_started/uninstall/</guid>
+      <description>Homebrew brew uninstall wtfutil Remove the Binary and Configuration WTF ships as a single binary named wtfutil. Assuming you have installed the binary, run:
+rm $(which wtfutil) If you have configured WTF, you will also want to delete your configs:
+rm ~/.config/wtf and that should also do it.</description>
     </item>
     
     <item>
@@ -44,18 +44,8 @@ go get -v -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf go ins
       <description>Module A discrete unit of data collection and display. A data interface concept. A package inside the app.
 Examples: New Relic, Git, Weather.
 Widget The onscreen representation of a Module. The widget is responsible for being the interface between the app and the data collection.
-Widgets are defined by a required widget.go file in a Module.</description>
-    </item>
-    
-    <item>
-      <title>Uninstall</title>
-      <link>https://wtfutil.com/getting_started/uninstall/</link>
-      <pubDate>Sun, 28 Jan 2018 09:59:40 -0700</pubDate>
-      
-      <guid>https://wtfutil.com/getting_started/uninstall/</guid>
-      <description>Remove the Binary and Configuration wtf ships as a single binary. Assuming you have installed the binary, you can run:
-rm $(which wtf) If you have configured wtf, you will also want to delete your configs:
-rm ~/.config/wtf and that should also do it.</description>
+Widgets are defined by a required widget.go file in a Module.
+WTF An acronym for &amp;ldquo;What The Fsck?&amp;rdquo;, as in &amp;ldquo;What the fsck are all these browser tabs open for?</description>
     </item>
     
   </channel>

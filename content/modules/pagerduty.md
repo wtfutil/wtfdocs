@@ -27,38 +27,16 @@ pagerduty:
   showSchedules: true
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/apikey name="PagerDuty" link="https://v2.developer.pagerduty.com/docs/authentication" envvar="WTF_PAGERDUTY_API_KEY" >}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/custom name="escalationFilter" desc="An array of schedule names you want to filter on." value="" >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="scheduleIDs" desc="An array of schedule IDs you want to restrict the query to." value="" >}}
+  {{< attributes/custom name="showIncidents" desc="_Optional_ Whether or not to list incidents. Default: true." value="true, false" >}}
+  {{< attributes/custom name="showSchedules" desc="_Optional_ Whether or not to show schedules. Default: true." value="true, false" >}}
+{{% /attributes %}}
 
-`apiKey` <br />
-Value: Your <a href="https://v2.developer.pagerduty.com/docs/authentication">PagerDuty API</a> key.
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`escalationFilter` <br />
-An array of schedule names you want to filter on. 
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`scheduleIDs` <br />
-An array of schedule IDs you want to restrict the query to.>
-
-`showIncidents` <br />
-Whether or not to list incidents. <br />
-Values: true or false
-
-`showSchedules` <br />
-Whether or not to show schedules. <br />
-Values: true or false
-
-## Source Code
-
-```bash
-wtf/pagerduty/
-```
+{{% sourcePath module="pagerduty" %}}

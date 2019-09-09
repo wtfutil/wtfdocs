@@ -23,23 +23,6 @@ commit, and their status.
 
 A list of `n` recent commits, who committed it, and when.
 
-## Keyboard Commands
-
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
-
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous mercurial repository.
-
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next mercurial repository.
-
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous mercurial repository.
-
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next mercurial repository.
-
 ## Configuration
 
 ```yaml
@@ -58,35 +41,30 @@ mercurial:
   - "/Users/user/fakeapp"
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/custom name="commitCount" desc="The number of past commits to display." value="Any positive integer" >}}
+  {{< attributes/custom name="commitFormat" desc="_Optional_ The string format for the commit message." value="" >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="repositories" desc="A list of Mercurial repositories to watch." value="A list of zero or more local file paths pointing to valid mercurial repositories." >}}
+{{% /attributes %}}
 
-`commitCount` <br />
-The number of past commits to display. <br />
-Values: A positive integer, `0..n`.
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
 
-`commitFormat` <br />
-_Optional_ The string format for the commit message. <br />
+  {{< keyboard/spacer >}}
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< keyboard/h desc="Show the previous Mercurial repository" >}}
+  {{< keyboard/l desc="Show the next Mercurial repository" >}}
+  {{< keyboard/r >}}
 
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
+  {{< keyboard/spacer >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  {{< keyboard/arrowBack desc="Show the previous Mercurial repository" >}}
+  {{< keyboard/arrowFore desc="Show the next Mercurial repository" >}}
+{{% /keyboard %}}
 
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`repositories` <br />
-Defines which mercurial repositories to watch. <br />
-Values: A list of zero or more local file paths pointing to valid mercurial repositories.
-
-## Source Code
-
-```bash
-wtf/mercurial/
-```
+{{% sourcePath module="mercurial" %}}

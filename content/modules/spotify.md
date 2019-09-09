@@ -7,21 +7,6 @@ weight: 205
 
 Control the Spotify client.
 
-## Keyboard Commands
-
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
-
-<span class="caption">Key:</span> `space` <br />
-<span class="caption">Action:</span> Play/pause the currently-selected
-track
-
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Play previous song
-
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Play next song
-
 ## Configuration
 
 ```yaml
@@ -35,24 +20,23 @@ spotify:
   refreshInterval: 0
 ```
 
-## Attributes
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open the selected item in the browser" >}}
+  {{< keyboard/space desc="Play/pause the currently-selected" >}}
 
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
+  {{< keyboard/spacer >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  {{< keyboard/h desc="Play previous song" >}}
+  {{< keyboard/l desc="Play next song" >}}
+  {{< keyboard/r >}}
+{{% /keyboard %}}
 
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-## Source Code
-
-```bash
-wtf/modules/spotify/
-```
+{{% sourcePath module="spotify" %}}

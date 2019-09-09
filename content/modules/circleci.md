@@ -7,10 +7,7 @@ weight: 20
 
 <img src="/imgs/modules/circleci.png" class="screenshot" width="609" height="150" alt="circleci screenshot" />
 
-Added in `v0.0.7`.
-
 Displays build information for your CircleCI account.
-
 
 ## Configuration
 
@@ -26,24 +23,12 @@ circleci:
   refreshInterval: 900
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/apikey name="CircleCI" link="https://circleci.com/account/api" envvar="WTF_CIRCLE_API_KEY" >}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
-`apiKey` <br />
-Value: Your <a href="https://circleci.com/account/api">CircleCI API</a> token.
-
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-## Source Code
-
-```bash
-wtf/circleci/
-```
+{{% sourcePath module="circleci" %}}

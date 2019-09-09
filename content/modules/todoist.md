@@ -7,50 +7,13 @@ weight: 230
 
 <img class="screenshot" src="/imgs/modules/todoist.png" alt="todoist screenshot" />
 
-Added in `v0.0.11`.
-
 Displays all items on specified project.
-
-## Keyboard Commands
-
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous project.
-
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous project.
-
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next project.
-
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next project.
-
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next item in the list.
-
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next item in the list.
-
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous item in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous item in the list.
-
-<span class="caption">Key:</span> `c` <br />
-<span class="caption">Action:</span> Close current item.
-
-<span class="caption">Key:</span> `d` <br />
-<span class="caption">Action:</span> Delete current item.
-
-<span class="caption">Key:</span> `r` <br />
-<span class="caption">Action:</span> Reload all projects.
 
 ## Configuration
 
 ```yaml
 todoist:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "3276d7155dxxxxxxxxxx4f8743a408a9"
   enabled: true
   position:
     top: 0
@@ -62,31 +25,47 @@ todoist:
   refreshInterval: 3600
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/apikey name="Todoist" link="https://developer.todoist.com/sync/v7/" envvar="WTF_TODOIST_TOKEN" >}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/custom name="projects" desc="The todoist projects to fetch items from." value="The integer ID of the project" >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
-`apiKey` <br />
-Value: Your <a href="https://developer.todoist.com/sync/v7/">Todoist API</a> token.
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/esc desc="Remove focus from the selected item" >}}
+  {{< keyboard/esc desc="Close the modal item dialog without saving changes" >}}
+  {{< keyboard/return desc="Edit the selected item" >}}
+  {{< keyboard/return desc="Close the modal item dialog and save changes" >}}
+  {{< keyboard/space desc="Check/uncheck the selected item" >}}
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< keyboard/spacer >}}
 
-`position` <br />
-Where in the grid this module's widget will be displayed. <br />
+  {{< keyboard/c desc="Close current item" >}}
+  {{< keyboard/d desc="Delete current item" >}}
+  {{< keyboard/h desc="Show the previous project" >}}
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
+  {{< keyboard/l desc="Show the next project" >}}
+  {{< keyboard/n desc="Create a new list item" >}}
+  {{< keyboard/o desc="Opens the todo list file in whichever text editor is associated with that file type" >}}
+  {{< keyboard/r >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  {{< keyboard/spacer >}}
 
-`projects` <br />
-The todoist projects to fetch items from. <br />
-Values: The integer ID of the project.
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
+  {{< keyboard/arrowBack desc="Show the previous project" >}}
+  {{< keyboard/arrowFore desc="Show the next project" >}}
 
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
+  {{< keyboard/spacer >}}
 
-## Source Code
+  {{< keyboard/custom name="Ctrl-j" desc="Move the selected item down the list" >}}
+  {{< keyboard/custom name="Ctrl-k" desc="Move the selected item up the list" >}}
+{{% /keyboard %}}
 
-```bash
-wtf/todoist/
-```
+{{% sourcePath module="todoist" %}}

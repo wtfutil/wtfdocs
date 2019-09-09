@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>WTF - the terminal dashboard</title>
-    
-      <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.55.2" />
+
+<head>
+  
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Hugo 0.57.2" />
 <title>Rollbar :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link href="/css/font-awesome.min.css" rel="stylesheet">
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <script src="/js/jquery-2.x.min.js"></script>
+<script src="https://kit.fontawesome.com/461d56314b.js"></script>
 <script type="text/javascript">
       var baseurl = "https:\/\/wtfutil.com\/";
 </script>
@@ -22,18 +22,17 @@
 
 <link rel="stylesheet" href="/css/custom.css">
 
+  
+</head>
 
-    
-  </head>
-  <body data-url="/modules/rollbar/">
-    
-      <header>
+<body data-url="/modules/rollbar/">
+  
+  <header>
   <div class="logo">
     
-	
-  
-    <a class="baselink" href="https://wtfutil.com/">WTF - the terminal dashboard</a>
-  
+
+
+<a class="baselink" href="https://wtfutil.com/">WTF - the terminal dashboard</a>
 
 
   </div>
@@ -41,17 +40,22 @@
     <nav class="shortcuts">
             <li class="" role="">
                 <a href="https://github.com/wtfutil/wtf"  rel="noopener">
-                  <i class='fa fa-github'></i> <label>WTF on Github</label>
+                  <i class='fab fa-github'>&nbsp;</i> <label>WTF on Github</label>
                 </a>
             </li>
             <li class="" role="">
                 <a href="https://github.com/wtfutil/wtf/releases"  rel="noopener">
-                  <i class='fa fa-cloud-download'></i> <label>Download WTF</label>
+                  <i class='fa fa-cloud-download-alt'></i> <label>Download WTF</label>
                 </a>
             </li>
             <li class="" role="">
                 <a href="https://github.com/wtfutil/wtf/blob/master/README.md#contributors"  rel="noopener">
                   <i class='fa fa-bullhorn'></i> <label>Credits</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/blog"  rel="noopener">
+                  <i class='fas fa-blog'>&nbsp;</i> <label>Blog</label>
                 </a>
             </li>
     </nav>
@@ -64,19 +68,13 @@
             <i class="fa fa-fw fa-home"></i>
           </a>
           </li>
-    <li data-nav-id="/getting_started/" class="dd-item haschildren
+    <li data-nav-id="/getting_started/" class="dd-item alwaysopen haschildren
         ">
       <div>
-      <a href="/getting_started/">Getting Started</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/getting_started/">Getting Started</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/getting_started/generate-module/" class="dd-item">
-        <div>
-          <a href="/getting_started/generate-module/">
-            Generate new modules
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/getting_started/installation/" class="dd-item">
         <div>
           <a href="/getting_started/installation/">
@@ -84,17 +82,17 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/getting_started/uninstall/" class="dd-item">
+        <div>
+          <a href="/getting_started/uninstall/">
+            Uninstallation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/getting_started/glossary/" class="dd-item">
         <div>
           <a href="/getting_started/glossary/">
             Glossary
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/getting_started/uninstall/" class="dd-item">
-        <div>
-          <a href="/getting_started/uninstall/">
-            Uninstall
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -120,9 +118,94 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/configuration/generate-module/" class="dd-item">
+        <div>
+          <a href="/configuration/generate-module/">
+            Creating New Modules
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item parent haschildren
+    <li data-nav-id="/blog/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/blog/2019-08-29-v0-21-0/" class="dd-item">
+        <div>
+          <a href="/blog/2019-08-29-v0-21-0/">
+            v0.21.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/blog/2019-08-20-v0-20-0/" class="dd-item">
+        <div>
+          <a href="/blog/2019-08-20-v0-20-0/">
+            v0.20.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/blog/2019-07-31-v0-19-1/" class="dd-item">
+        <div>
+          <a href="/blog/2019-07-31-v0-19-1/">
+            v0.19.1 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/blog/2019-07-27-v0-19-0/" class="dd-item">
+        <div>
+          <a href="/blog/2019-07-27-v0-19-0/">
+            v0.19.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/blog/2019-07-20-v0-18-0/" class="dd-item">
+        <div>
+          <a href="/blog/2019-07-20-v0-18-0/">
+            v0.18.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/blog/2019-07-16-v0-17-1/" class="dd-item">
+        <div>
+          <a href="/blog/2019-07-16-v0-17-1/">
+            v0.17.1 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/blog/2019-07-12-homebrew-installation/" class="dd-item">
+        <div>
+          <a href="/blog/2019-07-12-homebrew-installation/">
+            Installing With Homebrew
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/blog/2019-07-10-wtfutil-release/" class="dd-item">
+        <div>
+          <a href="/blog/2019-07-10-wtfutil-release/">
+            Binary Renamed to &#39;wtfutil&#39;
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/blog/2019-07-09-rss-for-releases/" class="dd-item">
+        <div>
+          <a href="/blog/2019-07-09-rss-for-releases/">
+            Using WTF&#39;s FeedReader to Track WTF Releases
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/blog/2019-07-09-v0-14-0/" class="dd-item">
+        <div>
+          <a href="/blog/2019-07-09-v0-14-0/">
+            v0.14.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/modules/" class="dd-item parent alwaysopen haschildren
         ">
       <div>
       <a href="/modules/">Modules</a>
@@ -160,7 +243,7 @@
     <li data-nav-id="/modules/cryptocurrencies/" class="dd-item haschildren
         ">
       <div>
-      <a href="/modules/cryptocurrencies/">Crypo Currencies</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/cryptocurrencies/">Crypto Currencies</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/modules/cryptocurrencies/bittrex/" class="dd-item">
@@ -190,6 +273,20 @@
         <div>
           <a href="/modules/datadog/">
             Datadog
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/docker/" class="dd-item">
+        <div>
+          <a href="/modules/docker/">
+            Docker
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/feedreader/" class="dd-item">
+        <div>
+          <a href="/modules/feedreader/">
+            Feed Reader
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -241,6 +338,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/modules/google/ganalytics/" class="dd-item">
+        <div>
+          <a href="/modules/google/ganalytics/">
+            Google Analytics
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/modules/google/gspreadsheet/" class="dd-item">
         <div>
           <a href="/modules/google/gspreadsheet/">
@@ -254,6 +358,13 @@
         <div>
           <a href="/modules/hackernews/">
             Hacker News
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/hibp/" class="dd-item">
+        <div>
+          <a href="/modules/hibp/">
+            Have I Been Pwned (HIBP)
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -290,6 +401,13 @@
         <div>
           <a href="/modules/jira/">
             Jira
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/kubernetes/" class="dd-item">
+        <div>
+          <a href="/modules/kubernetes/">
+            Kubernetes
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -391,6 +509,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/modules/transmission/" class="dd-item">
+        <div>
+          <a href="/modules/transmission/">
+            Transmission
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/modules/travisci/" class="dd-item">
         <div>
           <a href="/modules/travisci/">
@@ -425,6 +550,13 @@
       <a href="/modules/weather_services/">Weather Services</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/modules/weather_services/arpansagovau/" class="dd-item">
+        <div>
+          <a href="/modules/weather_services/arpansagovau/">
+            ARPANSA
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/modules/weather_services/prettyweather/" class="dd-item">
         <div>
           <a href="/modules/weather_services/prettyweather/">
@@ -465,11 +597,66 @@
         <select onchange="javascript:location.href = this.value;">
           
     <option value="/getting_started/" >
-   Getting Started</option>
+   Getting Started</option> 
+      <option value="/getting_started/installation/" >- Installation</option>
+      <option value="/getting_started/uninstall/" >- Uninstallation</option>
+      <option value="/getting_started/glossary/" >- Glossary</option>
+  
     <option value="/configuration/" >
    Configuration</option>
+    <option value="/blog/" >
+   WTF Blog</option>
     <option value="/modules/" >
    Modules</option> 
+      <option value="/modules/bamboohr/" >- BambooHR</option>
+      <option value="/modules/circleci/" >- CircleCI</option>
+      <option value="/modules/clocks/" >- Clocks</option>
+      <option value="/modules/cmdrunner/" >- CmdRunner</option>
+    <option value="/modules/cryptocurrencies/" >
+  - 
+   Crypto Currencies</option>
+      <option value="/modules/datadog/" >- Datadog</option>
+      <option value="/modules/docker/" >- Docker</option>
+      <option value="/modules/feedreader/" >- Feed Reader</option>
+      <option value="/modules/gerrit/" >- Gerrit</option>
+      <option value="/modules/git/" >- Git</option>
+      <option value="/modules/github/" >- GitHub</option>
+      <option value="/modules/gitlab/" >- GitLab</option>
+      <option value="/modules/gitter/" >- Gitter</option>
+    <option value="/modules/google/" >
+  - 
+   Google Apps</option>
+      <option value="/modules/hackernews/" >- Hacker News</option>
+      <option value="/modules/hibp/" >- Have I Been Pwned (HIBP)</option>
+    <option value="/modules/ipaddress/" >
+  - 
+   IP Addresses</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
+      <option value="/modules/jira/" >- Jira</option>
+      <option value="/modules/kubernetes/" >- Kubernetes</option>
+      <option value="/modules/logger/" >- Logger</option>
+      <option value="/modules/mercurial/" >- Mercurial</option>
+      <option value="/modules/nbascore/" >- NBA Score</option>
+      <option value="/modules/newrelic/" >- New Relic</option>
+      <option value="/modules/opsgenie/" >- OpsGenie</option>
+      <option value="/modules/pagerduty/" >- Pagerduty</option>
+      <option value="/modules/power/" >- Power</option>
+      <option value="/modules/resourceusage/" >- Resource Usage</option>
+      <option value="/modules/rollbar/"  selected>- Rollbar</option>
+      <option value="/modules/security/" >- Security</option>
+      <option value="/modules/spotify/" >- Spotify</option>
+      <option value="/modules/textfile/" >- Textfile</option>
+      <option value="/modules/todo/" >- Todo</option>
+      <option value="/modules/todoist/" >- Todoist</option>
+      <option value="/modules/transmission/" >- Transmission</option>
+      <option value="/modules/travisci/" >- TravisCI</option>
+      <option value="/modules/trello/" >- Trello</option>
+      <option value="/modules/twitter/" >- Twitter</option>
+      <option value="/modules/victorops/" >- VictorOps OnCall</option>
+    <option value="/modules/weather_services/" >
+  - 
+   Weather Services</option>
+      <option value="/modules/zendesk/" >- Zendesk</option>
   
 
 
@@ -494,34 +681,14 @@
     
 
     <h1>Rollbar</h1>
-    
-    
-    
+  
+
+  
     
 
 <p><img class="screenshot" src="/imgs/modules/rollbar.png" width="640" height="187" alt="rollbar screenshot" /></p>
 
 <p>Displays item information for your rollbar account.</p>
-
-<h2 id="keyboard-commands">Keyboard Commands</h2>
-
-<p><span class="caption">Key:</span> <code>[return]</code> <br />
-<span class="caption">Action:</span> Open the selected item in the browser.</p>
-
-<p><span class="caption">Key:</span> <code>j</code> <br />
-<span class="caption">Action:</span> Select the next item in the list.</p>
-
-<p><span class="caption">Key:</span> <code>k</code> <br />
-<span class="caption">Action:</span> Select the previous item in the list.</p>
-
-<p><span class="caption">Key:</span> <code>r</code> <br />
-<span class="caption">Action:</span> Refresh the data.</p>
-
-<p><span class="caption">Key:</span> <code>↓</code> <br />
-<span class="caption">Action:</span> Select the next item in the list.</p>
-
-<p><span class="caption">Key:</span> <code>↑</code> <br />
-<span class="caption">Action:</span> Select the previous item in the list.</p>
 
 <h2 id="configuration">Configuration</h2>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">rollbar<span class="p">:</span><span class="w">
@@ -538,81 +705,162 @@
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span></code></pre></div>
-<h3 id="attributes">Attributes</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td><code>accessToken</code></td>
+    <td>Your Rollbar project access token (only needs read capabilities).</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>activeOnly</code></td>
+    <td>Only show items that are active.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>assignedToName</code></td>
+    <td>Set this to your username if you only want to see items assigned to you.</td>
+    <td>A string of your username</td>
+</tr>
+  <tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>count</code></td>
+    <td>How many items you want to see. 100 is max.</td>
+    <td>Any positive integer up to 100 inclusive.</td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>focusChar</code></td>
+    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>projectName</code></td>
+    <td>This is used to create a link to the item</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>projectOwner</code></td>
+    <td>This is used to create a link to the item</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer.</td>
+</tr>
+    </tbody>
+</table>
 
-<p><code>accessToken</code> <br />
-Value: Your Rollbar project access token(Only needs read capabilities).</p>
+<h2 id="keyboard-controls">Keyboard Controls</h2>
 
-<p><code>enabled</code> <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: <code>true</code>, <code>false</code>.</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <p><tr>
+    <td><code>/</code></td>
+    <td>Open/close the widget&rsquo;s help window</td>
+</tr>
+  <tr>
+    <td><code>[return]</code></td>
+    <td>Open the selected item in the browser</td>
+</tr></p>
 
-<p><code>projectOwner</code> <br />
-This is used to create a link to the item <br />
-Values: A string of project owners name.</p>
+<p><tr>
+    <td colspan="2"></td>
+</tr></p>
 
-<p><code>projectName</code> <br />
-This is used to create a link to the item <br />
-Values: A string of the projects name</p>
+<p><tr>
+    <td><code>j</code></td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td><code>k</code></td>
+    <td>Select the previous item in the list</td>
+</tr>
+  <tr>
+    <td><code>r</code></td>
+    <td>Refresh the data</td>
+</tr></p>
 
-<p><code>activeOnly</code> <br />
-Only show items that are active <br />
-Values: <code>true</code>, <code>false</code>.</p>
+<p><tr>
+    <td colspan="2"></td>
+</tr></p>
 
-<p><code>assignedToName</code> <br />
-Set this to your username if you only want to see items assigned to you <br />
-Values: A string of your user_name</p>
+<p><tr>
+    <td><code>↓</code></td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td><code>↑</code></td>
+    <td>Select the previous item in the list</td>
+</tr></p>
 
-<p><code>count</code> <br />
-How many items you want to see. 100 is max <br />
-Values: A positive integer, <code>0..100</code>.</p>
-
-<p><code>position</code> <br />
-Defines where in the grid this module&rsquo;s widget will be displayed. <br /></p>
-
-<p><code>refreshInterval</code> <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, <code>0..n</code>.</p>
+    </tbody>
+</table>
 
 <h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/rollbar/</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/rollbar/</code></pre></div>
 
-    
-    
-        <div class="chevrons">
-    <div id="navigation">
-<a class="nav nav-prev" href="/modules/resourceusage/" title="Resource Usage"> <i class="fa fa-chevron-left"></i><label>Resource Usage</label></a>
-    <a class="nav nav-next" href="/modules/security/" title="Security" style="margin-right: 0px;"><label>Security</label><i class="fa fa-chevron-right"></i></a></div>
-  </div>
 
-  </section>
+  
+  <div class="chevrons">
+  <div id="navigation">
+<a class="nav nav-prev" href="/modules/weather_services/weather/" title="Weather"> <i class="fa fa-chevron-left"></i><label>Weather</label></a>
+    <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypto Currencies" style="margin-right: 0px;"><label>Crypto Currencies</label><i class="fa fa-chevron-right"></i></a></div>
+</div>
+
+</section>
 </article>
 
 <footer>
 
-<div class="footline">
+  <div class="footline">
     
 
     
 
-  
-    <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 13/02/2019
-    </div>
+    
+    
     
   </div>
 
 
-	<div>
-
-
-  
+  <div>
     
-  
+    
+    
+    
+    
+    
 
 
-
-	</div>
+  </div>
 </footer>
 
 <script src="/js/clipboard.min.js"></script>
@@ -624,12 +872,12 @@ Values: A positive integer, <code>0..n</code>.</p>
 
 <script src="/theme-flex/script.js"></script>
 
+  
 
+  
     
 
-    
-    
+  
+</body>
 
-    
-  </body>
 </html>

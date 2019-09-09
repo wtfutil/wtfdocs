@@ -17,41 +17,6 @@ All open reviews that are requesting your approval.
 
 All open reviews created by you.
 
-## Keyboard Commands
-
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
-
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous project.
-
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next project.
-
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next review in the list.
-
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous review in the list.
-
-<span class="caption">Key:</span> `r` <br />
-<span class="caption">Action:</span> Refresh the data.
-
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous project.
-
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next project.
-
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next review in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous review in the list.
-
-<span class="caption">Key:</span> `[return]` <br />
-<span class="caption">Action:</span> Open the selected review in the browser.
-
 ## Configuration
 
 ```yaml
@@ -76,52 +41,39 @@ gerrit:
   verifyServerCertificate: false
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/colors/rows >}}
+  {{< attributes/custom name="domain" desc="Your Gerrit corporate domain." value="A valid URI." >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/password name="Gerrit" >}}
+  {{< attributes/position >}}
+  {{< attributes/custom name="projects" desc="A list of Gerrit project names to fetch data for." >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/username name="Gerrit" >}}
+  {{< attributes/verifyServerCert >}}
+{{% /attributes %}}
 
-`colors.rows.even` <br />
-Define the foreground color for even-numbered rows. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open the selected review in the browser" >}}
 
-`colors.rows.odd` <br />
-Define the foreground color for odd-numbered rows. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
+  {{< keyboard/spacer >}}
 
-`domain` <br />
-Your Gerrit corporate domain. <br />
-Values: A valid URI.
+  {{< keyboard/h desc="Show the previous project" >}}
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
+  {{< keyboard/l desc="Show the next project" >}}
+  {{< keyboard/o desc="Open the selected story in the browser" >}}
+  {{< keyboard/r >}}
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< keyboard/spacer >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  {{< keyboard/arrowBack desc="Show the previous project" >}}
+  {{< keyboard/arrowFore desc="Show the next project" >}}
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
+{{% /keyboard %}}
 
-`password` <br />
-Value: Your <a href="https://gerrit-review.googlesource.com/Documentation/user-upload.html#http">Gerrit HTTP Password</a>.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`projects` <br />
-A list of Gerrit project names to fetch data for. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`username` <br />
-Your Gerrit username.
-
-`verifyServerCertificate` <br />
-_Optional_ <br />
-Determines whether or not the server's certificate chain and host name are verified. <br />
-Values: `true`, `false`.
-
-## Source Code
-
-```bash
-wtf/gerrit/
-```
+{{% sourcePath module="gerrit" %}}

@@ -7,26 +7,7 @@ weight: 20
 
 <img class="screenshot" src="/imgs/modules/weather.png" width="320" height="187" alt="weather screenshot" />
 
-Displays a configurable list of current weather report, including
-current temperature, sunrise time, and sunset time.
-
-
-## Keyboard Commands
-
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
-
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous weather location.
-
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next weather location.
-
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous weather location.
-
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next weather location.
+Displays a configurable list of current weather report, including current temperature, sunrise time, and sunset time.
 
 ## Configuration
 
@@ -51,47 +32,50 @@ weather:
   refreshInterval: 900
   tempUnit: "C"
 ```
+{{% attributes %}}
+  {{< attributes/apikey name="OpenWeatherMap" link="https://openweathermap.org/appid" envvar="WTF_OWM_API_KEY" >}}
+  {{< attributes/border >}}
 
-### Attributes
+  <tr>
+    <td>`cityids`</td>
+    <td>A list of the <a href="http://openweathermap.org/help/city_list.txt">OpenWeatherMap city IDs</a> for the cities you want to view.</td>
+    <td>A list of positive integers</td>
+  </tr>
 
-`apiKey` <br />
-Your <a href="https://openweathermap.org/appid">OpenWeatherMap API</a> key.
+  {{< attributes/colors/custom name="colors.current" desc="_Optional_ The color to highlight the current temperature in. Default: green." >}}
 
-`cityids` <br />
-A list of the <a
-href="http://openweathermap.org/help/city_list.txt">OpenWeatherMap city
-IDs</a> for the cities you want to view. <br />
-Values: A list of positive integers, `0..n`
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
 
-`colors.current` <br />
-The color to highlight the current temperature in. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
+  <tr>
+    <td>`language`</td>
+    <td>_Optional_ The human language in which to present the weather data. Default: EN.</td> 
+    <td>Any <a href="https://openweathermap.org/current">language identifier</a> specified by OpenWeatherMap"</td>
+  </tr>
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
 
-`language` <br />
-The human language in which to present the weather data. <br />
-Values: Any <a href="https://openweathermap.org/current">language identifier</a> specified by OpenWeatherMap.
+  {{< attributes/custom name="tempUnit" desc="_Optional_ The temperature scale in which to display temperature values. Default: C." value="`F` for Fahrenheit, `C` for Celcius" >}}
+{{% /attributes %}}
 
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  {{< keyboard/spacer >}}
 
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
+  {{< keyboard/h desc="Show the previous weather location" >}}
+  {{< keyboard/l desc="Show the next weather location" >}}
+  {{< keyboard/r >}}
 
-`tempUnit` <br />
-The temperature scale in which to display temperature values. <br />
-Values: `F` for Fahrenheit, `C` for Celcius.
+  {{< keyboard/spacer >}}
+
+  {{< keyboard/arrowBack desc="Show the previous Twitter account" >}} 
+  {{< keyboard/arrowFore desc="Show the next Twitter account" >}}
+{{% /keyboard %}}
 
 ## Source Code
 
 ```bash
-wtf/weather/
+wtf/modules/weatherservices/weather/
 ```

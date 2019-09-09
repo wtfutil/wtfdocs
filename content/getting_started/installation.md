@@ -2,7 +2,17 @@
 title: "Installation"
 date: 2018-05-18T09:59:40-07:00
 draft: false
+weight: 1
 ---
+
+## Homebrew
+
+```console
+brew tap wtfutil/wtfutil
+brew install wtfutil
+
+wtfutil
+```
 
 ## As a Binary
 
@@ -15,7 +25,7 @@ https://github.com/wtfutil/wtf/releases
 expand it, and `cd` into the resulting directory. Then run:
 
 ```bash
-./wtf
+./wtfutil
 ```
 
 and that should also do it.
@@ -25,9 +35,15 @@ and that should also do it.
 Download the source code repo and install the dependencies:
 
 ```bash
-go get -v -u github.com/wtfutil/wtf
+# Set the Go proxy variable to GoCenter
+export GOPROXY="https://gocenter.io"
+
+# Enable Go modules
+export GO111MODULE=on
+
+go get -u github.com/wtfutil/wtf
 cd $GOPATH/src/github.com/wtfutil/wtf
-go install -ldflags="-s -w"
+make install
 make run
 ```
 and that should do it.

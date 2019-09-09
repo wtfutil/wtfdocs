@@ -5,31 +5,9 @@ draft: false
 weight: 123
 ---
 
-Added in `v0.1.2`.
+<img class="screenshot" src="/imgs/modules/hackernews.png" width="320" height="76" alt="hackernews screenshot" />
 
 Displays stories from Hacker News.
-
-<img src="/imgs/modules/hackernews.png" width="843" height="201" alt="hackernews screenshot" />
-
-## Keyboard Commands
-
-<span class="caption">Key:</span> `[return]` <br />
-<span class="caption">Action:</span> Open the selected story in the browser.
-
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next story in the list.
-
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous story in the list.
-
-<span class="caption">Key:</span> `r` <br />
-<span class="caption">Action:</span> Refresh the data.
-
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next story in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous story in the list.
 
 ## Configuration
 
@@ -45,34 +23,32 @@ hackernews:
   storyType: top
   refreshInterval: 900
 ```
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/custom name="numberOfStories" desc="_Optional_ Defines number of stories to be displayed. Default: 10." value="Any positive integer" >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="storyType" desc="_Optional_ Defines type of stories to be displayed. Default: top." value="`new`, `top`, `job`, `ask`" >}}
+{{% /attributes %}}
 
-### Attributes
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open the selected story in the browser" >}}
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< keyboard/spacer >}}
 
-`numberOfStories` <br />
-_Optional_ <br />
-Defines number of stories to be displayed. Default is `10`<br />
+  {{< keyboard/c desc="Open the selected story's comments in the browser" >}}
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
+  {{< keyboard/o desc="Open the selected story in the browser" >}}
+  {{< keyboard/r >}}
 
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
+  {{< keyboard/spacer >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
+{{% /keyboard %}}
 
-`storyType` <br />
-_Optional_ <br /
-Defines type of stories to be displayed. Default is `top` stories<br />
-Values: `new`, `top`, `job`, `ask`
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-## Source Code
-
-```bash
-wtf/hackernews/
-```
+{{% sourcePath module="hackernews" %}}

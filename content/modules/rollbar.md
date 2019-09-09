@@ -7,28 +7,7 @@ weight: 202
 
 <img class="screenshot" src="/imgs/modules/rollbar.png" width="640" height="187" alt="rollbar screenshot" />
 
-
 Displays item information for your rollbar account.
-
-## Keyboard Commands
-
-<span class="caption">Key:</span> `[return]` <br />
-<span class="caption">Action:</span> Open the selected item in the browser.
-
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next item in the list.
-
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous item in the list.
-
-<span class="caption">Key:</span> `r` <br />
-<span class="caption">Action:</span> Refresh the data.
-
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next item in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous item in the list.
 
 ## Configuration
 
@@ -49,44 +28,34 @@ rollbar:
   refreshInterval: 900
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/custom name="accessToken" desc="Your Rollbar project access token (only needs read capabilities)." value="" >}}
+  {{< attributes/custom name="activeOnly" desc="Only show items that are active." value="true, false" >}}
+  {{< attributes/custom name="assignedToName" desc="Set this to your username if you only want to see items assigned to you." value="A string of your username" >}}
+  {{< attributes/border >}}
+  {{< attributes/custom name="count" desc="How many items you want to see. 100 is max." value="Any positive integer up to 100 inclusive." >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/custom name="projectName" desc="This is used to create a link to the item" value="" >}}
+  {{< attributes/custom name="projectOwner" desc="This is used to create a link to the item" value="" >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
-`accessToken` <br />
-Value: Your Rollbar project access token(Only needs read capabilities).
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open the selected item in the browser" >}}
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< keyboard/spacer >}}
 
-`projectOwner` <br />
-This is used to create a link to the item <br />
-Values: A string of project owners name.
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
+  {{< keyboard/r >}}
 
-`projectName` <br />
-This is used to create a link to the item <br />
-Values: A string of the projects name
+  {{< keyboard/spacer >}}
 
-`activeOnly` <br />
-Only show items that are active <br />
-Values: `true`, `false`.
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
+{{% /keyboard %}}
 
-`assignedToName` <br />
-Set this to your username if you only want to see items assigned to you <br />
-Values: A string of your user_name
-
-`count` <br />
-How many items you want to see. 100 is max <br />
-Values: A positive integer, `0..100`.
-
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-## Source Code
-
-```bash
-wtf/rollbar/
-```
+{{% sourcePath module="rollbar" %}}

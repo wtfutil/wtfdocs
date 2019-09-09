@@ -5,8 +5,6 @@ draft: false
 weight: 50
 ---
 
-Added in `v0.0.7`.
-
 Display information from cells in a Google Spreadsheet.
 
 ## Configuration
@@ -33,33 +31,25 @@ gspreadsheets:
   sheetId: "id_of_google_spreadsheet"
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/colors/custom name="colors.values" desc="The color to display the cell values in." >}}
+  {{< attributes/custom name="cells.names" desc="" >}}
+  {{< attributes/custom name="cells.addresses" desc="" >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
 
-`colors.values` <br />
-The color to display the cell values in. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.
-
-`cells.names` <br />
-
-`cells.addresses` <br />
-
-`enabled` <br />
-Whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
-
-`position` <br />
-Where in the grid this module's widget will be displayed. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`secretFile` <br />
-Your <a href="https://developers.google.com/sheets/api/quickstart/go">Google client secret</a> JSON file. <br />
-Values: A string representing a file path to the JSON secret file.
+  <tr>
+    <td>`secretFile`</td>
+    <td>Your <a href="https://developers.google.com/sheets/api/quickstart/go">Google client secret</a> JSON file.</td>
+    <td>A string representing a file path to the JSON secret file.</td>
+  </tr>
+{{% /attributes %}}
 
 ## Source Code
 
 ```bash
-wtf/gspreadsheets/
+wtf/modules/google/gspreadsheets/
 ```

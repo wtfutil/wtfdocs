@@ -7,20 +7,6 @@ weight: 158
 
 Displays NBA game scores.
 
-## Keyboard Commands
-
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
-
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Go to previous day
-
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Go to next day
-
-<span class="caption">Key:</span> `c` <br />
-<span class="caption">Action:</span> Go back to current day
-
 ## Configuration
 
 ```yaml
@@ -33,26 +19,27 @@ nbascore:
     width: 1
   refreshInterval: 600
 ```
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
-## Attributes
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< keyboard/spacer >}}
 
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
+  {{< keyboard/c desc="Go to current day" >}}
+  {{< keyboard/h desc="Go to previous day" >}}
+  {{< keyboard/l desc="Go to next day" >}}
+  {{< keyboard/r >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  {{< keyboard/spacer >}}
 
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
+  {{< keyboard/arrowBack desc="Go to previous day" >}}
+  {{< keyboard/arrowFore desc="Go to next day" >}}
+{{% /keyboard %}}
 
-
-## Source Code
-
-```bash
-wtf/modules/nbascore/
-```
+{{% sourcePath module="nbascore" %}}

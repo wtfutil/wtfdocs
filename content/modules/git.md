@@ -23,23 +23,6 @@ commit, and their status.
 
 A list of `n` recent commits, who committed it, and when.
 
-## Keyboard Commands
-
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
-
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous git repository.
-
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next git repository.
-
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous git repository.
-
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next git repository.
-
 ## Configuration
 
 ```yaml
@@ -59,39 +42,33 @@ git:
   - "/Users/user/fakeapp"
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/custom name="commitCount" desc="The number of past commits to display." value="Any positive integer" >}}
+  {{< attributes/custom name="commitFormat" desc="_Optional_ The string format for the commit message." value="" >}}
+  {{< attributes/dateFormat >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="repositories" desc="A list of git repositories to watch." value="Zero or more local file paths pointing to valid git repositories." >}}
+{{% /attributes %}}
 
-`commitCount` <br />
-The number of past commits to display. <br />
-Values: A positive integer, `0..n`.
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
 
-`commitFormat` <br />
-_Optional_ The string format for the commit message. <br />
+  {{< keyboard/spacer >}}
 
-`dateFormat` <br />
-_Optional_ The string format for the date/time in the commit message.
-<br />
+  {{< keyboard/c desc="Check out branch" >}}
+  {{< keyboard/h desc="Show the previous git repository" >}}
+  {{< keyboard/l desc="Show the next git repository" >}}
+  {{< keyboard/p desc="Pull repo" >}}
+  {{< keyboard/r >}}
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< keyboard/spacer >}}
 
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
+  {{< keyboard/arrowBack desc="Show the previous git repository" >}}
+  {{< keyboard/arrowFore desc="Show the next git repository" >}}
+{{% /keyboard %}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
-
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
-
-`repositories` <br />
-Defines which git repositories to watch. <br />
-Values: A list of zero or more local file paths pointing to valid git repositories.
-
-## Source Code
-
-```bash
-wtf/git/
-```
+{{% sourcePath module="git" %}}

@@ -9,14 +9,6 @@ weight: 210
 
 Displays the contents of the specified text file in the widget.
 
-## Keyboard Commands
-
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
-
-<span class="caption">Key:</span> `o` <br />
-<span class="caption">Action:</span> Opens the text file in whichever text editor is associated  with that file type.
-
 ## Configuration
 
 ```yaml
@@ -33,40 +25,42 @@ textfile:
     height: 2
     width: 1
   refreshInterval: 15
+  wrapText: true
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/custom name="filePaths" desc="An array of paths to the files to be displayed in the widget." value="" >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/custom name="format" desc="_Optional_ Whether or not to try and format and syntax highlight the displayedtext. Default: false." value="true, false" >}}
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  <tr>
+    <td>`formatStyle`</td>
+    <td>_Optional_ The style of syntax highlighting to format the text with. Default: `vim`.</td>
+    <td>See [Chroma styles](https://github.com/alecthomas/chroma/tree/master/styles) for all valid options.</td>
+  </tr>
 
-`filePaths` <br />
-An array of paths to the files to be displayed in the widget. <br />
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/wrapText >}}
+{{% /attributes %}}
 
-`format` <br />
-Whether or not to try and format and syntax highlight the displayedtext. <br />
-Values: `true`, `false`. <br />
-Default: `false`.
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open current file" >}}
 
-`formatStyle` <br />
-The style of syntax highlighting to format the text with. <br />
-Values: See [Chroma styles](https://github.com/alecthomas/chroma/tree/master/styles) for all
-valid options. <br />
-Default: `vim`.
+  {{< keyboard/spacer >}}
 
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
+  {{< keyboard/h desc="Select previous file" >}}
+  {{< keyboard/l desc="Select next file" >}}
+  {{< keyboard/o desc="Opens the text file in whichever text editor is associated  with that file type" >}}
+  {{< keyboard/r >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  {{< keyboard/spacer >}}
 
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
+  {{< keyboard/arrowBack desc="Select previous file" >}} 
+  {{< keyboard/arrowFore desc="Select next file" >}} 
+{{% /keyboard %}}
 
-## Source Code
-
-```bash
-wtf/textfile/
-```
+{{% sourcePath module="textfile" %}}

@@ -7,8 +7,6 @@ weight: 100
 
 <img class="screenshot" src="/imgs/modules/gitlab.png" width="640" height="390" alt="gitlab screenshot" />
 
-Added in `v0.0.8`.
-
 Displays information about your projects hosted on GitLab:
 
 #### Open Approval Requests
@@ -18,23 +16,6 @@ All open merge requests that are requesting your approval.
 #### Open Merge Requests
 
 All open merge requests created by you.
-
-## Keyboard Commands
-
-<span class="caption">Key:</span> `/` <br />
-<span class="caption">Action:</span> Open/close the widget's help window.
-
-<span class="caption">Key:</span> `h` <br />
-<span class="caption">Action:</span> Show the previous project.
-
-<span class="caption">Key:</span> `l` <br />
-<span class="caption">Action:</span> Show the next project.
-
-<span class="caption">Key:</span> `←` <br />
-<span class="caption">Action:</span> Show the previous project.
-
-<span class="caption">Key:</span> `→` <br />
-<span class="caption">Action:</span> Show the next project.
 
 ## Configuration
 
@@ -49,45 +30,36 @@ gitlab:
     width: 2
   refreshInterval: 300
   projects:
-    tasks: "gitlab-org/release"
-    gitlab-ce: "gitlab-org"
+    - "gitlab-org/release/tasks"
+    - "gitlab-org/gitlab-ce"
   username: "wtfutil"
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/apikey name="GitLab" link="https://docs.gitlab.com/ce/user/profile/personal_access_tokens.html" envvar="WTF_GITLAB_TOKEN" >}}
+  {{< attributes/border >}}
+  {{< attributes/custom name="domain" desc="_Optional_. Your GitLab corporate domain." value="A valid URI." >}}
+  {{< attributes/enabled >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/custom name="projects" desc="A list of GitLab project paths to fetch data for." value="" >}}
+  {{< attributes/refreshInterval >}}
+  {{< attributes/username name="GitLab" desc="Used to figure out which requests require your approval." >}}
+{{% /attributes %}}
 
-`apiKey` <br />
-Value:  A <a href="https://docs.gitlab.com/ce/user/profile/personal_access_tokens.html">GitLab personal access token</a>. Requires at least `api` access.
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< keyboard/spacer >}}
 
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
+  {{< keyboard/h desc="Show the previous git repository" >}}
+  {{< keyboard/l desc="Show the next git repository" >}}
+  {{< keyboard/r >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  {{< keyboard/spacer >}}
 
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
+  {{< keyboard/arrowBack desc="Show the previous git repository" >}}
+  {{< keyboard/arrowFore desc="Show the next git repository" >}}
+{{% /keyboard %}}
 
-`domain` <br />
-_Optional_. Your GitLab corporate domain. <br />
-Values: A valid URI.
-
-`projects` <br />
-A list of key/value pairs each describing a GitLab project to fetch data
-for. <br />
-<span class="caption">Key:</span> The name of the project. <br />
-<span class="caption">Value:</span> The namespace of the project.
-
-`username` <br />
-Your GitLab username. Used to figure out which requests require your approval
-
-## Source Code
-
-```bash
-wtf/gitlab/
-```
+{{% sourcePath module="gitlab" %}}

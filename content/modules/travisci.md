@@ -7,36 +7,19 @@ weight: 240
 
 <img class="screenshot" src="/imgs/modules/travisci.png" width="640" height="187" alt="travisci screenshot" />
 
-Added in `v0.0.12`.
-
 Displays build information for your Travis CI account.
 
-## Keyboard Commands
-
-<span class="caption">Key:</span> `[return]` <br />
-<span class="caption">Action:</span> Open the selected build in the browser.
-
-<span class="caption">Key:</span> `j` <br />
-<span class="caption">Action:</span> Select the next build in the list.
-
-<span class="caption">Key:</span> `k` <br />
-<span class="caption">Action:</span> Select the previous build in the list.
-
-<span class="caption">Key:</span> `r` <br />
-<span class="caption">Action:</span> Refresh the data.
-
-<span class="caption">Key:</span> `↓` <br />
-<span class="caption">Action:</span> Select the next build in the list.
-
-<span class="caption">Key:</span> `↑` <br />
-<span class="caption">Action:</span> Select the previous build in the list.
-
 ## Configuration
+
+This module pulls information from api.travis-ci.com (when pro: true) or api.travis-ci.org (when pro: false)
 
 ```yaml
 travisci:
   apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
   enabled: true
+  compact: true
+  limit: 8
+  sort_by: "id:desc"
   position:
     top: 4
     left: 1
@@ -46,31 +29,33 @@ travisci:
   refreshInterval: 900
 ```
 
-### Attributes
+{{% attributes %}}
+  {{< attributes/apikey name="TravisCI" link="https://developer.travis-ci.org/authentication" envvar="WTF_TRAVIS_API_TOKEN" >}}
+  {{< attributes/border >}}
+  {{< attributes/enabled >}}
+  {{< attributes/custom name="compact" desc="When true, displays one line per build entry. When false, displays two lines per entry. Default: false." value="true, false" >}}
+  {{< attributes/custom name="sort_by" desc="Sortable by: id, created_at, started_at, finished_at, number, append :desc to any attribute to reverse order. The default value is id:desc. See https://developer.travis-ci.com/resource/builds for more information." >}}
+  {{< attributes/focusChar >}}
+  {{< attributes/position >}}
+  {{< attributes/custom name="pro" desc="Determines whether or not this module will use the Pro version of Travis CI." value="true, false" >}}
+  {{< attributes/refreshInterval >}}
+{{% /attributes %}}
 
-`apiKey` <br />
-Value: Your <a href="https://developer.travis-ci.org/authentication">Travis CI API</a> access token.
+{{% keyboard %}}
+  {{< keyboard/foreSlash >}}
+  {{< keyboard/return desc="Open the selected build in the browser" >}}
 
-`enabled` <br />
-Determines whether or not this module is executed and if its data displayed onscreen. <br />
-Values: `true`, `false`.
+  {{< keyboard/spacer >}}
 
-`position` <br />
-Defines where in the grid this module's widget will be displayed. <br />
+  {{< keyboard/j >}}
+  {{< keyboard/k >}}
+  {{< keyboard/r >}}
 
-`focusChar` <br />
-Define one of the number keys as a short cut key to access the widget. <br />
+  {{< keyboard/spacer >}}
 
-`pro` <br />
-Determines whether or not this module will use the Pro version of Travis CI.<br />
-Values: `true`, `false`.
+  {{< keyboard/arrowDown >}}
+  {{< keyboard/arrowUp >}}
 
-`refreshInterval` <br />
-How often, in seconds, this module will update its data. <br />
-Values: A positive integer, `0..n`.
+{{% /keyboard %}}
 
-## Source Code
-
-```bash
-wtf/travisci/
-```
+{{% sourcePath module="travisci" %}}
