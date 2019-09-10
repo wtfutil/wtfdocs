@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.57.2" />
-<title>Jenkins :: WTF - the terminal dashboard</title>
+<title>Digital Clock :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/jenkins/">
+<body data-url="/modules/digitalclock/">
   
   <header>
   <div class="logo">
@@ -276,7 +276,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/digitalclock/" class="dd-item">
+      <li data-nav-id="/modules/digitalclock/" class="dd-item active">
         <div>
           <a href="/modules/digitalclock/">
             Digital Clock
@@ -397,7 +397,7 @@
     </li>
         </ul>
     </li>
-      <li data-nav-id="/modules/jenkins/" class="dd-item active">
+      <li data-nav-id="/modules/jenkins/" class="dd-item">
         <div>
           <a href="/modules/jenkins/">
             Jenkins
@@ -623,7 +623,7 @@
   - 
    Crypto Currencies</option>
       <option value="/modules/datadog/" >- Datadog</option>
-      <option value="/modules/digitalclock/" >- Digital Clock</option>
+      <option value="/modules/digitalclock/"  selected>- Digital Clock</option>
       <option value="/modules/docker/" >- Docker</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -639,7 +639,7 @@
     <option value="/modules/ipaddress/" >
   - 
    IP Addresses</option>
-      <option value="/modules/jenkins/"  selected>- Jenkins</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
       <option value="/modules/jira/" >- Jira</option>
       <option value="/modules/kubernetes/" >- Kubernetes</option>
       <option value="/modules/logger/" >- Logger</option>
@@ -688,31 +688,30 @@
       </div>
     
 
-    <h1>Jenkins</h1>
+    <h1>Digital Clock</h1>
   
 
   
     
 
-<p><img class="screenshot" src="/imgs/modules/jenkins.png" alt="jenkins screenshot" width="320" height="68" /></p>
+<p><img src="/imgs/modules/digitalclock.png" class="screenshot" width="240" height="121" alt="digitalclock screenshot" /></p>
 
-<p>Displays jenkins status of given builds in a project or view</p>
+<p>Displays a configurable digital clock.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">jenkins<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">digitalclock<span class="p">:</span><span class="w">
+</span><span class="w">  </span>color<span class="p">:</span><span class="w"> </span>orange<span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>font<span class="p">:</span><span class="w"> </span>bigfont<span class="w">
+</span><span class="w">  </span>hourFormat<span class="p">:</span><span class="w"> </span><span class="m">12</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
-</span><span class="w">  </span>successBallColor<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
-</span><span class="w">  </span>jobNameRegex<span class="p">:</span><span class="w"> </span>^<span class="p">[</span>a-z<span class="p">]</span>+\<span class="p">[[</span><span class="m">0-9</span><span class="p">]</span>+\<span class="p">]</span>$<span class="w">
-</span><span class="w">  </span>url<span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://jenkins.domain.com/jenkins/view_url&#34;</span><span class="w">
-</span><span class="w">  </span>user<span class="p">:</span><span class="w"> </span><span class="s2">&#34;username&#34;</span><span class="w">
-</span><span class="w">  </span>verifyServerCertificate<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;big clock&#34;</span><span class="w">
+</span><span class="w">  </span>type<span class="p">:</span><span class="w"> </span><span class="s2">&#34;digitalclock&#34;</span></code></pre></div>
 <table class="table">
     <thead>
         <tr>
@@ -723,31 +722,30 @@
     </thead>
     <tbody>
         <tr>
-    <td><code>apiKey</code></td>
-    <td>Your <a href="https://wiki.jenkins.io/display/JENKINS/Remote&#43;access&#43;API">Jenkins API</a> token.</td>
-    <td>
-        Your API key <strong>or</strong> leave it empty to use the <code>WTF_JENKINS_API_KEY</code> environment variable.
-    </td>
-</tr>
-  <tr>
     <td><code>border</code></td>
     <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
     <td>true, false</td>
 </tr>
   <tr>
+    <td><code>color</code></td>
+    <td>The color to display the clock time in.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a> or long-form hex value (i.e.:
+        <code>#ff0000</code>).</td>
+</tr>
+  <tr>
+    <td><code>font</code></td>
+    <td>The font to display the clock time in.</td>
+    <td><code>bigfont</code> or <code>digitalfont</code></td>
+</tr>
+  <tr>
+    <td><code>hourFormat</code></td>
+    <td>Whether to display the time in 12-hour or 24-hour format.</td>
+    <td><code>12</code> or <code>24</code></td>
+</tr>
+  <tr>
     <td><code>enabled</code></td>
     <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
     <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>focusChar</code></td>
-    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
-    <td>0..9</td>
-</tr>
-  <tr>
-    <td><code>jobNameRegex</code></td>
-    <td><em>Optional</em> A regex that filters the jobs shown in the widget. Any jobs matching the regular expression will be shown.</td>
-    <td>A valid regex, e.g. <code>^[a-z]&amp;#43;\[[0-9]&amp;#43;\]$</code></td>
 </tr>
   <tr>
     <td><code>position</code></td>
@@ -759,89 +757,17 @@
     <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
     <td>Any positive integer.</td>
 </tr>
-  <tr>
-    <td><code>successBallColor</code></td>
-    <td>Changes the default color of successful Jenkins jobs to the color of your choosing.</td>
-    <td>Any valid color name, <code>blue</code>, <code>green</code>, <code>purple</code>, <code>yellow</code>, etc.</td>
-</tr>
-  <tr>
-    <td><code>url</code></td>
-    <td>The url to your Jenkins project or view.</td>
-    <td>A valid URI.</td>
-</tr>
-  <tr>
-    <td><code>user</code></td>
-    <td>Your Jenkins username.</td>
-    <td></td>
-</tr>
-  <tr>
-    <td><code>verifyServerCertificate</code></td>
-    <td>Whether or not to verify the server&rsquo;s certificate chain and hostname.</td>
-    <td>true, false</td>
-</tr>
-    </tbody>
-</table>
-
-<h2 id="keyboard-controls">Keyboard Controls</h2>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Key</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        <p><tr>
-    <td><code>/</code></td>
-    <td>Open/close the widget&rsquo;s help window</td>
-</tr>
-  <tr>
-    <td><code>[return]</code></td>
-    <td>Open the selected job in the browser</td>
-</tr></p>
-
-<p><tr>
-    <td colspan="2"></td>
-</tr></p>
-
-<p><tr>
-    <td><code>j</code></td>
-    <td>Select the next item in the list</td>
-</tr>
-  <tr>
-    <td><code>k</code></td>
-    <td>Select the previous item in the list</td>
-</tr>
-  <tr>
-    <td><code>r</code></td>
-    <td>Refresh the data</td>
-</tr></p>
-
-<p><tr>
-    <td colspan="2"></td>
-</tr></p>
-
-<p><tr>
-    <td><code>↓</code></td>
-    <td>Select the next item in the list</td>
-</tr>
-  <tr>
-    <td><code>↑</code></td>
-    <td>Select the previous item in the list</td>
-</tr></p>
-
     </tbody>
 </table>
 
 <h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/jenkins/</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/digitalclock/</code></pre></div>
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/ipaddress/ipinfo/" title="IPInfo"> <i class="fa fa-chevron-left"></i><label>IPInfo</label></a>
+<a class="nav nav-prev" href="/modules/weather_services/weather/" title="Weather"> <i class="fa fa-chevron-left"></i><label>Weather</label></a>
     <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypto Currencies" style="margin-right: 0px;"><label>Crypto Currencies</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
