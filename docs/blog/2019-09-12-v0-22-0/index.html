@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.57.2" />
-<title>Binary Renamed to &#39;wtfutil&#39; :: WTF - the terminal dashboard</title>
+<title>v0.22.0 Released :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/blog/2019-07-10-wtfutil-release/">
+<body data-url="/blog/2019-09-12-v0-22-0/">
   
   <header>
   <div class="logo">
@@ -134,7 +134,7 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/blog/2019-09-12-v0-22-0/" class="dd-item">
+      <li data-nav-id="/blog/2019-09-12-v0-22-0/" class="dd-item active">
         <div>
           <a href="/blog/2019-09-12-v0-22-0/">
             v0.22.0 Released
@@ -190,7 +190,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/blog/2019-07-10-wtfutil-release/" class="dd-item active">
+      <li data-nav-id="/blog/2019-07-10-wtfutil-release/" class="dd-item">
         <div>
           <a href="/blog/2019-07-10-wtfutil-release/">
             Binary Renamed to &#39;wtfutil&#39;
@@ -621,7 +621,7 @@
    Configuration</option>
     <option value="/blog/" >
    WTF Blog</option> 
-      <option value="/blog/2019-09-12-v0-22-0/" >- v0.22.0 Released</option>
+      <option value="/blog/2019-09-12-v0-22-0/"  selected>- v0.22.0 Released</option>
       <option value="/blog/2019-08-29-v0-21-0/" >- v0.21.0 Released</option>
       <option value="/blog/2019-08-20-v0-20-0/" >- v0.20.0 Released</option>
       <option value="/blog/2019-07-31-v0-19-1/" >- v0.19.1 Released</option>
@@ -629,7 +629,7 @@
       <option value="/blog/2019-07-20-v0-18-0/" >- v0.18.0 Released</option>
       <option value="/blog/2019-07-16-v0-17-1/" >- v0.17.1 Released</option>
       <option value="/blog/2019-07-12-homebrew-installation/" >- Installing With Homebrew</option>
-      <option value="/blog/2019-07-10-wtfutil-release/"  selected>- Binary Renamed to &#39;wtfutil&#39;</option>
+      <option value="/blog/2019-07-10-wtfutil-release/" >- Binary Renamed to &#39;wtfutil&#39;</option>
       <option value="/blog/2019-07-09-rss-for-releases/" >- Using WTF&#39;s FeedReader to Track WTF Releases</option>
       <option value="/blog/2019-07-09-v0-14-0/" >- v0.14.0 Released</option>
   
@@ -708,29 +708,51 @@
       </div>
     
 
-    <h1>Binary Renamed to &#39;wtfutil&#39;</h1>
+    <h1>v0.22.0 Released</h1>
   
 
   
-    <small>July 10, 2019</small>
+    
 
-<p>With the release of <a href="https://github.com/wtfutil/wtf/releases/tag/v0.15.0">v0.15.0</a>, the installed binary has been renamed from <code>wtf</code> to <code>wtfutil</code>.</p>
+<small>September 12, 2019</small>
 
-<p>To execute it, you must now use:</p>
-<div class="highlight"><pre class="chroma"><code class="language-console" data-lang="console">wtfutil</code></pre></div>
-<p>The name has changed because calling it <code>wtf</code> caused a collision with the venerable and amusing <a href="https://sourceforge.net/projects/bsdwtf/">bsd-wtf</a> utility. This wasn&rsquo;t a problem back when there was only one person using WTF and no one else knew about it, but with the rise in popularity this collision has been causing problems for some people.</p>
+<h3 id="added">⚡️ Added</h3>
 
-<p>Given that <code>bsd-wtf</code> was created long before WTF, it only seems proper to abdicate the name.</p>
+<ul>
+<li><a href="https://wtfutil.com/modules/weather_services/arpansagovau/">Arpansagovau</a> (arpansa.gov.au) module added, by <a href="https://github.com/jeffz">@jeffz</a></li>
+<li>&lsquo;calendarReadLevel&rsquo; setting added to gCal module, by <a href="https://github.com/mikkeljuhl">@mikkeljuhl</a></li>
+<li>Todoist module now catches and displays API errors, by <a href="https://github.com/Seanstoppable">@Seanstoppable</a></li>
+<li>TravisCI sort orders now configurable,  by <a href="https://github.com/nyourchuck">@nyourchuck</a></li>
+<li>Google Analytics module now supports real-time metrics, <a href="https://github.com/wtfutil/wtf/issues/581">#581</a> by <a href="https://github.com/Ameobea">@Ameobea</a></li>
+<li>Colors in configuration can now be defined using long-form hex, i.e.: #ff0000, by <a href="https://github.com/Seanstoppable">@Seanstoppable</a></li>
+<li>GitHub module pull requests are now selectable and openable via keyboard, <a href="https://github.com/wtfutil/wtf/issues/547">#547</a> by <a href="https://github.com/Midnight-Conqueror">@Midnight-Conqueror</a></li>
+<li><a href="https://wtfutil.com/modules/docker/">Docker</a> module added, <a href="https://github.com/wtfutil/wtf/issues/594">#594</a> by <a href="https://github.com/v-braun">@v-braun</a></li>
+<li>NewRelic module now supports displaying data from multiple apps, <a href="https://github.com/wtfutil/wtf/issues/471">#471</a> by <a href="https://github.com/ChrisDBrown">@ChrisDBrown</a> and <a href="https://github.com/Seanstoppable">@Seanstoppable</a></li>
+<li><a href="https://wtfutil.com/modules/digitalclock/">Digital Clock</a> module added, by <a href="https://github.com/Narengowda">@Narengowda</a></li>
+</ul>
 
-<p>(And if you want to check out the original <code>wtf</code>, it&rsquo;s available via <a href="https://formulae.brew.sh/formula/wtf">Homebrew</a> on macOS, and presumably via <code>apt-get</code> on Linux).</p>
+<h3 id="fixed">🐞 Fixed</h3>
+
+<ul>
+<li>ScrollableWidget bounds checking error fixed, <a href="https://github.com/wtfutil/wtf/issues/578">#578</a> by <a href="https://github.com/Seanstoppable">@Seanstoppable</a></li>
+<li>Now properly URL-decodes Jenkins branch names, <a href="https://github.com/wtfutil/wtf/issues/575">#575</a> by <a href="https://github.com/lesteenman">@lesteenman</a></li>
+<li>Jira column sizes render properly, <a href="https://github.com/wtfutil/wtf/issues/574">#574</a> by <a href="https://github.com/lesteenman">@lesteenman</a></li>
+<li>Todoist module updated to latest API version, by <a href="https://github.com/Seanstoppable">@Seanstoppable</a></li>
+<li>gCal colour highlighting working again, <a href="https://github.com/wtfutil/wtf/issues/611">#611</a> by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
+<li>Per-module background and text colour settings working again, <a href="https://github.com/wtfutil/wtf/issues/568">#568</a> by <a href="https://github.com/Seanstoppable">@Seanstoppable</a></li>
+<li>Git module no longer forces sorting of repositories, <a href="https://github.com/wtfutil/wtf/pull/608">#608</a> by <a href="https://github.com/Seanstoppable">@Seanstoppable</a></li>
+<li>GitHub PR icons render properly without phantom characters, by <a href="https://github.com/Midnight-Conqueror">@Midnight-Conqueror</a></li>
+<li>GitLab configuration now takes a list of project paths, <a href="https://github.com/wtfutil/wtf/issues/566">#566</a> by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
+<li>Kubernetes configuration segfault fixed, <a href="https://github.com/wtfutil/wtf/issues/549">#549</a> by <a href="https://github.com/ibaum">@ibaum</a></li>
+</ul>
 
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/blog/2019-07-12-homebrew-installation/" title="Installing With Homebrew"> <i class="fa fa-chevron-left"></i><label>Installing With Homebrew</label></a>
-    <a class="nav nav-next" href="/blog/2019-07-09-rss-for-releases/" title="Using WTF&#39;s FeedReader to Track WTF Releases" style="margin-right: 0px;"><label>Using WTF&#39;s FeedReader to Track WTF Releases</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/blog/" title="WTF Blog"> <i class="fa fa-chevron-left"></i><label>WTF Blog</label></a>
+    <a class="nav nav-next" href="/blog/2019-08-29-v0-21-0/" title="v0.21.0 Released" style="margin-right: 0px;"><label>v0.21.0 Released</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>

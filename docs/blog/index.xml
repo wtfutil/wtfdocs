@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>v0.22.0 Released</title>
+      <link>https://wtfutil.com/blog/2019-09-12-v0-22-0/</link>
+      <pubDate>Thu, 12 Sep 2019 03:10:09 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/blog/2019-09-12-v0-22-0/</guid>
+      <description> September 12, 2019 ⚡️ Added  Arpansagovau (arpansa.gov.au) module added, by @jeffz &amp;lsquo;calendarReadLevel&amp;rsquo; setting added to gCal module, by @mikkeljuhl Todoist module now catches and displays API errors, by @Seanstoppable TravisCI sort orders now configurable, by @nyourchuck Google Analytics module now supports real-time metrics, #581 by @Ameobea Colors in configuration can now be defined using long-form hex, i.e.: #ff0000, by @Seanstoppable GitHub module pull requests are now selectable and openable via keyboard, #547 by @Midnight-Conqueror Docker module added, #594 by @v-braun NewRelic module now supports displaying data from multiple apps, #471 by @ChrisDBrown and @Seanstoppable Digital Clock module added, by @Narengowda  🐞 Fixed  ScrollableWidget bounds checking error fixed, #578 by @Seanstoppable Now properly URL-decodes Jenkins branch names, #575 by @lesteenman Jira column sizes render properly, #574 by @lesteenman Todoist module updated to latest API version, by @Seanstoppable gCal colour highlighting working again, #611 by @senorprogrammer Per-module background and text colour settings working again, #568 by @Seanstoppable Git module no longer forces sorting of repositories, #608 by @Seanstoppable GitHub PR icons render properly without phantom characters, by @Midnight-Conqueror GitLab configuration now takes a list of project paths, #566 by @senorprogrammer Kubernetes configuration segfault fixed, #549 by @ibaum  </description>
+    </item>
+    
+    <item>
       <title>v0.21.0 Released</title>
       <link>https://wtfutil.com/blog/2019-08-29-v0-21-0/</link>
       <pubDate>Thu, 29 Aug 2019 21:48:13 -0700</pubDate>
