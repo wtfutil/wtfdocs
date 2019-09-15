@@ -82,7 +82,7 @@ github:
   {{< keyboard/spacer >}}
 
   {{< keyboard/arrowUp desc="Select the next item in the list" >}}
-  {{< keyboard/arrowBack desc="Select the previous item in the list" >}}
+  {{< keyboard/arrowDown desc="Select the previous item in the list" >}}
   {{< keyboard/arrowBack desc="Show the previous git repository" >}}
   {{< keyboard/arrowFore desc="Show the next git repository" >}}
 {{% /keyboard %}}
