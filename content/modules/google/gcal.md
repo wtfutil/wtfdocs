@@ -19,7 +19,7 @@ The configuration file downloaded is the file you use for the `secretFile` confi
 gcal:
   colors:
     title: "red"
-    description: "lightblue"
+    eventTime: "lightblue"
     highlights:
     - ['1on1|1\/11', 'green']
     - ['apple|google|aws', 'blue']
@@ -48,7 +48,7 @@ gcal:
 
 {{% attributes %}}
   {{< attributes/border >}}
-  {{< attributes/colors/custom name="colors.description" desc="The default color for calendar event descriptions." >}}
+  {{< attributes/colors/custom name="colors.eventTime" desc="The default color for calendar event time." >}}
   {{< attributes/colors/custom name="colors.past" desc="The color for calendar events that have passed." >}}
   {{< attributes/colors/custom name="colors.title" desc="The default colour for calendar event titles." >}}
 
