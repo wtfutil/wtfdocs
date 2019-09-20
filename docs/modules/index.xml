@@ -82,6 +82,16 @@ Configuration datadog:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;applica
     </item>
     
     <item>
+      <title>DEV (dev.to)</title>
+      <link>https://wtfutil.com/modules/devto/</link>
+      <pubDate>Thu, 02 Aug 2018 16:36:08 -0400</pubDate>
+      
+      <guid>https://wtfutil.com/modules/devto/</guid>
+      <description>Displays stories from The Practical DEV dev.to.
+Configuration devto:enabled:truenumberOfArticles:10position:top:1left:1height:1width:2contentTag:&amp;#34;showdev&amp;#34;contentUsername:&amp;#34;victoravelar&amp;#34;contentState:&amp;#34;rising&amp;#34;   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
+    </item>
+    
+    <item>
       <title>Digital Clock</title>
       <link>https://wtfutil.com/modules/digitalclock/</link>
       <pubDate>Tue, 10 Sep 2019 09:57:28 -0700</pubDate>
