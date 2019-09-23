@@ -6,13 +6,12 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.57.2" />
-<title>Crypto Currencies :: WTF - the terminal dashboard</title>
+<title>DEV (dev.to) :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="alternate" type="application/rss+xml" href="https://wtfutil.com/modules/cryptocurrencies/index.xml" title="WTF - the terminal dashboard" />
 <script src="/js/jquery-2.x.min.js"></script>
 <script src="https://kit.fontawesome.com/461d56314b.js"></script>
 <script type="text/javascript">
@@ -26,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/cryptocurrencies/">
+<body data-url="/modules/devto/">
   
   <header>
   <div class="logo">
@@ -105,27 +104,6 @@
       <a href="/configuration/">Configuration</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/configuration/global_settings/" class="dd-item">
-        <div>
-          <a href="/configuration/global_settings/">
-            Global Settings
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/configuration/grid_layout/" class="dd-item">
-        <div>
-          <a href="/configuration/grid_layout/">
-            Grid Layout
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/configuration/generate-module/" class="dd-item">
-        <div>
-          <a href="/configuration/generate-module/">
-            Creating New Modules
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
     <li data-nav-id="/blog/" class="dd-item haschildren
@@ -248,11 +226,10 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-    <li data-nav-id="/modules/cryptocurrencies/" class="dd-item parent active haschildren
+    <li data-nav-id="/modules/cryptocurrencies/" class="dd-item haschildren
         ">
       <div>
-      <a href="/modules/cryptocurrencies/">Crypto Currencies</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/cryptocurrencies/">Crypto Currencies</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/modules/cryptocurrencies/bittrex/" class="dd-item">
@@ -285,7 +262,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/devto/" class="dd-item">
+      <li data-nav-id="/modules/devto/" class="dd-item active">
         <div>
           <a href="/modules/devto/">
             DEV (dev.to)
@@ -635,15 +612,11 @@
       <option value="/modules/circleci/" >- CircleCI</option>
       <option value="/modules/clocks/" >- Clocks</option>
       <option value="/modules/cmdrunner/" >- CmdRunner</option>
-    <option value="/modules/cryptocurrencies/"  selected>
+    <option value="/modules/cryptocurrencies/" >
   - 
-   Crypto Currencies</option> 
-      <option value="/modules/cryptocurrencies/bittrex/" >-- Bittrex</option>
-      <option value="/modules/cryptocurrencies/blockfolio/" >-- Blockfolio</option>
-      <option value="/modules/cryptocurrencies/cryptolive/" >-- CryptoLive</option>
-  
+   Crypto Currencies</option>
       <option value="/modules/datadog/" >- Datadog</option>
-      <option value="/modules/devto/" >- DEV (dev.to)</option>
+      <option value="/modules/devto/"  selected>- DEV (dev.to)</option>
       <option value="/modules/digitalclock/" >- Digital Clock</option>
       <option value="/modules/docker/" >- Docker</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
@@ -709,21 +682,133 @@
       </div>
     
 
-    <h1>Crypto Currencies</h1>
+    <h1>DEV (dev.to)</h1>
   
 
   
+    
 
-<p>For all modules cryptocurrency-related.</p>
+<p><img class="screenshot" src="/imgs/modules/devto.png" width="100" height="100" alt="dev.to logo"/></p>
 
+<p>Displays stories from The Practical DEV <a href="https://dev.to">dev.to</a>.</p>
 
+<h2 id="configuration">Configuration</h2>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">devto<span class="p">:</span><span class="w">
+</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>numberOfArticles<span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">  </span>position<span class="p">:</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span>contentTag<span class="p">:</span><span class="w"> </span><span class="s2">&#34;showdev&#34;</span><span class="w"> 
+</span><span class="w">  </span>contentUsername<span class="p">:</span><span class="w"> </span><span class="s2">&#34;victoravelar&#34;</span><span class="w">
+</span><span class="w">  </span>contentState<span class="p">:</span><span class="w"> </span><span class="s2">&#34;rising&#34;</span></code></pre></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td><code>border</code></td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>focusChar</code></td>
+    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td><code>numberOfArticles</code></td>
+    <td><em>Optional</em> Defines number of articles to be displayed. Default: 10.</td>
+    <td>Any positive integer &lt; 20</td>
+</tr>
+  <tr>
+    <td><code>contentTag</code></td>
+    <td><em>Optional</em> List articles from a specific tag. Default: empty</td>
+    <td>Visit <a href="https://dev.to/tags">https://dev.to/tags</a> for a list of valid values</td>
+</tr>
+  <tr>
+    <td><code>contentUsername</code></td>
+    <td><em>Optional</em> List articles from a specific user. Default: empty</td>
+    <td>Try your favorite username or victoravelar</td>
+</tr>
+  <tr>
+    <td><code>contentState</code></td>
+    <td><em>Optional</em> Alters the feed output. Default: empty</td>
+    <td><code>rising</code>, <code>fresh</code>, <code>ben</code></td>
+</tr>
+    </tbody>
+</table>
+
+<h2 id="keyboard-controls">Keyboard Controls</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <p><tr>
+    <td><code>/</code></td>
+    <td>Open/close the widget&rsquo;s help window</td>
+</tr>
+  <tr>
+    <td><code>[return]</code></td>
+    <td>Open the selected story in the browser</td>
+</tr>
+  <tr>
+    <td><code>[esc]</code></td>
+    <td>Cancel selection</td>
+</tr></p>
+
+<p><tr>
+    <td colspan="2"></td>
+</tr></p>
+
+<p><tr>
+    <td><code>↓</code></td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td><code>↑</code></td>
+    <td>Select the previous item in the list</td>
+</tr></p>
+
+    </tbody>
+</table>
+
+<h2 id="source-code">Source Code</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/devto/</code></pre></div>
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/zendesk/" title="Zendesk"> <i class="fa fa-chevron-left"></i><label>Zendesk</label></a>
-    <a class="nav nav-next" href="/modules/cryptocurrencies/bittrex/" title="Bittrex" style="margin-right: 0px;"><label>Bittrex</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/weather_services/weather/" title="Weather"> <i class="fa fa-chevron-left"></i><label>Weather</label></a>
+    <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypto Currencies" style="margin-right: 0px;"><label>Crypto Currencies</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>
