@@ -12,6 +12,7 @@ alwaysopen: false
   * [Example Configuration Files](#example-configuration-files)
   * [Custom Configuration Files](#custom-configuration-files)
 * [Global Settings](/configuration/global_settings)
+* [Common Settings](/configuration/common_settings)
 * [Grid Layout](/configuration/grid_layout)
 
 ## Configuration Files

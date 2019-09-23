@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.57.2" />
-<title>Status Pages :: WTF - the terminal dashboard</title>
+<title>Common Settings :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/cmdrunner/statuspages/">
+<body data-url="/configuration/common_settings/">
   
   <header>
   <div class="logo">
@@ -98,10 +98,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/configuration/" class="dd-item haschildren
+    <li data-nav-id="/configuration/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/configuration/">Configuration</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/configuration/">Configuration</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/configuration/global_settings/" class="dd-item">
@@ -111,7 +112,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/configuration/common_settings/" class="dd-item">
+      <li data-nav-id="/configuration/common_settings/" class="dd-item active">
         <div>
           <a href="/configuration/common_settings/">
             Common Settings
@@ -219,7 +220,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item parent alwaysopen haschildren
+    <li data-nav-id="/modules/" class="dd-item alwaysopen haschildren
         ">
       <div>
       <a href="/modules/">Modules</a>
@@ -260,6 +261,27 @@
       <a href="/modules/cryptocurrencies/">Crypto Currencies</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/modules/cryptocurrencies/bittrex/" class="dd-item">
+        <div>
+          <a href="/modules/cryptocurrencies/bittrex/">
+            Bittrex
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/cryptocurrencies/blockfolio/" class="dd-item">
+        <div>
+          <a href="/modules/cryptocurrencies/blockfolio/">
+            Blockfolio
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/cryptocurrencies/cryptolive/" class="dd-item">
+        <div>
+          <a href="/modules/cryptocurrencies/cryptolive/">
+            CryptoLive
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
         </ul>
     </li>
       <li data-nav-id="/modules/datadog/" class="dd-item">
@@ -610,7 +632,12 @@
       <option value="/getting_started/glossary/" >- Glossary</option>
   
     <option value="/configuration/" >
-   Configuration</option>
+   Configuration</option> 
+      <option value="/configuration/global_settings/" >- Global Settings</option>
+      <option value="/configuration/common_settings/"  selected>- Common Settings</option>
+      <option value="/configuration/grid_layout/" >- Grid Layout</option>
+      <option value="/configuration/generate-module/" >- Creating New Modules</option>
+  
     <option value="/blog/" >
    WTF Blog</option>
     <option value="/modules/" >
@@ -689,42 +716,60 @@
       </div>
     
 
-    <h1>Status Pages</h1>
+    <h1>Common Settings</h1>
   
 
   
-    <p>Various services provide status apis which are accessible. For example, the
-slack status api at <code>https://status.slack.com/api/v2.0.0/current</code></p>
+    <p>The following settings are common to all modules. Common settings have logical defaults and are all optional. An explicitly-defined common setting will over-ride a module&rsquo;s internal default setting value.</p>
 
-<p>This can be accomplished with <a href="https://stedolan.github.io/jq/">jq</a> and the
-cmdrunner module.</p>
-
-<p>First, create a shell script:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/sh
-</span><span class="cp"></span>
-curl -s https://status.slack.com/api/v2.0.0/current <span class="p">|</span> <span class="se">\
-</span><span class="se"></span>  jq -r <span class="s1">&#39;&#34;Status: &#34; + (if (.status == &#34;active&#34;) then &#34;Active Incident&#34; else &#34;Ok&#34; end),&#34;Last Updated: &#34; + .date_updated,if (.active_incidents[] | length) &gt; 0 then &#34;Active Incidents\n&#34; + .active_incidents[] .title else &#34;&#34; end&#39;</span></code></pre></div>
-<p>Second, the following wtfutil config:</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">slack_status<span class="p">:</span><span class="w">
-</span><span class="w">  </span>cmd<span class="p">:</span><span class="w"> </span><span class="s2">&#34;slack_status_check.sh&#34;</span><span class="w">
+<p>An example with all common settings explicitly configured.</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">feedreader<span class="p">:</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>type<span class="p">:</span><span class="w"> </span><span class="s2">&#34;cmdrunner&#34;</span><span class="w">
-</span><span class="w">  </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Slack Status&#34;</span><span class="w">
+</span><span class="w">  </span>feeds<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>https<span class="p">:</span>//news.ycombinator.com/rss<span class="w">
+</span><span class="w">  </span>feedLimit<span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">  </span>focusable<span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">30</span></code></pre></div>
-<p><img class="screenshot" src="/imgs/modules/cmdrunner/slackstatus.png" alt="status screenshot" /></p>
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Hacker News&#34;</span><span class="w">
+</span><span class="w">  </span>updateInterval<span class="p">:</span><span class="w"> </span><span class="m">14400</span></code></pre></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td><code>enabled</code></td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>focusable</code></td>
+    <td><em>Optional</em> Whether or not this module accepts keyboard focus. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>title</code></td>
+    <td><em>Optional</em> The title to display in the widget&rsquo;s onscreen box.</td>
+    <td></td>
+</tr>
+    </tbody>
+</table>
 
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/weather_services/weather/" title="Weather"> <i class="fa fa-chevron-left"></i><label>Weather</label></a>
-    <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypto Currencies" style="margin-right: 0px;"><label>Crypto Currencies</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/configuration/global_settings/" title="Global Settings"> <i class="fa fa-chevron-left"></i><label>Global Settings</label></a>
+    <a class="nav nav-next" href="/configuration/grid_layout/" title="Grid Layout" style="margin-right: 0px;"><label>Grid Layout</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>

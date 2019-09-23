@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>https://wtfutil.com/configuration/common_settings/</loc>
+    <lastmod>2019-09-22T18:20:35-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wtfutil.com/modules/cmdrunner/brew_outdated/</loc>
     <lastmod>2019-08-03T12:39:10-08:00</lastmod>
   </url>
