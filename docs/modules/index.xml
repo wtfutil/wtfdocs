@@ -415,7 +415,7 @@ Configuration transmission:enabled:truehost:&amp;#34;192.168.1.5&amp;#34;passwor
       <guid>https://wtfutil.com/modules/travisci/</guid>
       <description>Displays build information for your Travis CI account.
 Configuration This module pulls information from api.travis-ci.com (when pro: true) or api.travis-ci.org (when pro: false)
-travisci:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:truecompact:truelimit:8sort_by:&amp;#34;id:desc&amp;#34;position:top:4left:1height:1width:2pro:falserefreshInterval:900   Name Description Value     apiKey Your TravisCI API token.  Your API key or leave it empty to use the WTF_TRAVIS_API_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+travisci:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:truecompact:truelimit:8sort_by:&amp;#34;id:desc&amp;#34;position:top:4left:1height:1width:2pro:falserefreshInterval:900   Name Description Value     apiKey Your TravisCI API token.  Your API key or leave it empty to use the WTF_TRAVIS_API_TOKEN environment variable.    baseURL Optional Your TravisCI Enterprise API URL. A valid URL. Can also be set via the WTF_TRAVIS_BASE_URL environment variable.</description>
     </item>
     
     <item>
