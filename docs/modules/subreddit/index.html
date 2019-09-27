@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.58.3" />
-<title>Have I Been Pwned (HIBP) :: WTF - the terminal dashboard</title>
+<title>Subreddit :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/hibp/">
+<body data-url="/modules/subreddit/">
   
   <header>
   <div class="logo">
@@ -389,7 +389,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/hibp/" class="dd-item active">
+      <li data-nav-id="/modules/hibp/" class="dd-item">
         <div>
           <a href="/modules/hibp/">
             Have I Been Pwned (HIBP)
@@ -516,7 +516,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/subreddit/" class="dd-item">
+      <li data-nav-id="/modules/subreddit/" class="dd-item active">
         <div>
           <a href="/modules/subreddit/">
             Subreddit
@@ -664,7 +664,7 @@
   - 
    Google Apps</option>
       <option value="/modules/hackernews/" >- Hacker News</option>
-      <option value="/modules/hibp/"  selected>- Have I Been Pwned (HIBP)</option>
+      <option value="/modules/hibp/" >- Have I Been Pwned (HIBP)</option>
     <option value="/modules/ipaddress/" >
   - 
    IP Addresses</option>
@@ -682,7 +682,7 @@
       <option value="/modules/rollbar/" >- Rollbar</option>
       <option value="/modules/security/" >- Security</option>
       <option value="/modules/spotify/" >- Spotify</option>
-      <option value="/modules/subreddit/" >- Subreddit</option>
+      <option value="/modules/subreddit/"  selected>- Subreddit</option>
       <option value="/modules/textfile/" >- Textfile</option>
       <option value="/modules/todo/" >- Todo</option>
       <option value="/modules/todoist/" >- Todoist</option>
@@ -718,35 +718,28 @@
       </div>
     
 
-    <h1>Have I Been Pwned (HIBP)</h1>
+    <h1>Subreddit</h1>
   
 
   
     
 
-<p><img class="screenshot" src="/imgs/modules/hibp.png" width="320" height="79" alt="hibp screenshot" /></p>
+<p><img class="screenshot" src="/imgs/modules/subreddit.png" width="320" height="76" alt="subreddit module screenshot" /></p>
 
-<p>Indicates whether or not your listed email addresses appear in the <a href="https://haveibeenpwned.com">Have I Been Pwned</a> breach database.</p>
-
-<p><strong>Note:</strong> As of v0.19.0, WTF requires you use a Have I Been Pwned API key to conenct to the service. See details below.</p>
+<p>Displays stories from a specific subreddit.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">hibp<span class="p">:</span><span class="w">
-</span><span class="w">  </span>accounts<span class="p">:</span><span class="w">
-</span><span class="w">  </span>-<span class="w"> </span>test@example.com<span class="w">
-</span><span class="w">  </span>-<span class="w"> </span>pwned@gmail.com<span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;ef9cb8d7-0941-4633-b056-3bobcatd3c78&#34;</span><span class="w">
-</span><span class="w">  </span>colors<span class="p">:</span><span class="w">
-</span><span class="w">    </span>ok<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
-</span><span class="w">    </span>pwned<span class="p">:</span><span class="w"> </span><span class="s2">&#34;red&#34;</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">subreddit<span class="p">:</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>numberOfPosts<span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
 </span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
 </span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">43200</span><span class="w">
-</span><span class="w">  </span>since<span class="p">:</span><span class="w"> </span><span class="s2">&#34;2019-06-22&#34;</span></code></pre></div>
+</span><span class="w">  </span>sortOrder<span class="p">:</span><span class="w"> </span>top<span class="w">
+</span><span class="w">  </span>topTimePeriod<span class="p">:</span><span class="w"> </span>month<span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span></code></pre></div>
 <table class="table">
     <thead>
         <tr>
@@ -757,23 +750,6 @@
     </thead>
     <tbody>
         <tr>
-    <td><code>accounts</code></td>
-    <td>A list of the accounts to check the HIBP database for.</td>
-    <td></td>
-</tr>
-  <tr>
-    <td><code>apiKey</code></td>
-    <td>Your <a href="https://haveibeenpwned.com/API/Key">Have I Been Pwned API</a> token.</td>
-    <td>
-        Your API key <strong>or</strong> leave it empty to use the <code>WTF_HIBP_TOKEN</code> environment variable.
-    </td>
-</tr>
-  <tr>
-    <td><code>colors</code></td>
-    <td><em>Optional</em> The colors to display for accounts that have not been pwned and ones that have. Defaults to <code>white</code> for unpwned accounts, <code>red</code> for pwned accounts.</td>
-    <td></td>
-</tr>
-  <tr>
     <td><code>border</code></td>
     <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
     <td>true, false</td>
@@ -782,6 +758,21 @@
     <td><code>enabled</code></td>
     <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
     <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>focusChar</code></td>
+    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td><code>subreddit</code></td>
+    <td><em>Required</em> The subreddit to display links from.</td>
+    <td>Any subreddit</td>
+</tr>
+  <tr>
+    <td><code>numberOfPosts</code></td>
+    <td><em>Optional</em> Defines number of stories to be displayed. Default: 10. Note that the module only makes one request, so the maximum is 25.</td>
+    <td>Any positive integer equal to or less than 25</td>
 </tr>
   <tr>
     <td><code>position</code></td>
@@ -794,15 +785,80 @@
     <td>Any positive integer.</td>
 </tr>
   <tr>
-    <td><code>since</code></td>
-    <td><em>Optional</em> Only check for breaches after this date. Set this if you&#39;ve been breached in the past, have taken steps to mitigate that (changing passwords, cancelling accounts, etc.) and only want to know about future breaches.</td>
-    <td>A date string in the format &#39;yyyy-mm-dd&#39;, ie: &#39;2019-06-22&#39;</td>
+    <td><code>sortOrder</code></td>
+    <td><em>Optional</em> Defines the order to sort the posts in the subreddit. Default: hot.</td>
+    <td><code>new</code>, <code>top</code>, <code>hot</code></td>
+</tr>
+  <tr>
+    <td><code>topTimePeriod</code></td>
+    <td><em>Optional</em> Defines the time period to choose top posts from. Default: all</td>
+    <td><code>hour</code>, <code>day</code>, <code>week</code>, <code>month</code>, <code>year</code>, <code>all</code></td>
 </tr>
     </tbody>
 </table>
 
+<h2 id="keyboard-controls">Keyboard Controls</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <p><tr>
+    <td><code>/</code></td>
+    <td>Open/close the widget&rsquo;s help window</td>
+</tr>
+  <tr>
+    <td><code>[return]</code></td>
+    <td>Open the selected link in the browser</td>
+</tr></p>
+
+<p><tr>
+    <td colspan="2"></td>
+</tr></p>
+
+<p><tr>
+    <td><code>c</code></td>
+    <td>Open the selected link&#39;s Reddit comments in the browser</td>
+</tr>
+  <tr>
+    <td><code>j</code></td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td><code>k</code></td>
+    <td>Select the previous item in the list</td>
+</tr>
+  <tr>
+    <td><code>o</code></td>
+    <td>Open the selected link in the browser</td>
+</tr>
+  <tr>
+    <td><code>r</code></td>
+    <td>Refresh the data</td>
+</tr></p>
+
+<p><tr>
+    <td colspan="2"></td>
+</tr></p>
+
+<p><tr>
+    <td><code>↓</code></td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td><code>↑</code></td>
+    <td>Select the previous item in the list</td>
+</tr></p>
+
+    </tbody>
+</table>
+
 <h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/hibp/</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/subreddit/</code></pre></div>
 
 
   

@@ -570,6 +570,16 @@ Configuration spotify:enabled:trueposition:top:1left:2height:1width:1refreshInte
     </item>
     
     <item>
+      <title>Subreddit</title>
+      <link>https://wtfutil.com/modules/subreddit/</link>
+      <pubDate>Fri, 27 Sep 2019 19:48:42 +0100</pubDate>
+      
+      <guid>https://wtfutil.com/modules/subreddit/</guid>
+      <description>Displays stories from a specific subreddit.
+Configuration subreddit:enabled:truenumberOfPosts:10position:top:4left:1height:1width:2sortOrder:toptopTimePeriod:monthrefreshInterval:900   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
+    </item>
+    
+    <item>
       <title>Textfile</title>
       <link>https://wtfutil.com/modules/textfile/</link>
       <pubDate>Wed, 09 May 2018 11:13:11 -0700</pubDate>
