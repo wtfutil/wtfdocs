@@ -21,6 +21,7 @@ subreddit:
     height: 1
     width: 2
   sortOrder: top
+  subreddit: "news"
   topTimePeriod: month
   refreshInterval: 900
 ```
@@ -28,11 +29,11 @@ subreddit:
   {{< attributes/border >}}
   {{< attributes/enabled >}}
   {{< attributes/focusChar >}}
-  {{< attributes/custom name="subreddit" desc="_Required_ The subreddit to display links from." value="Any subreddit" >}}
   {{< attributes/custom name="numberOfPosts" desc="_Optional_ Defines number of stories to be displayed. Default: 10. Note that the module only makes one request, so the maximum is 25." value="Any positive integer equal to or less than 25" >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
   {{< attributes/custom name="sortOrder" desc="_Optional_ Defines the order to sort the posts in the subreddit. Default: hot." value="`new`, `top`, `hot`" >}}
+  {{< attributes/custom name="subreddit" desc="_Required_ The subreddit to display links from." value="Any subreddit" >}}
   {{< attributes/custom name="topTimePeriod" desc="_Optional_ Defines the time period to choose top posts from. Default: all" value="`hour`, `day`, `week`, `month`, `year`, `all`" >}}
 {{% /attributes %}}
 

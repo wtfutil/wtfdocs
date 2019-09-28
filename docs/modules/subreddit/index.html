@@ -738,6 +738,7 @@
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
 </span><span class="w">  </span>sortOrder<span class="p">:</span><span class="w"> </span>top<span class="w">
+</span><span class="w">  </span>subreddit<span class="p">:</span><span class="w"> </span><span class="s2">&#34;news&#34;</span><span class="w">
 </span><span class="w">  </span>topTimePeriod<span class="p">:</span><span class="w"> </span>month<span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span></code></pre></div>
 <table class="table">
@@ -765,11 +766,6 @@
     <td>0..9</td>
 </tr>
   <tr>
-    <td><code>subreddit</code></td>
-    <td><em>Required</em> The subreddit to display links from.</td>
-    <td>Any subreddit</td>
-</tr>
-  <tr>
     <td><code>numberOfPosts</code></td>
     <td><em>Optional</em> Defines number of stories to be displayed. Default: 10. Note that the module only makes one request, so the maximum is 25.</td>
     <td>Any positive integer equal to or less than 25</td>
@@ -788,6 +784,11 @@
     <td><code>sortOrder</code></td>
     <td><em>Optional</em> Defines the order to sort the posts in the subreddit. Default: hot.</td>
     <td><code>new</code>, <code>top</code>, <code>hot</code></td>
+</tr>
+  <tr>
+    <td><code>subreddit</code></td>
+    <td><em>Required</em> The subreddit to display links from.</td>
+    <td>Any subreddit</td>
 </tr>
   <tr>
     <td><code>topTimePeriod</code></td>

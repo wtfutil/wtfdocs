@@ -576,7 +576,7 @@ Configuration spotify:enabled:trueposition:top:1left:2height:1width:1refreshInte
       
       <guid>https://wtfutil.com/modules/subreddit/</guid>
       <description>Displays stories from a specific subreddit.
-Configuration subreddit:enabled:truenumberOfPosts:10position:top:4left:1height:1width:2sortOrder:toptopTimePeriod:monthrefreshInterval:900   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
+Configuration subreddit:enabled:truenumberOfPosts:10position:top:4left:1height:1width:2sortOrder:topsubreddit:&amp;#34;news&amp;#34;topTimePeriod:monthrefreshInterval:900   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
     </item>
     
     <item>
