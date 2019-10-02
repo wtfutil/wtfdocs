@@ -32,7 +32,8 @@ gcal:
   displayResponseStatus: true
   email: "chriscummer@me.com"
   enabled: true
-  eventCount: 12
+  eventCount: 15
+  hourFormat: "12"
   multiCalendar: true
   position:
     top: 0
@@ -66,6 +67,7 @@ gcal:
   {{< attributes/enabled >}}
   {{< attributes/custom name="eventCount" desc="The number of calendar events to display." value="Any positive integer">}}
   {{< attributes/focusChar >}}
+  {{< attributes/hourFormat >}}
   {{< attributes/custom name="multiCalendar" desc="_Optional_ Whether or not to display your primary calendar or all calendars you have access to. Default: false." value="true, false">}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}

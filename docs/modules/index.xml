@@ -98,7 +98,7 @@ Configuration devto:enabled:truenumberOfArticles:10position:top:1left:1height:1w
       
       <guid>https://wtfutil.com/modules/digitalclock/</guid>
       <description>Displays a configurable digital clock.
-Configuration digitalclock:color:orangeenabled:truefont:bigfonthourFormat:12position:top:0left:1height:1width:1refreshInterval:1title:&amp;#34;big clock&amp;#34;type:&amp;#34;digitalclock&amp;#34;   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   color The color to display the clock time in. Any X11 color name or long-form hex value (i.e.: #ff0000).   font The font to display the clock time in. bigfont or digitalfont   hourFormat Whether to display the time in 12-hour or 24-hour format.</description>
+Configuration digitalclock:color:orangeenabled:truefont:bigfonthourFormat:12position:top:0left:1height:1width:1refreshInterval:1title:&amp;#34;big clock&amp;#34;type:&amp;#34;digitalclock&amp;#34;   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   color The color to display the clock time in. Any X11 color name or long-form hex value (i.e.: #ff0000).   font The font to display the clock time in. bigfont or digitalfont   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>
