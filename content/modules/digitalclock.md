@@ -31,8 +31,8 @@ digitalclock:
   {{< attributes/border >}}
   {{< attributes/colors/custom name="color" desc="The color to display the clock time in." >}}
   {{< attributes/custom name="font" desc="The font to display the clock time in." value="`bigfont` or `digitalfont`" >}}
-  {{< attributes/custom name="hourFormat" desc="Whether to display the time in 12-hour or 24-hour format." value="`12` or `24`" >}}
   {{< attributes/enabled >}}
+  {{< attributes/hourFormat >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
