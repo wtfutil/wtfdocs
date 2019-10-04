@@ -566,7 +566,7 @@ Wifi Network The name of the current network Whether or not the network uses enc
       
       <guid>https://wtfutil.com/modules/spotify/</guid>
       <description>Control the Spotify client.
-Configuration spotify:enabled:trueposition:top:1left:2height:1width:1refreshInterval:0   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module&amp;rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data.</description>
+Configuration spotify:enabled:truecolors:label:&amp;#34;green&amp;#34;text:&amp;#34;white&amp;#34;position:top:1left:2height:1width:1refreshInterval:0   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.label Optional The color for labels. Default: green. Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.text Optional The color for text. Default: white. Any X11 color name or long-form hex value (i.</description>
     </item>
     
     <item>
