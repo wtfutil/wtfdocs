@@ -12,6 +12,9 @@ Control the Spotify client.
 ```yaml
 spotify:
   enabled: true
+  colors:
+    label: "green"
+    text: "white"
   position:
     top: 1
     left: 2
@@ -22,6 +25,8 @@ spotify:
 
 {{% attributes %}}
   {{< attributes/border >}}
+  {{< attributes/colors/custom name="colors.label" desc="_Optional_ The color for labels. Default: green." >}}
+  {{< attributes/colors/custom name="colors.text" desc="_Optional_ The color for text. Default: white." >}}
   {{< attributes/enabled >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
