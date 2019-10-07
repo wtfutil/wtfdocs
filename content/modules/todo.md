@@ -32,11 +32,11 @@ todo:
 {{% attributes %}}
   {{< attributes/border >}}
 
-  <row>
+  <tr>
     <td>`colors.checked`</td>
     <td>The foreground color for checked rows.</td>
     <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
-  </row>
+  </tr>
 
   {{< attributes/colors/highlight >}}
   {{< attributes/custom name="checkedIcon" desc="_Optional_ The icon used to denote a 'checked' todo item." value="Any displayable unicode character." >}}
