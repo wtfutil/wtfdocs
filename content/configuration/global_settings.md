@@ -45,49 +45,37 @@ wtf:
 
 ### Attributes
 
-`colors.background` <br />
-The color to draw the background of the app in. Use this to match your
-terminal colors. May be over-written by individual module
-configurations. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
+{{% attributes %}}
+  {{< attributes/colors/background >}}
 
-`colors.border.focusable` <br />
-The color in which to draw the border of widgets that can accept
-keyboard focus. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
+  <tr>
+    <td>`colors.border.focusable`</td>
+    <td>The color in which to draw the border of widgets that can accept keyboard focus.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
+  </tr>
+  <tr>
+    <td>`colors.border.focused`</td>
+    <td>The color in which to draw the border of the widget that currently has keyboard focus.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
+  </tr>
+  <tr>
+    <td>`colors.border.normal`</td>
+    <td>The color in which to draw the borders of the widgets that cannot accept focus.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
+  </tr>
 
-`colors.border.focused` <br />
-The color in which to draw the border of the widget that currently has
-keyboard focus. <br />
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
+  <tr>
+    <td>`grid.columns`</td>
+    <td>An array that defines the widths of all the columns.</td>
+    <td>See <a href="https://github.com/rivo/tview/wiki/Grid">tview's Grid</a> for details</td>
+  </tr>
+  <tr>
+    <td>`grid.rows`</td>
+    <td>An array that defines the heights of all the rows.</td>
+    <td>See <a href="https://github.com/rivo/tview/wiki/Grid">tview's Grid</a> for details</td>
+  </tr>
 
-`colors.border.normal` <br />
-The color in which to draw the borders of the widgets that cannot accept
-focus. <br/>
-Values: Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11
-color name</a>.
-
-`grid.columns` <br />
-An array that defines the widths of all the columns. <br />
-Values: See <a href="https://github.com/rivo/tview/wiki/Grid">tview's
-Grid</a> for details.
-
-`grid.rows` <br />
-An array that defines the heights of all the rows. <br />
-Values: See <a href="https://github.com/rivo/tview/wiki/Grid">tview's
-Grid</a> for details.
-
-`openFileUtil` <br />
-Which local utility to use to open a file or URL.
-
-`term` <br />
-_Optional_. <br />
-Sets a custom value for the terminal type this app runs in. Leave this entry out of the config if you simply want to use your terminal's
-default setting. <br />
-**Note:** If an invalid value is provided for this setting, the app will
- crash with a `"terminal entry not found"` error. <br />
-Values: Any valid terminal type (ie: vt100, xterm, xterm-256color, ansi,
-etc.).
+  {{< attributes/custom name="navigation.shortcuts" desc="Whether or not to display the numeric navigation shortcuts in widget titles." value="`true` or `false`." >}}
+  {{< attributes/custom name="openFileUtil" desc="Which local utility to use to open a file or URL." value="" >}}
+  {{< attributes/custom name="term" desc="Sets a custom value for the terminal type this app runs in. Leave this entry out of the config if you simply want to use your terminal's default setting. **Note:** If an invalid value is provided for this setting, the app will crash with a `terminal entry not found` error." value="Any valid terminal type (ie: vt100, xterm, xterm-256color, ansi, etc.)." >}}
+{{% /attributes %}}
