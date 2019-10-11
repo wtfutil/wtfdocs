@@ -37,10 +37,10 @@ buildkite:
   {{< attributes/apikey name="Buildkite" link="https://buildkite.com/docs/apis/rest-api#authentication" envvar="WTF_BUILDKITE_TOKEN" >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
-  {{< attributes/position >}}
-  {{< attributes/refreshInterval >}}
   {{< attributes/custom name="organizationSlug" desc="The slug of your organization" value="`org.slug`" >}}
   {{< attributes/custom name="pipelines" desc="A hash with `pipeline.slug` as keys, mapping to a list of branches" value="" >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
 {{% sourcePath module="buildkite" %}}
