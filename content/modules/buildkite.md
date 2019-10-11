@@ -2,7 +2,7 @@
 title: "Buildkite"
 date: 2019-10-10T11:07:37-07:00
 draft: false
-weight: 10
+weight: 15
 ---
 
 Connects to the [Buildkite](https://buildkite.com) REST API and displays status of branches for configured Pipelines.
