@@ -9,6 +9,9 @@ weight: 10
 
 Displays weather information as ASCII art from [Wttr.in](http://wttr.in).
 
+Consider using wego directly, to avoid issues with rate limiting.
+See [wego](../../cmdrunner/wego).
+
 ## Configuration
 
 ```yaml
