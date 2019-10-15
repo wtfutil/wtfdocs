@@ -37,5 +37,6 @@ cmdrunner:
 * [brew outdated](/modules/cmdrunner/brew_outdated)
 * [iStats](/modules/cmdrunner/istats)
 * [Status Pages](/modules/cmdrunner/statuspages)
+* [wego](/modules/cmdrunner/wego)
 
 {{% sourcePath module="cmdrunner" %}}
