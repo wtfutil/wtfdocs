@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.57.2" />
-<title>Jenkins :: WTF - the terminal dashboard</title>
+<title>wego :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/jenkins/">
+<body data-url="/modules/cmdrunner/wego/">
   
   <header>
   <div class="logo">
@@ -416,70 +416,6 @@
       <a href="/modules/ipaddress/">IP Addresses</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-    <li data-nav-id="/modules/cryptocurrencies/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/modules/cryptocurrencies/">Crypto Currencies</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/modules/cryptocurrencies/bittrex/" class="dd-item">
-        <div>
-          <a href="/modules/cryptocurrencies/bittrex/">
-            Bittrex
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/cryptocurrencies/blockfolio/" class="dd-item">
-        <div>
-          <a href="/modules/cryptocurrencies/blockfolio/">
-            Blockfolio
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/cryptocurrencies/cryptolive/" class="dd-item">
-        <div>
-          <a href="/modules/cryptocurrencies/cryptolive/">
-            CryptoLive
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/modules/google/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/modules/google/">Google Apps</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/modules/google/gcal/" class="dd-item">
-        <div>
-          <a href="/modules/google/gcal/">
-            Google Calendar
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/google/ganalytics/" class="dd-item">
-        <div>
-          <a href="/modules/google/ganalytics/">
-            Google Analytics
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/google/gspreadsheet/" class="dd-item">
-        <div>
-          <a href="/modules/google/gspreadsheet/">
-            Google Spreadsheets
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
-    </li>
-    <li data-nav-id="/modules/ipaddress/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/modules/ipaddress/">IP Addresses</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-        <ul>
       <li data-nav-id="/modules/ipaddress/ipapi/" class="dd-item">
         <div>
           <a href="/modules/ipaddress/ipapi/">
@@ -496,38 +432,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/weather_services/" class="dd-item haschildren
-        ">
-      <div>
-      <a href="/modules/weather_services/">Weather Services</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
-      </div>
-        <ul>
-      <li data-nav-id="/modules/weather_services/arpansagovau/" class="dd-item">
-        <div>
-          <a href="/modules/weather_services/arpansagovau/">
-            ARPANSA
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/weather_services/prettyweather/" class="dd-item">
-        <div>
-          <a href="/modules/weather_services/prettyweather/">
-            Pretty Weather
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/weather_services/weather/" class="dd-item">
-        <div>
-          <a href="/modules/weather_services/weather/">
-            Weather
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-        </ul>
-    </li>
-        </ul>
-    </li>
-      <li data-nav-id="/modules/jenkins/" class="dd-item active">
+      <li data-nav-id="/modules/jenkins/" class="dd-item">
         <div>
           <a href="/modules/jenkins/">
             Jenkins
@@ -778,7 +683,7 @@
     <option value="/modules/ipaddress/" >
   - 
    IP Addresses</option>
-      <option value="/modules/jenkins/"  selected>- Jenkins</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
       <option value="/modules/jira/" >- Jira</option>
       <option value="/modules/kubernetes/" >- Kubernetes</option>
       <option value="/modules/logger/" >- Logger</option>
@@ -828,160 +733,35 @@
       </div>
     
 
-    <h1>Jenkins</h1>
+    <h1>wego</h1>
   
 
   
     
 
-<p><img class="screenshot" src="/imgs/modules/jenkins.png" alt="jenkins screenshot" width="320" height="68" /></p>
+<p><a href="https://github.com/schachmat/wego">wego</a> is a command line tool to view
+weather, from a variety of weather services</p>
 
-<p>Displays jenkins status of given builds in a project or view</p>
+<p><img class="screenshot" src="/imgs/modules/cmdrunner/wego.png" alt="wego screenshot" /></p>
 
-<h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">jenkins<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
+<h2 id="config-example">Config Example</h2>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">weather<span class="p">:</span><span class="w">
+</span><span class="w">  </span>args<span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;0&#34;</span><span class="p">]</span><span class="w">
+</span><span class="w">  </span>cmd<span class="p">:</span><span class="w"> </span><span class="s2">&#34;wego&#34;</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>type<span class="p">:</span><span class="w"> </span><span class="s2">&#34;cmdrunner&#34;</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
-</span><span class="w">  </span>successBallColor<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
-</span><span class="w">  </span>jobNameRegex<span class="p">:</span><span class="w"> </span>^<span class="p">[</span>a-z<span class="p">]</span>+\<span class="p">[[</span><span class="m">0-9</span><span class="p">]</span>+\<span class="p">]</span>$<span class="w">
-</span><span class="w">  </span>url<span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://jenkins.domain.com/jenkins/view_url&#34;</span><span class="w">
-</span><span class="w">  </span>user<span class="p">:</span><span class="w"> </span><span class="s2">&#34;username&#34;</span><span class="w">
-</span><span class="w">  </span>verifyServerCertificate<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Value</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-    <td><code>apiKey</code></td>
-    <td>Your <a href="https://wiki.jenkins.io/display/JENKINS/Remote&#43;access&#43;API">Jenkins API</a> token.</td>
-    <td>
-        Your API key <strong>or</strong> leave it empty to use the <code>WTF_JENKINS_API_KEY</code> environment variable.
-    </td>
-</tr>
-  <tr>
-    <td><code>border</code></td>
-    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>enabled</code></td>
-    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>focusChar</code></td>
-    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
-    <td>0..9</td>
-</tr>
-  <tr>
-    <td><code>jobNameRegex</code></td>
-    <td><em>Optional</em> A regex that filters the jobs shown in the widget. Any jobs matching the regular expression will be shown.</td>
-    <td>A valid regex, e.g. <code>^[a-z]&amp;#43;\[[0-9]&amp;#43;\]$</code></td>
-</tr>
-  <tr>
-    <td><code>position</code></td>
-    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
-    <td></td>
-</tr>
-  <tr>
-    <td><code>refreshInterval</code></td>
-    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
-    <td>Any positive integer.</td>
-</tr>
-  <tr>
-    <td><code>successBallColor</code></td>
-    <td>Changes the default color of successful Jenkins jobs to the color of your choosing.</td>
-    <td>Any valid color name, <code>blue</code>, <code>green</code>, <code>purple</code>, <code>yellow</code>, etc.</td>
-</tr>
-  <tr>
-    <td><code>url</code></td>
-    <td>The url to your Jenkins project or view.</td>
-    <td>A valid URI.</td>
-</tr>
-  <tr>
-    <td><code>user</code></td>
-    <td>Your Jenkins username.</td>
-    <td></td>
-</tr>
-  <tr>
-    <td><code>verifyServerCertificate</code></td>
-    <td>Whether or not to verify the server&rsquo;s certificate chain and hostname.</td>
-    <td>true, false</td>
-</tr>
-    </tbody>
-</table>
-
-<h2 id="keyboard-controls">Keyboard Controls</h2>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Key</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        <p><tr>
-    <td><code>/</code></td>
-    <td>Open/close the widget&rsquo;s help window</td>
-</tr>
-  <tr>
-    <td><code>[return]</code></td>
-    <td>Open the selected job in the browser</td>
-</tr></p>
-
-<p><tr>
-    <td colspan="2"></td>
-</tr></p>
-
-<p><tr>
-    <td><code>j</code></td>
-    <td>Select the next item in the list</td>
-</tr>
-  <tr>
-    <td><code>k</code></td>
-    <td>Select the previous item in the list</td>
-</tr>
-  <tr>
-    <td><code>r</code></td>
-    <td>Refresh the data</td>
-</tr></p>
-
-<p><tr>
-    <td colspan="2"></td>
-</tr></p>
-
-<p><tr>
-    <td><code>↓</code></td>
-    <td>Select the next item in the list</td>
-</tr>
-  <tr>
-    <td><code>↑</code></td>
-    <td>Select the previous item in the list</td>
-</tr></p>
-
-    </tbody>
-</table>
-
-<h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/jenkins/</code></pre></div>
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">100</span></code></pre></div>
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/ipaddress/ipinfo/" title="IPInfo"> <i class="fa fa-chevron-left"></i><label>IPInfo</label></a>
+<a class="nav nav-prev" href="/modules/weather_services/weather/" title="Weather"> <i class="fa fa-chevron-left"></i><label>Weather</label></a>
     <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypto Currencies" style="margin-right: 0px;"><label>Crypto Currencies</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 

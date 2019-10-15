@@ -30,9 +30,9 @@ Interpreting the information:
       
       <guid>https://wtfutil.com/modules/weather_services/prettyweather/</guid>
       <description>Displays weather information as ASCII art from Wttr.in.
+Consider using wego directly, to avoid issues with rate limiting. See wego.
 Configuration prettyweather:enabled:truecity:&amp;#34;tehran&amp;#34;position:top:3left:5height:1width:1refreshInterval:300unit:&amp;#34;m&amp;#34;view:0language:&amp;#34;en&amp;#34;   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false 
- city Optional The name of the city to display weather for. Default: Barcelona. The name of any city supported by Wttr.in 
- enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+ city Optional The name of the city to display weather for. Default: Barcelona. The name of any city supported by Wttr.</description>
     </item>
     
     <item>

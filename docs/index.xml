@@ -119,9 +119,9 @@ Configuration ipinfo:colors:name:redvalue:whiteenabled:trueposition:top:1left:2h
       
       <guid>https://wtfutil.com/modules/weather_services/prettyweather/</guid>
       <description>Displays weather information as ASCII art from Wttr.in.
+Consider using wego directly, to avoid issues with rate limiting. See wego.
 Configuration prettyweather:enabled:truecity:&amp;#34;tehran&amp;#34;position:top:3left:5height:1width:1refreshInterval:300unit:&amp;#34;m&amp;#34;view:0language:&amp;#34;en&amp;#34;   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false 
- city Optional The name of the city to display weather for. Default: Barcelona. The name of any city supported by Wttr.in 
- enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+ city Optional The name of the city to display weather for. Default: Barcelona. The name of any city supported by Wttr.</description>
     </item>
     
     <item>
@@ -243,6 +243,16 @@ Prerequisites Before you can generate new modules, you&amp;rsquo;ll need to have
       <guid>https://wtfutil.com/modules/clocks/</guid>
       <description>Displays a configurable list of world clocks, the local time, and date.
 Configuration clocks:colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;white&amp;#34;enabled:truelocations:# From https://en.wikipedia.org/wiki/List_of_tz_database_time_zonesAvignon:&amp;#34;Europe/Paris&amp;#34;Barcelona:&amp;#34;Europe/Madrid&amp;#34;Dubai:&amp;#34;Asia/Dubai&amp;#34;NewYork:&amp;#34;America/New York&amp;#34;Toronto:&amp;#34;America/Toronto&amp;#34;UTC:&amp;#34;Etc/UTC&amp;#34;Vancouver:&amp;#34;America/Vancouver&amp;#34;position:top:4left:0height:1width:1refreshInterval:15# Valid options are: alphabetical, chronologicalsort:&amp;#34;alphabetical&amp;#34;   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.rows.even The foreground color for even-numbered rows. Any X11 color name.   colors.rows.odd The foreground color for odd-numbered rows. Any X11 color name.</description>
+    </item>
+    
+    <item>
+      <title>wego</title>
+      <link>https://wtfutil.com/modules/cmdrunner/wego/</link>
+      <pubDate>Sat, 12 Oct 2019 17:17:10 -0400</pubDate>
+      
+      <guid>https://wtfutil.com/modules/cmdrunner/wego/</guid>
+      <description> wego is a command line tool to view weather, from a variety of weather services
+Config Example weather:args:[&amp;#34;0&amp;#34;]cmd:&amp;#34;wego&amp;#34;enabled:truetype:&amp;#34;cmdrunner&amp;#34;position:top:0left:0height:1width:2refreshInterval:100</description>
     </item>
     
     <item>

@@ -63,6 +63,16 @@ Configuration clocks:colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;wh
     </item>
     
     <item>
+      <title>wego</title>
+      <link>https://wtfutil.com/modules/cmdrunner/wego/</link>
+      <pubDate>Sat, 12 Oct 2019 17:17:10 -0400</pubDate>
+      
+      <guid>https://wtfutil.com/modules/cmdrunner/wego/</guid>
+      <description> wego is a command line tool to view weather, from a variety of weather services
+Config Example weather:args:[&amp;#34;0&amp;#34;]cmd:&amp;#34;wego&amp;#34;enabled:truetype:&amp;#34;cmdrunner&amp;#34;position:top:0left:0height:1width:2refreshInterval:100</description>
+    </item>
+    
+    <item>
       <title>iStats</title>
       <link>https://wtfutil.com/modules/cmdrunner/istats/</link>
       <pubDate>Mon, 01 Jul 2019 17:17:10 -0400</pubDate>
