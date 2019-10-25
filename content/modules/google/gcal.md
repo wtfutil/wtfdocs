@@ -20,6 +20,7 @@ gcal:
   colors:
     title: "red"
     eventTime: "lightblue"
+    description: "yellow"
     highlights:
     - ['1on1|1\/11', 'green']
     - ['apple|google|aws', 'blue']
@@ -50,6 +51,7 @@ gcal:
 {{% attributes %}}
   {{< attributes/border >}}
   {{< attributes/colors/custom name="colors.eventTime" desc="The default color for calendar event time." >}}
+  {{< attributes/colors/custom name="colors.description" desc="The default color for calendar event description." >}}
   {{< attributes/colors/custom name="colors.past" desc="The color for calendar events that have passed." >}}
   {{< attributes/colors/custom name="colors.title" desc="The default colour for calendar event titles." >}}
 
