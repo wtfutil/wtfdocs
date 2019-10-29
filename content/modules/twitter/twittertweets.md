@@ -1,8 +1,8 @@
 ---
-title: "Twitter"
+title: "Twitter Tweets"
 date: 2018-07-31T20:21:37-07:00
 draft: false
-weight: 260
+weight: 50
 ---
 
 Connects to the Twitter API and displays a single user's tweets.
@@ -48,7 +48,7 @@ twitter:
     height: 1
     width: 1
   refreshInterval: 20000
-  screenNames: 
+  screenNames:
   - "golang"
   - "wtfutil"
 ```
@@ -83,8 +83,6 @@ twitter:
 
   {{< keyboard/spacer >}}
 
-  {{< keyboard/arrowBack desc="Show the previous Twitter account" >}} 
+  {{< keyboard/arrowBack desc="Show the previous Twitter account" >}}
   {{< keyboard/arrowFore desc="Show the next Twitter account" >}}
 {{% /keyboard %}}
-
-{{% sourcePath module="twitter" %}}
