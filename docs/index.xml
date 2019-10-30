@@ -266,6 +266,19 @@ Config Example istats:args:[&amp;#34;all&amp;#34;]cmd:&amp;#34;istats&amp;#34;en
     </item>
     
     <item>
+      <title>Twitter Stats</title>
+      <link>https://wtfutil.com/modules/twitter/twitterstats/</link>
+      <pubDate>Tue, 31 Jul 2018 20:21:37 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/twitter/twitterstats/</guid>
+      <description>Connects to the Twitter API and displays statistics about the number of tweets and followers for a set of usernames.
+To make this work, you&amp;rsquo;ll need a couple of things:
+ A Twitter developer account  &amp;hellip; and one of the following:
+a) A Twitter bearer token b) Consumer API keys
+You must have either a bearer token or consumer key + consumer secret provided. To get the consumer API keys, you must first create a Twitter application.</description>
+    </item>
+    
+    <item>
       <title>CmdRunner</title>
       <link>https://wtfutil.com/modules/cmdrunner/</link>
       <pubDate>Thu, 17 May 2018 17:17:10 -0700</pubDate>
@@ -284,6 +297,20 @@ Configuration cmdrunner:args:[&amp;#34;-g&amp;#34;,&amp;#34;batt&amp;#34;]cmd:&a
       <description>Display website visitors information from Google Analytics API
 To make this work, you&amp;rsquo;ll need a google API credential, link it to google analytics and find your website viewID.
  Open the Service accounts page and create a project named wtfutil. Navigation menu &amp;gt; IAM &amp;amp; admin &amp;gt; Service accounts Click add Create Service Account, enter a name (wtfutil) for the service account. The Service account permissions (optional) section that follows is not required.</description>
+    </item>
+    
+    <item>
+      <title>Twitter Tweets</title>
+      <link>https://wtfutil.com/modules/twitter/twittertweets/</link>
+      <pubDate>Tue, 31 Jul 2018 20:21:37 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/twitter/twittertweets/</guid>
+      <description>Connects to the Twitter API and displays a single user&amp;rsquo;s tweets.
+NOTE: This only works for single-application developer accounts for now.
+To make this work, you&amp;rsquo;ll need a couple of things:
+ A Twitter developer account  &amp;hellip; and one of the following:
+a) A Twitter bearer token b) Consumer API keys
+You must have either a bearer token or consumer key + consumer secret provided. To get the consumer API keys, you must first create a Twitter application.</description>
     </item>
     
     <item>
@@ -662,19 +689,6 @@ travisci:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;enabled:trueco
       <description>Displays all Trello cards on specified lists.
 Configuration Single Trello List trello:accessToken:&amp;#34;7b8b14f8743a408a93276d7155dd9ee2&amp;#34;apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;board:Mainenabled:truelist:&amp;#34;Todo&amp;#34;position:height:1left:2top:0width:1refreshInterval:3600username:myname Multiple Trello Lists If you want to monitor multiple Trello lists, use the following configuration (note the difference in list):
 trello:accessToken:&amp;#34;7b8b14f8743a408a93276d7155dd9ee2&amp;#34;apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;board:Mainenabled:truelist:[&amp;#34;Todo&amp;#34;,&amp;#34;Done&amp;#34;]position:height:1left:2top:0width:1refreshInterval:3600username:myname   Name Description Value     apiKey Your Trello API token.  Your API key or leave it empty to use the WTF_TRELLO_APP_KEY environment variable.    accessToken Your Trello access token.    board The name of the Trello board.</description>
-    </item>
-    
-    <item>
-      <title>Twitter</title>
-      <link>https://wtfutil.com/modules/twitter/</link>
-      <pubDate>Tue, 31 Jul 2018 20:21:37 -0700</pubDate>
-      
-      <guid>https://wtfutil.com/modules/twitter/</guid>
-      <description>Connects to the Twitter API and displays a single user&amp;rsquo;s tweets.
-NOTE: This only works for single-application developer accounts for now.
-To make this work, you&amp;rsquo;ll need a couple of things:
- A Twitter developer account A Twitter bearer token.  Once you have your developer account, a relatively painless way to get a bearer token is to use TBT.
-Configuration Single Account twitter:bearerToken:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;count:5enabled:trueposition:top:0left:1height:1width:1refreshInterval:20000screenName:&amp;#34;wtfutil&amp;#34; Multiple Accounts twitter:bearerToken:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;count:5enabled:trueposition:top:0left:1height:1width:1refreshInterval:20000screenNames:-&amp;#34;golang&amp;#34;-&amp;#34;wtfutil&amp;#34;   Name Description Value     bearerToken Your Twitter single-application Bearer Token</description>
     </item>
     
     <item>

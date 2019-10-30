@@ -133,6 +133,11 @@
   </url>
   
   <url>
+    <loc>https://wtfutil.com/modules/twitter/twitterstats/</loc>
+    <lastmod>2018-07-31T20:21:37-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wtfutil.com/modules/cmdrunner/</loc>
     <lastmod>2018-05-17T17:17:10-07:00</lastmod>
   </url>
@@ -145,6 +150,11 @@
   <url>
     <loc>https://wtfutil.com/modules/google/ganalytics/</loc>
     <lastmod>2019-08-31T01:46:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/modules/twitter/twittertweets/</loc>
+    <lastmod>2018-07-31T20:21:37-07:00</lastmod>
   </url>
   
   <url>
@@ -210,6 +220,11 @@
   <url>
     <loc>https://wtfutil.com/modules/gitter/</loc>
     <lastmod>2018-08-02T12:36:08-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/modules/twitter/</loc>
+    <lastmod>2019-10-29T03:26:02-08:00</lastmod>
   </url>
   
   <url>
@@ -335,11 +350,6 @@
   <url>
     <loc>https://wtfutil.com/modules/trello/</loc>
     <lastmod>2018-05-10T10:44:35-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wtfutil.com/modules/twitter/</loc>
-    <lastmod>2018-07-31T20:21:37-07:00</lastmod>
   </url>
   
   <url>

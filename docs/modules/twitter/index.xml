@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Twitter on WTF - the terminal dashboard</title>
+    <link>https://wtfutil.com/modules/twitter/</link>
+    <description>Recent content in Twitter on WTF - the terminal dashboard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Oct 2019 03:26:02 -0800</lastBuildDate>
+    
+	<atom:link href="https://wtfutil.com/modules/twitter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Twitter Stats</title>
+      <link>https://wtfutil.com/modules/twitter/twitterstats/</link>
+      <pubDate>Tue, 31 Jul 2018 20:21:37 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/twitter/twitterstats/</guid>
+      <description>Connects to the Twitter API and displays statistics about the number of tweets and followers for a set of usernames.
+To make this work, you&amp;rsquo;ll need a couple of things:
+ A Twitter developer account  &amp;hellip; and one of the following:
+a) A Twitter bearer token b) Consumer API keys
+You must have either a bearer token or consumer key + consumer secret provided. To get the consumer API keys, you must first create a Twitter application.</description>
+    </item>
+    
+    <item>
+      <title>Twitter Tweets</title>
+      <link>https://wtfutil.com/modules/twitter/twittertweets/</link>
+      <pubDate>Tue, 31 Jul 2018 20:21:37 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/twitter/twittertweets/</guid>
+      <description>Connects to the Twitter API and displays a single user&amp;rsquo;s tweets.
+NOTE: This only works for single-application developer accounts for now.
+To make this work, you&amp;rsquo;ll need a couple of things:
+ A Twitter developer account  &amp;hellip; and one of the following:
+a) A Twitter bearer token b) Consumer API keys
+You must have either a bearer token or consumer key + consumer secret provided. To get the consumer API keys, you must first create a Twitter application.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -461,19 +461,6 @@ trello:accessToken:&amp;#34;7b8b14f8743a408a93276d7155dd9ee2&amp;#34;apiKey:&amp
     </item>
     
     <item>
-      <title>Twitter</title>
-      <link>https://wtfutil.com/modules/twitter/</link>
-      <pubDate>Tue, 31 Jul 2018 20:21:37 -0700</pubDate>
-      
-      <guid>https://wtfutil.com/modules/twitter/</guid>
-      <description>Connects to the Twitter API and displays a single user&amp;rsquo;s tweets.
-NOTE: This only works for single-application developer accounts for now.
-To make this work, you&amp;rsquo;ll need a couple of things:
- A Twitter developer account A Twitter bearer token.  Once you have your developer account, a relatively painless way to get a bearer token is to use TBT.
-Configuration Single Account twitter:bearerToken:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;count:5enabled:trueposition:top:0left:1height:1width:1refreshInterval:20000screenName:&amp;#34;wtfutil&amp;#34; Multiple Accounts twitter:bearerToken:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;count:5enabled:trueposition:top:0left:1height:1width:1refreshInterval:20000screenNames:-&amp;#34;golang&amp;#34;-&amp;#34;wtfutil&amp;#34;   Name Description Value     bearerToken Your Twitter single-application Bearer Token</description>
-    </item>
-    
-    <item>
       <title>VictorOps OnCall</title>
       <link>https://wtfutil.com/modules/victorops/</link>
       <pubDate>Sun, 20 Jan 2019 00:28:41 -0800</pubDate>
