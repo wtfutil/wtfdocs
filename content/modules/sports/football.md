@@ -2,7 +2,7 @@
 title: "Football"
 date: 2019-10-25T17:20:48-07:00
 draft: false
-weight: 80
+weight: 25
 ---
 
 <img class="screenshot" src="/imgs/modules/football.png" width="720" height="292" alt="football screenshot" />

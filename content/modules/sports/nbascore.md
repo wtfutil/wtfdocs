@@ -2,7 +2,7 @@
 title: "NBA Score"
 date: 2019-03-07T05:32:11-07:00
 draft: false
-weight: 158
+weight: 50
 ---
 
 Displays NBA game scores.

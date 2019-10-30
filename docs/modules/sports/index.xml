@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sports on WTF - the terminal dashboard</title>
+    <link>https://wtfutil.com/modules/sports/</link>
+    <description>Recent content in Sports on WTF - the terminal dashboard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Oct 2019 03:26:02 -0800</lastBuildDate>
+    
+	<atom:link href="https://wtfutil.com/modules/sports/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Football</title>
+      <link>https://wtfutil.com/modules/sports/football/</link>
+      <pubDate>Fri, 25 Oct 2019 17:20:48 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/sports/football/</guid>
+      <description>Displays Football statistics about the specific league. This widget uses football-data.org.
+Standings Standings is the ranking or table for specific league. By default it shows top 5 teams in the league but which can be customized using configuration.
+Matches Played Shows recent matches played in the specific league. By default it shows matches played in last 5 days.
+Upcoming Matches Shows upcoming matches or fixtuers in the specific league. By default it shows upcoming matches for next 5 days.</description>
+    </item>
+    
+    <item>
+      <title>NBA Score</title>
+      <link>https://wtfutil.com/modules/sports/nbascore/</link>
+      <pubDate>Thu, 07 Mar 2019 05:32:11 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/sports/nbascore/</guid>
+      <description>Displays NBA game scores.
+Configuration nbascore:enabled:trueposition:top:1left:2height:1width:1refreshInterval:600   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module&amp;rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data.</description>
+    </item>
+    
+  </channel>
+</rss>

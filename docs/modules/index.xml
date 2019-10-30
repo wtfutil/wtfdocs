@@ -291,16 +291,6 @@ Configuration mercurial:commitCount:5commitFormat:&amp;#34;[forestgreen]{rev}:{p
     </item>
     
     <item>
-      <title>NBA Score</title>
-      <link>https://wtfutil.com/modules/nbascore/</link>
-      <pubDate>Thu, 07 Mar 2019 05:32:11 -0700</pubDate>
-      
-      <guid>https://wtfutil.com/modules/nbascore/</guid>
-      <description>Displays NBA game scores.
-Configuration nbascore:enabled:trueposition:top:1left:2height:1width:1refreshInterval:600   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module&amp;rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data.</description>
-    </item>
-    
-    <item>
       <title>New Relic</title>
       <link>https://wtfutil.com/modules/newrelic/</link>
       <pubDate>Wed, 09 May 2018 09:01:14 -0700</pubDate>
