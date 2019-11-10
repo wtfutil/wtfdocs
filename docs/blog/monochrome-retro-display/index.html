@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.57.2" />
-<title>v0.24.0 Released :: WTF - the terminal dashboard</title>
+<title>Monochrome Retro Display :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/blog/2019-11-10-v0-24-0/">
+<body data-url="/blog/monochrome-retro-display/">
   
   <header>
   <div class="logo">
@@ -141,14 +141,14 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/blog/monochrome-retro-display/" class="dd-item">
+      <li data-nav-id="/blog/monochrome-retro-display/" class="dd-item active">
         <div>
           <a href="/blog/monochrome-retro-display/">
             Monochrome Retro Display
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/blog/2019-11-10-v0-24-0/" class="dd-item active">
+      <li data-nav-id="/blog/2019-11-10-v0-24-0/" class="dd-item">
         <div>
           <a href="/blog/2019-11-10-v0-24-0/">
             v0.24.0 Released
@@ -615,24 +615,17 @@
       <a href="/modules/twitter/">Twitter</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/modules/cryptocurrencies/bittrex/" class="dd-item">
+      <li data-nav-id="/modules/twitter/twitterstats/" class="dd-item">
         <div>
-          <a href="/modules/cryptocurrencies/bittrex/">
-            Bittrex
+          <a href="/modules/twitter/twitterstats/">
+            Twitter Stats
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/cryptocurrencies/blockfolio/" class="dd-item">
+      <li data-nav-id="/modules/twitter/twittertweets/" class="dd-item">
         <div>
-          <a href="/modules/cryptocurrencies/blockfolio/">
-            Blockfolio
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/cryptocurrencies/cryptolive/" class="dd-item">
-        <div>
-          <a href="/modules/cryptocurrencies/cryptolive/">
-            CryptoLive
+          <a href="/modules/twitter/twittertweets/">
+            Twitter Tweets
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -707,8 +700,8 @@
    Configuration</option>
     <option value="/blog/" >
    WTF Blog</option> 
-      <option value="/blog/monochrome-retro-display/" >- Monochrome Retro Display</option>
-      <option value="/blog/2019-11-10-v0-24-0/"  selected>- v0.24.0 Released</option>
+      <option value="/blog/monochrome-retro-display/"  selected>- Monochrome Retro Display</option>
+      <option value="/blog/2019-11-10-v0-24-0/" >- v0.24.0 Released</option>
       <option value="/blog/2019-10-11-v0-23-0/" >- v0.23.0 Released</option>
       <option value="/blog/2019-09-12-v0-22-0/" >- v0.22.0 Released</option>
       <option value="/blog/2019-08-29-v0-21-0/" >- v0.21.0 Released</option>
@@ -804,42 +797,39 @@
       </div>
     
 
-    <h1>v0.24.0 Released</h1>
+    <h1>Monochrome Retro Display</h1>
   
 
   
-    
+    <small>November 10, 2019</small>
 
-<small>November 10, 2019</small>
+<p>With v0.24.0, WTF now has better support for theme-like colour settings. It&rsquo;s far from perfect, a lot of modules will have to be improved internally to make theming ubiquitous, but it&rsquo;s a start.</p>
 
-<p><a href="https://github.com/wtfutil/wtf/releases/tag/v0.24.0">WTF v0.24.0</a> contains the following changes:</p>
-
-<h3 id="added">⚡️ Added</h3>
-
-<ul>
-<li>Proper, usable <a href="https://github.com/wtfutil/wtf/blob/master/Dockerfile">Docker file</a> added, by <a href="https://github.com/Boot-Error">@Boot-Error</a></li>
-<li><a href="https://wtfutil.com/modules/gitlab/">GitLab</a> module displays issues assigned to, and opened by, the user, by <a href="https://github.com/caalberts">@caalberts</a></li>
-<li><a href="https://wtfutil.com/modules/travisci/">TravisCI</a> now checks for uncommitted vendor changes, by <a href="https://github.com/indradhanush">@indradhanush</a></li>
-<li>Football module added, by <a href="https://github.com/C123R">@C123R</a></li>
-<li><a href="https://wtfutil.com/modules/resourceusage/">resourceuseage</a> now supports a <code>cpuCombined</code> setting, by <a href="https://github.com/madepolli">@madepolli</a></li>
-<li><a href="https://wtfutil.com/modules/twitter/twittertweets/">Twitter Stats</a> module added, by <a href="https://github.com/Ameobea">@Ameobea</a></li>
-</ul>
-
-<h3 id="fixed">🐞 Fixed</h3>
-
-<ul>
-<li>Github PRs do not count against issues, by <a href="https://github.com/alexfornuto">@alexfornuto</a></li>
-<li>Todo scrolling now works properly, <a href="https://github.com/wtfutil/wtf/issues/707">#707</a> by <a href="https://github.com/3mard">3mard</a></li>
-<li>Configs with a missing <code>color</code> key now load properly, <a href="https://github.com/wtfutil/wtf/issues/718">#718</a> and <a href="https://github.com/wtfutil/wtf/issues/730">#730</a> by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
-</ul>
-
+<p>By way of example, if you&rsquo;re running v0.24 or later, drop this into your config at the top, replace your existing <code>colors:</code> YAML block with the following and you&rsquo;ll end up with a facsimile of an old-school green monochrome monitor display (you may need to restart WTF to get changes to take effect).</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="w">  </span>colors<span class="p">:</span><span class="w">
+</span><span class="w">    </span>background<span class="p">:</span><span class="w"> </span><span class="s2">&#34;transparent&#34;</span><span class="w">
+</span><span class="w">    </span>border<span class="p">:</span><span class="w">
+</span><span class="w">      </span>focusable<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen&#34;</span><span class="w">
+</span><span class="w">      </span>focused<span class="p">:</span><span class="w"> </span><span class="s2">&#34;goldenrod&#34;</span><span class="w">
+</span><span class="w">      </span>normal<span class="p">:</span><span class="w"> </span><span class="s2">&#34;darkgreen&#34;</span><span class="w">
+</span><span class="w">    </span>checked<span class="p">:</span><span class="w"> </span><span class="s2">&#34;gray&#34;</span><span class="w">
+</span><span class="w">    </span>highlight<span class="p">:</span><span class="w">
+</span><span class="w">      </span>fore<span class="p">:</span><span class="w"> </span><span class="s2">&#34;black&#34;</span><span class="w">
+</span><span class="w">      </span>back<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
+</span><span class="w">    </span>labels<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen::b&#34;</span><span class="w">
+</span><span class="w">    </span>rows<span class="p">:</span><span class="w">
+</span><span class="w">      </span>even<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
+</span><span class="w">      </span>odd<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen&#34;</span><span class="w">
+</span><span class="w">    </span>subheading<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen::b&#34;</span><span class="w">
+</span><span class="w">    </span>text<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
+</span><span class="w">    </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen&#34;</span></code></pre></div>
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/blog/monochrome-retro-display/" title="Monochrome Retro Display"> <i class="fa fa-chevron-left"></i><label>Monochrome Retro Display</label></a>
-    <a class="nav nav-next" href="/blog/2019-10-11-v0-23-0/" title="v0.23.0 Released" style="margin-right: 0px;"><label>v0.23.0 Released</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/blog/" title="WTF Blog"> <i class="fa fa-chevron-left"></i><label>WTF Blog</label></a>
+    <a class="nav nav-next" href="/blog/2019-11-10-v0-24-0/" title="v0.24.0 Released" style="margin-right: 0px;"><label>v0.24.0 Released</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>

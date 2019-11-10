@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Monochrome Retro Display</title>
+      <link>https://wtfutil.com/blog/monochrome-retro-display/</link>
+      <pubDate>Sun, 10 Nov 2019 11:43:32 -0800</pubDate>
+      
+      <guid>https://wtfutil.com/blog/monochrome-retro-display/</guid>
+      <description>November 10, 2019 With v0.24.0, WTF now has better support for theme-like colour settings. It&amp;rsquo;s far from perfect, a lot of modules will have to be improved internally to make theming ubiquitous, but it&amp;rsquo;s a start.
+By way of example, if you&amp;rsquo;re running v0.24 or later, drop this into your config at the top, replace your existing colors: YAML block with the following and you&amp;rsquo;ll end up with a facsimile of an old-school green monochrome monitor display (you may need to restart WTF to get changes to take effect).</description>
+    </item>
+    
+    <item>
       <title>v0.24.0 Released</title>
       <link>https://wtfutil.com/blog/2019-11-10-v0-24-0/</link>
       <pubDate>Sun, 10 Nov 2019 11:32:32 -0800</pubDate>
