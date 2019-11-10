@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.57.2" />
-<title>CircleCI :: WTF - the terminal dashboard</title>
+<title>v0.24.0 Released :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/circleci/">
+<body data-url="/blog/2019-11-10-v0-24-0/">
   
   <header>
   <div class="logo">
@@ -134,13 +134,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/blog/" class="dd-item haschildren
+    <li data-nav-id="/blog/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/blog/">WTF Blog</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/blog/2019-11-10-v0-24-0/" class="dd-item">
+      <li data-nav-id="/blog/2019-11-10-v0-24-0/" class="dd-item active">
         <div>
           <a href="/blog/2019-11-10-v0-24-0/">
             v0.24.0 Released
@@ -233,7 +234,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item parent alwaysopen haschildren
+    <li data-nav-id="/modules/" class="dd-item alwaysopen haschildren
         ">
       <div>
       <a href="/modules/">Modules</a>
@@ -254,7 +255,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/circleci/" class="dd-item active">
+      <li data-nav-id="/modules/circleci/" class="dd-item">
         <div>
           <a href="/modules/circleci/">
             CircleCI
@@ -691,12 +692,26 @@
     <option value="/configuration/" >
    Configuration</option>
     <option value="/blog/" >
-   WTF Blog</option>
+   WTF Blog</option> 
+      <option value="/blog/2019-11-10-v0-24-0/"  selected>- v0.24.0 Released</option>
+      <option value="/blog/2019-10-11-v0-23-0/" >- v0.23.0 Released</option>
+      <option value="/blog/2019-09-12-v0-22-0/" >- v0.22.0 Released</option>
+      <option value="/blog/2019-08-29-v0-21-0/" >- v0.21.0 Released</option>
+      <option value="/blog/2019-08-20-v0-20-0/" >- v0.20.0 Released</option>
+      <option value="/blog/2019-07-31-v0-19-1/" >- v0.19.1 Released</option>
+      <option value="/blog/2019-07-27-v0-19-0/" >- v0.19.0 Released</option>
+      <option value="/blog/2019-07-20-v0-18-0/" >- v0.18.0 Released</option>
+      <option value="/blog/2019-07-16-v0-17-1/" >- v0.17.1 Released</option>
+      <option value="/blog/2019-07-12-homebrew-installation/" >- Installing With Homebrew</option>
+      <option value="/blog/2019-07-10-wtfutil-release/" >- Binary Renamed to &#39;wtfutil&#39;</option>
+      <option value="/blog/2019-07-09-rss-for-releases/" >- Using WTF&#39;s FeedReader to Track WTF Releases</option>
+      <option value="/blog/2019-07-09-v0-14-0/" >- v0.14.0 Released</option>
+  
     <option value="/modules/" >
    Modules</option> 
       <option value="/modules/bamboohr/" >- BambooHR</option>
       <option value="/modules/buildkite/" >- Buildkite</option>
-      <option value="/modules/circleci/"  selected>- CircleCI</option>
+      <option value="/modules/circleci/" >- CircleCI</option>
       <option value="/modules/clocks/" >- Clocks</option>
       <option value="/modules/cmdrunner/" >- CmdRunner</option>
     <option value="/modules/cryptocurrencies/" >
@@ -774,74 +789,42 @@
       </div>
     
 
-    <h1>CircleCI</h1>
+    <h1>v0.24.0 Released</h1>
   
 
   
     
 
-<p><img src="/imgs/modules/circleci.png" class="screenshot" width="609" height="150" alt="circleci screenshot" /></p>
+<small>November 10, 2019</small>
 
-<p>Displays build information for your CircleCI account.</p>
+<p><a href="https://github.com/wtfutil/wtf/releases/tag/v0.24.0">WTF v0.24.0</a> contains the following changes:</p>
 
-<h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">circleci<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span></code></pre></div>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Value</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-    <td><code>apiKey</code></td>
-    <td>Your <a href="https://circleci.com/account/api">CircleCI API</a> token.</td>
-    <td>
-        Your API key <strong>or</strong> leave it empty to use the <code>WTF_CIRCLE_API_KEY</code> environment variable.
-    </td>
-</tr>
-  <tr>
-    <td><code>border</code></td>
-    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>enabled</code></td>
-    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>position</code></td>
-    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
-    <td></td>
-</tr>
-  <tr>
-    <td><code>refreshInterval</code></td>
-    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
-    <td>Any positive integer.</td>
-</tr>
-    </tbody>
-</table>
+<h3 id="added">⚡️ Added</h3>
 
-<h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/circleci/</code></pre></div>
+<ul>
+<li>Proper, usable <a href="https://github.com/wtfutil/wtf/blob/master/Dockerfile">Docker file</a> added, by <a href="https://github.com/Boot-Error">@Boot-Error</a></li>
+<li><a href="https://wtfutil.com/modules/gitlab/">GitLab</a> module displays issues assigned to, and opened by, the user, by <a href="https://github.com/caalberts">@caalberts</a></li>
+<li><a href="https://wtfutil.com/modules/travisci/">TravisCI</a> now checks for uncommitted vendor changes, by <a href="https://github.com/indradhanush">@indradhanush</a></li>
+<li>Football module added, by <a href="https://github.com/C123R">@C123R</a></li>
+<li><a href="https://wtfutil.com/modules/resourceusage/">resourceuseage</a> now supports a <code>cpuCombined</code> setting, by <a href="https://github.com/madepolli">@madepolli</a></li>
+<li><a href="https://wtfutil.com/modules/twitter/twittertweets/">Twitter Stats</a> module added, by <a href="https://github.com/Ameobea">@Ameobea</a></li>
+</ul>
+
+<h3 id="fixed">🐞 Fixed</h3>
+
+<ul>
+<li>Github PRs do not count against issues, by <a href="https://github.com/alexfornuto">@alexfornuto</a></li>
+<li>Todo scrolling now works properly, <a href="https://github.com/wtfutil/wtf/issues/707">#707</a> by <a href="https://github.com/3mard">3mard</a></li>
+<li>Configs with a missing <code>color</code> key now load properly, <a href="https://github.com/wtfutil/wtf/issues/718">#718</a> and <a href="https://github.com/wtfutil/wtf/issues/730">#730</a> by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
+</ul>
+
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/weather_services/weather/" title="Weather"> <i class="fa fa-chevron-left"></i><label>Weather</label></a>
-    <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypto Currencies" style="margin-right: 0px;"><label>Crypto Currencies</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/blog/" title="WTF Blog"> <i class="fa fa-chevron-left"></i><label>WTF Blog</label></a>
+    <a class="nav nav-next" href="/blog/2019-10-11-v0-23-0/" title="v0.23.0 Released" style="margin-right: 0px;"><label>v0.23.0 Released</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>
