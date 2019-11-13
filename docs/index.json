@@ -137,7 +137,7 @@
 	"title": "Glossary",
 	"tags": [],
 	"description": "",
-	"content": " Module A discrete unit of data collection and display. A data interface concept. A package inside the app.\nExamples: New Relic, Git, Weather.\nWidget The onscreen representation of a Module. The widget is responsible for being the interface between the app and the data collection.\nWidgets are defined by a required widget.go file in a Module.\nWTF An acronym for \u0026ldquo;What The Fsck?\u0026rdquo;, as in \u0026ldquo;What the fsck are all these browser tabs open for?\u0026rdquo; and \u0026ldquo;What the fsck am I doing today?\u0026rdquo;\n(And if you\u0026rsquo;re not a fan of that, then it actually stands for \u0026ldquo;What are The Facts?\u0026rdquo;).\n"
+	"content": " Module A discrete unit of data collection and display. A data interface concept. A package inside the app.\nExamples: New Relic, Git, Weather.\nWidget The onscreen representation of a Module. The widget is responsible for being the interface between the app and the data collection.\nWidgets are defined by a required widget.go file in a Module.\nWTF An acronym for \u0026ldquo;What The Fsck?\u0026rdquo;, as in \u0026ldquo;What the fsck are all these browser tabs open for?\u0026rdquo; and \u0026ldquo;What the fsck am I doing today?\u0026rdquo;\n(And if you\u0026rsquo;re not a fan of that, then perhaps it stands for \u0026ldquo;What are The Facts?\u0026rdquo;, or \u0026ldquo;Whiskey Tango Foxtrot\u0026rdquo;, or \u0026ldquo;Where to, Frodo?\u0026rdquo;. Really, up to you.)\n"
 },
 {
 	"uri": "https://wtfutil.com/configuration/",
