@@ -27,8 +27,10 @@ cmdrunner:
   {{< attributes/border >}}
   {{< attributes/custom name="cmd" desc="The terminal command to be run, withouth the arguments. Ie: `ping`, `whoami`, `curl`." value="" >}}
   {{< attributes/enabled >}}
+  {{< attributes/custom name="maxLines" desc="The maximum number of lines to keep in the buffer. Default: `256`." value="Any positive integer" >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="tail" desc="Automatically scroll with new output. Default: `false`." value="true, false" >}}
   {{< attributes/title >}}
 {{% /attributes %}}
 
