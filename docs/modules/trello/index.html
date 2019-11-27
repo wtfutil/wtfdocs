@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.57.2" />
+<meta name="generator" content="Hugo 0.59.1" />
 <title>Trello :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -701,6 +701,63 @@
    WTF Blog</option>
     <option value="/modules/" >
    Modules</option> 
+      <option value="/modules/bamboohr/" >- BambooHR</option>
+      <option value="/modules/buildkite/" >- Buildkite</option>
+      <option value="/modules/circleci/" >- CircleCI</option>
+      <option value="/modules/clocks/" >- Clocks</option>
+      <option value="/modules/cmdrunner/" >- CmdRunner</option>
+    <option value="/modules/cryptocurrencies/" >
+  - 
+   Crypto Currencies</option>
+      <option value="/modules/datadog/" >- Datadog</option>
+      <option value="/modules/devto/" >- DEV (dev.to)</option>
+      <option value="/modules/digitalclock/" >- Digital Clock</option>
+      <option value="/modules/docker/" >- Docker</option>
+      <option value="/modules/feedreader/" >- Feed Reader</option>
+      <option value="/modules/gerrit/" >- Gerrit</option>
+      <option value="/modules/git/" >- Git</option>
+      <option value="/modules/github/" >- GitHub</option>
+      <option value="/modules/gitlab/" >- GitLab</option>
+      <option value="/modules/gitter/" >- Gitter</option>
+    <option value="/modules/google/" >
+  - 
+   Google Apps</option>
+      <option value="/modules/hackernews/" >- Hacker News</option>
+      <option value="/modules/hibp/" >- Have I Been Pwned (HIBP)</option>
+    <option value="/modules/ipaddress/" >
+  - 
+   IP Addresses</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
+      <option value="/modules/jira/" >- Jira</option>
+      <option value="/modules/kubernetes/" >- Kubernetes</option>
+      <option value="/modules/logger/" >- Logger</option>
+      <option value="/modules/mercurial/" >- Mercurial</option>
+      <option value="/modules/newrelic/" >- New Relic</option>
+      <option value="/modules/opsgenie/" >- OpsGenie</option>
+      <option value="/modules/pagerduty/" >- Pagerduty</option>
+      <option value="/modules/power/" >- Power</option>
+      <option value="/modules/resourceusage/" >- Resource Usage</option>
+      <option value="/modules/rollbar/" >- Rollbar</option>
+      <option value="/modules/security/" >- Security</option>
+    <option value="/modules/sports/" >
+  - 
+   Sports</option>
+      <option value="/modules/spotify/" >- Spotify</option>
+      <option value="/modules/subreddit/" >- Subreddit</option>
+      <option value="/modules/textfile/" >- Textfile</option>
+      <option value="/modules/todo/" >- Todo</option>
+      <option value="/modules/todoist/" >- Todoist</option>
+      <option value="/modules/transmission/" >- Transmission</option>
+      <option value="/modules/travisci/" >- TravisCI</option>
+      <option value="/modules/trello/"  selected>- Trello</option>
+    <option value="/modules/twitter/" >
+  - 
+   Twitter</option>
+      <option value="/modules/victorops/" >- VictorOps OnCall</option>
+    <option value="/modules/weather_services/" >
+  - 
+   Weather Services</option>
+      <option value="/modules/zendesk/" >- Zendesk</option>
   
 
 
@@ -795,12 +852,12 @@ configuration (note the difference in <code>list</code>):</p>
 </tr>
   <tr>
     <td><code>border</code></td>
-    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: true.</td>
+    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: <code>true</code>.</td>
     <td>true, false</td>
 </tr>
   <tr>
     <td><code>enabled</code></td>
-    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: false.</td>
+    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: <code>false</code>.</td>
     <td>true, false</td>
 </tr>
   <tr>
@@ -815,7 +872,7 @@ configuration (note the difference in <code>list</code>):</p>
 </tr>
   <tr>
     <td><code>refreshInterval</code></td>
-    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: 300.</td>
+    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: <code>300</code>.</td>
     <td>Any positive integer.</td>
 </tr>
   <tr>
