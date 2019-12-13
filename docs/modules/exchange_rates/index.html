@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.60.1" />
-<title>Resource Usage :: WTF - the terminal dashboard</title>
+<title>Exchange Rates :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/resourceusage/">
+<body data-url="/modules/exchange_rates/">
   
   <header>
   <div class="logo">
@@ -288,27 +288,6 @@
       <a href="/modules/cryptocurrencies/">Crypto Currencies</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/modules/cryptocurrencies/bittrex/" class="dd-item">
-        <div>
-          <a href="/modules/cryptocurrencies/bittrex/">
-            Bittrex
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/cryptocurrencies/blockfolio/" class="dd-item">
-        <div>
-          <a href="/modules/cryptocurrencies/blockfolio/">
-            Blockfolio
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/cryptocurrencies/cryptolive/" class="dd-item">
-        <div>
-          <a href="/modules/cryptocurrencies/cryptolive/">
-            CryptoLive
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
       <li data-nav-id="/modules/datadog/" class="dd-item">
@@ -346,7 +325,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/exchange_rates/" class="dd-item">
+      <li data-nav-id="/modules/exchange_rates/" class="dd-item active">
         <div>
           <a href="/modules/exchange_rates/">
             Exchange Rates
@@ -523,7 +502,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/resourceusage/" class="dd-item active">
+      <li data-nav-id="/modules/resourceusage/" class="dd-item">
         <div>
           <a href="/modules/resourceusage/">
             Resource Usage
@@ -728,7 +707,7 @@
       <option value="/modules/digitalclock/" >- Digital Clock</option>
       <option value="/modules/digitalocean/" >- DigitalOcean</option>
       <option value="/modules/docker/" >- Docker</option>
-      <option value="/modules/exchange_rates/" >- Exchange Rates</option>
+      <option value="/modules/exchange_rates/"  selected>- Exchange Rates</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
       <option value="/modules/git/" >- Git</option>
@@ -752,7 +731,7 @@
       <option value="/modules/opsgenie/" >- OpsGenie</option>
       <option value="/modules/pagerduty/" >- Pagerduty</option>
       <option value="/modules/power/" >- Power</option>
-      <option value="/modules/resourceusage/"  selected>- Resource Usage</option>
+      <option value="/modules/resourceusage/" >- Resource Usage</option>
       <option value="/modules/rollbar/" >- Rollbar</option>
       <option value="/modules/security/" >- Security</option>
     <option value="/modules/sports/" >
@@ -797,27 +776,32 @@
       </div>
     
 
-    <h1>Resource Usage</h1>
+    <h1>Exchange Rates</h1>
   
 
   
     
 
-<p>Displays CPU and memory usage.</p>
+<p>Displays exchange rates between various currencies.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">resourceusage<span class="p">:</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">exchangerates<span class="p">:</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>focusable<span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">1</span></code></pre></div>
-<h2 id="screenshots">Screenshots</h2>
-
-<p><img class="screenshot" src="/imgs/modules/resource_usage.png" width="279" height="193" alt="resource usage screenshot" /></p>
-
+</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span>rates<span class="p">:</span><span class="w">
+</span><span class="w">    </span>CAD<span class="p">:</span><span class="w">
+</span><span class="w">      </span>-<span class="w"> </span><span class="s2">&#34;USD&#34;</span><span class="w">
+</span><span class="w">      </span>-<span class="w"> </span><span class="s2">&#34;EUR&#34;</span><span class="w">
+</span><span class="w">    </span>USD<span class="p">:</span><span class="w">
+</span><span class="w">      </span>-<span class="w"> </span><span class="s2">&#34;CAD&#34;</span><span class="w">
+</span><span class="w">    </span>EUR<span class="p">:</span><span class="w">
+</span><span class="w">      </span>-<span class="w"> </span><span class="s2">&#34;CAD&#34;</span><span class="w">
+</span><span class="w">  </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;💰 Rates&#34;</span></code></pre></div>
 <h2 id="attributes">Attributes</h2>
 
 <table class="table">
@@ -845,22 +829,32 @@
     <td></td>
 </tr>
   <tr>
+    <td><code>rates</code></td>
+    <td>A key/value list of currencies to convert between.</td>
+    <td></td>
+</tr>
+  <tr>
     <td><code>refreshInterval</code></td>
     <td><em>Optional</em> How often, in seconds, this module will update its data. Default: <code>300</code>.</td>
     <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td><code>title</code></td>
+    <td><em>Optional</em> The title to display in the widget&rsquo;s onscreen box.</td>
+    <td></td>
 </tr>
     </tbody>
 </table>
 
 <h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/resourceusage/</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/exchangerates/</code></pre></div>
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/power/" title="Power"> <i class="fa fa-chevron-left"></i><label>Power</label></a>
-    <a class="nav nav-next" href="/modules/rollbar/" title="Rollbar" style="margin-right: 0px;"><label>Rollbar</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/docker/" title="Docker"> <i class="fa fa-chevron-left"></i><label>Docker</label></a>
+    <a class="nav nav-next" href="/modules/feedreader/" title="Feed Reader" style="margin-right: 0px;"><label>Feed Reader</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>

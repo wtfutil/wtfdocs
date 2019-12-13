@@ -143,6 +143,16 @@ Configuration docker:type:dockerenabled:truelabelColor:lightblueposition:top:0le
     </item>
     
     <item>
+      <title>Exchange Rates</title>
+      <link>https://wtfutil.com/modules/exchange_rates/</link>
+      <pubDate>Fri, 13 Dec 2019 14:22:54 -0800</pubDate>
+      
+      <guid>https://wtfutil.com/modules/exchange_rates/</guid>
+      <description>Displays exchange rates between various currencies.
+Configuration exchangerates:enabled:truefocusable:falseposition:top:4left:4width:1height:2rates:CAD:-&amp;#34;USD&amp;#34;-&amp;#34;EUR&amp;#34;USD:-&amp;#34;CAD&amp;#34;EUR:-&amp;#34;CAD&amp;#34;title:&amp;#34;💰 Rates&amp;#34; Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module&amp;rsquo;s widget will be displayed.</description>
+    </item>
+    
+    <item>
       <title>Feed Reader</title>
       <link>https://wtfutil.com/modules/feedreader/</link>
       <pubDate>Thu, 04 Jul 2019 05:53:08 -0400</pubDate>

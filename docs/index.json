@@ -280,6 +280,13 @@
 	"content": " Displays information about currently-running Docker processes.\nConfiguration docker:type:dockerenabled:truelabelColor:lightblueposition:top:0left:0height:3width:3refreshInterval:1 Screenshots Attributes   Name Description Value     enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   labelColor The color to display the row labels in. Any X11 color name or long-form hex value (i.e.: #ff0000).   position Defines where in the grid this module\u0026rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer.   title Optional The title to display in the widget\u0026rsquo;s onscreen box.     Source Code wtf/modules/docker/"
 },
 {
+	"uri": "https://wtfutil.com/modules/exchange_rates/",
+	"title": "Exchange Rates",
+	"tags": [],
+	"description": "",
+	"content": " Displays exchange rates between various currencies.\nConfiguration exchangerates:enabled:truefocusable:falseposition:top:4left:4width:1height:2rates:CAD:-\u0026#34;USD\u0026#34;-\u0026#34;EUR\u0026#34;USD:-\u0026#34;CAD\u0026#34;EUR:-\u0026#34;CAD\u0026#34;title:\u0026#34;💰 Rates\u0026#34; Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module\u0026rsquo;s widget will be displayed.    rates A key/value list of currencies to convert between.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer.   title Optional The title to display in the widget\u0026rsquo;s onscreen box.     Source Code wtf/modules/exchangerates/"
+},
+{
 	"uri": "https://wtfutil.com/modules/feedreader/",
 	"title": "Feed Reader",
 	"tags": [],
