@@ -11,7 +11,7 @@ Displays item information for your rollbar account.
 
 ```yaml
 rollbar:
-  accessToken: "abjsdfoia7sdg8fy7g"
+  accessToken: "d23*******************************************3r2"
   enabled: true
   projectOwner: "ENCOM"
   projectName: "MCP"

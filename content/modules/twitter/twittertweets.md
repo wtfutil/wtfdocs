@@ -31,7 +31,7 @@ bearer token is to use [TBT](https://github.com/Trinergy/twitter_bearer_token).
 
 ```yaml
 twitter:
-  bearerToken: "3276d7155dd9ee27b8b14f8743a408a9"
+  bearerToken: "d23*******************************************3r2"
   count: 5
   enabled: true
   position:
@@ -47,7 +47,7 @@ twitter:
 
 ```yaml
 twitter:
-  bearerToken: "3276d7155dd9ee27b8b14f8743a408a9"
+  bearerToken: "d23*******************************************3r2"
   count: 5
   enabled: true
   position:

@@ -221,7 +221,7 @@ Configuration gitlab:apiKey:&amp;#34;p0d13**************************************
       
       <guid>https://wtfutil.com/modules/gitter/</guid>
       <description>Displays chat messages from Gitter.
-Configuration gitter:apiToken:&amp;#34;ab345546asdfasb465234fgjgh068f39a35c3e4139ee383f7&amp;#34;enabled:truenumberOfMessages:10position:top:4left:1height:1width:4roomUri:wtfutil/LobbyrefreshInterval:300 Screenshots Attributes   Name Description Value     apiToken Your Gitter API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
+Configuration gitter:apiToken:&amp;#34;d23*******************************************3r2&amp;#34;enabled:truenumberOfMessages:10position:top:4left:1height:1width:4roomUri:wtfutil/LobbyrefreshInterval:300 Screenshots Attributes   Name Description Value     apiToken Your Gitter API token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
     </item>
     
     <item>
@@ -359,7 +359,7 @@ Configuration resourceusage:enabled:trueposition:top:1left:1height:1width:1refre
       
       <guid>https://wtfutil.com/modules/rollbar/</guid>
       <description>Displays item information for your rollbar account.
-Configuration rollbar:accessToken:&amp;#34;abjsdfoia7sdg8fy7g&amp;#34;enabled:trueprojectOwner:&amp;#34;ENCOM&amp;#34;projectName:&amp;#34;MCP&amp;#34;activeOnly:trueassignedToName:&amp;#34;dillinger&amp;#34;count:3position:top:4left:1height:2width:2refreshInterval:900 Screenshots Attributes   Name Description Value     accessToken Your Rollbar project access token (only needs read capabilities).    activeOnly Only show items that are active. true, false   assignedToName Set this to your username if you only want to see items assigned to you. A string of your username   border Optional Whether or not to draw this widget with a border.</description>
+Configuration rollbar:accessToken:&amp;#34;d23*******************************************3r2&amp;#34;enabled:trueprojectOwner:&amp;#34;ENCOM&amp;#34;projectName:&amp;#34;MCP&amp;#34;activeOnly:trueassignedToName:&amp;#34;dillinger&amp;#34;count:3position:top:4left:1height:2width:2refreshInterval:900 Screenshots Attributes   Name Description Value     accessToken Your Rollbar project access token (only needs read capabilities).    activeOnly Only show items that are active. true, false   assignedToName Set this to your username if you only want to see items assigned to you. A string of your username   border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -452,8 +452,8 @@ travisci:apiKey:&amp;#34;p0d13*********************************************c3&am
       
       <guid>https://wtfutil.com/modules/trello/</guid>
       <description>Displays all Trello cards on specified lists.
-Configuration Single Trello List trello:accessToken:&amp;#34;7b8b14f8743a408a93276d7155dd9ee2&amp;#34;apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;board:Mainenabled:truelist:&amp;#34;Todo&amp;#34;position:height:1left:2top:0width:1refreshInterval:3600username:myname Multiple Trello Lists If you want to monitor multiple Trello lists, use the following configuration (note the difference in list):
-trello:accessToken:&amp;#34;7b8b14f8743a408a93276d7155dd9ee2&amp;#34;apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;board:Mainenabled:truelist:[&amp;#34;Todo&amp;#34;,&amp;#34;Done&amp;#34;]position:height:1left:2top:0width:1refreshInterval:3600username:myname Screenshots Attributes   Name Description Value     apiKey Your Trello API token.  Your API key or leave it empty to use the WTF_TRELLO_APP_KEY environment variable.    accessToken Your Trello access token.</description>
+Configuration Single Trello List trello:accessToken:&amp;#34;d23*******************************************3r2&amp;#34;apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;board:Mainenabled:truelist:&amp;#34;Todo&amp;#34;position:height:1left:2top:0width:1refreshInterval:3600username:myname Multiple Trello Lists If you want to monitor multiple Trello lists, use the following configuration (note the difference in list):
+trello:accessToken:&amp;#34;d23*******************************************3r2&amp;#34;apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;board:Mainenabled:truelist:[&amp;#34;Todo&amp;#34;,&amp;#34;Done&amp;#34;]position:height:1left:2top:0width:1refreshInterval:3600username:myname Screenshots Attributes   Name Description Value     apiKey Your Trello API token.  Your API key or leave it empty to use the WTF_TRELLO_APP_KEY environment variable.    accessToken Your Trello access token.</description>
     </item>
     
     <item>

@@ -30,7 +30,8 @@ digitalocean:
 
 ## Screenshots
 
-<img src="/imgs/modules/digitalocean.png" class="screenshot" width="320" height="137" alt="digitalocean screenshot" />
+<img src="/imgs/modules/digitalocean.png" class="screenshot" width="320" height="137" alt="digitalocean screenshot" align="left" />
+<img src="/imgs/modules/digitalocean_droplet_info.png" class="screenshot" width="320" height="197" alt="digitalocean screenshot" />
 
 {{% attributes %}}
 {{< attributes/apikey name="DigitalOcean" link="https://developers.digitalocean.com/documentation/v2/" envvar="WTF_DIGITALOCEAN_API_KEY" >}}

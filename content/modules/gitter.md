@@ -11,7 +11,7 @@ Displays chat messages from Gitter.
 
 ```yaml
 gitter:
-  apiToken: "ab345546asdfasb465234fgjgh068f39a35c3e4139ee383f7"
+  apiToken: "d23*******************************************3r2"
   enabled: true
   numberOfMessages: 10
   position:

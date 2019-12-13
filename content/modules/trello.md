@@ -13,7 +13,7 @@ Displays all Trello cards on specified lists.
 
 ```yaml
 trello:
-  accessToken: "7b8b14f8743a408a93276d7155dd9ee2"
+  accessToken: "d23*******************************************3r2"
   apiKey: "p0d13*********************************************c3"
   board: Main
   enabled: true
@@ -34,7 +34,7 @@ configuration (note the difference in `list`):
 
 ```yaml
 trello:
-  accessToken: "7b8b14f8743a408a93276d7155dd9ee2"
+  accessToken: "d23*******************************************3r2"
   apiKey: "p0d13*********************************************c3"
   board: Main
   enabled: true
