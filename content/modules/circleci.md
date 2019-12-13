@@ -5,15 +5,13 @@ draft: false
 weight: 20
 ---
 
-<img src="/imgs/modules/circleci.png" class="screenshot" width="609" height="150" alt="circleci screenshot" />
-
 Displays build information for your CircleCI account.
 
 ## Configuration
 
 ```yaml
 circleci:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   enabled: true
   position:
     top: 4
@@ -22,6 +20,10 @@ circleci:
     width: 2
   refreshInterval: 900
 ```
+
+## Screenshots
+
+<img src="/imgs/modules/circleci.png" class="screenshot" width="609" height="150" alt="circleci screenshot" />
 
 {{% attributes %}}
   {{< attributes/apikey name="CircleCI" link="https://circleci.com/account/api" envvar="WTF_CIRCLE_API_KEY" >}}

@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.60.1" />
 <title>VictorOps OnCall :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -332,6 +332,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/modules/digitalocean/" class="dd-item">
+        <div>
+          <a href="/modules/digitalocean/">
+            DigitalOcean
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/modules/docker/" class="dd-item">
         <div>
           <a href="/modules/docker/">
@@ -614,20 +621,6 @@
       <a href="/modules/twitter/">Twitter</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/modules/twitter/twitterstats/" class="dd-item">
-        <div>
-          <a href="/modules/twitter/twitterstats/">
-            Twitter Stats
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/modules/twitter/twittertweets/" class="dd-item">
-        <div>
-          <a href="/modules/twitter/twittertweets/">
-            Twitter Tweets
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
         </ul>
     </li>
       <li data-nav-id="/modules/victorops/" class="dd-item active">
@@ -712,6 +705,7 @@
       <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/devto/" >- DEV (dev.to)</option>
       <option value="/modules/digitalclock/" >- Digital Clock</option>
+      <option value="/modules/digitalocean/" >- DigitalOcean</option>
       <option value="/modules/docker/" >- Docker</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -792,7 +786,7 @@
 <h2 id="configuration">Configuration</h2>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">victorops<span class="p">:</span><span class="w">
 </span><span class="w">  </span>apiID<span class="p">:</span><span class="w"> </span>a3c5dd63<span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span>3276d7155dd9ee27b8b14f8743a408a9<span class="w">
+</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;p0d13*********************************************c3&#34;</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
 </span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
@@ -801,6 +795,8 @@
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">3600</span><span class="w">
 </span><span class="w">  </span>team<span class="p">:</span><span class="w"> </span>devops</code></pre></div>
+<h2 id="attributes">Attributes</h2>
+
 <table class="table">
     <thead>
         <tr>
@@ -860,7 +856,7 @@
   <div class="chevrons">
   <div id="navigation">
 <a class="nav nav-prev" href="/modules/twitter/twittertweets/" title="Twitter Tweets"> <i class="fa fa-chevron-left"></i><label>Twitter Tweets</label></a>
-    <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypto Currencies" style="margin-right: 0px;"><label>Crypto Currencies</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/modules/weather_services/" title="Weather Services" style="margin-right: 0px;"><label>Weather Services</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>

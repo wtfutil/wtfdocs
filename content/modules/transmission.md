@@ -5,8 +5,6 @@ draft: false
 weight: 235
 ---
 
-<img class="screenshot" src="/imgs/modules/transmission.png" width="320" height="190" alt="transmission screenshot" />
-
 View and manage your [Transmission](https://transmissionbt.com) bittorrent daemon. This widget shows you the currently-loaded 
 torrents, their "download complete" percentage, and their seeding status.
 
@@ -25,6 +23,10 @@ transmission:
   refreshInterval: 3
   username: "transmission"
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/transmission.png" width="320" height="190" alt="transmission screenshot" />
 
 {{% attributes %}}
   {{< attributes/border >}}

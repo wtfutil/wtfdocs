@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.60.1" />
 <title>Binary Renamed to &#39;wtfutil&#39; :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -330,6 +330,13 @@
         <div>
           <a href="/modules/digitalclock/">
             Digital Clock
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/digitalocean/" class="dd-item">
+        <div>
+          <a href="/modules/digitalocean/">
+            DigitalOcean
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -728,6 +735,7 @@
       <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/devto/" >- DEV (dev.to)</option>
       <option value="/modules/digitalclock/" >- Digital Clock</option>
+      <option value="/modules/digitalocean/" >- DigitalOcean</option>
       <option value="/modules/docker/" >- Docker</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -806,7 +814,7 @@
 <p>With the release of <a href="https://github.com/wtfutil/wtf/releases/tag/v0.15.0">v0.15.0</a>, the installed binary has been renamed from <code>wtf</code> to <code>wtfutil</code>.</p>
 
 <p>To execute it, you must now use:</p>
-<div class="highlight"><pre class="chroma"><code class="language-console" data-lang="console">wtfutil</code></pre></div>
+<pre><code class="language-console" data-lang="console">wtfutil</code></pre>
 <p>The name has changed because calling it <code>wtf</code> caused a collision with the venerable and amusing <a href="https://sourceforge.net/projects/bsdwtf/">bsd-wtf</a> utility. This wasn&rsquo;t a problem back when there was only one person using WTF and no one else knew about it, but with the rise in popularity this collision has been causing problems for some people.</p>
 
 <p>Given that <code>bsd-wtf</code> was created long before WTF, it only seems proper to abdicate the name.</p>

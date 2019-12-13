@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.60.1" />
 <title>Pagerduty :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -332,6 +332,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/modules/digitalocean/" class="dd-item">
+        <div>
+          <a href="/modules/digitalocean/">
+            DigitalOcean
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/modules/docker/" class="dd-item">
         <div>
           <a href="/modules/docker/">
@@ -387,6 +394,27 @@
       <a href="/modules/google/">Google Apps</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/modules/google/gcal/" class="dd-item">
+        <div>
+          <a href="/modules/google/gcal/">
+            Google Calendar
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/google/ganalytics/" class="dd-item">
+        <div>
+          <a href="/modules/google/ganalytics/">
+            Google Analytics
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/google/gspreadsheet/" class="dd-item">
+        <div>
+          <a href="/modules/google/gspreadsheet/">
+            Google Spreadsheets
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
         </ul>
     </li>
       <li data-nav-id="/modules/hackernews/" class="dd-item">
@@ -691,6 +719,7 @@
       <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/devto/" >- DEV (dev.to)</option>
       <option value="/modules/digitalclock/" >- Digital Clock</option>
+      <option value="/modules/digitalocean/" >- DigitalOcean</option>
       <option value="/modules/docker/" >- Docker</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -766,11 +795,11 @@
   
     
 
-<p>Connects to the Pagerduty API and shows schedules</p>
+<p>Shows Pagerduty on-call schedules.</p>
 
 <h2 id="configuration">Configuration</h2>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">pagerduty<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;yourapikey&gt;&#34;</span><span class="w">
+</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;p0d13*********************************************c3&#34;</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>escalationFilter<span class="p">:</span><span class="w">
 </span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;client-eng&#34;</span><span class="w">
@@ -784,6 +813,8 @@
 </span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;C3P05MF&#34;</span><span class="w">
 </span><span class="w">  </span>showIncidents<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>showSchedules<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
+<h2 id="attributes">Attributes</h2>
+
 <table class="table">
     <thead>
         <tr>
@@ -850,8 +881,8 @@
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/weather_services/weather/" title="Weather"> <i class="fa fa-chevron-left"></i><label>Weather</label></a>
-    <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypto Currencies" style="margin-right: 0px;"><label>Crypto Currencies</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/opsgenie/" title="OpsGenie"> <i class="fa fa-chevron-left"></i><label>OpsGenie</label></a>
+    <a class="nav nav-next" href="/modules/power/" title="Power" style="margin-right: 0px;"><label>Power</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>

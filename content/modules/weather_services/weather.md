@@ -13,7 +13,7 @@ Displays a configurable list of current weather report, including current temper
 
 ```yaml
 weather:
-  apiKey: "2dfb3e3650a1950adddb6badf5ba1aaa"
+  apiKey: "p0d13*********************************************c3"
   # From http://openweathermap.org/help/city_list.txt
   cityids:
   - 6173331

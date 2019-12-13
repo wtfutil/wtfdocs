@@ -5,8 +5,6 @@ draft: false
 weight: 110
 ---
 
-<img src="/imgs/modules/gitter.png" width="847" height="160" alt="gitter screenshot" />
-
 Displays chat messages from Gitter.
 
 ## Configuration
@@ -24,6 +22,10 @@ gitter:
   roomUri: wtfutil/Lobby
   refreshInterval: 300
 ```
+
+## Screenshots
+
+<img src="/imgs/modules/gitter.png" width="847" height="160" alt="gitter screenshot" />
 
 {{% attributes %}}
   {{< attributes/apiToken name="Gitter" link="https://developer.gitter.im/apps" >}}

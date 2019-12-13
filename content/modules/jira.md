@@ -5,8 +5,6 @@ draft: false
 weight: 140
 ---
 
-<img class="screenshot" src="/imgs/modules/jira.png" width="320" height="94" alt="jira screenshot" />
-
 Displays all Jira issues assigned to you for the specified project.
 
 ## Configuration
@@ -15,7 +13,7 @@ Displays all Jira issues assigned to you for the specified project.
 
 ```yaml
 jira:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   colors:
     rows:
       even: "lightblue"
@@ -42,7 +40,7 @@ configuration (note the difference in `project`):
 
 ```yaml
 jira:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   colors:
     rows:
       even: "lightblue"
@@ -61,6 +59,11 @@ jira:
   username: "chris.cummer"
   verifyServerCertificate: true
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/jira.png" width="320" height="94" alt="jira screenshot" />
+
 {{% attributes %}}
   {{< attributes/apikey name="Jira" link="https://confluence.atlassian.com/cloud/api-tokens-938839638.html" envvar="WTF_JIRA_API_KEY" >}}
   {{< attributes/border >}}

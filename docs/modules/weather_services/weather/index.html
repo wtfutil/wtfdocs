@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.60.1" />
 <title>Weather :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -329,6 +329,13 @@
         <div>
           <a href="/modules/digitalclock/">
             Digital Clock
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/digitalocean/" class="dd-item">
+        <div>
+          <a href="/modules/digitalocean/">
+            DigitalOcean
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -713,6 +720,7 @@
       <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/devto/" >- DEV (dev.to)</option>
       <option value="/modules/digitalclock/" >- Digital Clock</option>
+      <option value="/modules/digitalocean/" >- DigitalOcean</option>
       <option value="/modules/docker/" >- Docker</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -798,7 +806,7 @@
 
 <h2 id="configuration">Configuration</h2>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">weather<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;2dfb3e3650a1950adddb6badf5ba1aaa&#34;</span><span class="w">
+</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;p0d13*********************************************c3&#34;</span><span class="w">
 </span><span class="w">  </span><span class="c"># From http://openweathermap.org/help/city_list.txt</span><span class="w">
 </span><span class="w">  </span>cityids<span class="p">:</span><span class="w">
 </span><span class="w">  </span>-<span class="w"> </span><span class="m">6173331</span><span class="w">
@@ -816,6 +824,8 @@
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span><span class="w">
 </span><span class="w">  </span>tempUnit<span class="p">:</span><span class="w"> </span><span class="s2">&#34;C&#34;</span></code></pre></div>
+<h2 id="attributes">Attributes</h2>
+
 <table class="table">
     <thead>
         <tr>
@@ -900,7 +910,7 @@
     <tbody>
         <p><tr>
     <td><code>/</code></td>
-    <td>Open/close the widget&rsquo;s help window</td>
+    <td>Open/close the widget&rsquo;s help modal</td>
 </tr></p>
 
 <p><tr>
@@ -944,7 +954,7 @@
   <div class="chevrons">
   <div id="navigation">
 <a class="nav nav-prev" href="/modules/weather_services/prettyweather/" title="Pretty Weather"> <i class="fa fa-chevron-left"></i><label>Pretty Weather</label></a>
-    <a class="nav nav-next" href="/modules/weather_services/arpansagovau/" title="ARPANSA" style="margin-right: 0px;"><label>ARPANSA</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/modules/zendesk/" title="Zendesk" style="margin-right: 0px;"><label>Zendesk</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>

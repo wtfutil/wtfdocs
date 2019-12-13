@@ -5,11 +5,7 @@ draft: false
 weight: 190
 ---
 
-<img class="screenshot" src="/imgs/modules/resource_usage.png" width="279" height="193" alt="resource usage screenshot" />
-
-Added in `v0.4.1`.
-
-Displays cpu and memory usage.
+Displays CPU and memory usage.
 
 ## Configuration
 
@@ -23,6 +19,10 @@ resourceusage:
     width: 1
   refreshInterval: 1
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/resource_usage.png" width="279" height="193" alt="resource usage screenshot" />
 
 {{% attributes %}}
   {{< attributes/border >}}

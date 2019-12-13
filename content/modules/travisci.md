@@ -5,8 +5,6 @@ draft: false
 weight: 240
 ---
 
-<img class="screenshot" src="/imgs/modules/travisci.png" width="640" height="187" alt="travisci screenshot" />
-
 Displays build information for your Travis CI account.
 
 ## Configuration
@@ -15,7 +13,7 @@ This module pulls information from api.travis-ci.com (when pro: true) or api.tra
 
 ```yaml
 travisci:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   enabled: true
   compact: true
   limit: 8
@@ -28,6 +26,10 @@ travisci:
   pro: false
   refreshInterval: 900
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/travisci.png" width="640" height="187" alt="travisci screenshot" />
 
 {{% attributes %}}
   {{< attributes/apikey name="TravisCI" link="https://developer.travis-ci.org/authentication" envvar="WTF_TRAVIS_API_TOKEN" >}}

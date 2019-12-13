@@ -5,8 +5,6 @@ draft: false
 weight: 65
 ---
 
-<img class="screenshot" src="/imgs/modules/feedreader.png" width="320" height="94" alt="feedreader screenshot" />
-
 A rudimentary RSS & Atom feed reader.
 
 ## Configuration
@@ -25,6 +23,10 @@ feedreader:
     width: 2
   refreshInterval: 14400
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/feedreader.png" width="320" height="94" alt="feedreader screenshot" />
 
 {{% attributes %}}
   {{< attributes/border >}}

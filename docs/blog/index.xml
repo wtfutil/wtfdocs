@@ -120,7 +120,7 @@ By way of example, if you&amp;rsquo;re running v0.24 or later, drop this into yo
       <guid>https://wtfutil.com/blog/2019-07-12-homebrew-installation/</guid>
       <description>July 12, 2019 As of today WTF can be installed on macOS using Homebrew:
 brew tap wtfutil/wtfutil brew install wtfutil wtfutil If everything goes according to plan, you should now find wtfutil on your system as an executable binary:
-❯ which wtfutil /usr/local/bin/wtfutil ❯ ls /usr/local/bin/wtfutil lrwxr-xr-x 1 xxxxxx admin 36 11 Jul 17:29 /usr/local/bin/wtfutil -&amp;gt; ../Cellar/wtfutil/0.16.1/bin/wtfutil  </description>
+❯ which wtfutil /usr/local/bin/wtfutil❯ ls /usr/local/bin/wtfutil lrwxr-xr-x 1 xxxxxx admin 36 11 Jul 17:29 /usr/local/bin/wtfutil - .</description>
     </item>
     
     <item>

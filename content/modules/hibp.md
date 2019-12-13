@@ -5,8 +5,6 @@ draft: false
 weight: 125
 ---
 
-<img class="screenshot" src="/imgs/modules/hibp.png" width="320" height="79" alt="hibp screenshot" />
-
 Indicates whether or not your listed email addresses appear in the [Have I Been Pwned](https://haveibeenpwned.com) breach database.
 
 **Note:** As of v0.19.0, WTF requires you use a Have I Been Pwned API key to conenct to the service. See details below.
@@ -18,7 +16,7 @@ hibp:
   accounts:
   - test@example.com
   - pwned@gmail.com
-  apiKey: "ef9cb8d7-0941-4633-b056-3bobcatd3c78"
+  apiKey: "p0d13*********************************************c3"
   colors:
     ok: "green"
     pwned: "red"
@@ -31,6 +29,10 @@ hibp:
   refreshInterval: 43200
   since: "2019-06-22"
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/hibp.png" width="320" height="79" alt="hibp screenshot" />
 
 {{% attributes %}}
   {{< attributes/custom name="accounts" desc="A list of the accounts to check the HIBP database for." >}}

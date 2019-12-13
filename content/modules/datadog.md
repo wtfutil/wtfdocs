@@ -33,6 +33,7 @@ datadog:
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
   {{< attributes/custom name="tags" desc="List of tags you want to query monitors by." value="" >}}
+  {{< attributes/title >}}
 {{% /attributes %}}
 
 {{% sourcePath module="datadog" %}}

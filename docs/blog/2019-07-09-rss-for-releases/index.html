@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.60.1" />
 <title>Using WTF&#39;s FeedReader to Track WTF Releases :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -330,6 +330,13 @@
         <div>
           <a href="/modules/digitalclock/">
             Digital Clock
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/digitalocean/" class="dd-item">
+        <div>
+          <a href="/modules/digitalocean/">
+            DigitalOcean
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -728,6 +735,7 @@
       <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/devto/" >- DEV (dev.to)</option>
       <option value="/modules/digitalclock/" >- Digital Clock</option>
+      <option value="/modules/digitalocean/" >- DigitalOcean</option>
       <option value="/modules/docker/" >- Docker</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -810,7 +818,7 @@
 <p>Putting the two together, you now have a great way to keep up-to-date on the most recent WTF releases, because all of them will be announced, with changlog details, on this very blog.</p>
 
 <p>To configure WTF to do so, add the following <code>feedreader</code> configuration to your <code>config.yml</code> file:</p>
-<div class="highlight"><pre class="chroma"><code class="language-console" data-lang="console">feedreader:
+<pre><code class="language-console" data-lang="console">feedreader:
   enabled: true
   feeds:
   - https://wtfutil.com/blog/index.xml
@@ -820,7 +828,7 @@
     left: 1
     width: 2
     height: 1
-  updateInterval: 14400</code></pre></div>
+  updateInterval: 14400</code></pre>
 <p>Modify the <code>position</code> values accordingly for where you want it to appear onscreen.</p>
 
 <p><code>feedLimit</code> limits the number of stories displayed for any given feed. Without a feed limit, FeedReader will display all the stories returned by the feed.</p>

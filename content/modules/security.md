@@ -5,8 +5,6 @@ draft: false
 weight: 203
 ---
 
-<img class="screenshot" src="/imgs/modules/security.png" width="320" height="192" alt="security screenshot" />
-
 Displays some general information about the state of the machine's wifi
 connection, firewall, DNS settings, and logged-in users.
 
@@ -49,6 +47,11 @@ security:
     width: 1
   refreshInterval: 3600
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/security.png" width="320" height="192" alt="security screenshot" />
+
 {{% attributes %}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}

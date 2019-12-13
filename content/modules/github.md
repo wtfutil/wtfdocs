@@ -5,8 +5,6 @@ draft: false
 weight: 90
 ---
 
-<img class="screenshot" src="/imgs/modules/github.png" width="480" height="288" alt="github screenshot" />
-
 Displays information about your git repositories hosted on GitHub:
 
 #### Open Review Requests
@@ -46,6 +44,10 @@ github:
   uploadURL: ""
   username: "wtfutil"
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/github.png" width="480" height="288" alt="github screenshot" />
 
 {{% attributes %}}
   {{< attributes/apikey name="GitHub" link="https://blog.github.com/2013-05-16-personal-api-tokens/" envvar="WTF_GITHUB_TOKEN" >}}

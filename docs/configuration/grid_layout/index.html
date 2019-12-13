@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.60.1" />
 <title>Grid Layout :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -330,6 +330,13 @@
         <div>
           <a href="/modules/digitalclock/">
             Digital Clock
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/digitalocean/" class="dd-item">
+        <div>
+          <a href="/modules/digitalocean/">
+            DigitalOcean
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -718,6 +725,7 @@
       <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/devto/" >- DEV (dev.to)</option>
       <option value="/modules/digitalclock/" >- Digital Clock</option>
+      <option value="/modules/digitalocean/" >- DigitalOcean</option>
       <option value="/modules/docker/" >- Docker</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -808,13 +816,10 @@ explanation:</p>
 <p><code>[10, 10, 10, 10, 18]</code></p>
 
 <p>The co-ordinate system starts at top-left and defines how wide and tall a widget is. If we wanted to put a 2-col, 2-row widget in the bottom of the screen, we&rsquo;d position it at:</p>
-
 <pre><code>  top:    4  // top starts in the 4th row
   left:   9  // left starts in the 9th column
-  height: 2  // span down rows 4 &amp; 5 (18 characters in size, total)
-  width:  2  // span across cols 9 &amp; 10 (20 characters in size, total)
-</code></pre>
-
+  height: 2  // span down rows 4 & 5 (18 characters in size, total)
+  width:  2  // span across cols 9 & 10 (20 characters in size, total)</code></pre>
 
 
   

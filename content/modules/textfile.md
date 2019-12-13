@@ -5,8 +5,6 @@ draft: false
 weight: 210
 ---
 
-<img class="screenshot" src="/imgs/modules/textfile.png" width="320" height="133" alt="textfile screenshot" />
-
 Displays the contents of the specified text file in the widget.
 
 ## Configuration
@@ -27,6 +25,10 @@ textfile:
   refreshInterval: 15
   wrapText: true
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/textfile.png" width="320" height="133" alt="textfile screenshot" />
 
 {{% attributes %}}
   {{< attributes/border >}}

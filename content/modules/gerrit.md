@@ -5,8 +5,6 @@ draft: false
 weight: 70
 ---
 
-<img class="screenshot" src="/imgs/modules/gerrit.png" width="640" height="167" alt="gerrit screenshot" />
-
 Displays information about your projects hosted on Gerrit:
 
 #### Open Incoming Reviews
@@ -40,6 +38,10 @@ gerrit:
   username: "myname"
   verifyServerCertificate: false
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/gerrit.png" width="640" height="167" alt="gerrit screenshot" />
 
 {{% attributes %}}
   {{< attributes/border >}}

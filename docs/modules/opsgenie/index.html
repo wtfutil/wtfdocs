@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.60.1" />
 <title>OpsGenie :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -332,6 +332,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/modules/digitalocean/" class="dd-item">
+        <div>
+          <a href="/modules/digitalocean/">
+            DigitalOcean
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/modules/docker/" class="dd-item">
         <div>
           <a href="/modules/docker/">
@@ -430,17 +437,24 @@
       <a href="/modules/ipaddress/">IP Addresses</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/modules/ipaddress/ipapi/" class="dd-item">
+      <li data-nav-id="/getting_started/installation/" class="dd-item">
         <div>
-          <a href="/modules/ipaddress/ipapi/">
-            IP-API
+          <a href="/getting_started/installation/">
+            Installation
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/ipaddress/ipinfo/" class="dd-item">
+      <li data-nav-id="/getting_started/uninstall/" class="dd-item">
         <div>
-          <a href="/modules/ipaddress/ipinfo/">
-            IPInfo
+          <a href="/getting_started/uninstall/">
+            Uninstallation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/getting_started/glossary/" class="dd-item">
+        <div>
+          <a href="/getting_started/glossary/">
+            Glossary
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -712,6 +726,7 @@
       <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/devto/" >- DEV (dev.to)</option>
       <option value="/modules/digitalclock/" >- Digital Clock</option>
+      <option value="/modules/digitalocean/" >- DigitalOcean</option>
       <option value="/modules/docker/" >- Docker</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -787,10 +802,7 @@
   
     
 
-<p><img class="screenshot" src="/imgs/modules/opsgenie.png" width="320" height="389" alt="opsgenie screenshot" /></p>
-
-<p>Connects to the OpsGenie API and displays all your scheduled rotations
-and who&rsquo;s currently on call.</p>
+<p>Shows OpsGenie on-call schedules.</p>
 
 <p>See <a href="https://docs.opsgenie.com/docs/who-is-on-call-api">Who is on Call API</a> for details.</p>
 
@@ -798,7 +810,7 @@ and who&rsquo;s currently on call.</p>
 
 <h3 id="single-schedule">Single Schedule</h3>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">opsgenie<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
+</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;p0d13*********************************************c3&#34;</span><span class="w">
 </span><span class="w">  </span>displayEmpty<span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
@@ -812,7 +824,7 @@ and who&rsquo;s currently on call.</p>
 </span><span class="w">  </span>scheduleIdentifierType<span class="p">:</span><span class="w"> </span><span class="s2">&#34;id&#34;</span></code></pre></div>
 <h3 id="multiple-schedules">Multiple Schedules</h3>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">opsgenie<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
+</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;p0d13*********************************************c3&#34;</span><span class="w">
 </span><span class="w">  </span>displayEmpty<span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>position<span class="p">:</span><span class="w">
@@ -826,6 +838,12 @@ and who&rsquo;s currently on call.</p>
 </span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;Primary&#34;</span><span class="w">
 </span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;Secondary&#34;</span><span class="w">
 </span><span class="w">  </span>scheduleIdentifierType<span class="p">:</span><span class="w"> </span><span class="s2">&#34;id&#34;</span></code></pre></div>
+<h2 id="screenshots">Screenshots</h2>
+
+<p><img class="screenshot" src="/imgs/modules/opsgenie.png" width="320" height="389" alt="opsgenie screenshot" /></p>
+
+<h2 id="attributes">Attributes</h2>
+
 <table class="table">
     <thead>
         <tr>
@@ -887,8 +905,8 @@ and who&rsquo;s currently on call.</p>
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/weather_services/weather/" title="Weather"> <i class="fa fa-chevron-left"></i><label>Weather</label></a>
-    <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypto Currencies" style="margin-right: 0px;"><label>Crypto Currencies</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/newrelic/" title="New Relic"> <i class="fa fa-chevron-left"></i><label>New Relic</label></a>
+    <a class="nav nav-next" href="/modules/pagerduty/" title="Pagerduty" style="margin-right: 0px;"><label>Pagerduty</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>

@@ -5,8 +5,6 @@ draft: false
 weight: 123
 ---
 
-<img class="screenshot" src="/imgs/modules/hackernews.png" width="320" height="76" alt="hackernews screenshot" />
-
 Displays stories from Hacker News.
 
 ## Configuration
@@ -23,6 +21,11 @@ hackernews:
   storyType: top
   refreshInterval: 900
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/hackernews.png" width="320" height="76" alt="hackernews screenshot" />
+
 {{% attributes %}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}

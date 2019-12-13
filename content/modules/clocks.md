@@ -5,8 +5,6 @@ draft: false
 weight: 30
 ---
 
-<img src="/imgs/modules/clocks.png" class="screenshot" width="320" height="191" alt="clocks screenshot" />
-
 Displays a configurable list of world clocks, the local time, and date.
 
 ## Configuration
@@ -36,6 +34,10 @@ clocks:
   # Valid options are: alphabetical, chronological
   sort: "alphabetical"
 ```
+
+## Screenshots
+
+<img src="/imgs/modules/clocks.png" class="screenshot" width="320" height="191" alt="clocks screenshot" />
 
 {{% attributes %}}
   {{< attributes/border >}}

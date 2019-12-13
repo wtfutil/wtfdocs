@@ -5,10 +5,7 @@ draft: false
 weight: 170
 ---
 
-<img class="screenshot" src="/imgs/modules/opsgenie.png" width="320" height="389" alt="opsgenie screenshot" />
-
-Connects to the OpsGenie API and displays all your scheduled rotations
-and who's currently on call.
+Shows OpsGenie on-call schedules.
 
 See <a href="https://docs.opsgenie.com/docs/who-is-on-call-api">Who is on Call API</a> for details. 
 
@@ -18,7 +15,7 @@ See <a href="https://docs.opsgenie.com/docs/who-is-on-call-api">Who is on Call A
 
 ```yaml
 opsgenie:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   displayEmpty: false
   enabled: true
   position:
@@ -36,7 +33,7 @@ opsgenie:
 
 ```yaml
 opsgenie:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   displayEmpty: false
   enabled: true
   position:
@@ -51,6 +48,10 @@ opsgenie:
   - "Secondary"
   scheduleIdentifierType: "id"
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/opsgenie.png" width="320" height="389" alt="opsgenie screenshot" />
 
 {{% attributes %}}
   {{< attributes/apikey name="OpsGenie" link="https://docs.opsgenie.com/docs/api-integration" envvar="WTF_OPS_GENIE_API_KEY" >}}

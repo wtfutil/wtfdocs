@@ -5,15 +5,13 @@ draft: false
 weight: 130
 ---
 
-<img class="screenshot" src="/imgs/modules/jenkins.png" alt="jenkins screenshot" width="320" height="68" />
-
-Displays jenkins status of given builds in a project or view
+Displays Jenkins status of given builds in a project or view.
 
 ## Configuration
 
 ```yaml
 jenkins:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   enabled: true
   position:
     top: 2
@@ -27,6 +25,10 @@ jenkins:
   user: "username"
   verifyServerCertificate: true
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/jenkins.png" alt="jenkins screenshot" width="320" height="68" />
 
 {{% attributes %}}
   {{< attributes/apikey name="Jenkins" link="https://wiki.jenkins.io/display/JENKINS/Remote+access+API" envvar="WTF_JENKINS_API_KEY" >}}

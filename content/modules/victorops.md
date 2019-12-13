@@ -12,7 +12,7 @@ Connects to the VictorOps API and determines who is on call
 ```yaml
 victorops:
   apiID: a3c5dd63
-  apiKey: 3276d7155dd9ee27b8b14f8743a408a9
+  apiKey: "p0d13*********************************************c3"
   enabled: true
   position:
     top: 0

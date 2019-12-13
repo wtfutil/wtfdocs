@@ -5,8 +5,6 @@ draft: false
 weight: 80
 ---
 
-<img class="screenshot" src="/imgs/modules/git.png" width="720" height="292" alt="git screenshot" />
-
 Displays information about local git repositories: branch, changed
 files, and recent commits.
 
@@ -41,6 +39,10 @@ git:
   - "/Users/chris/go/src/github.com/wtfutil/wtf"
   - "/Users/user/fakeapp"
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/git.png" width="720" height="292" alt="git screenshot" />
 
 {{% attributes %}}
   {{< attributes/border >}}

@@ -5,8 +5,6 @@ draft: false
 weight: 60
 ---
 
-<img class="screenshot" src="/imgs/modules/devto.png" width="100" height="100" alt="dev.to logo"/>
-
 Displays stories from The Practical DEV [dev.to](https://dev.to).
 
 ## Configuration
@@ -24,6 +22,10 @@ devto:
   contentUsername: "victoravelar"
   contentState: "rising"
 ```
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/devto.png" width="100" height="100" alt="dev.to logo"/>
+
 {{% attributes %}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}

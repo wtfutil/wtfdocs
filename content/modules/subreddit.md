@@ -5,8 +5,6 @@ draft: false
 weight: 207
 ---
 
-<img class="screenshot" src="/imgs/modules/subreddit.png" width="320" height="76" alt="subreddit module screenshot" />
-
 Displays stories from a specific subreddit.
 
 ## Configuration
@@ -25,6 +23,11 @@ subreddit:
   topTimePeriod: month
   refreshInterval: 900
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/subreddit.png" width="320" height="76" alt="subreddit module screenshot" />
+
 {{% attributes %}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}

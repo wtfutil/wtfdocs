@@ -11,7 +11,7 @@ Connects to the BambooHR API and displays who will be Away today.
 
 ```yaml
 bamboohr:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   enabled: true
   position:
     top: 0

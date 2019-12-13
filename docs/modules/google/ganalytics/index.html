@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.60.1" />
 <title>Google Analytics :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -329,6 +329,13 @@
         <div>
           <a href="/modules/digitalclock/">
             Digital Clock
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/digitalocean/" class="dd-item">
+        <div>
+          <a href="/modules/digitalocean/">
+            DigitalOcean
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -713,6 +720,7 @@
       <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/devto/" >- DEV (dev.to)</option>
       <option value="/modules/digitalclock/" >- Digital Clock</option>
+      <option value="/modules/digitalocean/" >- DigitalOcean</option>
       <option value="/modules/docker/" >- Docker</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -811,7 +819,7 @@
 </ol>
 
 <p>The newly created service account will have an email address that looks similar to:</p>
-<div class="highlight"><pre class="chroma"><code class="language-console" data-lang="console">something@PROJECT-ID.iam.gserviceaccount.com</code></pre></div>
+<pre><code class="language-console" data-lang="console">something@PROJECT-ID.iam.gserviceaccount.com</code></pre>
 <p>Use this email address to add a user to the <a href="https://analytics.google.com/analytics/web/">Google analytics view</a> you want to access via the API (admin &gt; user management &gt; add users). Only Read &amp; Analyze permissions are needed. Get the website viewID and put it in the config file.</p>
 
 <h2 id="real-time-data">Real Time Data</h2>
@@ -833,6 +841,8 @@
 </span><span class="w">  </span>viewIds<span class="p">:</span><span class="w">
 </span><span class="w">    </span>tessellation<span class="p">:</span><span class="w"> </span><span class="s2">&#34;00000000&#34;</span><span class="w">
 </span><span class="w">    </span>dylanbartels.com<span class="p">:</span><span class="w"> </span><span class="s2">&#34;111111111&#34;</span></code></pre></div>
+<h2 id="attributes">Attributes</h2>
+
 <table class="table">
     <thead>
         <tr>

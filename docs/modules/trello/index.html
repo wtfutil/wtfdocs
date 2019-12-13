@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.60.1" />
 <title>Trello :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -329,6 +329,13 @@
         <div>
           <a href="/modules/digitalclock/">
             Digital Clock
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/digitalocean/" class="dd-item">
+        <div>
+          <a href="/modules/digitalocean/">
+            DigitalOcean
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -712,6 +719,7 @@
       <option value="/modules/datadog/" >- Datadog</option>
       <option value="/modules/devto/" >- DEV (dev.to)</option>
       <option value="/modules/digitalclock/" >- Digital Clock</option>
+      <option value="/modules/digitalocean/" >- DigitalOcean</option>
       <option value="/modules/docker/" >- Docker</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -787,8 +795,6 @@
   
     
 
-<p><img class="screenshot" src="/imgs/modules/trello.png" width="640" height="197" alt="trello screenshot" /></p>
-
 <p>Displays all Trello cards on specified lists.</p>
 
 <h2 id="configuration">Configuration</h2>
@@ -796,7 +802,7 @@
 <h3 id="single-trello-list">Single Trello List</h3>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">trello<span class="p">:</span><span class="w">
 </span><span class="w">  </span>accessToken<span class="p">:</span><span class="w"> </span><span class="s2">&#34;7b8b14f8743a408a93276d7155dd9ee2&#34;</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
+</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;p0d13*********************************************c3&#34;</span><span class="w">
 </span><span class="w">  </span>board<span class="p">:</span><span class="w"> </span>Main<span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>list<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Todo&#34;</span><span class="w">
@@ -813,7 +819,7 @@
 configuration (note the difference in <code>list</code>):</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">trello<span class="p">:</span><span class="w">
 </span><span class="w">  </span>accessToken<span class="p">:</span><span class="w"> </span><span class="s2">&#34;7b8b14f8743a408a93276d7155dd9ee2&#34;</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;3276d7155dd9ee27b8b14f8743a408a9&#34;</span><span class="w">
+</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;p0d13*********************************************c3&#34;</span><span class="w">
 </span><span class="w">  </span>board<span class="p">:</span><span class="w"> </span>Main<span class="w">
 </span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span>list<span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;Todo&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;Done&#34;</span><span class="p">]</span><span class="w">
@@ -824,6 +830,12 @@ configuration (note the difference in <code>list</code>):</p>
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">3600</span><span class="w">
 </span><span class="w">  </span>username<span class="p">:</span><span class="w"> </span>myname</code></pre></div>
+<h2 id="screenshots">Screenshots</h2>
+
+<p><img class="screenshot" src="/imgs/modules/trello.png" width="640" height="197" alt="trello screenshot" /></p>
+
+<h2 id="attributes">Attributes</h2>
+
 <table class="table">
     <thead>
         <tr>
@@ -890,8 +902,8 @@ configuration (note the difference in <code>list</code>):</p>
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/weather_services/weather/" title="Weather"> <i class="fa fa-chevron-left"></i><label>Weather</label></a>
-    <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypto Currencies" style="margin-right: 0px;"><label>Crypto Currencies</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/travisci/" title="TravisCI"> <i class="fa fa-chevron-left"></i><label>TravisCI</label></a>
+    <a class="nav nav-next" href="/modules/twitter/" title="Twitter" style="margin-right: 0px;"><label>Twitter</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>

@@ -5,8 +5,6 @@ draft: false
 weight: 250
 ---
 
-<img class="screenshot" src="/imgs/modules/trello.png" width="640" height="197" alt="trello screenshot" />
-
 Displays all Trello cards on specified lists.
 
 ## Configuration
@@ -16,7 +14,7 @@ Displays all Trello cards on specified lists.
 ```yaml
 trello:
   accessToken: "7b8b14f8743a408a93276d7155dd9ee2"
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   board: Main
   enabled: true
   list: "Todo"
@@ -37,7 +35,7 @@ configuration (note the difference in `list`):
 ```yaml
 trello:
   accessToken: "7b8b14f8743a408a93276d7155dd9ee2"
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   board: Main
   enabled: true
   list: ["Todo", "Done"]
@@ -49,6 +47,10 @@ trello:
   refreshInterval: 3600
   username: myname
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/trello.png" width="640" height="197" alt="trello screenshot" />
 
 {{% attributes %}}
   {{< attributes/apikey name="Trello" link="" envvar="WTF_TRELLO_APP_KEY" >}}

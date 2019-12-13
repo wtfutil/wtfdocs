@@ -5,8 +5,6 @@ draft: false
 weight: 63
 ---
 
-<img class="screenshot" src="/imgs/modules/docker.png" width="275" height="320" alt="github screenshot" />
-
 Displays information about currently-running Docker processes.
 
 ## Configuration
@@ -23,6 +21,10 @@ docker:
     width: 3
   refreshInterval: 1
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/docker.png" width="275" height="320" alt="github screenshot" />
 
 {{% attributes %}}
   {{< attributes/enabled >}}

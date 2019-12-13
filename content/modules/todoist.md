@@ -5,15 +5,13 @@ draft: false
 weight: 230
 ---
 
-<img class="screenshot" src="/imgs/modules/todoist.png" alt="todoist screenshot" />
-
 Displays all items on specified project.
 
 ## Configuration
 
 ```yaml
 todoist:
-  apiKey: "3276d7155dxxxxxxxxxx4f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   enabled: true
   position:
     top: 0
@@ -24,6 +22,10 @@ todoist:
     - 122247497
   refreshInterval: 3600
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/todoist.png" alt="todoist screenshot" />
 
 {{% attributes %}}
   {{< attributes/apikey name="Todoist" link="https://developer.todoist.com/sync/v7/" envvar="WTF_TODOIST_TOKEN" >}}

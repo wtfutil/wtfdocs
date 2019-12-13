@@ -5,13 +5,13 @@ draft: false
 weight: 175
 ---
 
-Connects to the Pagerduty API and shows schedules
+Shows Pagerduty on-call schedules.
 
 ## Configuration
 
 ```yaml
 pagerduty:
-  apiKey: "<yourapikey>"
+  apiKey: "p0d13*********************************************c3"
   enabled: true
   escalationFilter:
   - "client-eng"

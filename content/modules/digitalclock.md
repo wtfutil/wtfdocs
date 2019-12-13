@@ -5,8 +5,6 @@ draft: false
 weight: 61
 ---
 
-<img src="/imgs/modules/digitalclock.png" class="screenshot" width="240" height="121" alt="digitalclock screenshot" />
-
 Displays a configurable digital clock.
 
 ## Configuration
@@ -26,6 +24,10 @@ digitalclock:
   title: "big clock"
   type: "digitalclock"
 ```
+
+## Screenshots
+
+<img src="/imgs/modules/digitalclock.png" class="screenshot" width="240" height="121" alt="digitalclock screenshot" />
 
 {{% attributes %}}
   {{< attributes/border >}}

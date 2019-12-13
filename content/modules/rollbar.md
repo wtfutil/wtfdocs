@@ -5,8 +5,6 @@ draft: false
 weight: 202
 ---
 
-<img class="screenshot" src="/imgs/modules/rollbar.png" width="640" height="187" alt="rollbar screenshot" />
-
 Displays item information for your rollbar account.
 
 ## Configuration
@@ -27,6 +25,10 @@ rollbar:
     width: 2
   refreshInterval: 900
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/rollbar.png" width="640" height="187" alt="rollbar screenshot" />
 
 {{% attributes %}}
   {{< attributes/custom name="accessToken" desc="Your Rollbar project access token (only needs read capabilities)." value="" >}}

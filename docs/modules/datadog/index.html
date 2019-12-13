@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.60.1" />
 <title>Datadog :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -329,6 +329,13 @@
         <div>
           <a href="/modules/digitalclock/">
             Digital Clock
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/digitalocean/" class="dd-item">
+        <div>
+          <a href="/modules/digitalocean/">
+            DigitalOcean
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -712,6 +719,7 @@
       <option value="/modules/datadog/"  selected>- Datadog</option>
       <option value="/modules/devto/" >- DEV (dev.to)</option>
       <option value="/modules/digitalclock/" >- Digital Clock</option>
+      <option value="/modules/digitalocean/" >- DigitalOcean</option>
       <option value="/modules/docker/" >- Docker</option>
       <option value="/modules/feedreader/" >- Feed Reader</option>
       <option value="/modules/gerrit/" >- Gerrit</option>
@@ -802,6 +810,8 @@
 </span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span></code></pre></div>
+<h2 id="attributes">Attributes</h2>
+
 <table class="table">
     <thead>
         <tr>
@@ -853,6 +863,11 @@
     <td>List of tags you want to query monitors by.</td>
     <td></td>
 </tr>
+  <tr>
+    <td><code>title</code></td>
+    <td><em>Optional</em> The title to display in the widget&rsquo;s onscreen box.</td>
+    <td></td>
+</tr>
     </tbody>
 </table>
 
@@ -864,7 +879,7 @@
   <div class="chevrons">
   <div id="navigation">
 <a class="nav nav-prev" href="/modules/cryptocurrencies/cryptolive/" title="CryptoLive"> <i class="fa fa-chevron-left"></i><label>CryptoLive</label></a>
-    <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypto Currencies" style="margin-right: 0px;"><label>Crypto Currencies</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/modules/devto/" title="DEV (dev.to)" style="margin-right: 0px;"><label>DEV (dev.to)</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>

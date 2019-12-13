@@ -5,8 +5,6 @@ draft: false
 weight: 155
 ---
 
-<img class="screenshot" src="/imgs/modules/mercurial.png" width="710" height="248" alt="mercurial screenshot" />
-
 Displays information about local mercurial repositories: branch, changed
 files, and recent commits.
 
@@ -40,6 +38,10 @@ mercurial:
   - "/Users/user/fakelib"
   - "/Users/user/fakeapp"
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/mercurial.png" width="710" height="248" alt="mercurial screenshot" />
 
 {{% attributes %}}
   {{< attributes/border >}}

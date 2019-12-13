@@ -13,7 +13,7 @@ The API token must have the `read_builds` permission.
 
 ```yaml
 buildkite:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   enabled: true
   organizationSlug: "acme-corp"
   refreshInterval: 60

@@ -5,8 +5,6 @@ draft: false
 weight: 100
 ---
 
-<img class="screenshot" src="/imgs/modules/gitlab.png" width="640" height="390" alt="gitlab screenshot" />
-
 Displays information about your projects hosted on GitLab:
 
 #### Open Approval Requests
@@ -21,7 +19,7 @@ All open merge requests created by you.
 
 ```yaml
 gitlab:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   enabled: true
   position:
     top: 2
@@ -34,6 +32,10 @@ gitlab:
     - "gitlab-org/gitlab-ce"
   username: "wtfutil"
 ```
+
+## Screenshots 
+
+<img class="screenshot" src="/imgs/modules/gitlab.png" width="640" height="390" alt="gitlab screenshot" />
 
 {{% attributes %}}
   {{< attributes/apikey name="GitLab" link="https://docs.gitlab.com/ce/user/profile/personal_access_tokens.html" envvar="WTF_GITLAB_TOKEN" >}}

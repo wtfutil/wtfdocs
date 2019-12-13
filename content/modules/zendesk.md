@@ -11,7 +11,7 @@ Displays Zendesk tickets.
 
 ```yaml
 zendesk:
-  apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
+  apiKey: "p0d13*********************************************c3"
   enabled: true
   position:
     top: 0

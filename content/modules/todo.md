@@ -5,8 +5,6 @@ draft:  false
 weight: 220
 ---
 
-<img class="screenshot" src="/imgs/modules/todo.png" width="320" height="388" alt="todo screenshot" />
-
 An interactive todo list.
 
 ## Configuration
@@ -28,6 +26,10 @@ todo:
     width: 1
   refreshInterval: 3600
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/todo.png" width="320" height="388" alt="todo screenshot" />
 
 {{% attributes %}}
   {{< attributes/border >}}

@@ -28,6 +28,7 @@ logger:
     width: 1
   refreshInterval: 1
 ```
+
 {{% attributes %}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}
@@ -35,7 +36,7 @@ logger:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-## Keyboard Commands
+## Keyboard Controls
 
 Arrow keys scroll through the log file.
 

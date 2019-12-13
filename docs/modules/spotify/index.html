@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.59.1" />
+<meta name="generator" content="Hugo 0.60.1" />
 <title>Spotify :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -329,6 +329,13 @@
         <div>
           <a href="/modules/digitalclock/">
             Digital Clock
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/digitalocean/" class="dd-item">
+        <div>
+          <a href="/modules/digitalocean/">
+            DigitalOcean
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -701,9 +708,64 @@
    WTF Blog</option>
     <option value="/modules/" >
    Modules</option> 
-      <option value="/modules/cryptocurrencies/bittrex/" >- Bittrex</option>
-      <option value="/modules/cryptocurrencies/blockfolio/" >- Blockfolio</option>
-      <option value="/modules/cryptocurrencies/cryptolive/" >- CryptoLive</option>
+      <option value="/modules/bamboohr/" >- BambooHR</option>
+      <option value="/modules/buildkite/" >- Buildkite</option>
+      <option value="/modules/circleci/" >- CircleCI</option>
+      <option value="/modules/clocks/" >- Clocks</option>
+      <option value="/modules/cmdrunner/" >- CmdRunner</option>
+    <option value="/modules/cryptocurrencies/" >
+  - 
+   Crypto Currencies</option>
+      <option value="/modules/datadog/" >- Datadog</option>
+      <option value="/modules/devto/" >- DEV (dev.to)</option>
+      <option value="/modules/digitalclock/" >- Digital Clock</option>
+      <option value="/modules/digitalocean/" >- DigitalOcean</option>
+      <option value="/modules/docker/" >- Docker</option>
+      <option value="/modules/feedreader/" >- Feed Reader</option>
+      <option value="/modules/gerrit/" >- Gerrit</option>
+      <option value="/modules/git/" >- Git</option>
+      <option value="/modules/github/" >- GitHub</option>
+      <option value="/modules/gitlab/" >- GitLab</option>
+      <option value="/modules/gitter/" >- Gitter</option>
+    <option value="/modules/google/" >
+  - 
+   Google Apps</option>
+      <option value="/modules/hackernews/" >- Hacker News</option>
+      <option value="/modules/hibp/" >- Have I Been Pwned (HIBP)</option>
+    <option value="/modules/ipaddress/" >
+  - 
+   IP Addresses</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
+      <option value="/modules/jira/" >- Jira</option>
+      <option value="/modules/kubernetes/" >- Kubernetes</option>
+      <option value="/modules/logger/" >- Logger</option>
+      <option value="/modules/mercurial/" >- Mercurial</option>
+      <option value="/modules/newrelic/" >- New Relic</option>
+      <option value="/modules/opsgenie/" >- OpsGenie</option>
+      <option value="/modules/pagerduty/" >- Pagerduty</option>
+      <option value="/modules/power/" >- Power</option>
+      <option value="/modules/resourceusage/" >- Resource Usage</option>
+      <option value="/modules/rollbar/" >- Rollbar</option>
+      <option value="/modules/security/" >- Security</option>
+    <option value="/modules/sports/" >
+  - 
+   Sports</option>
+      <option value="/modules/spotify/"  selected>- Spotify</option>
+      <option value="/modules/subreddit/" >- Subreddit</option>
+      <option value="/modules/textfile/" >- Textfile</option>
+      <option value="/modules/todo/" >- Todo</option>
+      <option value="/modules/todoist/" >- Todoist</option>
+      <option value="/modules/transmission/" >- Transmission</option>
+      <option value="/modules/travisci/" >- TravisCI</option>
+      <option value="/modules/trello/" >- Trello</option>
+    <option value="/modules/twitter/" >
+  - 
+   Twitter</option>
+      <option value="/modules/victorops/" >- VictorOps OnCall</option>
+    <option value="/modules/weather_services/" >
+  - 
+   Weather Services</option>
+      <option value="/modules/zendesk/" >- Zendesk</option>
   
 
 
@@ -747,6 +809,8 @@
 </span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">0</span></code></pre></div>
+<h2 id="attributes">Attributes</h2>
+
 <table class="table">
     <thead>
         <tr>
@@ -803,7 +867,7 @@
     <tbody>
         <p><tr>
     <td><code>/</code></td>
-    <td>Open/close the widget&rsquo;s help window</td>
+    <td>Open/close the widget&rsquo;s help modal</td>
 </tr>
   <tr>
     <td><code>[return]</code></td>
@@ -842,7 +906,7 @@
   <div class="chevrons">
   <div id="navigation">
 <a class="nav nav-prev" href="/modules/sports/nbascore/" title="NBA Score"> <i class="fa fa-chevron-left"></i><label>NBA Score</label></a>
-    <a class="nav nav-next" href="/modules/cryptocurrencies/" title="Crypto Currencies" style="margin-right: 0px;"><label>Crypto Currencies</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/modules/subreddit/" title="Subreddit" style="margin-right: 0px;"><label>Subreddit</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>
