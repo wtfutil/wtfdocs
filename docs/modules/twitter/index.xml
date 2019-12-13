@@ -25,7 +25,7 @@ You must have either a bearer token or consumer key + consumer secret provided. 
     </item>
     
     <item>
-      <title>Twitter Tweets</title>
+      <title>Twitter</title>
       <link>https://wtfutil.com/modules/twitter/twittertweets/</link>
       <pubDate>Tue, 31 Jul 2018 20:21:37 -0700</pubDate>
       

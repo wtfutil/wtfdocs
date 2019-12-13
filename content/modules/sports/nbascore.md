@@ -19,6 +19,7 @@ nbascore:
     width: 1
   refreshInterval: 600
 ```
+
 {{% attributes %}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}

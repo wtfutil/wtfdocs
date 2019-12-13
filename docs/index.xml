@@ -31,7 +31,7 @@ From Source Download the source code repo and install the dependencies:
       
       <guid>https://wtfutil.com/modules/cryptocurrencies/bittrex/</guid>
       <description>Get the last 24 hour summary of cryptocurrencies market using Bittrex.
-Configuration bittrex:colors:base:name:orangedisplayName:redmarket:name:redfield:whitevalue:greenenabled:trueposition:top:-2left:2height:3width:1refreshInterval:5summary:BTC:displayName:Bitcoinmarket:-LTC-ETH Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.base.dispayName  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.base.name  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.</description>
+Configuration bittrex:colors:base:name:orangedisplayName:redmarket:name:redfield:whitevalue:greenenabled:trueposition:top:-2left:2height:3width:1refreshInterval:5summary:BTC:displayName:Bitcoinmarket:-LTC-ETH Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.base.dispayName  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.base.name  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.</description>
     </item>
     
     <item>
@@ -96,7 +96,7 @@ Columns breaks up the width of the screen into chunks, each chunk a specified nu
       
       <guid>https://wtfutil.com/modules/cryptocurrencies/blockfolio/</guid>
       <description>Display your Blockfolio crypto holdings.
-Configuration blockfolio:colors:name:bluegrows:greendrop:reddevice_token:&amp;#34;device token&amp;#34;displayHoldings:trueenabled:trueposition:top:3left:1width:1height:1refreshInterval:400 Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.drop  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.grows  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.name  Any X11 color name or long-form hex value (i.</description>
+Configuration blockfolio:colors:name:bluegrows:greendrop:reddevice_token:&amp;#34;device token&amp;#34;displayHoldings:trueenabled:trueposition:top:3left:1width:1height:1refreshInterval:400 Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.drop  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.grows  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.name  Any X11 color name or long-form hex value (i.</description>
     </item>
     
     <item>
@@ -105,8 +105,7 @@ Configuration blockfolio:colors:name:bluegrows:greendrop:reddevice_token:&amp;#3
       <pubDate>Sun, 10 Jun 2018 19:41:52 -0400</pubDate>
       
       <guid>https://wtfutil.com/modules/ipaddress/ipapi/</guid>
-      <description>Added in v0.0.7.
-Displays your current IP address information, from IP-APIcom.
+      <description>Displays your current IP address information, from IP-APIcom.
 Note: IP-API.com has a free-plan rate limit of 120 requests per minute.
 Configuration ipinfo:colors:name:redvalue:whiteenabled:trueposition:top:1left:2height:1width:1refreshInterval:150 Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false 
  colors.name Optional The default colour for the row names. Default: red. Any X11 color name or long-form hex value (i.</description>
@@ -133,7 +132,7 @@ Configuration prettyweather:enabled:truecity:&amp;#34;tehran&amp;#34;position:to
       <description>Displays your upcoming Google calendar events.
 Note: Setting up access to Google Calendars for Go is a bit unobvious. Check out Google&amp;rsquo;s Go Quickstart, and follow Enable The Google Calendar API.
 The configuration file downloaded is the file you use for the secretFile configuration option.
-Configuration gcal:colors:title:&amp;#34;red&amp;#34;eventTime:&amp;#34;lightblue&amp;#34;description:&amp;#34;yellow&amp;#34;highlights:-[&amp;#39;1on1|1\/11&amp;#39;,&amp;#39;green&amp;#39;]-[&amp;#39;apple|google|aws&amp;#39;,&amp;#39;blue&amp;#39;]-[&amp;#39;interview|meet&amp;#39;,&amp;#39;magenta&amp;#39;]-[&amp;#39;lunch&amp;#39;,&amp;#39;yellow&amp;#39;]past:&amp;#34;gray&amp;#34;calendarReadLevel:&amp;#34;reader&amp;#34;conflictIcon:&amp;#34;🚨&amp;#34;currentIcon:&amp;#34;💥&amp;#34;displayResponseStatus:trueemail:&amp;#34;chriscummer@me.com&amp;#34;enabled:trueeventCount:15hourFormat:&amp;#34;12&amp;#34;multiCalendar:trueposition:top:0left:0height:4width:1refreshInterval:300secretFile:&amp;#34;~/.config/wtf/gcal/client_secret.json&amp;#34;showDeclined:truetimezone:&amp;#34;America/Vancouver&amp;#34;withLocation:true Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true.</description>
+Configuration gcal:colors:title:&amp;#34;red&amp;#34;eventTime:&amp;#34;lightblue&amp;#34;description:&amp;#34;yellow&amp;#34;highlights:-[&amp;#39;1on1|1\/11&amp;#39;,&amp;#39;green&amp;#39;]-[&amp;#39;apple|google|aws&amp;#39;,&amp;#39;blue&amp;#39;]-[&amp;#39;interview|meet&amp;#39;,&amp;#39;magenta&amp;#39;]-[&amp;#39;lunch&amp;#39;,&amp;#39;yellow&amp;#39;]past:&amp;#34;gray&amp;#34;calendarReadLevel:&amp;#34;reader&amp;#34;conflictIcon:&amp;#34;🚨&amp;#34;currentIcon:&amp;#34;💥&amp;#34;displayResponseStatus:trueemail:&amp;#34;chriscummer@me.com&amp;#34;enabled:trueeventCount:15hourFormat:&amp;#34;12&amp;#34;multiCalendar:trueposition:top:0left:0height:4width:1refreshInterval:300secretFile:&amp;#34;~/.config/wtf/gcal/client_secret.json&amp;#34;showDeclined:truetimezone:&amp;#34;America/Vancouver&amp;#34;withLocation:true Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -175,7 +174,7 @@ Configuration buildkite:apiKey:&amp;#34;p0d13***********************************
       
       <guid>https://wtfutil.com/modules/cryptocurrencies/cryptolive/</guid>
       <description>Compare crypto currencies using CryptoCompare.
-Configuration cryptolive:enabled:trueposition:top:5left:2height:1width:2updateInterval:15currencies:BTC:displayName:Bitcointo:-USD-EUR-ETH-LTC-DOGELTC:displayName:Ethereumto:-USD-EUR-BTCtop:BTC:displayName:Bitcoinlimit:5to:-USDcolors:from:name:coraldisplayName:greyto:name:whiteprice:greentop:from:name:greydisplayName:coralto:name:redfield:whitevalue:green Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.from.displayName  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.from.name  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.to.name  Any X11 color name or long-form hex value (i.</description>
+Configuration cryptolive:enabled:trueposition:top:5left:2height:1width:2updateInterval:15currencies:BTC:displayName:Bitcointo:-USD-EUR-ETH-LTC-DOGELTC:displayName:Ethereumto:-USD-EUR-BTCtop:BTC:displayName:Bitcoinlimit:5to:-USDcolors:from:name:coraldisplayName:greyto:name:whiteprice:greentop:from:name:greydisplayName:coralto:name:redfield:whitevalue:green Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.from.displayName  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.from.name  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.to.name  Any X11 color name or long-form hex value (i.</description>
     </item>
     
     <item>
@@ -196,7 +195,7 @@ Configuration circleci:apiKey:&amp;#34;p0d13************************************
       <guid>https://wtfutil.com/modules/ipaddress/ipinfo/</guid>
       <description>Displays your current IP address information, from ipinfo.io.
 Note: IPInfo.io has a free-plan rate limit of 1000 requests per day.
-Configuration ipinfo:colors:name:redvalue:whiteenabled:trueposition:top:1left:2height:1width:1refreshInterval:150 Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false 
+Configuration ipinfo:colors:name:redvalue:whiteenabled:trueposition:top:1left:2height:1width:1refreshInterval:150 Screenhots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false 
  colors.name Optional The default colour for the row names. Default: red. Any X11 color name or long-form hex value (i.</description>
     </item>
     
@@ -321,7 +320,7 @@ Configuration nbascore:enabled:trueposition:top:1left:2height:1width:1refreshInt
     </item>
     
     <item>
-      <title>Twitter Tweets</title>
+      <title>Twitter</title>
       <link>https://wtfutil.com/modules/twitter/twittertweets/</link>
       <pubDate>Tue, 31 Jul 2018 20:21:37 -0700</pubDate>
       

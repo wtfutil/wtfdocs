@@ -5,8 +5,6 @@ draft: false
 weight: 25
 ---
 
-<img class="screenshot" src="/imgs/modules/football.png" width="720" height="292" alt="football screenshot" />
-
 Displays Football statistics about the specific league. This widget uses [football-data.org](https://www.football-data.org/client/register).
 
 #### Standings
@@ -28,18 +26,18 @@ Currently this widget only support below mentioned league/competition, You shoul
 | Competition                      | Short Name |
 |----------------------------------|:----------:|
 | Brazil Série A                   |     BSA    |
-| English Premier League           |     PL     |
-| English Championship             |     EC     |
-| European Championship            |     EUC    |
 | Campeonato Brasileiro da Série A |     EL2    |
-| UEFA Champions League            |     CL     |
+| English Championship             |     EC     |
+| English Premier League           |     PL     |
+| European Championship            |     EUC    |
+| FIFA World Cup                   |     WC     |
 | French Ligue 1                   |     FL1    |
 | German Bundesliga                |     GB     |
 | Italy Serie A                    |     ISA    |
 | Netherlands Eredivisie           |     NE     |
 | Portugal Primeira Liga           |     PPL    |
 | Spain Primera Division           |     SPD    |
-| FIFA World Cup                   |     WC     |
+| UEFA Champions League            |     CL     |
 
 ## Configuration
 
@@ -69,3 +67,9 @@ football:
 | matchesFrom   | List all matches played in last (N) number of days. Default 5                                                                                                            | Any positive integer.                                                                   |
 | matchesTo     |                                                  List all upcoming matches coming in next (N) number of days. Default 5                                                  | Any positive integer.                                                                   |
 | standingCount | List top number (N) of teams in the league. Default 5                                                                                                                    | Any positive integer.                                                                   |
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/football.png" width="720" height="292" alt="football screenshot" />
+
+{{% sourcePath module="football" %}}

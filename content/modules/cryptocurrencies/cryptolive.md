@@ -5,8 +5,6 @@ draft: false
 weight: 15
 ---
 
-<img class="screenshot" src="/imgs/modules/cryptolive.png" width="320" height="203" alt="cryptolive screenshot" />
-
 Compare crypto currencies using [CryptoCompare](https://cryptocompare.com).
 
 ## Configuration
@@ -57,6 +55,10 @@ cryptolive:
         field: white
         value: green
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/cryptolive.png" width="320" height="203" alt="cryptolive screenshot" />
 
 {{% attributes %}}
   {{< attributes/border >}}

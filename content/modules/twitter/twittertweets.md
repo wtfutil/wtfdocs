@@ -1,5 +1,5 @@
 ---
-title: "Twitter Tweets"
+title: "Twitter"
 date: 2018-07-31T20:21:37-07:00
 draft: false
 weight: 50
@@ -104,3 +104,5 @@ twitter:
   {{< keyboard/arrowBack desc="Show the previous Twitter account" >}}
   {{< keyboard/arrowFore desc="Show the next Twitter account" >}}
 {{% /keyboard %}}
+
+{{% sourcePath module="twitter" %}}

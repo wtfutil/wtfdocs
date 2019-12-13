@@ -5,8 +5,6 @@ draft: false
 weight: 50
 ---
 
-<img src="/imgs/modules/google_analytics.png" class="screenshot" width="600" height="150" alt="google analytics screenshot"/>
-
 Display website visitors information from Google Analytics API
 
 To make this work, you'll need a google API credential, link it to google analytics and find your website viewID.
@@ -52,6 +50,10 @@ googleanalytics:
     dylanbartels.com: "111111111"
 ```
 
+## Screenshots
+
+<img src="/imgs/modules/google_analytics.png" class="screenshot" width="600" height="150" alt="google analytics screenshot"/>
+
 {{% attributes %}}
   {{< attributes/enabled >}}
   {{< attributes/custom name="enableRealtime" desc="When set to `true`, the live count of users on each listed view will be displayed in addition to historical visitor counts.  This requires you to [sign up](https://docs.google.com/forms/d/1qfRFysCikpgCMGqgF3yXdUyQW4xAlLyjKuOoOEFN2Uw/viewform) for the Real Time Reporting API Beta. Default: false." value="true, false" >}}
@@ -74,8 +76,4 @@ googleanalytics:
   </tr>
 {{% /attributes %}}
 
-## Source Code
-
-```bash
-wtf/modules/googleanalytics/
-```
+{{% sourcePath module="googleanalytics" %}}

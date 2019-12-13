@@ -68,3 +68,5 @@ twitterstats:
   {{< attributes/refreshInterval >}}
   {{< attributes/custom name="screenNames" desc="The screen names of the Twitter users who's tweets you want to follow." value="A list of any valid Twitter user's screen names" >}}
 {{% /attributes %}}
+
+{{% sourcePath module="twitterstats" %}}

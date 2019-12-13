@@ -5,8 +5,6 @@ draft: false
 weight: 10
 ---
 
-Added in `v0.0.7`.
-
 Displays your current IP address information, from [IP-APIcom](http://ip-api.com).
 
 **Note:** IP-API.com has a free-plan rate limit of 120 requests per
@@ -39,8 +37,4 @@ ipinfo:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-## Source Code
-
-```bash
-wtf/modules/ipaddresses/ipapi/
-```
+{{% sourcePath module="ipapi" %}}

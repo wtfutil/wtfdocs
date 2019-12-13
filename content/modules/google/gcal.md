@@ -5,8 +5,6 @@ draft: false
 weight: 10
 ---
 
-<img class="screenshot" src="/imgs/modules/gcal.png" width="320" height="389" alt="gcal screenshot" />
-
 Displays your upcoming Google calendar events.
 
 **Note:** Setting up access to Google Calendars for Go is a bit unobvious. Check out Google's [Go Quickstart](https://developers.google.com/calendar/quickstart/go), and follow `Enable The Google Calendar API`. 
@@ -48,6 +46,10 @@ gcal:
   withLocation: true
 ```
 
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/gcal.png" width="320" height="389" alt="gcal screenshot" />
+
 {{% attributes %}}
   {{< attributes/border >}}
   {{< attributes/colors/custom name="colors.eventTime" desc="The default color for calendar event time." >}}
@@ -85,8 +87,4 @@ gcal:
   {{< attributes/custom name="withLocation" desc="_Optional_ Whether or not to show the location of the appointment. Default: true." value="true, false" >}}
 {{% /attributes %}}
 
-## Source Code
-
-```bash
-wtf/modules/google/gcal/
-```
+{{% sourcePath module="gcal" %}}

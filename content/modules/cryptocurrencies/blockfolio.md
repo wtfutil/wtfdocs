@@ -5,8 +5,6 @@ draft: false
 weight: 10
 ---
 
-<img class="screenshot" src="/imgs/modules/blockfolio.png" width="320" height="185" alt="blockfolio screenshot" />
-
 Display your Blockfolio crypto holdings.
 
 ## Configuration
@@ -27,6 +25,10 @@ blockfolio:
     height: 1
   refreshInterval: 400
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/blockfolio.png" width="320" height="185" alt="blockfolio screenshot" />
 
 {{% attributes %}}
   {{< attributes/border >}}

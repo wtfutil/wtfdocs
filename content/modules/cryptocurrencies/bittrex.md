@@ -5,8 +5,6 @@ draft: false
 weight: 5
 ---
 
-<img class="screenshot" src="/imgs/modules/bittrex.png" width="320" height="412" alt="bittrex screenshot" />
-
 Get the last 24 hour summary of cryptocurrencies market using [Bittrex](https://bittrex.com).
 
 ## Configuration
@@ -35,6 +33,10 @@ bittrex:
       - LTC
       - ETH
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/bittrex.png" width="320" height="412" alt="bittrex screenshot" />
 
 {{% attributes %}}
   {{< attributes/border >}}

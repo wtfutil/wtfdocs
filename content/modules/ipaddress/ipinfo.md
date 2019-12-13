@@ -5,8 +5,6 @@ draft: false
 weight: 20
 ---
 
-<img class="screenshot" src="/imgs/modules/ipinfo.png" width="320" height="199" alt="ipinfo screenshot" />
-
 Displays your current IP address information, from ipinfo.io.
 
 **Note:** IPInfo.io has a free-plan rate limit of 1000 requests per day.
@@ -27,6 +25,10 @@ ipinfo:
   refreshInterval: 150
 ```
 
+## Screenhots
+
+<img class="screenshot" src="/imgs/modules/ipinfo.png" width="320" height="199" alt="ipinfo screenshot" />
+
 {{% attributes %}}
   {{< attributes/border >}}
 
@@ -38,8 +40,4 @@ ipinfo:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-## Source Code
-
-```bash
-wtf/modules/ipaddresses/ipinfo/
-```
+{{% sourcePath module="ipinfo" %}}

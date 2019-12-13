@@ -48,8 +48,4 @@ gspreadsheets:
   </tr>
 {{% /attributes %}}
 
-## Source Code
-
-```bash
-wtf/modules/google/gspreadsheets/
-```
+{{% sourcePath module="gspreadsheets" %}}
