@@ -40,10 +40,6 @@ todoist:
 {{% keyboard %}}
   {{< keyboard/foreSlash >}}
   {{< keyboard/esc desc="Remove focus from the selected item" >}}
-  {{< keyboard/esc desc="Close the modal item dialog without saving changes" >}}
-  {{< keyboard/return desc="Edit the selected item" >}}
-  {{< keyboard/return desc="Close the modal item dialog and save changes" >}}
-  {{< keyboard/space desc="Check/uncheck the selected item" >}}
 
   {{< keyboard/spacer >}}
 
@@ -53,9 +49,7 @@ todoist:
   {{< keyboard/j >}}
   {{< keyboard/k >}}
   {{< keyboard/l desc="Show the next project" >}}
-  {{< keyboard/n desc="Create a new list item" >}}
-  {{< keyboard/o desc="Opens the todo list file in whichever text editor is associated with that file type" >}}
-  {{< keyboard/r >}}
+  {{< keyboard/u desc="Clear the current selection" >}}
 
   {{< keyboard/spacer >}}
 
@@ -65,9 +59,6 @@ todoist:
   {{< keyboard/arrowFore desc="Show the next project" >}}
 
   {{< keyboard/spacer >}}
-
-  {{< keyboard/custom name="Ctrl-j" desc="Move the selected item down the list" >}}
-  {{< keyboard/custom name="Ctrl-k" desc="Move the selected item up the list" >}}
 {{% /keyboard %}}
 
 {{% sourcePath module="todoist" %}}
