@@ -32,9 +32,9 @@ newrelic:
 
 {{% attributes %}}
   {{< attributes/apikey name="New Relic" link="https://docs.newrelic.com/docs/apis/getting-started/intro-apis/access-rest-api-keys" envvar="WTF_NEW_RELIC_API_KEY" >}}
-  {{< attributes/custom name="applicationId" desc="The integer ID of the New Relic application you wish to report on." value="Any positive integer" >}}
+  {{< attributes/custom name="applicationIds" desc="A list of integer IDs of the New Relic applications you wish to report on." value="Any positive integer." >}}
   {{< attributes/border >}}
-  {{< attributes/custom name="deployCount" desc="The number of past deploys to display on screen." value="Any positive integer" >}}
+  {{< attributes/custom name="deployCount" desc="The number of past deploys to display on screen." value="Any positive integer." >}}
   {{< attributes/enabled >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}

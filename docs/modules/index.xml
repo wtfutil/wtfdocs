@@ -317,7 +317,7 @@ Configuration mercurial:commitCount:5commitFormat:&amp;#34;[forestgreen]{rev}:{p
       
       <guid>https://wtfutil.com/modules/newrelic/</guid>
       <description>Connects to the New Relic API and displays the last n deploys of the monitored applications: deploy ID, deploy time, and who deployed it.
-Configuration newrelic:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;applicationIDs:-10549735-499785deployCount:6enabled:trueposition:top:4left:3height:1width:2refreshInterval:900 Screenshots Attributes   Name Description Value     apiKey Your New Relic API token.  Your API key or leave it empty to use the WTF_NEW_RELIC_API_KEY environment variable.    applicationId The integer ID of the New Relic application you wish to report on.</description>
+Configuration newrelic:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;applicationIDs:-10549735-499785deployCount:6enabled:trueposition:top:4left:3height:1width:2refreshInterval:900 Screenshots Attributes   Name Description Value     apiKey Your New Relic API token.  Your API key or leave it empty to use the WTF_NEW_RELIC_API_KEY environment variable.    applicationIds A list of integer IDs of the New Relic applications you wish to report on.</description>
     </item>
     
     <item>
