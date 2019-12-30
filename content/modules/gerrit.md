@@ -49,7 +49,7 @@ gerrit:
   {{< attributes/custom name="domain" desc="Your Gerrit corporate domain." value="A valid URI." >}}
   {{< attributes/enabled >}}
   {{< attributes/focusChar >}}
-  {{< attributes/password name="Gerrit" >}}
+  {{< attributes/password name="Gerrit" desc="Leave this empty to use the `WTF_GERRIT_PASSWORD` environment variable." >}}
   {{< attributes/position >}}
   {{< attributes/custom name="projects" desc="A list of Gerrit project names to fetch data for." >}}
   {{< attributes/refreshInterval >}}

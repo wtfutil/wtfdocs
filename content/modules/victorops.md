@@ -27,7 +27,7 @@ victorops:
   <tr>
     <td>`apiID`</td>
     <td>Your <a href="https://help.victorops.com/knowledge-base/api/">VictorOps API ID</a> token.</td>
-    <td></td>
+    <td>Leave this empty to use the `WTF_VICTOROPS_API_ID` environment variable.</td>
   </tr>
 
   {{< attributes/apikey name="VictorOps" link="https://help.victorops.com/knowledge-base/api/" envvar="WTF_VICTOROPS_API_KEY" >}}

@@ -53,8 +53,8 @@ trello:
 <img class="screenshot" src="/imgs/modules/trello.png" width="640" height="197" alt="trello screenshot" />
 
 {{% attributes %}}
+  {{< attributes/custom name="accessToken" desc="Your Trello access token." value="Leave empty to use the `WTF_TRELLO_ACCESS_TOKEN` environment variable." >}}
   {{< attributes/apikey name="Trello" link="" envvar="WTF_TRELLO_APP_KEY" >}}
-  {{< attributes/custom name="accessToken" desc="Your Trello access token." >}}
   {{< attributes/custom name="board" desc="The name of the Trello board." >}}
   {{< attributes/border >}}
   {{< attributes/enabled >}}

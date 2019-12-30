@@ -99,7 +99,7 @@ Configuration cmdrunner:args:[&amp;#34;-g&amp;#34;,&amp;#34;batt&amp;#34;]cmd:&a
       
       <guid>https://wtfutil.com/modules/datadog/</guid>
       <description>Connects to the Datadog API and displays alerting modules.
-Configuration datadog:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;applicationKey:&amp;#34;&amp;lt;yourapplicationkey&amp;gt;&amp;#34;enabled:truemonitors:tags:-&amp;#34;team:ops&amp;#34;position:top:4left:3height:1width:2 Attributes   Name Description Value     apiKey Your DataDog API token.  Your API key or leave it empty to use the WTF_DATADOG_API_KEY environment variable.    applicationKey Your DataDog application key    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration datadog:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;applicationKey:&amp;#34;&amp;lt;yourapplicationkey&amp;gt;&amp;#34;enabled:truemonitors:tags:-&amp;#34;team:ops&amp;#34;position:top:4left:3height:1width:2 Attributes   Name Description Value     apiKey Your DataDog API token.  Your API key or leave it empty to use the WTF_DATADOG_API_KEY environment variable.    applicationKey Your DataDog application key Leave this empty to use the WTF_DATADOG_APPLICATION_KEY environment variable.   border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -463,7 +463,7 @@ travisci:apiKey:&amp;#34;p0d13*********************************************c3&am
       <guid>https://wtfutil.com/modules/trello/</guid>
       <description>Displays all Trello cards on specified lists.
 Configuration Single Trello List trello:accessToken:&amp;#34;d23*******************************************3r2&amp;#34;apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;board:Mainenabled:truelist:&amp;#34;Todo&amp;#34;position:height:1left:2top:0width:1refreshInterval:3600username:myname Multiple Trello Lists If you want to monitor multiple Trello lists, use the following configuration (note the difference in list):
-trello:accessToken:&amp;#34;d23*******************************************3r2&amp;#34;apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;board:Mainenabled:truelist:[&amp;#34;Todo&amp;#34;,&amp;#34;Done&amp;#34;]position:height:1left:2top:0width:1refreshInterval:3600username:myname Screenshots Attributes   Name Description Value     apiKey Your Trello API token.  Your API key or leave it empty to use the WTF_TRELLO_APP_KEY environment variable.    accessToken Your Trello access token.</description>
+trello:accessToken:&amp;#34;d23*******************************************3r2&amp;#34;apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;board:Mainenabled:truelist:[&amp;#34;Todo&amp;#34;,&amp;#34;Done&amp;#34;]position:height:1left:2top:0width:1refreshInterval:3600username:myname Screenshots Attributes   Name Description Value     accessToken Your Trello access token. Leave empty to use the WTF_TRELLO_ACCESS_TOKEN environment variable.   apiKey Your Trello API token.  Your API key or leave it empty to use the WTF_TRELLO_APP_KEY environment variable.</description>
     </item>
     
     <item>
@@ -473,8 +473,8 @@ trello:accessToken:&amp;#34;d23*******************************************3r2&am
       
       <guid>https://wtfutil.com/modules/victorops/</guid>
       <description>Connects to the VictorOps API and determines who is on call
-Configuration victorops:apiID:a3c5dd63apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:0left:1height:2width:1refreshInterval:3600team:devops Attributes   Name Description Value     apiID Your VictorOps API ID token.  
- apiKey Your VictorOps API token.  Your API key or leave it empty to use the WTF_VICTOROPS_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration victorops:apiID:a3c5dd63apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:0left:1height:2width:1refreshInterval:3600team:devops Attributes   Name Description Value     apiID Your VictorOps API ID token. Leave this empty to use the WTF_VICTOROPS_API_ID environment variable. 
+ apiKey Your VictorOps API token.  Your API key or leave it empty to use the WTF_VICTOROPS_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>

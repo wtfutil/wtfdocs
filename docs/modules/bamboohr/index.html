@@ -75,6 +75,27 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/getting_started/installation/" class="dd-item">
+        <div>
+          <a href="/getting_started/installation/">
+            Installation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/getting_started/uninstall/" class="dd-item">
+        <div>
+          <a href="/getting_started/uninstall/">
+            Uninstallation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/getting_started/glossary/" class="dd-item">
+        <div>
+          <a href="/getting_started/glossary/">
+            Glossary
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
         </ul>
     </li>
     <li data-nav-id="/configuration/" class="dd-item haschildren
@@ -806,7 +827,7 @@
         </tr>
     </thead>
     <tbody>
-        <p><tr>
+        <tr>
     <td><code>apiKey</code></td>
     <td>Your <a href="https://www.bamboohr.com/api/documentation/">BambooHR API</a> token.</td>
     <td>
@@ -832,10 +853,12 @@
     <td><code>refreshInterval</code></td>
     <td><em>Optional</em> How often, in seconds, this module will update its data. Default: <code>300</code>.</td>
     <td>Any positive integer.</td>
-</tr></p>
-
-<p><tr><td><code>subdomain</code></td><td>Your <a href="https://www.bamboohr.com/api/documentation/">BambooHR API</a> subdomain name.</td><td></td></tr></p>
-
+</tr>
+  <tr>
+    <td><code>subdomain</code></td>
+    <td>Your <a href="https://www.bamboohr.com/api/documentation/">BambooHR API</a> subdomain name.</td>
+    <td>Leave this empty to use the <code>WTF_BAMBOO_HR_SUBDOMAIN</code> environment variable.</td>
+  </tr>
     </tbody>
 </table>
 

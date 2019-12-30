@@ -64,18 +64,18 @@ twitter:
 {{% attributes %}}
   <tr>
     <td>`bearerToken`</td>
-    <td>_Optional_ Your <a href="https://developer.twitter.com/en/docs/basics/authentication/overview/application-only.html">Twitter single-application Bearer Token.  This must be supplied if `consumerKey` and `consumerSecret` are not.</a></td>
-    <td></td>
+    <td>_Optional_ Your <a href="https://developer.twitter.com/en/docs/basics/authentication/overview/application-only.html">Twitter single-application Bearer Token</a>.  This must be supplied if `consumerKey` and `consumerSecret` are not.</td>
+    <td>Leave empty to use the `WTF_TWITTER_BEARER_TOKEN` environment variable.</td>
   </tr>
   <tr>
     <td>`consumerKey`</td>
     <td>_Optional_ Your Twitter Consumer API secret.  This must be supplied along with `consumerSecret` if `bearerToken` isn't supplied.</a></td>
-    <td></td>
+    <td>Leave empty to use the `WTF_TWITTER_CONSUMER_KEY` environment variable.</td>
   </tr>
   <tr>
     <td>`consumerSecret`</td>
     <td>_Optional_ Your Twitter Consumer API key.  This must be supplied along with `consumerKey` if `bearerToken` isn't supplied.</td>
-    <td></td>
+    <td>Leave empty to use the `WTF_TWITTER_CONSUMER_SECRET` environment variable.</td>
   </tr>
 
   {{< attributes/border >}}

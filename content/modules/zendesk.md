@@ -31,7 +31,7 @@ zendesk:
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
   {{< attributes/custom name="status" desc="The status of tickets you want to retrieve." value="`new`, `open`, `pending`, `hold`" >}}
-  {{< attributes/custom name="subdomain" desc="Your Zendesk subdomain." >}}
+  {{< attributes/custom name="subdomain" desc="Your Zendesk subdomain." value="Leave this empty to use the `ZENDESK_SUBDOMAIN` environment variable." >}}
   {{< attributes/username name="Zendesk" >}}
 {{% /attributes %}}
 

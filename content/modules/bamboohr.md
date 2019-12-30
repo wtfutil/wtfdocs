@@ -28,8 +28,11 @@ bamboohr:
   {{< attributes/enabled >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
-
-  <tr><td>`subdomain`</td><td>Your <a href="https://www.bamboohr.com/api/documentation/">BambooHR API</a> subdomain name.</td><td></td></tr>
+  <tr>
+    <td>`subdomain`</td>
+    <td>Your <a href="https://www.bamboohr.com/api/documentation/">BambooHR API</a> subdomain name.</td>
+    <td>Leave this empty to use the `WTF_BAMBOO_HR_SUBDOMAIN` environment variable.</td>
+  </tr>
 {{% /attributes %}}
 
 {{% sourcePath module="bamboohr" %}}
