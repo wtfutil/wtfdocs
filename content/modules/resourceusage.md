@@ -11,6 +11,7 @@ Displays CPU and memory usage.
 
 ```yaml
 resourceusage:
+  cpuCombined: false
   enabled: true
   position:
     top: 1
@@ -26,6 +27,7 @@ resourceusage:
 
 {{% attributes %}}
   {{< attributes/border >}}
+  {{< attributes/custom name="cpuCombined" desc="_Optional_ Whether or not to display the CPUs as one combined value. Default: `false`." value="true, false" >}}
   {{< attributes/enabled >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
