@@ -76,6 +76,6 @@ wtf:
   </tr>
 
   {{< attributes/custom name="navigation.shortcuts" desc="Whether or not to display the numeric navigation shortcuts in widget titles." value="`true` or `false`." >}}
-  {{< attributes/custom name="openFileUtil" desc="Which local utility to use to open a file or URL." value="" >}}
-  {{< attributes/custom name="term" desc="Sets a custom value for the terminal type this app runs in. Leave this entry out of the config if you simply want to use your terminal's default setting. **Note:** If an invalid value is provided for this setting, the app will crash with a `terminal entry not found` error." value="Any valid terminal type (ie: vt100, xterm, xterm-256color, ansi, etc.)." >}}
+  {{< attributes/custom name="openFileUtil" desc="Which local utility to use to open a file or URL. Requires the app to be restarted to take effect. Default: `open`." value="" >}}
+  {{< attributes/custom name="term" desc="Sets a custom value for the terminal type this app runs in. Leave this entry out of the config if you simply want to use your terminal's default setting. **Note:** If an invalid value is provided for this setting, the app will crash with a `terminal entry not found` error." value="Any valid terminal type (ie: `vt100`, `xterm`, `xterm-256color`, `ansi`, etc.)." >}}
 {{% /attributes %}}
