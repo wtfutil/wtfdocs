@@ -70,15 +70,17 @@ github:
 
 {{% keyboard %}}
   {{< keyboard/foreSlash >}}
-  {{< keyboard/return desc="Open the selected pull request or issue in a browser" >}}
-  {{< keyboard/insert desc="Open the selected GitHub repo in a browser" >}}
+  {{< keyboard/return desc="Open the selected Pull Request or Issue in the browser" >}}
+  {{< keyboard/insert desc="Open the selected repository in the browser" >}}
 
   {{< keyboard/spacer >}}
 
+  {{< keyboard/h desc="Show the previous git repository" >}}
+  {{< keyboard/i desc="Open the selected Issue in the browser" >}}
   {{< keyboard/j desc="Select the next item in the list" >}}
   {{< keyboard/k desc="Select the previous item in the list" >}}
-  {{< keyboard/h desc="Show the previous git repository" >}}
   {{< keyboard/l desc="Show the next git repository" >}}
+  {{< keyboard/p desc="Open the selected Pull Request in the browser" >}}
   {{< keyboard/r >}}
 
   {{< keyboard/spacer >}}
