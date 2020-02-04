@@ -6,13 +6,12 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.60.1" />
-<title>Categories :: WTF - the terminal dashboard</title>
+<title>v0.26.0 Released :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="alternate" type="application/rss+xml" href="https://wtfutil.com/categories/index.xml" title="WTF - the terminal dashboard" />
 <script src="/js/jquery-2.x.min.js"></script>
 <script src="https://kit.fontawesome.com/461d56314b.js"></script>
 <script type="text/javascript">
@@ -26,7 +25,7 @@
   
 </head>
 
-<body data-url="/categories/">
+<body data-url="/blog/2020-02-04-v0-26-0/">
   
   <header>
   <div class="logo">
@@ -135,13 +134,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/blog/" class="dd-item haschildren
+    <li data-nav-id="/blog/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/blog/">WTF Blog</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
+      <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item active">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
             v0.26.0 Released
@@ -727,7 +727,23 @@
     <option value="/configuration/" >
    Configuration</option>
     <option value="/blog/" >
-   WTF Blog</option>
+   WTF Blog</option> 
+      <option value="/blog/2020-02-04-v0-26-0/"  selected>- v0.26.0 Released</option>
+      <option value="/blog/monochrome-retro-display/" >- Monochrome Retro Display</option>
+      <option value="/blog/2019-11-10-v0-24-0/" >- v0.24.0 Released</option>
+      <option value="/blog/2019-10-11-v0-23-0/" >- v0.23.0 Released</option>
+      <option value="/blog/2019-09-12-v0-22-0/" >- v0.22.0 Released</option>
+      <option value="/blog/2019-08-29-v0-21-0/" >- v0.21.0 Released</option>
+      <option value="/blog/2019-08-20-v0-20-0/" >- v0.20.0 Released</option>
+      <option value="/blog/2019-07-31-v0-19-1/" >- v0.19.1 Released</option>
+      <option value="/blog/2019-07-27-v0-19-0/" >- v0.19.0 Released</option>
+      <option value="/blog/2019-07-20-v0-18-0/" >- v0.18.0 Released</option>
+      <option value="/blog/2019-07-16-v0-17-1/" >- v0.17.1 Released</option>
+      <option value="/blog/2019-07-12-homebrew-installation/" >- Installing With Homebrew</option>
+      <option value="/blog/2019-07-10-wtfutil-release/" >- Binary Renamed to &#39;wtfutil&#39;</option>
+      <option value="/blog/2019-07-09-rss-for-releases/" >- Using WTF&#39;s FeedReader to Track WTF Releases</option>
+      <option value="/blog/2019-07-09-v0-14-0/" >- v0.14.0 Released</option>
+  
     <option value="/modules/" >
    Modules</option> 
       <option value="/modules/azure_devops/" >- Azure DevOps</option>
@@ -813,40 +829,59 @@
       </div>
     
 
-    <h1>Categories</h1>
+    <h1>v0.26.0 Released</h1>
   
 
   
+    
 
+<small>February 4, 2020</small>
 
+<p><a href="https://github.com/wtfutil/wtf/releases/tag/v0.26.0">WTF v0.26.0</a> contains the following changes:</p>
 
-<div class="extra-pagination inner">
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 0</span>
-	
-</nav>
+<h3 id="added">⚡️ Added</h3>
 
-</div>
+<ul>
+<li><code>myName</code> config setting added to PagerDuty module, by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
+<li><code>withDate</code> config setting added to Digital Clock module, by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
+<li>Twitch module added, by <a href="https://github.com/bjoernw">@bjoernw</a></li>
+<li>HackerNews module now opens HN comments when there is no alternative external link, <a href="https://github.com/wtfutil/wtf/issues/758">#758</a> by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
+<li>gCal module now now allows users to hide all-day events, <a href="https://github.com/wtfutil/wtf/issues/733">#733</a> by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
+<li>SpaceX module added, by <a href="https://github.com/bjoernw">@bjoernw</a></li>
+<li>Support for obeying <code>XDG_CONFIG_HOME</code> when set, <a href="https://github.com/wtfutil/wtf/issues/699">#699</a> by <a href="https://github.com/Seanstoppable">@Seanstoppable</a></li>
+</ul>
 
+<h3 id="fixed">🐞 Fixed</h3>
 
+<ul>
+<li>Module templating working again, <a href="https://github.com/wtfutil/wtf/issues/748">#748</a> by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
+<li>CmdRunner title spacing issue fixed, <a href="https://github.com/wtfutil/wtf/issues/784">#784</a> by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
+<li>Colors in cmdrunner fixed when using nodejs chalk et al., <a href="https://github.com/wtfutil/wtf/issues/618">#618</a> by <a href="https://github.com/Seanstoppable">@Seanstoppable</a></li>
+<li>Docker buid instructions updated and improved, by <a href="https://github.com/firecat53">@firecat53</a></li>
+<li>Kubernetes module can now be used with multiple contexts, <a href="https://github.com/wtfutil/wtf/issues/809">#809</a> by <a href="https://github.com/davidsbond">@davidsbond</a></li>
+</ul>
 
-<div style="margin-bottom:2rem"></div>
+<h3 id="updated">👍 Updated</h3>
 
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 0</span>
-	
-</nav>
-
-
+<ul>
+<li>Updated <code>digitalocean/godo</code> from 1.22.0 to 1.30.0</li>
+<li>Updated <code>google.golang.org/api</code> from 0.14.0 to 0.15.0</li>
+<li>Updated <code>alecthomas/chroma</code> from 0.7.0 to 0.7.1</li>
+<li>Updated <code>pkg/errors</code> from 0.8.1 to 0.9.1</li>
+<li>Updated <code>xanzy/go-gitlab</code> from 0.22.2 to 0.23.0</li>
+<li>Updated <code>shirou/gopsutil</code> from 2.19.11 to 2.20.1</li>
+<li>Updated <code>zorkian/go-datadog-api</code> from 2.25.0 to 2.26.0</li>
+<li>Updated <code>gopkg.in/yaml.v2</code> from 2.2.7 to 2.2.8</li>
+<li>Updated <code>nicklaw5/helix</code> from 0.5.4 to 0.5.5</li>
+</ul>
 
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-next" href="/getting_started/" title="Getting Started" style="margin-right: 0px;"><label>Getting Started</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/blog/" title="WTF Blog"> <i class="fa fa-chevron-left"></i><label>WTF Blog</label></a>
+    <a class="nav nav-next" href="/blog/monochrome-retro-display/" title="Monochrome Retro Display" style="margin-right: 0px;"><label>Monochrome Retro Display</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>
@@ -859,6 +894,8 @@
 
     
 
+    
+    
     
   </div>
 
