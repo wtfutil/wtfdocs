@@ -7,6 +7,7 @@ hidden: false
 alwaysopen: false
 ---
 
+{{< blog/indexcard date="Feb 23, 2020" title="v0.27.0 Released" page="2020-02-23-v0-27-0" >}}
 {{< blog/indexcard date="Feb 4, 2020" title="v0.26.0 Released" page="2020-02-04-v0-26-0" >}}
 {{< blog/indexcard date="Nov 10, 2019" title="Monochrome Retro Display" page="monochrome-retro-display" >}}
 {{< blog/indexcard date="Nov 10, 2019" title="v0.24.0 Released" page="2019-11-10-v0-24-0" >}}
