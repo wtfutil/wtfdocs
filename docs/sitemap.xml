@@ -88,6 +88,16 @@
   </url>
   
   <url>
+    <loc>https://wtfutil.com/modules/cds/</loc>
+    <lastmod>2020-02-05T19:35:54-01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/modules/cds/favorites/</loc>
+    <lastmod>2020-02-05T19:35:54-01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wtfutil.com/modules/circleci/</loc>
     <lastmod>2018-06-10T19:26:08-04:00</lastmod>
   </url>
@@ -158,6 +168,11 @@
   </url>
   
   <url>
+    <loc>https://wtfutil.com/modules/cds/queue/</loc>
+    <lastmod>2020-02-05T19:35:54-01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wtfutil.com/modules/google/ganalytics/</loc>
     <lastmod>2019-08-31T01:46:10+00:00</lastmod>
   </url>
@@ -215,6 +230,11 @@
   <url>
     <loc>https://wtfutil.com/modules/feedreader/</loc>
     <lastmod>2019-07-04T05:53:08-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wtfutil.com/modules/cds/status/</loc>
+    <lastmod>2020-02-05T19:35:54-01:00</lastmod>
   </url>
   
   <url>

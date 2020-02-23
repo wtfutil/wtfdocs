@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CDS on WTF - the terminal dashboard</title>
+    <link>https://wtfutil.com/modules/cds/</link>
+    <description>Recent content in CDS on WTF - the terminal dashboard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Feb 2020 19:35:54 -0100</lastBuildDate>
+    
+	<atom:link href="https://wtfutil.com/modules/cds/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CDS Favorites</title>
+      <link>https://wtfutil.com/modules/cds/favorites/</link>
+      <pubDate>Wed, 05 Feb 2020 19:35:54 -0100</pubDate>
+      
+      <guid>https://wtfutil.com/modules/cds/favorites/</guid>
+      <description>Display runs of you CDS favorites workflows.
+Configuration cdsFavorites:enabled:trueposition:top:0left:0height:2width:2refreshInterval:8apiURL:https://api.cds.localhost.localtoken:xxxxxxxxxxxxhideTags:-&amp;#34;git.repository&amp;#34;-&amp;#34;git.hash&amp;#34;-&amp;#34;triggered_by&amp;#34; Attributes   Name Description Value     apiURL Your CDS API URL.    token Your CDS Consumer Token.    hideTags A CDS Runs can have many &amp;ldquo;cds tags&amp;rdquo;. You can hide some tags displayed.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+    </item>
+    
+    <item>
+      <title>CDS Queue</title>
+      <link>https://wtfutil.com/modules/cds/queue/</link>
+      <pubDate>Wed, 05 Feb 2020 19:35:54 -0100</pubDate>
+      
+      <guid>https://wtfutil.com/modules/cds/queue/</guid>
+      <description>Display current CDS queue - waiting or building jobs.
+Configuration cdsQueue:enabled:trueposition:top:0left:0height:3width:2refreshInterval:8apiURL:https://api.cds.localhost.localtoken:xxxxxxxxxxxx Attributes   Name Description Value     apiURL Your CDS API URL. Consumer token scope used: RUN   token Your CDS Consumer Token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+    </item>
+    
+    <item>
+      <title>CDS Status</title>
+      <link>https://wtfutil.com/modules/cds/status/</link>
+      <pubDate>Wed, 05 Feb 2020 19:35:54 -0100</pubDate>
+      
+      <guid>https://wtfutil.com/modules/cds/status/</guid>
+      <description>Display current CDS status. This is useful for CDS Administrator only.
+Configuration cdsStatus:enabled:trueposition:top:0left:0height:3width:2refreshInterval:8apiURL:https://api.cds.localhost.localtoken:xxxxxxxxxxxx Attributes   Name Description Value     apiURL Your CDS API URL.    token Your CDS Consumer Token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+    </item>
+    
+  </channel>
+</rss>

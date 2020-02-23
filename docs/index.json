@@ -119,6 +119,20 @@
 	"content": " Compare crypto currencies using CryptoCompare.\nConfiguration cryptolive:enabled:trueposition:top:5left:2height:1width:2updateInterval:15currencies:BTC:displayName:Bitcointo:-USD-EUR-ETH-LTC-DOGELTC:displayName:Ethereumto:-USD-EUR-BTCtop:BTC:displayName:Bitcoinlimit:5to:-USDcolors:from:name:coraldisplayName:greyto:name:whiteprice:greentop:from:name:greydisplayName:coralto:name:redfield:whitevalue:green Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.from.displayName  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.from.name  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.to.name  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.to.price  Any X11 color name or long-form hex value (i.e.: #ff0000).   currencies     enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module\u0026rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer.    Source Code wtf/modules/cryptoexchanges/cryptolive/"
 },
 {
+	"uri": "https://wtfutil.com/modules/cds/",
+	"title": "CDS",
+	"tags": [],
+	"description": "",
+	"content": "CDS - Continuous Delivery Service.\nhttps://ovh.github.io/cds/\n CDS Favorites   CDS Queue   CDS Status   "
+},
+{
+	"uri": "https://wtfutil.com/modules/cds/favorites/",
+	"title": "CDS Favorites",
+	"tags": [],
+	"description": "",
+	"content": " Display runs of you CDS favorites workflows.\nConfiguration cdsFavorites:enabled:trueposition:top:0left:0height:2width:2refreshInterval:8apiURL:https://api.cds.localhost.localtoken:xxxxxxxxxxxxhideTags:-\u0026#34;git.repository\u0026#34;-\u0026#34;git.hash\u0026#34;-\u0026#34;triggered_by\u0026#34; Attributes   Name Description Value     apiURL Your CDS API URL.    token Your CDS Consumer Token.    hideTags A CDS Runs can have many \u0026ldquo;cds tags\u0026rdquo;. You can hide some tags displayed.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module\u0026rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer.   title Optional The title to display in the widget\u0026rsquo;s onscreen box.     Source Code wtf/modules/cds/favorites/"
+},
+{
 	"uri": "https://wtfutil.com/modules/circleci/",
 	"title": "CircleCI",
 	"tags": [],
@@ -217,6 +231,13 @@
 	"content": "The heart of WTF is the modules. A module is a discrete unit of functionality that extracts data from some source and packages that data for display.\nFor example, the New Relic module uses New Relic\u0026rsquo;s API to retrieve a list of the latest deploys and packages that information as a list for display in the \u0026ldquo;New Relic\u0026rdquo; widget.\nThe Clocks module takes a list of timezones and packages that information as a list of city/time pairs for display in the \u0026ldquo;Clocks\u0026rdquo; widget.\nSee available modules at left.\n"
 },
 {
+	"uri": "https://wtfutil.com/modules/cds/queue/",
+	"title": "CDS Queue",
+	"tags": [],
+	"description": "",
+	"content": " Display current CDS queue - waiting or building jobs.\nConfiguration cdsQueue:enabled:trueposition:top:0left:0height:3width:2refreshInterval:8apiURL:https://api.cds.localhost.localtoken:xxxxxxxxxxxx Attributes   Name Description Value     apiURL Your CDS API URL. Consumer token scope used: RUN   token Your CDS Consumer Token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module\u0026rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer.   title Optional The title to display in the widget\u0026rsquo;s onscreen box.     Source Code wtf/modules/cds/queue/"
+},
+{
 	"uri": "https://wtfutil.com/modules/google/ganalytics/",
 	"title": "Google Analytics",
 	"tags": [],
@@ -299,6 +320,13 @@
 	"tags": [],
 	"description": "",
 	"content": " A rudimentary RSS \u0026amp; Atom feed reader.\nConfiguration feedreader:enabled:truefeeds:-https://news.ycombinator.com/rss-http://feeds.reuters.com/Reuters/worldNewsfeedLimit:10position:top:4left:1height:1width:2refreshInterval:14400 Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   feedLimit The number of stories from each feed to be displayed. Default is -1, which will display all available stories. Any integer greater than zero. Values zero or less will display all.   feeds List of RSS or Atom feed URLs.    focusChar Optional Define one of the number keys as a short cut key to access the widget. 0..9   position Defines where in the grid this module\u0026rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer.    Keyboard Controls   Key Action     / Open/close the widget\u0026rsquo;s help modal   [return] Open the selected story in the browser \n  \n j Select the next item in the list   k Select the previous item in the list   o Open the selected story in the browser   r Refresh the data \n  \n ↓ Select the next item in the list   ↑ Select the previous item in the list \n  Source Code wtf/modules/feedreader/"
+},
+{
+	"uri": "https://wtfutil.com/modules/cds/status/",
+	"title": "CDS Status",
+	"tags": [],
+	"description": "",
+	"content": " Display current CDS status. This is useful for CDS Administrator only.\nConfiguration cdsStatus:enabled:trueposition:top:0left:0height:3width:2refreshInterval:8apiURL:https://api.cds.localhost.localtoken:xxxxxxxxxxxx Attributes   Name Description Value     apiURL Your CDS API URL.    token Your CDS Consumer Token.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module\u0026rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer.   title Optional The title to display in the widget\u0026rsquo;s onscreen box.     Source Code wtf/modules/cds/status/"
 },
 {
 	"uri": "https://wtfutil.com/modules/gerrit/",
