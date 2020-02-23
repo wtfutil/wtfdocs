@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>Git :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -140,6 +140,13 @@
       <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -867,20 +874,20 @@ commit, and their status.</p>
 <p>A list of <code>n</code> recent commits, who committed it, and when.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">git<span class="p">:</span><span class="w">
-</span><span class="w">  </span>commitCount<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
-</span><span class="w">  </span>commitFormat<span class="p">:</span><span class="w"> </span><span class="s2">&#34;[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]&#34;</span><span class="w">
-</span><span class="w">  </span>dateFormat<span class="p">:</span><span class="w"> </span><span class="s2">&#34;%H:%M %d %b %y&#34;</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">8</span><span class="w">
-</span><span class="w">  </span>repositories<span class="p">:</span><span class="w">
-</span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;/Users/chris/go/src/github.com/wtfutil/wtf&#34;</span><span class="w">
-</span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;/Users/user/fakeapp&#34;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">git</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">commitCount</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">  </span><span class="k">commitFormat</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">dateFormat</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;%H:%M %d %b %y&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">8</span><span class="w">
+</span><span class="w">  </span><span class="k">repositories</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="s2">&#34;/Users/chris/go/src/github.com/wtfutil/wtf&#34;</span><span class="w">
+</span><span class="w">  </span>- <span class="s2">&#34;/Users/user/fakeapp&#34;</span></code></pre></div>
 <h2 id="screenshots">Screenshots</h2>
 
 <p><img class="screenshot" src="/imgs/modules/git.png" width="720" height="292" alt="git screenshot" /></p>

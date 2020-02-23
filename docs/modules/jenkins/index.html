@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>Jenkins :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -140,6 +140,13 @@
       <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -853,20 +860,20 @@
 <p>Displays Jenkins status of given builds in a project or view.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">jenkins<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;p0d13*********************************************c3&#34;</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
-</span><span class="w">  </span>successBallColor<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
-</span><span class="w">  </span>jobNameRegex<span class="p">:</span><span class="w"> </span>^<span class="p">[</span>a-z<span class="p">]</span>+\<span class="p">[</span><span class="p">[</span><span class="m">0</span><span class="m">-9</span><span class="p">]</span>+\<span class="p">]</span>$<span class="w">
-</span><span class="w">  </span>url<span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://jenkins.domain.com/jenkins/view_url&#34;</span><span class="w">
-</span><span class="w">  </span>user<span class="p">:</span><span class="w"> </span><span class="s2">&#34;username&#34;</span><span class="w">
-</span><span class="w">  </span>verifyServerCertificate<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">jenkins</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">apiKey</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;p0d13*********************************************c3&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
+</span><span class="w">  </span><span class="k">successBallColor</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">jobNameRegex</span><span class="p">:</span><span class="w"> </span>^<span class="p">[</span>a-z<span class="p">]</span>+\<span class="p">[[</span><span class="m">0-9</span><span class="p">]</span>+\<span class="p">]</span>$<span class="w">
+</span><span class="w">  </span><span class="k">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://jenkins.domain.com/jenkins/view_url&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">user</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;username&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">verifyServerCertificate</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
 <h2 id="screenshots">Screenshots</h2>
 
 <p><img class="screenshot" src="/imgs/modules/jenkins.png" alt="jenkins screenshot" width="320" height="68" /></p>

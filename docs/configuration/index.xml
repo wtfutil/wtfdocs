@@ -29,7 +29,7 @@ wtf:colors:background:&amp;#34;red&amp;#34;border:focusable:&amp;#34;darkslatebl
       <guid>https://wtfutil.com/configuration/common_settings/</guid>
       <description>The following settings are common to all modules. Common settings have logical defaults and are all optional. An explicitly-defined common setting will over-ride a module&amp;rsquo;s internal default setting value.
 An example with all common settings explicitly configured.
-feedreader:enabled:truefeeds:-https://news.ycombinator.com/rssfeedLimit:10focusable:falseposition:top:2left:2width:1height:1title:&amp;#34;Hacker News&amp;#34;updateInterval:14400 Attributes   Name Description Value     enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusable Optional Whether or not this module accepts keyboard focus.</description>
+feedreader:enabled:truefeeds:- https://news.ycombinator.com/rssfeedLimit:10focusable:falseposition:top:2left:2width:1height:1title:&amp;#34;Hacker News&amp;#34;updateInterval:14400 Attributes   Name Description Value     enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusable Optional Whether or not this module accepts keyboard focus.</description>
     </item>
     
     <item>

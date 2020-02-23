@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>Datadog :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -140,6 +140,13 @@
       <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -853,18 +860,18 @@
 <p>Connects to the Datadog API and displays alerting modules.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">datadog<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;yourapikey&gt;&#34;</span><span class="w">
-</span><span class="w">  </span>applicationKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;yourapplicationkey&gt;&#34;</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>monitors<span class="p">:</span><span class="w">
-</span><span class="w">    </span>tags<span class="p">:</span><span class="w">
-</span><span class="w">      </span>-<span class="w"> </span><span class="s2">&#34;team:ops&#34;</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">datadog</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">apiKey</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;yourapikey&gt;&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">applicationKey</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;yourapplicationkey&gt;&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">monitors</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">tags</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span>- <span class="s2">&#34;team:ops&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">2</span></code></pre></div>
 <h2 id="attributes">Attributes</h2>
 
 <table class="table">

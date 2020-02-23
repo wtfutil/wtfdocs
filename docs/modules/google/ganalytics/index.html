@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>Google Analytics :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -140,6 +140,13 @@
       <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -880,20 +887,20 @@
 <p>This module also supports displaying the number of visitors on each view live via the Google Analytics Real Time Reporting API Beta. In order to use this feature, you must <a href="https://docs.google.com/forms/d/1qfRFysCikpgCMGqgF3yXdUyQW4xAlLyjKuOoOEFN2Uw/viewform">sign up</a> for the beta and wait for your whitelist application to be approved (which takes less than 24 hours). Once you&rsquo;re approved, all you need to do is set <code>enableRealtime: true</code> in the module settings.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">googleanalytics<span class="p">:</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>enableRealtime<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>months<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">400</span><span class="w">
-</span><span class="w">  </span>secretFile<span class="p">:</span><span class="w"> </span><span class="s2">&#34;~/.config/wtf/google_analytics/client_secret.json&#34;</span><span class="w">
-</span><span class="w">  </span>viewIds<span class="p">:</span><span class="w">
-</span><span class="w">    </span>tessellation<span class="p">:</span><span class="w"> </span><span class="s2">&#34;00000000&#34;</span><span class="w">
-</span><span class="w">    </span>dylanbartels.com<span class="p">:</span><span class="w"> </span><span class="s2">&#34;111111111&#34;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">googleanalytics</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">enableRealtime</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">months</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">400</span><span class="w">
+</span><span class="w">  </span><span class="k">secretFile</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;~/.config/wtf/google_analytics/client_secret.json&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">viewIds</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">tessellation</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;00000000&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">dylanbartels.com</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;111111111&#34;</span></code></pre></div>
 <h2 id="screenshots">Screenshots</h2>
 
 <p><img src="/imgs/modules/google_analytics.png" class="screenshot" width="600" height="150" alt="google analytics screenshot"/></p>

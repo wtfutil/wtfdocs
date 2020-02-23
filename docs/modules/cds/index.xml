@@ -18,7 +18,7 @@
       
       <guid>https://wtfutil.com/modules/cds/favorites/</guid>
       <description>Display runs of you CDS favorites workflows.
-Configuration cdsFavorites:enabled:trueposition:top:0left:0height:2width:2refreshInterval:8apiURL:https://api.cds.localhost.localtoken:xxxxxxxxxxxxhideTags:-&amp;#34;git.repository&amp;#34;-&amp;#34;git.hash&amp;#34;-&amp;#34;triggered_by&amp;#34; Attributes   Name Description Value     apiURL Your CDS API URL.    token Your CDS Consumer Token.    hideTags A CDS Runs can have many &amp;ldquo;cds tags&amp;rdquo;. You can hide some tags displayed.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration cdsFavorites:enabled:trueposition:top:0left:0height:2width:2refreshInterval:8apiURL:https://api.cds.localhost.localtoken:xxxxxxxxxxxxhideTags:- &amp;#34;git.repository&amp;#34;- &amp;#34;git.hash&amp;#34;- &amp;#34;triggered_by&amp;#34; Attributes   Name Description Value     apiURL Your CDS API URL.    token Your CDS Consumer Token.    hideTags A CDS Runs can have many &amp;ldquo;cds tags&amp;rdquo;. You can hide some tags displayed.    border Optional Whether or not to draw this widget with a border. Default: true.</description>
     </item>
     
     <item>

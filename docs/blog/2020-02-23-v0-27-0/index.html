@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.65.3" />
-<title>Todoist :: WTF - the terminal dashboard</title>
+<title>v0.27.0 Released :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/todoist/">
+<body data-url="/blog/2020-02-23-v0-27-0/">
   
   <header>
   <div class="logo">
@@ -134,13 +134,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/blog/" class="dd-item haschildren
+    <li data-nav-id="/blog/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/blog/">WTF Blog</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item active">
         <div>
           <a href="/blog/2020-02-23-v0-27-0/">
             v0.27.0 Released
@@ -254,7 +255,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item parent alwaysopen haschildren
+    <li data-nav-id="/modules/" class="dd-item alwaysopen haschildren
         ">
       <div>
       <a href="/modules/">Modules</a>
@@ -644,7 +645,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/todoist/" class="dd-item active">
+      <li data-nav-id="/modules/todoist/" class="dd-item">
         <div>
           <a href="/modules/todoist/">
             Todoist
@@ -762,7 +763,24 @@
     <option value="/configuration/" >
    Configuration</option>
     <option value="/blog/" >
-   WTF Blog</option>
+   WTF Blog</option> 
+      <option value="/blog/2020-02-23-v0-27-0/"  selected>- v0.27.0 Released</option>
+      <option value="/blog/2020-02-04-v0-26-0/" >- v0.26.0 Released</option>
+      <option value="/blog/monochrome-retro-display/" >- Monochrome Retro Display</option>
+      <option value="/blog/2019-11-10-v0-24-0/" >- v0.24.0 Released</option>
+      <option value="/blog/2019-10-11-v0-23-0/" >- v0.23.0 Released</option>
+      <option value="/blog/2019-09-12-v0-22-0/" >- v0.22.0 Released</option>
+      <option value="/blog/2019-08-29-v0-21-0/" >- v0.21.0 Released</option>
+      <option value="/blog/2019-08-20-v0-20-0/" >- v0.20.0 Released</option>
+      <option value="/blog/2019-07-31-v0-19-1/" >- v0.19.1 Released</option>
+      <option value="/blog/2019-07-27-v0-19-0/" >- v0.19.0 Released</option>
+      <option value="/blog/2019-07-20-v0-18-0/" >- v0.18.0 Released</option>
+      <option value="/blog/2019-07-16-v0-17-1/" >- v0.17.1 Released</option>
+      <option value="/blog/2019-07-12-homebrew-installation/" >- Installing With Homebrew</option>
+      <option value="/blog/2019-07-10-wtfutil-release/" >- Binary Renamed to &#39;wtfutil&#39;</option>
+      <option value="/blog/2019-07-09-rss-for-releases/" >- Using WTF&#39;s FeedReader to Track WTF Releases</option>
+      <option value="/blog/2019-07-09-v0-14-0/" >- v0.14.0 Released</option>
+  
     <option value="/modules/" >
    Modules</option> 
       <option value="/modules/azure_devops/" >- Azure DevOps</option>
@@ -816,7 +834,7 @@
       <option value="/modules/subreddit/" >- Subreddit</option>
       <option value="/modules/textfile/" >- Textfile</option>
       <option value="/modules/todo/" >- Todo</option>
-      <option value="/modules/todoist/"  selected>- Todoist</option>
+      <option value="/modules/todoist/" >- Todoist</option>
       <option value="/modules/transmission/" >- Transmission</option>
       <option value="/modules/travisci/" >- TravisCI</option>
       <option value="/modules/trello/" >- Trello</option>
@@ -851,170 +869,46 @@
       </div>
     
 
-    <h1>Todoist</h1>
+    <h1>v0.27.0 Released</h1>
   
 
   
     
 
-<p>Displays all items on specified project.</p>
+<small>February 23, 2020</small>
 
-<h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">todoist</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="k">apiKey</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;p0d13*********************************************c3&#34;</span><span class="w">
-</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span><span class="k">projects</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>- <span class="m">122247497</span><span class="w">
-</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">3600</span></code></pre></div>
-<h2 id="screenshots">Screenshots</h2>
+<p><a href="https://github.com/wtfutil/wtf/releases/tag/v0.27.0">WTF v0.27.0</a> contains the following changes:</p>
 
-<p><img class="screenshot" src="/imgs/modules/todoist.png" alt="todoist screenshot" /></p>
+<h3 id="added">⚡️ Added</h3>
 
-<h2 id="attributes">Attributes</h2>
+<ul>
+<li>GitLab Todo module added, by <a href="https://github.com/elliotrushton">@elliotrushton</a></li>
+<li><a href="https://wtfutil.com/modules/cds/">CDS</a> module added, by <a href="https://github.com/yesnault">@yesnault</a></li>
+</ul>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Value</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-    <td><code>apiKey</code></td>
-    <td>Your <a href="https://developer.todoist.com/sync/v7/">Todoist API</a> token.</td>
-    <td>
-        Your API key <strong>or</strong> leave it empty to use the <code>WTF_TODOIST_TOKEN</code> environment variable.
-    </td>
-</tr>
-  <tr>
-    <td><code>border</code></td>
-    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: <code>true</code>.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>enabled</code></td>
-    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: <code>false</code>.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>focusChar</code></td>
-    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
-    <td>0..9</td>
-</tr>
-  <tr>
-    <td><code>position</code></td>
-    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
-    <td></td>
-</tr>
-  <tr>
-    <td><code>projects</code></td>
-    <td>The todoist projects to fetch items from.</td>
-    <td>The integer ID of the project</td>
-</tr>
-  <tr>
-    <td><code>refreshInterval</code></td>
-    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: <code>300</code>.</td>
-    <td>Any positive integer.</td>
-</tr>
-    </tbody>
-</table>
+<h3 id="fixed">🐞 Fixed</h3>
 
-<h2 id="keyboard-controls">Keyboard Controls</h2>
+<ul>
+<li>The <code>vendor</code> directory has been removed, <a href="https://github.com/wtfutil/wtf/issues/792">#792</a> by <a href="https://github.com/bjoernw">@bjoernw</a></li>
+</ul>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Key</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        <p><tr>
-    <td><code>/</code></td>
-    <td>Open/close the widget&rsquo;s help modal</td>
-</tr>
-  <tr>
-    <td><code>[esc]</code></td>
-    <td>Remove focus from the selected item</td>
-</tr></p>
+<h3 id="updated">👍 Updated</h3>
 
-<p><tr>
-    <td colspan="2"></td>
-</tr></p>
+<ul>
+<li>Updated <code>zorkian/go-datadog-api</code> from 2.26.0+incompatible to 2.27.0+incompatible</li>
+<li>Updated <code>google.golang.org/api</code> from 0.15.0 to 0.17.0</li>
+<li>Updated <code>github.com/nicklaw5/helix</code> from 0.5.5 to 0.5.7</li>
+<li>Updated <code>xanzy/go-gitlab</code> from 0.23.0 to 0.26.0</li>
+<li>Updated <code>stretchr/testify</code> from o.4.0 to 0.5.1</li>
+</ul>
 
-<p><tr>
-    <td><code>c</code></td>
-    <td>Close current item</td>
-</tr>
-  <tr>
-    <td><code>d</code></td>
-    <td>Delete current item</td>
-</tr>
-  <tr>
-    <td><code>h</code></td>
-    <td>Show the previous project</td>
-</tr>
-  <tr>
-    <td><code>j</code></td>
-    <td>Select the next item in the list</td>
-</tr>
-  <tr>
-    <td><code>k</code></td>
-    <td>Select the previous item in the list</td>
-</tr>
-  <tr>
-    <td><code>l</code></td>
-    <td>Show the next project</td>
-</tr>
-  <tr>
-    <td><code>u</code></td>
-    <td>Clear the current selection</td>
-</tr></p>
-
-<p><tr>
-    <td colspan="2"></td>
-</tr></p>
-
-<p><tr>
-    <td><code>↓</code></td>
-    <td>Select the next item in the list</td>
-</tr>
-  <tr>
-    <td><code>↑</code></td>
-    <td>Select the previous item in the list</td>
-</tr>
-  <tr>
-    <td><code>←</code></td>
-    <td>Show the previous project</td>
-</tr>
-  <tr>
-    <td><code>→</code></td>
-    <td>Show the next project</td>
-</tr></p>
-
-<p><tr>
-    <td colspan="2"></td>
-</tr></p>
-
-    </tbody>
-</table>
-
-<h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/todoist/</code></pre></div>
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/todo/" title="Todo"> <i class="fa fa-chevron-left"></i><label>Todo</label></a>
-    <a class="nav nav-next" href="/modules/transmission/" title="Transmission" style="margin-right: 0px;"><label>Transmission</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/blog/" title="WTF Blog"> <i class="fa fa-chevron-left"></i><label>WTF Blog</label></a>
+    <a class="nav nav-next" href="/blog/2020-02-04-v0-26-0/" title="v0.26.0 Released" style="margin-right: 0px;"><label>v0.26.0 Released</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>

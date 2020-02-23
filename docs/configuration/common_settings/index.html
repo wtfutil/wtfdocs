@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>Common Settings :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -141,6 +141,13 @@
       <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -859,19 +866,19 @@
 <p>The following settings are common to all modules. Common settings have logical defaults and are all optional. An explicitly-defined common setting will over-ride a module&rsquo;s internal default setting value.</p>
 
 <p>An example with all common settings explicitly configured.</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">feedreader<span class="p">:</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>feeds<span class="p">:</span><span class="w">
-</span><span class="w">  </span>-<span class="w"> </span>https<span class="p">:</span>//news.ycombinator.com/rss<span class="w">
-</span><span class="w">  </span>feedLimit<span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
-</span><span class="w">  </span>focusable<span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Hacker News&#34;</span><span class="w">
-</span><span class="w">  </span>updateInterval<span class="p">:</span><span class="w"> </span><span class="m">14400</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">feedreader</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">feeds</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- https<span class="p">:</span>//news.ycombinator.com/rss<span class="w">
+</span><span class="w">  </span><span class="k">feedLimit</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">  </span><span class="k">focusable</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Hacker News&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">updateInterval</span><span class="p">:</span><span class="w"> </span><span class="m">14400</span></code></pre></div>
 <h2 id="attributes">Attributes</h2>
 
 <table class="table">

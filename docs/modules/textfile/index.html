@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>Textfile :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -140,6 +140,13 @@
       <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -593,6 +600,20 @@
       <a href="/modules/sports/">Sports</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/modules/sports/football/" class="dd-item">
+        <div>
+          <a href="/modules/sports/football/">
+            Football
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/modules/sports/nbascore/" class="dd-item">
+        <div>
+          <a href="/modules/sports/nbascore/">
+            NBA Score
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
         </ul>
     </li>
       <li data-nav-id="/modules/spotify/" class="dd-item">
@@ -839,20 +860,20 @@
 <p>Displays the contents of the specified text file in the widget.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">textfile<span class="p">:</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>filePaths<span class="p">:</span><span class="w">
-</span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;~/Desktop/notes.md&#34;</span><span class="w">
-</span><span class="w">  </span>-<span class="w"> </span><span class="s2">&#34;~/.config/wtf/config.yml&#34;</span><span class="w">
-</span><span class="w">  </span>format<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>formatStyle<span class="p">:</span><span class="w"> </span><span class="s2">&#34;dracula&#34;</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">15</span><span class="w">
-</span><span class="w">  </span>wrapText<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">textfile</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">filePaths</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="s2">&#34;~/Desktop/notes.md&#34;</span><span class="w">
+</span><span class="w">  </span>- <span class="s2">&#34;~/.config/wtf/config.yml&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">format</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">formatStyle</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;dracula&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">15</span><span class="w">
+</span><span class="w">  </span><span class="k">wrapText</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
 <h2 id="screenshots">Screenshots</h2>
 
 <p><img class="screenshot" src="/imgs/modules/textfile.png" width="320" height="133" alt="textfile screenshot" /></p>

@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>Monochrome Retro Display :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -141,6 +141,13 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -757,6 +764,7 @@
    Configuration</option>
     <option value="/blog/" >
    WTF Blog</option> 
+      <option value="/blog/2020-02-23-v0-27-0/" >- v0.27.0 Released</option>
       <option value="/blog/2020-02-04-v0-26-0/" >- v0.26.0 Released</option>
       <option value="/blog/monochrome-retro-display/"  selected>- Monochrome Retro Display</option>
       <option value="/blog/2019-11-10-v0-24-0/" >- v0.24.0 Released</option>
@@ -870,23 +878,23 @@
 <p>With v0.24.0, WTF now has better support for theme-like colour settings. It&rsquo;s far from perfect, a lot of modules will have to be improved internally to make theming ubiquitous, but it&rsquo;s a start.</p>
 
 <p>By way of example, if you&rsquo;re running v0.24 or later, drop this into your config at the top, replace your existing <code>colors:</code> YAML block with the following and you&rsquo;ll end up with a facsimile of an old-school green monochrome monitor display (you may need to restart WTF to get changes to take effect).</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="w">  </span>colors<span class="p">:</span><span class="w">
-</span><span class="w">    </span>background<span class="p">:</span><span class="w"> </span><span class="s2">&#34;transparent&#34;</span><span class="w">
-</span><span class="w">    </span>border<span class="p">:</span><span class="w">
-</span><span class="w">      </span>focusable<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen&#34;</span><span class="w">
-</span><span class="w">      </span>focused<span class="p">:</span><span class="w"> </span><span class="s2">&#34;goldenrod&#34;</span><span class="w">
-</span><span class="w">      </span>normal<span class="p">:</span><span class="w"> </span><span class="s2">&#34;darkgreen&#34;</span><span class="w">
-</span><span class="w">    </span>checked<span class="p">:</span><span class="w"> </span><span class="s2">&#34;gray&#34;</span><span class="w">
-</span><span class="w">    </span>highlight<span class="p">:</span><span class="w">
-</span><span class="w">      </span>fore<span class="p">:</span><span class="w"> </span><span class="s2">&#34;black&#34;</span><span class="w">
-</span><span class="w">      </span>back<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
-</span><span class="w">    </span>labels<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen::b&#34;</span><span class="w">
-</span><span class="w">    </span>rows<span class="p">:</span><span class="w">
-</span><span class="w">      </span>even<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
-</span><span class="w">      </span>odd<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen&#34;</span><span class="w">
-</span><span class="w">    </span>subheading<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen::b&#34;</span><span class="w">
-</span><span class="w">    </span>text<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
-</span><span class="w">    </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen&#34;</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="w">  </span><span class="k">colors</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;transparent&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">focusable</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen&#34;</span><span class="w">
+</span><span class="w">      </span><span class="k">focused</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;goldenrod&#34;</span><span class="w">
+</span><span class="w">      </span><span class="k">normal</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;darkgreen&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">checked</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;gray&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">highlight</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">fore</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;black&#34;</span><span class="w">
+</span><span class="w">      </span><span class="k">back</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">labels</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen::b&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">rows</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">even</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
+</span><span class="w">      </span><span class="k">odd</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">subheading</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen::b&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightgreen&#34;</span></code></pre></div>
 
 
   

@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>Google Calendar :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -140,6 +140,13 @@
       <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -862,36 +869,36 @@
 <p>The configuration file downloaded is the file you use for the <code>secretFile</code> configuration option.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">gcal<span class="p">:</span><span class="w">
-</span><span class="w">  </span>colors<span class="p">:</span><span class="w">
-</span><span class="w">    </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;red&#34;</span><span class="w">
-</span><span class="w">    </span>eventTime<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightblue&#34;</span><span class="w">
-</span><span class="w">    </span>description<span class="p">:</span><span class="w"> </span><span class="s2">&#34;yellow&#34;</span><span class="w">
-</span><span class="w">    </span>highlights<span class="p">:</span><span class="w">
-</span><span class="w">    </span>-<span class="w"> </span><span class="p">[</span><span class="s1">&#39;1on1|1\/11&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;green&#39;</span><span class="p">]</span><span class="w">
-</span><span class="w">    </span>-<span class="w"> </span><span class="p">[</span><span class="s1">&#39;apple|google|aws&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;blue&#39;</span><span class="p">]</span><span class="w">
-</span><span class="w">    </span>-<span class="w"> </span><span class="p">[</span><span class="s1">&#39;interview|meet&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;magenta&#39;</span><span class="p">]</span><span class="w">
-</span><span class="w">    </span>-<span class="w"> </span><span class="p">[</span><span class="s1">&#39;lunch&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;yellow&#39;</span><span class="p">]</span><span class="w">
-</span><span class="w">    </span>past<span class="p">:</span><span class="w"> </span><span class="s2">&#34;gray&#34;</span><span class="w">
-</span><span class="w">  </span>calendarReadLevel<span class="p">:</span><span class="w"> </span><span class="s2">&#34;reader&#34;</span><span class="w">
-</span><span class="w">  </span>conflictIcon<span class="p">:</span><span class="w"> </span><span class="s2">&#34;🚨&#34;</span><span class="w">
-</span><span class="w">  </span>currentIcon<span class="p">:</span><span class="w"> </span><span class="s2">&#34;💥&#34;</span><span class="w">
-</span><span class="w">  </span>displayResponseStatus<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>email<span class="p">:</span><span class="w"> </span><span class="s2">&#34;chriscummer@me.com&#34;</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>eventCount<span class="p">:</span><span class="w"> </span><span class="m">15</span><span class="w">
-</span><span class="w">  </span>hourFormat<span class="p">:</span><span class="w"> </span><span class="s2">&#34;12&#34;</span><span class="w">
-</span><span class="w">  </span>multiCalendar<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
-</span><span class="w">  </span>secretFile<span class="p">:</span><span class="w"> </span><span class="s2">&#34;~/.config/wtf/gcal/client_secret.json&#34;</span><span class="w">
-</span><span class="w">  </span>showDeclined<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>timezone<span class="p">:</span><span class="w"> </span><span class="s2">&#34;America/Vancouver&#34;</span><span class="w">
-</span><span class="w">  </span>withLocation<span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">gcal</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">colors</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;red&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">eventTime</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightblue&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">description</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;yellow&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">highlights</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span>- <span class="p">[</span><span class="s1">&#39;1on1|1\/11&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;green&#39;</span><span class="p">]</span><span class="w">
+</span><span class="w">    </span>- <span class="p">[</span><span class="s1">&#39;apple|google|aws&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;blue&#39;</span><span class="p">]</span><span class="w">
+</span><span class="w">    </span>- <span class="p">[</span><span class="s1">&#39;interview|meet&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;magenta&#39;</span><span class="p">]</span><span class="w">
+</span><span class="w">    </span>- <span class="p">[</span><span class="s1">&#39;lunch&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;yellow&#39;</span><span class="p">]</span><span class="w">
+</span><span class="w">    </span><span class="k">past</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;gray&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">calendarReadLevel</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;reader&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">conflictIcon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;🚨&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">currentIcon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;💥&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">displayResponseStatus</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">email</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;chriscummer@me.com&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">eventCount</span><span class="p">:</span><span class="w"> </span><span class="m">15</span><span class="w">
+</span><span class="w">  </span><span class="k">hourFormat</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;12&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">multiCalendar</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
+</span><span class="w">  </span><span class="k">secretFile</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;~/.config/wtf/gcal/client_secret.json&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">showDeclined</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">timezone</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;America/Vancouver&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">withLocation</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
 <h2 id="screenshots">Screenshots</h2>
 
 <p><img class="screenshot" src="/imgs/modules/gcal.png" width="320" height="389" alt="gcal screenshot" /></p>

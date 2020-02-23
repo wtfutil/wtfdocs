@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>iStats :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -104,6 +104,34 @@
       <a href="/configuration/">Configuration</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/configuration/global_settings/" class="dd-item">
+        <div>
+          <a href="/configuration/global_settings/">
+            Global Settings
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/configuration/common_settings/" class="dd-item">
+        <div>
+          <a href="/configuration/common_settings/">
+            Common Settings
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/configuration/grid_layout/" class="dd-item">
+        <div>
+          <a href="/configuration/grid_layout/">
+            Grid Layout
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/configuration/generate-module/" class="dd-item">
+        <div>
+          <a href="/configuration/generate-module/">
+            Creating New Modules
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
         </ul>
     </li>
     <li data-nav-id="/blog/" class="dd-item haschildren
@@ -112,6 +140,13 @@
       <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -828,17 +863,17 @@ system stats on OSX.</p>
 <p><img class="screenshot" src="/imgs/modules/cmdrunner/iStats.png" alt="istats screenshot" /></p>
 
 <h2 id="config-example">Config Example</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">istats<span class="p">:</span><span class="w">
-</span><span class="w">  </span>args<span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;all&#34;</span><span class="p">]</span><span class="w">
-</span><span class="w">  </span>cmd<span class="p">:</span><span class="w"> </span><span class="s2">&#34;istats&#34;</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>type<span class="p">:</span><span class="w"> </span><span class="s2">&#34;cmdrunner&#34;</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">1</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">istats</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">args</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;all&#34;</span><span class="p">]</span><span class="w">
+</span><span class="w">  </span><span class="k">cmd</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;istats&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">type</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;cmdrunner&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">1</span></code></pre></div>
 
 
   

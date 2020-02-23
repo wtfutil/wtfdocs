@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>v0.27.0 Released</title>
+      <link>https://wtfutil.com/blog/2020-02-23-v0-27-0/</link>
+      <pubDate>Sun, 23 Feb 2020 07:09:07 -0800</pubDate>
+      
+      <guid>https://wtfutil.com/blog/2020-02-23-v0-27-0/</guid>
+      <description>February 23, 2020 WTF v0.27.0 contains the following changes:
+⚡️ Added  GitLab Todo module added, by @elliotrushton CDS module added, by @yesnault  🐞 Fixed  The vendor directory has been removed, #792 by @bjoernw  👍 Updated  Updated zorkian/go-datadog-api from 2.26.0+incompatible to 2.27.0+incompatible Updated google.golang.org/api from 0.15.0 to 0.17.0 Updated github.com/nicklaw5/helix from 0.5.5 to 0.5.7 Updated xanzy/go-gitlab from 0.23.0 to 0.26.0 Updated stretchr/testify from o.4.0 to 0.</description>
+    </item>
+    
+    <item>
       <title>v0.26.0 Released</title>
       <link>https://wtfutil.com/blog/2020-02-04-v0-26-0/</link>
       <pubDate>Tue, 04 Feb 2020 15:06:14 -0800</pubDate>
@@ -130,7 +140,7 @@ By way of example, if you&amp;rsquo;re running v0.24 or later, drop this into yo
       <guid>https://wtfutil.com/blog/2019-07-12-homebrew-installation/</guid>
       <description>July 12, 2019 As of today WTF can be installed on macOS using Homebrew:
 brew tap wtfutil/wtfutil brew install wtfutil wtfutil If everything goes according to plan, you should now find wtfutil on your system as an executable binary:
-❯ which wtfutil /usr/local/bin/wtfutil❯ ls /usr/local/bin/wtfutil lrwxr-xr-x 1 xxxxxx admin 36 11 Jul 17:29 /usr/local/bin/wtfutil - .</description>
+❯ which wtfutil /usr/local/bin/wtfutil❯ ls /usr/local/bin/wtfutil lrwxr-xr-x 1 xxxxxx admin 36 11 Jul 17:29 /usr/local/bin/wtfutil -&amp;gt; .</description>
     </item>
     
     <item>

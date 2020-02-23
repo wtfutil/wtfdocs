@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>Gerrit :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -140,6 +140,13 @@
       <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -861,25 +868,25 @@
 <p>All open reviews created by you.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">gerrit<span class="p">:</span><span class="w">
-</span><span class="w">  </span>colors<span class="p">:</span><span class="w">
-</span><span class="w">    </span>rows<span class="p">:</span><span class="w">
-</span><span class="w">      </span>even<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightblue&#34;</span><span class="w">
-</span><span class="w">      </span>odd<span class="p">:</span><span class="w"> </span><span class="s2">&#34;white&#34;</span><span class="w">
-</span><span class="w">  </span>domain<span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//gerrit-review.googlesource.com<span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>password<span class="p">:</span><span class="w"> </span><span class="s2">&#34;mypassword&#34;</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">  </span>projects<span class="p">:</span><span class="w">
-</span><span class="w">  </span>-<span class="w"> </span>org/test-project<span class="s2">&#34;
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">gerrit</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">colors</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">rows</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">even</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightblue&#34;</span><span class="w">
+</span><span class="w">      </span><span class="k">odd</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;white&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">domain</span><span class="p">:</span><span class="w"> </span>https<span class="p">:</span>//gerrit-review.googlesource.com<span class="w">
+</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">password</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;mypassword&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span><span class="k">projects</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- org/test-project<span class="s2">&#34;
 </span><span class="s2">  - dotfiles
 </span><span class="s2">  refreshInterval: 300
 </span><span class="s2">  username: &#34;</span>myname&#34;<span class="w">
-</span><span class="w">  </span>verifyServerCertificate<span class="p">:</span><span class="w"> </span><span class="kc">false</span></code></pre></div>
+</span><span class="w">  </span><span class="k">verifyServerCertificate</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span></code></pre></div>
 <h2 id="screenshots">Screenshots</h2>
 
 <p><img class="screenshot" src="/imgs/modules/gerrit.png" width="640" height="167" alt="gerrit screenshot" /></p>

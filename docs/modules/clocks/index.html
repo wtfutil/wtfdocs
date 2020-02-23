@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>Clocks :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -140,6 +140,13 @@
       <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -853,29 +860,29 @@
 <p>Displays a configurable list of world clocks, the local time, and date.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">clocks<span class="p">:</span><span class="w">
-</span><span class="w">  </span>colors<span class="p">:</span><span class="w">
-</span><span class="w">    </span>rows<span class="p">:</span><span class="w">
-</span><span class="w">      </span>even<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightblue&#34;</span><span class="w">
-</span><span class="w">      </span>odd<span class="p">:</span><span class="w"> </span><span class="s2">&#34;white&#34;</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>locations<span class="p">:</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">clocks</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">colors</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">rows</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">even</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightblue&#34;</span><span class="w">
+</span><span class="w">      </span><span class="k">odd</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;white&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">locations</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span><span class="c"># From https://en.wikipedia.org/wiki/List_of_tz_database_time_zones</span><span class="w">
-</span><span class="w">    </span>Avignon<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Europe/Paris&#34;</span><span class="w">
-</span><span class="w">    </span>Barcelona<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Europe/Madrid&#34;</span><span class="w">
-</span><span class="w">    </span>Dubai<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Asia/Dubai&#34;</span><span class="w">
-</span><span class="w">    </span>New<span class="w"> </span>York<span class="p">:</span><span class="w"> </span><span class="s2">&#34;America/New York&#34;</span><span class="w">
-</span><span class="w">    </span>Toronto<span class="p">:</span><span class="w"> </span><span class="s2">&#34;America/Toronto&#34;</span><span class="w">
-</span><span class="w">    </span>UTC<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Etc/UTC&#34;</span><span class="w">
-</span><span class="w">    </span>Vancouver<span class="p">:</span><span class="w"> </span><span class="s2">&#34;America/Vancouver&#34;</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">15</span><span class="w">
+</span><span class="w">    </span><span class="k">Avignon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Europe/Paris&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">Barcelona</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Europe/Madrid&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">Dubai</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Asia/Dubai&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">New York</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;America/New York&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">Toronto</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;America/Toronto&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">UTC</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Etc/UTC&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">Vancouver</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;America/Vancouver&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">4</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">15</span><span class="w">
 </span><span class="w">  </span><span class="c"># Valid options are: alphabetical, chronological</span><span class="w">
-</span><span class="w">  </span>sort<span class="p">:</span><span class="w"> </span><span class="s2">&#34;alphabetical&#34;</span></code></pre></div>
+</span><span class="w">  </span><span class="k">sort</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;alphabetical&#34;</span></code></pre></div>
 <h2 id="screenshots">Screenshots</h2>
 
 <p><img src="/imgs/modules/clocks.png" class="screenshot" width="320" height="191" alt="clocks screenshot" /></p>

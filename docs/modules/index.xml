@@ -48,7 +48,7 @@ Configuration bamboohr:apiKey:&amp;#34;p0d13************************************
       <guid>https://wtfutil.com/modules/buildkite/</guid>
       <description>Connects to the Buildkite REST API and displays status of branches for configured Pipelines.
 The API token must have the read_builds permission.
-Configuration buildkite:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueorganizationSlug:&amp;#34;acme-corp&amp;#34;refreshInterval:60position:top:1left:1height:1width:1pipelines:pipeline-slug-1:branches:-&amp;#34;master&amp;#34;-&amp;#34;stage&amp;#34;pipeline-slug-2:branches:-&amp;#34;master&amp;#34;-&amp;#34;production&amp;#34; Attributes   Name Description Value     apiKey Your Buildkite API token.  Your API key or leave it empty to use the WTF_BUILDKITE_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border. Default: true.</description>
+Configuration buildkite:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueorganizationSlug:&amp;#34;acme-corp&amp;#34;refreshInterval:60position:top:1left:1height:1width:1pipelines:pipeline-slug-1:branches:- &amp;#34;master&amp;#34;- &amp;#34;stage&amp;#34;pipeline-slug-2:branches:- &amp;#34;master&amp;#34;- &amp;#34;production&amp;#34; Attributes   Name Description Value     apiKey Your Buildkite API token.  Your API key or leave it empty to use the WTF_BUILDKITE_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -68,7 +68,7 @@ Configuration circleci:apiKey:&amp;#34;p0d13************************************
       
       <guid>https://wtfutil.com/modules/clocks/</guid>
       <description>Displays a configurable list of world clocks, the local time, and date.
-Configuration clocks:colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;white&amp;#34;enabled:truelocations:# From https://en.wikipedia.org/wiki/List_of_tz_database_time_zonesAvignon:&amp;#34;Europe/Paris&amp;#34;Barcelona:&amp;#34;Europe/Madrid&amp;#34;Dubai:&amp;#34;Asia/Dubai&amp;#34;NewYork:&amp;#34;America/New York&amp;#34;Toronto:&amp;#34;America/Toronto&amp;#34;UTC:&amp;#34;Etc/UTC&amp;#34;Vancouver:&amp;#34;America/Vancouver&amp;#34;position:top:4left:0height:1width:1refreshInterval:15# Valid options are: alphabetical, chronologicalsort:&amp;#34;alphabetical&amp;#34; Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.rows.even The foreground color for even-numbered rows. Any X11 color name.   colors.rows.odd The foreground color for odd-numbered rows.</description>
+Configuration clocks:colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;white&amp;#34;enabled:truelocations:# From https://en.wikipedia.org/wiki/List_of_tz_database_time_zonesAvignon:&amp;#34;Europe/Paris&amp;#34;Barcelona:&amp;#34;Europe/Madrid&amp;#34;Dubai:&amp;#34;Asia/Dubai&amp;#34;New York:&amp;#34;America/New York&amp;#34;Toronto:&amp;#34;America/Toronto&amp;#34;UTC:&amp;#34;Etc/UTC&amp;#34;Vancouver:&amp;#34;America/Vancouver&amp;#34;position:top:4left:0height:1width:1refreshInterval:15# Valid options are: alphabetical, chronologicalsort:&amp;#34;alphabetical&amp;#34; Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.rows.even The foreground color for even-numbered rows. Any X11 color name.   colors.rows.odd The foreground color for odd-numbered rows.</description>
     </item>
     
     <item>
@@ -108,7 +108,7 @@ Configuration cmdrunner:args:[&amp;#34;-g&amp;#34;,&amp;#34;batt&amp;#34;]cmd:&a
       
       <guid>https://wtfutil.com/modules/datadog/</guid>
       <description>Connects to the Datadog API and displays alerting modules.
-Configuration datadog:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;applicationKey:&amp;#34;&amp;lt;yourapplicationkey&amp;gt;&amp;#34;enabled:truemonitors:tags:-&amp;#34;team:ops&amp;#34;position:top:4left:3height:1width:2 Attributes   Name Description Value     apiKey Your DataDog API token.  Your API key or leave it empty to use the WTF_DATADOG_API_KEY environment variable.    applicationKey Your DataDog application key Leave this empty to use the WTF_DATADOG_APPLICATION_KEY environment variable.   border Optional Whether or not to draw this widget with a border.</description>
+Configuration datadog:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;applicationKey:&amp;#34;&amp;lt;yourapplicationkey&amp;gt;&amp;#34;enabled:truemonitors:tags:- &amp;#34;team:ops&amp;#34;position:top:4left:3height:1width:2 Attributes   Name Description Value     apiKey Your DataDog API token.  Your API key or leave it empty to use the WTF_DATADOG_API_KEY environment variable.    applicationKey Your DataDog application key Leave this empty to use the WTF_DATADOG_APPLICATION_KEY environment variable.   border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -158,7 +158,7 @@ Configuration docker:type:dockerenabled:truelabelColor:lightblueposition:top:0le
       
       <guid>https://wtfutil.com/modules/exchange_rates/</guid>
       <description>Displays exchange rates between various currencies.
-Configuration exchangerates:enabled:truefocusable:falseposition:top:4left:4width:1height:2rates:CAD:-&amp;#34;USD&amp;#34;-&amp;#34;EUR&amp;#34;USD:-&amp;#34;CAD&amp;#34;EUR:-&amp;#34;CAD&amp;#34;title:&amp;#34;💰 Rates&amp;#34; Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module&amp;rsquo;s widget will be displayed.</description>
+Configuration exchangerates:enabled:truefocusable:falseposition:top:4left:4width:1height:2rates:CAD:- &amp;#34;USD&amp;#34;- &amp;#34;EUR&amp;#34;USD:- &amp;#34;CAD&amp;#34;EUR:- &amp;#34;CAD&amp;#34;title:&amp;#34;💰 Rates&amp;#34; Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module&amp;rsquo;s widget will be displayed.</description>
     </item>
     
     <item>
@@ -168,7 +168,7 @@ Configuration exchangerates:enabled:truefocusable:falseposition:top:4left:4width
       
       <guid>https://wtfutil.com/modules/feedreader/</guid>
       <description>A rudimentary RSS &amp;amp; Atom feed reader.
-Configuration feedreader:enabled:truefeeds:-https://news.ycombinator.com/rss-http://feeds.reuters.com/Reuters/worldNewsfeedLimit:10position:top:4left:1height:1width:2refreshInterval:14400 Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   feedLimit The number of stories from each feed to be displayed.</description>
+Configuration feedreader:enabled:truefeeds:- https://news.ycombinator.com/rss- http://feeds.reuters.com/Reuters/worldNewsfeedLimit:10position:top:4left:1height:1width:2refreshInterval:14400 Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   feedLimit The number of stories from each feed to be displayed.</description>
     </item>
     
     <item>
@@ -180,7 +180,7 @@ Configuration feedreader:enabled:truefeeds:-https://news.ycombinator.com/rss-htt
       <description>Displays information about your projects hosted on Gerrit:
 Open Incoming Reviews All open reviews that are requesting your approval.
 My Outgoing Reviews All open reviews created by you.
-Configuration gerrit:colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;white&amp;#34;domain:https://gerrit-review.googlesource.comenabled:truepassword:&amp;#34;mypassword&amp;#34;position:top:2left:3height:2width:2projects:-org/test-project&amp;#34; - dotfiles refreshInterval: 300 username: &amp;#34;myname&amp;#34;verifyServerCertificate:false Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.rows.even The foreground color for even-numbered rows.</description>
+Configuration gerrit:colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;white&amp;#34;domain:https://gerrit-review.googlesource.comenabled:truepassword:&amp;#34;mypassword&amp;#34;position:top:2left:3height:2width:2projects:- org/test-project&amp;#34; - dotfiles refreshInterval: 300 username: &amp;#34;myname&amp;#34;verifyServerCertificate:false Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.rows.even The foreground color for even-numbered rows.</description>
     </item>
     
     <item>
@@ -193,7 +193,7 @@ Configuration gerrit:colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;wh
 Branch The name of the currently-active git branch.
 Changed Files A list of all the files that have changed since the last commit, and their status.
 Recent Commits A list of n recent commits, who committed it, and when.
-Configuration git:commitCount:5commitFormat:&amp;#34;[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]&amp;#34;dateFormat:&amp;#34;%H:%M %d %b %y&amp;#34;enabled:trueposition:top:0left:3height:2width:2refreshInterval:8repositories:-&amp;#34;/Users/chris/go/src/github.com/wtfutil/wtf&amp;#34;-&amp;#34;/Users/user/fakeapp&amp;#34; Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border.</description>
+Configuration git:commitCount:5commitFormat:&amp;#34;[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]&amp;#34;dateFormat:&amp;#34;%H:%M %d %b %y&amp;#34;enabled:trueposition:top:0left:3height:2width:2refreshInterval:8repositories:- &amp;#34;/Users/chris/go/src/github.com/wtfutil/wtf&amp;#34;- &amp;#34;/Users/user/fakeapp&amp;#34; Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -218,7 +218,7 @@ First, create a shell script:
 Open Review Requests All open code review requests assigned to you.
 Open Pull Requests All open pull requests created by you.
 Custom Queries Create filters to manage PRs and issues however you like.
-Configuration github:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;baseURL:&amp;#34;&amp;#34;customQueries:othersPRs:title:&amp;#34;Others Pull Requests&amp;#34;filter:&amp;#34;is:open is:pr -author:wtfutil&amp;#34;enabled:trueenableStatus:trueposition:top:2left:3height:2width:2refreshInterval:300repositories:-&amp;#34;wtfutil/wtf&amp;#34;-&amp;#34;wtfutil/docs&amp;#34;-&amp;#34;umbrella-corp/wesker-api&amp;#34;uploadURL:&amp;#34;&amp;#34;username:&amp;#34;wtfutil&amp;#34; Screenshots Attributes   Name Description Value     apiKey Your GitHub API token.  Your API key or leave it empty to use the WTF_GITHUB_TOKEN environment variable.</description>
+Configuration github:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;baseURL:&amp;#34;&amp;#34;customQueries:othersPRs:title:&amp;#34;Others Pull Requests&amp;#34;filter:&amp;#34;is:open is:pr -author:wtfutil&amp;#34;enabled:trueenableStatus:trueposition:top:2left:3height:2width:2refreshInterval:300repositories:- &amp;#34;wtfutil/wtf&amp;#34;- &amp;#34;wtfutil/docs&amp;#34;- &amp;#34;umbrella-corp/wesker-api&amp;#34;uploadURL:&amp;#34;&amp;#34;username:&amp;#34;wtfutil&amp;#34; Screenshots Attributes   Name Description Value     apiKey Your GitHub API token.  Your API key or leave it empty to use the WTF_GITHUB_TOKEN environment variable.</description>
     </item>
     
     <item>
@@ -230,7 +230,7 @@ Configuration github:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;ba
       <description>Displays information about your projects hosted on GitLab:
 Open Approval Requests All open merge requests that are requesting your approval.
 Open Merge Requests All open merge requests created by you.
-Configuration gitlab:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:2left:3height:2width:2refreshInterval:300projects:-&amp;#34;gitlab-org/release/tasks&amp;#34;-&amp;#34;gitlab-org/gitlab-ce&amp;#34;username:&amp;#34;wtfutil&amp;#34; Screenshots Attributes   Name Description Value     apiKey Your GitLab API token.  Your API key or leave it empty to use the WTF_GITLAB_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border.</description>
+Configuration gitlab:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:2left:3height:2width:2refreshInterval:300projects:- &amp;#34;gitlab-org/release/tasks&amp;#34;- &amp;#34;gitlab-org/gitlab-ce&amp;#34;username:&amp;#34;wtfutil&amp;#34; Screenshots Attributes   Name Description Value     apiKey Your GitLab API token.  Your API key or leave it empty to use the WTF_GITLAB_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -261,7 +261,7 @@ Configuration hackernews:enabled:truenumberOfStories:10position:top:4left:1heigh
       <guid>https://wtfutil.com/modules/hibp/</guid>
       <description>Indicates whether or not your listed email addresses appear in the Have I Been Pwned breach database.
 Note: As of v0.19.0, WTF requires you use a Have I Been Pwned API key to conenct to the service. See details below.
-Configuration hibp:accounts:-test@example.com-pwned@gmail.comapiKey:&amp;#34;p0d13*********************************************c3&amp;#34;colors:ok:&amp;#34;green&amp;#34;pwned:&amp;#34;red&amp;#34;enabled:trueposition:top:4left:1height:1width:2refreshInterval:43200since:&amp;#34;2019-06-22&amp;#34; Screenshots Attributes   Name Description Value     accounts A list of the accounts to check the HIBP database for.    apiKey Your Have I Been Pwned API token.</description>
+Configuration hibp:accounts:- test@example.com- pwned@gmail.comapiKey:&amp;#34;p0d13*********************************************c3&amp;#34;colors:ok:&amp;#34;green&amp;#34;pwned:&amp;#34;red&amp;#34;enabled:trueposition:top:4left:1height:1width:2refreshInterval:43200since:&amp;#34;2019-06-22&amp;#34; Screenshots Attributes   Name Description Value     accounts A list of the accounts to check the HIBP database for.    apiKey Your Have I Been Pwned API token.</description>
     </item>
     
     <item>
@@ -292,7 +292,7 @@ jira:apiKey:&amp;#34;p0d13*********************************************c3&amp;#3
       
       <guid>https://wtfutil.com/modules/kubernetes/</guid>
       <description>Displays information about a Kubernetes cluster.
-Configuration kubernetes:enabled:truekubeconfig:&amp;#34;/Users/testuser/.kube/config&amp;#34;namespaces:-internal-public-systemsobjects:-deployments-nodes-podsposition:top:4left:1height:1width:2refreshInterval:300title:&amp;#34;Build System&amp;#34; Attributes   Name Description Value     enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   kubeconfig The absolute path to your Kubernetes config file.    namespaces A list of namespaces to monitor. Defaults to all if empty.    objects A list of Kubernetes objects to display.</description>
+Configuration kubernetes:enabled:truekubeconfig:&amp;#34;/Users/testuser/.kube/config&amp;#34;namespaces:- internal- public- systemsobjects:- deployments- nodes- podsposition:top:4left:1height:1width:2refreshInterval:300title:&amp;#34;Build System&amp;#34; Attributes   Name Description Value     enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   kubeconfig The absolute path to your Kubernetes config file.    namespaces A list of namespaces to monitor. Defaults to all if empty.</description>
     </item>
     
     <item>
@@ -316,7 +316,7 @@ require &amp;#34;github.com/wtfutil/wtf/logger&amp;#34; logger.Log(&amp;#34;This
 Branch The name of the currently-active mercurial branch.
 Changed Files A list of all the files that have changed since the last commit, and their status.
 Recent Commits A list of n recent commits, who committed it, and when.
-Configuration mercurial:commitCount:5commitFormat:&amp;#34;[forestgreen]{rev}:{phase} [white]{desc|firstline|strip} [grey]{author|person} {date|age}[white]&amp;#34;enabled:trueposition:top:0left:3height:2width:2refreshInterval:8repositories:-&amp;#34;/Users/user/fakelib&amp;#34;-&amp;#34;/Users/user/fakeapp&amp;#34; Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border.</description>
+Configuration mercurial:commitCount:5commitFormat:&amp;#34;[forestgreen]{rev}:{phase} [white]{desc|firstline|strip} [grey]{author|person} {date|age}[white]&amp;#34;enabled:trueposition:top:0left:3height:2width:2refreshInterval:8repositories:- &amp;#34;/Users/user/fakelib&amp;#34;- &amp;#34;/Users/user/fakeapp&amp;#34; Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -326,7 +326,7 @@ Configuration mercurial:commitCount:5commitFormat:&amp;#34;[forestgreen]{rev}:{p
       
       <guid>https://wtfutil.com/modules/newrelic/</guid>
       <description>Connects to the New Relic API and displays the last n deploys of the monitored applications: deploy ID, deploy time, and who deployed it.
-Configuration newrelic:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;applicationIDs:-10549735-499785deployCount:6enabled:trueposition:top:4left:3height:1width:2refreshInterval:900 Screenshots Attributes   Name Description Value     apiKey Your New Relic API token.  Your API key or leave it empty to use the WTF_NEW_RELIC_API_KEY environment variable.    applicationIds A list of integer IDs of the New Relic applications you wish to report on.</description>
+Configuration newrelic:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;applicationIDs:- 10549735- 499785deployCount:6enabled:trueposition:top:4left:3height:1width:2refreshInterval:900 Screenshots Attributes   Name Description Value     apiKey Your New Relic API token.  Your API key or leave it empty to use the WTF_NEW_RELIC_API_KEY environment variable.    applicationIds A list of integer IDs of the New Relic applications you wish to report on.</description>
     </item>
     
     <item>
@@ -337,7 +337,7 @@ Configuration newrelic:apiKey:&amp;#34;p0d13************************************
       <guid>https://wtfutil.com/modules/opsgenie/</guid>
       <description>Shows OpsGenie on-call schedules.
 See Who is on Call API for details.
-Configuration Single Schedule opsgenie:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600region:&amp;#34;us&amp;#34;schedule:&amp;#34;Primary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34; Multiple Schedules opsgenie:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600region:&amp;#34;us&amp;#34;schedule:-&amp;#34;Primary&amp;#34;-&amp;#34;Secondary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34; Screenshots Attributes   Name Description Value     apiKey Your OpsGenie API token.  Your API key or leave it empty to use the WTF_OPS_GENIE_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   displayEmpty Whether schedules with no assigned person on-call should be displayed.</description>
+Configuration Single Schedule opsgenie:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600region:&amp;#34;us&amp;#34;schedule:&amp;#34;Primary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34; Multiple Schedules opsgenie:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600region:&amp;#34;us&amp;#34;schedule:- &amp;#34;Primary&amp;#34;- &amp;#34;Secondary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34; Screenshots Attributes   Name Description Value     apiKey Your OpsGenie API token.  Your API key or leave it empty to use the WTF_OPS_GENIE_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   displayEmpty Whether schedules with no assigned person on-call should be displayed.</description>
     </item>
     
     <item>
@@ -347,7 +347,7 @@ Configuration Single Schedule opsgenie:apiKey:&amp;#34;p0d13********************
       
       <guid>https://wtfutil.com/modules/pagerduty/</guid>
       <description>Shows Pagerduty on-call schedules.
-Configuration pagerduty:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueescalationFilter:-&amp;#34;client-eng&amp;#34;position:top:4left:3height:1width:2scheduleIDs:-&amp;#34;R2D24CD&amp;#34;-&amp;#34;C3P05MF&amp;#34;showIncidents:trueshowSchedules:true Attributes   Name Description Value     apiKey Your PagerDuty API token.  Your API key or leave it empty to use the WTF_PAGERDUTY_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration pagerduty:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueescalationFilter:- &amp;#34;client-eng&amp;#34;position:top:4left:3height:1width:2scheduleIDs:- &amp;#34;R2D24CD&amp;#34;- &amp;#34;C3P05MF&amp;#34;showIncidents:trueshowSchedules:true Attributes   Name Description Value     apiKey Your PagerDuty API token.  Your API key or leave it empty to use the WTF_PAGERDUTY_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>
@@ -418,7 +418,7 @@ Configuration subreddit:enabled:truenumberOfPosts:10position:top:4left:1height:1
       
       <guid>https://wtfutil.com/modules/textfile/</guid>
       <description>Displays the contents of the specified text file in the widget.
-Configuration textfile:enabled:truefilePaths:-&amp;#34;~/Desktop/notes.md&amp;#34;-&amp;#34;~/.config/wtf/config.yml&amp;#34;format:trueformatStyle:&amp;#34;dracula&amp;#34;position:top:5left:4height:2width:1refreshInterval:15wrapText:true Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   filePaths An array of paths to the files to be displayed in the widget.</description>
+Configuration textfile:enabled:truefilePaths:- &amp;#34;~/Desktop/notes.md&amp;#34;- &amp;#34;~/.config/wtf/config.yml&amp;#34;format:trueformatStyle:&amp;#34;dracula&amp;#34;position:top:5left:4height:2width:1refreshInterval:15wrapText:true Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   filePaths An array of paths to the files to be displayed in the widget.</description>
     </item>
     
     <item>
@@ -440,7 +440,7 @@ Configuration todo:checkedIcon:&amp;#34;X&amp;#34;colors:checked:grayhighlight:f
       
       <guid>https://wtfutil.com/modules/todoist/</guid>
       <description>Displays all items on specified project.
-Configuration todoist:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:0left:2height:1width:1projects:-122247497refreshInterval:3600 Screenshots Attributes   Name Description Value     apiKey Your Todoist API token.  Your API key or leave it empty to use the WTF_TODOIST_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration todoist:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:0left:2height:1width:1projects:- 122247497refreshInterval:3600 Screenshots Attributes   Name Description Value     apiKey Your Todoist API token.  Your API key or leave it empty to use the WTF_TODOIST_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>

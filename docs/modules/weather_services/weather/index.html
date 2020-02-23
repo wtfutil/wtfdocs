@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>Weather :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -140,6 +140,13 @@
       <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -860,25 +867,25 @@
 <p>Displays a configurable list of current weather report, including current temperature, sunrise time, and sunset time.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">weather<span class="p">:</span><span class="w">
-</span><span class="w">  </span>apiKey<span class="p">:</span><span class="w"> </span><span class="s2">&#34;p0d13*********************************************c3&#34;</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">weather</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">apiKey</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;p0d13*********************************************c3&#34;</span><span class="w">
 </span><span class="w">  </span><span class="c"># From http://openweathermap.org/help/city_list.txt</span><span class="w">
-</span><span class="w">  </span>cityids<span class="p">:</span><span class="w">
-</span><span class="w">  </span>-<span class="w"> </span><span class="m">6173331</span><span class="w">
-</span><span class="w">  </span>-<span class="w"> </span><span class="m">3128760</span><span class="w">
-</span><span class="w">  </span>-<span class="w"> </span><span class="m">6167865</span><span class="w">
-</span><span class="w">  </span>-<span class="w"> </span><span class="m">6176823</span><span class="w">
-</span><span class="w">  </span>colors<span class="p">:</span><span class="w">
-</span><span class="w">    </span>current<span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightblue&#34;</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>language<span class="p">:</span><span class="w"> </span><span class="s2">&#34;EN&#34;</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span>refreshInterval<span class="p">:</span><span class="w"> </span><span class="m">900</span><span class="w">
-</span><span class="w">  </span>tempUnit<span class="p">:</span><span class="w"> </span><span class="s2">&#34;C&#34;</span></code></pre></div>
+</span><span class="w">  </span><span class="k">cityids</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span>- <span class="m">6173331</span><span class="w">
+</span><span class="w">  </span>- <span class="m">3128760</span><span class="w">
+</span><span class="w">  </span>- <span class="m">6167865</span><span class="w">
+</span><span class="w">  </span>- <span class="m">6176823</span><span class="w">
+</span><span class="w">  </span><span class="k">colors</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">current</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;lightblue&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">language</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;EN&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">900</span><span class="w">
+</span><span class="w">  </span><span class="k">tempUnit</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;C&#34;</span></code></pre></div>
 <h2 id="attributes">Attributes</h2>
 
 <table class="table">

@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>Global Settings :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -141,6 +141,13 @@
       <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -858,38 +865,38 @@
 
 <p>The following top-level global attributes are configurable in <code>config.yml</code>.
 See this <a href="https://github.com/wtfutil/wtf/blob/master/_sample_configs/sample_config.yml">example config file</a> for more details.</p>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">wtf<span class="p">:</span><span class="w">
-</span><span class="w">  </span>colors<span class="p">:</span><span class="w">
-</span><span class="w">    </span>background<span class="p">:</span><span class="w"> </span><span class="s2">&#34;red&#34;</span><span class="w">
-</span><span class="w">    </span>border<span class="p">:</span><span class="w">
-</span><span class="w">      </span>focusable<span class="p">:</span><span class="w"> </span><span class="s2">&#34;darkslateblue&#34;</span><span class="w">
-</span><span class="w">      </span>focused<span class="p">:</span><span class="w"> </span><span class="s2">&#34;orange&#34;</span><span class="w">
-</span><span class="w">      </span>normal<span class="p">:</span><span class="w"> </span><span class="s2">&#34;gray&#34;</span><span class="w">
-</span><span class="w">    </span>checked<span class="p">:</span><span class="w"> </span><span class="s2">&#34;gray&#34;</span><span class="w">
-</span><span class="w">    </span>highlight<span class="p">:</span><span class="w">
-</span><span class="w">      </span>fore<span class="p">:</span><span class="w"> </span><span class="s2">&#34;black&#34;</span><span class="w">
-</span><span class="w">      </span>back<span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
-</span><span class="w">    </span>text<span class="p">:</span><span class="w"> </span><span class="s2">&#34;white&#34;</span><span class="w">
-</span><span class="w">    </span>title<span class="p">:</span><span class="w"> </span><span class="s2">&#34;white&#34;</span><span class="w">
-</span><span class="w">  </span>grid<span class="p">:</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">wtf</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">colors</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;red&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">focusable</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;darkslateblue&#34;</span><span class="w">
+</span><span class="w">      </span><span class="k">focused</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;orange&#34;</span><span class="w">
+</span><span class="w">      </span><span class="k">normal</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;gray&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">checked</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;gray&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">highlight</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">fore</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;black&#34;</span><span class="w">
+</span><span class="w">      </span><span class="k">back</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">text</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;white&#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;white&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">grid</span><span class="p">:</span><span class="w">
 </span><span class="w">    </span><span class="c"># How _wide_ the columns are, in terminal characters. In this case we have</span><span class="w">
 </span><span class="w">    </span><span class="c"># six columns, each of which are 35 characters wide</span><span class="w">
-</span><span class="w">    </span>columns<span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">]</span><span class="w">
+</span><span class="w">    </span><span class="k">columns</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">,</span><span class="w"> </span><span class="m">35</span><span class="p">]</span><span class="w">
 </span><span class="w">
 </span><span class="w">    </span><span class="c"># How _high_ the rows are, in terminal lines. In this case we have five rows</span><span class="w">
 </span><span class="w">    </span><span class="c"># that support ten line of text, one of three lines, and one of four</span><span class="w">
-</span><span class="w">    </span>rows<span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">]</span><span class="w">
-</span><span class="w">  </span>navigation<span class="p">:</span><span class="w">
-</span><span class="w">    </span>shortcuts<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>openFileUtil<span class="p">:</span><span class="w"> </span><span class="s2">&#34;open&#34;</span><span class="w">
-</span><span class="w">  </span>sigils<span class="p">:</span><span class="w">
-</span><span class="w">    </span>checkbox<span class="p">:</span><span class="w">
-</span><span class="w">      </span>checked<span class="p">:</span><span class="w"> </span><span class="s2">&#34;x&#34;</span><span class="w">
-</span><span class="w">      </span>unchecked<span class="p">:</span><span class="w"> </span><span class="s2">&#34; &#34;</span><span class="w">
-</span><span class="w">    </span>paging<span class="p">:</span><span class="w">
-</span><span class="w">      </span>normal<span class="p">:</span><span class="w"> </span><span class="s2">&#34;*&#34;</span><span class="w">
-</span><span class="w">      </span>selected<span class="p">:</span><span class="w"> </span><span class="s2">&#34;_&#34;</span><span class="w">
-</span><span class="w">  </span>term<span class="p">:</span><span class="w"> </span><span class="s2">&#34;xterm-256color&#34;</span></code></pre></div>
+</span><span class="w">    </span><span class="k">rows</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">]</span><span class="w">
+</span><span class="w">  </span><span class="k">navigation</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">shortcuts</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">openFileUtil</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;open&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">sigils</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">checkbox</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">checked</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;x&#34;</span><span class="w">
+</span><span class="w">      </span><span class="k">unchecked</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34; &#34;</span><span class="w">
+</span><span class="w">    </span><span class="k">paging</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">normal</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;*&#34;</span><span class="w">
+</span><span class="w">      </span><span class="k">selected</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;_&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">term</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;xterm-256color&#34;</span></code></pre></div>
 <h3 id="attributes">Attributes</h3>
 
 <h2 id="attributes-1">Attributes</h2>

@@ -5,7 +5,7 @@
   
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Hugo 0.60.1" />
+<meta name="generator" content="Hugo 0.65.3" />
 <title>CryptoLive :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
@@ -140,6 +140,13 @@
       <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/blog/2020-02-23-v0-27-0/" class="dd-item">
+        <div>
+          <a href="/blog/2020-02-23-v0-27-0/">
+            v0.27.0 Released
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/blog/2020-02-04-v0-26-0/" class="dd-item">
         <div>
           <a href="/blog/2020-02-04-v0-26-0/">
@@ -858,50 +865,50 @@
 <p>Compare crypto currencies using <a href="https://cryptocompare.com">CryptoCompare</a>.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">cryptolive<span class="p">:</span><span class="w">
-</span><span class="w">  </span>enabled<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span>position<span class="p">:</span><span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
-</span><span class="w">    </span>left<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span>height<span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span>width<span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">  </span>updateInterval<span class="p">:</span><span class="w"> </span><span class="m">15</span><span class="w">
-</span><span class="w">  </span>currencies<span class="p">:</span><span class="w">
-</span><span class="w">    </span>BTC<span class="p">:</span><span class="w">
-</span><span class="w">      </span>displayName<span class="p">:</span><span class="w"> </span>Bitcoin<span class="w">
-</span><span class="w">      </span>to<span class="p">:</span><span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>USD<span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>EUR<span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>ETH<span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>LTC<span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>DOGE<span class="w">
-</span><span class="w">    </span>LTC<span class="p">:</span><span class="w">
-</span><span class="w">      </span>displayName<span class="p">:</span><span class="w"> </span>Ethereum<span class="w">
-</span><span class="w">      </span>to<span class="p">:</span><span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>USD<span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>EUR<span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>BTC<span class="w">
-</span><span class="w">  </span>top<span class="p">:</span><span class="w">
-</span><span class="w">    </span>BTC<span class="p">:</span><span class="w">
-</span><span class="w">      </span>displayName<span class="p">:</span><span class="w"> </span>Bitcoin<span class="w">
-</span><span class="w">      </span>limit<span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
-</span><span class="w">      </span>to<span class="p">:</span><span class="w">
-</span><span class="w">        </span>-<span class="w"> </span>USD<span class="w">
-</span><span class="w">  </span>colors<span class="p">:</span><span class="w">
-</span><span class="w">    </span>from<span class="p">:</span><span class="w">
-</span><span class="w">      </span>name<span class="p">:</span><span class="w"> </span>coral<span class="w">
-</span><span class="w">      </span>displayName<span class="p">:</span><span class="w"> </span>grey<span class="w">
-</span><span class="w">    </span>to<span class="p">:</span><span class="w">
-</span><span class="w">      </span>name<span class="p">:</span><span class="w"> </span>white<span class="w">
-</span><span class="w">      </span>price<span class="p">:</span><span class="w"> </span>green<span class="w">
-</span><span class="w">    </span>top<span class="p">:</span><span class="w">
-</span><span class="w">      </span>from<span class="p">:</span><span class="w">
-</span><span class="w">        </span>name<span class="p">:</span><span class="w"> </span>grey<span class="w">
-</span><span class="w">        </span>displayName<span class="p">:</span><span class="w"> </span>coral<span class="w">
-</span><span class="w">      </span>to<span class="p">:</span><span class="w">
-</span><span class="w">        </span>name<span class="p">:</span><span class="w"> </span>red<span class="w">
-</span><span class="w">        </span>field<span class="p">:</span><span class="w"> </span>white<span class="w">
-</span><span class="w">        </span>value<span class="p">:</span><span class="w"> </span>green</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">cryptolive</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span><span class="k">updateInterval</span><span class="p">:</span><span class="w"> </span><span class="m">15</span><span class="w">
+</span><span class="w">  </span><span class="k">currencies</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">BTC</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">displayName</span><span class="p">:</span><span class="w"> </span>Bitcoin<span class="w">
+</span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span>- USD<span class="w">
+</span><span class="w">        </span>- EUR<span class="w">
+</span><span class="w">        </span>- ETH<span class="w">
+</span><span class="w">        </span>- LTC<span class="w">
+</span><span class="w">        </span>- DOGE<span class="w">
+</span><span class="w">    </span><span class="k">LTC</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">displayName</span><span class="p">:</span><span class="w"> </span>Ethereum<span class="w">
+</span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span>- USD<span class="w">
+</span><span class="w">        </span>- EUR<span class="w">
+</span><span class="w">        </span>- BTC<span class="w">
+</span><span class="w">  </span><span class="k">top</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">BTC</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">displayName</span><span class="p">:</span><span class="w"> </span>Bitcoin<span class="w">
+</span><span class="w">      </span><span class="k">limit</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span>- USD<span class="w">
+</span><span class="w">  </span><span class="k">colors</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">from</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">name</span><span class="p">:</span><span class="w"> </span>coral<span class="w">
+</span><span class="w">      </span><span class="k">displayName</span><span class="p">:</span><span class="w"> </span>grey<span class="w">
+</span><span class="w">    </span><span class="k">to</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">name</span><span class="p">:</span><span class="w"> </span>white<span class="w">
+</span><span class="w">      </span><span class="k">price</span><span class="p">:</span><span class="w"> </span>green<span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">from</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="k">name</span><span class="p">:</span><span class="w"> </span>grey<span class="w">
+</span><span class="w">        </span><span class="k">displayName</span><span class="p">:</span><span class="w"> </span>coral<span class="w">
+</span><span class="w">      </span><span class="k">to</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="k">name</span><span class="p">:</span><span class="w"> </span>red<span class="w">
+</span><span class="w">        </span><span class="k">field</span><span class="p">:</span><span class="w"> </span>white<span class="w">
+</span><span class="w">        </span><span class="k">value</span><span class="p">:</span><span class="w"> </span>green</code></pre></div>
 <h2 id="screenshots">Screenshots</h2>
 
 <p><img class="screenshot" src="/imgs/modules/cryptolive.png" width="320" height="203" alt="cryptolive screenshot" /></p>
