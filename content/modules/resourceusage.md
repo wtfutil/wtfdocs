@@ -27,7 +27,10 @@ resourceusage:
 
 {{% attributes %}}
   {{< attributes/border >}}
+  {{< attributes/custom name="showCPU" desc="_Optional_ Whether or not to display the CPU usage. Default: `true`." value="true, false" >}}
   {{< attributes/custom name="cpuCombined" desc="_Optional_ Whether or not to display the CPUs as one combined value. Default: `false`." value="true, false" >}}
+  {{< attributes/custom name="showMem" desc="_Optional_ Whether or not to display the memory usage. Default: `true`." value="true, false" >}}
+  {{< attributes/custom name="showSwp" desc="_Optional_ Whether or not to display the swap memory usage. Default: `true`." value="true, false" >}}
   {{< attributes/enabled >}}
   {{< attributes/custom name="graphIcon" desc="_Optional_ The character to use to display stars in the graph. Default: `|`." value="Any visible alphanumeric character (but emoji will probably break it)." >}}
   {{< attributes/custom name="graphStars" desc="_Optional_ The maximum number of stars to display in the graph. Default: `20`." value="Any positive integer." >}}
