@@ -368,7 +368,7 @@ Configuration power:enabled:trueposition:top:5left:0height:2width:1refreshInterv
       
       <guid>https://wtfutil.com/modules/resourceusage/</guid>
       <description>Displays CPU and memory usage.
-Configuration resourceusage:cpuCombined:falseenabled:trueposition:top:1left:1height:1width:1refreshInterval:1 Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   showCPU Optional Whether or not to display the CPU usage. Default: true. true, false   cpuCombined Optional Whether or not to display the CPUs as one combined value. Default: false. true, false   showMem Optional Whether or not to display the memory usage.</description>
+Configuration resourceusage:cpuCombined:falseenabled:trueposition:top:1left:1height:1width:1refreshInterval:1showCPU:trueshowMem:trueshowSwp:true Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   cpuCombined Optional Whether or not to display the CPUs as one combined value. Default: false. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>

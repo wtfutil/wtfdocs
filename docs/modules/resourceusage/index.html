@@ -868,7 +868,10 @@
 </span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">1</span></code></pre></div>
+</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="w">  </span><span class="k">showCPU</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">showMem</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">showSwp</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
 <h2 id="screenshots">Screenshots</h2>
 
 <p><img class="screenshot" src="/imgs/modules/resource_usage.png" width="279" height="193" alt="resource usage screenshot" /></p>
@@ -890,23 +893,8 @@
     <td>true, false</td>
 </tr>
   <tr>
-    <td><code>showCPU</code></td>
-    <td><em>Optional</em> Whether or not to display the CPU usage. Default: <code>true</code>.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
     <td><code>cpuCombined</code></td>
     <td><em>Optional</em> Whether or not to display the CPUs as one combined value. Default: <code>false</code>.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>showMem</code></td>
-    <td><em>Optional</em> Whether or not to display the memory usage. Default: <code>true</code>.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>showSwp</code></td>
-    <td><em>Optional</em> Whether or not to display the swap memory usage. Default: <code>true</code>.</td>
     <td>true, false</td>
 </tr>
   <tr>
@@ -933,6 +921,21 @@
     <td><code>refreshInterval</code></td>
     <td><em>Optional</em> How often, in seconds, this module will update its data. Default: <code>300</code>.</td>
     <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td><code>showCPU</code></td>
+    <td><em>Optional</em> Whether or not to display the CPU usage. Default: <code>true</code>.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>showMem</code></td>
+    <td><em>Optional</em> Whether or not to display the memory usage. Default: <code>true</code>.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>showSwp</code></td>
+    <td><em>Optional</em> Whether or not to display the swap memory usage. Default: <code>true</code>.</td>
+    <td>true, false</td>
 </tr>
     </tbody>
 </table>
