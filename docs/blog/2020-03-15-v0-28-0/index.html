@@ -6,13 +6,12 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.65.3" />
-<title>IP Addresses :: WTF - the terminal dashboard</title>
+<title>v0.28.0 Released :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="alternate" type="application/rss+xml" href="https://wtfutil.com/modules/ipaddress/index.xml" title="WTF - the terminal dashboard" />
 <script src="/js/jquery-2.x.min.js"></script>
 <script src="https://kit.fontawesome.com/461d56314b.js"></script>
 <script type="text/javascript">
@@ -26,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/ipaddress/">
+<body data-url="/blog/2020-03-15-v0-28-0/">
   
   <header>
   <div class="logo">
@@ -135,13 +134,14 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/blog/" class="dd-item haschildren
+    <li data-nav-id="/blog/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/blog/">WTF Blog</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/blog/">WTF Blog</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/blog/2020-03-15-v0-28-0/" class="dd-item">
+      <li data-nav-id="/blog/2020-03-15-v0-28-0/" class="dd-item active">
         <div>
           <a href="/blog/2020-03-15-v0-28-0/">
             v0.28.0 Released
@@ -262,7 +262,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item parent alwaysopen haschildren
+    <li data-nav-id="/modules/" class="dd-item alwaysopen haschildren
         ">
       <div>
       <a href="/modules/">Modules</a>
@@ -496,11 +496,10 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-    <li data-nav-id="/modules/ipaddress/" class="dd-item parent active haschildren
+    <li data-nav-id="/modules/ipaddress/" class="dd-item haschildren
         ">
       <div>
-      <a href="/modules/ipaddress/">IP Addresses</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/ipaddress/">IP Addresses</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/modules/ipaddress/ipapi/" class="dd-item">
@@ -771,7 +770,25 @@
     <option value="/configuration/" >
    Configuration</option>
     <option value="/blog/" >
-   WTF Blog</option>
+   WTF Blog</option> 
+      <option value="/blog/2020-03-15-v0-28-0/"  selected>- v0.28.0 Released</option>
+      <option value="/blog/2020-02-23-v0-27-0/" >- v0.27.0 Released</option>
+      <option value="/blog/2020-02-04-v0-26-0/" >- v0.26.0 Released</option>
+      <option value="/blog/monochrome-retro-display/" >- Monochrome Retro Display</option>
+      <option value="/blog/2019-11-10-v0-24-0/" >- v0.24.0 Released</option>
+      <option value="/blog/2019-10-11-v0-23-0/" >- v0.23.0 Released</option>
+      <option value="/blog/2019-09-12-v0-22-0/" >- v0.22.0 Released</option>
+      <option value="/blog/2019-08-29-v0-21-0/" >- v0.21.0 Released</option>
+      <option value="/blog/2019-08-20-v0-20-0/" >- v0.20.0 Released</option>
+      <option value="/blog/2019-07-31-v0-19-1/" >- v0.19.1 Released</option>
+      <option value="/blog/2019-07-27-v0-19-0/" >- v0.19.0 Released</option>
+      <option value="/blog/2019-07-20-v0-18-0/" >- v0.18.0 Released</option>
+      <option value="/blog/2019-07-16-v0-17-1/" >- v0.17.1 Released</option>
+      <option value="/blog/2019-07-12-homebrew-installation/" >- Installing With Homebrew</option>
+      <option value="/blog/2019-07-10-wtfutil-release/" >- Binary Renamed to &#39;wtfutil&#39;</option>
+      <option value="/blog/2019-07-09-rss-for-releases/" >- Using WTF&#39;s FeedReader to Track WTF Releases</option>
+      <option value="/blog/2019-07-09-v0-14-0/" >- v0.14.0 Released</option>
+  
     <option value="/modules/" >
    Modules</option> 
       <option value="/modules/azure_devops/" >- Azure DevOps</option>
@@ -803,12 +820,9 @@
    Google Apps</option>
       <option value="/modules/hackernews/" >- Hacker News</option>
       <option value="/modules/hibp/" >- Have I Been Pwned (HIBP)</option>
-    <option value="/modules/ipaddress/"  selected>
+    <option value="/modules/ipaddress/" >
   - 
-   IP Addresses</option> 
-      <option value="/modules/ipaddress/ipapi/" >-- IP-API</option>
-      <option value="/modules/ipaddress/ipinfo/" >-- IPInfo</option>
-  
+   IP Addresses</option>
       <option value="/modules/jenkins/" >- Jenkins</option>
       <option value="/modules/jira/" >- Jira</option>
       <option value="/modules/kubernetes/" >- Kubernetes</option>
@@ -863,32 +877,41 @@
       </div>
     
 
-    <h1>IP Addresses</h1>
+    <h1>v0.28.0 Released</h1>
   
 
   
+    
 
-<p>For all modules IP address-related.</p>
+<small>March 15, 2020</small>
 
-<ul class="children children-li">
+<p><a href="https://github.com/wtfutil/wtf/releases/tag/v0.28.0">WTF v0.28.0</a> contains the following changes:</p>
 
-<span><li>
-        <a href="/modules/ipaddress/ipapi/" >IP-API</a></li>
-</span>
+<h3 id="added">⚡️ Added</h3>
 
-<span><li>
-        <a href="/modules/ipaddress/ipinfo/" >IPInfo</a></li>
-</span>
+<ul>
+<li>Support for customizing CPU, Mem, and Swap display in ResourceUsage, by <a href="https://github.com/leterio">@leterio</a></li>
 </ul>
 
+<h3 id="updated">👍 Updated</h3>
+
+<ul>
+<li>Now prefers Go 1.14 for compilation (should still work under 1.13 however)</li>
+<li>Updated <code>shirou/gopsutil</code> from 2.20.1+incompatible to 2.20.2+incompatible</li>
+<li>Updated <code>google.golang.org/api</code> from 0.17.0 to 0.20.0</li>
+<li>Updated <code>digitalocean/godo</code> from 1.30.0 to 1.32.0</li>
+<li>Updated <code>xanzy/go-gitlab</code> from 0.26.0 to 0.28.0</li>
+<li>Updated <code>adlio/trello</code> from 1.6.0 to 1.7.0</li>
+<li>Updated <code>zorkian/go-datadog-api</code> from 2.27.0+incompatible to 2.28.0+incompatible</li>
+</ul>
 
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/hibp/" title="Have I Been Pwned (HIBP)"> <i class="fa fa-chevron-left"></i><label>Have I Been Pwned (HIBP)</label></a>
-    <a class="nav nav-next" href="/modules/ipaddress/ipapi/" title="IP-API" style="margin-right: 0px;"><label>IP-API</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/blog/" title="WTF Blog"> <i class="fa fa-chevron-left"></i><label>WTF Blog</label></a>
+    <a class="nav nav-next" href="/blog/2020-02-23-v0-27-0/" title="v0.27.0 Released" style="margin-right: 0px;"><label>v0.27.0 Released</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>

@@ -574,6 +574,13 @@
 	"content": " Displays Zendesk tickets.\nConfiguration zendesk:apiKey:\u0026#34;p0d13*********************************************c3\u0026#34;enabled:trueposition:top:0left:2height:1width:1status:\u0026#34;new\u0026#34;subdomain:\u0026#34;your_domain\u0026#34;username:\u0026#34;your_email@acme.com\u0026#34; Attributes   Name Description Value     apiKey Your Zendesk API token.  Your API key or leave it empty to use the ZENDESK_API environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget. 0..9   position Defines where in the grid this module\u0026rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer.   status The status of tickets you want to retrieve. new, open, pending, hold   subdomain Your Zendesk subdomain. Leave this empty to use the ZENDESK_SUBDOMAIN environment variable.   username Your Zendesk username.      Keyboard Controls   Key Action     / Open/close the widget\u0026rsquo;s help modal   [return] Open the selected ticket in the browser \n  \n j Select the next item in the list   k Select the previous item in the list \n  \n ↓ Select the next item in the list   ↑ Select the previous item in the list \n  Source Code wtf/modules/zendesk/"
 },
 {
+	"uri": "https://wtfutil.com/blog/2020-03-15-v0-28-0/",
+	"title": "v0.28.0 Released",
+	"tags": [],
+	"description": "",
+	"content": " March 15, 2020 WTF v0.28.0 contains the following changes:\n⚡️ Added  Support for customizing CPU, Mem, and Swap display in ResourceUsage, by @leterio  👍 Updated  Now prefers Go 1.14 for compilation (should still work under 1.13 however) Updated shirou/gopsutil from 2.20.1+incompatible to 2.20.2+incompatible Updated google.golang.org/api from 0.17.0 to 0.20.0 Updated digitalocean/godo from 1.30.0 to 1.32.0 Updated xanzy/go-gitlab from 0.26.0 to 0.28.0 Updated adlio/trello from 1.6.0 to 1.7.0 Updated zorkian/go-datadog-api from 2.27.0+incompatible to 2.28.0+incompatible  "
+},
+{
 	"uri": "https://wtfutil.com/blog/2020-02-23-v0-27-0/",
 	"title": "v0.27.0 Released",
 	"tags": [],

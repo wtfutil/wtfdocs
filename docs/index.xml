@@ -778,6 +778,16 @@ Configuration zendesk:apiKey:&amp;#34;p0d13*************************************
     </item>
     
     <item>
+      <title>v0.28.0 Released</title>
+      <link>https://wtfutil.com/blog/2020-03-15-v0-28-0/</link>
+      <pubDate>Sun, 15 Mar 2020 09:52:57 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/blog/2020-03-15-v0-28-0/</guid>
+      <description>March 15, 2020 WTF v0.28.0 contains the following changes:
+⚡️ Added  Support for customizing CPU, Mem, and Swap display in ResourceUsage, by @leterio  👍 Updated  Now prefers Go 1.14 for compilation (should still work under 1.13 however) Updated shirou/gopsutil from 2.20.1+incompatible to 2.20.2+incompatible Updated google.golang.org/api from 0.17.0 to 0.20.0 Updated digitalocean/godo from 1.30.0 to 1.32.0 Updated xanzy/go-gitlab from 0.26.0 to 0.28.0 Updated adlio/trello from 1.6.0 to 1.</description>
+    </item>
+    
+    <item>
       <title>v0.27.0 Released</title>
       <link>https://wtfutil.com/blog/2020-02-23-v0-27-0/</link>
       <pubDate>Sun, 23 Feb 2020 07:09:07 -0800</pubDate>
