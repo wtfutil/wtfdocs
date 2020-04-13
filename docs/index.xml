@@ -632,6 +632,16 @@ Configuration pagerduty:apiKey:&amp;#34;p0d13***********************************
     </item>
     
     <item>
+      <title>Pi-hole</title>
+      <link>https://wtfutil.com/modules/pihole/</link>
+      <pubDate>Sat, 13 Apr 2019 17:26:23 -0100</pubDate>
+      
+      <guid>https://wtfutil.com/modules/pihole/</guid>
+      <description>Displays information about a running Pi-hole server.
+Configuration pihole:enabled:trueposition:top:5left:0height:2width:2refreshInterval:60apiURL:http://192.168.1.100:1010/admin/api.phptoken:atvvedmpyat8140rnhodrok3qr58d8ph85wl6wk1rpb9upiwx1tl6eittz403pqajshowSummary:trueshowTopItems:5showTopClients:5maxClientWidth:20maxDomainWidth:20 Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module&amp;rsquo;s widget will be displayed.</description>
+    </item>
+    
+    <item>
       <title>Power</title>
       <link>https://wtfutil.com/modules/power/</link>
       <pubDate>Sat, 26 May 2018 19:26:23 -0700</pubDate>

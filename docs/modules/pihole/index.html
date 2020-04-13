@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.69.0" />
-<title>NBA Score :: WTF - the terminal dashboard</title>
+<title>Pi-hole :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/sports/nbascore/">
+<body data-url="/modules/pihole/">
   
   <header>
   <div class="logo">
@@ -261,7 +261,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item alwaysopen haschildren
+    <li data-nav-id="/modules/" class="dd-item parent alwaysopen haschildren
         ">
       <div>
       <a href="/modules/">Modules</a>
@@ -573,7 +573,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/pihole/" class="dd-item">
+      <li data-nav-id="/modules/pihole/" class="dd-item active">
         <div>
           <a href="/modules/pihole/">
             Pi-hole
@@ -608,11 +608,10 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-    <li data-nav-id="/modules/sports/" class="dd-item parent haschildren
+    <li data-nav-id="/modules/sports/" class="dd-item haschildren
         ">
       <div>
-      <a href="/modules/sports/">Sports</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/modules/sports/">Sports</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/modules/sports/football/" class="dd-item">
@@ -622,7 +621,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/modules/sports/nbascore/" class="dd-item active">
+      <li data-nav-id="/modules/sports/nbascore/" class="dd-item">
         <div>
           <a href="/modules/sports/nbascore/">
             NBA Score
@@ -820,17 +819,14 @@
       <option value="/modules/newrelic/" >- New Relic</option>
       <option value="/modules/opsgenie/" >- OpsGenie</option>
       <option value="/modules/pagerduty/" >- Pagerduty</option>
-      <option value="/modules/pihole/" >- Pi-hole</option>
+      <option value="/modules/pihole/"  selected>- Pi-hole</option>
       <option value="/modules/power/" >- Power</option>
       <option value="/modules/resourceusage/" >- Resource Usage</option>
       <option value="/modules/rollbar/" >- Rollbar</option>
       <option value="/modules/security/" >- Security</option>
     <option value="/modules/sports/" >
   - 
-   Sports</option> 
-      <option value="/modules/sports/football/" >-- Football</option>
-      <option value="/modules/sports/nbascore/"  selected>-- NBA Score</option>
-  
+   Sports</option>
       <option value="/modules/spotify/" >- Spotify</option>
       <option value="/modules/subreddit/" >- Subreddit</option>
       <option value="/modules/textfile/" >- Textfile</option>
@@ -870,23 +866,34 @@
       </div>
     
 
-    <h1>NBA Score</h1>
+    <h1>Pi-hole</h1>
   
 
   
     
 
-<p>Displays NBA game scores.</p>
+<p>Displays information about a running <a href="https://pi-hole.net/">Pi-hole</a> server.</p>
 
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">nbascore</span><span class="p">:</span><span class="w">
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">pihole</span><span class="p">:</span><span class="w">
 </span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">600</span></code></pre></div>
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">60</span><span class="w">
+</span><span class="w">  </span><span class="k">apiURL</span><span class="p">:</span><span class="w"> </span>http<span class="p">:</span>//<span class="m">192.168.1.100</span><span class="p">:</span><span class="m">1010</span>/admin/api.php<span class="w">
+</span><span class="w">  </span><span class="k">token</span><span class="p">:</span><span class="w"> </span>atvvedmpyat8140rnhodrok3qr58d8ph85wl6wk1rpb9upiwx1tl6eittz403pqaj<span class="w">
+</span><span class="w">  </span><span class="k">showSummary</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">showTopItems</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">  </span><span class="k">showTopClients</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span><span class="w">  </span><span class="k">maxClientWidth</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span><span class="w">  </span><span class="k">maxDomainWidth</span><span class="p">:</span><span class="w"> </span><span class="m">20</span></code></pre></div>
+<h2 id="screenshots">Screenshots</h2>
+
+<p><img class="screenshot" src="/imgs/modules/pihole.png" width="688" height="420" alt="Pi-hole screenshot" /></p>
+
 <h2 id="attributes">Attributes</h2>
 
 <table class="table">
@@ -918,6 +925,41 @@
     <td><em>Optional</em> How often, in seconds, this module will update its data. Default: <code>300</code>.</td>
     <td>Any positive integer.</td>
 </tr>
+  <tr>
+    <td><code>apiURL</code></td>
+    <td>The Pi-Hole API Server URL. Typically: http://&lt;ip:port&gt;/admin/api.php</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>token</code></td>
+    <td>Navigate to http://&lt;ip:port&gt;/admin/settings.php?tab=api and choose &#34;Show API Token&#34;.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>showSummary</code></td>
+    <td>Show summary. Default: <code>true</code>.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>showTopItems</code></td>
+    <td><em>Optional</em> Number of Top Queries and Top Ads to display. 0 disables the output. Default: <code>5</code>.</td>
+    <td>Integer</td>
+</tr>
+  <tr>
+    <td><code>showTopClients</code></td>
+    <td><em>Optional</em> Number of Top Sources and Query Types to display. 0 disables the output. Default: <code>5</code>.</td>
+    <td>Integer</td>
+</tr>
+  <tr>
+    <td><code>maxClientWidth</code></td>
+    <td><em>Optional</em> Number of characters to display when outputting query and ad domain names. Default: <code>20</code>.</td>
+    <td>Integer</td>
+</tr>
+  <tr>
+    <td><code>maxDomainWidth</code></td>
+    <td><em>Optional</em> Number of characters to display when outputting client name and IP. Default: <code>20</code>.</td>
+    <td>Integer</td>
+</tr>
     </tbody>
 </table>
 
@@ -941,20 +983,12 @@
 </tr></p>
 
 <p><tr>
-    <td><code>c</code></td>
-    <td>Go to current day</td>
+    <td><code>d</code></td>
+    <td>Disable Pi-hole ad blocking</td>
 </tr>
   <tr>
-    <td><code>h</code></td>
-    <td>Go to previous day</td>
-</tr>
-  <tr>
-    <td><code>l</code></td>
-    <td>Go to next day</td>
-</tr>
-  <tr>
-    <td><code>r</code></td>
-    <td>Refresh the data</td>
+    <td><code>e</code></td>
+    <td>Enable Pi-hole ad blocking</td>
 </tr></p>
 
 <p><tr>
@@ -962,26 +996,22 @@
 </tr></p>
 
 <p><tr>
-    <td><code>←</code></td>
-    <td>Go to previous day</td>
-</tr>
-  <tr>
-    <td><code>→</code></td>
-    <td>Go to next day</td>
+    <td><code>r</code></td>
+    <td>Refresh the data</td>
 </tr></p>
 
     </tbody>
 </table>
 
 <h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/nbascore/</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/pihole/</code></pre></div>
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/sports/football/" title="Football"> <i class="fa fa-chevron-left"></i><label>Football</label></a>
-    <a class="nav nav-next" href="/modules/spotify/" title="Spotify" style="margin-right: 0px;"><label>Spotify</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/modules/pagerduty/" title="Pagerduty"> <i class="fa fa-chevron-left"></i><label>Pagerduty</label></a>
+    <a class="nav nav-next" href="/modules/power/" title="Power" style="margin-right: 0px;"><label>Power</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>
