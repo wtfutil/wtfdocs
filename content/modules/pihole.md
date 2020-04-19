@@ -18,7 +18,7 @@ pihole:
     height: 2
     width: 2
   refreshInterval: 60
-  apiURL: http://192.168.1.100:1010/admin/api.php
+  apiUrl: http://192.168.1.100:1010/admin/api.php
   token: atvvedmpyat8140rnhodrok3qr58d8ph85wl6wk1rpb9upiwx1tl6eittz403pqaj
   showSummary: true
   showTopItems: 5
@@ -36,7 +36,7 @@ pihole:
   {{< attributes/enabled >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
-  {{< attributes/custom name="apiURL" desc="The Pi-Hole API Server URL. Typically: http://<ip:port>/admin/api.php" value="" >}}
+  {{< attributes/custom name="apiUrl" desc="The Pi-Hole API Server URL. Typically: http://<ip:port>/admin/api.php" value="" >}}
   {{< attributes/custom name="token" desc="Navigate to http://<ip:port>/admin/settings.php?tab=api and choose \"Show API Token\"." value="" >}}
   {{< attributes/custom name="showSummary" desc="Show summary. Default: `true`." value="true, false" >}}
   {{< attributes/custom name="showTopItems" desc="_Optional_ Number of Top Queries and Top Ads to display. 0 disables the output. Default: `5`." value="Integer" >}}
