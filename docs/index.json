@@ -179,7 +179,7 @@
 	"title": "WTF Blog",
 	"tags": [],
 	"description": "",
-	"content": "Mar 15, 2020 v0.28.0 Released  Feb 23, 2020 v0.27.0 Released  Feb 4, 2020 v0.26.0 Released  Nov 10, 2019 Monochrome Retro Display  Nov 10, 2019 v0.24.0 Released  Oct 11, 2019 v0.23.0 Released  Sept 12, 2019 v0.22.0 Released  Aug 29, 2019 v0.21.0 Released  Aug 20, 2019 v0.20.0 Released  July 27, 2019 v0.19.0 Released  July 20, 2019 v0.18.0 Released  July 16, 2019 v0.17.1 Released  July 12, 2019 Installing With Homebrew  July 10, 2019 Binary Renamed to \u0026#39;wtfutil\u0026#39;  July 9, 2019 Using WTF\u0026#39;s FeedReader to Track WTF Releases  July 9, 2019 v0.14.0 Released \n"
+	"content": "Apr 26, 2020 v0.29.0 Released  Mar 15, 2020 v0.28.0 Released  Feb 23, 2020 v0.27.0 Released  Feb 4, 2020 v0.26.0 Released  Nov 10, 2019 Monochrome Retro Display  Nov 10, 2019 v0.24.0 Released  Oct 11, 2019 v0.23.0 Released  Sept 12, 2019 v0.22.0 Released  Aug 29, 2019 v0.21.0 Released  Aug 20, 2019 v0.20.0 Released  July 27, 2019 v0.19.0 Released  July 20, 2019 v0.18.0 Released  July 16, 2019 v0.17.1 Released  July 12, 2019 Installing With Homebrew  July 10, 2019 Binary Renamed to \u0026#39;wtfutil\u0026#39;  July 9, 2019 Using WTF\u0026#39;s FeedReader to Track WTF Releases  July 9, 2019 v0.14.0 Released \n"
 },
 {
 	"uri": "https://wtfutil.com/configuration/generate-module/",
@@ -579,6 +579,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Displays Zendesk tickets.\nConfiguration zendesk:apiKey:\u0026#34;p0d13*********************************************c3\u0026#34;enabled:trueposition:top:0left:2height:1width:1status:\u0026#34;new\u0026#34;subdomain:\u0026#34;your_domain\u0026#34;username:\u0026#34;your_email@acme.com\u0026#34; Attributes   Name Description Value     apiKey Your Zendesk API token.  Your API key or leave it empty to use the ZENDESK_API environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget. 0..9   position Defines where in the grid this module\u0026rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer.   status The status of tickets you want to retrieve. new, open, pending, hold   subdomain Your Zendesk subdomain. Leave this empty to use the ZENDESK_SUBDOMAIN environment variable.   username Your Zendesk username.      Keyboard Controls   Key Action     / Open/close the widget\u0026rsquo;s help modal   [return] Open the selected ticket in the browser \n  \n j Select the next item in the list   k Select the previous item in the list \n  \n ↓ Select the next item in the list   ↑ Select the previous item in the list \n  Source Code wtf/modules/zendesk/"
+},
+{
+	"uri": "https://wtfutil.com/blog/2020-04-26-v0-29-0/",
+	"title": "v0.29.0 Released",
+	"tags": [],
+	"description": "",
+	"content": " April 26, 2020 WTF v0.29.0 contains the following changes:\n⚡️ Added  gCal module now has a showEndTime boolean option for displaying meeting end times, by @acaloiaro Pi-hole module added, by @jonhadfield  🐞 Fixed  Docker module subheading display, #847 by @senorprogrammer Improved display of currencies for the Exchange Rate module, by @indradhanush  👍 Updated  Updated nicklaw5/helix from 0.5.7 to 0.5.8 Updated digitalocean/godo from 1.34.0 to 1.35.1 Updated xanzy/go-gitlab from 0.28.0 to 0.31.0 Updated shirou/gopsutil from 2.20.2+incompatible to 2.20.3+incompatible Updated alecthomas/chroma from 0.7.1 to 0.7.2 Updated google.golang.org/api from 0.21.0 to 0.22.0  "
 },
 {
 	"uri": "https://wtfutil.com/blog/2020-03-15-v0-28-0/",
