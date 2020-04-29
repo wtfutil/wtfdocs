@@ -1,13 +1,12 @@
 ---
-title: "Add mutiple instance of widget"
+title: "Adding Multiple Instances of a Widget"
 date: 2020-04-26T20:39:16+05:30
 draft: false
 ---
 
-### How to add mutliple instance of the a particular widget.
+### How to add multiple instances of a widget
 
-If you want to add more than one widget of a particular widget type like if you want 2 todo widgets each for
-your personal, official list then you can do so by adding type property to the config yml file. below is the example for the same.
+To add more than one instance of a particular widget, for example, if you want two Todo widgets, you can do so by adding the `type` property to the entries in your `config.yml` file. Below is an example for Todo:
 
 ```yaml
 todo1:
