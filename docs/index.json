@@ -588,6 +588,13 @@
 	"content": " April 26, 2020 WTF v0.29.0 contains the following changes:\n⚡️ Added  gCal module now has a showEndTime boolean option for displaying meeting end times, by @acaloiaro Pi-hole module added, by @jonhadfield  🐞 Fixed  Docker module subheading display, #847 by @senorprogrammer Improved display of currencies for the Exchange Rate module, by @indradhanush  👍 Updated  Updated nicklaw5/helix from 0.5.7 to 0.5.8 Updated digitalocean/godo from 1.34.0 to 1.35.1 Updated xanzy/go-gitlab from 0.28.0 to 0.31.0 Updated shirou/gopsutil from 2.20.2+incompatible to 2.20.3+incompatible Updated alecthomas/chroma from 0.7.1 to 0.7.2 Updated google.golang.org/api from 0.21.0 to 0.22.0  "
 },
 {
+	"uri": "https://wtfutil.com/configuration/add_mutiple_instance_of_widget/",
+	"title": "Adding Multiple Instances of a Widget",
+	"tags": [],
+	"description": "",
+	"content": " How to add multiple instances of a widget To add more than one instance of a particular widget, for example, if you want two Todo widgets, you can do so by adding the type property to the entries in your config.yml file. Below is an example for Todo:\ntodo1:checkedIcon:\u0026#34;X\u0026#34;colors:checked:grayhighlight:fore:\u0026#34;black\u0026#34;back:\u0026#34;orange\u0026#34;enabled:truefilename:\u0026#34;todo.yml\u0026#34;position:top:0left:0height:2width:2:wqrefreshInterval:3600type:todotodo2:checkedIcon:\u0026#34;X\u0026#34;colors:checked:grayhighlight:fore:\u0026#34;black\u0026#34;back:\u0026#34;orange\u0026#34;enabled:truefilename:\u0026#34;todo.yml\u0026#34;position:top:0left:2height:2width:2refreshInterval:3600type:todo"
+},
+{
 	"uri": "https://wtfutil.com/blog/2020-03-15-v0-28-0/",
 	"title": "v0.28.0 Released",
 	"tags": [],

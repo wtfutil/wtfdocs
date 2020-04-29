@@ -798,6 +798,15 @@ Configuration zendesk:apiKey:&amp;#34;p0d13*************************************
     </item>
     
     <item>
+      <title>Adding Multiple Instances of a Widget</title>
+      <link>https://wtfutil.com/configuration/add_mutiple_instance_of_widget/</link>
+      <pubDate>Sun, 26 Apr 2020 20:39:16 +0530</pubDate>
+      
+      <guid>https://wtfutil.com/configuration/add_mutiple_instance_of_widget/</guid>
+      <description>How to add multiple instances of a widget To add more than one instance of a particular widget, for example, if you want two Todo widgets, you can do so by adding the type property to the entries in your config.yml file. Below is an example for Todo:</description>
+    </item>
+    
+    <item>
       <title>v0.28.0 Released</title>
       <link>https://wtfutil.com/blog/2020-03-15-v0-28-0/</link>
       <pubDate>Sun, 15 Mar 2020 09:52:57 -0700</pubDate>

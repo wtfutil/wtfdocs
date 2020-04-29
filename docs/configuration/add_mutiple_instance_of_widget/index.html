@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Hugo 0.65.3" />
-<title>Jenkins :: WTF - the terminal dashboard</title>
+<title>Adding Multiple Instances of a Widget :: WTF - the terminal dashboard</title>
 <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link href="/css/nucleus.css" rel="stylesheet">
 <link href="/theme-flex/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
   
 </head>
 
-<body data-url="/modules/jenkins/">
+<body data-url="/configuration/add_mutiple_instance_of_widget/">
   
   <header>
   <div class="logo">
@@ -98,10 +98,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/configuration/" class="dd-item haschildren
+    <li data-nav-id="/configuration/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/configuration/">Configuration</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/configuration/">Configuration</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/configuration/global_settings/" class="dd-item">
@@ -132,7 +133,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/configuration/add_mutiple_instance_of_widget/" class="dd-item">
+      <li data-nav-id="/configuration/add_mutiple_instance_of_widget/" class="dd-item active">
         <div>
           <a href="/configuration/add_mutiple_instance_of_widget/">
             Adding Multiple Instances of a Widget
@@ -275,7 +276,7 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="dd-item parent alwaysopen haschildren
+    <li data-nav-id="/modules/" class="dd-item alwaysopen haschildren
         ">
       <div>
       <a href="/modules/">Modules</a>
@@ -531,7 +532,7 @@
     </li>
         </ul>
     </li>
-      <li data-nav-id="/modules/jenkins/" class="dd-item active">
+      <li data-nav-id="/modules/jenkins/" class="dd-item">
         <div>
           <a href="/modules/jenkins/">
             Jenkins
@@ -788,7 +789,13 @@
       <option value="/getting_started/glossary/" >- Glossary</option>
   
     <option value="/configuration/" >
-   Configuration</option>
+   Configuration</option> 
+      <option value="/configuration/global_settings/" >- Global Settings</option>
+      <option value="/configuration/common_settings/" >- Common Settings</option>
+      <option value="/configuration/grid_layout/" >- Grid Layout</option>
+      <option value="/configuration/generate-module/" >- Creating New Modules</option>
+      <option value="/configuration/add_mutiple_instance_of_widget/"  selected>- Adding Multiple Instances of a Widget</option>
+  
     <option value="/blog/" >
    WTF Blog</option>
     <option value="/modules/" >
@@ -825,7 +832,7 @@
     <option value="/modules/ipaddress/" >
   - 
    IP Addresses</option>
-      <option value="/modules/jenkins/"  selected>- Jenkins</option>
+      <option value="/modules/jenkins/" >- Jenkins</option>
       <option value="/modules/jira/" >- Jira</option>
       <option value="/modules/kubernetes/" >- Kubernetes</option>
       <option value="/modules/logger/" >- Logger</option>
@@ -880,165 +887,53 @@
       </div>
     
 
-    <h1>Jenkins</h1>
+    <h1>Adding Multiple Instances of a Widget</h1>
   
 
   
     
 
-<p>Displays Jenkins status of given builds in a project or view.</p>
+<h3 id="how-to-add-multiple-instances-of-a-widget">How to add multiple instances of a widget</h3>
 
-<h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">jenkins</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="k">apiKey</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;p0d13*********************************************c3&#34;</span><span class="w">
+<p>To add more than one instance of a particular widget, for example, if you want two Todo widgets, you can do so by adding the <code>type</code> property to the entries in your <code>config.yml</code> file. Below is an example for Todo:</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">todo1</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">checkedIcon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;X&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">colors</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">checked</span><span class="p">:</span><span class="w"> </span>gray<span class="w">
+</span><span class="w">    </span><span class="k">highlight</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">fore</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;black&#34;</span><span class="w">
+</span><span class="w">      </span><span class="k">back</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;orange&#34;</span><span class="w">
 </span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">filename</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;todo.yml&#34;</span><span class="w">
 </span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
 </span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">300</span><span class="w">
-</span><span class="w">  </span><span class="k">successBallColor</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;green&#34;</span><span class="w">
-</span><span class="w">  </span><span class="k">jobNameRegex</span><span class="p">:</span><span class="w"> </span>^<span class="p">[</span>a-z<span class="p">]</span>+\<span class="p">[[</span><span class="m">0-9</span><span class="p">]</span>+\<span class="p">]</span>$<span class="w">
-</span><span class="w">  </span><span class="k">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;https://jenkins.domain.com/jenkins/view_url&#34;</span><span class="w">
-</span><span class="w">  </span><span class="k">user</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;username&#34;</span><span class="w">
-</span><span class="w">  </span><span class="k">verifyServerCertificate</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></code></pre></div>
-<h2 id="screenshots">Screenshots</h2>
-
-<p><img class="screenshot" src="/imgs/modules/jenkins.png" alt="jenkins screenshot" width="320" height="68" /></p>
-
-<h2 id="attributes">Attributes</h2>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Value</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-    <td><code>apiKey</code></td>
-    <td>Your <a href="https://wiki.jenkins.io/display/JENKINS/Remote&#43;access&#43;API">Jenkins API</a> token.</td>
-    <td>
-        Your API key <strong>or</strong> leave it empty to use the <code>WTF_JENKINS_API_KEY</code> environment variable.
-    </td>
-</tr>
-  <tr>
-    <td><code>border</code></td>
-    <td><em>Optional</em> Whether or not to draw this widget with a border. Default: <code>true</code>.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>enabled</code></td>
-    <td><em>Optional</em> Whether or not this module is executed and if its data displayed onscreen. Default: <code>false</code>.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>focusChar</code></td>
-    <td><em>Optional</em> Define one of the number keys as a short cut key to access the widget.</td>
-    <td>0..9</td>
-</tr>
-  <tr>
-    <td><code>jobNameRegex</code></td>
-    <td><em>Optional</em> A regex that filters the jobs shown in the widget. Any jobs matching the regular expression will be shown.</td>
-    <td>A valid regex, e.g. <code>^[a-z]&amp;#43;\[[0-9]&amp;#43;\]$</code></td>
-</tr>
-  <tr>
-    <td><code>position</code></td>
-    <td>Defines where in the grid this module&rsquo;s widget will be displayed.</td>
-    <td></td>
-</tr>
-  <tr>
-    <td><code>refreshInterval</code></td>
-    <td><em>Optional</em> How often, in seconds, this module will update its data. Default: <code>300</code>.</td>
-    <td>Any positive integer.</td>
-</tr>
-  <tr>
-    <td><code>successBallColor</code></td>
-    <td>Changes the default color of successful Jenkins jobs to the color of your choosing.</td>
-    <td>Any valid color name, <code>blue</code>, <code>green</code>, <code>purple</code>, <code>yellow</code>, etc.</td>
-</tr>
-  <tr>
-    <td><code>url</code></td>
-    <td>The url to your Jenkins project or view.</td>
-    <td>A valid URI.</td>
-</tr>
-  <tr>
-    <td><code>user</code></td>
-    <td>Your Jenkins username.</td>
-    <td></td>
-</tr>
-  <tr>
-    <td><code>verifyServerCertificate</code></td>
-    <td>Whether or not to verify the server&rsquo;s certificate chain and hostname.</td>
-    <td>true, false</td>
-</tr>
-    </tbody>
-</table>
-
-<h2 id="keyboard-controls">Keyboard Controls</h2>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Key</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        <p><tr>
-    <td><code>/</code></td>
-    <td>Open/close the widget&rsquo;s help modal</td>
-</tr>
-  <tr>
-    <td><code>[return]</code></td>
-    <td>Open the selected job in the browser</td>
-</tr></p>
-
-<p><tr>
-    <td colspan="2"></td>
-</tr></p>
-
-<p><tr>
-    <td><code>j</code></td>
-    <td>Select the next item in the list</td>
-</tr>
-  <tr>
-    <td><code>k</code></td>
-    <td>Select the previous item in the list</td>
-</tr>
-  <tr>
-    <td><code>r</code></td>
-    <td>Refresh the data</td>
-</tr></p>
-
-<p><tr>
-    <td colspan="2"></td>
-</tr></p>
-
-<p><tr>
-    <td><code>↓</code></td>
-    <td>Select the next item in the list</td>
-</tr>
-  <tr>
-    <td><code>↑</code></td>
-    <td>Select the previous item in the list</td>
-</tr></p>
-
-    </tbody>
-</table>
-
-<h2 id="source-code">Source Code</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">wtf/modules/jenkins/</code></pre></div>
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="p">:</span>wq<span class="w">
+</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">3600</span><span class="w">
+</span><span class="w">  </span><span class="k">type</span><span class="p">:</span><span class="w"> </span>todo</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">todo2</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">checkedIcon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;X&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">colors</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">checked</span><span class="p">:</span><span class="w"> </span>gray<span class="w">
+</span><span class="w">    </span><span class="k">highlight</span><span class="p">:</span><span class="w">
+</span><span class="w">      </span><span class="k">fore</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;black&#34;</span><span class="w">
+</span><span class="w">      </span><span class="k">back</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;orange&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="k">filename</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;todo.yml&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">position</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span><span class="w">  </span><span class="k">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="m">3600</span><span class="w">
+</span><span class="w">  </span><span class="k">type</span><span class="p">:</span><span class="w"> </span>todo</code></pre></div>
 
 
   
   <div class="chevrons">
   <div id="navigation">
-<a class="nav nav-prev" href="/modules/ipaddress/ipinfo/" title="IPInfo"> <i class="fa fa-chevron-left"></i><label>IPInfo</label></a>
-    <a class="nav nav-next" href="/modules/jira/" title="Jira" style="margin-right: 0px;"><label>Jira</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/configuration/generate-module/" title="Creating New Modules"> <i class="fa fa-chevron-left"></i><label>Creating New Modules</label></a>
+    <a class="nav nav-next" href="/blog/" title="WTF Blog" style="margin-right: 0px;"><label>WTF Blog</label><i class="fa fa-chevron-right"></i></a></div>
 </div>
 
 </section>
