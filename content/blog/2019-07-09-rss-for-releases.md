@@ -15,7 +15,7 @@ Putting the two together, you now have a great way to keep up-to-date on the mos
 
 To configure WTF to do so, add the following `feedreader` configuration to your `config.yml` file:
 
-```console
+{{< code lang="bash" >}}
 feedreader:
   enabled: true
   feeds:

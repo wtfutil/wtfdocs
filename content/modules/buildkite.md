@@ -11,7 +11,7 @@ The API token must have the `read_builds` permission.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 buildkite:
   apiKey: "p0d13*********************************************c3"
   enabled: true
@@ -31,7 +31,7 @@ buildkite:
       branches:
         - "master"
         - "production"
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/apikey name="Buildkite" link="https://buildkite.com/docs/apis/rest-api#authentication" envvar="WTF_BUILDKITE_TOKEN" >}}

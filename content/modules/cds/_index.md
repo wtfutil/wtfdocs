@@ -9,4 +9,4 @@ CDS - Continuous Delivery Service.
 
 https://ovh.github.io/cds/
 
-{{% children %}}
+{{% childpages %}}

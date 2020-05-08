@@ -9,7 +9,7 @@ Connects to the VictorOps API and determines who is on call
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 victorops:
   apiID: a3c5dd63
   apiKey: "p0d13*********************************************c3"
@@ -21,7 +21,7 @@ victorops:
     width: 1
   refreshInterval: 3600
   team: devops
-```
+{{< /code >}}
 
 {{% attributes %}}
   <tr>

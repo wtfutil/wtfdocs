@@ -14,16 +14,16 @@ cmdrunner module.
 
 First, create a shell script:
 
-```shell
+{{< code lang="bash" >}}
 #!/bin/sh
 
 curl -s https://status.slack.com/api/v2.0.0/current | \
   jq -r '"Status: " + (if (.status == "active") then "Active Incident" else "Ok" end),"Last Updated: " + .date_updated,if (.active_incidents[] | length) > 0 then "Active Incidents\n" + .active_incidents[] .title else "" end'
-```
+{{< /code >}}
 
 Second, the following wtfutil config:
 
-```yaml
+{{< code lang="yaml" >}}
 slack_status:
   cmd: "slack_status_check.sh"
   enabled: true
@@ -35,6 +35,6 @@ slack_status:
     height: 3
     width: 4
   refreshInterval: 30
-```
+{{< /code >}}
 
 <img class="screenshot" src="/imgs/modules/cmdrunner/slackstatus.png" alt="status screenshot" />

@@ -9,7 +9,7 @@ Displays CPU and memory usage.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 resourceusage:
   cpuCombined: false
   enabled: true
@@ -22,7 +22,7 @@ resourceusage:
   showCPU: true
   showMem: true
   showSwp: true
-```
+{{< /code >}}
 
 ## Screenshots
 

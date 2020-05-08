@@ -9,7 +9,7 @@ Displays NBA game scores.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 nbascore:
   enabled: true
   position:
@@ -18,7 +18,7 @@ nbascore:
     height: 1
     width: 1
   refreshInterval: 600
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/border >}}

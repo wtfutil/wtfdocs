@@ -7,7 +7,7 @@ weight: 5
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 azuredevops:
   apiToken: "p0d13*********************************************c3"
   enabled: true
@@ -22,7 +22,8 @@ azuredevops:
   projectName: "the awesome project"
   refreshInterval: 300
   type: "azuredevops"
-```
+{{< /code >}}
+
 
 {{% attributes %}}
   {{< attributes/apiToken link="https://azure.microsoft.com/en-ca/services/devops/" name="Azure DevOps" envvar="WTF_AZURE_DEVOPS_API_TOKEN" >}}

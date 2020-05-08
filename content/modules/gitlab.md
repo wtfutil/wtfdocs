@@ -17,7 +17,7 @@ All open merge requests created by you.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 gitlab:
   apiKey: "p0d13*********************************************c3"
   enabled: true
@@ -31,7 +31,7 @@ gitlab:
     - "gitlab-org/release/tasks"
     - "gitlab-org/gitlab-ce"
   username: "wtfutil"
-```
+{{< /code >}}
 
 ## Screenshots 
 

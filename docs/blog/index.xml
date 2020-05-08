@@ -18,7 +18,7 @@
       
       <guid>https://wtfutil.com/blog/2020-04-26-v0-29-0/</guid>
       <description>April 26, 2020 WTF v0.29.0 contains the following changes:
-⚡️ Added  gCal module now has a showEndTime boolean option for displaying meeting end times, by @acaloiaro Pi-hole module added, by @jonhadfield  🐞 Fixed  Docker module subheading display, #847 by @senorprogrammer Improved display of currencies for the Exchange Rate module, by @indradhanush  👍 Updated  Updated nicklaw5/helix from 0.5.7 to 0.5.8 Updated digitalocean/godo from 1.34.0 to 1.</description>
+⚡️ Added  gCal module now has a showEndTime boolean option for displaying meeting end times, by @acaloiaro Pi-hole module added, by @jonhadfield  🐞 Fixed  Docker module subheading display, #847 by @senorprogrammer Improved display of currencies for the Exchange Rate module, by @indradhanush  👍 Updated  Updated nicklaw5/helix from 0.5.7 to 0.5.8 Updated digitalocean/godo from 1.34.0 to 1.35.1 Updated xanzy/go-gitlab from 0.</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@
       
       <guid>https://wtfutil.com/blog/2020-03-15-v0-28-0/</guid>
       <description>March 15, 2020 WTF v0.28.0 contains the following changes:
-⚡️ Added  Support for customizing CPU, Mem, and Swap display in ResourceUsage, by @leterio  👍 Updated  Now prefers Go 1.14 for compilation (should still work under 1.13 however) Updated shirou/gopsutil from 2.20.1+incompatible to 2.20.2+incompatible Updated google.golang.org/api from 0.17.0 to 0.20.0 Updated digitalocean/godo from 1.30.0 to 1.32.0 Updated xanzy/go-gitlab from 0.26.0 to 0.28.0 Updated adlio/trello from 1.6.0 to 1.</description>
+⚡️ Added  Support for customizing CPU, Mem, and Swap display in ResourceUsage, by @leterio  👍 Updated  Now prefers Go 1.14 for compilation (should still work under 1.13 however) Updated shirou/gopsutil from 2.20.1+incompatible to 2.20.2+incompatible Updated google.golang.org/api from 0.17.0 to 0.20.0 Updated digitalocean/godo from 1.30.0 to 1.32.0 Updated xanzy/go-gitlab from 0.26.0 to 0.28.0 Updated adlio/trello from 1.6.0 to 1.7.0 Updated zorkian/go-datadog-api from 2.</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@
       
       <guid>https://wtfutil.com/blog/2020-02-23-v0-27-0/</guid>
       <description>February 23, 2020 WTF v0.27.0 contains the following changes:
-⚡️ Added  GitLab Todo module added, by @elliotrushton CDS module added, by @yesnault  🐞 Fixed  The vendor directory has been removed, #792 by @bjoernw  👍 Updated  Updated zorkian/go-datadog-api from 2.26.0+incompatible to 2.27.0+incompatible Updated google.golang.org/api from 0.15.0 to 0.17.0 Updated github.com/nicklaw5/helix from 0.5.5 to 0.5.7 Updated xanzy/go-gitlab from 0.23.0 to 0.26.0 Updated stretchr/testify from o.4.0 to 0.</description>
+⚡️ Added  GitLab Todo module added, by @elliotrushton CDS module added, by @yesnault  🐞 Fixed  The vendor directory has been removed, #792 by @bjoernw  👍 Updated  Updated zorkian/go-datadog-api from 2.26.0+incompatible to 2.27.0+incompatible Updated google.golang.org/api from 0.15.0 to 0.17.0 Updated github.com/nicklaw5/helix from 0.5.5 to 0.5.7 Updated xanzy/go-gitlab from 0.23.0 to 0.26.0 Updated stretchr/testify from o.4.0 to 0.5.1  </description>
     </item>
     
     <item>
@@ -67,7 +67,7 @@ By way of example, if you&amp;rsquo;re running v0.24 or later, drop this into yo
       <pubDate>Sun, 10 Nov 2019 11:32:32 -0800</pubDate>
       
       <guid>https://wtfutil.com/blog/2019-11-10-v0-24-0/</guid>
-      <description> November 10, 2019 WTF v0.24.0 contains the following changes:
+      <description>November 10, 2019 WTF v0.24.0 contains the following changes:
 ⚡️ Added  Proper, usable Docker file added, by @Boot-Error GitLab module displays issues assigned to, and opened by, the user, by @caalberts TravisCI now checks for uncommitted vendor changes, by @indradhanush Football module added, by @C123R resourceuseage now supports a cpuCombined setting, by @madepolli Twitter Stats module added, by @Ameobea  🐞 Fixed  Github PRs do not count against issues, by @alexfornuto Todo scrolling now works properly, #707 by 3mard Configs with a missing color key now load properly, #718 and #730 by @senorprogrammer  </description>
     </item>
     
@@ -78,7 +78,7 @@ By way of example, if you&amp;rsquo;re running v0.24 or later, drop this into yo
       
       <guid>https://wtfutil.com/blog/2019-10-11-v0-23-0/</guid>
       <description>October 11, 2019 WTF v0.23.0 contains the following changes:
-⚡️ Added  Azure DevOps module added, by @v-braun Dev.to module added, by @VictorAvelar [TravisCI]() module now supports enterprise endpoints, #652 by @scw007 Subreddit module added, by @lawrencecraft gCal module now supports a hourFormat setting for defining whether to display 12 or 24-hour times, #665 by @senorprogrammer Scarf installation instructions added to README, by @aviaviavi Spotify widget now supports colour themes, #659 by @Tardog Buildkite module added, by @jmks Improvements to the CmdRunner module, by @noxer  🐞 Fixed  gCal calendar event time colour can now be changed by setting the eventTime configuration setting, #638 by @indradhanush Clocks now obeys global row colour settings, #658 by @senorprogrammer Transmission module no longer blocks rendering when a Transmission daemon cannot be found, #661 by @senorprogrammer Trello module now respects project list order, #664 by @Seanstoppable Todo module now respects checkbox settings, #616 by @Seanstoppable Todoist module now properly handles todo items with due date and times, #645 by @massa1240 Invalid pointer error in Azure DevOps fixed by @Boot-Error Renamed slice error in Dev fixed by @Boot-Error  👍 Updated  Updated go-datadog-api to version v2.</description>
+⚡️ Added  Azure DevOps module added, by @v-braun Dev.to module added, by @VictorAvelar TravisCI module now supports enterprise endpoints, #652 by @scw007 Subreddit module added, by @lawrencecraft gCal module now supports a hourFormat setting for defining whether to display 12 or 24-hour times, #665 by @senorprogrammer Scarf installation instructions added to README, by @aviaviavi Spotify widget now supports colour themes, #659 by @Tardog Buildkite module added, by @jmks Improvements to the CmdRunner module, by @noxer  🐞 Fixed  gCal calendar event time colour can now be changed by setting the eventTime configuration setting, #638 by @indradhanush Clocks now obeys global row colour settings, #658 by @senorprogrammer Transmission module no longer blocks rendering when a Transmission daemon cannot be found, #661 by @senorprogrammer Trello module now respects project list order, #664 by @Seanstoppable Todo module now respects checkbox settings, #616 by @Seanstoppable Todoist module now properly handles todo items with due date and times, #645 by @massa1240 Invalid pointer error in Azure DevOps fixed by @Boot-Error Renamed slice error in Dev fixed by @Boot-Error  👍 Updated  Updated go-datadog-api to version v2.</description>
     </item>
     
     <item>
@@ -87,7 +87,7 @@ By way of example, if you&amp;rsquo;re running v0.24 or later, drop this into yo
       <pubDate>Thu, 12 Sep 2019 03:10:09 -0700</pubDate>
       
       <guid>https://wtfutil.com/blog/2019-09-12-v0-22-0/</guid>
-      <description> September 12, 2019 ⚡️ Added  Arpansagovau (arpansa.gov.au) module added, by @jeffz &amp;lsquo;calendarReadLevel&amp;rsquo; setting added to gCal module, by @mikkeljuhl Todoist module now catches and displays API errors, by @Seanstoppable TravisCI sort orders now configurable, by @nyourchuck Google Analytics module now supports real-time metrics, #581 by @Ameobea Colors in configuration can now be defined using long-form hex, i.e.: #ff0000, by @Seanstoppable GitHub module pull requests are now selectable and openable via keyboard, #547 by @Midnight-Conqueror Docker module added, #594 by @v-braun NewRelic module now supports displaying data from multiple apps, #471 by @ChrisDBrown and @Seanstoppable Digital Clock module added, by @Narengowda  🐞 Fixed  ScrollableWidget bounds checking error fixed, #578 by @Seanstoppable Now properly URL-decodes Jenkins branch names, #575 by @lesteenman Jira column sizes render properly, #574 by @lesteenman Todoist module updated to latest API version, by @Seanstoppable gCal colour highlighting working again, #611 by @senorprogrammer Per-module background and text colour settings working again, #568 by @Seanstoppable Git module no longer forces sorting of repositories, #608 by @Seanstoppable GitHub PR icons render properly without phantom characters, by @Midnight-Conqueror GitLab configuration now takes a list of project paths, #566 by @senorprogrammer Kubernetes configuration segfault fixed, #549 by @ibaum  </description>
+      <description>September 12, 2019 ⚡️ Added  Arpansagovau (arpansa.gov.au) module added, by @jeffz &amp;lsquo;calendarReadLevel&amp;rsquo; setting added to gCal module, by @mikkeljuhl Todoist module now catches and displays API errors, by @Seanstoppable TravisCI sort orders now configurable, by @nyourchuck Google Analytics module now supports real-time metrics, #581 by @Ameobea Colors in configuration can now be defined using long-form hex, i.e.: #ff0000, by @Seanstoppable GitHub module pull requests are now selectable and openable via keyboard, #547 by @Midnight-Conqueror Docker module added, #594 by @v-braun NewRelic module now supports displaying data from multiple apps, #471 by @ChrisDBrown and @Seanstoppable Digital Clock module added, by @Narengowda  🐞 Fixed  ScrollableWidget bounds checking error fixed, #578 by @Seanstoppable Now properly URL-decodes Jenkins branch names, #575 by @lesteenman Jira column sizes render properly, #574 by @lesteenman Todoist module updated to latest API version, by @Seanstoppable gCal colour highlighting working again, #611 by @senorprogrammer Per-module background and text colour settings working again, #568 by @Seanstoppable Git module no longer forces sorting of repositories, #608 by @Seanstoppable GitHub PR icons render properly without phantom characters, by @Midnight-Conqueror GitLab configuration now takes a list of project paths, #566 by @senorprogrammer Kubernetes configuration segfault fixed, #549 by @ibaum  </description>
     </item>
     
     <item>
@@ -96,7 +96,7 @@ By way of example, if you&amp;rsquo;re running v0.24 or later, drop this into yo
       <pubDate>Thu, 29 Aug 2019 21:48:13 -0700</pubDate>
       
       <guid>https://wtfutil.com/blog/2019-08-29-v0-21-0/</guid>
-      <description> August 29, 2019 v0.21.0 contains the following changes:
+      <description>August 29, 2019 v0.21.0 contains the following changes:
 ⚡️ Added  Power Soure module support added for FreeBSD, by @hxw  🐞 Fixed  Power indicator displays ∞ on Linux when fully-charged and on AC power, #534 by @Seanstoppable Default background color is now the terminal background color, making transparency support possible in MacOS and Linux, by @Seanstoppable xdg-open now used as the opener for HTTP/HTTPS by default, by @hxw Transmission port over-ride now working, #565 by @Seanstoppable Default config is now created on first run, #553 by @senorprogrammer  </description>
     </item>
     
@@ -118,7 +118,7 @@ By way of example, if you&amp;rsquo;re running v0.24 or later, drop this into yo
       <pubDate>Wed, 31 Jul 2019 15:06:11 -0700</pubDate>
       
       <guid>https://wtfutil.com/blog/2019-07-31-v0-19-1/</guid>
-      <description> July 31, 2019 v0.19.1 contains the following changes:
+      <description>July 31, 2019 v0.19.1 contains the following changes:
 ⚡️ Added  New versions now include binaries built for arm and arm64 architectures  </description>
     </item>
     
@@ -128,7 +128,7 @@ By way of example, if you&amp;rsquo;re running v0.24 or later, drop this into yo
       <pubDate>Sat, 27 Jul 2019 20:13:23 -0700</pubDate>
       
       <guid>https://wtfutil.com/blog/2019-07-27-v0-19-0/</guid>
-      <description> July 27, 2019 v0.19.0 contains the following changes:
+      <description>July 27, 2019 v0.19.0 contains the following changes:
 ☠️ Breaking Change  HIBP module now requires an API key to operate. See Authentication and the Have I Been Pwned API for more details, #508 by @senorprogrammer  ⚡️ Added  OpsGenie module now supports &amp;ldquo;region&amp;rdquo; configuration option (&amp;ldquo;us&amp;rdquo; or &amp;ldquo;eu&amp;rdquo;), by @l13t  🐞 Fixed  Fixes the error message shown when an explicitly-specified custom config file cannot be found or cannot be read, by @senorprogrammer Rollbar module works again, #507 by @Seanstoppable The default config that gets installed on first run is much improved, #504 by @senorprogrammer Default config file is now chmod 0600 to ensure only the owning user can read it, by @senorprogrammer  </description>
     </item>
     
@@ -159,8 +159,8 @@ By way of example, if you&amp;rsquo;re running v0.24 or later, drop this into yo
       
       <guid>https://wtfutil.com/blog/2019-07-12-homebrew-installation/</guid>
       <description>July 12, 2019 As of today WTF can be installed on macOS using Homebrew:
-brew tap wtfutil/wtfutil brew install wtfutil wtfutil If everything goes according to plan, you should now find wtfutil on your system as an executable binary:
-❯ which wtfutil /usr/local/bin/wtfutil❯ ls /usr/local/bin/wtfutil lrwxr-xr-x 1 xxxxxx admin 36 11 Jul 17:29 /usr/local/bin/wtfutil -&amp;gt; .</description>
+Copy   brew tap wtfutil/wtfutil brew install wtfutil wtfutil If everything goes according to plan, you should now find wtfutil on your system as an executable binary:
+   </description>
     </item>
     
     <item>
@@ -171,7 +171,7 @@ brew tap wtfutil/wtfutil brew install wtfutil wtfutil If everything goes accordi
       <guid>https://wtfutil.com/blog/2019-07-10-wtfutil-release/</guid>
       <description>July 10, 2019 With the release of v0.15.0, the installed binary has been renamed from wtf to wtfutil.
 To execute it, you must now use:
-wtfutil The name has changed because calling it wtf caused a collision with the venerable and amusing bsd-wtf utility. This wasn&amp;rsquo;t a problem back when there was only one person using WTF and no one else knew about it, but with the rise in popularity this collision has been causing problems for some people.</description>
+Copy   wtfutil The name has changed because calling it wtf caused a collision with the venerable and amusing bsd-wtf utility. This wasn&amp;rsquo;t a problem back when there was only one person using WTF and no one else knew about it, but with the rise in popularity this collision has been causing problems for some people.</description>
     </item>
     
     <item>

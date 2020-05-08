@@ -12,7 +12,7 @@ Display current [CDS](https://ovh.github.io/cds/) queue - waiting or building jo
 
 ## Configuration
 
-```yml
+{{< code lang="yaml" >}}
 cdsQueue:
   enabled: true
   position:
@@ -23,7 +23,7 @@ cdsQueue:
   refreshInterval: 8
   apiURL: https://api.cds.localhost.local
   token: xxxxxxxxxxxx
-```
+{{< /code >}}
 
 {{% attributes %}}
   <tr>
@@ -43,4 +43,12 @@ cdsQueue:
   {{< attributes/title >}}
 {{% /attributes %}}
 
+<<<<<<< HEAD
 {{% sourcePath module="cds/queue" %}}
+=======
+## Source Code
+
+{{< code lang="bash" >}}
+wtf/modules/cds/queue/
+{{< /code >}}
+>>>>>>> Fix syntax highlighting

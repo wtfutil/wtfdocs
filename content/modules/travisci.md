@@ -11,7 +11,7 @@ Displays build information for your Travis CI account.
 
 This module pulls information from api.travis-ci.com (when pro: true) or api.travis-ci.org (when pro: false)
 
-```yaml
+{{< code lang="yaml" >}}
 travisci:
   apiKey: "p0d13*********************************************c3"
   enabled: true
@@ -25,7 +25,7 @@ travisci:
     width: 2
   pro: false
   refreshInterval: 900
-```
+{{< /code >}}
 
 ## Screenshots
 

@@ -22,7 +22,8 @@ To run the documentation locally:
 
 1. `cd` into the root directory of this repository
 2. Execute `hugo server` in the terminal. You'll see a bunch of output including the following lines:
-	```
+	
+	{{< code lang="bash" >}}
 	Serving pages from memory
 	Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
 	Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)

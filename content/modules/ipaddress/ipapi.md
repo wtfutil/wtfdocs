@@ -12,7 +12,7 @@ minute.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 ipinfo:
   colors:
     name: red
@@ -24,7 +24,7 @@ ipinfo:
     height: 1
     width: 1
   refreshInterval: 150
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/border >}}

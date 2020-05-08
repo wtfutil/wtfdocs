@@ -9,7 +9,7 @@ Displays chat messages from Gitter.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 gitter:
   apiToken: "d23*******************************************3r2"
   enabled: true
@@ -21,7 +21,7 @@ gitter:
     width: 4
   roomUri: wtfutil/Lobby
   refreshInterval: 300
-```
+{{< /code >}}
 
 ## Screenshots
 

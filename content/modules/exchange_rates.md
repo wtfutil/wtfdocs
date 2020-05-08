@@ -9,7 +9,7 @@ Displays exchange rates between various currencies.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 exchangerates:
   enabled: true
   focusable: false
@@ -27,7 +27,7 @@ exchangerates:
     EUR:
       - "CAD"
   title: "💰 Rates"
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/border >}}

@@ -9,7 +9,7 @@ Displays stories from Hacker News.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 hackernews:
   enabled: true
   numberOfStories: 10
@@ -20,7 +20,7 @@ hackernews:
     width: 2
   storyType: top
   refreshInterval: 900
-```
+{{< /code >}}
 
 ## Screenshots
 

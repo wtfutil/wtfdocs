@@ -21,7 +21,7 @@ Create filters to manage PRs and issues however you like.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 github:
   apiKey: "3276d7155dd9ee27b8b14f8743a408a9"
   baseURL: ""
@@ -43,7 +43,7 @@ github:
     - "umbrella-corp/wesker-api"
   uploadURL: ""
   username: "wtfutil"
-```
+{{< /code >}}
 
 ## Screenshots
 
@@ -100,7 +100,7 @@ github:
 Custom queries allow you to filter pull requests and issues however you like. Give the query a 
 title and a filter. Filters can be copied directly from GitHub's UI.
 
-```
+{{< code lang="yaml" >}}
 customQueries:
   othersPRs:
     # Displays pull requests that are not assigned to you
@@ -115,6 +115,6 @@ customQueries:
     perPage: 10
     title: "Others Issues"
     filter: "is:issue state:open -author:[your github username] sort:updated-desc"
-```
+{{< /code >}}
 
 {{% sourcePath module="github" %}}

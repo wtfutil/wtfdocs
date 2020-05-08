@@ -9,7 +9,7 @@ Displays a configurable digital clock.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 digitalclock:
   color: orange
   enabled: true
@@ -23,7 +23,7 @@ digitalclock:
   refreshInterval: 1
   title: "big clock"
   type: "digitalclock"
-```
+{{< /code >}}
 
 ## Screenshots
 

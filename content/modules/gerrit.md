@@ -17,7 +17,7 @@ All open reviews created by you.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 gerrit:
   colors:
     rows:
@@ -37,7 +37,7 @@ gerrit:
   refreshInterval: 300
   username: "myname"
   verifyServerCertificate: false
-```
+{{< /code >}}
 
 ## Screenshots
 

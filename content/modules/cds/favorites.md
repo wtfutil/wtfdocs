@@ -10,7 +10,7 @@ Display runs of you [CDS](https://ovh.github.io/cds/) favorites workflows.
 <img class="screenshot" src="/imgs/modules/cds_favorites.png" width="520" alt="CDS Favorites screenshot" />
 ## Configuration
 
-```yml
+{{< code lang="yaml" >}}
 cdsFavorites:
   enabled: true
   position:
@@ -25,7 +25,7 @@ cdsFavorites:
   - "git.repository"
   - "git.hash"
   - "triggered_by"
-```
+{{< /code >}}
 
 {{% attributes %}}
   <tr>
@@ -50,4 +50,12 @@ cdsFavorites:
   {{< attributes/title >}}
 {{% /attributes %}}
 
+<<<<<<< HEAD
 {{% sourcePath module="cds/favorites" %}}
+=======
+## Source Code
+
+{{< code lang="bash" >}}
+wtf/modules/cds/favorites/
+{{< /code >}}
+>>>>>>> Fix syntax highlighting

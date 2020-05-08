@@ -11,7 +11,7 @@ Displays all Jira issues assigned to you for the specified project.
 
 ### Single Jira Project
 
-```yaml
+{{< code lang="yaml" >}}
 jira:
   apiKey: "p0d13*********************************************c3"
   colors:
@@ -31,14 +31,14 @@ jira:
   refreshInterval: 900
   username: "chris.cummer"
   verifyServerCertificate: true
-```
+{{< /code >}}
 
 ### Multiple Jira Projects
 
 If you want to monitor multiple Jira projects, use the following
 configuration (note the difference in `project`):
 
-```yaml
+{{< code lang="yaml" >}}
 jira:
   apiKey: "p0d13*********************************************c3"
   colors:
@@ -58,7 +58,7 @@ jira:
   refreshInterval: 900
   username: "chris.cummer"
   verifyServerCertificate: true
-```
+{{< /code >}}
 
 ## Screenshots
 

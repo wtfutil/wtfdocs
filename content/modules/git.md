@@ -23,7 +23,7 @@ A list of `n` recent commits, who committed it, and when.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 git:
   commitCount: 5
   commitFormat: "[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]"
@@ -38,7 +38,7 @@ git:
   repositories:
   - "/Users/chris/go/src/github.com/wtfutil/wtf"
   - "/Users/user/fakeapp"
-```
+{{< /code >}}
 
 ## Screenshots
 

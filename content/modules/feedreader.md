@@ -9,7 +9,7 @@ A rudimentary RSS & Atom feed reader.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 feedreader:
   enabled: true
   feeds:
@@ -22,7 +22,7 @@ feedreader:
     height: 1
     width: 2
   refreshInterval: 14400
-```
+{{< /code >}}
 
 ## Screenshots
 

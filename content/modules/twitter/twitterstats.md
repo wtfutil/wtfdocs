@@ -27,7 +27,7 @@ bearer token is to use [TBT](https://github.com/Trinergy/twitter_bearer_token).
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 twitterstats:
   consumerKey: "3276d7155dd9ee27b8b14f8743a408a9"
   consumerSecret: "3276d7155dd9ee27b8b14f8743a408a9"
@@ -41,7 +41,7 @@ twitterstats:
   screenNames:
   - "wtfutil"
   - "dril"
-```
+{{< /code >}}
 
 {{% attributes %}}
   <tr>

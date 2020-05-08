@@ -9,7 +9,7 @@ Displays all items on specified project.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 todoist:
   apiKey: "p0d13*********************************************c3"
   enabled: true
@@ -21,7 +21,7 @@ todoist:
   projects:
     - 122247497
   refreshInterval: 3600
-```
+{{< /code >}}
 
 ## Screenshots
 

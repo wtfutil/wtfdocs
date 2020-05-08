@@ -44,6 +44,6 @@ To load a custom configuration file (ie: one that's not
 `~/.config/wtf/config.yml`), pass in the path to configuration file as a
 parameter on launch:
 
-```bash
+{{< code lang="bash" >}}
     $> wtfutil --config=path/to/custom/config.yml
 ```

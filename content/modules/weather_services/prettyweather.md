@@ -14,7 +14,7 @@ See [wego](../../cmdrunner/wego).
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
     prettyweather:
       enabled: true
       city: "tehran"
@@ -27,7 +27,7 @@ See [wego](../../cmdrunner/wego).
       unit: "m"
       view: 0
       language: "en"
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/border >}}
@@ -49,4 +49,12 @@ See [wego](../../cmdrunner/wego).
   {{< attributes/custom name="view" desc="_Optional_ Wttr.in view configuration." value="See `curl wttr.in/:help` for more details" >}}
 {{% /attributes %}}
 
+<<<<<<< HEAD
 {{% sourcePath module="weatherservices/prettyweather" %}}
+=======
+## Source Code
+
+{{< code lang="bash" >}}
+wtf/modules/weatherservices/prettyweather/
+{{< /code >}}
+>>>>>>> Fix syntax highlighting

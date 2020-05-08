@@ -11,7 +11,7 @@ Indicates whether or not your listed email addresses appear in the [Have I Been 
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 hibp:
   accounts:
   - test@example.com
@@ -28,7 +28,7 @@ hibp:
     width: 2
   refreshInterval: 43200
   since: "2019-06-22"
-```
+{{< /code >}}
 
 ## Screenshots
 

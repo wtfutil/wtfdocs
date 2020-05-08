@@ -23,7 +23,7 @@ A list of `n` recent commits, who committed it, and when.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 mercurial:
   commitCount: 5
   commitFormat: "[forestgreen]{rev}:{phase} [white]{desc|firstline|strip} [grey]{author|person} {date|age}[white]"
@@ -37,7 +37,7 @@ mercurial:
   repositories:
   - "/Users/user/fakelib"
   - "/Users/user/fakeapp"
-```
+{{< /code >}}
 
 ## Screenshots
 

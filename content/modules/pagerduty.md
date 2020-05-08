@@ -9,7 +9,7 @@ Shows Pagerduty on-call schedules.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 pagerduty:
   apiKey: "p0d13*********************************************c3"
   enabled: true
@@ -25,7 +25,7 @@ pagerduty:
   - "C3P05MF"
   showIncidents: true
   showSchedules: true
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/apikey name="PagerDuty" link="https://v2.developer.pagerduty.com/docs/authentication" envvar="WTF_PAGERDUTY_API_KEY" >}}

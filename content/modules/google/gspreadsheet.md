@@ -9,7 +9,7 @@ Display information from cells in a Google Spreadsheet.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 gspreadsheets:
   colors:
     values: "green"
@@ -29,7 +29,7 @@ gspreadsheets:
   refreshInterval: "300"
   secretFile: "~/.config/wtf/gspreadsheets/client_secret.json"
   sheetId: "id_of_google_spreadsheet"
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/border >}}

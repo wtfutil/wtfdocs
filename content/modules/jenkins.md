@@ -9,7 +9,7 @@ Displays Jenkins status of given builds in a project or view.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 jenkins:
   apiKey: "p0d13*********************************************c3"
   enabled: true
@@ -24,7 +24,7 @@ jenkins:
   url: "https://jenkins.domain.com/jenkins/view_url"
   user: "username"
   verifyServerCertificate: true
-```
+{{< /code >}}
 
 ## Screenshots
 

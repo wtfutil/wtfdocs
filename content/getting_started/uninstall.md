@@ -7,7 +7,7 @@ weight: 10
 
 ## Homebrew
 
-```console
+{{< code lang="bash" >}}
 brew uninstall wtfutil
 ```
 
@@ -15,13 +15,13 @@ brew uninstall wtfutil
 
 WTF ships as a single binary named `wtfutil`. Assuming you have installed the binary, run:
 
-```bash
+{{< code lang="bash" >}}
 rm $(which wtfutil)
 ```
 
 If you have configured WTF, you will also want to delete your configs:
 
-```bash
+{{< code lang="bash" >}}
 rm ~/.config/wtf
 ```
 

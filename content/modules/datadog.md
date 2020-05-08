@@ -9,7 +9,7 @@ Connects to the Datadog API and displays alerting modules.
 
 ## Configuration
 
-```yaml
+
 datadog:
   apiKey: "<yourapikey>"
   applicationKey: "<yourapplicationkey>"
@@ -22,7 +22,6 @@ datadog:
     left: 3
     height: 1
     width: 2
-```
 
 {{% attributes %}}
   {{< attributes/apikey name="DataDog" link="https://docs.datadoghq.com/api/" envvar="WTF_DATADOG_API_KEY" >}}

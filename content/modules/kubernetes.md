@@ -9,7 +9,7 @@ Displays information about a Kubernetes cluster.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 kubernetes:
   enabled: true
   kubeconfig: "/Users/testuser/.kube/config"
@@ -28,7 +28,7 @@ kubernetes:
     width: 2
   refreshInterval: 300
   title: "Build System"
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/enabled >}}

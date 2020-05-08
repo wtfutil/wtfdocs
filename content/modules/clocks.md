@@ -9,7 +9,7 @@ Displays a configurable list of world clocks, the local time, and date.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 clocks:
   colors:
     rows:
@@ -33,7 +33,7 @@ clocks:
   refreshInterval: 15
   # Valid options are: alphabetical, chronological
   sort: "alphabetical"
-```
+{{< /code >}}
 
 ## Screenshots
 

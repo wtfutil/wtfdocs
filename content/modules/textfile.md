@@ -9,7 +9,7 @@ Displays the contents of the specified text file in the widget.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 textfile:
   enabled: true
   filePaths:
@@ -24,7 +24,7 @@ textfile:
     width: 1
   refreshInterval: 15
   wrapText: true
-```
+{{< /code >}}
 
 ## Screenshots
 

@@ -7,4 +7,4 @@ weight: 125
 
 For all modules IP address-related.
 
-{{% children %}}
+{{% childpages %}}

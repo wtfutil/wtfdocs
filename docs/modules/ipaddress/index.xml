@@ -19,8 +19,7 @@
       <guid>https://wtfutil.com/modules/ipaddress/ipapi/</guid>
       <description>Displays your current IP address information, from IP-APIcom.
 Note: IP-API.com has a free-plan rate limit of 120 requests per minute.
-Configuration ipinfo:colors:name:redvalue:whiteenabled:trueposition:top:1left:2height:1width:1refreshInterval:150 Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false 
- colors.name Optional The default colour for the row names. Default: red. Any X11 color name or long-form hex value (i.</description>
+Configuration Copy   ipinfo: colors: name: red value: white enabled: true position: top: 1 left: 2 height: 1 width: 1 refreshInterval: 150    Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/ipapi/</description>
     </item>
     
     <item>
@@ -31,8 +30,7 @@ Configuration ipinfo:colors:name:redvalue:whiteenabled:trueposition:top:1left:2h
       <guid>https://wtfutil.com/modules/ipaddress/ipinfo/</guid>
       <description>Displays your current IP address information, from ipinfo.io.
 Note: IPInfo.io has a free-plan rate limit of 1000 requests per day.
-Configuration ipinfo:colors:name:redvalue:whiteenabled:trueposition:top:1left:2height:1width:1refreshInterval:150 Screenhots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false 
- colors.name Optional The default colour for the row names. Default: red. Any X11 color name or long-form hex value (i.</description>
+Configuration Copy   ipinfo: colors: name: red value: white enabled: true position: top: 1 left: 2 height: 1 width: 1 refreshInterval: 150    Screenhots Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/ipinfo/</description>
     </item>
     
   </channel>

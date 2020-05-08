@@ -9,7 +9,7 @@ Connects to the BambooHR API and displays who will be Away today.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 bamboohr:
   apiKey: "p0d13*********************************************c3"
   enabled: true
@@ -20,7 +20,7 @@ bamboohr:
     width: 1
   refreshInterval: 900
   subdomain: "testco"
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/apikey name="BambooHR" link="https://www.bamboohr.com/api/documentation/" envvar="WTF_BAMBOO_HR_TOKEN" >}}

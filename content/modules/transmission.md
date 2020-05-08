@@ -10,7 +10,7 @@ torrents, their "download complete" percentage, and their seeding status.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 transmission:
   enabled: true
   host: "192.168.1.5"
@@ -22,7 +22,7 @@ transmission:
     height: 1
   refreshInterval: 3
   username: "transmission"
-```
+{{< /code >}}
 
 ## Screenshots
 

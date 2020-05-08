@@ -10,7 +10,7 @@ monitored applications: deploy ID, deploy time, and who deployed it.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 newrelic:
   apiKey: "p0d13*********************************************c3"
   applicationIDs:
@@ -24,7 +24,7 @@ newrelic:
     height: 1
     width: 2
   refreshInterval: 900
-```
+{{< /code >}}
 
 ## Screenshots
 

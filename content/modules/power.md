@@ -11,7 +11,7 @@ For battery, also displays the current charge, estimated time remaining, and whe
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 power:
   enabled: true
   position:
@@ -20,7 +20,7 @@ power:
     height: 2
     width: 1
   refreshInterval: 15
-```
+{{< /code >}}
 
 ## Screenshots
 

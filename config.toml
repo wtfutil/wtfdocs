@@ -4,17 +4,8 @@ defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
 languageCode = "en-us"
 publishDir = "./docs"
-pygmentsCodeFences = true
-pygmentsUseClasses = true
-pygmentsStyle = "monokailight"
 theme = "ace-documentation"
 title = "WTF - the terminal dashboard"
-
-[markup]
-defaultMarkdownHandler = "blackfriday"
-
-#[markup.goldmark.renderer]
-#unsafe = true
 
 [params]
 editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"

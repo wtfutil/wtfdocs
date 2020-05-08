@@ -15,7 +15,7 @@ DigitalOcean module displays a list of your DigitalOcean droplets and Kubernetes
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 digitalocean:
   apiKey: "p0d13*********************************************c3"
   enabled: true
@@ -26,7 +26,7 @@ digitalocean:
     height: 2
   refreshInterval: 15
   title: "🦈 DigitalOcean"
-```
+{{< /code >}}
 
 ## Screenshots
 

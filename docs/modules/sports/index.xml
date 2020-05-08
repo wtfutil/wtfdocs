@@ -30,7 +30,7 @@ Upcoming Matches Shows upcoming matches or fixtuers in the specific league. By d
       
       <guid>https://wtfutil.com/modules/sports/nbascore/</guid>
       <description>Displays NBA game scores.
-Configuration nbascore:enabled:trueposition:top:1left:2height:1width:1refreshInterval:600 Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module&amp;rsquo;s widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data.</description>
+Configuration Copy   nbascore: enabled: true position: top: 1 left: 2 height: 1 width: 1 refreshInterval: 600    Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/nbascore/</description>
     </item>
     
   </channel>

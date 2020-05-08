@@ -23,7 +23,7 @@ Rows break up the height of the screen into chunks, each chunk a specified numbe
 
 The co-ordinate system starts at top-left and defines how wide and tall a widget is. If we wanted to put a 2-col, 2-row widget in the bottom of the screen, we'd position it at:
 
-```
+{{< code lang="yaml" >}}
   top:    4  // top starts in the 4th row
   left:   9  // left starts in the 9th column
   height: 2  // span down rows 4 & 5 (18 characters in size, total)

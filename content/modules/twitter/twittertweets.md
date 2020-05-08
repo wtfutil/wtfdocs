@@ -29,7 +29,7 @@ bearer token is to use [TBT](https://github.com/Trinergy/twitter_bearer_token).
 
 ### Single Account
 
-```yaml
+{{< code lang="yaml" >}}
 twitter:
   bearerToken: "d23*******************************************3r2"
   count: 5
@@ -41,11 +41,11 @@ twitter:
     width: 1
   refreshInterval: 20000
   screenName: "wtfutil"
-```
+{{< /code >}}
 
 ### Multiple Accounts
 
-```yaml
+{{< code lang="yaml" >}}
 twitter:
   bearerToken: "d23*******************************************3r2"
   count: 5
@@ -59,7 +59,7 @@ twitter:
   screenNames:
   - "golang"
   - "wtfutil"
-```
+{{< /code >}}
 
 {{% attributes %}}
   <tr>

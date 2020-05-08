@@ -9,7 +9,7 @@ Control the Spotify client.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 spotify:
   enabled: true
   colors:
@@ -21,7 +21,7 @@ spotify:
     height: 1
     width: 1
   refreshInterval: 0
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/border >}}

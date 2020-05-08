@@ -11,14 +11,14 @@ Displays the contents of the WTF log file. The log file is located at `~/.config
 
 To log to this file in your own modules:
 
-```golang
+{{< code lang="go" >}}
 require "github.com/wtfutil/wtf/logger"
 logger.Log("This is a log entry")
-```
+{{< /code >}}
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 logger:
   enabled: true
   position:
@@ -27,7 +27,7 @@ logger:
     height: 2
     width: 1
   refreshInterval: 1
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/border >}}

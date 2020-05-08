@@ -9,7 +9,7 @@ The following settings are common to all modules. Common settings have logical d
 
 An example with all common settings explicitly configured.
 
-```yaml
+{{< code lang="yaml" >}}
 feedreader:
   enabled: true
   feeds:

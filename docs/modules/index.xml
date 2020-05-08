@@ -17,7 +17,7 @@
       <pubDate>Mon, 07 May 2018 20:17:37 -0700</pubDate>
       
       <guid>https://wtfutil.com/modules/azure_devops/</guid>
-      <description>Configuration azuredevops:apiToken:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:truelabelColor:&amp;#34;lightblue&amp;#34;maxRows:3orgUrl:&amp;#34;https://dev.azure.com/myawesomecompany/&amp;#34;position:top:0left:0height:3width:3projectName:&amp;#34;the awesome project&amp;#34;refreshInterval:300type:&amp;#34;azuredevops&amp;#34; Attributes   Name Description Value     apiToken Your Azure DevOps API token. Your API key or leave it empty to use the WTF_AZURE_DEVOPS_API_TOKEN environment variable.   border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false.</description>
+      <description>Configuration Copy   azuredevops: apiToken: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true labelColor: &amp;#34;lightblue&amp;#34; maxRows: 3 orgUrl: &amp;#34;https://dev.azure.com/myawesomecompany/&amp;#34; position: top: 0 left: 0 height: 3 width: 3 projectName: &amp;#34;the awesome project&amp;#34; refreshInterval: 300 type: &amp;#34;azuredevops&amp;#34;    Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/azuredevops/</description>
     </item>
     
     <item>
@@ -26,8 +26,8 @@
       <pubDate>Sat, 03 Aug 2019 12:39:10 -0800</pubDate>
       
       <guid>https://wtfutil.com/modules/cmdrunner/brew_outdated/</guid>
-      <description> Displays a list of all the installed Homebrew recipes that have an update available for them.
-Config Example brew_outdated:args:[&amp;#34;outdated&amp;#34;]cmd:&amp;#34;brew&amp;#34;enabled:trueposition:top:3left:1width:2height:1type:cmdrunner</description>
+      <description>Displays a list of all the installed Homebrew recipes that have an update available for them.
+Config Example Copy   brew_outdated: args: [&amp;#34;outdated&amp;#34;] cmd: &amp;#34;brew&amp;#34; enabled: true position: top: 3 left: 1 width: 2 height: 1 type: cmdrunner    </description>
     </item>
     
     <item>
@@ -37,7 +37,7 @@ Config Example brew_outdated:args:[&amp;#34;outdated&amp;#34;]cmd:&amp;#34;brew&
       
       <guid>https://wtfutil.com/modules/bamboohr/</guid>
       <description>Connects to the BambooHR API and displays who will be Away today.
-Configuration bamboohr:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:0left:1height:2width:1refreshInterval:900subdomain:&amp;#34;testco&amp;#34; Attributes   Name Description Value     apiKey Your BambooHR API token.  Your API key or leave it empty to use the WTF_BAMBOO_HR_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration Copy   bamboohr: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 1 height: 2 width: 1 refreshInterval: 900 subdomain: &amp;#34;testco&amp;#34;    Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/bamboohr/</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@ Configuration bamboohr:apiKey:&amp;#34;p0d13************************************
       <guid>https://wtfutil.com/modules/buildkite/</guid>
       <description>Connects to the Buildkite REST API and displays status of branches for configured Pipelines.
 The API token must have the read_builds permission.
-Configuration buildkite:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueorganizationSlug:&amp;#34;acme-corp&amp;#34;refreshInterval:60position:top:1left:1height:1width:1pipelines:pipeline-slug-1:branches:- &amp;#34;master&amp;#34;- &amp;#34;stage&amp;#34;pipeline-slug-2:branches:- &amp;#34;master&amp;#34;- &amp;#34;production&amp;#34; Attributes   Name Description Value     apiKey Your Buildkite API token.  Your API key or leave it empty to use the WTF_BUILDKITE_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border.</description>
+Configuration Copy   buildkite: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true organizationSlug: &amp;#34;acme-corp&amp;#34; refreshInterval: 60 position: top: 1 left: 1 height: 1 width: 1 pipelines: pipeline-slug-1: branches: - &amp;#34;master&amp;#34; - &amp;#34;stage&amp;#34; pipeline-slug-2: branches: - &amp;#34;master&amp;#34; - &amp;#34;production&amp;#34;    Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/buildkite/</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@ Configuration buildkite:apiKey:&amp;#34;p0d13***********************************
       
       <guid>https://wtfutil.com/modules/circleci/</guid>
       <description>Displays build information for your CircleCI account.
-Configuration circleci:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:4left:1height:1width:2refreshInterval:900 Screenshots Attributes   Name Description Value     apiKey Your CircleCI API token.  Your API key or leave it empty to use the WTF_CIRCLE_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration Copy   circleci: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 4 left: 1 height: 1 width: 2 refreshInterval: 900    Screenshots Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/circleci/</description>
     </item>
     
     <item>
@@ -68,7 +68,7 @@ Configuration circleci:apiKey:&amp;#34;p0d13************************************
       
       <guid>https://wtfutil.com/modules/clocks/</guid>
       <description>Displays a configurable list of world clocks, the local time, and date.
-Configuration clocks:colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;white&amp;#34;enabled:truelocations:# From https://en.wikipedia.org/wiki/List_of_tz_database_time_zonesAvignon:&amp;#34;Europe/Paris&amp;#34;Barcelona:&amp;#34;Europe/Madrid&amp;#34;Dubai:&amp;#34;Asia/Dubai&amp;#34;New York:&amp;#34;America/New York&amp;#34;Toronto:&amp;#34;America/Toronto&amp;#34;UTC:&amp;#34;Etc/UTC&amp;#34;Vancouver:&amp;#34;America/Vancouver&amp;#34;position:top:4left:0height:1width:1refreshInterval:15# Valid options are: alphabetical, chronologicalsort:&amp;#34;alphabetical&amp;#34; Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.rows.even The foreground color for even-numbered rows. Any X11 color name.   colors.rows.odd The foreground color for odd-numbered rows.</description>
+Configuration Copy   clocks: colors: rows: even: &amp;#34;lightblue&amp;#34; odd: &amp;#34;white&amp;#34; enabled: true locations: # From https://en.wikipedia.org/wiki/List_of_tz_database_time_zones Avignon: &amp;#34;Europe/Paris&amp;#34; Barcelona: &amp;#34;Europe/Madrid&amp;#34; Dubai: &amp;#34;Asia/Dubai&amp;#34; New York: &amp;#34;America/New York&amp;#34; Toronto: &amp;#34;America/Toronto&amp;#34; UTC: &amp;#34;Etc/UTC&amp;#34; Vancouver: &amp;#34;America/Vancouver&amp;#34; position: top: 4 left: 0 height: 1 width: 1 refreshInterval: 15 # Valid options are: alphabetical, chronological sort: &amp;#34;alphabetical&amp;#34;    Screenshots Attributes Source Code https://github.</description>
     </item>
     
     <item>
@@ -77,8 +77,8 @@ Configuration clocks:colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;wh
       <pubDate>Sat, 12 Oct 2019 17:17:10 -0400</pubDate>
       
       <guid>https://wtfutil.com/modules/cmdrunner/wego/</guid>
-      <description> wego is a command line tool to view weather, from a variety of weather services
-Config Example weather:args:[&amp;#34;0&amp;#34;]cmd:&amp;#34;wego&amp;#34;enabled:truetype:&amp;#34;cmdrunner&amp;#34;position:top:0left:0height:1width:2refreshInterval:100</description>
+      <description>wego is a command line tool to view weather, from a variety of weather services
+Config Example Copy   weather: args: [&amp;#34;0&amp;#34;] cmd: &amp;#34;wego&amp;#34; enabled: true type: &amp;#34;cmdrunner&amp;#34; position: top: 0 left: 0 height: 1 width: 2 refreshInterval: 100    </description>
     </item>
     
     <item>
@@ -87,8 +87,8 @@ Config Example weather:args:[&amp;#34;0&amp;#34;]cmd:&amp;#34;wego&amp;#34;enabl
       <pubDate>Mon, 01 Jul 2019 17:17:10 -0400</pubDate>
       
       <guid>https://wtfutil.com/modules/cmdrunner/istats/</guid>
-      <description> iStats is a command line tool to view system stats on OSX.
-Config Example istats:args:[&amp;#34;all&amp;#34;]cmd:&amp;#34;istats&amp;#34;enabled:truetype:&amp;#34;cmdrunner&amp;#34;position:top:0left:3height:2width:2refreshInterval:1</description>
+      <description>iStats is a command line tool to view system stats on OSX.
+Config Example Copy   istats: args: [&amp;#34;all&amp;#34;] cmd: &amp;#34;istats&amp;#34; enabled: true type: &amp;#34;cmdrunner&amp;#34; position: top: 0 left: 3 height: 2 width: 2 refreshInterval: 1    </description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@ Config Example istats:args:[&amp;#34;all&amp;#34;]cmd:&amp;#34;istats&amp;#34;en
       
       <guid>https://wtfutil.com/modules/cmdrunner/</guid>
       <description>Runs a terminal command on a schedule.
-Configuration cmdrunner:args:[&amp;#34;-g&amp;#34;,&amp;#34;batt&amp;#34;]cmd:&amp;#34;pmset&amp;#34;enabled:trueposition:top:6left:1height:1width:3refreshInterval:30 Attributes   Name Description Value     args The arguments to the command, with each item as an element in an array.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   cmd The terminal command to be run, withouth the arguments. Ie: ping, whoami, curl.    enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration Copy   cmdrunner: args: [&amp;#34;-g&amp;#34;, &amp;#34;batt&amp;#34;] cmd: &amp;#34;pmset&amp;#34; enabled: true position: top: 6 left: 1 height: 1 width: 3 refreshInterval: 30    Attributes Examples  brew outdated iStats Status Pages wego  Source Code https://github.com/wtfutil/wtf/tree/master/modules/cmdrunner/</description>
     </item>
     
     <item>
@@ -108,7 +108,8 @@ Configuration cmdrunner:args:[&amp;#34;-g&amp;#34;,&amp;#34;batt&amp;#34;]cmd:&a
       
       <guid>https://wtfutil.com/modules/datadog/</guid>
       <description>Connects to the Datadog API and displays alerting modules.
-Configuration datadog:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;applicationKey:&amp;#34;&amp;lt;yourapplicationkey&amp;gt;&amp;#34;enabled:truemonitors:tags:- &amp;#34;team:ops&amp;#34;position:top:4left:3height:1width:2 Attributes   Name Description Value     apiKey Your DataDog API token.  Your API key or leave it empty to use the WTF_DATADOG_API_KEY environment variable.    applicationKey Your DataDog application key Leave this empty to use the WTF_DATADOG_APPLICATION_KEY environment variable.   border Optional Whether or not to draw this widget with a border.</description>
+Configuration datadog: apiKey: &amp;ldquo;&amp;rdquo; applicationKey: &amp;ldquo;&amp;rdquo; enabled: true monitors: tags: - &amp;ldquo;team:ops&amp;rdquo; position: top: 4 left: 3 height: 1 width: 2
+Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/datadog/</description>
     </item>
     
     <item>
@@ -118,7 +119,7 @@ Configuration datadog:apiKey:&amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34;applica
       
       <guid>https://wtfutil.com/modules/devto/</guid>
       <description>Displays stories from The Practical DEV dev.to.
-Configuration devto:enabled:truenumberOfArticles:10position:top:1left:1height:1width:2contentTag:&amp;#34;showdev&amp;#34;contentUsername:&amp;#34;victoravelar&amp;#34;contentState:&amp;#34;rising&amp;#34; Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
+Configuration Copy   devto: enabled: true numberOfArticles: 10 position: top: 1 left: 1 height: 1 width: 2 contentTag: &amp;#34;showdev&amp;#34; contentUsername: &amp;#34;victoravelar&amp;#34; contentState: &amp;#34;rising&amp;#34;    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/devto/</description>
     </item>
     
     <item>
@@ -128,7 +129,7 @@ Configuration devto:enabled:truenumberOfArticles:10position:top:1left:1height:1w
       
       <guid>https://wtfutil.com/modules/digitalclock/</guid>
       <description>Displays a configurable digital clock.
-Configuration digitalclock:color:orangeenabled:truefont:bigfonthourFormat:12position:top:0left:1height:1width:1refreshInterval:1title:&amp;#34;big clock&amp;#34;type:&amp;#34;digitalclock&amp;#34; Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   color The color to display the clock time in. Any X11 color name or long-form hex value (i.e.: #ff0000).   font The font to display the clock time in. bigfont or digitalfont   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration Copy   digitalclock: color: orange enabled: true font: bigfont hourFormat: 12 position: top: 0 left: 1 height: 1 width: 1 refreshInterval: 1 title: &amp;#34;big clock&amp;#34; type: &amp;#34;digitalclock&amp;#34;    Screenshots Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/digitalclock/</description>
     </item>
     
     <item>
@@ -138,7 +139,7 @@ Configuration digitalclock:color:orangeenabled:truefont:bigfonthourFormat:12posi
       
       <guid>https://wtfutil.com/modules/digitalocean/</guid>
       <description>DigitalOcean module displays a list of your DigitalOcean droplets and Kubernetes clusters and allows you to interact with them in these ways:
- Destroy a droplet Enable private networking on a droplet Reboot a droplet Shut down a droplet Show info about a droplet  Configuration digitalocean:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:4left:2width:2height:2refreshInterval:15title:&amp;#34;🦈 DigitalOcean&amp;#34; Screenshots Attributes   Name Description Value     apiKey Your DigitalOcean API token.  Your API key or leave it empty to use the WTF_DIGITALOCEAN_API_KEY environment variable.</description>
+ Destroy a droplet Enable private networking on a droplet Reboot a droplet Shut down a droplet Show info about a droplet  Configuration Copy   digitalocean: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 4 left: 2 width: 2 height: 2 refreshInterval: 15 title: &amp;#34;🦈 DigitalOcean&amp;#34;    Screenshots Attributes Keyboard Controls Source Code https://github.</description>
     </item>
     
     <item>
@@ -148,7 +149,7 @@ Configuration digitalclock:color:orangeenabled:truefont:bigfonthourFormat:12posi
       
       <guid>https://wtfutil.com/modules/docker/</guid>
       <description>Displays information about currently-running Docker processes.
-Configuration docker:type:dockerenabled:truelabelColor:lightblueposition:top:0left:0height:3width:3refreshInterval:1 Screenshots Attributes   Name Description Value     enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   labelColor The color to display the row labels in. Any X11 color name or long-form hex value (i.e.: #ff0000).   position Defines where in the grid this module&amp;rsquo;s widget will be displayed.</description>
+Configuration Copy   docker: type: docker enabled: true labelColor: lightblue position: top: 0 left: 0 height: 3 width: 3 refreshInterval: 1    Screenshots Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/docker/</description>
     </item>
     
     <item>
@@ -158,7 +159,7 @@ Configuration docker:type:dockerenabled:truelabelColor:lightblueposition:top:0le
       
       <guid>https://wtfutil.com/modules/exchange_rates/</guid>
       <description>Displays exchange rates between various currencies.
-Configuration exchangerates:enabled:truefocusable:falseposition:top:4left:4width:1height:2rates:CAD:- &amp;#34;USD&amp;#34;- &amp;#34;EUR&amp;#34;USD:- &amp;#34;CAD&amp;#34;EUR:- &amp;#34;CAD&amp;#34;title:&amp;#34;💰 Rates&amp;#34; Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module&amp;rsquo;s widget will be displayed.</description>
+Configuration Copy   exchangerates: enabled: true focusable: false position: top: 4 left: 4 width: 1 height: 2 rates: CAD: - &amp;#34;USD&amp;#34; - &amp;#34;EUR&amp;#34; USD: - &amp;#34;CAD&amp;#34; EUR: - &amp;#34;CAD&amp;#34; title: &amp;#34;💰 Rates&amp;#34;    Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/exchangerates/</description>
     </item>
     
     <item>
@@ -168,7 +169,7 @@ Configuration exchangerates:enabled:truefocusable:falseposition:top:4left:4width
       
       <guid>https://wtfutil.com/modules/feedreader/</guid>
       <description>A rudimentary RSS &amp;amp; Atom feed reader.
-Configuration feedreader:enabled:truefeeds:- https://news.ycombinator.com/rss- http://feeds.reuters.com/Reuters/worldNewsfeedLimit:10position:top:4left:1height:1width:2refreshInterval:14400 Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   feedLimit The number of stories from each feed to be displayed.</description>
+Configuration Copy   feedreader: enabled: true feeds: - https://news.ycombinator.com/rss - http://feeds.reuters.com/Reuters/worldNews feedLimit: 10 position: top: 4 left: 1 height: 1 width: 2 refreshInterval: 14400    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/feedreader/</description>
     </item>
     
     <item>
@@ -180,7 +181,7 @@ Configuration feedreader:enabled:truefeeds:- https://news.ycombinator.com/rss- h
       <description>Displays information about your projects hosted on Gerrit:
 Open Incoming Reviews All open reviews that are requesting your approval.
 My Outgoing Reviews All open reviews created by you.
-Configuration gerrit:colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;white&amp;#34;domain:https://gerrit-review.googlesource.comenabled:truepassword:&amp;#34;mypassword&amp;#34;position:top:2left:3height:2width:2projects:- org/test-project&amp;#34; - dotfiles refreshInterval: 300 username: &amp;#34;myname&amp;#34;verifyServerCertificate:false Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.rows.even The foreground color for even-numbered rows.</description>
+Configuration Copy   gerrit: colors: rows: even: &amp;#34;lightblue&amp;#34; odd: &amp;#34;white&amp;#34; domain: https://gerrit-review.googlesource.com enabled: true password: &amp;#34;mypassword&amp;#34; position: top: 2 left: 3 height: 2 width: 2 projects: - org/test-project&amp;#34; - dotfiles refreshInterval: 300 username: &amp;#34;myname&amp;#34; verifyServerCertificate: false    Screenshots Attributes Keyboard Controls Source Code https://github.</description>
     </item>
     
     <item>
@@ -193,7 +194,7 @@ Configuration gerrit:colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;wh
 Branch The name of the currently-active git branch.
 Changed Files A list of all the files that have changed since the last commit, and their status.
 Recent Commits A list of n recent commits, who committed it, and when.
-Configuration git:commitCount:5commitFormat:&amp;#34;[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]&amp;#34;dateFormat:&amp;#34;%H:%M %d %b %y&amp;#34;enabled:trueposition:top:0left:3height:2width:2refreshInterval:8repositories:- &amp;#34;/Users/chris/go/src/github.com/wtfutil/wtf&amp;#34;- &amp;#34;/Users/user/fakeapp&amp;#34; Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border.</description>
+Configuration Copy   git: commitCount: 5 commitFormat: &amp;#34;[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]&amp;#34; dateFormat: &amp;#34;%H:%M %d %b %y&amp;#34; enabled: true position: top: 0 left: 3 height: 2 width: 2 refreshInterval: 8 repositories: - &amp;#34;/Users/chris/go/src/github.</description>
     </item>
     
     <item>
@@ -205,7 +206,7 @@ Configuration git:commitCount:5commitFormat:&amp;#34;[forestgreen]%h [grey]%cd [
       <description>Various services provide status apis which are accessible. For example, the slack status api at https://status.slack.com/api/v2.0.0/current
 This can be accomplished with jq and the cmdrunner module.
 First, create a shell script:
-#!/bin/sh  curl -s https://status.slack.com/api/v2.0.0/current | \  jq -r &amp;#39;&amp;#34;Status: &amp;#34; + (if (.status == &amp;#34;active&amp;#34;) then &amp;#34;Active Incident&amp;#34; else &amp;#34;Ok&amp;#34; end),&amp;#34;Last Updated: &amp;#34; + .date_updated,if (.active_incidents[] | length) &amp;gt; 0 then &amp;#34;Active Incidents\n&amp;#34; + .active_incidents[] .title else &amp;#34;&amp;#34; end&amp;#39; Second, the following wtfutil config:</description>
+Copy   #!/bin/sh curl -s https://status.slack.com/api/v2.0.0/current | \  jq -r &amp;#39;&amp;#34;Status: &amp;#34; + (if (.status == &amp;#34;active&amp;#34;) then &amp;#34;Active Incident&amp;#34; else &amp;#34;Ok&amp;#34; end),&amp;#34;Last Updated: &amp;#34; + .date_updated,if (.active_incidents[] | length) &amp;gt; 0 then &amp;#34;Active Incidents\n&amp;#34; + .active_incidents[] .</description>
     </item>
     
     <item>
@@ -218,7 +219,7 @@ First, create a shell script:
 Open Review Requests All open code review requests assigned to you.
 Open Pull Requests All open pull requests created by you.
 Custom Queries Create filters to manage PRs and issues however you like.
-Configuration github:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;baseURL:&amp;#34;&amp;#34;customQueries:othersPRs:title:&amp;#34;Others Pull Requests&amp;#34;filter:&amp;#34;is:open is:pr -author:wtfutil&amp;#34;enabled:trueenableStatus:trueposition:top:2left:3height:2width:2refreshInterval:300repositories:- &amp;#34;wtfutil/wtf&amp;#34;- &amp;#34;wtfutil/docs&amp;#34;- &amp;#34;umbrella-corp/wesker-api&amp;#34;uploadURL:&amp;#34;&amp;#34;username:&amp;#34;wtfutil&amp;#34; Screenshots Attributes   Name Description Value     apiKey Your GitHub API token.  Your API key or leave it empty to use the WTF_GITHUB_TOKEN environment variable.</description>
+Configuration Copy   github: apiKey: &amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34; baseURL: &amp;#34;&amp;#34; customQueries: othersPRs: title: &amp;#34;Others Pull Requests&amp;#34; filter: &amp;#34;is:open is:pr -author:wtfutil&amp;#34; enabled: true enableStatus: true position: top: 2 left: 3 height: 2 width: 2 refreshInterval: 300 repositories: - &amp;#34;wtfutil/wtf&amp;#34; - &amp;#34;wtfutil/docs&amp;#34; - &amp;#34;umbrella-corp/wesker-api&amp;#34; uploadURL: &amp;#34;&amp;#34; username: &amp;#34;wtfutil&amp;#34;    Screenshots Attributes Keyboard Controls Custom Query Examples Custom queries allow you to filter pull requests and issues however you like.</description>
     </item>
     
     <item>
@@ -230,7 +231,7 @@ Configuration github:apiKey:&amp;#34;3276d7155dd9ee27b8b14f8743a408a9&amp;#34;ba
       <description>Displays information about your projects hosted on GitLab:
 Open Approval Requests All open merge requests that are requesting your approval.
 Open Merge Requests All open merge requests created by you.
-Configuration gitlab:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:2left:3height:2width:2refreshInterval:300projects:- &amp;#34;gitlab-org/release/tasks&amp;#34;- &amp;#34;gitlab-org/gitlab-ce&amp;#34;username:&amp;#34;wtfutil&amp;#34; Screenshots Attributes   Name Description Value     apiKey Your GitLab API token.  Your API key or leave it empty to use the WTF_GITLAB_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border.</description>
+Configuration Copy   gitlab: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 2 left: 3 height: 2 width: 2 refreshInterval: 300 projects: - &amp;#34;gitlab-org/release/tasks&amp;#34; - &amp;#34;gitlab-org/gitlab-ce&amp;#34; username: &amp;#34;wtfutil&amp;#34;    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/gitlab/</description>
     </item>
     
     <item>
@@ -240,7 +241,7 @@ Configuration gitlab:apiKey:&amp;#34;p0d13**************************************
       
       <guid>https://wtfutil.com/modules/gitter/</guid>
       <description>Displays chat messages from Gitter.
-Configuration gitter:apiToken:&amp;#34;d23*******************************************3r2&amp;#34;enabled:truenumberOfMessages:10position:top:4left:1height:1width:4roomUri:wtfutil/LobbyrefreshInterval:300 Screenshots Attributes   Name Description Value     apiToken Your Gitter API token. Your API key or leave it empty to use the `environment variable.&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;border&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;_Optional_ Whether or not to draw this widget with a border. Default:true.&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;true, false&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;enabled&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default:false.</description>
+Configuration Copy   gitter: apiToken: &amp;#34;d23*******************************************3r2&amp;#34; enabled: true numberOfMessages: 10 position: top: 4 left: 1 height: 1 width: 4 roomUri: wtfutil/Lobby refreshInterval: 300    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/gitter/</description>
     </item>
     
     <item>
@@ -250,7 +251,7 @@ Configuration gitter:apiToken:&amp;#34;d23**************************************
       
       <guid>https://wtfutil.com/modules/hackernews/</guid>
       <description>Displays stories from Hacker News.
-Configuration hackernews:enabled:truenumberOfStories:10position:top:4left:1height:1width:2storyType:toprefreshInterval:900 Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
+Configuration Copy   hackernews: enabled: true numberOfStories: 10 position: top: 4 left: 1 height: 1 width: 2 storyType: top refreshInterval: 900    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/hackernews/</description>
     </item>
     
     <item>
@@ -261,7 +262,7 @@ Configuration hackernews:enabled:truenumberOfStories:10position:top:4left:1heigh
       <guid>https://wtfutil.com/modules/hibp/</guid>
       <description>Indicates whether or not your listed email addresses appear in the Have I Been Pwned breach database.
 Note: As of v0.19.0, WTF requires you use a Have I Been Pwned API key to conenct to the service. See details below.
-Configuration hibp:accounts:- test@example.com- pwned@gmail.comapiKey:&amp;#34;p0d13*********************************************c3&amp;#34;colors:ok:&amp;#34;green&amp;#34;pwned:&amp;#34;red&amp;#34;enabled:trueposition:top:4left:1height:1width:2refreshInterval:43200since:&amp;#34;2019-06-22&amp;#34; Screenshots Attributes   Name Description Value     accounts A list of the accounts to check the HIBP database for.    apiKey Your Have I Been Pwned API token.</description>
+Configuration Copy   hibp: accounts: - test@example.com - pwned@gmail.com apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; colors: ok: &amp;#34;green&amp;#34; pwned: &amp;#34;red&amp;#34; enabled: true position: top: 4 left: 1 height: 1 width: 2 refreshInterval: 43200 since: &amp;#34;2019-06-22&amp;#34;    Screenshots Attributes Source Code https://github.</description>
     </item>
     
     <item>
@@ -271,7 +272,7 @@ Configuration hibp:accounts:- test@example.com- pwned@gmail.comapiKey:&amp;#34;p
       
       <guid>https://wtfutil.com/modules/jenkins/</guid>
       <description>Displays Jenkins status of given builds in a project or view.
-Configuration jenkins:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:2left:3height:2width:3refreshInterval:300successBallColor:&amp;#34;green&amp;#34;jobNameRegex:^[a-z]+\[[0-9]+\]$url:&amp;#34;https://jenkins.domain.com/jenkins/view_url&amp;#34;user:&amp;#34;username&amp;#34;verifyServerCertificate:true Screenshots Attributes   Name Description Value     apiKey Your Jenkins API token.  Your API key or leave it empty to use the WTF_JENKINS_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration Copy   jenkins: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 2 left: 3 height: 2 width: 3 refreshInterval: 300 successBallColor: &amp;#34;green&amp;#34; jobNameRegex: ^[a-z]+\[[0-9]+\]$ url: &amp;#34;https://jenkins.domain.com/jenkins/view_url&amp;#34; user: &amp;#34;username&amp;#34; verifyServerCertificate: true    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/jenkins/</description>
     </item>
     
     <item>
@@ -281,8 +282,7 @@ Configuration jenkins:apiKey:&amp;#34;p0d13*************************************
       
       <guid>https://wtfutil.com/modules/jira/</guid>
       <description>Displays all Jira issues assigned to you for the specified project.
-Configuration Single Jira Project jira:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;white&amp;#34;domain:&amp;#34;https://umbrellacorp.atlassian.net&amp;#34;email:&amp;#34;chriscummer@me.com&amp;#34;enabled:truejql:&amp;#34;issueType = Story&amp;#34;position:top:4left:1height:1width:2project:&amp;#34;ProjectA&amp;#34;refreshInterval:900username:&amp;#34;chris.cummer&amp;#34;verifyServerCertificate:true Multiple Jira Projects If you want to monitor multiple Jira projects, use the following configuration (note the difference in project):
-jira:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;colors:rows:even:&amp;#34;lightblue&amp;#34;odd:&amp;#34;white&amp;#34;domain:&amp;#34;https://umbrellacorp.atlassian.net&amp;#34;email:&amp;#34;chriscummer@me.com&amp;#34;enabled:truejql:&amp;#34;issueType = Story&amp;#34;position:top:4left:1height:1width:2project:[&amp;#34;ProjectA&amp;#34;,&amp;#34;ProjectB&amp;#34;]refreshInterval:900username:&amp;#34;chris.cummer&amp;#34;verifyServerCertificate:true Screenshots Attributes   Name Description Value     apiKey Your Jira API token.  Your API key or leave it empty to use the WTF_JIRA_API_KEY environment variable.</description>
+Configuration Single Jira Project Copy   jira: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; colors: rows: even: &amp;#34;lightblue&amp;#34; odd: &amp;#34;white&amp;#34; domain: &amp;#34;https://umbrellacorp.atlassian.net&amp;#34; email: &amp;#34;chriscummer@me.com&amp;#34; enabled: true jql: &amp;#34;issueType = Story&amp;#34; position: top: 4 left: 1 height: 1 width: 2 project: &amp;#34;ProjectA&amp;#34; refreshInterval: 900 username: &amp;#34;chris.cummer&amp;#34; verifyServerCertificate: true    Multiple Jira Projects If you want to monitor multiple Jira projects, use the following configuration (note the difference in project):</description>
     </item>
     
     <item>
@@ -292,7 +292,7 @@ jira:apiKey:&amp;#34;p0d13*********************************************c3&amp;#3
       
       <guid>https://wtfutil.com/modules/kubernetes/</guid>
       <description>Displays information about a Kubernetes cluster.
-Configuration kubernetes:enabled:truekubeconfig:&amp;#34;/Users/testuser/.kube/config&amp;#34;namespaces:- internal- public- systemsobjects:- deployments- nodes- podsposition:top:4left:1height:1width:2refreshInterval:300title:&amp;#34;Build System&amp;#34; Attributes   Name Description Value     enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   context The Kubernetes context to use. If blank, it uses default context.    kubeconfig The absolute path to your Kubernetes config file.</description>
+Configuration Copy   kubernetes: enabled: true kubeconfig: &amp;#34;/Users/testuser/.kube/config&amp;#34; namespaces: - internal - public - systems objects: - deployments - nodes - pods position: top: 4 left: 1 height: 1 width: 2 refreshInterval: 300 title: &amp;#34;Build System&amp;#34;    Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/kubernetes/</description>
     </item>
     
     <item>
@@ -303,7 +303,8 @@ Configuration kubernetes:enabled:truekubeconfig:&amp;#34;/Users/testuser/.kube/c
       <guid>https://wtfutil.com/modules/logger/</guid>
       <description>Displays the contents of the WTF log file. The log file is located at ~/.config/wtf/log.txt.
 Usage To log to this file in your own modules:
-require &amp;#34;github.com/wtfutil/wtf/logger&amp;#34; logger.Log(&amp;#34;This is a log entry&amp;#34;) Configuration logger:enabled:trueposition:top:5left:4height:2width:1refreshInterval:1 Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Copy   require &amp;#34;github.com/wtfutil/wtf/logger&amp;#34; logger.Log(&amp;#34;This is a log entry&amp;#34;)    Configuration Copy   logger: enabled: true position: top: 5 left: 4 height: 2 width: 1 refreshInterval: 1    Attributes Keyboard Controls Arrow keys scroll through the log file.
+Source Code https://github.</description>
     </item>
     
     <item>
@@ -316,7 +317,7 @@ require &amp;#34;github.com/wtfutil/wtf/logger&amp;#34; logger.Log(&amp;#34;This
 Branch The name of the currently-active mercurial branch.
 Changed Files A list of all the files that have changed since the last commit, and their status.
 Recent Commits A list of n recent commits, who committed it, and when.
-Configuration mercurial:commitCount:5commitFormat:&amp;#34;[forestgreen]{rev}:{phase} [white]{desc|firstline|strip} [grey]{author|person} {date|age}[white]&amp;#34;enabled:trueposition:top:0left:3height:2width:2refreshInterval:8repositories:- &amp;#34;/Users/user/fakelib&amp;#34;- &amp;#34;/Users/user/fakeapp&amp;#34; Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border.</description>
+Configuration Copy   mercurial: commitCount: 5 commitFormat: &amp;#34;[forestgreen]{rev}:{phase} [white]{desc|firstline|strip} [grey]{author|person} {date|age}[white]&amp;#34; enabled: true position: top: 0 left: 3 height: 2 width: 2 refreshInterval: 8 repositories: - &amp;#34;/Users/user/fakelib&amp;#34; - &amp;#34;/Users/user/fakeapp&amp;#34;    Screenshots Attributes Keyboard Controls Source Code https://github.</description>
     </item>
     
     <item>
@@ -326,7 +327,7 @@ Configuration mercurial:commitCount:5commitFormat:&amp;#34;[forestgreen]{rev}:{p
       
       <guid>https://wtfutil.com/modules/newrelic/</guid>
       <description>Connects to the New Relic API and displays the last n deploys of the monitored applications: deploy ID, deploy time, and who deployed it.
-Configuration newrelic:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;applicationIDs:- 10549735- 499785deployCount:6enabled:trueposition:top:4left:3height:1width:2refreshInterval:900 Screenshots Attributes   Name Description Value     apiKey Your New Relic API token.  Your API key or leave it empty to use the WTF_NEW_RELIC_API_KEY environment variable.    applicationIds A list of integer IDs of the New Relic applications you wish to report on.</description>
+Configuration Copy   newrelic: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; applicationIDs: - 10549735 - 499785 deployCount: 6 enabled: true position: top: 4 left: 3 height: 1 width: 2 refreshInterval: 900    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/newrelic/</description>
     </item>
     
     <item>
@@ -336,8 +337,8 @@ Configuration newrelic:apiKey:&amp;#34;p0d13************************************
       
       <guid>https://wtfutil.com/modules/opsgenie/</guid>
       <description>Shows OpsGenie on-call schedules.
-See Who is on Call API for details.
-Configuration Single Schedule opsgenie:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600region:&amp;#34;us&amp;#34;schedule:&amp;#34;Primary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34; Multiple Schedules opsgenie:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;displayEmpty:falseenabled:trueposition:top:2left:1height:2width:1refreshInterval:21600region:&amp;#34;us&amp;#34;schedule:- &amp;#34;Primary&amp;#34;- &amp;#34;Secondary&amp;#34;scheduleIdentifierType:&amp;#34;id&amp;#34; Screenshots Attributes   Name Description Value     apiKey Your OpsGenie API token.  Your API key or leave it empty to use the WTF_OPS_GENIE_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   displayEmpty Whether schedules with no assigned person on-call should be displayed.</description>
+See Who is on Call APIfor details.
+Configuration Single Schedule Copy   opsgenie: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; displayEmpty: false enabled: true position: top: 2 left: 1 height: 2 width: 1 refreshInterval: 21600 region: &amp;#34;us&amp;#34; schedule: &amp;#34;Primary&amp;#34; scheduleIdentifierType: &amp;#34;id&amp;#34;    Multiple Schedules Copy   opsgenie: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; displayEmpty: false enabled: true position: top: 2 left: 1 height: 2 width: 1 refreshInterval: 21600 region: &amp;#34;us&amp;#34; schedule: - &amp;#34;Primary&amp;#34; - &amp;#34;Secondary&amp;#34; scheduleIdentifierType: &amp;#34;id&amp;#34;    Screenshots Attributes Source Code https://github.</description>
     </item>
     
     <item>
@@ -347,7 +348,7 @@ Configuration Single Schedule opsgenie:apiKey:&amp;#34;p0d13********************
       
       <guid>https://wtfutil.com/modules/pagerduty/</guid>
       <description>Shows Pagerduty on-call schedules.
-Configuration pagerduty:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueescalationFilter:- &amp;#34;client-eng&amp;#34;position:top:4left:3height:1width:2scheduleIDs:- &amp;#34;R2D24CD&amp;#34;- &amp;#34;C3P05MF&amp;#34;showIncidents:trueshowSchedules:true Attributes   Name Description Value     apiKey Your PagerDuty API token.  Your API key or leave it empty to use the WTF_PAGERDUTY_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration Copy   pagerduty: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true escalationFilter: - &amp;#34;client-eng&amp;#34; position: top: 4 left: 3 height: 1 width: 2 scheduleIDs: - &amp;#34;R2D24CD&amp;#34; - &amp;#34;C3P05MF&amp;#34; showIncidents: true showSchedules: true    Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/pagerduty/</description>
     </item>
     
     <item>
@@ -357,7 +358,7 @@ Configuration pagerduty:apiKey:&amp;#34;p0d13***********************************
       
       <guid>https://wtfutil.com/modules/pihole/</guid>
       <description>Displays information about a running Pi-hole server.
-Configuration pihole:enabled:trueposition:top:5left:0height:2width:2refreshInterval:60apiUrl:http://192.168.1.100:1010/admin/api.phptoken:atvvedmpyat8140rnhodrok3qr58d8ph85wl6wk1rpb9upiwx1tl6eittz403pqajshowSummary:trueshowTopItems:5showTopClients:5maxClientWidth:20maxDomainWidth:20 Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   position Defines where in the grid this module&amp;rsquo;s widget will be displayed.</description>
+Configuration Copy   pihole: enabled: true position: top: 5 left: 0 height: 2 width: 2 refreshInterval: 60 apiUrl: http://192.168.1.100:1010/admin/api.php token: atvvedmpyat8140rnhodrok3qr58d8ph85wl6wk1rpb9upiwx1tl6eittz403pqaj showSummary: true showTopItems: 5 showTopClients: 5 maxClientWidth: 20 maxDomainWidth: 20    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/pihole/</description>
     </item>
     
     <item>
@@ -367,7 +368,7 @@ Configuration pihole:enabled:trueposition:top:5left:0height:2width:2refreshInter
       
       <guid>https://wtfutil.com/modules/pocket/</guid>
       <description>Displays Pocket Saved Articles.
-Configuration pocket:enabled:trueposition:top:0left:3height:4width:2consumerKey:&amp;#39;88*******************&amp;#39;refreshInterval:1 Attributes   Name Description Value     consumer_key The consumer key of pocket app obtained from https://getpocket.com/developer/apps/new, make sure to have add, modify and retrieve permissions 888**************************   border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration pocket: enabled: true position: top: 0 left: 3 height: 4 width: 2 consumerKey: &amp;#39;88*******************&amp;#39; refreshInterval: 1 Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/pocket/</description>
     </item>
     
     <item>
@@ -378,7 +379,7 @@ Configuration pocket:enabled:trueposition:top:0left:3height:4width:2consumerKey:
       <guid>https://wtfutil.com/modules/power/</guid>
       <description>Displays information about the current power source.
 For battery, also displays the current charge, estimated time remaining, and whether it is charging or discharging.
-Configuration power:enabled:trueposition:top:5left:0height:2width:1refreshInterval:15 Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration Copy   power: enabled: true position: top: 5 left: 0 height: 2 width: 1 refreshInterval: 15    Screenshots Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/power/</description>
     </item>
     
     <item>
@@ -388,7 +389,7 @@ Configuration power:enabled:trueposition:top:5left:0height:2width:1refreshInterv
       
       <guid>https://wtfutil.com/modules/resourceusage/</guid>
       <description>Displays CPU and memory usage.
-Configuration resourceusage:cpuCombined:falseenabled:trueposition:top:1left:1height:1width:1refreshInterval:1showCPU:trueshowMem:trueshowSwp:true Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   cpuCombined Optional Whether or not to display the CPUs as one combined value. Default: false. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration Copy   resourceusage: cpuCombined: false enabled: true position: top: 1 left: 1 height: 1 width: 1 refreshInterval: 1 showCPU: true showMem: true showSwp: true    Screenshots Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/resourceusage/</description>
     </item>
     
     <item>
@@ -398,7 +399,7 @@ Configuration resourceusage:cpuCombined:falseenabled:trueposition:top:1left:1hei
       
       <guid>https://wtfutil.com/modules/rollbar/</guid>
       <description>Displays item information for your rollbar account.
-Configuration rollbar:accessToken:&amp;#34;d23*******************************************3r2&amp;#34;enabled:trueprojectOwner:&amp;#34;ENCOM&amp;#34;projectName:&amp;#34;MCP&amp;#34;activeOnly:trueassignedToName:&amp;#34;dillinger&amp;#34;count:3position:top:4left:1height:2width:2refreshInterval:900 Screenshots Attributes   Name Description Value     accessToken Your Rollbar project access token (only needs read capabilities).    activeOnly Only show items that are active. true, false   assignedToName Set this to your username if you only want to see items assigned to you. A string of your username   border Optional Whether or not to draw this widget with a border.</description>
+Configuration Copy   rollbar: accessToken: &amp;#34;d23*******************************************3r2&amp;#34; enabled: true projectOwner: &amp;#34;ENCOM&amp;#34; projectName: &amp;#34;MCP&amp;#34; activeOnly: true assignedToName: &amp;#34;dillinger&amp;#34; count: 3 position: top: 4 left: 1 height: 2 width: 2 refreshInterval: 900    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/rollbar/</description>
     </item>
     
     <item>
@@ -408,7 +409,7 @@ Configuration rollbar:accessToken:&amp;#34;d23**********************************
       
       <guid>https://wtfutil.com/modules/security/</guid>
       <description>Displays some general information about the state of the machine&amp;rsquo;s wifi connection, firewall, DNS settings, and logged-in users.
-Wifi Network The name of the current network Whether or not the network uses encryption and if so, what flavour  Firewall Whether or not the firewall is enabled Whether or not Stealth Mode is enabled  DNS Which DNS resolvers (servers) the machine is configured to use  Users  Which users are logged into the machine.</description>
+Wifi Network Firewall DNS Users Configuration Copy   security: enabled: true position: top: 1 left: 2 height: 1 width: 1 refreshInterval: 3600    Screenshots Attributes For Linux Firewall Users For most Linux distributions, to get the correct firewall settings by default, the program needs to be run as root. This is obviously a bad idea.</description>
     </item>
     
     <item>
@@ -418,7 +419,7 @@ Wifi Network The name of the current network Whether or not the network uses enc
       
       <guid>https://wtfutil.com/modules/spotify/</guid>
       <description>Control the Spotify client.
-Configuration spotify:enabled:truecolors:label:&amp;#34;green&amp;#34;text:&amp;#34;white&amp;#34;position:top:1left:2height:1width:1refreshInterval:0 Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.label Optional The color for labels. Default: green. Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.text Optional The color for text. Default: white. Any X11 color name or long-form hex value (i.</description>
+Configuration Copy   spotify: enabled: true colors: label: &amp;#34;green&amp;#34; text: &amp;#34;white&amp;#34; position: top: 1 left: 2 height: 1 width: 1 refreshInterval: 0    Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/spotify/</description>
     </item>
     
     <item>
@@ -428,7 +429,7 @@ Configuration spotify:enabled:truecolors:label:&amp;#34;green&amp;#34;text:&amp;
       
       <guid>https://wtfutil.com/modules/subreddit/</guid>
       <description>Displays stories from a specific subreddit.
-Configuration subreddit:enabled:truenumberOfPosts:10position:top:4left:1height:1width:2sortOrder:topsubreddit:&amp;#34;news&amp;#34;topTimePeriod:monthrefreshInterval:900 Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget.</description>
+Configuration Copy   subreddit: enabled: true numberOfPosts: 10 position: top: 4 left: 1 height: 1 width: 2 sortOrder: top subreddit: &amp;#34;news&amp;#34; topTimePeriod: month refreshInterval: 900    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/subreddit/</description>
     </item>
     
     <item>
@@ -438,7 +439,7 @@ Configuration subreddit:enabled:truenumberOfPosts:10position:top:4left:1height:1
       
       <guid>https://wtfutil.com/modules/textfile/</guid>
       <description>Displays the contents of the specified text file in the widget.
-Configuration textfile:enabled:truefilePaths:- &amp;#34;~/Desktop/notes.md&amp;#34;- &amp;#34;~/.config/wtf/config.yml&amp;#34;format:trueformatStyle:&amp;#34;dracula&amp;#34;position:top:5left:4height:2width:1refreshInterval:15wrapText:true Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   filePaths An array of paths to the files to be displayed in the widget.</description>
+Configuration Copy   textfile: enabled: true filePaths: - &amp;#34;~/Desktop/notes.md&amp;#34; - &amp;#34;~/.config/wtf/config.yml&amp;#34; format: true formatStyle: &amp;#34;dracula&amp;#34; position: top: 5 left: 4 height: 2 width: 1 refreshInterval: 15 wrapText: true    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/textfile/</description>
     </item>
     
     <item>
@@ -448,9 +449,7 @@ Configuration textfile:enabled:truefilePaths:- &amp;#34;~/Desktop/notes.md&amp;#
       
       <guid>https://wtfutil.com/modules/todo/</guid>
       <description>An interactive todo list.
-Configuration todo:checkedIcon:&amp;#34;X&amp;#34;colors:checked:grayhighlight:fore:&amp;#34;black&amp;#34;back:&amp;#34;orange&amp;#34;enabled:truefilename:&amp;#34;todo.yml&amp;#34;position:top:2left:2height:2width:1refreshInterval:3600 Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false 
- colors.checked The foreground color for checked rows. Any X11 color name. 
- colors.highlight.fore The foreground color for the currently-selected row. Any X11 color name.   colors.highlight.back The background color for the currently-selected row.</description>
+Configuration Copy   todo: checkedIcon: &amp;#34;X&amp;#34; colors: checked: gray highlight: fore: &amp;#34;black&amp;#34; back: &amp;#34;orange&amp;#34; enabled: true filename: &amp;#34;todo.yml&amp;#34; position: top: 2 left: 2 height: 2 width: 1 refreshInterval: 3600    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/todo/</description>
     </item>
     
     <item>
@@ -460,7 +459,7 @@ Configuration todo:checkedIcon:&amp;#34;X&amp;#34;colors:checked:grayhighlight:f
       
       <guid>https://wtfutil.com/modules/todoist/</guid>
       <description>Displays all items on specified project.
-Configuration todoist:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:0left:2height:1width:1projects:- 122247497refreshInterval:3600 Screenshots Attributes   Name Description Value     apiKey Your Todoist API token.  Your API key or leave it empty to use the WTF_TODOIST_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration Copy   todoist: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 2 height: 1 width: 1 projects: - 122247497 refreshInterval: 3600    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/todoist/</description>
     </item>
     
     <item>
@@ -470,7 +469,7 @@ Configuration todoist:apiKey:&amp;#34;p0d13*************************************
       
       <guid>https://wtfutil.com/modules/transmission/</guid>
       <description>View and manage your Transmission bittorrent daemon. This widget shows you the currently-loaded torrents, their &amp;ldquo;download complete&amp;rdquo; percentage, and their seeding status.
-Configuration transmission:enabled:truehost:&amp;#34;192.168.1.5&amp;#34;password:&amp;#34;passwordpassword&amp;#34;position:top:4left:3width:2height:1refreshInterval:3username:&amp;#34;transmission&amp;#34; Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false.</description>
+Configuration Copy   transmission: enabled: true host: &amp;#34;192.168.1.5&amp;#34; password: &amp;#34;passwordpassword&amp;#34; position: top: 4 left: 3 width: 2 height: 1 refreshInterval: 3 username: &amp;#34;transmission&amp;#34;    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/transmission/</description>
     </item>
     
     <item>
@@ -481,7 +480,7 @@ Configuration transmission:enabled:truehost:&amp;#34;192.168.1.5&amp;#34;passwor
       <guid>https://wtfutil.com/modules/travisci/</guid>
       <description>Displays build information for your Travis CI account.
 Configuration This module pulls information from api.travis-ci.com (when pro: true) or api.travis-ci.org (when pro: false)
-travisci:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:truecompact:truelimit:8sort_by:&amp;#34;id:desc&amp;#34;position:top:4left:1height:1width:2pro:falserefreshInterval:900 Screenshots Attributes   Name Description Value     apiKey Your TravisCI API token.  Your API key or leave it empty to use the WTF_TRAVIS_API_TOKEN environment variable.    baseURL Optional Your TravisCI Enterprise API URL. A valid URL. Can also be set via the WTF_TRAVIS_BASE_URL environment variable.</description>
+Copy   travisci: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true compact: true limit: 8 sort_by: &amp;#34;id:desc&amp;#34; position: top: 4 left: 1 height: 1 width: 2 pro: false refreshInterval: 900    Screenshots Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/travisci/</description>
     </item>
     
     <item>
@@ -491,8 +490,8 @@ travisci:apiKey:&amp;#34;p0d13*********************************************c3&am
       
       <guid>https://wtfutil.com/modules/trello/</guid>
       <description>Displays all Trello cards on specified lists.
-Configuration Single Trello List trello:accessToken:&amp;#34;d23*******************************************3r2&amp;#34;apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;board:Mainenabled:truelist:&amp;#34;Todo&amp;#34;position:height:1left:2top:0width:1refreshInterval:3600username:myname Multiple Trello Lists If you want to monitor multiple Trello lists, use the following configuration (note the difference in list):
-trello:accessToken:&amp;#34;d23*******************************************3r2&amp;#34;apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;board:Mainenabled:truelist:[&amp;#34;Todo&amp;#34;,&amp;#34;Done&amp;#34;]position:height:1left:2top:0width:1refreshInterval:3600username:myname Screenshots Attributes   Name Description Value     accessToken Your Trello access token. Leave empty to use the WTF_TRELLO_ACCESS_TOKEN environment variable.   apiKey Your Trello API token.  Your API key or leave it empty to use the WTF_TRELLO_APP_KEY environment variable.</description>
+Configuration Single Trello List Copy   trello: accessToken: &amp;#34;d23*******************************************3r2&amp;#34; apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; board: Main enabled: true list: &amp;#34;Todo&amp;#34; position: height: 1 left: 2 top: 0 width: 1 refreshInterval: 3600 username: myname    Multiple Trello Lists If you want to monitor multiple Trello lists, use the following configuration (note the difference in list):
+Copy   trello: accessToken: &amp;#34;d23*******************************************3r2&amp;#34; apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; board: Main enabled: true list: [&amp;#34;Todo&amp;#34;, &amp;#34;Done&amp;#34;] position: height: 1 left: 2 top: 0 width: 1 refreshInterval: 3600 username: myname    Screenshots Attributes Source Code https://github.</description>
     </item>
     
     <item>
@@ -502,8 +501,7 @@ trello:accessToken:&amp;#34;d23*******************************************3r2&am
       
       <guid>https://wtfutil.com/modules/victorops/</guid>
       <description>Connects to the VictorOps API and determines who is on call
-Configuration victorops:apiID:a3c5dd63apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:0left:1height:2width:1refreshInterval:3600team:devops Attributes   Name Description Value     apiID Your VictorOps API ID token. Leave this empty to use the WTF_VICTOROPS_API_ID environment variable. 
- apiKey Your VictorOps API token.  Your API key or leave it empty to use the WTF_VICTOROPS_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border.</description>
+Configuration Copy   victorops: apiID: a3c5dd63 apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 1 height: 2 width: 1 refreshInterval: 3600 team: devops    Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/victorops/</description>
     </item>
     
     <item>
@@ -513,7 +511,7 @@ Configuration victorops:apiID:a3c5dd63apiKey:&amp;#34;p0d13*********************
       
       <guid>https://wtfutil.com/modules/zendesk/</guid>
       <description>Displays Zendesk tickets.
-Configuration zendesk:apiKey:&amp;#34;p0d13*********************************************c3&amp;#34;enabled:trueposition:top:0left:2height:1width:1status:&amp;#34;new&amp;#34;subdomain:&amp;#34;your_domain&amp;#34;username:&amp;#34;your_email@acme.com&amp;#34; Attributes   Name Description Value     apiKey Your Zendesk API token.  Your API key or leave it empty to use the ZENDESK_API environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration Copy   zendesk: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 2 height: 1 width: 1 status: &amp;#34;new&amp;#34; subdomain: &amp;#34;your_domain&amp;#34; username: &amp;#34;your_email@acme.com&amp;#34;    Attributes Keyboard Controls Source Code https://github.com/wtfutil/wtf/tree/master/modules/zendesk/</description>
     </item>
     
   </channel>

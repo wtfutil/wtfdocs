@@ -9,7 +9,7 @@ An interactive todo list.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 todo:
   checkedIcon: "X"
   colors:
@@ -25,7 +25,7 @@ todo:
     height: 2
     width: 1
   refreshInterval: 3600
-```
+{{< /code >}}
 
 ## Screenshots
 

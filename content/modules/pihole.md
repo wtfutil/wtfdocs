@@ -9,7 +9,7 @@ Displays information about a running [Pi-hole](https://pi-hole.net/) server.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 pihole:
   enabled: true
   position:
@@ -25,7 +25,7 @@ pihole:
   showTopClients: 5
   maxClientWidth: 20
   maxDomainWidth: 20
-```
+{{< /code >}}
 
 ## Screenshots
 

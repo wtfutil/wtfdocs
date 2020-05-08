@@ -9,7 +9,7 @@ Displays stories from a specific subreddit.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 subreddit:
   enabled: true
   numberOfPosts: 10
@@ -22,7 +22,7 @@ subreddit:
   subreddit: "news"
   topTimePeriod: month
   refreshInterval: 900
-```
+{{< /code >}}
 
 ## Screenshots
 

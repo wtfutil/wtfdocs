@@ -10,7 +10,7 @@ With v0.24.0, WTF now has better support for theme-like colour settings. It's fa
 
 By way of example, if you're running v0.24 or later, drop this into your config at the top, replace your existing `colors:` YAML block with the following and you'll end up with a facsimile of an old-school green monochrome monitor display (you may need to restart WTF to get changes to take effect).
 
-```yaml
+{{< code lang="yaml" >}}
   colors:
     background: "transparent"
     border:

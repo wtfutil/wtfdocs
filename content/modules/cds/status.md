@@ -11,7 +11,7 @@ Display current [CDS](https://ovh.github.io/cds/) status. This is useful for CDS
 
 ## Configuration
 
-```yml
+{{< code lang="yaml" >}}
 cdsStatus:
   enabled: true
   position:
@@ -22,7 +22,7 @@ cdsStatus:
   refreshInterval: 8
   apiURL: https://api.cds.localhost.local
   token: xxxxxxxxxxxx
-```
+{{< /code >}}
 
 {{% attributes %}}
   <tr>
@@ -42,4 +42,12 @@ cdsStatus:
   {{< attributes/title >}}
 {{% /attributes %}}
 
+<<<<<<< HEAD
 {{% sourcePath module="cds/status" %}}
+=======
+## Source Code
+
+{{< code lang="bash" >}}
+wtf/modules/cds/status/
+{{< /code >}}
+>>>>>>> Fix syntax highlighting

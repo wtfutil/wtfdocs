@@ -7,7 +7,7 @@ weight: 1
 
 ## Homebrew
 
-```console
+{{< code lang="bash" >}}
 brew tap wtfutil/wtfutil
 brew install wtfutil
 
@@ -18,13 +18,13 @@ wtfutil
 
 Grab the latest version from here:
 
-```bash
+{{< code lang="bash" >}}
 https://github.com/wtfutil/wtf/releases
 ```
 
 expand it, and `cd` into the resulting directory. Then run:
 
-```bash
+{{< code lang="bash" >}}
 ./wtfutil
 ```
 
@@ -34,7 +34,7 @@ and that should also do it.
 
 Download the source code repo and install the dependencies:
 
-```bash
+{{< code lang="bash" >}}
 # Set the Go proxy variable to GoCenter
 export GOPROXY="https://gocenter.io"
 
@@ -46,5 +46,6 @@ cd $GOPATH/src/github.com/wtfutil/wtf
 make install
 make run
 ```
+
 and that should do it.
 

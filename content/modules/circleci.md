@@ -9,7 +9,7 @@ Displays build information for your CircleCI account.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 circleci:
   apiKey: "p0d13*********************************************c3"
   enabled: true
@@ -19,7 +19,7 @@ circleci:
     height: 1
     width: 2
   refreshInterval: 900
-```
+{{< /code >}}
 
 ## Screenshots
 

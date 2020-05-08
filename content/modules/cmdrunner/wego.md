@@ -13,7 +13,7 @@ weather, from a variety of weather services
 
 ## Config Example
 
-```yaml
+{{< code lang="yaml" >}}
 weather:
   args: ["0"]
   cmd: "wego"
@@ -25,4 +25,4 @@ weather:
     height: 1
     width: 2
   refreshInterval: 100
-```
+{{< /code >}}

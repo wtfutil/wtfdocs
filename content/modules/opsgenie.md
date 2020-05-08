@@ -13,7 +13,7 @@ See <a href="https://docs.opsgenie.com/docs/who-is-on-call-api">Who is on Call A
 
 ### Single Schedule
 
-```yaml
+{{< code lang="yaml" >}}
 opsgenie:
   apiKey: "p0d13*********************************************c3"
   displayEmpty: false
@@ -27,11 +27,11 @@ opsgenie:
   region: "us"
   schedule: "Primary"
   scheduleIdentifierType: "id"
-```
+{{< /code >}}
 
 ### Multiple Schedules
 
-```yaml
+{{< code lang="yaml" >}}
 opsgenie:
   apiKey: "p0d13*********************************************c3"
   displayEmpty: false
@@ -47,7 +47,7 @@ opsgenie:
   - "Primary"
   - "Secondary"
   scheduleIdentifierType: "id"
-```
+{{< /code >}}
 
 ## Screenshots
 

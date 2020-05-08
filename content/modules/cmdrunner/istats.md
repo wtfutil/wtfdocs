@@ -13,7 +13,7 @@ system stats on OSX.
 
 ## Config Example
 
-```yaml
+{{< code lang="yaml" >}}
 istats:
   args: ["all"]
   cmd: "istats"
@@ -25,5 +25,5 @@ istats:
     height: 2
     width: 2
   refreshInterval: 1
-```
+{{< /code >}}
 

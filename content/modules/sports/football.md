@@ -41,7 +41,7 @@ Currently this widget only support below mentioned league/competition, You shoul
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 football:
   enabled: true
   apiKey: "*************"
@@ -57,7 +57,7 @@ football:
     width: 3
   refreshInterval: 1000
   title: "⚽"
-```
+{{< /code >}}
 
 | Name          |                                                                                Description                                                                               | Value                                                                                   |
 |---------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|-----------------------------------------------------------------------------------------|

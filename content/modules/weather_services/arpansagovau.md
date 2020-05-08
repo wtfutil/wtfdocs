@@ -19,7 +19,7 @@ Interpreting the information:
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
     arpansagovau:
       enabled: true
       locationid: "Sydney"
@@ -29,7 +29,8 @@ Interpreting the information:
         left: 0
         height: 1
         width: 1
-```
+{{< /code >}}
+
 {{% attributes %}}
   <tr>
     <td>`locationid`</td>
@@ -41,4 +42,12 @@ Interpreting the information:
 
 {{% /attributes %}}
 
+<<<<<<< HEAD
 {{% sourcePath module="weatherservices/arpansagovau" %}}
+=======
+## Source Code
+
+{{< code lang="bash" >}}
+wtf/modules/weatherservices/arpansagovau/
+{{< /code >}}
+>>>>>>> Fix syntax highlighting

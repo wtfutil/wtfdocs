@@ -11,7 +11,7 @@ Displays your current IP address information, from ipinfo.io.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 ipinfo:
   colors:
     name: red
@@ -23,7 +23,7 @@ ipinfo:
     height: 1
     width: 1
   refreshInterval: 150
-```
+{{< /code >}}
 
 ## Screenhots
 

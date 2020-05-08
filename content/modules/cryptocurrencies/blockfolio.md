@@ -9,7 +9,7 @@ Display your Blockfolio crypto holdings.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 blockfolio:
   colors:
     name: blue
@@ -24,7 +24,7 @@ blockfolio:
     width: 1
     height: 1
   refreshInterval: 400
-```
+{{< /code >}}
 
 ## Screenshots
 
@@ -47,4 +47,12 @@ blockfolio:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
+<<<<<<< HEAD
 {{% sourcePath module="cryptoexchanges/blockfolio" %}}
+=======
+## Source
+
+{{< code lang="bash" >}}
+wtf/modules/cryptoexchanges/blockfolio/
+{{< /code >}} 
+>>>>>>> Fix syntax highlighting

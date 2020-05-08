@@ -9,7 +9,7 @@ Runs a terminal command on a schedule.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 cmdrunner:
   args: ["-g", "batt"]
   cmd: "pmset"
@@ -20,7 +20,7 @@ cmdrunner:
     height: 1
     width: 3
   refreshInterval: 30
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/custom name="args" desc="The arguments to the command, with each item as an element in an array." value="" >}}

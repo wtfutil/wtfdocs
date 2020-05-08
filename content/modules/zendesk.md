@@ -9,7 +9,7 @@ Displays Zendesk tickets.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 zendesk:
   apiKey: "p0d13*********************************************c3"
   enabled: true
@@ -21,7 +21,7 @@ zendesk:
   status: "new"
   subdomain: "your_domain"
   username: "your_email@acme.com"
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/apikey name="Zendesk" link="" envvar="ZENDESK_API" >}}

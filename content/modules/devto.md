@@ -9,7 +9,7 @@ Displays stories from The Practical DEV [dev.to](https://dev.to).
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 devto:
   enabled: true
   numberOfArticles: 10
@@ -21,7 +21,8 @@ devto:
   contentTag: "showdev" 
   contentUsername: "victoravelar"
   contentState: "rising"
-```
+{{< /code >}}
+
 ## Screenshots
 
 <img class="screenshot" src="/imgs/modules/devto.png" width="100" height="100" alt="dev.to logo"/>

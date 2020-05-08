@@ -20,7 +20,7 @@ You can run `go generate -run=text` to create a new widget called **NewTextWidge
 
 For example, to generate a new widget called _MySuperAwesomeWidget_ on macOs or linux, the command would be:
 
-```bash
+{{< code lang="bash" >}}
 # as a single line
 WTF_WIDGET_NAME=MySuperAwesomeWidget go generate -run=text
 # setting the name separately
@@ -30,7 +30,7 @@ go generate -run=text
 
 The equivalent using Windows PowerShell would be
 
-```powershell
+{{< code lang="powershell" >}}
 $env:WTF_WIDGET_NAME = "MySuperAwesomeWidget"
 go generate -run=text
 ```
@@ -39,6 +39,6 @@ The new widget is generated using the template in `textwidget.tpl`
 
 ## Source Code
 
-```bash
+{{< code lang="bash" >}}
 wtf/generator/
 ```

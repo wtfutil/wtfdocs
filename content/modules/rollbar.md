@@ -9,7 +9,7 @@ Displays item information for your rollbar account.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 rollbar:
   accessToken: "d23*******************************************3r2"
   enabled: true
@@ -24,7 +24,7 @@ rollbar:
     height: 2
     width: 2
   refreshInterval: 900
-```
+{{< /code >}}
 
 ## Screenshots
 

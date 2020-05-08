@@ -10,7 +10,7 @@ With the release of [v0.15.0](https://github.com/wtfutil/wtf/releases/tag/v0.15.
 
 To execute it, you must now use:
 
-```console
+{{< code lang="bash" >}}
 wtfutil
 ```
 

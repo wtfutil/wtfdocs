@@ -37,7 +37,7 @@ show hidden users.</li>
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 security:
   enabled: true
   position:
@@ -46,7 +46,7 @@ security:
     height: 1
     width: 1
   refreshInterval: 3600
-```
+{{< /code >}}
 
 ## Screenshots
 
@@ -64,7 +64,7 @@ security:
 For most Linux distributions, to get the correct firewall settings by default, the program needs to be run as root. 
 This is obviously a bad idea. Here's is one potetial solution:
 
-```bash
+{{< code lang="bash" >}}
 sudo visudo -f /etc/sudoers.d/ufwstatus
 
 # Then add the following to that file:
@@ -74,9 +74,11 @@ Cmnd_Alias      UFWSTATUS = /usr/sbin/ufw status
 
 # Group privilege specification
 %ufwstatus      ALL=NOPASSWD: UFWSTATUS
-```
+{{< /code >}}
+
 Now run:
-```bash
+
+{{< code lang="bash" >}}
 # Add new group: "ufwstatus"
 sudo groupadd -r ufwstatus
 
@@ -85,7 +87,7 @@ sudo gpasswd --add xxxx ufwstatus
 
 # We add all "root" user sbin paths for convenience
 export PATH=${PATH}:/usr/local/sbin:/usr/sbin:/sbin
-```
+{{< /code >}}
 
 Thanks to [@E3V3A](https://github.com/E3V3A) for <a href="">Security Widget gives wrong firewall info for non-root linux users</a> which described the original issue and solution.
 

@@ -18,7 +18,8 @@
       
       <guid>https://wtfutil.com/modules/cryptocurrencies/bittrex/</guid>
       <description>Get the last 24 hour summary of cryptocurrencies market using Bittrex.
-Configuration bittrex:colors:base:name:orangedisplayName:redmarket:name:redfield:whitevalue:greenenabled:trueposition:top:-2left:2height:3width:1refreshInterval:5summary:BTC:displayName:Bitcoinmarket:- LTC- ETH Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.base.dispayName  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.base.name  Any X11 color name or long-form hex value (i.e.: #ff0000).</description>
+Configuration Copy   bittrex: colors: base: name: orange displayName: red market: name: red field: white value: green enabled: true position: top: -2 left: 2 height: 3 width: 1 refreshInterval: 5 summary: BTC: displayName: Bitcoin market: - LTC - ETH    Screenshots Attributes &amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD
+Source Code https://github.com/wtfutil/wtf/tree/master/modules/cryptoexchanges/bittrex/ Source Code Copy   wtf/modules/cryptoexchanges/bittrex/           Fix syntax highlighting</description>
     </item>
     
     <item>
@@ -28,7 +29,9 @@ Configuration bittrex:colors:base:name:orangedisplayName:redmarket:name:redfield
       
       <guid>https://wtfutil.com/modules/cryptocurrencies/blockfolio/</guid>
       <description>Display your Blockfolio crypto holdings.
-Configuration blockfolio:colors:name:bluegrows:greendrop:reddevice_token:&amp;#34;device token&amp;#34;displayHoldings:trueenabled:trueposition:top:3left:1width:1height:1refreshInterval:400 Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.drop  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.grows  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.name  Any X11 color name or long-form hex value (i.</description>
+Configuration Copy   blockfolio: colors: name: blue grows: green drop: red device_token: &amp;#34;device token&amp;#34; displayHoldings: true enabled: true position: top: 3 left: 1 width: 1 height: 1 refreshInterval: 400    Screenshots Attributes &amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD
+Source Code https://github.com/wtfutil/wtf/tree/master/modules/cryptoexchanges/blockfolio/ Source Copy   wtf/modules/cryptoexchanges/blockfolio/           Fix syntax highlighting
+       </description>
     </item>
     
     <item>
@@ -38,7 +41,7 @@ Configuration blockfolio:colors:name:bluegrows:greendrop:reddevice_token:&amp;#3
       
       <guid>https://wtfutil.com/modules/cryptocurrencies/cryptolive/</guid>
       <description>Compare crypto currencies using CryptoCompare.
-Configuration cryptolive:enabled:trueposition:top:5left:2height:1width:2updateInterval:15currencies:BTC:displayName:Bitcointo:- USD- EUR- ETH- LTC- DOGELTC:displayName:Ethereumto:- USD- EUR- BTCtop:BTC:displayName:Bitcoinlimit:5to:- USDcolors:from:name:coraldisplayName:greyto:name:whiteprice:greentop:from:name:greydisplayName:coralto:name:redfield:whitevalue:green Screenshots Attributes   Name Description Value     border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.from.displayName  Any X11 color name or long-form hex value (i.e.: #ff0000).   colors.from.name  Any X11 color name or long-form hex value (i.</description>
+Configuration Copy   cryptolive: enabled: true position: top: 5 left: 2 height: 1 width: 2 updateInterval: 15 currencies: BTC: displayName: Bitcoin to: - USD - EUR - ETH - LTC - DOGE LTC: displayName: Ethereum to: - USD - EUR - BTC top: BTC: displayName: Bitcoin limit: 5 to: - USD colors: from: name: coral displayName: grey to: name: white price: green top: from: name: grey displayName: coral to: name: red field: white value: green    Screenshots Attributes &amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD</description>
     </item>
     
   </channel>

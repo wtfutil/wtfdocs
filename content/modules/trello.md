@@ -11,7 +11,7 @@ Displays all Trello cards on specified lists.
 
 ### Single Trello List
 
-```yaml
+{{< code lang="yaml" >}}
 trello:
   accessToken: "d23*******************************************3r2"
   apiKey: "p0d13*********************************************c3"
@@ -25,14 +25,14 @@ trello:
     width: 1
   refreshInterval: 3600
   username: myname
-```
+{{< /code >}}
 
 ### Multiple Trello Lists
 
 If you want to monitor multiple Trello lists, use the following
 configuration (note the difference in `list`):
 
-```yaml
+{{< code lang="yaml" >}}
 trello:
   accessToken: "d23*******************************************3r2"
   apiKey: "p0d13*********************************************c3"
@@ -46,7 +46,7 @@ trello:
     width: 1
   refreshInterval: 3600
   username: myname
-```
+{{< /code >}}
 
 ## Screenshots
 

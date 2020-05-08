@@ -9,7 +9,7 @@ Displays information about currently-running Docker processes.
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 docker:
   type: docker
   enabled: true
@@ -20,7 +20,7 @@ docker:
     height: 3
     width: 3
   refreshInterval: 1
-```
+{{< /code >}}
 
 ## Screenshots
 

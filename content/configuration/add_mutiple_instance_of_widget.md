@@ -8,7 +8,7 @@ draft: false
 
 To add more than one instance of a particular widget, for example, if you want two Todo widgets, you can do so by adding the `type` property to the entries in your `config.yml` file. Below is an example for Todo:
 
-```yaml
+{{< code lang="yaml" >}}
 todo1:
   checkedIcon: "X"
   colors:
@@ -26,7 +26,8 @@ todo1:
   refreshInterval: 3600
   type: todo
 ```
-```yaml
+
+{{< code lang="yaml" >}}
 todo2:
   checkedIcon: "X"
   colors:

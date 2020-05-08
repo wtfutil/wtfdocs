@@ -17,11 +17,8 @@
       <pubDate>Fri, 18 May 2018 09:59:40 -0700</pubDate>
       
       <guid>https://wtfutil.com/getting_started/installation/</guid>
-      <description>Homebrew brew tap wtfutil/wtfutil brew install wtfutil wtfutil As a Binary Grab the latest version from here:
-https://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:
-./wtfutil and that should also do it.
-From Source Download the source code repo and install the dependencies:
-# Set the Go proxy variable to GoCenter export GOPROXY=&amp;#34;https://gocenter.io&amp;#34; # Enable Go modules export GO111MODULE=on go get -u github.com/wtfutil/wtf cd $GOPATH/src/github.com/wtfutil/wtf make install make run and that should do it.</description>
+      <description>Homebrew Copy   brew tap wtfutil/wtfutil brew install wtfutil wtfutil As a Binary Grab the latest version from here:
+   </description>
     </item>
     
     <item>
@@ -30,9 +27,8 @@ From Source Download the source code repo and install the dependencies:
       <pubDate>Sun, 28 Jan 2018 09:59:40 -0700</pubDate>
       
       <guid>https://wtfutil.com/getting_started/uninstall/</guid>
-      <description>Homebrew brew uninstall wtfutil Remove the Binary and Configuration WTF ships as a single binary named wtfutil. Assuming you have installed the binary, run:
-rm $(which wtfutil) If you have configured WTF, you will also want to delete your configs:
-rm ~/.config/wtf and that should also do it.</description>
+      <description>Homebrew Copy   brew uninstall wtfutil Remove the Binary and Configuration WTF ships as a single binary named wtfutil. Assuming you have installed the binary, run:
+   </description>
     </item>
     
     <item>
@@ -45,7 +41,7 @@ rm ~/.config/wtf and that should also do it.</description>
 Examples: New Relic, Git, Weather.
 Widget The onscreen representation of a Module. The widget is responsible for being the interface between the app and the data collection.
 Widgets are defined by a required widget.go file in a Module.
-WTF An acronym for &amp;ldquo;What The Fsck?&amp;rdquo;, as in &amp;ldquo;What the fsck are all these browser tabs open for?</description>
+WTF An acronym for &amp;ldquo;What The Fsck?&amp;quot;, as in &amp;ldquo;What the fsck are all these browser tabs open for?</description>
     </item>
     
   </channel>

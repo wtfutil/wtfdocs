@@ -10,7 +10,7 @@ Displays a list of all the installed [Homebrew](https://brew.sh) recipes that ha
 
 ## Config Example
 
-```yaml
+{{< code lang="yaml" >}}
 brew_outdated:
   args: ["outdated"]
   cmd: "brew"
@@ -21,5 +21,5 @@ brew_outdated:
     width: 2
     height: 1
   type: cmdrunner
-```
+{{< /code >}}
 

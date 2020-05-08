@@ -21,9 +21,9 @@ To make this work, you'll need a google API credential, link it to google analyt
 
 The newly created service account will have an email address that looks similar to:
 
-```console
+{{< code lang="bash" >}}
 something@PROJECT-ID.iam.gserviceaccount.com
-```
+{{< /code >}}
 
 Use this email address to add a user to the [Google analytics view](https://analytics.google.com/analytics/web/) you want to access via the API (admin > user management > add users). Only Read & Analyze permissions are needed. Get the website viewID and put it in the config file.
 
@@ -33,7 +33,7 @@ This module also supports displaying the number of visitors on each view live vi
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 googleanalytics:
   enabled: true
   enableRealtime: true
@@ -48,7 +48,7 @@ googleanalytics:
   viewIds:
     tessellation: "00000000"
     dylanbartels.com: "111111111"
-```
+{{< /code >}}
 
 ## Screenshots
 

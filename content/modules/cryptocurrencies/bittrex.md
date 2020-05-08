@@ -9,7 +9,7 @@ Get the last 24 hour summary of cryptocurrencies market using [Bittrex](https://
 
 ## Configuration
 
-```yaml
+{{< code lang="yaml" >}}
 bittrex:
   colors:
     base:
@@ -32,7 +32,7 @@ bittrex:
       market:
       - LTC
       - ETH
-```
+{{< /code >}}
 
 ## Screenshots
 
@@ -50,4 +50,12 @@ bittrex:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
+<<<<<<< HEAD
 {{% sourcePath module="cryptoexchanges/bittrex" %}}
+=======
+## Source Code
+
+{{< code lang="bash" >}}
+wtf/modules/cryptoexchanges/bittrex/
+{{< /code >}}
+>>>>>>> Fix syntax highlighting
