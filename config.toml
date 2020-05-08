@@ -7,7 +7,7 @@ publishDir = "./docs"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 pygmentsStyle = "monokailight"
-theme = "docdock"
+theme = "ace-documentation"
 title = "WTF - the terminal dashboard"
 
 [markup]
