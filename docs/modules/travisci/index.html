@@ -748,11 +748,112 @@
 
 
 <h2 id="screenshots">Screenshots</h2>
-<p><!-- raw HTML omitted --></p>
+<p><img class="screenshot" src="/imgs/modules/travisci.png" width="640" height="187" alt="travisci screenshot" /></p>
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`apiKey`</td>
+    <td>Your <a href="https://developer.travis-ci.org/authentication">TravisCI API</a> token.</td>
+    <td>
+        Your API key **or** leave it empty to use the `WTF_TRAVIS_API_TOKEN` environment variable.
+    </td>
+</tr>
+  <tr>
+    <td>`baseURL`</td>
+    <td>_Optional_ Your TravisCI Enterprise API URL.</td>
+    <td>A valid URL. Can also be set via the `WTF_TRAVIS_BASE_URL` environment variable.</td>
+</tr>
+  <tr>
+    <td>`border`</td>
+    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`compact`</td>
+    <td>When true, displays one line per build entry. When false, displays two lines per entry. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`sort_by`</td>
+    <td>Sortable by: id, created_at, started_at, finished_at, number, append :desc to any attribute to reverse order. The default value is id:desc. See https://developer.travis-ci.com/resource/builds for more information.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`focusChar`</td>
+    <td>_Optional_ Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`pro`</td>
+    <td>Determines whether or not this module will use the Pro version of Travis CI.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+</table>
 <h2 id="keyboard-controls">Keyboard Controls</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+      <tr>
+    <td>`/`</td>
+    <td>Open/close the widget's help modal</td>
+</tr>
+  <tr>
+    <td>`[return]`</td>
+    <td>Open the selected build in the browser</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`j`</td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td>`k`</td>
+    <td>Select the previous item in the list</td>
+</tr>
+  <tr>
+    <td>`r`</td>
+    <td>Refresh the data</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`↓`</td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td>`↑`</td>
+    <td>Select the previous item in the list</td>
+</tr>
+</table>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/travisci/">https://github.com/wtfutil/wtf/tree/master/modules/travisci/</a></p>
 

@@ -749,11 +749,149 @@
 
 
 <h2 id="screenshots">Screenshots</h2>
-<p><!-- raw HTML omitted --></p>
+<p><img class="screenshot" src="/imgs/modules/todo.png" width="320" height="388" alt="todo screenshot" /></p>
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`border`</td>
+    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`colors.checked`</td>
+    <td>The foreground color for checked rows.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
+  </tr>
+  <tr>
+    <td>`colors.highlight.fore`</td>
+    <td>The foreground color for the currently-selected row.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr>
+<tr>
+    <td>`colors.highlight.back`</td>
+    <td>The background color for the currently-selected row.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr>
+  <tr>
+    <td>`checkedIcon`</td>
+    <td>_Optional_ The icon used to denote a &#39;checked&#39; todo item.</td>
+    <td>Any displayable unicode character.</td>
+</tr>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`filename`</td>
+    <td>The name for the todo file.</td>
+    <td>Any valid filename, ideally ending in `yml`.</td>
+</tr>
+  <tr>
+    <td>`focusChar`</td>
+    <td>_Optional_ Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+</table>
 <h2 id="keyboard-controls">Keyboard Controls</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+      <tr>
+    <td>`/`</td>
+    <td>Open/close the widget's help modal</td>
+</tr>
+  <tr>
+    <td>`[esc]`</td>
+    <td>Remove focus from the selected item</td>
+</tr>
+  <tr>
+    <td>`[esc]`</td>
+    <td>Close the modal item dialog without saving changes</td>
+</tr>
+  <tr>
+    <td>`[return]`</td>
+    <td>Edit the selected item</td>
+</tr>
+  <tr>
+    <td>`[return]`</td>
+    <td>Close the modal item dialog and save changes</td>
+</tr>
+  <tr>
+    <td>`[space]`</td>
+    <td>Check/uncheck the selected item</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`j`</td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td>`k`</td>
+    <td>Select the previous item in the list</td>
+</tr>
+  <tr>
+    <td>`n`</td>
+    <td>Create a new list item</td>
+</tr>
+  <tr>
+    <td>`o`</td>
+    <td>Opens the todo list file in whichever text editor is associated with that file type</td>
+</tr>
+  <tr>
+    <td>`r`</td>
+    <td>Refresh the data</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`↓`</td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td>`↑`</td>
+    <td>Select the previous item in the list</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`Ctrl-d`</td>
+    <td>Delete the selected item</td>
+</tr>
+  <tr>
+    <td>`Ctrl-j`</td>
+    <td>Move the selected item down the list</td>
+</tr>
+  <tr>
+    <td>`Ctrl-k`</td>
+    <td>Move the selected item up the list</td>
+</tr>
+</table>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/todo/">https://github.com/wtfutil/wtf/tree/master/modules/todo/</a></p>
 

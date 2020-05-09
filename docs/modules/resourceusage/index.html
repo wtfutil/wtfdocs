@@ -745,9 +745,67 @@
 
 
 <h2 id="screenshots">Screenshots</h2>
-<p><!-- raw HTML omitted --></p>
+<p><img class="screenshot" src="/imgs/modules/resource_usage.png" width="279" height="193" alt="resource usage screenshot" /></p>
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`border`</td>
+    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`cpuCombined`</td>
+    <td>_Optional_ Whether or not to display the CPUs as one combined value. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`graphIcon`</td>
+    <td>_Optional_ The character to use to display stars in the graph. Default: `|`.</td>
+    <td>Any visible alphanumeric character (but emoji will probably break it).</td>
+</tr>
+  <tr>
+    <td>`graphStars`</td>
+    <td>_Optional_ The maximum number of stars to display in the graph. Default: `20`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`showCPU`</td>
+    <td>_Optional_ Whether or not to display the CPU usage. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`showMem`</td>
+    <td>_Optional_ Whether or not to display the memory usage. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`showSwp`</td>
+    <td>_Optional_ Whether or not to display the swap memory usage. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+</table>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/resourceusage/">https://github.com/wtfutil/wtf/tree/master/modules/resourceusage/</a></p>
 

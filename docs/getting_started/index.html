@@ -456,16 +456,34 @@
         
         <a class="nav-link p-0" href="/modules/ipaddress/"><h6>IP Addresses</h6></a>
         <ul class="list-unstyled ml-2">
-        <li data-nav-id="/modules/ipaddress/ipapi/" class="nav-item my-1">
+        <li data-nav-id="/configuration/global_settings/" class="nav-item my-1">
                 
-                 <a href="/modules/ipaddress/ipapi/" class="nav-link p-0">
-                    IP-API
+                 <a href="/configuration/global_settings/" class="nav-link p-0">
+                    Global Settings
                 </a>
         </li>
-        <li data-nav-id="/modules/ipaddress/ipinfo/" class="nav-item my-1">
+        <li data-nav-id="/configuration/common_settings/" class="nav-item my-1">
                 
-                 <a href="/modules/ipaddress/ipinfo/" class="nav-link p-0">
-                    IPInfo
+                 <a href="/configuration/common_settings/" class="nav-link p-0">
+                    Common Settings
+                </a>
+        </li>
+        <li data-nav-id="/configuration/grid_layout/" class="nav-item my-1">
+                
+                 <a href="/configuration/grid_layout/" class="nav-link p-0">
+                    Grid Layout
+                </a>
+        </li>
+        <li data-nav-id="/configuration/generate-module/" class="nav-item my-1">
+                
+                 <a href="/configuration/generate-module/" class="nav-link p-0">
+                    Creating New Modules
+                </a>
+        </li>
+        <li data-nav-id="/configuration/add_mutiple_instance_of_widget/" class="nav-item my-1">
+                
+                 <a href="/configuration/add_mutiple_instance_of_widget/" class="nav-link p-0">
+                    Adding Multiple Instances of a Widget
                 </a>
         </li>
         </ul>
@@ -703,34 +721,34 @@
 
 <h2 id="quick-start">Quick Start</h2>
 <ol>
-<li><!-- raw HTML omitted -->Download<!-- raw HTML omitted --> the stand-alone, compiled binary.</li>
+<li><a href="https://github.com/wtfutil/wtf/releases">Download</a> the stand-alone, compiled binary.</li>
 <li>Unzip the downloaded file.</li>
 <li>From the command line, <code>cd</code> into the newly-created <code>/wtf</code> directory.</li>
 <li>From the command line, run the app: <code>./wtfutil</code></li>
 </ol>
 <p>This should launch the app in your terminal using the default simple
-configuration. See <!-- raw HTML omitted -->Configuration<!-- raw HTML omitted --> for
+configuration. See <a href="/configuration/">Configuration</a> for
 more details.</p>
 <h2 id="command-line-options">Command-line Options</h2>
-<p><code>--config, -c</code> <!-- raw HTML omitted -->
-Allows you to define a custom config file to use. See <!-- raw HTML omitted -->Configuration<!-- raw HTML omitted --> for more details.</p>
-<p><code>--help, -h</code> <!-- raw HTML omitted -->
+<p><code>--config, -c</code> <br />
+Allows you to define a custom config file to use. See <a href="/configuration/">Configuration</a> for more details.</p>
+<p><code>--help, -h</code> <br />
 Shows help information for the command-line arguments that WTF
 takes.</p>
-<p><code>--module, -m</code> <!-- raw HTML omitted -->
+<p><code>--module, -m</code> <br />
 Shows help information for the specific named module, if that module
-supports help text. <!-- raw HTML omitted -->
+supports help text. <br />
 Example: <code>wtf --module=todo</code>.</p>
-<p><code>--version, -v</code> <!-- raw HTML omitted -->
+<p><code>--version, -v</code> <br />
 Shows version info.</p>
 <h2 id="keyboard-commands">Keyboard Commands</h2>
-<p><!-- raw HTML omitted -->Key:<!-- raw HTML omitted --> <code>Ctrl-R</code> <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->Action:<!-- raw HTML omitted --> Force-refresh the data for all modules.</p>
-<p><!-- raw HTML omitted -->Key:<!-- raw HTML omitted --> <code>Esc</code> <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->Action:<!-- raw HTML omitted --> Unfocus the currently-focused
+<p><span class="caption">Key:</span> <code>Ctrl-R</code> <br />
+<span class="caption">Action:</span> Force-refresh the data for all modules.</p>
+<p><span class="caption">Key:</span> <code>Esc</code> <br />
+<span class="caption">Action:</span> Unfocus the currently-focused
 widget.</p>
-<p><!-- raw HTML omitted -->Key:<!-- raw HTML omitted --> <code>Tab</code> <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->Action:<!-- raw HTML omitted --> Move between focusable modules (<code>Shift-Tab</code> to move backwards).</p>
+<p><span class="caption">Key:</span> <code>Tab</code> <br />
+<span class="caption">Action:</span> Move between focusable modules (<code>Shift-Tab</code> to move backwards).</p>
 
 
     

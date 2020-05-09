@@ -41,7 +41,7 @@ To make this work, you&amp;rsquo;ll need a google API credential, link it to goo
       
       <guid>https://wtfutil.com/modules/google/gspreadsheet/</guid>
       <description>Display information from cells in a Google Spreadsheet.
-Configuration Copy   gspreadsheets: colors: values: &amp;#34;green&amp;#34; cells: names: - &amp;#34;Cell 1 name&amp;#34; - &amp;#34;Cell 2 name&amp;#34; addresses: - &amp;#34;A1&amp;#34; - &amp;#34;A2&amp;#34; enabled: true position: top: 0 left: 0 width: 1 height: 1 refreshInterval: &amp;#34;300&amp;#34; secretFile: &amp;#34;~/.config/wtf/gspreadsheets/client_secret.json&amp;#34; sheetId: &amp;#34;id_of_google_spreadsheet&amp;#34;    Attributes Source Code https://github.com/wtfutil/wtf/tree/master/modules/gspreadsheets/</description>
+Configuration Copy   gspreadsheets: colors: values: &amp;#34;green&amp;#34; cells: names: - &amp;#34;Cell 1 name&amp;#34; - &amp;#34;Cell 2 name&amp;#34; addresses: - &amp;#34;A1&amp;#34; - &amp;#34;A2&amp;#34; enabled: true position: top: 0 left: 0 width: 1 height: 1 refreshInterval: &amp;#34;300&amp;#34; secretFile: &amp;#34;~/.config/wtf/gspreadsheets/client_secret.json&amp;#34; sheetId: &amp;#34;id_of_google_spreadsheet&amp;#34;    Attributes   Name Description Value    `border` _Optional_ Whether or not to draw this widget with a border.</description>
     </item>
     
   </channel>

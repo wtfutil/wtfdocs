@@ -751,12 +751,120 @@
 
 
 <h2 id="screenshots">Screenshots</h2>
-<p><!-- raw HTML omitted -->
-<!-- raw HTML omitted --></p>
+<p><img src="/imgs/modules/digitalocean.png" class="screenshot" width="320" height="137" alt="digitalocean screenshot" align="left" />
+<img src="/imgs/modules/digitalocean_droplet_info.png" class="screenshot" width="320" height="197" alt="digitalocean screenshot" /></p>
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+<tr>
+    <td>`apiKey`</td>
+    <td>Your <a href="https://developers.digitalocean.com/documentation/v2/">DigitalOcean API</a> token.</td>
+    <td>
+        Your API key **or** leave it empty to use the `WTF_DIGITALOCEAN_API_KEY` environment variable.
+    </td>
+</tr>
+  <tr>
+    <td>`border`</td>
+    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`title`</td>
+    <td>_Optional_ The title to display in the widget's onscreen box.</td>
+    <td></td>
+</tr>
+</table>
 <h2 id="keyboard-controls">Keyboard Controls</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+      <tr>
+    <td>`/`</td>
+    <td>Open/close the widget's help modal</td>
+</tr>
+  <tr>
+    <td>`?`</td>
+    <td>Displays information about a droplet</td>
+</tr>
+  <tr>
+    <td>`[esc]`</td>
+    <td>Close the modal dialog</td>
+</tr>
+  <tr>
+    <td>`[return]`</td>
+    <td>Display information about a droplet</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`b`</td>
+    <td>Reboot a droplet</td>
+</tr>
+  <tr>
+    <td>`j`</td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td>`k`</td>
+    <td>Select the previous item in the list</td>
+</tr>
+  <tr>
+    <td>`p`</td>
+    <td>Enable private networking on a droplet</td>
+</tr>
+  <tr>
+    <td>`s`</td>
+    <td>Shut down a droplet</td>
+</tr>
+  <tr>
+    <td>`u`</td>
+    <td>Clear selection</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`↓`</td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td>`↑`</td>
+    <td>Select the previous item in the list</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`Ctrl-d`</td>
+    <td>Delete the selected item</td>
+</tr>
+</table>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/digitalocean/">https://github.com/wtfutil/wtf/tree/master/modules/digitalocean/</a></p>
 

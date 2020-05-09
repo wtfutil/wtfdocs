@@ -705,7 +705,7 @@
 
 <h1>Pretty Weather</h1>
 
-<p><!-- raw HTML omitted --></p>
+<p><img class="screenshot" src="/imgs/modules/prettyweather.png" width="320" height="191" alt="prettyweather screenshot" /></p>
 <p>Displays weather information as ASCII art from <a href="http://wttr.in">Wttr.in</a>.</p>
 <p>Consider using wego directly, to avoid issues with rate limiting.
 See <a href="../../cmdrunner/wego">wego</a>.</p>
@@ -751,7 +751,55 @@ See <a href="../../cmdrunner/wego">wego</a>.</p>
 
 
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`border`</td>
+    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`city`</td>
+    <td>_Optional_ The name of the city to display weather for. Default: Barcelona.</td>
+    <td>The name of any city supported by [Wttr.in](http://wttr.in)</td>
+  </tr>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`language`</td>
+    <td>_Optional_ Wttr.in language configuration. Default: en.</td>
+    <td>See `curl wttr.in/:translation` for more details</td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`unit`</td>
+    <td>_Optional_ The scale to display temperatures in. Default: m.</td>
+    <td>`u` for Fahrenheit, `m` for Celsius</td>
+</tr>
+  <tr>
+    <td>`view`</td>
+    <td>_Optional_ Wttr.in view configuration.</td>
+    <td>See `curl wttr.in/:help` for more details</td>
+</tr>
+</table>
 <p>&laquo;&laquo;&laquo;&lt; HEAD</p>
 <h2 id="source-code">Source Code</h2>
 <h1 id="httpsgithubcomwtfutilwtftreemastermodulesweatherservicesprettyweather"><a href="https://github.com/wtfutil/wtf/tree/master/modules/weatherservices/prettyweather/">https://github.com/wtfutil/wtf/tree/master/modules/weatherservices/prettyweather/</a></h1>

@@ -743,7 +743,60 @@
 
 
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`args`</td>
+    <td>The arguments to the command, with each item as an element in an array.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`border`</td>
+    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`cmd`</td>
+    <td>The terminal command to be run, withouth the arguments. Ie: `ping`, `whoami`, `curl`.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`maxLines`</td>
+    <td>The maximum number of lines to keep in the buffer. Default: `256`.</td>
+    <td>Any positive integer</td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`tail`</td>
+    <td>Automatically scroll with new output. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`title`</td>
+    <td>_Optional_ The title to display in the widget's onscreen box.</td>
+    <td></td>
+</tr>
+</table>
 <h2 id="examples">Examples</h2>
 <ul>
 <li><a href="/modules/cmdrunner/brew_outdated">brew outdated</a></li>

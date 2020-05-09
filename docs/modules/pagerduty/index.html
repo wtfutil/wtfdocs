@@ -747,7 +747,72 @@
 
 
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`apiKey`</td>
+    <td>Your <a href="https://v2.developer.pagerduty.com/docs/authentication">PagerDuty API</a> token.</td>
+    <td>
+        Your API key **or** leave it empty to use the `WTF_PAGERDUTY_API_KEY` environment variable.
+    </td>
+</tr>
+  <tr>
+    <td>`border`</td>
+    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`escalationFilter`</td>
+    <td>An array of schedule names you want to filter on.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`scheduleIDs`</td>
+    <td>An array of schedule IDs you want to restrict the query to.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`teamIDs`</td>
+    <td>_Optional_ An array of team IDs to restrict the incidents query to</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`userIDs`</td>
+    <td>_Optional_ An array of user IDs to restrict the incidents query to</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`showIncidents`</td>
+    <td>_Optional_ Whether or not to list incidents. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`showSchedules`</td>
+    <td>_Optional_ Whether or not to show schedules. Default: true.</td>
+    <td>true, false</td>
+</tr>
+</table>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/pagerduty/">https://github.com/wtfutil/wtf/tree/master/modules/pagerduty/</a></p>
 

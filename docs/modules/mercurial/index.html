@@ -760,11 +760,96 @@ commit, and their status.</p>
 
 
 <h2 id="screenshots">Screenshots</h2>
-<p><!-- raw HTML omitted --></p>
+<p><img class="screenshot" src="/imgs/modules/mercurial.png" width="710" height="248" alt="mercurial screenshot" /></p>
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`border`</td>
+    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`commitCount`</td>
+    <td>The number of past commits to display.</td>
+    <td>Any positive integer</td>
+</tr>
+  <tr>
+    <td>`commitFormat`</td>
+    <td>_Optional_ The string format for the commit message.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`focusChar`</td>
+    <td>_Optional_ Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`repositories`</td>
+    <td>A list of Mercurial repositories to watch.</td>
+    <td>A list of zero or more local file paths pointing to valid mercurial repositories.</td>
+</tr>
+</table>
 <h2 id="keyboard-controls">Keyboard Controls</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+      <tr>
+    <td>`/`</td>
+    <td>Open/close the widget's help modal</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`h`</td>
+    <td>Show the previous Mercurial repository</td>
+</tr>
+  <tr>
+    <td>`l`</td>
+    <td>Show the next Mercurial repository</td>
+</tr>
+  <tr>
+    <td>`r`</td>
+    <td>Refresh the data</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`←`</td>
+    <td>Show the previous Mercurial repository</td>
+</tr>
+  <tr>
+    <td>`→`</td>
+    <td>Show the next Mercurial repository</td>
+</tr>
+</table>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/mercurial/">https://github.com/wtfutil/wtf/tree/master/modules/mercurial/</a></p>
 

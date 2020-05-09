@@ -748,11 +748,117 @@
 
 
 <h2 id="screenshots">Screenshots</h2>
-<p><!-- raw HTML omitted --></p>
+<p><img class="screenshot" src="/imgs/modules/jenkins.png" alt="jenkins screenshot" width="320" height="68" /></p>
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`apiKey`</td>
+    <td>Your <a href="https://wiki.jenkins.io/display/JENKINS/Remote&#43;access&#43;API">Jenkins API</a> token.</td>
+    <td>
+        Your API key **or** leave it empty to use the `WTF_JENKINS_API_KEY` environment variable.
+    </td>
+</tr>
+  <tr>
+    <td>`border`</td>
+    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`focusChar`</td>
+    <td>_Optional_ Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td>`jobNameRegex`</td>
+    <td>_Optional_ A regex that filters the jobs shown in the widget. Any jobs matching the regular expression will be shown.</td>
+    <td>A valid regex, e.g. `^[a-z]&#43;\[[0-9]&#43;\]$`</td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`successBallColor`</td>
+    <td>Changes the default color of successful Jenkins jobs to the color of your choosing.</td>
+    <td>Any valid color name, `blue`, `green`, `purple`, `yellow`, etc.</td>
+</tr>
+  <tr>
+    <td>`url`</td>
+    <td>The url to your Jenkins project or view.</td>
+    <td>A valid URI.</td>
+</tr>
+  <tr>
+    <td>`user`</td>
+    <td>Your Jenkins username.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`verifyServerCertificate`</td>
+    <td>Whether or not to verify the server's certificate chain and hostname.</td>
+    <td>true, false</td>
+</tr>
+</table>
 <h2 id="keyboard-controls">Keyboard Controls</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+      <tr>
+    <td>`/`</td>
+    <td>Open/close the widget's help modal</td>
+</tr>
+  <tr>
+    <td>`[return]`</td>
+    <td>Open the selected job in the browser</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`j`</td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td>`k`</td>
+    <td>Select the previous item in the list</td>
+</tr>
+  <tr>
+    <td>`r`</td>
+    <td>Refresh the data</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`↓`</td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td>`↑`</td>
+    <td>Select the previous item in the list</td>
+</tr>
+</table>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/jenkins/">https://github.com/wtfutil/wtf/tree/master/modules/jenkins/</a></p>
 

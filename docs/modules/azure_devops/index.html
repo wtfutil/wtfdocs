@@ -745,7 +745,60 @@
 
 
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`apiToken`</td>
+    <td>Your <a href="https://azure.microsoft.com/en-ca/services/devops/">Azure DevOps API</a> token.</td>
+    <td>Your API key **or** leave it empty to use the `WTF_AZURE_DEVOPS_API_TOKEN` environment variable.</td>
+</tr>
+  <tr>
+    <td>`border`</td>
+    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`labelColor`</td>
+    <td>_Optional_ The color of the title label. Default: `white`.</td>
+    <td>Any X11 color name.</td>
+</tr>
+  <tr>
+    <td>`maxRows`</td>
+    <td>_Optional_ The maximum number of rows to display. Default: `3`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`orgUrl`</td>
+    <td>The URL to your Azure DevOps project.</td>
+    <td>Leave empty to use the `WTF_AZURE_DEVOPS_ORG_URL` environment variable.</td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`projectName`</td>
+    <td>The name of your Azure DevOps project.</td>
+    <td>Leave empty to use the `WTF_AZURE_DEVOPS_PROJECT_NAME` environment variable.</td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+</table>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/azuredevops/">https://github.com/wtfutil/wtf/tree/master/modules/azuredevops/</a></p>
 

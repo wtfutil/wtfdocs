@@ -18,9 +18,7 @@
       
       <guid>https://wtfutil.com/modules/cds/favorites/</guid>
       <description>Display runs of you CDS favorites workflows.
-Configuration Copy   cdsFavorites: enabled: true position: top: 0 left: 0 height: 2 width: 2 refreshInterval: 8 apiURL: https://api.cds.localhost.local token: xxxxxxxxxxxx hideTags: - &amp;#34;git.repository&amp;#34; - &amp;#34;git.hash&amp;#34; - &amp;#34;triggered_by&amp;#34;    Attributes &amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD
-Source Code https://github.com/wtfutil/wtf/tree/master/modules/cds/favorites/ Source Code Copy   wtf/modules/cds/favorites/           Fix syntax highlighting
-       </description>
+Configuration Copy   cdsFavorites: enabled: true position: top: 0 left: 0 height: 2 width: 2 refreshInterval: 8 apiURL: https://api.cds.localhost.local token: xxxxxxxxxxxx hideTags: - &amp;#34;git.repository&amp;#34; - &amp;#34;git.hash&amp;#34; - &amp;#34;triggered_by&amp;#34;    Attributes   Name Description Value    `apiURL` Your CDS API URL.    `token` Your CDS Consumer Token.    `hideTags` A CDS Runs can have many &#34;</description>
     </item>
     
     <item>
@@ -30,9 +28,7 @@ Source Code https://github.com/wtfutil/wtf/tree/master/modules/cds/favorites/ So
       
       <guid>https://wtfutil.com/modules/cds/queue/</guid>
       <description>Display current CDS queue - waiting or building jobs.
-Configuration Copy   cdsQueue: enabled: true position: top: 0 left: 0 height: 3 width: 2 refreshInterval: 8 apiURL: https://api.cds.localhost.local token: xxxxxxxxxxxx    Attributes &amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD
-Source Code https://github.com/wtfutil/wtf/tree/master/modules/cds/queue/ Source Code Copy   wtf/modules/cds/queue/           Fix syntax highlighting
-       </description>
+Configuration Copy   cdsQueue: enabled: true position: top: 0 left: 0 height: 3 width: 2 refreshInterval: 8 apiURL: https://api.cds.localhost.local token: xxxxxxxxxxxx    Attributes   Name Description Value    `apiURL` Your CDS API URL. Consumer token scope used: RUN   `token` Your CDS Consumer Token.    `border` _Optional_ Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -42,9 +38,7 @@ Source Code https://github.com/wtfutil/wtf/tree/master/modules/cds/queue/ Source
       
       <guid>https://wtfutil.com/modules/cds/status/</guid>
       <description>Display current CDS status. This is useful for CDS Administrator only.
-Configuration Copy   cdsStatus: enabled: true position: top: 0 left: 0 height: 3 width: 2 refreshInterval: 8 apiURL: https://api.cds.localhost.local token: xxxxxxxxxxxx    Attributes &amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD
-Source Code https://github.com/wtfutil/wtf/tree/master/modules/cds/status/ Source Code Copy   wtf/modules/cds/status/           Fix syntax highlighting
-       </description>
+Configuration Copy   cdsStatus: enabled: true position: top: 0 left: 0 height: 3 width: 2 refreshInterval: 8 apiURL: https://api.cds.localhost.local token: xxxxxxxxxxxx    Attributes   Name Description Value    `apiURL` Your CDS API URL.    `token` Your CDS Consumer Token.    `border` _Optional_ Whether or not to draw this widget with a border.</description>
     </item>
     
   </channel>

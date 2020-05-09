@@ -18,7 +18,10 @@
       
       <guid>https://wtfutil.com/getting_started/installation/</guid>
       <description>Homebrew Copy   brew tap wtfutil/wtfutil brew install wtfutil wtfutil As a Binary Grab the latest version from here:
-   </description>
+Copy   https://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:
+Copy   ./wtfutil and that should also do it.
+From Source Download the source code repo and install the dependencies:
+Copy   # Set the Go proxy variable to GoCenter export GOPROXY=&amp;#34;https://gocenter.io&amp;#34; # Enable Go modules export GO111MODULE=on</description>
     </item>
     
     <item>
@@ -28,7 +31,9 @@
       
       <guid>https://wtfutil.com/getting_started/uninstall/</guid>
       <description>Homebrew Copy   brew uninstall wtfutil Remove the Binary and Configuration WTF ships as a single binary named wtfutil. Assuming you have installed the binary, run:
-   </description>
+Copy   rm $(which wtfutil) If you have configured WTF, you will also want to delete your configs:
+Copy   rm ~/.config/wtf and that should also do it.
+         </description>
     </item>
     
     <item>

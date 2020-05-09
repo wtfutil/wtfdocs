@@ -714,11 +714,11 @@
 
 <div class="position-relative">
     <div class="position-absolute" style="right:0;">
-        <button class="btn btn-light" data-clipboard-target="#clipboard_8ce5cbd46f">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_00951d2077">
         Copy
         </button>
     </div>
-    <div id="clipboard_8ce5cbd46f">
+    <div id="clipboard_00951d2077">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
 brew tap wtfutil/wtfutil
 brew install wtfutil
@@ -726,7 +726,55 @@ brew install wtfutil
 wtfutil
 </code></pre></div><h2 id="as-a-binary">As a Binary</h2>
 <p>Grab the latest version from here:</p>
-<!-- raw HTML omitted -->
+<div class="position-relative">
+    <div class="position-absolute" style="right:0;">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_a8c23fdd19">
+        Copy
+        </button>
+    </div>
+    <div id="clipboard_a8c23fdd19">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+https://github.com/wtfutil/wtf/releases
+</code></pre></div><p>expand it, and <code>cd</code> into the resulting directory. Then run:</p>
+<div class="position-relative">
+    <div class="position-absolute" style="right:0;">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_324c8b5200">
+        Copy
+        </button>
+    </div>
+    <div id="clipboard_324c8b5200">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+./wtfutil
+</code></pre></div><p>and that should also do it.</p>
+<h2 id="from-source">From Source</h2>
+<p>Download the source code repo and install the dependencies:</p>
+<div class="position-relative">
+    <div class="position-absolute" style="right:0;">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_c87912e2dd">
+        Copy
+        </button>
+    </div>
+    <div id="clipboard_c87912e2dd">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<span style="color:#75715e"># Set the Go proxy variable to GoCenter</span>
+export GOPROXY<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://gocenter.io&#34;</span>
+<p><span style="color:#75715e"># Enable Go modules</span>
+export GO111MODULE<span style="color:#f92672">=</span>on</p>
+<p>go get -u github.com/wtfutil/wtf
+cd $GOPATH/src/github.com/wtfutil/wtf
+make install
+make run
+</code></pre></div><p>and that should do it.</p></p>
+<pre><code></code></pre>
+<pre><code>&lt;/div&gt;
+</code></pre>
+</div>
+<pre><code></code></pre>
+    </div>
+</div>
+<pre><code></code></pre>
+    </div>
+</div>
 <pre><code></code></pre>
     </div>
 </div>

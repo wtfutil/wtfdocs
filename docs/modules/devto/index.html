@@ -745,11 +745,94 @@
 
 
 <h2 id="screenshots">Screenshots</h2>
-<!-- raw HTML omitted -->
+<img class="screenshot" src="/imgs/modules/devto.png" width="100" height="100" alt="dev.to logo"/>
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`border`</td>
+    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`focusChar`</td>
+    <td>_Optional_ Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`numberOfArticles`</td>
+    <td>_Optional_ Defines number of articles to be displayed. Default: 10.</td>
+    <td>Any positive integer &lt; 20</td>
+</tr>
+  <tr>
+    <td>`contentTag`</td>
+    <td>_Optional_ List articles from a specific tag. Default: empty</td>
+    <td>Visit https://dev.to/tags for a list of valid values</td>
+</tr>
+  <tr>
+    <td>`contentUsername`</td>
+    <td>_Optional_ List articles from a specific user. Default: empty</td>
+    <td>Try your favorite username or victoravelar</td>
+</tr>
+  <tr>
+    <td>`contentState`</td>
+    <td>_Optional_ Alters the feed output. Default: empty</td>
+    <td>`rising`, `fresh`, `ben`</td>
+</tr>
+</table>
 <h2 id="keyboard-controls">Keyboard Controls</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+      <tr>
+    <td>`/`</td>
+    <td>Open/close the widget's help modal</td>
+</tr>
+  <tr>
+    <td>`[return]`</td>
+    <td>Open the selected story in the browser</td>
+</tr>
+  <tr>
+    <td>`[esc]`</td>
+    <td>Cancel selection</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`↓`</td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td>`↑`</td>
+    <td>Select the previous item in the list</td>
+</tr>
+</table>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/devto/">https://github.com/wtfutil/wtf/tree/master/modules/devto/</a></p>
 

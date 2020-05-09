@@ -714,7 +714,7 @@
 <li>A <a href="https://developer.twitter.com/content/developer-twitter/en.html">Twitter developer account</a></li>
 </ol>
 <p>&hellip; and one of the following:</p>
-<p>a) A <a href="https://developer.twitter.com/en/docs/basics/authentication/overview/application-only">Twitter bearer token</a><!-- raw HTML omitted -->
+<p>a) A <a href="https://developer.twitter.com/en/docs/basics/authentication/overview/application-only">Twitter bearer token</a><br/>
 b) <a href="https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens">Consumer API keys</a></p>
 <p>You must have either a bearer token or consumer key + consumer secret provided.  To get the consumer API keys, you must first create a Twitter application.  Then, go to the &ldquo;Keys and tokens&rdquo; page and copy the API key and API secret key under the Consumer API keys section:</p>
 <p><img src="https://ameo.link/u/6p1.png" alt=""></p>
@@ -804,9 +804,117 @@ bearer token is to use <a href="https://github.com/Trinergy/twitter_bearer_token
 
 
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`bearerToken`</td>
+    <td>_Optional_ Your <a href="https://developer.twitter.com/en/docs/basics/authentication/overview/application-only.html">Twitter single-application Bearer Token</a>.  This must be supplied if `consumerKey` and `consumerSecret` are not.</td>
+    <td>Leave empty to use the `WTF_TWITTER_BEARER_TOKEN` environment variable.</td>
+  </tr>
+  <tr>
+    <td>`consumerKey`</td>
+    <td>_Optional_ Your Twitter Consumer API secret.  This must be supplied along with `consumerSecret` if `bearerToken` isn't supplied.</a></td>
+    <td>Leave empty to use the `WTF_TWITTER_CONSUMER_KEY` environment variable.</td>
+  </tr>
+  <tr>
+    <td>`consumerSecret`</td>
+    <td>_Optional_ Your Twitter Consumer API key.  This must be supplied along with `consumerKey` if `bearerToken` isn't supplied.</td>
+    <td>Leave empty to use the `WTF_TWITTER_CONSUMER_SECRET` environment variable.</td>
+  </tr>
+  <tr>
+    <td>`border`</td>
+    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`count`</td>
+    <td>_Optional_ The number of tweets to return per account. Default: 5.</td>
+    <td>Any positive integer</td>
+</tr>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`focusChar`</td>
+    <td>_Optional_ Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`screenName`</td>
+    <td>The screen name of the Twitter user who&#39;s tweets you want to follow.</td>
+    <td>Any valid Twitter user&#39;s screen name</td>
+</tr>
+  <tr>
+    <td>`screenNames`</td>
+    <td>The screen names of the Twitter users who&#39;s tweets you want to follow.</td>
+    <td>A list of any valid Twitter user&#39;s screen names</td>
+</tr>
+</table>
 <h2 id="keyboard-controls">Keyboard Controls</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+      <tr>
+    <td>`/`</td>
+    <td>Open/close the widget's help modal</td>
+</tr>
+  <tr>
+    <td>`[return]`</td>
+    <td>Open the current Twitter account in the browser</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`h`</td>
+    <td>Show the previous Twitter account</td>
+</tr>
+  <tr>
+    <td>`l`</td>
+    <td>Show the next Twitter account</td>
+</tr>
+  <tr>
+    <td>`o`</td>
+    <td>Open the current Twitter account in the browser</td>
+</tr>
+  <tr>
+    <td>`r`</td>
+    <td>Refresh the data</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`←`</td>
+    <td>Show the previous Twitter account</td>
+</tr>
+  <tr>
+    <td>`→`</td>
+    <td>Show the next Twitter account</td>
+</tr>
+</table>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/twitter/">https://github.com/wtfutil/wtf/tree/master/modules/twitter/</a></p>
 

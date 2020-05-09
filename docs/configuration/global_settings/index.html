@@ -696,7 +696,7 @@
 <h1>Global Settings</h1>
 
 <p>The following top-level global attributes are configurable in <code>config.yml</code>.
-See this <!-- raw HTML omitted -->example config file<!-- raw HTML omitted --> for more details.</p>
+See this <a href="https://github.com/wtfutil/wtf/blob/master/_sample_configs/sample_config.yml">example config file</a> for more details.</p>
 
 
 
@@ -711,11 +711,11 @@ See this <!-- raw HTML omitted -->example config file<!-- raw HTML omitted --> f
 
 <div class="position-relative">
     <div class="position-absolute" style="right:0;">
-        <button class="btn btn-light" data-clipboard-target="#clipboard_c70e7051a2">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_dbbdac8a93">
         Copy
         </button>
     </div>
-    <div id="clipboard_c70e7051a2">
+    <div id="clipboard_dbbdac8a93">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
 <span style="color:#66d9ef">wtf</span>:
   <span style="color:#66d9ef">colors</span>:
@@ -751,8 +751,63 @@ See this <!-- raw HTML omitted -->example config file<!-- raw HTML omitted --> f
   <span style="color:#66d9ef">term</span>: <span style="color:#e6db74">&#34;xterm-256color&#34;</span>
 </code></pre></div><h3 id="attributes">Attributes</h3>
 <h2 id="attributes-1">Attributes</h2>
-<!-- raw HTML omitted -->
-
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+      <tr>
+    <td>`colors.background`</td>
+    <td>The color to draw the background of the app in. Use this to match your
+        terminal colors. May be over-written by individual module
+        configurations.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr>
+  <tr>
+    <td>`colors.border.focusable`</td>
+    <td>The color in which to draw the border of widgets that can accept keyboard focus.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
+  </tr>
+  <tr>
+    <td>`colors.border.focused`</td>
+    <td>The color in which to draw the border of the widget that currently has keyboard focus.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
+  </tr>
+  <tr>
+    <td>`colors.border.normal`</td>
+    <td>The color in which to draw the borders of the widgets that cannot accept focus.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
+  </tr>
+  <tr>
+    <td>`grid.columns`</td>
+    <td>An array that defines the widths of all the columns.</td>
+    <td>See <a href="https://github.com/rivo/tview/wiki/Grid">tview's Grid</a> for details</td>
+  </tr>
+  <tr>
+    <td>`grid.rows`</td>
+    <td>An array that defines the heights of all the rows.</td>
+    <td>See <a href="https://github.com/rivo/tview/wiki/Grid">tview's Grid</a> for details</td>
+  </tr>
+  <tr>
+    <td>`navigation.shortcuts`</td>
+    <td>Whether or not to display the numeric navigation shortcuts in widget titles.</td>
+    <td>`true` or `false`.</td>
+</tr>
+  <tr>
+    <td>`openFileUtil`</td>
+    <td>Which local utility to use to open a file or URL. Requires the app to be restarted to take effect. Default: `open`.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`term`</td>
+    <td>Sets a custom value for the terminal type this app runs in. Leave this entry out of the config if you simply want to use your terminal&#39;s default setting. **Note:** If an invalid value is provided for this setting, the app will crash with a `terminal entry not found` error.</td>
+    <td>Any valid terminal type (ie: `vt100`, `xterm`, `xterm-256color`, `ansi`, etc.).</td>
+</tr>
+</table>
+```
     </div>
 </div>
 

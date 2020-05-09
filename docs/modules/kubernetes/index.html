@@ -750,7 +750,55 @@
 
 
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`context`</td>
+    <td>The Kubernetes context to use. If blank, it uses default context.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`kubeconfig`</td>
+    <td>The absolute path to your Kubernetes config file.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`namespaces`</td>
+    <td>A list of namespaces to monitor. Defaults to all if empty.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`objects`</td>
+    <td>A list of Kubernetes objects to display.</td>
+    <td>Any of `nodes`, `pods`, and/or `deployments`.</td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`title`</td>
+    <td>_Optional_ The title to display in the widget's onscreen box.</td>
+    <td></td>
+</tr>
+</table>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/kubernetes/">https://github.com/wtfutil/wtf/tree/master/modules/kubernetes/</a></p>
 

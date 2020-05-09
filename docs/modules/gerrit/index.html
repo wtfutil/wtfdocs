@@ -762,11 +762,140 @@
 
 
 <h2 id="screenshots">Screenshots</h2>
-<p><!-- raw HTML omitted --></p>
+<p><img class="screenshot" src="/imgs/modules/gerrit.png" width="640" height="167" alt="gerrit screenshot" /></p>
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`border`</td>
+    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`colors.rows.even`</td>
+    <td>The foreground color for even-numbered rows.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr>
+<tr>
+    <td>`colors.rows.odd`</td>
+    <td>The foreground color for odd-numbered rows.</td>
+    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
+</tr>
+  <tr>
+    <td>`domain`</td>
+    <td>Your Gerrit corporate domain.</td>
+    <td>A valid URI.</td>
+</tr>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`focusChar`</td>
+    <td>_Optional_ Define one of the number keys as a short cut key to access the widget.</td>
+    <td>0..9</td>
+</tr>
+  <tr>
+    <td>`password`</td>
+    <td>Your Gerrit password.</td>
+    <td>Leave this empty to use the `WTF_GERRIT_PASSWORD` environment variable.</td>
+</tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`projects`</td>
+    <td>A list of Gerrit project names to fetch data for.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`username`</td>
+    <td>Your Gerrit username. </td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`verifyServerCertificate`</td>
+    <td>Whether or not to verify the server's certificate chain and hostname.</td>
+    <td>true, false</td>
+</tr>
+</table>
 <h2 id="keyboard-controls">Keyboard Controls</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Key</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+      <tr>
+    <td>`/`</td>
+    <td>Open/close the widget's help modal</td>
+</tr>
+  <tr>
+    <td>`[return]`</td>
+    <td>Open the selected review in the browser</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`h`</td>
+    <td>Show the previous project</td>
+</tr>
+  <tr>
+    <td>`j`</td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td>`k`</td>
+    <td>Select the previous item in the list</td>
+</tr>
+  <tr>
+    <td>`l`</td>
+    <td>Show the next project</td>
+</tr>
+  <tr>
+    <td>`o`</td>
+    <td>Open the selected story in the browser</td>
+</tr>
+  <tr>
+    <td>`r`</td>
+    <td>Refresh the data</td>
+</tr>
+  <tr>
+    <td colspan="2"></td>
+</tr>
+  <tr>
+    <td>`←`</td>
+    <td>Show the previous project</td>
+</tr>
+  <tr>
+    <td>`→`</td>
+    <td>Show the next project</td>
+</tr>
+  <tr>
+    <td>`↓`</td>
+    <td>Select the next item in the list</td>
+</tr>
+  <tr>
+    <td>`↑`</td>
+    <td>Select the previous item in the list</td>
+</tr>
+</table>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/gerrit/">https://github.com/wtfutil/wtf/tree/master/modules/gerrit/</a></p>
 

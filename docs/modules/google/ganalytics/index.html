@@ -793,9 +793,52 @@ something@PROJECT-ID.iam.gserviceaccount.com
 
 
 <h2 id="screenshots">Screenshots</h2>
-<!-- raw HTML omitted -->
+<img src="/imgs/modules/google_analytics.png" class="screenshot" width="600" height="150" alt="google analytics screenshot"/>
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`enabled`</td>
+    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`enableRealtime`</td>
+    <td>When set to `true`, the live count of users on each listed view will be displayed in addition to historical visitor counts.  This requires you to [sign up](https://docs.google.com/forms/d/1qfRFysCikpgCMGqgF3yXdUyQW4xAlLyjKuOoOEFN2Uw/viewform) for the Real Time Reporting API Beta. Default: false.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td>`months`</td>
+    <td>The amount of months being displayed with website session data.</td>
+    <td>Any positive integer.</td>
+  </tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+  <tr>
+    <td>`secretFile`</td>
+    <td>Your <a href="https://developers.google.com/sheets/api/quickstart/go">Google client secret</a> JSON file.</td>
+    <td>A string representing a file path to the JSON secret file.</td>
+  </tr>
+  <tr>
+    <td>`viewIds`</td>
+    <td>Website(s) who will be displayed in the module, label does not have to corresponding to the actual url. Value must be the google analytics viewID of the website.</td>
+    <td>A string representing the viewID.</td>
+  </tr>
+</table>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/googleanalytics/">https://github.com/wtfutil/wtf/tree/master/modules/googleanalytics/</a></p>
 

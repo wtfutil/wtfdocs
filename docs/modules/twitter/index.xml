@@ -20,7 +20,7 @@
       <description>Connects to the Twitter API and displays statistics about the number of tweets and followers for a set of usernames.
 To make this work, you&amp;rsquo;ll need a couple of things:
  A Twitter developer account  &amp;hellip; and one of the following:
-a) A Twitter bearer tokenb) Consumer API keys
+a) A Twitter bearer token b) Consumer API keys
 You must have either a bearer token or consumer key + consumer secret provided. To get the consumer API keys, you must first create a Twitter application.</description>
     </item>
     
@@ -34,7 +34,7 @@ You must have either a bearer token or consumer key + consumer secret provided. 
 NOTE: This only works for single-application developer accounts for now.
 To make this work, you&amp;rsquo;ll need a couple of things:
  A Twitter developer account  &amp;hellip; and one of the following:
-a) A Twitter bearer tokenb) Consumer API keys
+a) A Twitter bearer token b) Consumer API keys
 You must have either a bearer token or consumer key + consumer secret provided. To get the consumer API keys, you must first create a Twitter application.</description>
     </item>
     

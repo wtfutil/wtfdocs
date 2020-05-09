@@ -17,7 +17,7 @@
       <pubDate>Wed, 16 May 2018 21:51:23 -0700</pubDate>
       
       <guid>https://wtfutil.com/configuration/global_settings/</guid>
-      <description>The following top-level global attributes are configurable in config.yml. See this example config filefor more details.
+      <description>The following top-level global attributes are configurable in config.yml. See this example config file for more details.
 Copy   wtf: colors: background: &amp;#34;red&amp;#34; border: focusable: &amp;#34;darkslateblue&amp;#34; focused: &amp;#34;orange&amp;#34; normal: &amp;#34;gray&amp;#34; checked: &amp;#34;gray&amp;#34; highlight: fore: &amp;#34;black&amp;#34; back: &amp;#34;green&amp;#34; text: &amp;#34;white&amp;#34; title: &amp;#34;white&amp;#34; grid: # How _wide_ the columns are, in terminal characters. In this case we have # six columns, each of which are 35 characters wide columns: [35, 35, 35, 35, 35, 35] # How _high_ the rows are, in terminal lines.</description>
     </item>
     
@@ -29,7 +29,7 @@ Copy   wtf: colors: background: &amp;#34;red&amp;#34; border: focusable: &amp;#3
       <guid>https://wtfutil.com/configuration/common_settings/</guid>
       <description>The following settings are common to all modules. Common settings have logical defaults and are all optional. An explicitly-defined common setting will over-ride a module&amp;rsquo;s internal default setting value.
 An example with all common settings explicitly configured.
-Copy   feedreader: enabled: true feeds: - https://news.ycombinator.com/rss feedLimit: 10 focusable: false position: top: 2 left: 2 width: 1 height: 1 title: &amp;#34;Hacker News&amp;#34; updateInterval: 14400 Attributes   </description>
+Copy   feedreader: enabled: true feeds: - https://news.ycombinator.com/rss feedLimit: 10 focusable: false position: top: 2 left: 2 width: 1 height: 1 title: &amp;#34;Hacker News&amp;#34; updateInterval: 14400 Attributes   Name Description Value    `enabled` _Optional_ Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@ Prerequisites Before you can generate new modules, you&amp;rsquo;ll need to have
       
       <guid>https://wtfutil.com/configuration/add_mutiple_instance_of_widget/</guid>
       <description>How to add multiple instances of a widget To add more than one instance of a particular widget, for example, if you want two Todo widgets, you can do so by adding the type property to the entries in your config.yml file. Below is an example for Todo:
-Copy   todo1: checkedIcon: &amp;#34;X&amp;#34; colors: checked: gray highlight: fore: &amp;#34;black&amp;#34; back: &amp;#34;orange&amp;#34; enabled: true filename: &amp;#34;todo.yml&amp;#34; position: top: 0 left: 0 height: 2 width: 2:wq refreshInterval: 3600 type: todo    </description>
+Copy   todo1: checkedIcon: &amp;#34;X&amp;#34; colors: checked: gray highlight: fore: &amp;#34;black&amp;#34; back: &amp;#34;orange&amp;#34; enabled: true filename: &amp;#34;todo.yml&amp;#34; position: top: 0 left: 0 height: 2 width: 2:wq refreshInterval: 3600 type: todo Copy   todo2: checkedIcon: &amp;#34;X&amp;#34; colors: checked: gray highlight: fore: &amp;#34;black&amp;#34; back: &amp;#34;orange&amp;#34; enabled: true filename: &amp;#34;todo.</description>
     </item>
     
   </channel>

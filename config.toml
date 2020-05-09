@@ -23,6 +23,9 @@ enableGitInfo = true
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
 name = "<i class='fab fa-github'>&nbsp;</i> <label>WTF on Github</label>"

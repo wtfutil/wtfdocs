@@ -705,7 +705,7 @@
 
 <h1>ARPANSA</h1>
 
-<p><!-- raw HTML omitted --></p>
+<p><img class="screenshot" src="/imgs/modules/arpansa.png" width="350" height="150" alt="arpansagovau module screenshot" /></p>
 <p>Displays Ultraviolet radiation index information from ARPANSA for an Australian city to help determine what level of sun protection or avoidance is necessary.</p>
 <p>The <a href="https://www.arpansa.gov.au">Australian Radiation Protection and Nuclear Safety Agency</a> (ARPANSA) is the Australian Government&rsquo;s primary authority on radiation protection and nuclear safety.</p>
 <p>Interpreting the information:</p>
@@ -753,7 +753,29 @@
 
 
 <h2 id="attributes">Attributes</h2>
-<!-- raw HTML omitted -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+  <tr>
+    <td>`locationid`</td>
+    <td>One of the <a href="https://uvdata.arpansa.gov.au/xml/uvvalues.xml">ARPANSA location ids as seen on the id attribute of the location tag. e.g. "Sydney"</td>
+  </tr>
+  <tr>
+    <td>`position`</td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td>`refreshInterval`</td>
+    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td>Any positive integer.</td>
+</tr>
+</table>
 <p>&laquo;&laquo;&laquo;&lt; HEAD</p>
 <h2 id="source-code">Source Code</h2>
 <h1 id="httpsgithubcomwtfutilwtftreemastermodulesweatherservicesarpansagovau"><a href="https://github.com/wtfutil/wtf/tree/master/modules/weatherservices/arpansagovau/">https://github.com/wtfutil/wtf/tree/master/modules/weatherservices/arpansagovau/</a></h1>
