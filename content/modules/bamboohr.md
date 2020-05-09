@@ -29,9 +29,9 @@ bamboohr:
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
   <tr>
-    <td>`subdomain`</td>
+    <td><code>subdomain</code></td>
     <td>Your <a href="https://www.bamboohr.com/api/documentation/">BambooHR API</a> subdomain name.</td>
-    <td>Leave this empty to use the `WTF_BAMBOO_HR_SUBDOMAIN` environment variable.</td>
+    <td>Leave this empty to use the <i>WTF_BAMBOO_HR_SUBDOMAIN</i> environment variable.</td>
   </tr>
 {{% /attributes %}}
 

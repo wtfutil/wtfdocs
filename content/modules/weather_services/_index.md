@@ -7,5 +7,5 @@ weight: 270
 
 For all modules weather-related.
 
-{{% childpages %}}
+{{% children %}}
 * [wego](../cmdrunner/wego)

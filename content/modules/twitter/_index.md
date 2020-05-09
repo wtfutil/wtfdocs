@@ -7,4 +7,4 @@ weight: 255
 
 Modules that interact with the Twitter API to display data.
 
-{{% childpages %}}
+{{% children %}}

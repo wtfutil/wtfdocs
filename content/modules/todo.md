@@ -33,15 +33,9 @@ todo:
 
 {{% attributes %}}
   {{< attributes/border >}}
-
-  <tr>
-    <td>`colors.checked`</td>
-    <td>The foreground color for checked rows.</td>
-    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
-  </tr>
-
+  {{< attributes/colors/custom name="checked" desc="The foreground color for checked rows.">}}
   {{< attributes/colors/highlight >}}
-  {{< attributes/custom name="checkedIcon" desc="_Optional_ The icon used to denote a 'checked' todo item." value="Any displayable unicode character." >}}
+  {{< attributes/custom name="checkedIcon" desc="<i>Optional</i> The icon used to denote a 'checked' todo item." value="Any displayable unicode character." >}}
   {{< attributes/enabled >}}
   {{< attributes/custom name="filename" desc="The name for the todo file." value="Any valid filename, ideally ending in `yml`." >}}
   {{< attributes/focusChar >}}

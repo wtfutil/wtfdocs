@@ -7,4 +7,4 @@ weight: 120
 
 Google Apps.
 
-{{% childpages %}}
+{{% children %}}

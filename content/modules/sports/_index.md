@@ -7,4 +7,4 @@ weight: 204
 
 Modules that display sports-related information.
 
-{{% childpages %}}
+{{% children %}}
