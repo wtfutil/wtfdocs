@@ -1,5 +1,5 @@
 <tr>
-    <td><code>{{ .Get "name" }}</code></td>
-    <td>{{ .Get "desc" }}</td>
-    <td>{{ .Get "value" }}</td>
+    <td><code>{{ .Get "name" | markdownify }}</code></td>
+    <td>{{ .Get "desc" | markdownify }}</td>
+    <td>{{ .Get "value" | markdownify }}</td>
 </tr>
