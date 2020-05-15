@@ -28,7 +28,7 @@ Configuration Copy   cdsFavorites: enabled: true position: top: 0 left: 0 height
       
       <guid>https://wtfutil.com/modules/cds/queue/</guid>
       <description>Display current CDS queue - waiting or building jobs.
-Configuration Copy   cdsQueue: enabled: true position: top: 0 left: 0 height: 3 width: 2 refreshInterval: 8 apiURL: https://api.cds.localhost.local token: xxxxxxxxxxxx    Attributes   Name Description Value    `apiURL` Your CDS API URL. Consumer token scope used: RUN   `token` Your CDS Consumer Token.    `border` _Optional_ Whether or not to draw this widget with a border.</description>
+Configuration Copy   cdsQueue: enabled: true position: top: 0 left: 0 height: 3 width: 2 refreshInterval: 8 apiURL: https://api.cds.localhost.local token: xxxxxxxxxxxx    Attributes   Name Description Value    `apiURL` Your CDS API URL. Consumer token scope used: RUN   `token` Your CDS Consumer Token.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@ Configuration Copy   cdsQueue: enabled: true position: top: 0 left: 0 height: 3 
       
       <guid>https://wtfutil.com/modules/cds/status/</guid>
       <description>Display current CDS status. This is useful for CDS Administrator only.
-Configuration Copy   cdsStatus: enabled: true position: top: 0 left: 0 height: 3 width: 2 refreshInterval: 8 apiURL: https://api.cds.localhost.local token: xxxxxxxxxxxx    Attributes   Name Description Value    `apiURL` Your CDS API URL.    `token` Your CDS Consumer Token.    `border` _Optional_ Whether or not to draw this widget with a border.</description>
+Configuration Copy   cdsStatus: enabled: true position: top: 0 left: 0 height: 3 width: 2 refreshInterval: 8 apiURL: https://api.cds.localhost.local token: xxxxxxxxxxxx    Attributes   Name Description Value    `apiURL` Your CDS API URL.    `token` Your CDS Consumer Token.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
   </channel>

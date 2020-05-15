@@ -766,53 +766,54 @@
             <th>Value</th>
         </tr>
     </thead>
-  <tr>
-    <td>`border`</td>
-    <td>_Optional_ Whether or not to draw this widget with a border. Default: `true`.</td>
+      <tr>
+    <td><code>border</code></td>
+    <td><i>Optional</i> Whether or not to draw this widget with a border. Default: <code>true</code>.</td>
     <td>true, false</td>
 </tr>
   <tr>
-    <td>`colors.rows.even`</td>
+    <td><code>colors.rows.even</code></td>
     <td>The foreground color for even-numbered rows.</td>
     <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
 </tr>
 <tr>
-    <td>`colors.rows.odd`</td>
+    <td><code>colors.rows.odd</code></td>
     <td>The foreground color for odd-numbered rows.</td>
     <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.</td>
 </tr>
   <tr>
-    <td>`dateFormat`</td>
+    <td><code>dateFormat</code></td>
     <td>The format to use when rendering date strings.</td>
     <td>Any valid Go date layout which is handled by <a href="https://golang.org/pkg/time/#Time.Format">Time.Format</a>.
         Defaults to Jan 2.</td>
 </tr>
   <tr>
-    <td>`enabled`</td>
-    <td>_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.</td>
+    <td><code>enabled</code></td>
+    <td><i>Optional</i> Whether or not this module is executed and if its data displayed onscreen. Default:
+        <code>false</code>.</td>
     <td>true, false</td>
 </tr>
   <tr><td>`locations`</td><td>A list of timezone for the clocks to be displayed.</td><td>Any <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">TZ database timezone.</td></tr>
   <tr>
-    <td>`position`</td>
+    <td><code>position</code></td>
     <td>Defines where in the grid this module's widget will be displayed.</td>
     <td></td>
 </tr>
   <tr>
-    <td>`refreshInterval`</td>
-    <td>_Optional_ How often, in seconds, this module will update its data. Default: `300`.</td>
+    <td><code>refreshInterval</code></td>
+    <td><i>Optional</i> How often, in seconds, this module will update its data. Default: <code>300</code>.</td>
     <td>Any positive integer.</td>
 </tr>
   <tr>
-    <td>`sort`</td>
+    <td><code>sort</code></td>
     <td>The order in which to sort the clocks.</td>
     <td>`alphabetical` or `chronological`. `alphabetical` will sort in acending order by `key`, `chronological` will sort in ascending order by date/time.</td>
 </tr>
   <tr>
-    <td>`timeFormat`</td>
+    <td><code>timeFormat</code></td>
     <td>The format to use when rendering time strings.</td>
     <td>Any valid Go time layout which is handled by <a href="https://golang.org/pkg/time/#Time.Format">Time.Format</a>.
-        Default: `15:04 MST`.</td>
+        Default: <code>15:04 MST</code>.</td>
 </tr>
 </table>
 <h2 id="source-code">Source Code</h2>

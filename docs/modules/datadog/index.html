@@ -715,11 +715,11 @@
 
 <div class="position-relative">
     <div class="position-absolute" style="right:0;">
-        <button class="btn btn-light" data-clipboard-target="#clipboard_067364c4e6">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_661f63d765">
         Copy
         </button>
     </div>
-    <div id="clipboard_067364c4e6">
+    <div id="clipboard_661f63d765">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
 <span style="color:#66d9ef">datadog</span>:
   <span style="color:#66d9ef">apiKey</span>: <span style="color:#e6db74">&#34;&lt;yourapikey&gt;&#34;</span>
@@ -745,50 +745,51 @@
         &lt;/tr<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">    &lt;/thead&gt;</span>
       &lt;tr<span style="color:#e6db74">&gt;
-</span><span style="color:#e6db74">    &lt;td&gt;`apiKey`&lt;/td&gt;</span>
+</span><span style="color:#e6db74">    &lt;td&gt;&lt;code&gt;apiKey&lt;/code&gt;&lt;/td&gt;</span>
     &lt;td&gt;Your &lt;a href=<span style="color:#e6db74">&#34;https://docs.datadoghq.com/api/&#34;</span>&gt;DataDog API&lt;/a&gt; token.&lt;/td<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">    &lt;td&gt;</span>
-        Your API key <span style="color:#75715e">**or**</span> leave it empty to use the `WTF_DATADOG_API_KEY` environment variable.
+        Your API key <span style="color:#75715e">**or**</span> leave it empty to use the &lt;code&gt;WTF_DATADOG_API_KEY&lt;/code&gt; environment variable.
     &lt;/td&gt;
 &lt;/tr<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">  &lt;tr&gt;</span>
-    &lt;td&gt;`applicationKey`&lt;/td<span style="color:#e6db74">&gt;
+    &lt;td&gt;&lt;code&gt;applicationKey&lt;/code&gt;&lt;/td<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">    &lt;td&gt;Your DataDog application key&lt;/td&gt;</span>
     &lt;td&gt;Leave this empty to use the `WTF_DATADOG_APPLICATION_KEY` environment variable.&lt;/td&gt;
 &lt;/tr<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">  &lt;tr&gt;</span>
-    &lt;td&gt;`border`&lt;/td<span style="color:#e6db74">&gt;
-</span><span style="color:#e6db74">    &lt;td&gt;_Optional_ Whether or not to draw this widget with a border. Default: `true`.&lt;/td&gt;</span>
+    &lt;td&gt;&lt;code&gt;border&lt;/code&gt;&lt;/td<span style="color:#e6db74">&gt;
+</span><span style="color:#e6db74">    &lt;td&gt;&lt;i&gt;Optional&lt;/i&gt; Whether or not to draw this widget with a border. Default: &lt;code&gt;true&lt;/code&gt;.&lt;/td&gt;</span>
     &lt;td&gt;<span style="color:#66d9ef">true</span>, <span style="color:#66d9ef">false</span>&lt;/td&gt;
 &lt;/tr<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">  &lt;tr&gt;</span>
-    &lt;td&gt;`enabled`&lt;/td<span style="color:#e6db74">&gt;
-</span><span style="color:#e6db74">    &lt;td&gt;_Optional_ Whether or not this module is executed and if its data displayed onscreen. Default: `false`.&lt;/td&gt;</span>
-    &lt;td&gt;<span style="color:#66d9ef">true</span>, <span style="color:#66d9ef">false</span>&lt;/td&gt;
+    &lt;td&gt;&lt;code&gt;enabled&lt;/code&gt;&lt;/td<span style="color:#e6db74">&gt;
+</span><span style="color:#e6db74">    &lt;td&gt;&lt;i&gt;Optional&lt;/i&gt; Whether or not this module is executed and if its data displayed onscreen. Default:</span>
+        &lt;code&gt;<span style="color:#66d9ef">false</span>&lt;/code&gt;.&lt;/td<span style="color:#e6db74">&gt;
+</span><span style="color:#e6db74">    &lt;td&gt;true, false&lt;/td&gt;</span>
 &lt;/tr<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">  &lt;tr&gt;</span>
-    &lt;td&gt;`monitors`&lt;/td<span style="color:#e6db74">&gt;
+    &lt;td&gt;&lt;code&gt;monitors&lt;/code&gt;&lt;/td<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">    &lt;td&gt;Configuration for the monitors functionality.&lt;/td&gt;</span>
     &lt;td&gt;&lt;/td&gt;
 &lt;/tr<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">  &lt;tr&gt;</span>
-    &lt;td&gt;`position`&lt;/td<span style="color:#e6db74">&gt;
+    &lt;td&gt;&lt;code&gt;position&lt;/code&gt;&lt;/td<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">    &lt;td&gt;Defines where in the grid this module&#39;s widget will be displayed.&lt;/td&gt;</span>
     &lt;td&gt;&lt;/td&gt;
 &lt;/tr<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">  &lt;tr&gt;</span>
-    &lt;td&gt;`refreshInterval`&lt;/td<span style="color:#e6db74">&gt;
-</span><span style="color:#e6db74">    &lt;td&gt;_Optional_ How often, in seconds, this module will update its data. Default: `300`.&lt;/td&gt;</span>
+    &lt;td&gt;&lt;code&gt;refreshInterval&lt;/code&gt;&lt;/td<span style="color:#e6db74">&gt;
+</span><span style="color:#e6db74">    &lt;td&gt;&lt;i&gt;Optional&lt;/i&gt; How often, in seconds, this module will update its data. Default: &lt;code&gt;300&lt;/code&gt;.&lt;/td&gt;</span>
     &lt;td&gt;Any positive integer.&lt;/td&gt;
 &lt;/tr<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">  &lt;tr&gt;</span>
-    &lt;td&gt;`tags`&lt;/td<span style="color:#e6db74">&gt;
+    &lt;td&gt;&lt;code&gt;tags&lt;/code&gt;&lt;/td<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">    &lt;td&gt;List of tags you want to query monitors by.&lt;/td&gt;</span>
     &lt;td&gt;&lt;/td&gt;
 &lt;/tr<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">  &lt;tr&gt;</span>
-    &lt;td&gt;`title`&lt;/td<span style="color:#e6db74">&gt;
-</span><span style="color:#e6db74">    &lt;td&gt;_Optional_ The title to display in the widget&#39;s onscreen box.&lt;/td&gt;</span>
+    &lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td<span style="color:#e6db74">&gt;
+</span><span style="color:#e6db74">    &lt;td&gt;&lt;i&gt;Optional&lt;/i&gt; The title to display in the widget&#39;s onscreen box.&lt;/td&gt;</span>
     &lt;td&gt;&lt;/td&gt;
 &lt;/tr<span style="color:#e6db74">&gt;
 </span><span style="color:#e6db74">

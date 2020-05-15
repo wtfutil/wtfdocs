@@ -19,7 +19,7 @@
       <guid>https://wtfutil.com/modules/ipaddress/ipapi/</guid>
       <description>Displays your current IP address information, from IP-APIcom.
 Note: IP-API.com has a free-plan rate limit of 120 requests per minute.
-Configuration Copy   ipinfo: colors: name: red value: white enabled: true position: top: 1 left: 2 height: 1 width: 1 refreshInterval: 150    Attributes   Name Description Value    `border` _Optional_ Whether or not to draw this widget with a border. Default: `true`. true, false   `colors.</description>
+Configuration Copy   ipinfo: colors: name: red value: white enabled: true position: top: 1 left: 2 height: 1 width: 1 refreshInterval: 150    Attributes   Name Description Value    border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.</description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@ Configuration Copy   ipinfo: colors: name: red value: white enabled: true positi
       <guid>https://wtfutil.com/modules/ipaddress/ipinfo/</guid>
       <description>Displays your current IP address information, from ipinfo.io.
 Note: IPInfo.io has a free-plan rate limit of 1000 requests per day.
-Configuration Copy   ipinfo: colors: name: red value: white enabled: true position: top: 1 left: 2 height: 1 width: 1 refreshInterval: 150    Screenhots Attributes   Name Description Value    `border` _Optional_ Whether or not to draw this widget with a border. Default: `true`. true, false   `colors.</description>
+Configuration Copy   ipinfo: colors: name: red value: white enabled: true position: top: 1 left: 2 height: 1 width: 1 refreshInterval: 150    Screenhots Attributes   Name Description Value    border Optional Whether or not to draw this widget with a border. Default: true. true, false   colors.</description>
     </item>
     
   </channel>

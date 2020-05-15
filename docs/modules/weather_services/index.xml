@@ -31,7 +31,7 @@ Interpreting the information:
       <guid>https://wtfutil.com/modules/weather_services/prettyweather/</guid>
       <description>Displays weather information as ASCII art from Wttr.in.
 Consider using wego directly, to avoid issues with rate limiting. See wego.
-Configuration Copy   prettyweather: enabled: true city: &amp;#34;tehran&amp;#34; position: top: 3 left: 5 height: 1 width: 1 refreshInterval: 300 unit: &amp;#34;m&amp;#34; view: 0 language: &amp;#34;en&amp;#34;    Attributes   Name Description Value    `border` _Optional_ Whether or not to draw this widget with a border. Default: `true`.</description>
+Configuration Copy   prettyweather: enabled: true city: &amp;#34;tehran&amp;#34; position: top: 3 left: 5 height: 1 width: 1 refreshInterval: 300 unit: &amp;#34;m&amp;#34; view: 0 language: &amp;#34;en&amp;#34;    Attributes   Name Description Value    border Optional Whether or not to draw this widget with a border. Default: true.</description>
     </item>
     
     <item>
