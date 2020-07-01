@@ -333,6 +333,11 @@
   </url>
   
   <url>
+    <loc>https://wtfutil.com/modules/pocket/</loc>
+    <lastmod>2020-05-01T18:55:37-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wtfutil.com/modules/power/</loc>
     <lastmod>2018-05-26T19:26:23-07:00</lastmod>
   </url>
@@ -415,11 +420,6 @@
   <url>
     <loc>https://wtfutil.com/modules/zendesk/</loc>
     <lastmod>2018-07-23T18:55:37-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wtfutil.com/modules/pocket/</loc>
-    <lastmod>2020-05-01T18:55:37-08:00</lastmod>
   </url>
   
   <url>
