@@ -31,6 +31,7 @@ weather:
     width: 1
   refreshInterval: 900
   tempUnit: "C"
+  useEmoji: true
 ```
 {{% attributes %}}
   {{< attributes/apikey name="OpenWeatherMap" link="https://openweathermap.org/appid" envvar="WTF_OWM_API_KEY" >}}
@@ -57,6 +58,8 @@ weather:
   {{< attributes/refreshInterval >}}
 
   {{< attributes/custom name="tempUnit" desc="_Optional_ The temperature scale in which to display temperature values. Default: C." value="`F` for Fahrenheit, `C` for Celcius" >}}
+  
+  {{< attributes/custom name="useEmoji" desc="_Optional_ Whether or not to display emoji characters in the title. Default: true." value="true or false" >}}
 {{% /attributes %}}
 
 {{% keyboard %}}
