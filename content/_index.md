@@ -22,21 +22,22 @@ It even has weather. And clocks. And emoji.
     <a href="/getting_started" class="btn btn-primary" role="button">Quick Start</a>
 </p>
 
-## Modules
-
-Modules are configurable units of functionality that extracts data from some source and package that data for display.
-
-See [Modules](/modules) for the complete list of supported modules.
-
-#### Featured Modules
+## Featured Modules
 
 <div class="card-group">
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">Git</h5>
       <p class="card-text">
-        <img src="imgs/services/git.png" width="72" height="64" alt="git" title="git" style="float: left; padding-right: 8px;" />
-        This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+        <img src="/imgs/services/git.png" width="72" height="64" alt="git" title="git" style="float: left; padding-right: 8px;" />
+        The Git module allows you to view the status of your currently-active branch and interact with it.
+        <br />
+        <ul>
+          <li> View your currently-active branch</li>
+          <li> View changed files</li>
+          <li> List recent commits</li>
+        </ul>
+        and more.
       </p>
     </div>
     <div class="card-footer">
@@ -47,8 +48,14 @@ See [Modules](/modules) for the complete list of supported modules.
     <div class="card-body">
       <h5 class="card-title">GitHub</h5>
       <p class="card-text">
-        <img src="imgs/services/github.png" width="72" height="64" alt="github" title="github" style="float: left; padding-right: 8px;" />
-        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        <img src="/imgs/services/github.png" width="72" height="64" alt="github" title="github" style="float: left; padding-right: 8px;" />
+        The GitHub module allows you to view the status of your remote GitHub repo and interact with it.
+        <ul>
+          <li>See the number of open PRs and issues</li>
+          <li>See open code review requests</li>
+          <li>List open pull requests</li>
+        </ul>
+        and a few other things.
       </p>
     </div>
     <div class="card-footer">
@@ -59,8 +66,14 @@ See [Modules](/modules) for the complete list of supported modules.
     <div class="card-body">
       <h5 class="card-title">Docker</h5>
       <p class="card-text">
-        <img src="imgs/services/docker.png" width="72" height="55" alt="docker" title="docker" style="float: left; padding-right: 8px;" />
-        This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+        <img src="/imgs/services/docker.png" width="72" height="55" alt="docker" title="docker" style="float: left; padding-right: 8px;" />
+        The Docker module allows you to view the current status of Docker on your local machine and interact with it.
+        <ul>
+          <li>View container statuses</li>
+          <li>View detailed system info</li>
+          <li>Scroll up and scroll down</li>
+        </ul>
+        Ok, it doesn't <i>do</i> a lot, but it's still pretty cool.
       </p>
     </div>
     <div class="card-footer">
@@ -74,8 +87,14 @@ See [Modules](/modules) for the complete list of supported modules.
     <div class="card-body">
       <h5 class="card-title">Google Calendar</h5>
       <p class="card-text">
-        <img src="imgs/services/gcal.png" width="72" height="64" alt="gcal" title="gcal" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/gcal.png" width="72" height="64" alt="gcal" title="gcal" style="float: left; padding-right: 8px;" />
         This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        <ul>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+        </ul>
+        with lots of pretty colours.
       </p>
     </div>
     <div class="card-footer">
@@ -86,8 +105,14 @@ See [Modules](/modules) for the complete list of supported modules.
     <div class="card-body">
       <h5 class="card-title">PagerDuty</h5>
       <p class="card-text">
-        <img src="imgs/services/pagerduty.jpg" width="72" height="64" alt="pagerduty" title="pagerduty" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/pagerduty.jpg" width="72" height="64" alt="pagerduty" title="pagerduty" style="float: left; padding-right: 8px;" />
         This card has supporting text below as a natural lead-in to additional content.
+        <ul>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+        </ul>
+        and more.
       </p>
     </div>
     <div class="card-footer">
@@ -98,8 +123,14 @@ See [Modules](/modules) for the complete list of supported modules.
     <div class="card-body">
       <h5 class="card-title">DigitalOcean</h5>
       <p class="card-text">
-        <img src="imgs/services/digitalocean.png" width="72" height="64" alt="digitalocean" title="digitalocean" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/digitalocean.png" width="72" height="64" alt="digitalocean" title="digitalocean" style="float: left; padding-right: 8px;" />
         This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        <ul>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+        </ul>
+        and more.
       </p>
     </div>
     <div class="card-footer">
@@ -113,8 +144,14 @@ See [Modules](/modules) for the complete list of supported modules.
     <div class="card-body">
       <h5 class="card-title">Pi-hole</h5>
       <p class="card-text">
-        <img src="imgs/services/pihole.png" width="72" height="64" alt="pihole" title="pihole" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/pihole.png" width="72" height="64" alt="pihole" title="pihole" style="float: left; padding-right: 8px;" />
         This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        <ul>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+        </ul>
+        and more.
       </p>
     </div>
     <div class="card-footer">
@@ -125,8 +162,14 @@ See [Modules](/modules) for the complete list of supported modules.
     <div class="card-body">
       <h5 class="card-title">Weather</h5>
       <p class="card-text">
-        <img src="imgs/services/weather.jpg" width="72" height="64" alt="weather" title="weather" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/weather.jpg" width="72" height="64" alt="weather" title="weather" style="float: left; padding-right: 8px;" />
         This card has supporting text below as a natural lead-in to additional content.
+        <ul>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+        </ul>
+        and that's about it, frankly.
       </p>
     </div>
     <div class="card-footer">
@@ -137,8 +180,14 @@ See [Modules](/modules) for the complete list of supported modules.
     <div class="card-body">
       <h5 class="card-title">Transmission</h5>
       <p class="card-text">
-        <img src="imgs/services/transmission.png" width="72" height="64" alt="transmission" title="transmission" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/transmission.png" width="72" height="64" alt="transmission" title="transmission" style="float: left; padding-right: 8px;" />
         This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        <ul>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+        </ul>
+        and more.
       </p>
     </div>
     <div class="card-footer">

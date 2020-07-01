@@ -5,6 +5,8 @@ draft: false
 weight: 80
 ---
 
+<img src="/imgs/services/git.png" width="128" height="128" alt="git" title="git" style="float: left; padding-right: 8px;" />
+
 Displays information about local git repositories: branch, changed
 files, and recent commits.
 

@@ -5,6 +5,8 @@ draft: false
 weight: 90
 ---
 
+<img src="/imgs/services/github.png" width="128" height="128" alt="github" title="github" style="float: left; padding-right: 8px;" />
+
 Displays information about your git repositories hosted on GitHub:
 
 #### Open Review Requests

@@ -43,8 +43,6 @@ wtf:
   term: "xterm-256color"
 ```
 
-### Attributes
-
 {{% attributes %}}
   {{< attributes/colors/background >}}
 

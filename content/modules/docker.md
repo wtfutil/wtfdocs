@@ -5,6 +5,8 @@ draft: false
 weight: 63
 ---
 
+<img src="/imgs/services/docker.png" width="128" height="97" alt="docker" title="docker" style="float: left; padding-right: 8px;" />
+
 Displays information about currently-running Docker processes.
 
 ## Configuration
