@@ -788,6 +788,16 @@ Configuration zendesk:apiKey:&amp;#34;p0d13*************************************
     </item>
     
     <item>
+      <title>Pocket</title>
+      <link>https://wtfutil.com/modules/pocket/</link>
+      <pubDate>Fri, 01 May 2020 18:55:37 -0800</pubDate>
+      
+      <guid>https://wtfutil.com/modules/pocket/</guid>
+      <description>Displays Pocket Saved Articles.
+Configuration pocket:enabled:trueposition:top:0left:3height:4width:2consumerKey:&amp;#39;88*******************&amp;#39;refreshInterval:1 Attributes   Name Description Value     consumer_key The consumer key of pocket app obtained from https://getpocket.com/developer/apps/new, make sure to have add, modify and retrieve permissions 888**************************   border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+    </item>
+    
+    <item>
       <title>v0.29.0 Released</title>
       <link>https://wtfutil.com/blog/2020-04-26-v0-29-0/</link>
       <pubDate>Sun, 26 Apr 2020 15:39:14 -0700</pubDate>
