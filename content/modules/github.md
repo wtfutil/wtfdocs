@@ -63,6 +63,10 @@ github:
   {{< attributes/refreshInterval >}}
   {{< attributes/custom name="repositories" desc="A list of github repos to fetch data for." value="" >}}
 
+  {{< attributes/custom name="showMyPullRequests" desc="_Optional_ Whether or not to display the 'My Pull Requests' section. Default: `true`." value="`true` or `false`" >}}
+  {{< attributes/custom name="showOpenReviewRequests" desc="_Optional_ Whether or not to display the 'Open Review Requests' section. Default: `true`." value="`true` or `false`" >}}
+  {{< attributes/custom name="showStats" desc="_Optional_ Whether or not to display the 'Stats' section. Default: `true`." value="`true` or `false`" >}}
+
   {{< attributes/custom name="uploadURL" desc="_Optional_ Your GitHub Enterprise upload URL (often the same as the API URL)." value="Your API URL **or** leave it empty to use the `WTF_GITHUB_UPLOAD_URL` environment variable." >}}
 
   {{< attributes/username name="GitHub" desc="Used to figure out which review requests you've been added to." >}}
