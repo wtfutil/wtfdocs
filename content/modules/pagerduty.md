@@ -35,6 +35,8 @@ pagerduty:
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
   {{< attributes/custom name="scheduleIDs" desc="An array of schedule IDs you want to restrict the query to." value="" >}}
+  {{< attributes/custom name="teamIDs" desc="_Optional_ An array of team IDs to restrict the incidents query to" value="" >}}
+  {{< attributes/custom name="userIDs" desc="_Optional_ An array of user IDs to restrict the incidents query to" value="" >}}
   {{< attributes/custom name="showIncidents" desc="_Optional_ Whether or not to list incidents. Default: true." value="true, false" >}}
   {{< attributes/custom name="showSchedules" desc="_Optional_ Whether or not to show schedules. Default: true." value="true, false" >}}
 {{% /attributes %}}
