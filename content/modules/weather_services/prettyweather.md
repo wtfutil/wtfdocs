@@ -49,8 +49,4 @@ See [wego](../../cmdrunner/wego).
   {{< attributes/custom name="view" desc="_Optional_ Wttr.in view configuration." value="See `curl wttr.in/:help` for more details" >}}
 {{% /attributes %}}
 
-## Source Code
-
-```bash
-wtf/modules/weatherservices/prettyweather/
-```
+{{% sourcePath module="weatherservices/prettyweather" %}}

@@ -43,8 +43,4 @@ cdsQueue:
   {{< attributes/title >}}
 {{% /attributes %}}
 
-## Source Code
-
-```bash
-wtf/modules/cds/queue/
-```
+{{% sourcePath module="cds/queue" %}}

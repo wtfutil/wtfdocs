@@ -50,8 +50,4 @@ bittrex:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-## Source Code
-
-```bash
-wtf/modules/cryptoexchanges/bittrex/
-```
+{{% sourcePath module="cryptoexchanges/bittrex" %}}

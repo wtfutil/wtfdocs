@@ -77,8 +77,4 @@ weather:
   {{< keyboard/arrowFore desc="Show the next Twitter account" >}}
 {{% /keyboard %}}
 
-## Source Code
-
-```bash
-wtf/modules/weatherservices/weather/
-```
+{{% sourcePath module="weatherservices/weather" %}}

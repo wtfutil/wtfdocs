@@ -47,8 +47,4 @@ blockfolio:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-## Source
-
-```bash
-wtf/modules/cryptoexchanges/blockfolio/
-```
+{{% sourcePath module="cryptoexchanges/blockfolio" %}}

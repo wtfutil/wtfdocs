@@ -72,8 +72,4 @@ cryptolive:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-## Source Code
-
-```bash
-wtf/modules/cryptoexchanges/cryptolive/
-```
+{{% sourcePath module="cryptoexchanges/cryptolive" %}}

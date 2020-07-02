@@ -42,8 +42,4 @@ cdsStatus:
   {{< attributes/title >}}
 {{% /attributes %}}
 
-## Source Code
-
-```bash
-wtf/modules/cds/status/
-```
+{{% sourcePath module="cds/status" %}}

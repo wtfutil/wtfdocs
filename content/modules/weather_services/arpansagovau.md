@@ -41,8 +41,4 @@ Interpreting the information:
 
 {{% /attributes %}}
 
-## Source Code
-
-```bash
-wtf/modules/weatherservices/arpansagovau/
-```
+{{% sourcePath module="weatherservices/arpansagovau" %}}

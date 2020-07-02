@@ -50,8 +50,4 @@ cdsFavorites:
   {{< attributes/title >}}
 {{% /attributes %}}
 
-## Source Code
-
-```bash
-wtf/modules/cds/favorites/
-```
+{{% sourcePath module="cds/favorites" %}}
