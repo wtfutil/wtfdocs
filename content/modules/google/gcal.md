@@ -42,6 +42,7 @@ gcal:
   refreshInterval: 300
   secretFile: "~/.config/wtf/gcal/client_secret.json"
   showDeclined: true
+  showEndTime: false
   timezone: "America/Vancouver"
   withLocation: true
 ```
@@ -82,7 +83,10 @@ gcal:
     <td>A string representing a file path to the JSON secret file.</td>
   </tr>
 
+
   {{< attributes/custom name="showDeclined" desc="_Optional_ Whether or not to show the location of the appointment. Default: true." value="true, false" >}}
+  {{< attributes/custom name="showEndTime" desc="_Optional_ Whether or not to display the event end time. Default: false." value="true, false" >}}
+
   {{< attributes/timezone >}}
   {{< attributes/custom name="withLocation" desc="_Optional_ Whether or not to show the location of the appointment. Default: true." value="true, false" >}}
 {{% /attributes %}}
