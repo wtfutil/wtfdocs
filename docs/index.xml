@@ -573,7 +573,7 @@ jira:apiKey:&amp;#34;p0d13*********************************************c3&amp;#3
       
       <guid>https://wtfutil.com/modules/kubernetes/</guid>
       <description>Displays information about a Kubernetes cluster.
-Configuration kubernetes:enabled:truekubeconfig:&amp;#34;/Users/testuser/.kube/config&amp;#34;namespaces:- internal- public- systemsobjects:- deployments- nodes- podsposition:top:4left:1height:1width:2refreshInterval:300title:&amp;#34;Build System&amp;#34; Attributes   Name Description Value     enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   kubeconfig The absolute path to your Kubernetes config file.    namespaces A list of namespaces to monitor. Defaults to all if empty.</description>
+Configuration kubernetes:enabled:truekubeconfig:&amp;#34;/Users/testuser/.kube/config&amp;#34;namespaces:- internal- public- systemsobjects:- deployments- nodes- podsposition:top:4left:1height:1width:2refreshInterval:300title:&amp;#34;Build System&amp;#34; Attributes   Name Description Value     enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   context The Kubernetes context to use. If blank, it uses default context.    kubeconfig The absolute path to your Kubernetes config file.</description>
     </item>
     
     <item>

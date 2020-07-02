@@ -32,6 +32,7 @@ kubernetes:
 
 {{% attributes %}}
   {{< attributes/enabled >}}
+  {{< attributes/custom name="context" desc="The Kubernetes context to use. If blank, it uses default context." value="" >}}
   {{< attributes/custom name="kubeconfig" desc="The absolute path to your Kubernetes config file." value="" >}}
   {{< attributes/custom name="namespaces" desc="A list of namespaces to monitor. Defaults to all if empty." value="" >}}
   {{< attributes/custom name="objects" desc="A list of Kubernetes objects to display." value="Any of `nodes`, `pods`, and/or `deployments`." >}}
