@@ -11,7 +11,10 @@ title: ""
 </p>
 
 <p align="center">
-    <a href="/getting_started" class="btn btn-primary quick-start" role="button">Quick Start</a>
+    <a href="/getting_started" class="btn btn-primary quick-start" role="button">
+      <img src="imgs/icons/rocket.png" title="WTF" alt="WTF" width="32" height="32" /> 
+      Quick Start
+    </a>
 </p>
 
 <p>&nbsp;</p>
@@ -186,6 +189,8 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
 
 ## Sponsors?
 
-Sponsoring is a great way to say "thank you", and WTF is proud to participate in the <a href="https://github.com/sponsors">GitHub Sponsors</a> program. If you're getting value from WTF, please sponsor the ongoing development of the app and this documentation.
+Sponsoring is a great way to say "thank you", and WTF is proud to participate in the <a href="https://github.com/sponsors/senorprogrammer">GitHub Sponsors</a> program. 
+
+If you're deriving value from WTF, if it occupies that special place in your terminal, please take a look at the <a href="https://github.com/sponsors/senorprogrammer">sponsorship page</a>.
 
 <iframe src="https://github.com/sponsors/senorprogrammer/card" title="Sponsor senorprogrammer" height="225" width="760" style="border: 0;"></iframe>
