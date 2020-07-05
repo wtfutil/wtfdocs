@@ -59,9 +59,9 @@ gcal:
   {{< attributes/colors/custom name="colors.title" desc="The default colour for calendar event titles." >}}
 
   <tr>
-    <td>`colors.highlights`</td>
+    <td><code>colors.highlights</code></td>
     <td>A list of arrays that define a regular expression pattern and a color. If a calendar event title matches a regular expression, the title will be drawn in that colour. Over-rides the default title colour.</td>
-    <td>[a valid regular expression, any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.]</td>
+    <td>A valid regular expression, or any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
   </tr>
 
   {{< attributes/custom name="calendarReadLevel" desc="_Optional_ The calender read level specifies level you want to read events. Default: reader." value="reader, writer" >}}
@@ -78,7 +78,7 @@ gcal:
   {{< attributes/refreshInterval >}}
 
   <tr>
-    <td>`secretFile`</td>
+    <td><code>secretFile</code></td>
     <td>Your <a href="https://developers.google.com/calendar/quickstart/go">Google client secret</a> JSON file.</td>
     <td>A string representing a file path to the JSON secret file.</td>
   </tr>
