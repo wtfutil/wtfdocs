@@ -22,14 +22,17 @@
   margin: 0px 0px 24px 0px;
 }
 
-.blog-post a {
+.blog-post .title {
   display: inline-block;
   font-size: 1.5em;
   margin-top: 4px;
+  outline: 1px solid green !important;
 }
 
 .blog-post .blog-date {
   color: rgb(100, 100, 100) !important;
+  float: left;
+  outline: 1px solid red !important;
 }
 
 a.highlight {

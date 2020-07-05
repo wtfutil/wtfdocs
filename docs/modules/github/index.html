@@ -48,11 +48,6 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/wtfutil/wtf/blob/master/README.md#contributors" >
-                                  <i class='fa fa-bullhorn'></i> <label>Credits</label>
-                                </a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="/blog" >
                                   <i class='fas fa-blog'>&nbsp;</i> <label>Blog</label>
                                 </a>
@@ -709,6 +704,7 @@
 
 <h1>GitHub</h1>
 
+<p><img src="/imgs/services/github.png" width="128" height="128" alt="github" title="github" style="float: left; padding-right: 8px;" /></p>
 <p>Displays information about your git repositories hosted on GitHub:</p>
 <h4 id="open-review-requests">Open Review Requests</h4>
 <p>All open code review requests assigned to you.</p>
@@ -781,13 +777,15 @@
     <td><code>apiKey</code></td>
     <td>Your <a href="https://blog.github.com/2013-05-16-personal-api-tokens/">GitHub API</a> token.</td>
     <td>
-        Your API key **or** leave it empty to use the <code>WTF_GITHUB_TOKEN</code> environment variable.
+        Your API key <strong>or</strong> leave it empty to use the
+        <code>WTF_GITHUB_TOKEN</code> environment
+        variable.
     </td>
 </tr>
   <tr>
     <td><code>baseURL</code></td>
-    <td>_Optional_ Your GitHub Enterprise API URL.</td>
-    <td>Your API URL **or** leave it empty to use the `WTF_GITHUB_BASE_URL` environment variable.</td>
+    <td><em>Optional</em> Your GitHub Enterprise API URL.</td>
+    <td>Your API URL <strong>or</strong> leave it empty to use the <code>WTF_GITHUB_BASE_URL</code> environment variable.</td>
 </tr>
   <tr>
     <td><code>border</code></td>
@@ -807,7 +805,7 @@
 </tr>
   <tr>
     <td><code>enableStatus</code></td>
-    <td>Whether or not to display pull request mergeability status (`dirty`, `clean`, `unstable`, `blocked`).</td>
+    <td>Whether or not to display pull request mergeability status (<code>dirty</code>, <code>clean</code>, <code>unstable</code>, <code>blocked</code>).</td>
     <td>true, false</td>
 </tr>
   <tr>
@@ -832,23 +830,23 @@
 </tr>
   <tr>
     <td><code>showMyPullRequests</code></td>
-    <td>_Optional_ Whether or not to display the &#39;My Pull Requests&#39; section. Default: `true`.</td>
-    <td>`true` or `false`</td>
+    <td><em>Optional</em> Whether or not to display the &lsquo;My Pull Requests&rsquo; section. Default: <code>true</code>.</td>
+    <td><code>true</code> or <code>false</code></td>
 </tr>
   <tr>
     <td><code>showOpenReviewRequests</code></td>
-    <td>_Optional_ Whether or not to display the &#39;Open Review Requests&#39; section. Default: `true`.</td>
-    <td>`true` or `false`</td>
+    <td><em>Optional</em> Whether or not to display the &lsquo;Open Review Requests&rsquo; section. Default: <code>true</code>.</td>
+    <td><code>true</code> or <code>false</code></td>
 </tr>
   <tr>
     <td><code>showStats</code></td>
-    <td>_Optional_ Whether or not to display the &#39;Stats&#39; section. Default: `true`.</td>
-    <td>`true` or `false`</td>
+    <td><em>Optional</em> Whether or not to display the &lsquo;Stats&rsquo; section. Default: <code>true</code>.</td>
+    <td><code>true</code> or <code>false</code></td>
 </tr>
   <tr>
     <td><code>uploadURL</code></td>
-    <td>_Optional_ Your GitHub Enterprise upload URL (often the same as the API URL).</td>
-    <td>Your API URL **or** leave it empty to use the `WTF_GITHUB_UPLOAD_URL` environment variable.</td>
+    <td><em>Optional</em> Your GitHub Enterprise upload URL (often the same as the API URL).</td>
+    <td>Your API URL <strong>or</strong> leave it empty to use the <code>WTF_GITHUB_UPLOAD_URL</code> environment variable.</td>
 </tr>
   <tr>
     <td><code>username</code></td>

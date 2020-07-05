@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>WTF on WTF - the terminal dashboard</title>
+    <title>WTF - the terminal dashboard</title>
     <link>https://wtfutil.com/</link>
-    <description>Recent content in WTF on WTF - the terminal dashboard</description>
+    <description>Recent content on WTF - the terminal dashboard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Aug 2018 01:51:58 -0700</lastBuildDate>
@@ -149,7 +149,7 @@ Configuration Copy   gcal: colors: title: &amp;#34;red&amp;#34; eventTime: &amp;
       
       <guid>https://wtfutil.com/modules/bamboohr/</guid>
       <description>Connects to the BambooHR API and displays who will be Away today.
-Configuration Copy   bamboohr: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 1 height: 2 width: 1 refreshInterval: 900 subdomain: &amp;#34;testco&amp;#34;    Attributes   Name Description Value    apiKey Your BambooHR API token.  Your API key **or** leave it empty to use the WTF_BAMBOO_HR_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border.</description>
+Configuration Copy   bamboohr: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 1 height: 2 width: 1 refreshInterval: 900 subdomain: &amp;#34;testco&amp;#34;    Attributes   Name Description Value    apiKey Your BambooHR API token.  Your API key or leave it empty to use the WTF_BAMBOO_HR_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -202,7 +202,7 @@ Configuration Copy   cdsFavorites: enabled: true position: top: 0 left: 0 height
       
       <guid>https://wtfutil.com/modules/circleci/</guid>
       <description>Displays build information for your CircleCI account.
-Configuration Copy   circleci: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 4 left: 1 height: 1 width: 2 refreshInterval: 900    Screenshots Attributes   Name Description Value    apiKey Your CircleCI API token.  Your API key **or** leave it empty to use the WTF_CIRCLE_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border.</description>
+Configuration Copy   circleci: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 4 left: 1 height: 1 width: 2 refreshInterval: 900    Screenshots Attributes   Name Description Value    apiKey Your CircleCI API token.  Your API key or leave it empty to use the WTF_CIRCLE_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -378,7 +378,7 @@ Configuration Copy   gspreadsheets: colors: values: &amp;#34;green&amp;#34; cell
       
       <guid>https://wtfutil.com/modules/datadog/</guid>
       <description>Connects to the Datadog API and displays alerting modules.
-Configuration Copy   datadog: apiKey: &amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34; applicationKey: &amp;#34;&amp;lt;yourapplicationkey&amp;gt;&amp;#34; enabled: true monitors: tags: - &amp;#34;team:ops&amp;#34; position: top: 4 left: 3 height: 1 width: 2 ## Attributes &amp;lt;table class=&amp;#34;table&amp;#34;&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th&amp;gt;Name&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Description&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Value&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code&amp;gt;apiKey&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Your &amp;lt;a href=&amp;#34;https://docs.datadoghq.com/api/&amp;#34;&amp;gt;DataDog API&amp;lt;/a&amp;gt; token.&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt; Your API key **or** leave it empty to use the &amp;lt;code&amp;gt;WTF_DATADOG_API_KEY&amp;lt;/code&amp;gt; environment variable. &amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code&amp;gt;applicationKey&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Your DataDog application key&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Leave this empty to use the `WTF_DATADOG_APPLICATION_KEY` environment variable.</description>
+Configuration Copy   datadog: apiKey: &amp;#34;&amp;lt;yourapikey&amp;gt;&amp;#34; applicationKey: &amp;#34;&amp;lt;yourapplicationkey&amp;gt;&amp;#34; enabled: true monitors: tags: - &amp;#34;team:ops&amp;#34; position: top: 4 left: 3 height: 1 width: 2 ## Attributes &amp;lt;table class=&amp;#34;table&amp;#34;&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th&amp;gt;Name&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Description&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Value&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code&amp;gt;apiKey&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Your &amp;lt;a href=&amp;#34;https://docs.datadoghq.com/api/&amp;#34;&amp;gt;DataDog API&amp;lt;/a&amp;gt; token.&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt; Your API key &amp;lt;strong&amp;gt;or&amp;lt;/strong&amp;gt; leave it empty to use the &amp;lt;code&amp;gt;WTF_DATADOG_API_KEY&amp;lt;/code&amp;gt; environment variable. &amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;&amp;lt;code&amp;gt;applicationKey&amp;lt;/code&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Your DataDog application key&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Leave this empty to use the &amp;lt;code&amp;gt;WTF_DATADOG_APPLICATION_KEY&amp;lt;/code&amp;gt; environment variable.</description>
     </item>
     
     <item>
@@ -551,7 +551,7 @@ Configuration Copy   hibp: accounts: - test@example.com - pwned@gmail.com apiKey
       
       <guid>https://wtfutil.com/modules/jenkins/</guid>
       <description>Displays Jenkins status of given builds in a project or view.
-Configuration Copy   jenkins: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 2 left: 3 height: 2 width: 3 refreshInterval: 300 successBallColor: &amp;#34;green&amp;#34; jobNameRegex: ^[a-z]+\[[0-9]+\]$ url: &amp;#34;https://jenkins.domain.com/jenkins/view_url&amp;#34; user: &amp;#34;username&amp;#34; verifyServerCertificate: true    Screenshots Attributes   Name Description Value    apiKey Your Jenkins API token.  Your API key **or** leave it empty to use the WTF_JENKINS_API_KEY environment variable.</description>
+Configuration Copy   jenkins: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 2 left: 3 height: 2 width: 3 refreshInterval: 300 successBallColor: &amp;#34;green&amp;#34; jobNameRegex: ^[a-z]+\[[0-9]+\]$ url: &amp;#34;https://jenkins.domain.com/jenkins/view_url&amp;#34; user: &amp;#34;username&amp;#34; verifyServerCertificate: true    Screenshots Attributes   Name Description Value    apiKey Your Jenkins API token.  Your API key or leave it empty to use the WTF_JENKINS_API_KEY environment variable.</description>
     </item>
     
     <item>
@@ -605,7 +605,7 @@ Configuration Copy   mercurial: commitCount: 5 commitFormat: &amp;#34;[forestgre
       
       <guid>https://wtfutil.com/modules/newrelic/</guid>
       <description>Connects to the New Relic API and displays the last n deploys of the monitored applications: deploy ID, deploy time, and who deployed it.
-Configuration Copy   newrelic: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; applicationIDs: - 10549735 - 499785 deployCount: 6 enabled: true position: top: 4 left: 3 height: 1 width: 2 refreshInterval: 900    Screenshots Attributes   Name Description Value    apiKey Your New Relic API token.  Your API key **or** leave it empty to use the WTF_NEW_RELIC_API_KEY environment variable.</description>
+Configuration Copy   newrelic: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; applicationIDs: - 10549735 - 499785 deployCount: 6 enabled: true position: top: 4 left: 3 height: 1 width: 2 refreshInterval: 900    Screenshots Attributes   Name Description Value    apiKey Your New Relic API token.  Your API key or leave it empty to use the WTF_NEW_RELIC_API_KEY environment variable.</description>
     </item>
     
     <item>
@@ -626,7 +626,7 @@ Configuration Single Schedule Copy   opsgenie: apiKey: &amp;#34;p0d13***********
       
       <guid>https://wtfutil.com/modules/pagerduty/</guid>
       <description>Shows Pagerduty on-call schedules.
-Configuration Copy   pagerduty: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true escalationFilter: - &amp;#34;client-eng&amp;#34; position: top: 4 left: 3 height: 1 width: 2 scheduleIDs: - &amp;#34;R2D24CD&amp;#34; - &amp;#34;C3P05MF&amp;#34; showIncidents: true showSchedules: true    Attributes   Name Description Value    apiKey Your PagerDuty API token.  Your API key **or** leave it empty to use the WTF_PAGERDUTY_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border.</description>
+Configuration Copy   pagerduty: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true escalationFilter: - &amp;#34;client-eng&amp;#34; position: top: 4 left: 3 height: 1 width: 2 scheduleIDs: - &amp;#34;R2D24CD&amp;#34; - &amp;#34;C3P05MF&amp;#34; showIncidents: true showSchedules: true    Attributes   Name Description Value    apiKey Your PagerDuty API token.  Your API key or leave it empty to use the WTF_PAGERDUTY_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -667,7 +667,7 @@ Configuration Copy   power: enabled: true position: top: 5 left: 0 height: 2 wid
       
       <guid>https://wtfutil.com/modules/resourceusage/</guid>
       <description>Displays CPU and memory usage.
-Configuration Copy   resourceusage: cpuCombined: false enabled: true position: top: 1 left: 1 height: 1 width: 1 refreshInterval: 1 showCPU: true showMem: true showSwp: true    Screenshots Attributes   Name Description Value    border Optional Whether or not to draw this widget with a border. Default: true. true, false   cpuCombined _Optional_ Whether or not to display the CPUs as one combined value.</description>
+Configuration Copy   resourceusage: cpuCombined: false enabled: true position: top: 1 left: 1 height: 1 width: 1 refreshInterval: 1 showCPU: true showMem: true showSwp: true    Screenshots Attributes   Name Description Value    border Optional Whether or not to draw this widget with a border. Default: true. true, false   cpuCombined Optional Whether or not to display the CPUs as one combined value.</description>
     </item>
     
     <item>
@@ -737,7 +737,7 @@ Configuration Copy   todo: checkedIcon: &amp;#34;X&amp;#34; colors: checked: gra
       
       <guid>https://wtfutil.com/modules/todoist/</guid>
       <description>Displays all items on specified project.
-Configuration Copy   todoist: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 2 height: 1 width: 1 projects: - 122247497 refreshInterval: 3600    Screenshots Attributes   Name Description Value    apiKey Your Todoist API token.  Your API key **or** leave it empty to use the WTF_TODOIST_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border.</description>
+Configuration Copy   todoist: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 2 height: 1 width: 1 projects: - 122247497 refreshInterval: 3600    Screenshots Attributes   Name Description Value    apiKey Your Todoist API token.  Your API key or leave it empty to use the WTF_TODOIST_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -758,7 +758,7 @@ Configuration Copy   transmission: enabled: true host: &amp;#34;192.168.1.5&amp;
       <guid>https://wtfutil.com/modules/travisci/</guid>
       <description>Displays build information for your Travis CI account.
 Configuration This module pulls information from api.travis-ci.com (when pro: true) or api.travis-ci.org (when pro: false)
-Copy   travisci: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true compact: true limit: 8 sort_by: &amp;#34;id:desc&amp;#34; position: top: 4 left: 1 height: 1 width: 2 pro: false refreshInterval: 900    Screenshots Attributes   Name Description Value    apiKey Your TravisCI API token.  Your API key **or** leave it empty to use the WTF_TRAVIS_API_TOKEN environment variable.</description>
+Copy   travisci: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true compact: true limit: 8 sort_by: &amp;#34;id:desc&amp;#34; position: top: 4 left: 1 height: 1 width: 2 pro: false refreshInterval: 900    Screenshots Attributes   Name Description Value    apiKey Your TravisCI API token.  Your API key or leave it empty to use the WTF_TRAVIS_API_TOKEN environment variable.</description>
     </item>
     
     <item>
@@ -779,7 +779,7 @@ Copy   trello: accessToken: &amp;#34;d23****************************************
       
       <guid>https://wtfutil.com/modules/victorops/</guid>
       <description>Connects to the VictorOps API and determines who is on call
-Configuration Copy   victorops: apiID: a3c5dd63 apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 1 height: 2 width: 1 refreshInterval: 3600 team: devops    Attributes   Name Description Value    `apiID` Your VictorOps API ID token. Leave this empty to use the `WTF_VICTOROPS_API_ID` environment variable.   apiKey Your VictorOps API token.  Your API key **or** leave it empty to use the WTF_VICTOROPS_API_KEY environment variable.</description>
+Configuration Copy   victorops: apiID: a3c5dd63 apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 1 height: 2 width: 1 refreshInterval: 3600 team: devops    Attributes   Name Description Value    `apiID` Your VictorOps API ID token. Leave this empty to use the `WTF_VICTOROPS_API_ID` environment variable.   apiKey Your VictorOps API token.  Your API key or leave it empty to use the WTF_VICTOROPS_API_KEY environment variable.</description>
     </item>
     
     <item>
@@ -789,7 +789,7 @@ Configuration Copy   victorops: apiID: a3c5dd63 apiKey: &amp;#34;p0d13**********
       
       <guid>https://wtfutil.com/modules/zendesk/</guid>
       <description>Displays Zendesk tickets.
-Configuration Copy   zendesk: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 2 height: 1 width: 1 status: &amp;#34;new&amp;#34; subdomain: &amp;#34;your_domain&amp;#34; username: &amp;#34;your_email@acme.com&amp;#34;    Attributes   Name Description Value    apiKey Your Zendesk API token.  Your API key **or** leave it empty to use the ZENDESK_API environment variable.    border Optional Whether or not to draw this widget with a border.</description>
+Configuration Copy   zendesk: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 2 height: 1 width: 1 status: &amp;#34;new&amp;#34; subdomain: &amp;#34;your_domain&amp;#34; username: &amp;#34;your_email@acme.com&amp;#34;    Attributes   Name Description Value    apiKey Your Zendesk API token.  Your API key or leave it empty to use the ZENDESK_API environment variable.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>

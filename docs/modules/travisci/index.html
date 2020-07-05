@@ -48,11 +48,6 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/wtfutil/wtf/blob/master/README.md#contributors" >
-                                  <i class='fa fa-bullhorn'></i> <label>Credits</label>
-                                </a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="/blog" >
                                   <i class='fas fa-blog'>&nbsp;</i> <label>Blog</label>
                                 </a>
@@ -762,13 +757,15 @@
     <td><code>apiKey</code></td>
     <td>Your <a href="https://developer.travis-ci.org/authentication">TravisCI API</a> token.</td>
     <td>
-        Your API key **or** leave it empty to use the <code>WTF_TRAVIS_API_TOKEN</code> environment variable.
+        Your API key <strong>or</strong> leave it empty to use the
+        <code>WTF_TRAVIS_API_TOKEN</code> environment
+        variable.
     </td>
 </tr>
   <tr>
     <td><code>baseURL</code></td>
-    <td>_Optional_ Your TravisCI Enterprise API URL.</td>
-    <td>A valid URL. Can also be set via the `WTF_TRAVIS_BASE_URL` environment variable.</td>
+    <td><em>Optional</em> Your TravisCI Enterprise API URL.</td>
+    <td>A valid URL. Can also be set via the <code>WTF_TRAVIS_BASE_URL</code> environment variable.</td>
 </tr>
   <tr>
     <td><code>border</code></td>
@@ -788,7 +785,7 @@
 </tr>
   <tr>
     <td><code>sort_by</code></td>
-    <td>Sortable by: id, created_at, started_at, finished_at, number, append :desc to any attribute to reverse order. The default value is id:desc. See https://developer.travis-ci.com/resource/builds for more information.</td>
+    <td>Sortable by: id, created_at, started_at, finished_at, number, append :desc to any attribute to reverse order. The default value is id:desc. See <a href="https://developer.travis-ci.com/resource/builds">https://developer.travis-ci.com/resource/builds</a> for more information.</td>
     <td></td>
 </tr>
   <tr>

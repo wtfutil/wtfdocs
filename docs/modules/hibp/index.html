@@ -48,11 +48,6 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/wtfutil/wtf/blob/master/README.md#contributors" >
-                                  <i class='fa fa-bullhorn'></i> <label>Credits</label>
-                                </a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="/blog" >
                                   <i class='fas fa-blog'>&nbsp;</i> <label>Blog</label>
                                 </a>
@@ -769,12 +764,14 @@
     <td><code>apiKey</code></td>
     <td>Your <a href="https://haveibeenpwned.com/API/Key">Have I Been Pwned API</a> token.</td>
     <td>
-        Your API key **or** leave it empty to use the <code>WTF_HIBP_TOKEN</code> environment variable.
+        Your API key <strong>or</strong> leave it empty to use the
+        <code>WTF_HIBP_TOKEN</code> environment
+        variable.
     </td>
 </tr>
   <tr>
     <td><code>colors</code></td>
-    <td>_Optional_ The colors to display for accounts that have not been pwned and ones that have. Defaults to `white` for unpwned accounts, `red` for pwned accounts.</td>
+    <td><em>Optional</em> The colors to display for accounts that have not been pwned and ones that have. Defaults to <code>white</code> for unpwned accounts, <code>red</code> for pwned accounts.</td>
     <td></td>
 </tr>
   <tr>
@@ -800,8 +797,8 @@
 </tr>
   <tr>
     <td><code>since</code></td>
-    <td>_Optional_ Only check for breaches after this date. Set this if you&#39;ve been breached in the past, have taken steps to mitigate that (changing passwords, cancelling accounts, etc.) and only want to know about future breaches.</td>
-    <td>A date string in the format &#39;yyyy-mm-dd&#39;, ie: &#39;2019-06-22&#39;</td>
+    <td><em>Optional</em> Only check for breaches after this date. Set this if you&rsquo;ve been breached in the past, have taken steps to mitigate that (changing passwords, cancelling accounts, etc.) and only want to know about future breaches.</td>
+    <td>A date string in the format &lsquo;yyyy-mm-dd&rsquo;, ie: &lsquo;2019-06-22&rsquo;</td>
 </tr>
 </table>
 <h2 id="source-code">Source Code</h2>

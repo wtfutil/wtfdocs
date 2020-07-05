@@ -48,11 +48,6 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/wtfutil/wtf/blob/master/README.md#contributors" >
-                                  <i class='fa fa-bullhorn'></i> <label>Credits</label>
-                                </a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="/blog" >
                                   <i class='fas fa-blog'>&nbsp;</i> <label>Blog</label>
                                 </a>
@@ -762,7 +757,9 @@
     <td><code>apiKey</code></td>
     <td>Your <a href="https://wiki.jenkins.io/display/JENKINS/Remote&#43;access&#43;API">Jenkins API</a> token.</td>
     <td>
-        Your API key **or** leave it empty to use the <code>WTF_JENKINS_API_KEY</code> environment variable.
+        Your API key <strong>or</strong> leave it empty to use the
+        <code>WTF_JENKINS_API_KEY</code> environment
+        variable.
     </td>
 </tr>
   <tr>
@@ -783,8 +780,8 @@
 </tr>
   <tr>
     <td><code>jobNameRegex</code></td>
-    <td>_Optional_ A regex that filters the jobs shown in the widget. Any jobs matching the regular expression will be shown.</td>
-    <td>A valid regex, e.g. `^[a-z]&#43;\[[0-9]&#43;\]$`</td>
+    <td><em>Optional</em> A regex that filters the jobs shown in the widget. Any jobs matching the regular expression will be shown.</td>
+    <td>A valid regex, e.g. <code>^[a-z]+\[[0-9]+\]$</code></td>
 </tr>
   <tr>
     <td><code>position</code></td>
@@ -799,7 +796,7 @@
   <tr>
     <td><code>successBallColor</code></td>
     <td>Changes the default color of successful Jenkins jobs to the color of your choosing.</td>
-    <td>Any valid color name, `blue`, `green`, `purple`, `yellow`, etc.</td>
+    <td>Any valid color name, <code>blue</code>, <code>green</code>, <code>purple</code>, <code>yellow</code>, etc.</td>
 </tr>
   <tr>
     <td><code>url</code></td>

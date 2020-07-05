@@ -30,6 +30,8 @@
 
 .blog-post .blog-date {
   color: rgb(100, 100, 100) !important;
+  float: left;
+  outline: 1px solid red;
 }
 
 a.highlight {
