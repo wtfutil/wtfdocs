@@ -183,3 +183,9 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
     </div>
   </div>
 </div>
+
+## Sponsors?
+
+Sponsoring is a great way to say "thank you", and WTF is proud to participate in the <a href="https://github.com/sponsors">GitHub Sponsors</a> program. If you're getting value from WTF, please sponsor the ongoing development of the app and this documentation.
+
+<iframe src="https://github.com/sponsors/senorprogrammer/card" title="Sponsor senorprogrammer" height="225" width="760" style="border: 0;"></iframe>

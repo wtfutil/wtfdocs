@@ -128,6 +128,11 @@
   </url>
   
   <url>
+    <loc>https://wtfutil.com/modules/</loc>
+    <lastmod>2018-05-07T18:04:58-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wtfutil.com/blog/</loc>
     <lastmod>2019-07-09T14:41:58-07:00</lastmod>
   </url>
@@ -160,11 +165,6 @@
   <url>
     <loc>https://wtfutil.com/modules/cmdrunner/</loc>
     <lastmod>2018-05-17T17:17:10-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wtfutil.com/modules/</loc>
-    <lastmod>2018-05-07T18:04:58-07:00</lastmod>
   </url>
   
   <url>

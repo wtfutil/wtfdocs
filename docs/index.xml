@@ -17,11 +17,11 @@
       <pubDate>Fri, 18 May 2018 09:59:40 -0700</pubDate>
       
       <guid>https://wtfutil.com/getting_started/installation/</guid>
-      <description>Homebrew Copy   brew tap wtfutil/wtfutil brew install wtfutil wtfutil As a Binary Grab the latest version from here:
-Copy   https://github.com/wtfutil/wtf/releases expand it, and cd into the resulting directory. Then run:
-Copy   ./wtfutil and that should also do it.
+      <description>Homebrew Copy   ❯ brew tap wtfutil/wtfutil ❯ brew install wtfutil ❯ wtfutil    As a Binary Grab the latest version from the Releases page.
+Expand it, and cd into the resulting directory. Then run:
+Copy   ❯ ./wtfutil    and that should also do it.
 From Source Download the source code repo and install the dependencies:
-Copy   # Set the Go proxy variable to GoCenter export GOPROXY=&amp;#34;https://gocenter.io&amp;#34; # Enable Go modules export GO111MODULE=on</description>
+Copy   # Set the Go proxy variable to GoCenter ❯ export GOPROXY=&amp;#34;https://gocenter.</description>
     </item>
     
     <item>
@@ -73,7 +73,7 @@ Interpreting the information:
       <guid>https://wtfutil.com/configuration/common_settings/</guid>
       <description>The following settings are common to all modules. Common settings have logical defaults and are all optional. An explicitly-defined common setting will over-ride a module&amp;rsquo;s internal default setting value.
 An example with all common settings explicitly configured.
-Copy   feedreader: enabled: true feeds: - https://news.ycombinator.com/rss feedLimit: 10 focusable: false position: top: 2 left: 2 width: 1 height: 1 title: &amp;#34;Hacker News&amp;#34; updateInterval: 14400 Attributes   Name Description Value    enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Copy   feedreader: enabled: true feeds: - https://news.ycombinator.com/rss feedLimit: 10 focusable: false position: top: 2 left: 2 width: 1 height: 1 title: &amp;#34;Hacker News&amp;#34; updateInterval: 14400    Attributes   Name Description Value    enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>
@@ -158,10 +158,9 @@ Configuration Copy   bamboohr: apiKey: &amp;#34;p0d13***************************
       <pubDate>Sun, 28 Jan 2018 09:59:40 -0700</pubDate>
       
       <guid>https://wtfutil.com/getting_started/uninstall/</guid>
-      <description>Homebrew Copy   brew uninstall wtfutil Remove the Binary and Configuration WTF ships as a single binary named wtfutil. Assuming you have installed the binary, run:
-Copy   rm $(which wtfutil) If you have configured WTF, you will also want to delete your configs:
-Copy   rm ~/.config/wtf and that should also do it.
-         </description>
+      <description>Homebrew Copy   ❯ brew uninstall wtfutil    Remove the Binary and Configuration WTF ships as a single binary named wtfutil. Assuming you have installed the binary, run:
+Copy   ❯ rm $(which wtfutil)    If you have configured WTF, you will also want to delete your configs:
+Copy   ❯ rm ~/.config/wtf    and that should also do it.</description>
     </item>
     
     <item>
@@ -803,13 +802,13 @@ Configuration Copy   zendesk: apiKey: &amp;#34;p0d13****************************
     </item>
     
     <item>
-      <title>Adding Multiple Instances of a Widget</title>
+      <title>Multiple Instances of a Widget</title>
       <link>https://wtfutil.com/configuration/add_mutiple_instance_of_widget/</link>
       <pubDate>Sun, 26 Apr 2020 20:39:16 +0530</pubDate>
       
       <guid>https://wtfutil.com/configuration/add_mutiple_instance_of_widget/</guid>
       <description>How to add multiple instances of a widget To add more than one instance of a particular widget, for example, if you want two Todo widgets, you can do so by adding the type property to the entries in your config.yml file. Below is an example for Todo:
-Copy   todo1: checkedIcon: &amp;#34;X&amp;#34; colors: checked: gray highlight: fore: &amp;#34;black&amp;#34; back: &amp;#34;orange&amp;#34; enabled: true filename: &amp;#34;todo.yml&amp;#34; position: top: 0 left: 0 height: 2 width: 2:wq refreshInterval: 3600 type: todo Copy   todo2: checkedIcon: &amp;#34;X&amp;#34; colors: checked: gray highlight: fore: &amp;#34;black&amp;#34; back: &amp;#34;orange&amp;#34; enabled: true filename: &amp;#34;todo.</description>
+Copy   home_todo: checkedIcon: &amp;#34;X&amp;#34; colors: checked: gray highlight: fore: &amp;#34;black&amp;#34; back: &amp;#34;orange&amp;#34; enabled: true filename: &amp;#34;todo.yml&amp;#34; position: top: 0 left: 0 height: 2 width: 2 refreshInterval: 3600 type: todo    Copy   work_todo: checkedIcon: &amp;#34;X&amp;#34; colors: checked: gray highlight: fore: &amp;#34;black&amp;#34; back: &amp;#34;orange&amp;#34; enabled: true filename: &amp;#34;todo.</description>
     </item>
     
     <item>
@@ -992,7 +991,8 @@ Putting the two together, you now have a great way to keep up-to-date on the mos
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://wtfutil.com/_footer/</guid>
-      <description></description>
+      <description>This is the footer
+This is also the footer</description>
     </item>
     
   </channel>
