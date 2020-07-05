@@ -45,5 +45,5 @@ To load a custom configuration file (ie: one that's not
 parameter on launch:
 
 {{< code lang="bash" >}}
-    $> wtfutil --config=path/to/custom/config.yml
-```
+❯ wtfutil --config=path/to/custom/config.yml
+{{< /code >}}

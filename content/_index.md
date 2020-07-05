@@ -19,13 +19,11 @@ title: ""
 
 <p>&nbsp;</p>
 
-So many tabs open, keeping tab on so many things, right?
+Close your browser tabs, use WTF instead.
 
-Close your tabs, use WTF instead.
+**WTF is the personal information dashboard for your terminal.**
 
-**WTF is a terminal-based information monitoring system.**
-
-Use it to monitor systems, services, and important information that you don't always need visible, but do want to check in on every now and then.
+Use WTF to monitor systems, services, and important information that you don't always need visible, but do want to check in on every now and then.
 
 Keep an eye on your **OpsGenie** schedules, **Google Calendar**, **Git** and **GitHub** repositories, and **New Relic** deployments.
 
@@ -33,7 +31,7 @@ See who's away in **BambooHR**, which **Jira** tickets are assigned to you, what
 
 <div class="call-to-action">
   <div class='cta-text'>
-    Follow along on <a href="https://twitter.com/wtfutil">Twitter</a> to track changes, fixes, and improvements
+    Follow along on with WTF on <a href="https://twitter.com/wtfutil">Twitter</a> to track changes, fixes, and new releases
   </div>
   <div class='cta-link'>
     <a href="https://twitter.com/wtfutil">
@@ -45,7 +43,7 @@ See who's away in **BambooHR**, which **Jira** tickets are assigned to you, what
 ## Capabilities?
 
 <p>
-Modules are the heart of WTF, and WTF comes with over 50 easily-configurable built-in modules. See below for a list of a few of them.
+Modules are the heart of WTF, and WTF comes with over 50 easily-configurable built-in modules. See below for just a few of them.
 </p>
 <p>
 Then click on <a href="/modules">Modules</a> to see the complete list.
