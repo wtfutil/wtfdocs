@@ -7,36 +7,53 @@ title: ""
 ---
 
 <p align="center">
-    <img src="imgs/logo_transparent.png" title="WTF" alt="WTF" width="560" height="560" />
+    <img src="imgs/logo_transparent.png" title="WTF" alt="WTF" width="480" height="480" />
 </p>
 
-WTF allows you to monitor systems, services, and important information that you otherwise might keep browser tabs open for, the kinds of things you don't always need visible, but do check in on every now and then.
+<p align="center">
+    <a href="/getting_started" class="btn btn-primary quick-start" role="button">Quick Start</a>
+</p>
+
+<p>&nbsp;</p>
+
+So many tabs open, keeping tab on so many things, right?
+
+Close your tabs, use WTF instead.
+
+**WTF is a terminal-based information monitoring system.**
+
+Use it to monitor systems, services, and important information that you don't always need visible, but do want to check in on every now and then.
 
 Keep an eye on your **OpsGenie** schedules, **Google Calendar**, **Git** and **GitHub** repositories, and **New Relic** deployments.
 
-See who's away in **BambooHR**, which **Jira** tickets are assigned to you, and what time it is in Barcelona.
+See who's away in **BambooHR**, which **Jira** tickets are assigned to you, what time it is in Barcelona, and dozens more.
 
-It even has weather. And clocks. And emoji.
+<div class="call-to-action">
+  <div class='cta-text'>
+    Follow along on <a href="https://twitter.com/wtfutil">Twitter</a> to track changes, fixes, and improvements
+  </div>
+  <div class='cta-link'>
+    <a href="https://twitter.com/wtfutil">
+      <img src="/imgs/services/twitter.png" width="48" height="48" alt="twitter" title="twitter" />
+    </a>
+  </div>
+</div>
 
-<p align="center">
-    <a href="/getting_started" class="btn btn-primary" role="button">Quick Start</a>
-</p>
-
-## Modules
+## Capabilities?
 
 <p>
-Modules are units of functionality that you enable to make WTF useful to you.
+Modules are the heart of WTF, and WTF comes with over 50 easily-configurable built-in modules. See below for a list of a few of them.
 </p>
 <p>
-WTF comes with over 50 easily-configurable modules built-in. See below for a list of a few of them.
-</p>
+Then click on <a href="/modules">Modules</a> to see the complete list.
+</p
 <p>&nbsp;</p>
 
 <div class="card-group">
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">
-        <img src="/imgs/services/git.png" width="72" height="64" alt="git" title="git" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/git.png" width="72" height="64" alt="git" title="git" />
         Git
       </h5>
       <p class="card-text">
@@ -50,7 +67,7 @@ WTF comes with over 50 easily-configurable modules built-in. See below for a lis
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">
-        <img src="/imgs/services/github.png" width="72" height="64" alt="github" title="github" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/github.png" width="72" height="64" alt="github" title="github" />
         GitHub
       </h5>
       <p class="card-text">
@@ -64,7 +81,7 @@ WTF comes with over 50 easily-configurable modules built-in. See below for a lis
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">
-        <img src="/imgs/services/docker.png" width="72" height="55" alt="docker" title="docker" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/docker.png" width="72" height="55" alt="docker" title="docker" />
         Docker
       </h5>
       <p class="card-text">
@@ -81,7 +98,7 @@ WTF comes with over 50 easily-configurable modules built-in. See below for a lis
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">
-        <img src="/imgs/services/gcal.png" width="72" height="64" alt="gcal" title="gcal" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/gcal.png" width="72" height="64" alt="gcal" title="gcal" />
         Google Calendar
       </h5>
       <p class="card-text">
@@ -95,7 +112,7 @@ WTF comes with over 50 easily-configurable modules built-in. See below for a lis
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">
-        <img src="/imgs/services/pagerduty.jpg" width="72" height="64" alt="pagerduty" title="pagerduty" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/pagerduty.jpg" width="72" height="64" alt="pagerduty" title="pagerduty" />
         PagerDuty
       </h5>
       <p class="card-text">
@@ -109,7 +126,7 @@ WTF comes with over 50 easily-configurable modules built-in. See below for a lis
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">
-        <img src="/imgs/services/digitalocean.png" width="72" height="64" alt="digitalocean" title="digitalocean" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/digitalocean.png" width="72" height="64" alt="digitalocean" title="digitalocean" />
         DigitalOcean
       </h5>
       <p class="card-text">
@@ -126,7 +143,7 @@ WTF comes with over 50 easily-configurable modules built-in. See below for a lis
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">
-        <img src="/imgs/services/pihole.png" width="72" height="64" alt="pihole" title="pihole" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/pihole.png" width="72" height="64" alt="pihole" title="pihole" />
         Pi-hole
       </h5>
       <p class="card-text">
@@ -140,7 +157,7 @@ WTF comes with over 50 easily-configurable modules built-in. See below for a lis
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">
-        <img src="/imgs/services/weather.jpg" width="72" height="64" alt="weather" title="weather" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/weather.jpg" width="72" height="64" alt="weather" title="weather" />
         Weather
       </h5>
       <p class="card-text">
@@ -154,7 +171,7 @@ WTF comes with over 50 easily-configurable modules built-in. See below for a lis
   <div class="card">
     <div class="card-body">
       <h5 class="card-title">
-        <img src="/imgs/services/transmission.png" width="72" height="64" alt="transmission" title="transmission" style="float: left; padding-right: 8px;" />
+        <img src="/imgs/services/transmission.png" width="72" height="64" alt="transmission" title="transmission" />
         Transmission
       </h5>
       <p class="card-text">

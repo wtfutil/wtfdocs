@@ -41,7 +41,7 @@ wtf:
       normal: "*"
       selected: "_"
   term: "xterm-256color"
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/colors/background >}}

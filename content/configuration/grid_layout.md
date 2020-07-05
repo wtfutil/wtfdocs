@@ -28,4 +28,4 @@ The co-ordinate system starts at top-left and defines how wide and tall a widget
   left:   9  // left starts in the 9th column
   height: 2  // span down rows 4 & 5 (18 characters in size, total)
   width:  2  // span across cols 9 & 10 (20 characters in size, total)
-```
+{{< /code >}}

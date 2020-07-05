@@ -5,18 +5,18 @@ draft: false
 weight: 20
 ---
 
-### Module
+## Module
 A discrete unit of data collection and display. A data interface concept. A package inside the app.
 
 Examples: [New Relic](/modules/newrelic), [Git](/modules/git), [Weather](/modules/weather).
 
-### Widget
+## Widget
 The onscreen representation of a Module. The widget is responsible for
 being the interface between the app and the data collection.
 
 Widgets are defined by a required `widget.go` file in a Module.
 
-### WTF
+## WTF
 An acronym for "What The Fsck?", as in "What the fsck are all these browser tabs open for?" and "What the fsck am I doing today?"
 
-(And if you're not a fan of that, then perhaps it stands for "What are The Facts?", or "Whiskey Tango Foxtrot", or "Where to, Frodo?". Really, up to you.) 
+(And if you're not a fan of that, then it stands for "What are The Facts?", or "Whiskey Tango Foxtrot", or "Where to, Frodo?". Really, it's up to you.) 

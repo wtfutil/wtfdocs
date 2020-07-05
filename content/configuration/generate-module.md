@@ -22,18 +22,19 @@ For example, to generate a new widget called _MySuperAwesomeWidget_ on macOs or 
 
 {{< code lang="bash" >}}
 # as a single line
-WTF_WIDGET_NAME=MySuperAwesomeWidget go generate -run=text
+❯ WTF_WIDGET_NAME=MySuperAwesomeWidget go generate -run=text
+
 # setting the name separately
-export WTF_WIDGET_NAME=MySuperAwesomeWidget
-go generate -run=text
-```
+❯ export WTF_WIDGET_NAME=MySuperAwesomeWidget
+❯ go generate -run=text
+{{< /code >}}
 
 The equivalent using Windows PowerShell would be
 
 {{< code lang="powershell" >}}
-$env:WTF_WIDGET_NAME = "MySuperAwesomeWidget"
-go generate -run=text
-```
+❯ $env:WTF_WIDGET_NAME = "MySuperAwesomeWidget"
+❯ go generate -run=text
+{{< /code >}}
 
 The new widget is generated using the template in `textwidget.tpl`
 
@@ -41,4 +42,4 @@ The new widget is generated using the template in `textwidget.tpl`
 
 {{< code lang="bash" >}}
 wtf/generator/
-```
+{{< /code >}}

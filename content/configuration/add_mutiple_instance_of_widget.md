@@ -1,5 +1,5 @@
 ---
-title: "Adding Multiple Instances of a Widget"
+title: "Multiple Instances of a Widget"
 date: 2020-04-26T20:39:16+05:30
 draft: false
 ---
@@ -9,7 +9,7 @@ draft: false
 To add more than one instance of a particular widget, for example, if you want two Todo widgets, you can do so by adding the `type` property to the entries in your `config.yml` file. Below is an example for Todo:
 
 {{< code lang="yaml" >}}
-todo1:
+home_todo:
   checkedIcon: "X"
   colors:
     checked: gray
@@ -22,13 +22,13 @@ todo1:
     top: 0
     left: 0
     height: 2
-    width: 2:wq
+    width: 2
   refreshInterval: 3600
   type: todo
-```
+{{< /code >}}
 
 {{< code lang="yaml" >}}
-todo2:
+work_todo:
   checkedIcon: "X"
   colors:
     checked: gray
@@ -44,4 +44,4 @@ todo2:
     width: 2
   refreshInterval: 3600
   type: todo
-```
+{{< /code >}}

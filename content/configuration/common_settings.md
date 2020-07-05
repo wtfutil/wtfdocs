@@ -23,7 +23,7 @@ feedreader:
     height: 1
   title: "Hacker News"
   updateInterval: 14400
-```
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/enabled >}}
