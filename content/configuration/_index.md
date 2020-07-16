@@ -6,14 +6,14 @@ weight: 20
 alwaysopen: false
 ---
 
-## Index
+<!-- ## Index -->
 
-* [Configuration Files](#configuration-files)
+<!-- * [Configuration Files](#configuration-files)
   * [Example Configuration Files](#example-configuration-files)
   * [Custom Configuration Files](#custom-configuration-files)
 * [Global Settings](/configuration/global_settings)
 * [Common Settings](/configuration/common_settings)
-* [Grid Layout](/configuration/grid_layout)
+* [Grid Layout](/configuration/grid_layout) -->
 
 ## Configuration Files
 

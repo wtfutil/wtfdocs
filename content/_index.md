@@ -25,22 +25,24 @@ Close your browser tabs, use WTF instead.
 
 Use WTF to monitor systems, services, and important information that you don't always need visible, but do want to check in on every now and then.
 
-Keep an eye on your **OpsGenie** schedules, **Google Calendar**, **Git** and **GitHub** repositories, and **New Relic** deployments.
+Keep an eye on your [OpsGenie](/modules/opsgenie) schedules, [Google Calendar](/modules/google/gcal), [Git](/modules/git) and [GitHub](/modules/github) repositories, and [New Relic](/modules/newrelic) deployments.
 
 See who's away in **BambooHR**, which **Jira** tickets are assigned to you, what time it is in Barcelona, and dozens more.
 
 <div class="call-to-action">
-  <div class='cta-text'>
-    Follow along on with WTF on <a href="https://twitter.com/wtfutil">Twitter</a> to track changes, fixes, and new releases
-  </div>
-  <div class='cta-link'>
-    <a href="https://twitter.com/wtfutil">
-      <img src="/imgs/services/twitter.png" width="48" height="48" alt="twitter" title="twitter" />
-    </a>
+  <div class="cta-row">
+    <div class='cta-text'>
+      Follow along on with WTF on <a href="https://twitter.com/wtfutil">Twitter</a> to track changes, fixes, and new releases
+    </div>
+    <div class='cta-link'>
+      <a href="https://twitter.com/wtfutil">
+        <img src="/imgs/services/twitter.png" width="48" height="48" alt="twitter" title="twitter" />
+      </a>
+    </div>
   </div>
 </div>
 
-## Capabilities?
+## Modules are the magic
 
 <p>
 Modules are the heart of WTF, and WTF comes with over 50 easily-configurable built-in modules. See below for just a few of them.
@@ -58,7 +60,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         Git
       </h5>
       <p class="card-text">
-        The Git module allows you to view the status of your currently-active branch and interact with it.
+        View the status of your currently-active branch, interact with it, and see all the files you've changed so far.
       </p>
     </div>
     <div class="card-footer">
@@ -72,7 +74,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         GitHub
       </h5>
       <p class="card-text">
-        The GitHub module allows you to view the status of your remote GitHub repo and interact with it.
+        View the status of your remote GitHub repo and interact with it.
       </p>
     </div>
     <div class="card-footer">
@@ -86,7 +88,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         Docker
       </h5>
       <p class="card-text">
-        The Docker module allows you to view the current status of Docker on your local machine and interact with it.
+        View the current status of Docker on your local machine and interact with it.
       </p>
     </div>
     <div class="card-footer">
@@ -103,7 +105,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         Google Calendar
       </h5>
       <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        View all your meetings and appointments for days in advance. See any collisions you might have, and which ones you've accepted and rejected.
       </p>
     </div>
     <div class="card-footer">
@@ -117,7 +119,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         PagerDuty
       </h5>
       <p class="card-text">
-        This card has supporting text below as a natural lead-in to additional content.
+        See who's currently on-call across multiple teams and multiple schedules. It might even be you.
       </p>
     </div>
     <div class="card-footer">
@@ -131,7 +133,6 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         DigitalOcean
       </h5>
       <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
       </p>
     </div>
     <div class="card-footer">
@@ -148,7 +149,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         Pi-hole
       </h5>
       <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        Enable and disable Pi-hole from the terminal, view the current status, and see all of your blocking stats in one location. 
       </p>
     </div>
     <div class="card-footer">
@@ -162,7 +163,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         Weather
       </h5>
       <p class="card-text">
-        This card has supporting text below as a natural lead-in to additional content.
+        You could look out your window, but that's cheating. Instead, see it right there in your terminal in text form the way nature intended.
       </p>
     </div>
     <div class="card-footer">
@@ -176,7 +177,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         Transmission
       </h5>
       <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        Start, stop, pause your downloads and view your seeding stats. It's easy to keep track of all your Linux ISO downloads now.
       </p>
     </div>
     <div class="card-footer">
@@ -185,10 +186,14 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
   </div>
 </div>
 
-## Sponsors?
+<p class="mt-3">
+  and <a href="/modules">dozens more</a>!
+</p>
 
-Sponsoring is a great way to say "thank you", and WTF is proud to participate in the <a href="https://github.com/sponsors/senorprogrammer">GitHub Sponsors</a> program. 
+## Sponsors make it happen
 
-If you're deriving value from WTF, if it occupies that special place in your terminal, please take a look at the <a href="https://github.com/sponsors/senorprogrammer">sponsorship page</a>.
+Sponsoring is a great way to show your support for WTF, and WTF is proud to participate in the <a href="https://github.com/sponsors/senorprogrammer">GitHub Sponsors</a> program. 
+
+If you're deriving value from WTF, if it occupies that special place in your terminal, please consider <a href="https://github.com/sponsors/senorprogrammer">sponsoring the ongoing development</a> of WTF.
 
 <iframe src="https://github.com/sponsors/senorprogrammer/card" title="Sponsor senorprogrammer" height="225" width="760" style="border: 0;"></iframe>
