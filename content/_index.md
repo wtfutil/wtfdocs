@@ -19,15 +19,13 @@ title: ""
 
 <p>&nbsp;</p>
 
-Close your browser tabs, use WTF instead.
-
 **WTF is the personal information dashboard for your terminal.**
 
 Use WTF to monitor systems, services, and important information that you don't always need visible, but do want to check in on every now and then.
 
 Keep an eye on your [OpsGenie](/modules/opsgenie) schedules, [Google Calendar](/modules/google/gcal), [Git](/modules/git) and [GitHub](/modules/github) repositories, and [New Relic](/modules/newrelic) deployments.
 
-See who's away in **BambooHR**, which **Jira** tickets are assigned to you, what time it is in Barcelona, and dozens more.
+See who's away in [BambooHR](/modules/bamboohr), which [Jira](/modules/jira) tickets are assigned to you, what [time](/modules/clocks) it is in Barcelona, and dozens more.
 
 <div class="call-to-action">
   <div class="cta-row">
@@ -133,6 +131,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         DigitalOcean
       </h5>
       <p class="card-text">
+        View all your active droplets. Reboot, shut down, or destroy them.
       </p>
     </div>
     <div class="card-footer">
@@ -194,6 +193,6 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
 
 Sponsoring is a great way to show your support for WTF, and WTF is proud to participate in the <a href="https://github.com/sponsors/senorprogrammer">GitHub Sponsors</a> program. 
 
-If you're deriving value from WTF, if it occupies that special place in your terminal, please consider <a href="https://github.com/sponsors/senorprogrammer">sponsoring the ongoing development</a> of WTF.
+If WTF occupies that special place in your terminal, please consider <a href="https://github.com/sponsors/senorprogrammer">sponsoring its ongoing development</a>. It makes a difference.
 
 <iframe src="https://github.com/sponsors/senorprogrammer/card" title="Sponsor senorprogrammer" height="225" width="760" style="border: 0;"></iframe>

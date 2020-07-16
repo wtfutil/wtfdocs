@@ -26,13 +26,13 @@ In other words, WTF expects to have a YAML config file at: `~/.config/wtf/config
 
 #### Example Configuration Files
 
-A couple of example config files are provided in the `_sample_configs/`
-directory of the Git repository.
+A number of example configuration files are provided in the `_sample_configs/`
+directory of the [Git repository](https://github.com/wtfutil/wtf/tree/master/_sample_configs).
 
 To try out WTF quickly, copy
 `sample_config.yml` into `~/.config/wtf/` as `config.yml` and relaunch WTF. You
-should see the app launch and display the <a href="/modules/security/">Security</a>,
-<a href="/posts/modules/clocks/">Clocks</a> and <a href="/modules/status/">Status</a> widgets onscreen.
+should see the app launch and display the [Security](/modules/security),
+[Clocks](modules/clocks/) and [Status](/modules/status/) widgets onscreen.
 
 #### Custom Configuration Files
 

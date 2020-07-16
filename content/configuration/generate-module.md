@@ -12,7 +12,7 @@ The [widgets](../glossary/#widget) that you see on the screen are displayed usin
 Before you can generate new modules, you'll need to have:
 
 * Go version 1.11 or higher
-* The source code of WTF (`git clone https://github.com/wtfutil/wtf`)
+* The source code for WTF (`git clone https://github.com/wtfutil/wtf`)
 
 ## New TextWidgets
 

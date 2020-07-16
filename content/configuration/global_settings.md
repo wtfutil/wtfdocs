@@ -47,28 +47,28 @@ wtf:
   {{< attributes/colors/background >}}
 
   <tr>
-    <td>`colors.border.focusable`</td>
+    <td><code>colors.border.focusable</code></td>
     <td>The color in which to draw the border of widgets that can accept keyboard focus.</td>
     <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
   </tr>
   <tr>
-    <td>`colors.border.focused`</td>
+    <td><code>colors.border.focused</code></td>
     <td>The color in which to draw the border of the widget that currently has keyboard focus.</td>
     <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
   </tr>
   <tr>
-    <td>`colors.border.normal`</td>
+    <td><code>colors.border.normal</code></td>
     <td>The color in which to draw the borders of the widgets that cannot accept focus.</td>
     <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
   </tr>
 
   <tr>
-    <td>`grid.columns`</td>
+    <td><code>grid.columns</code></td>
     <td>An array that defines the widths of all the columns.</td>
     <td>See <a href="https://github.com/rivo/tview/wiki/Grid">tview's Grid</a> for details</td>
   </tr>
   <tr>
-    <td>`grid.rows`</td>
+    <td><code>grid.rows</code></td>
     <td>An array that defines the heights of all the rows.</td>
     <td>See <a href="https://github.com/rivo/tview/wiki/Grid">tview's Grid</a> for details</td>
   </tr>
