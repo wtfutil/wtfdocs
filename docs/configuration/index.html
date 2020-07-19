@@ -29,7 +29,7 @@
     <div class="container">
         <div>
             <a class="navbar-brand" href="/">
-                <img src="imgs/logo_transparent_sm.png" title="WTF" alt="WTF" width="48" height="48" />
+                <img src="/imgs/logo_transparent_sm.png" title="WTF" alt="WTF" width="48" height="48" />
                 WTF - the terminal dashboard
             </a>
         </div>
@@ -689,7 +689,6 @@
                 class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#index">Index</a></li>
     <li><a href="#configuration-files">Configuration Files</a>
       <ul>
         <li></li>
@@ -704,18 +703,13 @@
 
 <h1>Configuration</h1>
 
-<h2 id="index">Index</h2>
-<ul>
-<li><a href="#configuration-files">Configuration Files</a>
-<ul>
-<li><a href="#example-configuration-files">Example Configuration Files</a></li>
-<li><a href="#custom-configuration-files">Custom Configuration Files</a></li>
-</ul>
-</li>
-<li><a href="/configuration/global_settings">Global Settings</a></li>
-<li><a href="/configuration/common_settings">Common Settings</a></li>
-<li><a href="/configuration/grid_layout">Grid Layout</a></li>
-</ul>
+<!-- ## Index -->
+<!-- * [Configuration Files](#configuration-files)
+  * [Example Configuration Files](#example-configuration-files)
+  * [Custom Configuration Files](#custom-configuration-files)
+* [Global Settings](/configuration/global_settings)
+* [Common Settings](/configuration/common_settings)
+* [Grid Layout](/configuration/grid_layout) -->
 <h2 id="configuration-files">Configuration Files</h2>
 <p>By default WTF looks in a <code>~/.config/wtf/</code> directory for a YAML file called
 <code>config.yml</code>. If the <code>~/.config/wtf/</code> directory doesn&rsquo;t exist, WTF will create that directory
@@ -723,12 +717,12 @@ on start-up, and then display instructions for creating a new
 configuration file.</p>
 <p>In other words, WTF expects to have a YAML config file at: <code>~/.config/wtf/config.yml</code>.</p>
 <h4 id="example-configuration-files">Example Configuration Files</h4>
-<p>A couple of example config files are provided in the <code>_sample_configs/</code>
-directory of the Git repository.</p>
+<p>A number of example configuration files are provided in the <code>_sample_configs/</code>
+directory of the <a href="https://github.com/wtfutil/wtf/tree/master/_sample_configs">Git repository</a>.</p>
 <p>To try out WTF quickly, copy
 <code>sample_config.yml</code> into <code>~/.config/wtf/</code> as <code>config.yml</code> and relaunch WTF. You
-should see the app launch and display the <a href="/modules/security/">Security</a>,
-<a href="/posts/modules/clocks/">Clocks</a> and <a href="/modules/status/">Status</a> widgets onscreen.</p>
+should see the app launch and display the <a href="/modules/security">Security</a>,
+<a href="modules/clocks/">Clocks</a> and <a href="/modules/status/">Status</a> widgets onscreen.</p>
 <h4 id="custom-configuration-files">Custom Configuration Files</h4>
 <p>To try out different configurations (or run multiple instances of WTF),
 you can pass the path to a config file via command line arguments on
@@ -750,14 +744,15 @@ parameter on launch:</p>
 
 <div class="position-relative">
     <div class="position-absolute" style="right:0;">
-        <button class="btn btn-light" data-clipboard-target="#clipboard_e71928f367">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_31ba22c1eb">
         Copy
         </button>
     </div>
-    <div id="clipboard_e71928f367">
+    <div id="clipboard_31ba22c1eb">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
-    $&gt; wtfutil --config<span style="color:#f92672">=</span>path/to/custom/config.yml
-</code></pre></div><pre><code></code></pre>
+❯ wtfutil --config<span style="color:#f92672">=</span>path/to/custom/config.yml
+
+</code></pre></div>
     </div>
 </div>
 

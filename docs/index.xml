@@ -236,7 +236,7 @@ Configuration Copy   weather: apiKey: &amp;#34;p0d13****************************
 Examples: New Relic, Git, Weather.
 Widget The onscreen representation of a Module. The widget is responsible for being the interface between the app and the data collection.
 Widgets are defined by a required widget.go file in a Module.
-WTF An acronym for &amp;ldquo;What The Fsck?&amp;quot;, as in &amp;ldquo;What the fsck are all these browser tabs open for?</description>
+WTF An acronym for &amp;ldquo;What The Fsck?&amp;rdquo;, as in &amp;ldquo;What the fsck are all these browser tabs open for?</description>
     </item>
     
     <item>
@@ -259,7 +259,7 @@ Upcoming Matches Shows upcoming matches or fixtuers in the specific league. By d
       <guid>https://wtfutil.com/configuration/generate-module/</guid>
       <description>The widgets that you see on the screen are displayed using modules. To make it easier to create new modules there is a generator which creates a stub (an empty module). The Go package generators contains generator scripts for different types of widgets.
 Prerequisites Before you can generate new modules, you&amp;rsquo;ll need to have:
- Go version 1.11 or higher The source code of WTF (git clone https://github.com/wtfutil/wtf)  New TextWidgets You can run go generate -run=text to create a new widget called NewTextWidget.</description>
+ Go version 1.11 or higher The source code for WTF (git clone https://github.com/wtfutil/wtf)  New TextWidgets You can run go generate -run=text to create a new widget called NewTextWidget.</description>
     </item>
     
     <item>

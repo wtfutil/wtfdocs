@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-	<meta name="generator" content="Hugo 0.70.0" />
+	<meta name="generator" content="Hugo 0.74.2" />
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +30,7 @@
     <div class="container">
         <div>
             <a class="navbar-brand" href="/">
-                <img src="imgs/logo_transparent_sm.png" title="WTF" alt="WTF" width="48" height="48" />
+                <img src="/imgs/logo_transparent_sm.png" title="WTF" alt="WTF" width="48" height="48" />
                 WTF - the terminal dashboard
             </a>
         </div>
@@ -690,7 +690,8 @@
                 class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#capabilities">Capabilities?</a></li>
+    <li><a href="#modules-are-the-magic">Modules are the magic</a></li>
+    <li><a href="#sponsors-make-it-happen">Sponsors make it happen</a></li>
   </ul>
 </nav>
 </div>
@@ -705,28 +706,31 @@
     <img src="imgs/logo_transparent.png" title="WTF" alt="WTF" width="480" height="480" />
 </p>
 <p align="center">
-    <a href="/getting_started" class="btn btn-primary quick-start" role="button">Quick Start</a>
+    <a href="/getting_started" class="btn btn-primary quick-start" role="button">
+      <img src="imgs/icons/rocket.png" title="WTF" alt="WTF" width="32" height="32" /> 
+      Quick Start
+    </a>
 </p>
 <p>&nbsp;</p>
-<p>So many tabs open, keeping tab on so many things, right?</p>
-<p>Close your tabs, use WTF instead.</p>
-<p><strong>WTF is a terminal-based information monitoring system.</strong></p>
-<p>Use it to monitor systems, services, and important information that you don&rsquo;t always need visible, but do want to check in on every now and then.</p>
-<p>Keep an eye on your <strong>OpsGenie</strong> schedules, <strong>Google Calendar</strong>, <strong>Git</strong> and <strong>GitHub</strong> repositories, and <strong>New Relic</strong> deployments.</p>
-<p>See who&rsquo;s away in <strong>BambooHR</strong>, which <strong>Jira</strong> tickets are assigned to you, what time it is in Barcelona, and dozens more.</p>
+<p><strong>WTF is the personal information dashboard for your terminal.</strong></p>
+<p>Use WTF to monitor systems, services, and important information that you don&rsquo;t always need visible, but do want to check in on every now and then.</p>
+<p>Keep an eye on your <a href="/modules/opsgenie">OpsGenie</a> schedules, <a href="/modules/google/gcal">Google Calendar</a>, <a href="/modules/git">Git</a> and <a href="/modules/github">GitHub</a> repositories, and <a href="/modules/newrelic">New Relic</a> deployments.</p>
+<p>See who&rsquo;s away in <a href="/modules/bamboohr">BambooHR</a>, which <a href="/modules/jira">Jira</a> tickets are assigned to you, what <a href="/modules/clocks">time</a> it is in Barcelona, and dozens more.</p>
 <div class="call-to-action">
-  <div class='cta-text'>
-    Follow along on <a href="https://twitter.com/wtfutil">Twitter</a> to track changes, fixes, and improvements
-  </div>
-  <div class='cta-link'>
-    <a href="https://twitter.com/wtfutil">
-      <img src="/imgs/services/twitter.png" width="48" height="48" alt="twitter" title="twitter" />
-    </a>
+  <div class="cta-row">
+    <div class='cta-text'>
+      Follow along on with WTF on <a href="https://twitter.com/wtfutil">Twitter</a> to track changes, fixes, and new releases
+    </div>
+    <div class='cta-link'>
+      <a href="https://twitter.com/wtfutil">
+        <img src="/imgs/services/twitter.png" width="48" height="48" alt="twitter" title="twitter" />
+      </a>
+    </div>
   </div>
 </div>
-<h2 id="capabilities">Capabilities?</h2>
+<h2 id="modules-are-the-magic">Modules are the magic</h2>
 <p>
-Modules are the heart of WTF, and WTF comes with over 50 easily-configurable built-in modules. See below for a list of a few of them.
+Modules are the heart of WTF, and WTF comes with over 50 easily-configurable built-in modules. See below for just a few of them.
 </p>
 <p>
 Then click on <a href="/modules">Modules</a> to see the complete list.
@@ -740,7 +744,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         Git
       </h5>
       <p class="card-text">
-        The Git module allows you to view the status of your currently-active branch and interact with it.
+        View the status of your currently-active branch, interact with it, and see all the files you've changed so far.
       </p>
     </div>
     <div class="card-footer">
@@ -754,7 +758,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         GitHub
       </h5>
       <p class="card-text">
-        The GitHub module allows you to view the status of your remote GitHub repo and interact with it.
+        View the status of your remote GitHub repo and interact with it.
       </p>
     </div>
     <div class="card-footer">
@@ -768,7 +772,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         Docker
       </h5>
       <p class="card-text">
-        The Docker module allows you to view the current status of Docker on your local machine and interact with it.
+        View the current status of Docker on your local machine and interact with it.
       </p>
     </div>
     <div class="card-footer">
@@ -784,7 +788,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         Google Calendar
       </h5>
       <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        View all your meetings and appointments for days in advance. See any collisions you might have, and which ones you've accepted and rejected.
       </p>
     </div>
     <div class="card-footer">
@@ -798,7 +802,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         PagerDuty
       </h5>
       <p class="card-text">
-        This card has supporting text below as a natural lead-in to additional content.
+        See who's currently on-call across multiple teams and multiple schedules. It might even be you.
       </p>
     </div>
     <div class="card-footer">
@@ -812,7 +816,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         DigitalOcean
       </h5>
       <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        View all your active droplets. Reboot, shut down, or destroy them.
       </p>
     </div>
     <div class="card-footer">
@@ -828,7 +832,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         Pi-hole
       </h5>
       <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        Enable and disable Pi-hole from the terminal, view the current status, and see all of your blocking stats in one location. 
       </p>
     </div>
     <div class="card-footer">
@@ -842,7 +846,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         Weather
       </h5>
       <p class="card-text">
-        This card has supporting text below as a natural lead-in to additional content.
+        You could look out your window, but that's cheating. Instead, see it right there in your terminal in text form the way nature intended.
       </p>
     </div>
     <div class="card-footer">
@@ -856,7 +860,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
         Transmission
       </h5>
       <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        Start, stop, pause your downloads and view your seeding stats. It's easy to keep track of all your Linux ISO downloads now.
       </p>
     </div>
     <div class="card-footer">
@@ -864,6 +868,13 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
     </div>
   </div>
 </div>
+<p class="mt-3">
+  and <a href="/modules">dozens more</a>!
+</p>
+<h2 id="sponsors-make-it-happen">Sponsors make it happen</h2>
+<p>Sponsoring is a great way to show your support for WTF, and WTF is proud to participate in the <a href="https://github.com/sponsors/senorprogrammer">GitHub Sponsors</a> program.</p>
+<p>If WTF occupies that special place in your terminal, please consider <a href="https://github.com/sponsors/senorprogrammer">sponsoring its ongoing development</a>. It makes a difference.</p>
+<iframe src="https://github.com/sponsors/senorprogrammer/card" title="Sponsor senorprogrammer" height="225" width="760" style="border: 0;"></iframe>
 	
 
 
