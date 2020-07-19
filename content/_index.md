@@ -30,21 +30,21 @@ See who's away in [BambooHR](/modules/bamboohr), which [Jira](/modules/jira) tic
 <p>&nbsp;</p>
 
 <p align="center">
-    <img src="imgs/screenshot.png" title="WTF" alt="WTF" width="800" height="563" />
+    <img src="imgs/screenshot.png" title="WTF" id="idx-screenshot" alt="WTF" width="800" height="563" />
 </p>
 
-<div class="call-to-action">
-  <div class="cta-row">
-    <div class='cta-text'>
+<table class="call-to-action">
+  <tr>
+    <td class="cta-text">
       Follow along on with WTF on <a href="https://twitter.com/wtfutil">Twitter</a> to track changes, fixes, and new releases
-    </div>
-    <div class='cta-link'>
+    </td>
+    <td class="cta-link">
       <a href="https://twitter.com/wtfutil">
         <img src="/imgs/services/twitter.png" width="48" height="48" alt="twitter" title="twitter" />
       </a>
-    </div>
-  </div>
-</div>
+    </td>
+  </tr>
+</table>
 
 ## Modules are the magic
 
@@ -198,7 +198,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
 
 ## Sponsors make it happen
 
-Sponsoring is a great way to show your support for WTF, and WTF is proud to participate in the <a href="https://github.com/sponsors/senorprogrammer">GitHub Sponsors</a> program. 
+Sponsoring is a great way to show your support for WTF, and WTF is proud to participate in the GitHub Sponsors program. 
 
 If WTF occupies that special place in your terminal, please consider <a href="https://github.com/sponsors/senorprogrammer">sponsoring its ongoing development</a>. It makes a difference.
 

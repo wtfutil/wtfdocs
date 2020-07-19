@@ -12,6 +12,12 @@
     border-radius: 11px 0px 0px 11px;
 }
 
+#idx-screenshot {
+    border-radius: 7px;
+    height: auto;
+    width: 100%;
+}
+
 .quick-start {
     font-size: 18px;
     font-weight: bold !important;
@@ -64,40 +70,27 @@ h2 {
 /* -------------------- Call to Action -------------------- */
 
 .call-to-action {
-    display: table;
-    font-size: 18px;
-    overflow: auto;
-    margin: 32px 0px 0px 0px;
+    border-collapse: separate;
+    border-spacing: 0;
     width: 100%;
 
-    .cta-row {
-        display: table-row;
+    .cta-text {
+        background-color: #c13d77;
+        border-radius: 11px 0px 0px 11px;
+        color: white;
+        vertical-align: middle;
 
-        .cta-text {
-            border-radius: 11px 0px 0px 11px;
-            background-color: #c13d77;
+        a {
             color: white;
-            display: table-cell;
-            padding: 15px 12px 14px 12px;
-            text-align: left;
-            vertical-align: top;
-            width: 90%;
-
-            a {
-                color: white !important;
-                font-weight: bold;
-            }
+            font-weight: bold;
         }
+    }
 
-        .cta-link {
-            background-color: #1ea1f3;
-            border-radius: 0px 11px 11px 0px;
-            color: white;
-            display: table-cell;
-            float: left;
-            padding: 4px;
-            text-align: center;
-        }
+    .cta-link {
+        background-color: #1ea1f3;
+        border-radius: 0px 11px 11px 0px;
+        color: white;
+        width: 48px;
     }
 }
 
