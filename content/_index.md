@@ -27,6 +27,12 @@ Keep an eye on your [OpsGenie](/modules/opsgenie) schedules, [Google Calendar](/
 
 See who's away in [BambooHR](/modules/bamboohr), which [Jira](/modules/jira) tickets are assigned to you, what [time](/modules/clocks) it is in Barcelona, and dozens more.
 
+<p>&nbsp;</p>
+
+<p align="center">
+    <img src="imgs/screenshot.png" title="WTF" alt="WTF" width="800" height="563" />
+</p>
+
 <div class="call-to-action">
   <div class="cta-row">
     <div class='cta-text'>
@@ -47,7 +53,8 @@ Modules are the heart of WTF, and WTF comes with over 50 easily-configurable bui
 </p>
 <p>
 Then click on <a href="/modules">Modules</a> to see the complete list.
-</p
+</p>
+
 <p>&nbsp;</p>
 
 <div class="card-group">
