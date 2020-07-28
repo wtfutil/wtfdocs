@@ -18,6 +18,7 @@ exchangerates:
     left: 4
     width: 1
     height: 2
+  precision: 3
   rates:
     CAD:
       - "USD"
@@ -33,6 +34,7 @@ exchangerates:
   {{< attributes/border >}}
   {{< attributes/enabled >}}
   {{< attributes/position >}}
+  {{< attributes/custom name="precision" desc="_Optional_ The number of decimal places to display. Default: 7." value="Any positive integer" >}}
   {{< attributes/custom name="rates" desc="A key/value list of currencies to convert between." value="" >}}
   {{< attributes/refreshInterval >}}
   {{< attributes/title >}}

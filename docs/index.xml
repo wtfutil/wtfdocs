@@ -427,7 +427,7 @@ Configuration Copy   docker: type: docker enabled: true labelColor: lightblue po
       
       <guid>https://wtfutil.com/modules/exchange_rates/</guid>
       <description>Displays exchange rates between various currencies.
-Configuration Copy   exchangerates: enabled: true focusable: false position: top: 4 left: 4 width: 1 height: 2 rates: CAD: - &amp;#34;USD&amp;#34; - &amp;#34;EUR&amp;#34; USD: - &amp;#34;CAD&amp;#34; EUR: - &amp;#34;CAD&amp;#34; title: &amp;#34;💰 Rates&amp;#34;    Attributes   Name Description Value    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration Copy   exchangerates: enabled: true focusable: false position: top: 4 left: 4 width: 1 height: 2 precision: 3 rates: CAD: - &amp;#34;USD&amp;#34; - &amp;#34;EUR&amp;#34; USD: - &amp;#34;CAD&amp;#34; EUR: - &amp;#34;CAD&amp;#34; title: &amp;#34;💰 Rates&amp;#34;    Attributes   Name Description Value    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>

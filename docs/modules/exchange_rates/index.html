@@ -717,11 +717,11 @@
 
 <div class="position-relative">
     <div class="position-absolute" style="right:0;">
-        <button class="btn btn-light" data-clipboard-target="#clipboard_3ccb296e7b">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_2bce66b7fd">
         Copy
         </button>
     </div>
-    <div id="clipboard_3ccb296e7b">
+    <div id="clipboard_2bce66b7fd">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
 <span style="color:#66d9ef">exchangerates</span>:
   <span style="color:#66d9ef">enabled</span>: <span style="color:#66d9ef">true</span>
@@ -731,6 +731,7 @@
     <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">4</span>
     <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">1</span>
     <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">2</span>
+  <span style="color:#66d9ef">precision</span>: <span style="color:#ae81ff">3</span>
   <span style="color:#66d9ef">rates</span>:
     <span style="color:#66d9ef">CAD</span>:
       - <span style="color:#e6db74">&#34;USD&#34;</span>
@@ -774,6 +775,11 @@
     <td></td>
 </tr>
   <tr>
+    <td><code>precision</code></td>
+    <td><em>Optional</em> The number of decimal places to display. Default: 7.</td>
+    <td>Any positive integer</td>
+</tr>
+  <tr>
     <td><code>rates</code></td>
     <td>A key/value list of currencies to convert between.</td>
     <td></td>
@@ -781,7 +787,7 @@
   <tr>
     <td><code>refreshInterval</code></td>
     <td><i>Optional</i> How often, in seconds, this module will update its data. Default: <code>300</code>.</td>
-    <td>Any positive integer.</td>
+    <td>Any positive integer</td>
 </tr>
   <tr>
     <td><code>title</code></td>
