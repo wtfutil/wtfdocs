@@ -346,7 +346,7 @@ Configuration Single Schedule Copy   opsgenie: apiKey: &amp;#34;p0d13***********
       
       <guid>https://wtfutil.com/modules/pagerduty/</guid>
       <description>Shows Pagerduty on-call schedules.
-Configuration Copy   pagerduty: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true escalationFilter: - &amp;#34;client-eng&amp;#34; position: top: 4 left: 3 height: 1 width: 2 scheduleIDs: - &amp;#34;R2D24CD&amp;#34; - &amp;#34;C3P05MF&amp;#34; showIncidents: true showSchedules: true    Attributes   Name Description Value    apiKey Your PagerDuty API token.  Your API key or leave it empty to use the WTF_PAGERDUTY_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border.</description>
+Configuration Copy   pagerduty: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true escalationFilter: - &amp;#34;client-eng&amp;#34; position: top: 4 left: 3 height: 1 width: 2 scheduleIDs: - &amp;#34;R2D24CD&amp;#34; - &amp;#34;C3P05MF&amp;#34; showIncidents: true showOnCallEnd: true showSchedules: true    Attributes   Name Description Value    apiKey Your PagerDuty API token.  Your API key or leave it empty to use the WTF_PAGERDUTY_API_KEY environment variable.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>

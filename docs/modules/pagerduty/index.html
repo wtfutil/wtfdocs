@@ -717,11 +717,11 @@
 
 <div class="position-relative">
     <div class="position-absolute" style="right:0;">
-        <button class="btn btn-light" data-clipboard-target="#clipboard_10ddebc8b4">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_fe68934056">
         Copy
         </button>
     </div>
-    <div id="clipboard_10ddebc8b4">
+    <div id="clipboard_fe68934056">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
 <span style="color:#66d9ef">pagerduty</span>:
   <span style="color:#66d9ef">apiKey</span>: <span style="color:#e6db74">&#34;p0d13*********************************************c3&#34;</span>
@@ -737,6 +737,7 @@
   - <span style="color:#e6db74">&#34;R2D24CD&#34;</span>
   - <span style="color:#e6db74">&#34;C3P05MF&#34;</span>
   <span style="color:#66d9ef">showIncidents</span>: <span style="color:#66d9ef">true</span>
+  <span style="color:#66d9ef">showOnCallEnd</span>: <span style="color:#66d9ef">true</span>
   <span style="color:#66d9ef">showSchedules</span>: <span style="color:#66d9ef">true</span>
 
 </code></pre></div>
@@ -808,6 +809,11 @@
   <tr>
     <td><code>showIncidents</code></td>
     <td><em>Optional</em> Whether or not to list incidents. Default: true.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>showOnCallEnd</code></td>
+    <td><em>Optional</em> Whether or not to display the end date of the oncall rotation. Default: false.</td>
     <td>true, false</td>
 </tr>
   <tr>

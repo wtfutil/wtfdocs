@@ -24,6 +24,7 @@ pagerduty:
   - "R2D24CD"
   - "C3P05MF"
   showIncidents: true
+  showOnCallEnd: true
   showSchedules: true
 {{< /code >}}
 
@@ -38,6 +39,7 @@ pagerduty:
   {{< attributes/custom name="teamIDs" desc="_Optional_ An array of team IDs to restrict the incidents query to" value="" >}}
   {{< attributes/custom name="userIDs" desc="_Optional_ An array of user IDs to restrict the incidents query to" value="" >}}
   {{< attributes/custom name="showIncidents" desc="_Optional_ Whether or not to list incidents. Default: true." value="true, false" >}}
+  {{< attributes/custom name="showOnCallEnd" desc="_Optional_ Whether or not to display the end date of the oncall rotation. Default: false." value="true, false" >}}
   {{< attributes/custom name="showSchedules" desc="_Optional_ Whether or not to show schedules. Default: true." value="true, false" >}}
 {{% /attributes %}}
 
