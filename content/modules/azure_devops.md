@@ -13,7 +13,7 @@ azuredevops:
   enabled: true
   labelColor: "lightblue"
   maxRows: 3
-  orgUrl: "https://dev.azure.com/myawesomecompany/"
+  orgURL: "https://dev.azure.com/myawesomecompany/"
   position:
     top: 0
     left: 0
@@ -31,7 +31,7 @@ azuredevops:
   {{< attributes/enabled >}}
   {{< attributes/custom name="labelColor" desc="_Optional_ The color of the title label. Default: `white`." value="Any X11 color name." >}}
   {{< attributes/custom name="maxRows" desc="_Optional_ The maximum number of rows to display. Default: `3`." value="Any positive integer." >}}
-  {{< attributes/custom name="orgUrl" desc="The URL to your Azure DevOps project." value="Leave empty to use the `WTF_AZURE_DEVOPS_ORG_URL` environment variable." >}}
+  {{< attributes/custom name="orgURL" desc="The URL to your Azure DevOps project." value="Leave empty to use the `WTF_AZURE_DEVOPS_ORG_URL` environment variable." >}}
   {{< attributes/position >}}
   {{< attributes/custom name="projectName" desc="The name of your Azure DevOps project." value="Leave empty to use the `WTF_AZURE_DEVOPS_PROJECT_NAME` environment variable." >}}
   {{< attributes/refreshInterval >}}
