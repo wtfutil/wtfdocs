@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wtfutil.com/modules/weather_services/weather/">
+    <link rel="canonical" href="https://wtfutil.com/blog/2020-09-23-v0-32-0/">
 
     <title>
         
-        Weather | WTF - the terminal dashboard
+        v0.32.0 Released | WTF - the terminal dashboard
         
     </title>
 
@@ -135,7 +135,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/modules/" class="nav-item my-1 parent alwaysopen haschildren
+    <li data-nav-id="/modules/" class="nav-item my-1 alwaysopen haschildren
         ">
         
         <a class="nav-link p-0" href="/modules/"><h6>Modules</h6></a>
@@ -530,7 +530,7 @@
                     VictorOps OnCall
                 </a>
         </li>
-    <li data-nav-id="/modules/weather_services/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/modules/weather_services/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/modules/weather_services/"><h6>Weather Services</h6></a>
@@ -547,7 +547,7 @@
                     Pretty Weather
                 </a>
         </li>
-        <li data-nav-id="/modules/weather_services/weather/" class="nav-item my-1 active">
+        <li data-nav-id="/modules/weather_services/weather/" class="nav-item my-1">
                 
                  <a href="/modules/weather_services/weather/" class="nav-link p-0">
                     Weather
@@ -563,12 +563,12 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/blog/" class="nav-item my-1 haschildren
+    <li data-nav-id="/blog/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/blog/"><h6>WTF Blog</h6></a>
         <ul class="list-unstyled ml-2">
-        <li data-nav-id="/blog/2020-09-23-v0-32-0/" class="nav-item my-1">
+        <li data-nav-id="/blog/2020-09-23-v0-32-0/" class="nav-item my-1 active">
                 
                  <a href="/blog/2020-09-23-v0-32-0/" class="nav-link p-0">
                     v0.32.0 Released
@@ -695,14 +695,13 @@
                 class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#configuration">Configuration</a></li>
-    <li><a href="#attributes">Attributes</a></li>
-    <li><a href="#keyboard-controls">Keyboard Controls</a></li>
-    <li><a href="#source-code">Source Code</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#source-code-1">Source Code</a></li>
+    <li>
+      <ul>
+        <li><a href="#-added">⚡️ Added</a></li>
+        <li><a href="#-fixed">🐞 Fixed</a></li>
+        <li><a href="#-updated">👍 Updated</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 </div>
@@ -710,233 +709,27 @@
 
             <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
 
-<h1>Weather</h1>
+<h1>v0.32.0 Released</h1>
 
-<p><img class="screenshot" src="/imgs/modules/weather.png" width="320" height="187" alt="weather screenshot" /></p>
-<p>Displays a configurable list of current weather report, including current temperature, sunrise time, and sunset time.</p>
-<h2 id="configuration">Configuration</h2>
-
-
-
-
-
-
-    
-    
-
-
-
-
-<div class="position-relative">
-    <div class="position-absolute" style="right:0;">
-        <button class="btn btn-light" data-clipboard-target="#clipboard_218bfcf00c">
-        Copy
-        </button>
-    </div>
-    <div id="clipboard_218bfcf00c">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
-<span style="color:#f92672">weather</span>:
-  <span style="color:#f92672">apiKey</span>: <span style="color:#e6db74">&#34;p0d13*********************************************c3&#34;</span>
-  <span style="color:#75715e"># From http://openweathermap.org/help/city_list.txt</span>
-  <span style="color:#f92672">cityids</span>:
-  - <span style="color:#ae81ff">6173331</span>
-  - <span style="color:#ae81ff">3128760</span>
-  - <span style="color:#ae81ff">6167865</span>
-  - <span style="color:#ae81ff">6176823</span>
-  <span style="color:#f92672">colors</span>:
-    <span style="color:#f92672">current</span>: <span style="color:#e6db74">&#34;lightblue&#34;</span>
-  <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">true</span>
-  <span style="color:#f92672">language</span>: <span style="color:#e6db74">&#34;EN&#34;</span>
-  <span style="color:#f92672">position</span>:
-    <span style="color:#f92672">top</span>: <span style="color:#ae81ff">0</span>
-    <span style="color:#f92672">left</span>: <span style="color:#ae81ff">2</span>
-    <span style="color:#f92672">height</span>: <span style="color:#ae81ff">1</span>
-    <span style="color:#f92672">width</span>: <span style="color:#ae81ff">1</span>
-  <span style="color:#f92672">refreshInterval</span>: <span style="color:#ae81ff">900</span>
-  <span style="color:#f92672">tempUnit</span>: <span style="color:#e6db74">&#34;C&#34;</span>
-<span style="color:#ae81ff">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span>
-  <span style="color:#f92672">useEmoji</span>: <span style="color:#66d9ef">true</span>
-</code></pre></div><p>=======</p>
-<pre><code></code></pre>
-    </div>
-</div>
-
-
-
-
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>Fix syntax highlighting</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="attributes">Attributes</h2>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Value</th>
-        </tr>
-    </thead>
-      <tr>
-    <td><code>apiKey</code></td>
-    <td>Your <a href="https://openweathermap.org/appid">OpenWeatherMap API</a> token.</td>
-    <td>
-        Your API key <strong>or</strong> leave it empty to use the
-        <code>WTF_OWM_API_KEY</code> environment
-        variable.
-    </td>
-</tr>
-  <tr>
-    <td><code>border</code></td>
-    <td><i>Optional</i> Whether or not to draw this widget with a border. Default: <code>true</code>.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td>`cityids`</td>
-    <td>A list of the <a href="http://openweathermap.org/help/city_list.txt">OpenWeatherMap city IDs</a> for the cities you want to view.</td>
-    <td>A list of positive integers</td>
-  </tr>
-  <tr>
-    <td><code>colors.current</code></td>
-    <td>_Optional_ The color to highlight the current temperature in. Default: green.</td>
-    <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a> or long-form hex value (i.e.:
-        <code>#ff0000</code>).</td>
-</tr>
-  <tr>
-    <td><code>enabled</code></td>
-    <td><i>Optional</i> Whether or not this module is executed and if its data displayed onscreen. Default:
-        <code>false</code>.</td>
-    <td>true, false</td>
-</tr>
-  <tr>
-    <td><code>focusChar</code></td>
-    <td><i>Optional</i> Define one of the number keys as a short cut key to access the widget.</td>
-    <td>0..9</td>
-</tr>
-  <tr>
-    <td>`language`</td>
-    <td>_Optional_ The human language in which to present the weather data. Default: EN.</td> 
-    <td>Any <a href="https://openweathermap.org/current">language identifier</a> specified by OpenWeatherMap"</td>
-  </tr>
-  <tr>
-    <td><code>position</code></td>
-    <td>Defines where in the grid this module's widget will be displayed.</td>
-    <td></td>
-</tr>
-  <tr>
-    <td><code>refreshInterval</code></td>
-    <td><i>Optional</i> How often, in seconds, this module will update its data. Default: <code>300</code>.</td>
-    <td>Any positive integer</td>
-</tr>
-  <tr>
-    <td><code>tempUnit</code></td>
-    <td><em>Optional</em> The temperature scale in which to display temperature values. Default: C.</td>
-    <td><code>F</code> for Fahrenheit, <code>C</code> for Celcius</td>
-</tr>
-  <tr>
-    <td><code>useEmoji</code></td>
-    <td><em>Optional</em> Whether or not to display emoji characters in the title. Default: true.</td>
-    <td>true or false</td>
-</tr>
-</table>
-<h2 id="keyboard-controls">Keyboard Controls</h2>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Key</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-      <tr>
-    <td>`/`</td>
-    <td>Open/close the widget's help modal</td>
-</tr>
-  <tr>
-    <td colspan="2"></td>
-</tr>
-  <tr>
-    <td>`h`</td>
-    <td>Show the previous weather location</td>
-</tr>
-  <tr>
-    <td>`l`</td>
-    <td>Show the next weather location</td>
-</tr>
-  <tr>
-    <td>`r`</td>
-    <td>Refresh the data</td>
-</tr>
-  <tr>
-    <td colspan="2"></td>
-</tr>
-  <tr>
-    <td>`←`</td>
-    <td>Show the previous Twitter account</td>
-</tr> 
-  <tr>
-    <td>`→`</td>
-    <td>Show the next Twitter account</td>
-</tr>
-</table>
-<p>&laquo;&laquo;&laquo;&lt; HEAD</p>
-<h2 id="source-code">Source Code</h2>
-<h1 id="httpsgithubcomwtfutilwtftreemastermodulesweatherservicesweather"><a href="https://github.com/wtfutil/wtf/tree/master/modules/weatherservices/weather/">https://github.com/wtfutil/wtf/tree/master/modules/weatherservices/weather/</a></h1>
-<h2 id="source-code-1">Source Code</h2>
-
-
-
-
-
-
-    
-    
-
-
-
-
-<div class="position-relative">
-    <div class="position-absolute" style="right:0;">
-        <button class="btn btn-light" data-clipboard-target="#clipboard_dcb1e63971">
-        Copy
-        </button>
-    </div>
-    <div id="clipboard_dcb1e63971">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
-wtf/modules/weatherservices/weather/
-
-</code></pre></div>
-    </div>
-</div>
-
-
-
-
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>Fix syntax highlighting</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<small>September 23, 2020</small>
+<p><a href="https://github.com/wtfutil/wtf/releases/tag/v0.32.0">WTF v0.23.0</a> contains the following changes:</p>
+<h3 id="-added">⚡️ Added</h3>
+<ul>
+<li>PagerDuty module now supports <code>showOncallEnd</code> setting, which determines whether or not to display the oncall rotation end date, by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
+<li>Exchange Rates module now supports <code>precision</code> setting, which determines how many decimal places to display, <a href="https://github.com/wtfutil/wtf/issues/897">#897</a> by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
+</ul>
+<h3 id="-fixed">🐞 Fixed</h3>
+<ul>
+<li>Todo module&rsquo;s edit modal now shows up quickly, <a href="https://github.com/wtfutil/wtf/issues/876">#876</a> by <a href="https://github.com/aeter">@aeter</a></li>
+<li>Jira module title now displays properly, <a href="https://github.com/wtfutil/wtf/issues/942">#942</a> by <a href="https://github.com/timhwang21">@timhwang21</a></li>
+</ul>
+<h3 id="-updated">👍 Updated</h3>
+<ul>
+<li>Updated <code>alecthomas/chroma</code> from 0.7.3 to 0.8.0</li>
+<li>Updated <code>digitalocean/godo</code> from 1.38.0 to 1.42.1</li>
+<li>Updated <code>google.golang.org/api</code> from 0.29.0 to 0.30.0</li>
+<li>Updated <code>shirou/gopsutil</code> from 2.20.6+incompatible to 2.20.7+incompatible</li>
+</ul>
 
 
     
@@ -948,9 +741,9 @@ wtf/modules/weatherservices/weather/
                     <div class="position-relative mx-auto col-lg-9">
                         <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
 
-    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/modules/weather_services/prettyweather/" title="Pretty Weather"> <i
-                class="fas fa-chevron-left"></i> Pretty Weather</a>
-        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/modules/zendesk/" title="Zendesk">Zendesk
+    <div class="d-flex justify-content-center"><a class="p-1 mr-3 d-inline-block text-white" href="/blog/" title="WTF Blog"> <i
+                class="fas fa-chevron-left"></i> WTF Blog</a>
+        <a class="p-1 ml-3 d-inline-block text-white text-right" href="/blog/2020-04-26-v0-29-0/" title="v0.29.0 Released">v0.29.0 Released
             <i class="fas fa-chevron-right"></i></a></div>
 </div>
                     </div>

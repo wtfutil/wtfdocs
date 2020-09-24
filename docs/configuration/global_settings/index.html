@@ -568,6 +568,12 @@
         
         <a class="nav-link p-0" href="/blog/"><h6>WTF Blog</h6></a>
         <ul class="list-unstyled ml-2">
+        <li data-nav-id="/blog/2020-09-23-v0-32-0/" class="nav-item my-1">
+                
+                 <a href="/blog/2020-09-23-v0-32-0/" class="nav-link p-0">
+                    v0.32.0 Released
+                </a>
+        </li>
         <li data-nav-id="/blog/2020-04-26-v0-29-0/" class="nav-item my-1">
                 
                  <a href="/blog/2020-04-26-v0-29-0/" class="nav-link p-0">
@@ -721,38 +727,38 @@ See this <a href="https://github.com/wtfutil/wtf/blob/master/_sample_configs/sam
     </div>
     <div id="clipboard_c0ce9630bb">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
-<span style="color:#66d9ef">wtf</span>:
-  <span style="color:#66d9ef">colors</span>:
-    <span style="color:#66d9ef">background</span>: <span style="color:#e6db74">&#34;red&#34;</span>
-    <span style="color:#66d9ef">border</span>:
-      <span style="color:#66d9ef">focusable</span>: <span style="color:#e6db74">&#34;darkslateblue&#34;</span>
-      <span style="color:#66d9ef">focused</span>: <span style="color:#e6db74">&#34;orange&#34;</span>
-      <span style="color:#66d9ef">normal</span>: <span style="color:#e6db74">&#34;gray&#34;</span>
-    <span style="color:#66d9ef">checked</span>: <span style="color:#e6db74">&#34;gray&#34;</span>
-    <span style="color:#66d9ef">highlight</span>:
-      <span style="color:#66d9ef">fore</span>: <span style="color:#e6db74">&#34;black&#34;</span>
-      <span style="color:#66d9ef">back</span>: <span style="color:#e6db74">&#34;green&#34;</span>
-    <span style="color:#66d9ef">text</span>: <span style="color:#e6db74">&#34;white&#34;</span>
-    <span style="color:#66d9ef">title</span>: <span style="color:#e6db74">&#34;white&#34;</span>
-  <span style="color:#66d9ef">grid</span>:
+<span style="color:#f92672">wtf</span>:
+  <span style="color:#f92672">colors</span>:
+    <span style="color:#f92672">background</span>: <span style="color:#e6db74">&#34;red&#34;</span>
+    <span style="color:#f92672">border</span>:
+      <span style="color:#f92672">focusable</span>: <span style="color:#e6db74">&#34;darkslateblue&#34;</span>
+      <span style="color:#f92672">focused</span>: <span style="color:#e6db74">&#34;orange&#34;</span>
+      <span style="color:#f92672">normal</span>: <span style="color:#e6db74">&#34;gray&#34;</span>
+    <span style="color:#f92672">checked</span>: <span style="color:#e6db74">&#34;gray&#34;</span>
+    <span style="color:#f92672">highlight</span>:
+      <span style="color:#f92672">fore</span>: <span style="color:#e6db74">&#34;black&#34;</span>
+      <span style="color:#f92672">back</span>: <span style="color:#e6db74">&#34;green&#34;</span>
+    <span style="color:#f92672">text</span>: <span style="color:#e6db74">&#34;white&#34;</span>
+    <span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;white&#34;</span>
+  <span style="color:#f92672">grid</span>:
     <span style="color:#75715e"># How _wide_ the columns are, in terminal characters. In this case we have</span>
     <span style="color:#75715e"># six columns, each of which are 35 characters wide</span>
-    <span style="color:#66d9ef">columns</span>: [<span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">35</span>]
+    <span style="color:#f92672">columns</span>: [<span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">35</span>]
 
     <span style="color:#75715e"># How _high_ the rows are, in terminal lines. In this case we have five rows</span>
     <span style="color:#75715e"># that support ten line of text, one of three lines, and one of four</span>
-    <span style="color:#66d9ef">rows</span>: [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
-  <span style="color:#66d9ef">navigation</span>:
-    <span style="color:#66d9ef">shortcuts</span>: <span style="color:#66d9ef">true</span>
-  <span style="color:#66d9ef">openFileUtil</span>: <span style="color:#e6db74">&#34;open&#34;</span>
-  <span style="color:#66d9ef">sigils</span>:
-    <span style="color:#66d9ef">checkbox</span>:
-      <span style="color:#66d9ef">checked</span>: <span style="color:#e6db74">&#34;x&#34;</span>
-      <span style="color:#66d9ef">unchecked</span>: <span style="color:#e6db74">&#34; &#34;</span>
-    <span style="color:#66d9ef">paging</span>:
-      <span style="color:#66d9ef">normal</span>: <span style="color:#e6db74">&#34;*&#34;</span>
-      <span style="color:#66d9ef">selected</span>: <span style="color:#e6db74">&#34;_&#34;</span>
-  <span style="color:#66d9ef">term</span>: <span style="color:#e6db74">&#34;xterm-256color&#34;</span>
+    <span style="color:#f92672">rows</span>: [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
+  <span style="color:#f92672">navigation</span>:
+    <span style="color:#f92672">shortcuts</span>: <span style="color:#66d9ef">true</span>
+  <span style="color:#f92672">openFileUtil</span>: <span style="color:#e6db74">&#34;open&#34;</span>
+  <span style="color:#f92672">sigils</span>:
+    <span style="color:#f92672">checkbox</span>:
+      <span style="color:#f92672">checked</span>: <span style="color:#e6db74">&#34;x&#34;</span>
+      <span style="color:#f92672">unchecked</span>: <span style="color:#e6db74">&#34; &#34;</span>
+    <span style="color:#f92672">paging</span>:
+      <span style="color:#f92672">normal</span>: <span style="color:#e6db74">&#34;*&#34;</span>
+      <span style="color:#f92672">selected</span>: <span style="color:#e6db74">&#34;_&#34;</span>
+  <span style="color:#f92672">term</span>: <span style="color:#e6db74">&#34;xterm-256color&#34;</span>
 
 </code></pre></div>
     </div>

@@ -6,10 +6,16 @@
     <description>Recent content in WTF Blog on WTF - the terminal dashboard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jul 2019 14:41:58 -0700</lastBuildDate>
-    
-	<atom:link href="https://wtfutil.com/blog/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 09 Jul 2019 14:41:58 -0700</lastBuildDate><atom:link href="https://wtfutil.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>v0.32.0 Released</title>
+      <link>https://wtfutil.com/blog/2020-09-23-v0-32-0/</link>
+      <pubDate>Wed, 23 Sep 2020 21:11:12 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/blog/2020-09-23-v0-32-0/</guid>
+      <description>September 23, 2020 WTF v0.23.0 contains the following changes:
+⚡️ Added  PagerDuty module now supports showOncallEnd setting, which determines whether or not to display the oncall rotation end date, by @senorprogrammer Exchange Rates module now supports precision setting, which determines how many decimal places to display, #897 by @senorprogrammer  🐞 Fixed  Todo module&amp;rsquo;s edit modal now shows up quickly, #876 by @aeter Jira module title now displays properly, #942 by @timhwang21  👍 Updated  Updated alecthomas/chroma from 0.</description>
+    </item>
     
     <item>
       <title>v0.29.0 Released</title>

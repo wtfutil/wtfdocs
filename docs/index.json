@@ -186,7 +186,7 @@
 	"title": "WTF Blog",
 	"tags": [],
 	"description": "",
-	"content": "Apr 26, 2020 v0.29.0 Released   Mar 15, 2020 v0.28.0 Released   Feb 23, 2020 v0.27.0 Released  Feb 4, 2020 v0.26.0 Released   Nov 10, 2019 Monochrome Retro Display  Nov 10, 2019 v0.24.0 Released   Oct 11, 2019 v0.23.0 Released   Sept 12, 2019 v0.22.0 Released   Aug 29, 2019 v0.21.0 Released  Aug 20, 2019 v0.20.0 Released   July 27, 2019 v0.19.0 Released  July 20, 2019 v0.18.0 Released  July 16, 2019 v0.17.1 Released  July 12, 2019 Installing With Homebrew  July 10, 2019 Binary Renamed to \u0026#39;wtfutil\u0026#39;  July 9, 2019 Using WTF\u0026#39;s FeedReader to Track WTF Releases  July 9, 2019 v0.14.0 Released \n"
+	"content": "Sep 23, 2020 v0.32.0 Released   Apr 26, 2020 v0.29.0 Released   Mar 15, 2020 v0.28.0 Released   Feb 23, 2020 v0.27.0 Released  Feb 4, 2020 v0.26.0 Released   Nov 10, 2019 Monochrome Retro Display  Nov 10, 2019 v0.24.0 Released   Oct 11, 2019 v0.23.0 Released   Sept 12, 2019 v0.22.0 Released   Aug 29, 2019 v0.21.0 Released  Aug 20, 2019 v0.20.0 Released   July 27, 2019 v0.19.0 Released  July 20, 2019 v0.18.0 Released  July 16, 2019 v0.17.1 Released  July 12, 2019 Installing With Homebrew  July 10, 2019 Binary Renamed to \u0026#39;wtfutil\u0026#39;  July 9, 2019 Using WTF\u0026#39;s FeedReader to Track WTF Releases  July 9, 2019 v0.14.0 Released \n"
 },
 {
 	"uri": "https://wtfutil.com/configuration/generate-module/",
@@ -586,6 +586,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Displays Zendesk tickets.\nConfiguration Copy   zendesk: apiKey: \u0026#34;p0d13*********************************************c3\u0026#34; enabled: true position: top: 0 left: 2 height: 1 width: 1 status: \u0026#34;new\u0026#34; subdomain: \u0026#34;your_domain\u0026#34; username: \u0026#34;your_email@acme.com\u0026#34;    Attributes   Name Description Value    apiKey Your Zendesk API token.  Your API key or leave it empty to use the ZENDESK_API environment variable.    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen. Default: false. true, false   focusChar Optional Define one of the number keys as a short cut key to access the widget. 0..9   position Defines where in the grid this module's widget will be displayed.    refreshInterval Optional How often, in seconds, this module will update its data. Default: 300. Any positive integer   status The status of tickets you want to retrieve. new, open, pending, hold   subdomain Your Zendesk subdomain. Leave this empty to use the ZENDESK_SUBDOMAIN environment variable.   username Your Zendesk username.     Keyboard Controls   Key Action    `/` Open/close the widget's help modal   `[return]` Open the selected ticket in the browser      `j` Select the next item in the list   `k` Select the previous item in the list      `↓` Select the next item in the list   `↑` Select the previous item in the list   Source Code https://github.com/wtfutil/wtf/tree/master/modules/zendesk/\n"
+},
+{
+	"uri": "https://wtfutil.com/blog/2020-09-23-v0-32-0/",
+	"title": "v0.32.0 Released",
+	"tags": [],
+	"description": "",
+	"content": "September 23, 2020 WTF v0.23.0 contains the following changes:\n⚡️ Added  PagerDuty module now supports showOncallEnd setting, which determines whether or not to display the oncall rotation end date, by @senorprogrammer Exchange Rates module now supports precision setting, which determines how many decimal places to display, #897 by @senorprogrammer  🐞 Fixed  Todo module\u0026rsquo;s edit modal now shows up quickly, #876 by @aeter Jira module title now displays properly, #942 by @timhwang21  👍 Updated  Updated alecthomas/chroma from 0.7.3 to 0.8.0 Updated digitalocean/godo from 1.38.0 to 1.42.1 Updated google.golang.org/api from 0.29.0 to 0.30.0 Updated shirou/gopsutil from 2.20.6+incompatible to 2.20.7+incompatible  "
 },
 {
 	"uri": "https://wtfutil.com/blog/2020-04-26-v0-29-0/",

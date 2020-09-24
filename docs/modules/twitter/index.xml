@@ -6,11 +6,7 @@
     <description>Recent content in Twitter on WTF - the terminal dashboard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Oct 2019 03:26:02 -0800</lastBuildDate>
-    
-	<atom:link href="https://wtfutil.com/modules/twitter/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 29 Oct 2019 03:26:02 -0800</lastBuildDate><atom:link href="https://wtfutil.com/modules/twitter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Twitter Stats</title>
       <link>https://wtfutil.com/modules/twitter/twitterstats/</link>

@@ -7,6 +7,8 @@ hidden: false
 alwaysopen: false
 ---
 
+{{< blog/indexcard date="Sep 23, 2020" title="v0.32.0 Released" page="2020-09-23-v0-32-0" >}}
+{{< blog/spacer >}}
 {{< blog/indexcard date="Apr 26, 2020" title="v0.29.0 Released" page="2020-04-26-v0-29-0" >}}
 {{< blog/spacer >}}
 {{< blog/indexcard date="Mar 15, 2020" title="v0.28.0 Released" page="2020-03-15-v0-28-0" >}}
