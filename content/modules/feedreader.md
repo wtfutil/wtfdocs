@@ -48,6 +48,7 @@ feedreader:
   {{< keyboard/k >}}
   {{< keyboard/o desc="Open the selected story in the browser" >}}
   {{< keyboard/r >}}
+  {{< keyboard/t desc="Switches the display mode between `title`, `link`, and `title and content`" >}}
 
   {{< keyboard/spacer >}}
 
