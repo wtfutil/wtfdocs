@@ -14,7 +14,7 @@ feedreader:
   enabled: true
   feeds:
   - https://news.ycombinator.com/rss
-  - http://feeds.reuters.com/Reuters/worldNews
+  - https://rss.cbc.ca/lineup/topstories.xml
   feedLimit: 10
   position:
     top: 4

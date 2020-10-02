@@ -433,7 +433,7 @@ Configuration Copy   exchangerates: enabled: true focusable: false position: top
       
       <guid>https://wtfutil.com/modules/feedreader/</guid>
       <description>A rudimentary RSS &amp;amp; Atom feed reader.
-Configuration Copy   feedreader: enabled: true feeds: - https://news.ycombinator.com/rss - http://feeds.reuters.com/Reuters/worldNews feedLimit: 10 position: top: 4 left: 1 height: 1 width: 2 refreshInterval: 14400    Screenshots Attributes   Name Description Value    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
+Configuration Copy   feedreader: enabled: true feeds: - https://news.ycombinator.com/rss - https://rss.cbc.ca/lineup/topstories.xml feedLimit: 10 position: top: 4 left: 1 height: 1 width: 2 refreshInterval: 14400    Screenshots Attributes   Name Description Value    border Optional Whether or not to draw this widget with a border. Default: true. true, false   enabled Optional Whether or not this module is executed and if its data displayed onscreen.</description>
     </item>
     
     <item>
