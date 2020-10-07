@@ -13,7 +13,7 @@
       <pubDate>Mon, 07 May 2018 20:17:37 -0700</pubDate>
       
       <guid>https://wtfutil.com/modules/azure_devops/</guid>
-      <description>Configuration Copy   azuredevops: apiToken: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true labelColor: &amp;#34;lightblue&amp;#34; maxRows: 3 orgUrl: &amp;#34;https://dev.azure.com/myawesomecompany/&amp;#34; position: top: 0 left: 0 height: 3 width: 3 projectName: &amp;#34;the awesome project&amp;#34; refreshInterval: 300 type: &amp;#34;azuredevops&amp;#34;    Attributes   Name Description Value    apiToken Your Azure DevOps API token. Your API key or leave it empty to use the WTF_AZURE_DEVOPS_API_TOKEN environment variable.   border Optional Whether or not to draw this widget with a border.</description>
+      <description>Configuration Copy   azuredevops: apiToken: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true labelColor: &amp;#34;lightblue&amp;#34; maxRows: 3 orgURL: &amp;#34;https://dev.azure.com/myawesomecompany/&amp;#34; position: top: 0 left: 0 height: 3 width: 3 projectName: &amp;#34;the awesome project&amp;#34; refreshInterval: 300 type: &amp;#34;azuredevops&amp;#34;    Attributes   Name Description Value    apiToken Your Azure DevOps API token. Your API key or leave it empty to use the WTF_AZURE_DEVOPS_API_TOKEN environment variable.   border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ Configuration Copy   circleci: apiKey: &amp;#34;p0d13***************************
       
       <guid>https://wtfutil.com/modules/clocks/</guid>
       <description>Displays a configurable list of world clocks, the local time, and date.
-Configuration Copy   clocks: colors: rows: even: &amp;#34;lightblue&amp;#34; odd: &amp;#34;white&amp;#34; enabled: true locations: # From https://en.wikipedia.org/wiki/List_of_tz_database_time_zones Avignon: &amp;#34;Europe/Paris&amp;#34; Barcelona: &amp;#34;Europe/Madrid&amp;#34; Dubai: &amp;#34;Asia/Dubai&amp;#34; New York: &amp;#34;America/New York&amp;#34; Toronto: &amp;#34;America/Toronto&amp;#34; UTC: &amp;#34;Etc/UTC&amp;#34; Vancouver: &amp;#34;America/Vancouver&amp;#34; position: top: 4 left: 0 height: 1 width: 1 refreshInterval: 15 # Valid options are: alphabetical, chronological sort: &amp;#34;alphabetical&amp;#34;    Screenshots Attributes   Name Description Value    border Optional Whether or not to draw this widget with a border.</description>
+Configuration Copy   clocks: colors: rows: even: &amp;#34;lightblue&amp;#34; odd: &amp;#34;white&amp;#34; enabled: true locations: # From https://en.wikipedia.org/wiki/List_of_tz_database_time_zones - Avignon: &amp;#34;Europe/Paris&amp;#34; - Barcelona: &amp;#34;Europe/Madrid&amp;#34; - Dubai: &amp;#34;Asia/Dubai&amp;#34; - New York: &amp;#34;America/New York&amp;#34; - Toronto: &amp;#34;America/Toronto&amp;#34; - UTC: &amp;#34;Etc/UTC&amp;#34; - Vancouver: &amp;#34;America/Vancouver&amp;#34; position: top: 4 left: 0 height: 1 width: 1 refreshInterval: 15 # Valid options are: alphabetical, chronological, natural sort: &amp;#34;alphabetical&amp;#34;    Screenshots Attributes   Name Description Value    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
     <item>

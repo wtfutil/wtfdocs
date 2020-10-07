@@ -724,11 +724,11 @@
 
 <div class="position-relative">
     <div class="position-absolute" style="right:0;">
-        <button class="btn btn-light" data-clipboard-target="#clipboard_ab666b69e4">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_8f6c9752b1">
         Copy
         </button>
     </div>
-    <div id="clipboard_ab666b69e4">
+    <div id="clipboard_8f6c9752b1">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
 <span style="color:#f92672">clocks</span>:
   <span style="color:#f92672">colors</span>:
@@ -738,20 +738,20 @@
   <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">true</span>
   <span style="color:#f92672">locations</span>:
     <span style="color:#75715e"># From https://en.wikipedia.org/wiki/List_of_tz_database_time_zones</span>
-    <span style="color:#f92672">Avignon</span>: <span style="color:#e6db74">&#34;Europe/Paris&#34;</span>
-    <span style="color:#f92672">Barcelona</span>: <span style="color:#e6db74">&#34;Europe/Madrid&#34;</span>
-    <span style="color:#f92672">Dubai</span>: <span style="color:#e6db74">&#34;Asia/Dubai&#34;</span>
-    <span style="color:#f92672">New York</span>: <span style="color:#e6db74">&#34;America/New York&#34;</span>
-    <span style="color:#f92672">Toronto</span>: <span style="color:#e6db74">&#34;America/Toronto&#34;</span>
-    <span style="color:#f92672">UTC</span>: <span style="color:#e6db74">&#34;Etc/UTC&#34;</span>
-    <span style="color:#f92672">Vancouver</span>: <span style="color:#e6db74">&#34;America/Vancouver&#34;</span>
+    - <span style="color:#f92672">Avignon</span>: <span style="color:#e6db74">&#34;Europe/Paris&#34;</span>
+    - <span style="color:#f92672">Barcelona</span>: <span style="color:#e6db74">&#34;Europe/Madrid&#34;</span>
+    - <span style="color:#f92672">Dubai</span>: <span style="color:#e6db74">&#34;Asia/Dubai&#34;</span>
+    - <span style="color:#f92672">New York</span>: <span style="color:#e6db74">&#34;America/New York&#34;</span>
+    - <span style="color:#f92672">Toronto</span>: <span style="color:#e6db74">&#34;America/Toronto&#34;</span>
+    - <span style="color:#f92672">UTC</span>: <span style="color:#e6db74">&#34;Etc/UTC&#34;</span>
+    - <span style="color:#f92672">Vancouver</span>: <span style="color:#e6db74">&#34;America/Vancouver&#34;</span>
   <span style="color:#f92672">position</span>:
     <span style="color:#f92672">top</span>: <span style="color:#ae81ff">4</span>
     <span style="color:#f92672">left</span>: <span style="color:#ae81ff">0</span>
     <span style="color:#f92672">height</span>: <span style="color:#ae81ff">1</span>
     <span style="color:#f92672">width</span>: <span style="color:#ae81ff">1</span>
   <span style="color:#f92672">refreshInterval</span>: <span style="color:#ae81ff">15</span>
-  <span style="color:#75715e"># Valid options are: alphabetical, chronological</span>
+  <span style="color:#75715e"># Valid options are: alphabetical, chronological, natural</span>
   <span style="color:#f92672">sort</span>: <span style="color:#e6db74">&#34;alphabetical&#34;</span>
 
 </code></pre></div>
@@ -813,7 +813,7 @@
   <tr>
     <td><code>sort</code></td>
     <td>The order in which to sort the clocks.</td>
-    <td><code>alphabetical</code> or <code>chronological</code>. <code>alphabetical</code> will sort in acending order by <code>key</code>, <code>chronological</code> will sort in ascending order by date/time.</td>
+    <td><code>alphabetical</code>, <code>chronological</code>, or <code>natural</code>. <code>alphabetical</code> will sort in acending order by <code>key</code>, <code>chronological</code> will sort in ascending order by date/time, <code>natural</code> will maintain the config file ordering.</td>
 </tr>
   <tr>
     <td><code>timeFormat</code></td>
