@@ -696,6 +696,8 @@
 	<nav id="TableOfContents">
   <ul>
     <li><a href="#configuration">Configuration</a></li>
+    <li><a href="#attributes">Attributes</a></li>
+    <li><a href="#source-code">Source Code</a></li>
   </ul>
 </nav>
 </div>
@@ -721,11 +723,11 @@
 
 <div class="position-relative">
     <div class="position-absolute" style="right:0;">
-        <button class="btn btn-light" data-clipboard-target="#clipboard_ec4a41e548">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_399db65d5a">
         Copy
         </button>
     </div>
-    <div id="clipboard_ec4a41e548">
+    <div id="clipboard_399db65d5a">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
 <span style="color:#f92672">datadog</span>:
   <span style="color:#f92672">apiKey</span>: <span style="color:#e6db74">&#34;&lt;yourapikey&gt;&#34;</span>
@@ -740,72 +742,6 @@
     <span style="color:#f92672">height</span>: <span style="color:#ae81ff">1</span>
     <span style="color:#f92672">width</span>: <span style="color:#ae81ff">2</span>
 
-<span style="color:#75715e">## Attributes</span>
-
-<span style="color:#ae81ff">&lt;table class=&#34;table&#34;&gt;</span>
-    <span style="color:#ae81ff">&lt;thead&gt;</span>
-        <span style="color:#ae81ff">&lt;tr&gt;</span>
-            <span style="color:#ae81ff">&lt;th&gt;Name&lt;/th&gt;</span>
-            <span style="color:#ae81ff">&lt;th&gt;Description&lt;/th&gt;</span>
-            <span style="color:#ae81ff">&lt;th&gt;Value&lt;/th&gt;</span>
-        <span style="color:#ae81ff">&lt;/tr&gt;</span>
-    <span style="color:#ae81ff">&lt;/thead&gt;</span>
-      <span style="color:#ae81ff">&lt;tr&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;code&gt;apiKey&lt;/code&gt;&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;Your &lt;a href=&#34;https://docs.datadoghq.com/api/&#34;&gt;DataDog API&lt;/a&gt; token.&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;</span>
-        <span style="color:#ae81ff">Your API key &lt;strong&gt;or&lt;/strong&gt; leave it empty to use the</span>
-        <span style="color:#ae81ff">&lt;code&gt;WTF_DATADOG_API_KEY&lt;/code&gt; environment</span>
-        <span style="color:#ae81ff">variable.</span>
-    <span style="color:#ae81ff">&lt;/td&gt;</span>
-<span style="color:#ae81ff">&lt;/tr&gt;</span>
-  <span style="color:#ae81ff">&lt;tr&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;code&gt;applicationKey&lt;/code&gt;&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;Your DataDog application key&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;Leave this empty to use the &lt;code&gt;WTF_DATADOG_APPLICATION_KEY&lt;/code&gt; environment variable.&lt;/td&gt;</span>
-<span style="color:#ae81ff">&lt;/tr&gt;</span>
-  <span style="color:#ae81ff">&lt;tr&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;code&gt;border&lt;/code&gt;&lt;/td&gt;</span>
-    <span style="color:#f92672">&lt;td&gt;&lt;i&gt;Optional&lt;/i&gt; Whether or not to draw this widget with a border. Default</span>: <span style="color:#ae81ff">&lt;code&gt;true&lt;/code&gt;.&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;true, false&lt;/td&gt;</span>
-<span style="color:#ae81ff">&lt;/tr&gt;</span>
-  <span style="color:#ae81ff">&lt;tr&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;code&gt;enabled&lt;/code&gt;&lt;/td&gt;</span>
-    <span style="color:#f92672">&lt;td&gt;&lt;i&gt;Optional&lt;/i&gt; Whether or not this module is executed and if its data displayed onscreen. Default</span>:
-        <span style="color:#ae81ff">&lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;true, false&lt;/td&gt;</span>
-<span style="color:#ae81ff">&lt;/tr&gt;</span>
-  <span style="color:#ae81ff">&lt;tr&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;code&gt;monitors&lt;/code&gt;&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;Configuration for the monitors functionality.&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;/td&gt;</span>
-<span style="color:#ae81ff">&lt;/tr&gt;</span>
-  <span style="color:#ae81ff">&lt;tr&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;code&gt;position&lt;/code&gt;&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;Defines where in the grid this module&#39;s widget will be displayed.&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;/td&gt;</span>
-<span style="color:#ae81ff">&lt;/tr&gt;</span>
-  <span style="color:#ae81ff">&lt;tr&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;code&gt;refreshInterval&lt;/code&gt;&lt;/td&gt;</span>
-    <span style="color:#f92672">&lt;td&gt;&lt;i&gt;Optional&lt;/i&gt; How often, in seconds, this module will update its data. Default</span>: <span style="color:#ae81ff">&lt;code&gt;300&lt;/code&gt;.&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;Any positive integer&lt;/td&gt;</span>
-<span style="color:#ae81ff">&lt;/tr&gt;</span>
-  <span style="color:#ae81ff">&lt;tr&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;code&gt;tags&lt;/code&gt;&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;List of tags you want to query monitors by.&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;/td&gt;</span>
-<span style="color:#ae81ff">&lt;/tr&gt;</span>
-  <span style="color:#ae81ff">&lt;tr&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;code&gt;title&lt;/code&gt;&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;i&gt;Optional&lt;/i&gt; The title to display in the widget&#39;s onscreen box.&lt;/td&gt;</span>
-    <span style="color:#ae81ff">&lt;td&gt;&lt;/td&gt;</span>
-<span style="color:#ae81ff">&lt;/tr&gt;</span>
-
-<span style="color:#ae81ff">&lt;/table&gt;</span>
-
-<span style="color:#75715e">## Source Code</span>
-
-<span style="color:#ae81ff">https://github.com/wtfutil/wtf/tree/master/modules/datadog/</span>
 </code></pre></div>
     </div>
 </div>
@@ -813,6 +749,68 @@
 
 
 
+<h2 id="attributes">Attributes</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+      <tr>
+    <td><code>apiKey</code></td>
+    <td>Your <a href="https://docs.datadoghq.com/api/">DataDog API</a> token.</td>
+    <td>
+        Your API key <strong>or</strong> leave it empty to use the
+        <code>WTF_DATADOG_API_KEY</code> environment
+        variable.
+    </td>
+</tr>
+  <tr>
+    <td><code>applicationKey</code></td>
+    <td>Your DataDog application key</td>
+    <td>Leave this empty to use the <code>WTF_DATADOG_APPLICATION_KEY</code> environment variable.</td>
+</tr>
+  <tr>
+    <td><code>border</code></td>
+    <td><i>Optional</i> Whether or not to draw this widget with a border. Default: <code>true</code>.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>enabled</code></td>
+    <td><i>Optional</i> Whether or not this module is executed and if its data displayed onscreen. Default:
+        <code>false</code>.</td>
+    <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>monitors</code></td>
+    <td>Configuration for the monitors functionality.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><i>Optional</i> How often, in seconds, this module will update its data. Default: <code>300</code>.</td>
+    <td>Any positive integer</td>
+</tr>
+  <tr>
+    <td><code>tags</code></td>
+    <td>List of tags you want to query monitors by.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>title</code></td>
+    <td><i>Optional</i> The title to display in the widget's onscreen box.</td>
+    <td></td>
+</tr>
+</table>
+<h2 id="source-code">Source Code</h2>
+<p><a href="https://github.com/wtfutil/wtf/tree/master/modules/datadog/">https://github.com/wtfutil/wtf/tree/master/modules/datadog/</a></p>
 
 
     

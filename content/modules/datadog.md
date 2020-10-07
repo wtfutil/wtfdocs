@@ -22,7 +22,7 @@ datadog:
     left: 3
     height: 1
     width: 2
-{{< /code >}
+{{< /code >}}
 
 {{% attributes %}}
   {{< attributes/apikey name="DataDog" link="https://docs.datadoghq.com/api/" envvar="WTF_DATADOG_API_KEY" >}}
