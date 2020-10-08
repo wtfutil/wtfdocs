@@ -29,6 +29,7 @@ cmdrunner:
   {{< attributes/enabled >}}
   {{< attributes/custom name="maxLines" desc="The maximum number of lines to keep in the buffer. Default: `256`." value="Any positive integer" >}}
   {{< attributes/position >}}
+  {{< attributes/custom name="pty" desc="Run the command in a pseudo-terminal. Some apps will behave differently if they are run in a terminal. For example, some apps will produce colorized output in a terminal, and non-colorized output otherwise." value="`true`, `false`" >}}
   {{< attributes/refreshInterval >}}
   {{< attributes/custom name="tail" desc="Automatically scroll with new output. Default: `false`." value="true, false" >}}
   {{< attributes/title >}}
