@@ -6,7 +6,11 @@
     <description>Recent content in Sports on WTF - the terminal dashboard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Oct 2019 03:26:02 -0800</lastBuildDate><atom:link href="https://wtfutil.com/modules/sports/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Oct 2019 03:26:02 -0800</lastBuildDate>
+    
+	<atom:link href="https://wtfutil.com/modules/sports/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Football</title>
       <link>https://wtfutil.com/modules/sports/football/</link>

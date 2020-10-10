@@ -6,7 +6,11 @@
     <description>Recent content in Google Apps on WTF - the terminal dashboard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Aug 2018 01:39:58 -0700</lastBuildDate><atom:link href="https://wtfutil.com/modules/google/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Aug 2018 01:39:58 -0700</lastBuildDate>
+    
+	<atom:link href="https://wtfutil.com/modules/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Google Calendar</title>
       <link>https://wtfutil.com/modules/google/gcal/</link>

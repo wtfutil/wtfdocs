@@ -5,6 +5,10 @@
     <link>https://wtfutil.com/tags/</link>
     <description>Recent content in Tags on WTF - the terminal dashboard</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://wtfutil.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    
+	<atom:link href="https://wtfutil.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>
