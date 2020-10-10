@@ -721,11 +721,11 @@ See this <a href="https://github.com/wtfutil/wtf/blob/master/_sample_configs/sam
 
 <div class="position-relative">
     <div class="position-absolute" style="right:0;">
-        <button class="btn btn-light" data-clipboard-target="#clipboard_4981658ace">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_1ab1de088f">
         Copy
         </button>
     </div>
-    <div id="clipboard_4981658ace">
+    <div id="clipboard_1ab1de088f">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
 <span style="color:#f92672">wtf</span>:
   <span style="color:#f92672">colors</span>:
@@ -754,6 +754,10 @@ See this <a href="https://github.com/wtfutil/wtf/blob/master/_sample_configs/sam
   <span style="color:#f92672">navigation</span>:
     <span style="color:#f92672">shortcuts</span>: <span style="color:#66d9ef">true</span>
   <span style="color:#f92672">openFileUtil</span>: <span style="color:#e6db74">&#34;open&#34;</span>
+  <span style="color:#f92672">openUrlUtil</span>:
+    - <span style="color:#e6db74">&#34;tmux&#34;</span>
+    - <span style="color:#e6db74">&#34;new-window&#34;</span>
+    - <span style="color:#e6db74">&#34;elinks&#34;</span>
   <span style="color:#f92672">sigils</span>:
     <span style="color:#f92672">checkbox</span>:
       <span style="color:#f92672">checked</span>: <span style="color:#e6db74">&#34;x&#34;</span>
@@ -832,11 +836,17 @@ See this <a href="https://github.com/wtfutil/wtf/blob/master/_sample_configs/sam
     <td></td>
 </tr>
   <tr>
+    <td><code>opeUrlUtil</code></td>
+    <td>A string sequence used to open URL. If undefined, wtfutil will attempt to open it based on the operating system.</td>
+    <td></td>
+</tr>
+  <tr>
     <td><code>term</code></td>
     <td>Sets a custom value for the terminal type this app runs in. Leave this entry out of the config if you simply want to use your terminal&rsquo;s default setting. <strong>Note:</strong> If an invalid value is provided for this setting, the app will crash with a <code>terminal entry not found</code> error.</td>
     <td>Any valid terminal type (ie: <code>vt100</code>, <code>xterm</code>, <code>xterm-256color</code>, <code>ansi</code>, etc.).</td>
 </tr>
 </table>
+
 
     
 
