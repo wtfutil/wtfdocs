@@ -721,11 +721,11 @@ See this <a href="https://github.com/wtfutil/wtf/blob/master/_sample_configs/sam
 
 <div class="position-relative">
     <div class="position-absolute" style="right:0;">
-        <button class="btn btn-light" data-clipboard-target="#clipboard_c0ce9630bb">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_4981658ace">
         Copy
         </button>
     </div>
-    <div id="clipboard_c0ce9630bb">
+    <div id="clipboard_4981658ace">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
 <span style="color:#f92672">wtf</span>:
   <span style="color:#f92672">colors</span>:
@@ -740,6 +740,9 @@ See this <a href="https://github.com/wtfutil/wtf/blob/master/_sample_configs/sam
       <span style="color:#f92672">back</span>: <span style="color:#e6db74">&#34;green&#34;</span>
     <span style="color:#f92672">text</span>: <span style="color:#e6db74">&#34;white&#34;</span>
     <span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;white&#34;</span>
+  <span style="color:#f92672">exitMessage</span>:
+    <span style="color:#f92672">display</span>: <span style="color:#66d9ef">true</span>
+    <span style="color:#f92672">githubAPIKey</span>: <span style="color:#e6db74">&#34;d8....................................ea&#34;</span>
   <span style="color:#f92672">grid</span>:
     <span style="color:#75715e"># How _wide_ the columns are, in terminal characters. In this case we have</span>
     <span style="color:#75715e"># six columns, each of which are 35 characters wide</span>
@@ -798,6 +801,16 @@ See this <a href="https://github.com/wtfutil/wtf/blob/master/_sample_configs/sam
     <td>The color in which to draw the borders of the widgets that cannot accept focus.</td>
     <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
   </tr>
+  <tr>
+    <td><code>exitMessage.display</code></td>
+    <td>Whether or not to display the WTF text message in the terminal when the app exits.</td>
+    <td><code>true</code> or <code>false</code>.</td>
+</tr>
+  <tr>
+    <td><code>exitMessage.githubAPIKey</code></td>
+    <td>The user&rsquo;s GitHub API key. Used to check against the GitHub API to see if the user is a code contributor or sponsor.</td>
+    <td>Your API key <strong>or</strong> leave it empty to use the <code>WTF_GITHUB_TOKEN</code> environment variable.</td>
+</tr>
   <tr>
     <td><code>grid.columns</code></td>
     <td>An array that defines the widths of all the columns.</td>

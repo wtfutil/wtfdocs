@@ -22,6 +22,9 @@ wtf:
       back: "green"
     text: "white"
     title: "white"
+  exitMessage:
+    display: true
+    githubAPIKey: "d8....................................ea"
   grid:
     # How _wide_ the columns are, in terminal characters. In this case we have
     # six columns, each of which are 35 characters wide
@@ -61,6 +64,9 @@ wtf:
     <td>The color in which to draw the borders of the widgets that cannot accept focus.</td>
     <td>Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color</a> name.</td>
   </tr>
+
+  {{< attributes/custom name="exitMessage.display" desc="Whether or not to display the WTF text message in the terminal when the app exits." value="`true` or `false`." >}}
+  {{< attributes/custom name="exitMessage.githubAPIKey" desc="The user's GitHub API key. Used to check against the GitHub API to see if the user is a code contributor or sponsor." value="Your API key **or** leave it empty to use the `WTF_GITHUB_TOKEN` environment variable." >}}
 
   <tr>
     <td><code>grid.columns</code></td>

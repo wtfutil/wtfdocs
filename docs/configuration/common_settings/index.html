@@ -721,11 +721,11 @@
 
 <div class="position-relative">
     <div class="position-absolute" style="right:0;">
-        <button class="btn btn-light" data-clipboard-target="#clipboard_52f4572433">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_a4e030cdd0">
         Copy
         </button>
     </div>
-    <div id="clipboard_52f4572433">
+    <div id="clipboard_a4e030cdd0">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
 <span style="color:#f92672">feedreader</span>:
   <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">true</span>
@@ -739,7 +739,7 @@
     <span style="color:#f92672">width</span>: <span style="color:#ae81ff">1</span>
     <span style="color:#f92672">height</span>: <span style="color:#ae81ff">1</span>
   <span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Hacker News&#34;</span>
-  <span style="color:#f92672">updateInterval</span>: <span style="color:#ae81ff">14400</span>
+  <span style="color:#f92672">refreshInterval</span>: <span style="color:#ae81ff">14400</span>
 
 </code></pre></div>
     </div>
@@ -767,6 +767,16 @@
     <td><code>focusable</code></td>
     <td><i>Optional</i> Whether or not this module accepts keyboard focus. Default: <code>false</code>.</td>
     <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>position</code></td>
+    <td>Defines where in the grid this module's widget will be displayed.</td>
+    <td></td>
+</tr>
+  <tr>
+    <td><code>refreshInterval</code></td>
+    <td><i>Optional</i> How often, in seconds, this module will update its data. Default: <code>300</code>.</td>
+    <td>Any positive integer</td>
 </tr>
   <tr>
     <td><code>title</code></td>
