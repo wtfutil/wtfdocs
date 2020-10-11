@@ -22,11 +22,13 @@ feedreader:
     width: 1
     height: 1
   title: "Hacker News"
-  updateInterval: 14400
+  refreshInterval: 14400
 {{< /code >}}
 
 {{% attributes %}}
   {{< attributes/enabled >}}
   {{< attributes/focusable >}}
+  {{< attributes/position >}}
+  {{< attributes/refreshInterval >}}
   {{< attributes/title >}}
 {{% /attributes %}}
