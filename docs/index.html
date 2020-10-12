@@ -697,7 +697,11 @@
 	<nav id="TableOfContents">
   <ul>
     <li><a href="#modules-are-the-magic">Modules are the magic</a></li>
-    <li><a href="#sponsors-make-it-happen">Sponsors make it happen</a></li>
+    <li><a href="#sponsors-make-it-happen">Sponsors make it happen</a>
+      <ul>
+        <li><a href="#exit-message">Exit Message</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 </div>
@@ -885,6 +889,19 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
 <p>Sponsoring is a great way to show your support for WTF, and WTF is proud to participate in the GitHub Sponsors program.</p>
 <p>If WTF occupies that special place in your terminal, please consider <a href="https://github.com/sponsors/senorprogrammer">sponsoring its ongoing development</a>. It makes a difference.</p>
 <iframe src="https://github.com/sponsors/senorprogrammer/card" title="Sponsor senorprogrammer" height="225" width="760" style="border: 0;"></iframe>
+<h3 id="exit-message">Exit Message</h3>
+<p>WTF displays a short text message pointing people to the sponsorship page on exit. It looks like this:</p>
+<p align="left">
+    <img src="imgs/exit_message.png" title="exit message" id="idx-exit-message" alt="exit message" width="400" height="143" />
+</p>
+<p>People who contribute code or sponsor the project will see a different message.</p>
+<p>Code contributors and sponsors of WTF can also opt out of seeing the exit message by adding the following configuration to their configuration file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wtf:
+  exitMessage:
+    display: false
+    githubAPIKey: <span style="color:#e6db74">&#34;d8....................................ea&#34;</span>
+</code></pre></div><p>WTF uses the GitHub API key to determine who the contributors and sponsors are.</p>
+
 	
 
 

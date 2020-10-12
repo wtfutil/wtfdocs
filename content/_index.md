@@ -203,3 +203,24 @@ Sponsoring is a great way to show your support for WTF, and WTF is proud to part
 If WTF occupies that special place in your terminal, please consider <a href="https://github.com/sponsors/senorprogrammer">sponsoring its ongoing development</a>. It makes a difference.
 
 <iframe src="https://github.com/sponsors/senorprogrammer/card" title="Sponsor senorprogrammer" height="225" width="760" style="border: 0;"></iframe>
+
+### Exit Message
+
+WTF displays a short text message pointing people to the sponsorship page on exit. It looks like this:
+
+<p align="left">
+    <img src="imgs/exit_message.png" title="exit message" id="idx-exit-message" alt="exit message" width="400" height="143" />
+</p>
+
+
+People who contribute code or sponsor the project will see a different message.
+
+Code contributors and sponsors of WTF can also opt out of seeing the exit message by adding the following configuration to their configuration file:
+
+```bash
+wtf:
+  exitMessage:
+    display: false
+    githubAPIKey: "d8....................................ea"
+```
+WTF uses the GitHub API key to determine who the contributors and sponsors are.
