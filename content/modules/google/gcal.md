@@ -84,7 +84,7 @@ gcal:
   </tr>
 
 
-  {{< attributes/custom name="showDeclined" desc="_Optional_ Whether or not to show the location of the appointment. Default: true." value="true, false" >}}
+  {{< attributes/custom name="showDeclined" desc="_Optional_ Whether or not to display events you’ve declined to attend. Default: true." value="true, false" >}}
   {{< attributes/custom name="showEndTime" desc="_Optional_ Whether or not to display the event end time. Default: false." value="true, false" >}}
 
   {{< attributes/timezone >}}
