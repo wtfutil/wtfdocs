@@ -198,11 +198,11 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
 
 ## Sponsors make it happen
 
+<iframe src="https://github.com/sponsors/senorprogrammer/card" title="Sponsor senorprogrammer" height="160" width="760" style="border: 0;"></iframe>
+
 Sponsoring is a great way to show your support for WTF, and WTF is proud to participate in the GitHub Sponsors program. 
 
 If WTF occupies that special place in your terminal, please consider <a href="https://github.com/sponsors/senorprogrammer">sponsoring its ongoing development</a>. It makes a difference.
-
-<iframe src="https://github.com/sponsors/senorprogrammer/card" title="Sponsor senorprogrammer" height="225" width="760" style="border: 0;"></iframe>
 
 ### Exit Message
 
