@@ -788,6 +788,15 @@ Configuration Copy   zendesk: apiKey: &amp;#34;p0d13****************************
     </item>
     
     <item>
+      <title>v0.33.0 Released</title>
+      <link>https://wtfutil.com/blog/2020-10-13-v0-33-0/</link>
+      <pubDate>Tue, 13 Oct 2020 09:48:54 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/blog/2020-10-13-v0-33-0/</guid>
+      <description>⚡️ Added  FeedReader module supports display mode switching via the t key, by @cyingfan Clocks module now supports natural ordering option, #896 by @seanstoppable Exit banner message added, by @senorprogrammer UptimeRobot module added, by @franga2000 Gitlab module now defaults the domain to https://gitlab.com, by @jmks  🐞 Fixed  Exchange Rates module now displays rates in alphabetical order, sorted by the base rate, by @senorprogrammer Feed Reader module no longer crashes on feeds that don&amp;rsquo;t have a published date, #958 by @cyingfan Stray blank lines no longer appear at the end of highlightable lists, #977 by @cyingfan config.</description>
+    </item>
+    
+    <item>
       <title>v0.32.0 Released</title>
       <link>https://wtfutil.com/blog/2020-09-23-v0-32-0/</link>
       <pubDate>Wed, 23 Sep 2020 21:11:12 -0700</pubDate>
