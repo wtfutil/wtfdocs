@@ -61,7 +61,7 @@ digitalocean:
 {{% attributes %}}
 {{< attributes/apikey name="DigitalOcean" link="https://developers.digitalocean.com/documentation/v2/" envvar="WTF_DIGITALOCEAN_API_KEY" >}}
   {{< attributes/border >}}
-  {{< attributes/custom name="columns" desc="_Optional_ A list of the droplet attributes to display. Defines the columns displayed in the widget" value="Any publicly-accessible properties on a DigitalOcean [Droplet](https://github.com/digitalocean/godo/blob/main/droplets.go), [Image](https://github.com/digitalocean/godo/blob/main/images.go), [Region](https://github.com/digitalocean/godo/blob/main/regions.go), or [Size](https://github.com/digitalocean/godo/blob/main/sizes.go)." >}}
+  {{< attributes/custom name="columns" desc="_Optional_ A list of the droplet attributes to display. Defines the columns displayed in the widget." value="Any publicly-accessible properties on a DigitalOcean [Droplet](https://github.com/digitalocean/godo/blob/main/droplets.go), [Image](https://github.com/digitalocean/godo/blob/main/images.go), [Region](https://github.com/digitalocean/godo/blob/main/regions.go), or [Size](https://github.com/digitalocean/godo/blob/main/sizes.go)." >}}
   {{< attributes/enabled >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
