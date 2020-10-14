@@ -762,9 +762,56 @@
 
 
 
+<p>With explicit columns defined:</p>
+
+
+
+
+
+
+    
+    
+
+
+
+
+<div class="position-relative">
+    <div class="position-absolute" style="right:0;">
+        <button class="btn btn-light" data-clipboard-target="#clipboard_1c32f666f1">
+        Copy
+        </button>
+    </div>
+    <div id="clipboard_1c32f666f1">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
+<span style="color:#f92672">digitalocean</span>:
+  <span style="color:#f92672">apiKey</span>: <span style="color:#e6db74">&#34;p0d13*********************************************c3&#34;</span>
+  <span style="color:#f92672">columns</span>:
+    - <span style="color:#ae81ff">Name</span>
+    - <span style="color:#ae81ff">Status</span>
+    - <span style="color:#ae81ff">Vcpus</span>
+    - <span style="color:#ae81ff">Disk</span>
+    - <span style="color:#ae81ff">Memory</span>
+    - <span style="color:#ae81ff">Region.Slug</span>
+  <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">true</span>
+  <span style="color:#f92672">position</span>:
+    <span style="color:#f92672">top</span>: <span style="color:#ae81ff">4</span>
+    <span style="color:#f92672">left</span>: <span style="color:#ae81ff">2</span>
+    <span style="color:#f92672">width</span>: <span style="color:#ae81ff">2</span>
+    <span style="color:#f92672">height</span>: <span style="color:#ae81ff">2</span>
+  <span style="color:#f92672">refreshInterval</span>: <span style="color:#ae81ff">15</span>
+  <span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;🦈 DigitalOcean&#34;</span>
+
+</code></pre></div>
+    </div>
+</div>
+
+
+
+
 <h2 id="screenshots">Screenshots</h2>
-<p><img src="/imgs/modules/digitalocean.png" class="screenshot" width="320" height="137" alt="digitalocean screenshot" align="left" />
-<img src="/imgs/modules/digitalocean_droplet_info.png" class="screenshot" width="320" height="197" alt="digitalocean screenshot" /></p>
+<p><img src="/imgs/modules/digitalocean.png" class="screenshot" width="320" height="84" alt="digitalocean screenshot" /></p>
+<p><br /></p>
+<p><img src="/imgs/modules/digitalocean_droplet_info.png" class="screenshot" width="320" height="197" alt="digitalocean screenshot" /></p>
 <h2 id="attributes">Attributes</h2>
 <table class="table">
     <thead>
@@ -787,6 +834,11 @@
     <td><code>border</code></td>
     <td><i>Optional</i> Whether or not to draw this widget with a border. Default: <code>true</code>.</td>
     <td>true, false</td>
+</tr>
+  <tr>
+    <td><code>columns</code></td>
+    <td><em>Optional</em> A list of the droplet attributes to display. Defines the columns displayed in the widget</td>
+    <td>Any publicly-accessible properties on a DigitalOcean <a href="https://github.com/digitalocean/godo/blob/main/droplets.go">Droplet</a>, <a href="https://github.com/digitalocean/godo/blob/main/images.go">Image</a>, <a href="https://github.com/digitalocean/godo/blob/main/regions.go">Region</a>, or <a href="https://github.com/digitalocean/godo/blob/main/sizes.go">Size</a>.</td>
 </tr>
   <tr>
     <td><code>enabled</code></td>

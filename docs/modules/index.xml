@@ -134,7 +134,7 @@ Configuration Copy   digitalclock: color: orange enabled: true font: bigfont hou
       
       <guid>https://wtfutil.com/modules/digitalocean/</guid>
       <description>DigitalOcean module displays a list of your DigitalOcean droplets and Kubernetes clusters and allows you to interact with them in these ways:
- Destroy a droplet Enable private networking on a droplet Reboot a droplet Shut down a droplet Show info about a droplet  Configuration Copy   digitalocean: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 4 left: 2 width: 2 height: 2 refreshInterval: 15 title: &amp;#34;🦈 DigitalOcean&amp;#34;    Screenshots Attributes   Name Description Value    apiKey Your DigitalOcean API token.</description>
+ Destroy a droplet Enable private networking on a droplet Reboot a droplet Shut down a droplet Show info about a droplet  Configuration Copy   digitalocean: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 4 left: 2 width: 2 height: 2 refreshInterval: 15 title: &amp;#34;🦈 DigitalOcean&amp;#34;    With explicit columns defined:</description>
     </item>
     
     <item>
