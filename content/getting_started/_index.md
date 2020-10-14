@@ -17,7 +17,7 @@ This should launch the app in your terminal using the default simple
 configuration. See <a href="/configuration/">Configuration</a> for
 more details.
 
-See [Installation](getting_started/installation/) for additional installation options.
+See [Installation](installation/) for additional installation options.
 
 ## Command-line Options
 
