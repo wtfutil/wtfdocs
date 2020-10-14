@@ -5,7 +5,7 @@ draft: false
 weight: 265
 ---
 
-Connects to the VictorOps API and determines who is on call
+Connects to the VictorOps API and determines who is on call.
 
 ## Configuration
 

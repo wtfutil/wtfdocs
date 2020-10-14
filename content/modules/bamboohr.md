@@ -5,7 +5,7 @@ draft: false
 weight: 10
 ---
 
-Connects to the BambooHR API and displays who will be Away today.
+Connects to the BambooHR API and displays who will be away today.
 
 ## Configuration
 
