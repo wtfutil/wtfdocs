@@ -32,7 +32,7 @@ Config Example Copy   brew_outdated: args: [&amp;#34;outdated&amp;#34;] cmd: &am
       <pubDate>Mon, 07 May 2018 20:17:37 -0700</pubDate>
       
       <guid>https://wtfutil.com/modules/bamboohr/</guid>
-      <description>Connects to the BambooHR API and displays who will be Away today.
+      <description>Connects to the BambooHR API and displays who will be away today.
 Configuration Copy   bamboohr: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 1 height: 2 width: 1 refreshInterval: 900 subdomain: &amp;#34;testco&amp;#34;    Attributes   Name Description Value    apiKey Your BambooHR API token.  Your API key or leave it empty to use the WTF_BAMBOO_HR_TOKEN environment variable.    border Optional Whether or not to draw this widget with a border.</description>
     </item>
     
@@ -489,12 +489,22 @@ Copy   trello: accessToken: &amp;#34;d23****************************************
     </item>
     
     <item>
+      <title>UptimeRobot</title>
+      <link>https://wtfutil.com/modules/uptime_robot/</link>
+      <pubDate>Wed, 14 Oct 2020 09:14:41 -0800</pubDate>
+      
+      <guid>https://wtfutil.com/modules/uptime_robot/</guid>
+      <description>Connect to the UptimeRobot API.
+Configuration Copy   uptimerobot: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true offlineFirst: true position: top: 0 left: 1 height: 2 width: 1 refreshInterval: 3600 uptimePeriods: 7-30    Attributes   Name Description Value    apiKey Your UptimeRobot API token.  Your API key or leave it empty to use the WTF_UPTIMEROBOT_APIKEY environment variable.    border Optional Whether or not to draw this widget with a border.</description>
+    </item>
+    
+    <item>
       <title>VictorOps OnCall</title>
       <link>https://wtfutil.com/modules/victorops/</link>
       <pubDate>Sun, 20 Jan 2019 00:28:41 -0800</pubDate>
       
       <guid>https://wtfutil.com/modules/victorops/</guid>
-      <description>Connects to the VictorOps API and determines who is on call
+      <description>Connects to the VictorOps API and determines who is on call.
 Configuration Copy   victorops: apiID: a3c5dd63 apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; enabled: true position: top: 0 left: 1 height: 2 width: 1 refreshInterval: 3600 team: devops    Attributes   Name Description Value    `apiID` Your VictorOps API ID token. Leave this empty to use the `WTF_VICTOROPS_API_ID` environment variable.   apiKey Your VictorOps API token.  Your API key or leave it empty to use the WTF_VICTOROPS_API_KEY environment variable.</description>
     </item>
     
