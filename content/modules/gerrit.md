@@ -74,6 +74,7 @@ gerrit:
 
   {{< keyboard/arrowBack desc="Show the previous project" >}}
   {{< keyboard/arrowFore desc="Show the next project" >}}
+  
   {{< keyboard/arrowDown >}}
   {{< keyboard/arrowUp >}}
 {{% /keyboard %}}
