@@ -50,12 +50,4 @@ bittrex:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-<<<<<<< HEAD
 {{% sourcePath module="cryptoexchanges/bittrex" %}}
-=======
-## Source Code
-
-{{< code lang="bash" >}}
-wtf/modules/cryptoexchanges/bittrex/
-{{< /code >}}
->>>>>>> Fix syntax highlighting

@@ -50,12 +50,4 @@ cdsFavorites:
   {{< attributes/title >}}
 {{% /attributes %}}
 
-<<<<<<< HEAD
 {{% sourcePath module="cds/favorites" %}}
-=======
-## Source Code
-
-{{< code lang="bash" >}}
-wtf/modules/cds/favorites/
-{{< /code >}}
->>>>>>> Fix syntax highlighting

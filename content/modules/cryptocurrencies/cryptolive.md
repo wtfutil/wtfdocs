@@ -72,12 +72,4 @@ cryptolive:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-<<<<<<< HEAD
 {{% sourcePath module="cryptoexchanges/cryptolive" %}}
-=======
-## Source Code
-
-{{< code lang="bash" >}}
-wtf/modules/cryptoexchanges/cryptolive/
-{{< /code >}}
->>>>>>> Fix syntax highlighting

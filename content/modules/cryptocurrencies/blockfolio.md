@@ -47,12 +47,4 @@ blockfolio:
   {{< attributes/refreshInterval >}}
 {{% /attributes %}}
 
-<<<<<<< HEAD
 {{% sourcePath module="cryptoexchanges/blockfolio" %}}
-=======
-## Source
-
-{{< code lang="bash" >}}
-wtf/modules/cryptoexchanges/blockfolio/
-{{< /code >}} 
->>>>>>> Fix syntax highlighting

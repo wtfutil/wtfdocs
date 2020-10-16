@@ -11,7 +11,7 @@ Displays a configurable list of current weather report, including current temper
 
 ## Configuration
 
-{{< code lang="yaml" >}}
+```yaml
 weather:
   apiKey: "p0d13*********************************************c3"
   # From http://openweathermap.org/help/city_list.txt
@@ -31,13 +31,9 @@ weather:
     width: 1
   refreshInterval: 900
   tempUnit: "C"
-<<<<<<< HEAD
   useEmoji: true
 ```
-=======
-{{< /code >}}
 
->>>>>>> Fix syntax highlighting
 {{% attributes %}}
   {{< attributes/apikey name="OpenWeatherMap" link="https://openweathermap.org/appid" envvar="WTF_OWM_API_KEY" >}}
   {{< attributes/border >}}
@@ -82,12 +78,4 @@ weather:
   {{< keyboard/arrowFore desc="Show the next Twitter account" >}}
 {{% /keyboard %}}
 
-<<<<<<< HEAD
 {{% sourcePath module="weatherservices/weather" %}}
-=======
-## Source Code
-
-{{< code lang="bash" >}}
-wtf/modules/weatherservices/weather/
-{{< /code >}}
->>>>>>> Fix syntax highlighting

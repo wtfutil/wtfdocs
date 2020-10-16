@@ -42,12 +42,4 @@ cdsStatus:
   {{< attributes/title >}}
 {{% /attributes %}}
 
-<<<<<<< HEAD
 {{% sourcePath module="cds/status" %}}
-=======
-## Source Code
-
-{{< code lang="bash" >}}
-wtf/modules/cds/status/
-{{< /code >}}
->>>>>>> Fix syntax highlighting

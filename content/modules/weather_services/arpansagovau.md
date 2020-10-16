@@ -42,12 +42,4 @@ Interpreting the information:
 
 {{% /attributes %}}
 
-<<<<<<< HEAD
 {{% sourcePath module="weatherservices/arpansagovau" %}}
-=======
-## Source Code
-
-{{< code lang="bash" >}}
-wtf/modules/weatherservices/arpansagovau/
-{{< /code >}}
->>>>>>> Fix syntax highlighting

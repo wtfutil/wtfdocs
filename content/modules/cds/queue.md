@@ -43,12 +43,4 @@ cdsQueue:
   {{< attributes/title >}}
 {{% /attributes %}}
 
-<<<<<<< HEAD
 {{% sourcePath module="cds/queue" %}}
-=======
-## Source Code
-
-{{< code lang="bash" >}}
-wtf/modules/cds/queue/
-{{< /code >}}
->>>>>>> Fix syntax highlighting
