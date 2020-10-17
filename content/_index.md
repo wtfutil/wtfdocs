@@ -173,7 +173,7 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
       </p>
     </div>
     <div class="card-footer">
-      <div class="centered"><a href="/modules/weather/" >view module</a></div>
+      <div class="centered"><a href="/modules/weather_services/weather/" >view module</a></div>
     </div>
   </div>
   <div class="card">
