@@ -906,14 +906,18 @@ Then click on <a href="/modules">Modules</a> to see the complete list.
 <p align="left">
     <img src="imgs/exit_message.png" title="exit message" id="idx-exit-message" alt="exit message" width="400" height="143" />
 </p>
-<p>People who contribute code or sponsor the project will see a different message.</p>
-<p>Code contributors and sponsors of WTF can also opt out of seeing the exit message by adding the following configuration to their configuration file:</p>
+<h4 id="for-contributors-and-sponsors">For Contributors and Sponsors</h4>
+<p>Awesome! You can change the message you see to something special just for you. To do so, just add your GitHub API to the top of your config file like so:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wtf:
+  exitMessage:
+    githubAPIKey: <span style="color:#e6db74">&#34;d8....................................ea&#34;</span>
+</code></pre></div><h4 id="opting-out">Opting Out</h4>
+<p>Code contributors and sponsors of WTF can also opt out of seeing the exit message by adding the following configuration to their config file:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wtf:
   exitMessage:
     display: false
     githubAPIKey: <span style="color:#e6db74">&#34;d8....................................ea&#34;</span>
-</code></pre></div><p>WTF uses the GitHub API key to determine who the contributors and sponsors are.</p>
-
+</code></pre></div>
 	
 
 

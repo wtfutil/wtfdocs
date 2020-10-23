@@ -212,10 +212,19 @@ WTF displays a short text message pointing people to the sponsorship page on exi
     <img src="imgs/exit_message.png" title="exit message" id="idx-exit-message" alt="exit message" width="400" height="143" />
 </p>
 
+#### For Contributors and Sponsors
 
-People who contribute code or sponsor the project will see a different message.
+Awesome! You can change the message you see to something special just for you. To do so, just add your GitHub API to the top of your config file like so:
 
-Code contributors and sponsors of WTF can also opt out of seeing the exit message by adding the following configuration to their configuration file:
+```bash
+wtf:
+  exitMessage:
+    githubAPIKey: "d8....................................ea"
+```
+
+#### Opting Out
+
+Code contributors and sponsors of WTF can also opt out of seeing the exit message by adding the following configuration to their config file:
 
 ```bash
 wtf:
@@ -223,4 +232,3 @@ wtf:
     display: false
     githubAPIKey: "d8....................................ea"
 ```
-WTF uses the GitHub API key to determine who the contributors and sponsors are.
