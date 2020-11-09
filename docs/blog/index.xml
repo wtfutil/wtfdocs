@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 09 Jul 2019 14:41:58 -0700</lastBuildDate><atom:link href="https://wtfutil.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>v0.34.0 Released</title>
+      <link>https://wtfutil.com/blog/2020-11-08-v0-34-0/</link>
+      <pubDate>Sun, 08 Nov 2020 16:35:07 -0800</pubDate>
+      
+      <guid>https://wtfutil.com/blog/2020-11-08-v0-34-0/</guid>
+      <description>Now available here.
+⚡️ Added  DigitalOcean module now supports custom column definitions in the default layout. See the docs for details, #986 by @senorprogrammer Finnhub stock quotes module added, #930 by @applegreengrape Grafana Alerts module added, by @schoentoon  👍 Updated  Updated google.golang.org/api from 0.30.0 to 0.33.0 Updated github.com/digitalocean/godo from 1.46.0 to 1.52.0 Updated github.com/xanzy/go-gitlab from 0.38.1 to 0.39.0 Updated github.com/zorkian/go-datadog-api from 2.29.0+incompatible to 2.30.0+incompatible Updated golang.org/x/text from 0.</description>
+    </item>
+    
+    <item>
       <title>v0.33.0 Released</title>
       <link>https://wtfutil.com/blog/2020-10-13-v0-33-0/</link>
       <pubDate>Tue, 13 Oct 2020 09:48:54 -0700</pubDate>
