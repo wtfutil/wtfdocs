@@ -1,0 +1,143 @@
+# This site
+site_name: WTF - the terminal dashboard
+site_url: https://wtfutil.com
+site_author: Chris Cummer
+
+# Source code repository
+repo_name: wtfutil/wtf
+repo_url: https://github.com/wtfutil/wtf
+
+# Copyright
+copyright: Copyright &copy; 2020 Chris Cummer
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - pymdownx.highlight
+  - pymdownx.snippets:
+      base_path: snippets
+      check_paths: true
+  - pymdownx.superfences
+
+# Plugins
+plugins:
+  - search
+  - macros:
+      include_dir: snippets
+
+# Theme
+theme:
+  name: material
+  custom_dir: docs/overrides
+  favicon: assets/favicon.png
+  features:
+    - navigation.tabs
+  logo: assets/logo.png
+  include_search_page: false
+  language: en
+  palette:
+    primary: deep purple
+  search_index_only: true
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/wtfutil
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/wtfutil
+
+# Page tree
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Quick Start:          quick_start.md
+    - Installation:         installation.md
+    - Uninstallation:       uninstallation.md
+    - Glossary:             glossary.md
+  - Configuration:
+    - Configuration Files:  configuration/files.md
+    - Global Settings:      configuration/global_settings.md
+    - Common Settings:      configuration/common_settings.md
+    - Grid Layout:          configuration/grid_layout.md
+    - Advanced:             configuration/advanced.md
+  - Modules:                
+    - Home:                 modules/index.md
+    - Azure DevOps:         modules/azure_devops.md
+    - BambooHR:             modules/bamboohr.md
+    - BuildKite:            modules/buildkite.md
+    - CDS:
+      - CDS Favorites:      modules/cds/favorites.md
+      - CDS Queue:          modules/cds/queue.md
+      - CDS Status:         modules/cds/status.md
+    - CircleCI:             modules/circleci.md
+    - Clocks:               modules/clocks.md
+    - CmdRunner:            modules/cmdrunner.md
+    - Crypto Currencies:
+      - Bittrex:            modules/cryptocurrencies/bittrex.md
+      - Blockfolio:         modules/cryptocurrencies/blockfolio.md
+      - CryptoLive:         modules/cryptocurrencies/cryptolive.md
+    - Datadog:              modules/datadog.md
+    - DEV (Dev.to):         modules/devto.md
+    - Digital Clock:        modules/digitalclock.md
+    - DigitalOcean:         modules/digitalocean.md
+    - Docker:               modules/docker.md
+    - Exchange Rates:       modules/exchange_rates.md
+    - Feed Reader:          modules/feedreader.md
+    - Gerrit:               modules/gerrit.md
+    - Git:                  modules/git.md
+    - GitHub:               modules/github.md
+    - GitLab:               modules/gitlab.md
+    - GitLab Todo:          modules/gitlabtodo.md
+    - Gitter:               modules/gitter.md
+    - Google:
+      - Analytics:          modules/google/analytics.md
+      - Calendar:           modules/google/gcal.md
+      - Spreadsheet:        modules/google/spreadsheet.md
+    - HackerNews:           modules/hackernews.md
+    - Have I Been Pwned:    modules/hibp.md
+    - IP Address:
+      - IP API:             modules/ipaddress/ipapi.md
+      - IPInfo:             modules/ipaddress/ipinfo.md
+    - Jenkins:              modules/jenkins.md
+    - Jira:                 modules/jira.md
+    - Kubernetes:           modules/kubernetes.md
+    - Mercurial:            modules/mercurial.md
+    - New Relic:            modules/newrelic.md
+    - OpsGenie:             modules/opsgenie.md
+    - PagerDuty:            modules/pagerduty.md
+    - Pihole:               modules/pihole.md
+    - Pocket:               modules/pocket.md
+    - Power:                modules/power.md
+    - Resource Usage:       modules/resourceusage.md
+    - Rollbar:              modules/rollbar.md
+    - Security:             modules/security.md
+    - Sports:
+      - Football:           modules/sports/football.md
+      - NBA Score:          modules/sports/nbascore.md
+    - Spotify:              modules/spotify.md
+    - Subreddit:            modules/subreddit.md
+    - Textfile:             modules/textfile.md
+    - Todo:                 modules/todo.md
+    - Todoist:              modules/todoist.md
+    - Transmission:         modules/transmission.md
+    - TravisCI:             modules/travisci.md
+    - Trello:               modules/trello.md
+    - Twitter:
+      - Stats:              modules/twitter/stats.md
+      - Tweets:             modules/twitter/tweets.md
+    - UptimeRobot:          modules/uptimerobot.md
+    - VictorOps:            modules/victorops.md
+    - Weather Services:
+      - ARPANSA:            modules/weather_services/arpansagovau.md
+      - Pretty Weather:     modules/weather_services/prettyweather.md
+      - Weather:            modules/weather_services/weather.md
+    - Zendesk:              modules/zendesk.md
+  - Development:
+    - Creating New Modules: development/creating_new_modules.md
+  - Blog:
+    - Home:                 blog/home.md
+  - Sponsors:
+    - Sponsoring WTF:       sponsors/sponsoring.md
+    - Exit Message:         sponsors/exit_message.md
