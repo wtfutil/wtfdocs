@@ -48,6 +48,11 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/wtfutil
 
+# Analytics
+google_analytics:
+  - G-4FV2SSEFHZ
+  - auto
+
 # Page tree
 nav:
   - Home: index.md
