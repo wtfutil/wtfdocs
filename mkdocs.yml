@@ -102,6 +102,7 @@ nav:
       - IPInfo:             modules/ipaddress/ipinfo.md
     - Jenkins:              modules/jenkins.md
     - Jira:                 modules/jira.md
+    - Krisinformation:      modules/krisinformation.md
     - Kubernetes:           modules/kubernetes.md
     - Mercurial:            modules/mercurial.md
     - New Relic:            modules/newrelic.md
