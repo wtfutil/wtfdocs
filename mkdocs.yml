@@ -25,9 +25,6 @@ plugins:
   - search
   - macros:
       include_dir: snippets
-  - redirects:
-        redirect_maps:
-          'modules/weather': 'modules/weather_services/weather/'
 
 # Theme
 theme:
