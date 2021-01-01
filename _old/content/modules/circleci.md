@@ -19,6 +19,7 @@ circleci:
     height: 1
     width: 2
   refreshInterval: 900
+  numberOfBuilds: 15
 {{< /code >}}
 
 ## Screenshots
@@ -31,6 +32,8 @@ circleci:
   {{< attributes/enabled >}}
   {{< attributes/position >}}
   {{< attributes/refreshInterval >}}
+  {{< attributes/custom name="numberOfBuilds" desc="_Optional_ The number of decimal places to display. Default: 10." value="Any positive integer" >}}
+
 {{% /attributes %}}
 
 {{% sourcePath module="circleci" %}}
