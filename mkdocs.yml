@@ -97,6 +97,7 @@ nav:
       - Calendar:           modules/google/gcal.md
       - Spreadsheet:        modules/google/spreadsheet.md
     - HackerNews:           modules/hackernews.md
+    - Healthchecks:         modules/healthchecks.md
     - Have I Been Pwned:    modules/hibp.md
     - IP Address:
       - IP API:             modules/ipaddress/ipapi.md
