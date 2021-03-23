@@ -23,7 +23,7 @@ directory of the [Git repository](https://github.com/wtfutil/wtf/tree/master/_sa
 To try out WTF quickly, copy
 `sample_config.yml` into `~/.config/wtf/` as `config.yml` and relaunch WTF. You
 should see the app launch and display the [Security](/modules/security),
-[Clocks](modules/clocks/) and [Status](/modules/status/) widgets onscreen.
+[Clocks](/modules/clocks/) and [Status](/modules/status/) widgets onscreen.
 
 #### Custom Configuration Files
 
