@@ -6,6 +6,11 @@ draft: false
 
 # Advanced
 
+!!! tip
+     [wtf-tui](https://github.com/ggerganov/wtf-tui) by [@ggerganov](https://github.com/ggerganov) 
+     is a graphical configuration maker for WTFUtil that runs in your terminal. You might find 
+     this easier than configuring YAML by hand.
+
 ## Multiple Instances of the Same Widget
 
 To add more than one instance of a particular widget, for example, if you want two Todo widgets, you can do so by adding the `type` property to the entries in your `config.yml` file. Below is an example for Todo:
