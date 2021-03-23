@@ -8,6 +8,10 @@ alwaysopen: true
 
 ## Quick Start
 
+`❯ brew install wtfultil`
+
+or
+
 1. <a href="https://github.com/wtfutil/wtf/releases">Download</a> the stand-alone, compiled binary.
 2. Unzip the downloaded file.
 3. From the command line, `cd` into the newly-created `/wtf` directory.
