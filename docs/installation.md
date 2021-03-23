@@ -12,7 +12,7 @@ weight: 1
 The easiest way to install from Homebrew is of course
 
 ```bash
-❯ brew install wtfultil
+❯ brew install wtfutil
 ```
 
 Or, to stay up-to-date with the very latest release at all times, tap the cask that is 

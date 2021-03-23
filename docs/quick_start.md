@@ -8,7 +8,7 @@ alwaysopen: true
 
 ## Quick Start
 
-`❯ brew install wtfultil`
+`❯ brew install wtfutil`
 
 or
 
