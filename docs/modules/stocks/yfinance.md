@@ -2,6 +2,21 @@
 
 Display Yahoo Finance data for the configured symbols.
 
+The first column shows the symbol's status:
+
+* pre-market: ⏭
+* open: ▶
+* post-market: ⏮
+* closed: ⏹
+
+The second column is the symbol's shortname, third column shows the current value.
+The fourth columns will show a different icon depending on the current market change:
+
+* >3%: ⬆️
+* >0%: ↗️
+* <0%: ↘️
+* <-3%: ⬇️
+
 ## Configuration
 
 ```yaml
@@ -23,6 +38,10 @@ yfinance:
     height: 1
     width: 1
 ```
+
+## Screenshots
+
+<img class="screenshot" src="/imgs/modules/yfinance.png" width="414" height="285" alt="yfinance screenshot" />
 
 ## Attributes
 
