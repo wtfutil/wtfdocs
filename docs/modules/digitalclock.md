@@ -42,9 +42,9 @@ digitalclock:
     <td>
         <code>font</code>
         <br />
-        The font to display the clock time in.
+      The font to display the clock time in. Default: <code>bigfont</code>
     </td>
-    <td></td>
+  <td><code>bigfont</code>, <code>digitalfont</code></td>
 </tr>
 <tr>
     <td>
