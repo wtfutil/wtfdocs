@@ -2,6 +2,7 @@
 
 Runs a terminal command on a schedule.
 
+
 ## Configuration
 
 ```yaml
@@ -65,6 +66,10 @@ cmdrunner:
 </tr>
     </tbody>
 </table>
+
+## Known limitations
+
+Internally, CmdRunner relies on Golang's `exec.Command()` to run terminal commands. As it does not invoke the system shell, not all commands are supported. To quote [Golang docs](https://pkg.go.dev/os/exec), it "does not expand any glob patterns or handle other expansions, pipelines, or redirections typically done by shells." 
 
 ## Examples
 
