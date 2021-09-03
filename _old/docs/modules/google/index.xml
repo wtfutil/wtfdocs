@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google Apps on WTF - the terminal dashboard</title>
+    <link>https://wtfutil.com/modules/google/</link>
+    <description>Recent content in Google Apps on WTF - the terminal dashboard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Aug 2018 01:39:58 -0700</lastBuildDate><atom:link href="https://wtfutil.com/modules/google/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Calendar</title>
+      <link>https://wtfutil.com/modules/google/gcal/</link>
+      <pubDate>Thu, 10 May 2018 08:25:33 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/google/gcal/</guid>
+      <description>Displays your upcoming Google calendar events.
+Note: Setting up access to Google Calendars for Go is a bit unobvious. Check out Google&amp;rsquo;s Go Quickstart, and follow Enable The Google Calendar API.
+The configuration file downloaded is the file you use for the secretFile configuration option.
+Configuration Copy   gcal: colors: title: &amp;#34;red&amp;#34; eventTime: &amp;#34;lightblue&amp;#34; description: &amp;#34;yellow&amp;#34; highlights: - [&amp;#39;1on1|1\/11&amp;#39;, &amp;#39;green&amp;#39;] - [&amp;#39;apple|google|aws&amp;#39;, &amp;#39;blue&amp;#39;] - [&amp;#39;interview|meet&amp;#39;, &amp;#39;magenta&amp;#39;] - [&amp;#39;lunch&amp;#39;, &amp;#39;yellow&amp;#39;] past: &amp;#34;gray&amp;#34; calendarReadLevel: &amp;#34;reader&amp;#34; conflictIcon: &amp;#34;🚨&amp;#34; currentIcon: &amp;#34;💥&amp;#34; displayResponseStatus: true email: &amp;#34;chriscummer@me.</description>
+    </item>
+    
+    <item>
+      <title>Google Analytics</title>
+      <link>https://wtfutil.com/modules/google/ganalytics/</link>
+      <pubDate>Sat, 31 Aug 2019 01:46:10 +0000</pubDate>
+      
+      <guid>https://wtfutil.com/modules/google/ganalytics/</guid>
+      <description>Display website visitors information from Google Analytics API
+To make this work, you&amp;rsquo;ll need a google API credential, link it to google analytics and find your website viewID.
+ Open the Service accounts page and create a project named wtfutil. Navigation menu &amp;gt; IAM &amp;amp; admin &amp;gt; Service accounts Click add Create Service Account, enter a name (wtfutil) for the service account. The Service account permissions (optional) section that follows is not required.</description>
+    </item>
+    
+    <item>
+      <title>Google Spreadsheets</title>
+      <link>https://wtfutil.com/modules/google/gspreadsheet/</link>
+      <pubDate>Sun, 10 Jun 2018 18:26:26 -0400</pubDate>
+      
+      <guid>https://wtfutil.com/modules/google/gspreadsheet/</guid>
+      <description>Display information from cells in a Google Spreadsheet.
+Configuration Copy   gspreadsheets: colors: values: &amp;#34;green&amp;#34; cells: names: - &amp;#34;Cell 1 name&amp;#34; - &amp;#34;Cell 2 name&amp;#34; addresses: - &amp;#34;A1&amp;#34; - &amp;#34;A2&amp;#34; enabled: true position: top: 0 left: 0 width: 1 height: 1 refreshInterval: &amp;#34;300&amp;#34; secretFile: &amp;#34;~/.config/wtf/gspreadsheets/client_secret.json&amp;#34; sheetId: &amp;#34;id_of_google_spreadsheet&amp;#34;    Attributes   Name Description Value    border Optional Whether or not to draw this widget with a border.</description>
+    </item>
+    
+  </channel>
+</rss>

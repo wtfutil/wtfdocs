@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weather Services on WTF - the terminal dashboard</title>
+    <link>https://wtfutil.com/modules/weather_services/</link>
+    <description>Recent content in Weather Services on WTF - the terminal dashboard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Aug 2019 15:04:00 -0700</lastBuildDate><atom:link href="https://wtfutil.com/modules/weather_services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ARPANSA</title>
+      <link>https://wtfutil.com/modules/weather_services/arpansagovau/</link>
+      <pubDate>Wed, 09 May 2018 11:44:13 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/weather_services/arpansagovau/</guid>
+      <description>Displays Ultraviolet radiation index information from ARPANSA for an Australian city to help determine what level of sun protection or avoidance is necessary.
+The Australian Radiation Protection and Nuclear Safety Agency (ARPANSA) is the Australian Government&amp;rsquo;s primary authority on radiation protection and nuclear safety.
+Interpreting the information:
+ Index is specified in units of Standard Erthermal Dose. If the UV index is less than 3 you can safely stay outdoors with minimal protection.</description>
+    </item>
+    
+    <item>
+      <title>Pretty Weather</title>
+      <link>https://wtfutil.com/modules/weather_services/prettyweather/</link>
+      <pubDate>Sat, 02 Jun 2018 05:32:04 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/weather_services/prettyweather/</guid>
+      <description>Displays weather information as ASCII art from Wttr.in.
+Consider using wego directly, to avoid issues with rate limiting. See wego.
+Configuration Copy   prettyweather: enabled: true city: &amp;#34;tehran&amp;#34; position: top: 3 left: 5 height: 1 width: 1 refreshInterval: 300 unit: &amp;#34;m&amp;#34; view: 0 language: &amp;#34;en&amp;#34;    Attributes   Name Description Value    border Optional Whether or not to draw this widget with a border. Default: true.</description>
+    </item>
+    
+    <item>
+      <title>Weather</title>
+      <link>https://wtfutil.com/modules/weather_services/weather/</link>
+      <pubDate>Wed, 09 May 2018 11:44:13 -0700</pubDate>
+      
+      <guid>https://wtfutil.com/modules/weather_services/weather/</guid>
+      <description>Displays a configurable list of current weather report, including current temperature, sunrise time, and sunset time.
+Configuration weather: apiKey: &amp;#34;p0d13*********************************************c3&amp;#34; # From http://openweathermap.org/help/city_list.txt cityids: - 6173331 - 3128760 - 6167865 - 6176823 colors: current: &amp;#34;lightblue&amp;#34; enabled: true language: &amp;#34;EN&amp;#34; position: top: 0 left: 2 height: 1 width: 1 refreshInterval: 900 tempUnit: &amp;#34;C&amp;#34; useEmoji: true Attributes   Name Description Value    apiKey Your OpenWeatherMap API token.  Your API key or leave it empty to use the WTF_OWM_API_KEY environment variable.</description>
+    </item>
+    
+  </channel>
+</rss>
