@@ -62,7 +62,7 @@ nav:
     - Common Settings:      configuration/common_settings.md
     - Grid Layout:          configuration/grid_layout.md
     - Advanced:             configuration/advanced.md
-  - Modules:                
+  - Modules:
     - Home:                 modules/index.md
     - Asana: modules/asana.md
     - Azure DevOps:         modules/azure_devops.md
