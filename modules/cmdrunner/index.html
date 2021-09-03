@@ -704,6 +704,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#known-limitations" class="md-nav__link">
+    Known limitations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#examples" class="md-nav__link">
     Examples
   </a>
@@ -1359,6 +1366,56 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-45" type="checkbox" id="nav-4-45">
+    
+    <label class="md-nav__link" for="nav-4-45">
+      Stocks
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Stocks" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-45">
+        <span class="md-nav__icon md-icon"></span>
+        Stocks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stocks/finnhub/" class="md-nav__link">
+      Finnhub
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stocks/yfinance/" class="md-nav__link">
+      Yahoo Finance
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
     <a href="../subreddit/" class="md-nav__link">
       Subreddit
@@ -1445,14 +1502,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-52" type="checkbox" id="nav-4-52">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-53" type="checkbox" id="nav-4-53">
     
-    <label class="md-nav__link" for="nav-4-52">
+    <label class="md-nav__link" for="nav-4-53">
       Twitter
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Twitter" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-52">
+      <label class="md-nav__title" for="nav-4-53">
         <span class="md-nav__icon md-icon"></span>
         Twitter
       </label>
@@ -1494,6 +1551,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../updown/" class="md-nav__link">
+      Updown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../uptimerobot/" class="md-nav__link">
       UptimeRobot
     </a>
@@ -1519,14 +1588,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-55" type="checkbox" id="nav-4-55">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-57" type="checkbox" id="nav-4-57">
     
-    <label class="md-nav__link" for="nav-4-55">
+    <label class="md-nav__link" for="nav-4-57">
       Weather Services
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Weather Services" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-55">
+      <label class="md-nav__title" for="nav-4-57">
         <span class="md-nav__icon md-icon"></span>
         Weather Services
       </label>
@@ -1755,6 +1824,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#known-limitations" class="md-nav__link">
+    Known limitations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#examples" class="md-nav__link">
     Examples
   </a>
@@ -1886,6 +1962,8 @@
     </tbody>
 </table>
 
+<h2 id="known-limitations">Known limitations</h2>
+<p>Internally, CmdRunner relies on Golang's <code>exec.Command()</code> to run terminal commands. As it does not invoke the system shell, not all commands are supported. To quote <a href="https://pkg.go.dev/os/exec">Golang docs</a>, it "does not expand any glob patterns or handle other expansions, pipelines, or redirections typically done by shells." </p>
 <h2 id="examples">Examples</h2>
 <h3 id="brew-outdated"><code>brew outdated</code></h3>
 <p>Displays a list of all the installed <a href="https://brew.sh">Homebrew</a> recipes that have an update available for them.</p>
