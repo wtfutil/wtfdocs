@@ -7,24 +7,24 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://wtfutil.com/blog/2019-11-10-v0-24-0/">
+        <link rel="canonical" href="https://wtfutil.com/modules/stocks/yfinance/">
       
       
         <meta name="author" content="Chris Cummer">
       
-      <link rel="shortcut icon" href="../../assets/favicon.png">
+      <link rel="shortcut icon" href="../../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
     
     
       
-        <title>v0.24.0 Released - WTF - the terminal dashboard</title>
+        <title>Yahoo Finance - WTF - the terminal dashboard</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.38780c08.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f72e892.min.css">
         
           
           
@@ -53,9 +53,9 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="WTF - the terminal dashboard - v0.24.0 Released">
+<meta property="og:title" content="WTF - the terminal dashboard - Yahoo Finance">
 <meta property="og:description" content="None">
-<meta property="og:url" content="https://wtfutil.com/blog/2019-11-10-v0-24-0/">
+<meta property="og:url" content="https://wtfutil.com/modules/stocks/yfinance/">
 <meta property="og:image" content="https://wtfutil.comstatic/card.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
@@ -63,7 +63,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@wtfutil">
 <meta name="twitter:creator" content="@wtfutil">
-<meta name="twitter:title" content="WTF - the terminal dashboard - v0.24.0 Released">
+<meta name="twitter:title" content="WTF - the terminal dashboard - Yahoo Finance">
 <meta name="twitter:description" content="None">
 <meta name="twitter:image" content="https://wtfutil.comstatic/card.png">
 
@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#added" class="md-skip">
+        <a href="#yahoo-finance" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://wtfutil.com" title="WTF - the terminal dashboard" class="md-header-nav__button md-logo" aria-label="WTF - the terminal dashboard">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -121,7 +121,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              v0.24.0 Released
+              Yahoo Finance
             
           </span>
         </div>
@@ -181,14 +181,16 @@
         
           
 
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link md-tabs__link--active">
+      <a href="../../.." class="md-tabs__link">
         Home
       </a>
     
@@ -200,7 +202,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../quick_start/" class="md-tabs__link">
+        <a href="../../../quick_start/" class="md-tabs__link">
           Getting Started
         </a>
       
@@ -213,7 +215,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../configuration/files/" class="md-tabs__link">
+        <a href="../../../configuration/files/" class="md-tabs__link">
           Configuration
         </a>
       
@@ -226,7 +228,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../modules/" class="md-tabs__link">
+        <a href="../../" class="md-tabs__link md-tabs__link--active">
           Modules
         </a>
       
@@ -239,7 +241,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../development/creating_new_modules/" class="md-tabs__link">
+        <a href="../../../development/creating_new_modules/" class="md-tabs__link">
           Development
         </a>
       
@@ -252,7 +254,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../home/" class="md-tabs__link">
+        <a href="../../../blog/home/" class="md-tabs__link">
           Blog
         </a>
       
@@ -265,7 +267,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../sponsors/sponsoring/" class="md-tabs__link">
+        <a href="../../../sponsors/sponsoring/" class="md-tabs__link">
           Sponsoring and Support
         </a>
       
@@ -289,7 +291,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://wtfutil.com" title="WTF - the terminal dashboard" class="md-nav__button md-logo" aria-label="WTF - the terminal dashboard">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../../../assets/logo.png" alt="logo">
 
     </a>
     WTF - the terminal dashboard
@@ -316,7 +318,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." class="md-nav__link">
+    <a href="../../.." class="md-nav__link">
       Home
     </a>
   </li>
@@ -349,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../quick_start/" class="md-nav__link">
+    <a href="../../../quick_start/" class="md-nav__link">
       Quick Start
     </a>
   </li>
@@ -361,7 +363,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../installation/" class="md-nav__link">
+    <a href="../../../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -373,7 +375,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../uninstallation/" class="md-nav__link">
+    <a href="../../../uninstallation/" class="md-nav__link">
       Uninstallation
     </a>
   </li>
@@ -385,7 +387,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../glossary/" class="md-nav__link">
+    <a href="../../../glossary/" class="md-nav__link">
       Glossary
     </a>
   </li>
@@ -423,7 +425,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/files/" class="md-nav__link">
+    <a href="../../../configuration/files/" class="md-nav__link">
       Configuration Files
     </a>
   </li>
@@ -435,7 +437,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/global_settings/" class="md-nav__link">
+    <a href="../../../configuration/global_settings/" class="md-nav__link">
       Global Settings
     </a>
   </li>
@@ -447,7 +449,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/common_settings/" class="md-nav__link">
+    <a href="../../../configuration/common_settings/" class="md-nav__link">
       Common Settings
     </a>
   </li>
@@ -459,7 +461,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/grid_layout/" class="md-nav__link">
+    <a href="../../../configuration/grid_layout/" class="md-nav__link">
       Grid Layout
     </a>
   </li>
@@ -471,7 +473,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/advanced/" class="md-nav__link">
+    <a href="../../../configuration/advanced/" class="md-nav__link">
       Advanced
     </a>
   </li>
@@ -486,10 +488,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Modules
@@ -509,7 +513,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/" class="md-nav__link">
+    <a href="../../" class="md-nav__link">
       Home
     </a>
   </li>
@@ -521,7 +525,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/asana/" class="md-nav__link">
+    <a href="../../asana/" class="md-nav__link">
       Asana
     </a>
   </li>
@@ -533,7 +537,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/azure_devops/" class="md-nav__link">
+    <a href="../../azure_devops/" class="md-nav__link">
       Azure DevOps
     </a>
   </li>
@@ -545,7 +549,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/bamboohr/" class="md-nav__link">
+    <a href="../../bamboohr/" class="md-nav__link">
       BambooHR
     </a>
   </li>
@@ -557,7 +561,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/buildkite/" class="md-nav__link">
+    <a href="../../buildkite/" class="md-nav__link">
       BuildKite
     </a>
   </li>
@@ -590,7 +594,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/cds/favorites/" class="md-nav__link">
+    <a href="../../cds/favorites/" class="md-nav__link">
       CDS Favorites
     </a>
   </li>
@@ -602,7 +606,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/cds/queue/" class="md-nav__link">
+    <a href="../../cds/queue/" class="md-nav__link">
       CDS Queue
     </a>
   </li>
@@ -614,7 +618,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/cds/status/" class="md-nav__link">
+    <a href="../../cds/status/" class="md-nav__link">
       CDS Status
     </a>
   </li>
@@ -631,7 +635,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/circleci/" class="md-nav__link">
+    <a href="../../circleci/" class="md-nav__link">
       CircleCI
     </a>
   </li>
@@ -643,7 +647,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/clocks/" class="md-nav__link">
+    <a href="../../clocks/" class="md-nav__link">
       Clocks
     </a>
   </li>
@@ -655,7 +659,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/cmdrunner/" class="md-nav__link">
+    <a href="../../cmdrunner/" class="md-nav__link">
       CmdRunner
     </a>
   </li>
@@ -688,7 +692,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/cryptocurrencies/bittrex/" class="md-nav__link">
+    <a href="../../cryptocurrencies/bittrex/" class="md-nav__link">
       Bittrex
     </a>
   </li>
@@ -700,7 +704,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/cryptocurrencies/blockfolio/" class="md-nav__link">
+    <a href="../../cryptocurrencies/blockfolio/" class="md-nav__link">
       Blockfolio
     </a>
   </li>
@@ -712,7 +716,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/cryptocurrencies/cryptolive/" class="md-nav__link">
+    <a href="../../cryptocurrencies/cryptolive/" class="md-nav__link">
       CryptoLive
     </a>
   </li>
@@ -729,7 +733,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/datadog/" class="md-nav__link">
+    <a href="../../datadog/" class="md-nav__link">
       Datadog
     </a>
   </li>
@@ -741,7 +745,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/devto/" class="md-nav__link">
+    <a href="../../devto/" class="md-nav__link">
       DEV (Dev.to)
     </a>
   </li>
@@ -753,7 +757,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/digitalclock/" class="md-nav__link">
+    <a href="../../digitalclock/" class="md-nav__link">
       Digital Clock
     </a>
   </li>
@@ -765,7 +769,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/digitalocean/" class="md-nav__link">
+    <a href="../../digitalocean/" class="md-nav__link">
       DigitalOcean
     </a>
   </li>
@@ -777,7 +781,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/docker/" class="md-nav__link">
+    <a href="../../docker/" class="md-nav__link">
       Docker
     </a>
   </li>
@@ -789,7 +793,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/exchange_rates/" class="md-nav__link">
+    <a href="../../exchange_rates/" class="md-nav__link">
       Exchange Rates
     </a>
   </li>
@@ -801,7 +805,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/feedreader/" class="md-nav__link">
+    <a href="../../feedreader/" class="md-nav__link">
       Feed Reader
     </a>
   </li>
@@ -813,7 +817,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/gerrit/" class="md-nav__link">
+    <a href="../../gerrit/" class="md-nav__link">
       Gerrit
     </a>
   </li>
@@ -825,7 +829,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/git/" class="md-nav__link">
+    <a href="../../git/" class="md-nav__link">
       Git
     </a>
   </li>
@@ -837,7 +841,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/github/" class="md-nav__link">
+    <a href="../../github/" class="md-nav__link">
       GitHub
     </a>
   </li>
@@ -849,7 +853,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/gitlab/" class="md-nav__link">
+    <a href="../../gitlab/" class="md-nav__link">
       GitLab
     </a>
   </li>
@@ -861,7 +865,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/gitlabtodo/" class="md-nav__link">
+    <a href="../../gitlabtodo/" class="md-nav__link">
       GitLab Todo
     </a>
   </li>
@@ -873,7 +877,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/gitter/" class="md-nav__link">
+    <a href="../../gitter/" class="md-nav__link">
       Gitter
     </a>
   </li>
@@ -906,7 +910,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/google/analytics/" class="md-nav__link">
+    <a href="../../google/analytics/" class="md-nav__link">
       Analytics
     </a>
   </li>
@@ -918,7 +922,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/google/gcal/" class="md-nav__link">
+    <a href="../../google/gcal/" class="md-nav__link">
       Calendar
     </a>
   </li>
@@ -930,7 +934,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/google/spreadsheet/" class="md-nav__link">
+    <a href="../../google/spreadsheet/" class="md-nav__link">
       Spreadsheet
     </a>
   </li>
@@ -947,7 +951,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/hackernews/" class="md-nav__link">
+    <a href="../../hackernews/" class="md-nav__link">
       HackerNews
     </a>
   </li>
@@ -959,7 +963,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/healthchecks/" class="md-nav__link">
+    <a href="../../healthchecks/" class="md-nav__link">
       Healthchecks
     </a>
   </li>
@@ -971,7 +975,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/hibp/" class="md-nav__link">
+    <a href="../../hibp/" class="md-nav__link">
       Have I Been Pwned
     </a>
   </li>
@@ -1004,7 +1008,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/ipaddress/ipapi/" class="md-nav__link">
+    <a href="../../ipaddress/ipapi/" class="md-nav__link">
       IP API
     </a>
   </li>
@@ -1016,7 +1020,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/ipaddress/ipinfo/" class="md-nav__link">
+    <a href="../../ipaddress/ipinfo/" class="md-nav__link">
       IPInfo
     </a>
   </li>
@@ -1033,7 +1037,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/jenkins/" class="md-nav__link">
+    <a href="../../jenkins/" class="md-nav__link">
       Jenkins
     </a>
   </li>
@@ -1045,7 +1049,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/jira/" class="md-nav__link">
+    <a href="../../jira/" class="md-nav__link">
       Jira
     </a>
   </li>
@@ -1057,7 +1061,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/krisinformation/" class="md-nav__link">
+    <a href="../../krisinformation/" class="md-nav__link">
       Krisinformation
     </a>
   </li>
@@ -1069,7 +1073,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/kubernetes/" class="md-nav__link">
+    <a href="../../kubernetes/" class="md-nav__link">
       Kubernetes
     </a>
   </li>
@@ -1081,7 +1085,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/mercurial/" class="md-nav__link">
+    <a href="../../mercurial/" class="md-nav__link">
       Mercurial
     </a>
   </li>
@@ -1093,7 +1097,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/newrelic/" class="md-nav__link">
+    <a href="../../newrelic/" class="md-nav__link">
       New Relic
     </a>
   </li>
@@ -1105,7 +1109,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/opsgenie/" class="md-nav__link">
+    <a href="../../opsgenie/" class="md-nav__link">
       OpsGenie
     </a>
   </li>
@@ -1117,7 +1121,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/pagerduty/" class="md-nav__link">
+    <a href="../../pagerduty/" class="md-nav__link">
       PagerDuty
     </a>
   </li>
@@ -1129,7 +1133,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/pihole/" class="md-nav__link">
+    <a href="../../pihole/" class="md-nav__link">
       Pihole
     </a>
   </li>
@@ -1141,7 +1145,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/pocket/" class="md-nav__link">
+    <a href="../../pocket/" class="md-nav__link">
       Pocket
     </a>
   </li>
@@ -1153,7 +1157,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/power/" class="md-nav__link">
+    <a href="../../power/" class="md-nav__link">
       Power
     </a>
   </li>
@@ -1165,7 +1169,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/resourceusage/" class="md-nav__link">
+    <a href="../../resourceusage/" class="md-nav__link">
       Resource Usage
     </a>
   </li>
@@ -1177,7 +1181,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/rollbar/" class="md-nav__link">
+    <a href="../../rollbar/" class="md-nav__link">
       Rollbar
     </a>
   </li>
@@ -1189,7 +1193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/security/" class="md-nav__link">
+    <a href="../../security/" class="md-nav__link">
       Security
     </a>
   </li>
@@ -1222,7 +1226,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/sports/football/" class="md-nav__link">
+    <a href="../../sports/football/" class="md-nav__link">
       Football
     </a>
   </li>
@@ -1234,7 +1238,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/sports/nbascore/" class="md-nav__link">
+    <a href="../../sports/nbascore/" class="md-nav__link">
       NBA Score
     </a>
   </li>
@@ -1251,7 +1255,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/spotify/" class="md-nav__link">
+    <a href="../../spotify/" class="md-nav__link">
       Spotify
     </a>
   </li>
@@ -1261,10 +1265,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-45" type="checkbox" id="nav-4-45">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-45" type="checkbox" id="nav-4-45" checked>
     
     <label class="md-nav__link" for="nav-4-45">
       Stocks
@@ -1284,7 +1290,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/stocks/finnhub/" class="md-nav__link">
+    <a href="../finnhub/" class="md-nav__link">
       Finnhub
     </a>
   </li>
@@ -1294,11 +1300,70 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../modules/stocks/yfinance/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Yahoo Finance
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       Yahoo Finance
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    Screenshots
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-code" class="md-nav__link">
+    Source Code
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1313,7 +1378,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/subreddit/" class="md-nav__link">
+    <a href="../../subreddit/" class="md-nav__link">
       Subreddit
     </a>
   </li>
@@ -1325,7 +1390,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/textfile/" class="md-nav__link">
+    <a href="../../textfile/" class="md-nav__link">
       Textfile
     </a>
   </li>
@@ -1337,7 +1402,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/todo/" class="md-nav__link">
+    <a href="../../todo/" class="md-nav__link">
       Todo
     </a>
   </li>
@@ -1349,7 +1414,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/todoist/" class="md-nav__link">
+    <a href="../../todoist/" class="md-nav__link">
       Todoist
     </a>
   </li>
@@ -1361,7 +1426,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/transmission/" class="md-nav__link">
+    <a href="../../transmission/" class="md-nav__link">
       Transmission
     </a>
   </li>
@@ -1373,7 +1438,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/travisci/" class="md-nav__link">
+    <a href="../../travisci/" class="md-nav__link">
       TravisCI
     </a>
   </li>
@@ -1385,7 +1450,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/trello/" class="md-nav__link">
+    <a href="../../trello/" class="md-nav__link">
       Trello
     </a>
   </li>
@@ -1418,7 +1483,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/twitter/stats/" class="md-nav__link">
+    <a href="../../twitter/stats/" class="md-nav__link">
       Stats
     </a>
   </li>
@@ -1430,7 +1495,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/twitter/tweets/" class="md-nav__link">
+    <a href="../../twitter/tweets/" class="md-nav__link">
       Tweets
     </a>
   </li>
@@ -1447,7 +1512,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/updown/" class="md-nav__link">
+    <a href="../../updown/" class="md-nav__link">
       Updown
     </a>
   </li>
@@ -1459,7 +1524,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/uptimerobot/" class="md-nav__link">
+    <a href="../../uptimerobot/" class="md-nav__link">
       UptimeRobot
     </a>
   </li>
@@ -1471,7 +1536,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/victorops/" class="md-nav__link">
+    <a href="../../victorops/" class="md-nav__link">
       VictorOps
     </a>
   </li>
@@ -1504,7 +1569,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/weather_services/arpansagovau/" class="md-nav__link">
+    <a href="../../weather_services/arpansagovau/" class="md-nav__link">
       ARPANSA
     </a>
   </li>
@@ -1516,7 +1581,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/weather_services/prettyweather/" class="md-nav__link">
+    <a href="../../weather_services/prettyweather/" class="md-nav__link">
       Pretty Weather
     </a>
   </li>
@@ -1528,7 +1593,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/weather_services/weather/" class="md-nav__link">
+    <a href="../../weather_services/weather/" class="md-nav__link">
       Weather
     </a>
   </li>
@@ -1545,7 +1610,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../modules/zendesk/" class="md-nav__link">
+    <a href="../../zendesk/" class="md-nav__link">
       Zendesk
     </a>
   </li>
@@ -1583,7 +1648,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../development/creating_new_modules/" class="md-nav__link">
+    <a href="../../../development/creating_new_modules/" class="md-nav__link">
       Creating New Modules
     </a>
   </li>
@@ -1621,7 +1686,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../home/" class="md-nav__link">
+    <a href="../../../blog/home/" class="md-nav__link">
       Home
     </a>
   </li>
@@ -1659,7 +1724,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../sponsors/sponsoring/" class="md-nav__link">
+    <a href="../../../sponsors/sponsoring/" class="md-nav__link">
       Sponsoring WTF
     </a>
   </li>
@@ -1671,7 +1736,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../sponsors/exit_message/" class="md-nav__link">
+    <a href="../../../sponsors/exit_message/" class="md-nav__link">
       Exit Message
     </a>
   </li>
@@ -1696,6 +1761,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1704,15 +1771,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#added" class="md-nav__link">
-    ⚡️ Added
+  <a href="#configuration" class="md-nav__link">
+    Configuration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fixed" class="md-nav__link">
-    🐞 Fixed
+  <a href="#screenshots" class="md-nav__link">
+    Screenshots
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-code" class="md-nav__link">
+    Source Code
   </a>
   
 </li>
@@ -1729,32 +1810,93 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/wtfutil/wtf/edit/master/docs/blog/2019-11-10-v0-24-0.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/wtfutil/wtf/edit/master/docs/modules/stocks/yfinance.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>v0.24.0 Released</h1>
-                
-                <p><small>2019-11-10 11:32:32-08:00</small></p>
-<p><a href="https://github.com/wtfutil/wtf/releases/tag/v0.24.0">WTF v0.24.0</a> contains the following changes:</p>
-<h3 id="added">⚡️ Added</h3>
+                <h1 id="yahoo-finance">Yahoo Finance</h1>
+<p>Display Yahoo Finance data for the configured symbols.</p>
+<p>The first column shows the symbol's status:</p>
 <ul>
-<li>Proper, usable <a href="https://github.com/wtfutil/wtf/blob/master/Dockerfile">Docker file</a> added, by <a href="https://github.com/Boot-Error">@Boot-Error</a></li>
-<li><a href="https://wtfutil.com/modules/gitlab/">GitLab</a> module displays issues assigned to, and opened by, the user, by <a href="https://github.com/caalberts">@caalberts</a></li>
-<li><a href="https://wtfutil.com/modules/travisci/">TravisCI</a> now checks for uncommitted vendor changes, by <a href="https://github.com/indradhanush">@indradhanush</a></li>
-<li>Football module added, by <a href="https://github.com/C123R">@C123R</a></li>
-<li><a href="https://wtfutil.com/modules/resourceusage/">resourceuseage</a> now supports a <code>cpuCombined</code> setting, by <a href="https://github.com/madepolli">@madepolli</a></li>
-<li><a href="https://wtfutil.com/modules/twitter/twittertweets/">Twitter Stats</a> module added, by <a href="https://github.com/Ameobea">@Ameobea</a></li>
+<li>pre-market: ⏭</li>
+<li>open: ▶</li>
+<li>post-market: ⏮</li>
+<li>closed: ⏹</li>
 </ul>
-<h3 id="fixed">🐞 Fixed</h3>
+<p>The second column is the symbol's shortname, third column shows the current value.
+The fourth columns will show a different icon depending on the current market change:</p>
 <ul>
-<li>Github PRs do not count against issues, by <a href="https://github.com/alexfornuto">@alexfornuto</a></li>
-<li>Todo scrolling now works properly, <a href="https://github.com/wtfutil/wtf/issues/707">#707</a> by <a href="https://github.com/3mard">3mard</a></li>
-<li>Configs with a missing <code>color</code> key now load properly, <a href="https://github.com/wtfutil/wtf/issues/718">#718</a> and <a href="https://github.com/wtfutil/wtf/issues/730">#730</a> by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
+<li>
+<blockquote>
+<p>3%: ⬆️</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>0%: ↗️</p>
+</blockquote>
+</li>
+<li>&lt;0%: ↘️</li>
+<li>&lt;-3%: ⬇️</li>
 </ul>
-                
-                  
+<h2 id="configuration">Configuration</h2>
+<div class="highlight"><pre><span></span><code><span class="nt">yfinance</span><span class="p">:</span>
+  <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+  <span class="nt">title</span><span class="p">:</span> <span class="s">&quot;Stocks</span><span class="nv"> </span><span class="s">🚀&quot;</span>
+  <span class="nt">sort</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+  <span class="nt">refreshInterval</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">60</span>
+  <span class="nt">symbols</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;DOCN&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;GLE.PA&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;ABN.AS&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;ICAD.PA&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;ACA.PA&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;ORA.PA&quot;</span>
+  <span class="nt">position</span><span class="p">:</span>
+    <span class="nt">top</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="nt">left</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+    <span class="nt">height</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="nt">width</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+</code></pre></div>
+<h2 id="screenshots">Screenshots</h2>
+<p><img class="screenshot" src="/imgs/modules/yfinance.png" width="414" height="285" alt="yfinance screenshot" /></p>
+<h2 id="attributes">Attributes</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+</thead>
+
+    <tbody>
+
+            <tr>
+    <td>
+        <code>symbols</code>
+        <br />
+        List of Yahoo Finance symbols to display.
+    </td>
+    <td>List of valid Yahoo Finance symbols.</td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>sort</code>
+        <br />
+        <em>Optional</em> Sort indices by market change percent. Default: <code>false</code>.
+    </td>
+    <td><code>true</code>, <code>false</code></td>
+</tr>
+
+    </tbody>
+</table>
+
+<h2 id="source-code">Source Code</h2>
+<p><a href="https://github.com/wtfutil/wtf/tree/master/modules/yfinance">https://github.com/wtfutil/wtf/tree/master/modules/yfinance</a></p>
                 
               
               
@@ -1769,6 +1911,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../finnhub/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Finnhub
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../subreddit/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Subreddit
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1812,15 +1989,15 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "../..",
+          base: "../../..",
           features: ['navigation.tabs'],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
