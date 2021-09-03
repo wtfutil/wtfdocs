@@ -120,6 +120,9 @@ nav:
       - Football:           modules/sports/football.md
       - NBA Score:          modules/sports/nbascore.md
     - Spotify:              modules/spotify.md
+    - Stocks:
+      - Finnhub:            modules/stocks/finnhub.md
+      - Yahoo Finance:      modules/stocks/yfinance.md
     - Subreddit:            modules/subreddit.md
     - Textfile:             modules/textfile.md
     - Todo:                 modules/todo.md
