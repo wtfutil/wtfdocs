@@ -12,7 +12,15 @@ If WTF occupies that special place in your terminal, please consider sponsoring 
 
 Easy! Just **click the button below** and following along with GitHub.
 
-<iframe src="https://github.com/sponsors/senorprogrammer/card" title="Sponsor senorprogrammer" height="240" width="600" style="border: 0;"></iframe>
+<iframe src="https://github.com/sponsors/senorprogrammer/card" title="Sponsor senorprogrammer" height="200" width="600" style="border: 0;"></iframe>
+
+A **special thanks** to our sponsors:
+
+<p>
+    <a href="https://airbrake.io/?utm_medium=sponsor&utm_source=WTFutill&utm_content=airbrake-home-page&utm_campaign=2021-sponsorships" target="_blank">
+        <img src="/assets/sponsors/airbrake.png" height="60" width="176" title="Airbrake" alt="Airbrake" />
+    </a>
+</p>
 
 ## Slack
 
