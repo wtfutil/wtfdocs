@@ -42,7 +42,35 @@ todo:
             {% include "attributes/custom.md" %}
         {% endwith %}
 
+        {% with name="checkedPos", desc="<em>Optional</em> The position at which the checkbox is shown. <br />Default: <code>first</code>", value="<code>first</code>, <code>last</code>, <code>none</code>" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+        
+        {% with name="dates.enabled", desc="<em>Optional</em> Whether or not the following <code>date</code> functionality is enabled. <br />Default: <code>true</code>", value="<code>true</code>, <code>false</code>" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+
+        {% with name="dates.format", desc="<em>Optional</em> The format in which to display dates. <br />Default: <code>yyyy-mm-dd</code>", value="<code>yyyy-mm-dd</code>, <code>yy-mm-dd</code>, <code>dd-mm-yy</code>, <code>dd-mm-yyyy</code>, <code>dd M yy</code>, <code>dd M yyyy</code>" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+
+        {% with name="dates.hideYearIfCurrent", desc="<em>Optional</em> Hide the year, if the todo item year is the current year. <br />Default: <code>true</code>", value="<code>true</code>, <code>false</code>" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+
+        {% with name="dates.switchToInDays", desc="<em>Optional</em> The number of days in the future after which the todo item date is displayed as an absolute date. <br />Default: <code>7</code>", value="Any positive integer." %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+
+        {% with name="dates.undatedAsDays", desc="<em>Optional</em> How many days into the future undated todo items should be considered 'due'. <br />Default: <code>7</code>", value="Any positive integer." %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+
         {% with name="filename", desc="The name for the todo file.", value="Any valid filename, ideally ending in <code>yml</code>." %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+
+        {% with name="newPos", desc="<em>Optional</em> The position into which new todo items are created. <br />Default: <code>first</code>", value="<code>first</code>, <code>last</code>" %}
             {% include "attributes/custom.md" %}
         {% endwith %}
     </tbody>
@@ -88,11 +116,17 @@ todo:
 
     {% include "keyboard/ctrlD.md" %}
 
+    {% set ctrlf="Move the selected item to the top of the list" %}
+    {% include "keyboard/ctrlf.md" %}
+
     {% set ctrlj="Move the selected item down the list" %}
     {% include "keyboard/ctrlJ.md" %}
 
     {% set ctrlk="Move the selected item up the list" %}
     {% include "keyboard/ctrlK.md" %}
+
+    {% set ctrll="Move the selected item to the bottom of the list" %}
+    {% include "keyboard/ctrll.md" %}
   </tbody>
 </table>
 
