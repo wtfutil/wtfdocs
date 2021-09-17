@@ -24,7 +24,7 @@ WTF ships as a single binary named `wtfutil`. Assuming you have installed the bi
 If you have configured WTF, you will also want to delete your configs:
 
 ```bash
-❯ rm ~/.config/wtf
+❯ rm -r ~/.config/wtf
 ```
 
 and that should also do it.
