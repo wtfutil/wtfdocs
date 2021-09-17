@@ -1,4 +1,4 @@
 <tr>
-    <td><code>Ctrlll</code></td>
+    <td><code>Ctrl-l</code></td>
     <td>{{ ctrll }}</td>
 </tr>
