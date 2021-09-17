@@ -1970,11 +1970,88 @@
 
             <tr>
     <td>
+        <code>checkedPos</code>
+        <br />
+        <em>Optional</em> The position at which the checkbox is shown. <br />Default: <code>first</code>
+    </td>
+    <td><code>first</code>, <code>last</code>, <code>none</code></td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>dates.enabled</code>
+        <br />
+        <em>Optional</em> Whether or not the following <code>date</code> functionality is enabled. <br />Default: <code>true</code>
+    </td>
+    <td><code>true</code>, <code>false</code></td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>dates.format</code>
+        <br />
+        <em>Optional</em> The format in which to display dates. <br />Default: <code>yyyy-mm-dd</code>
+    </td>
+    <td><code>yyyy-mm-dd</code>, <code>yy-mm-dd</code>, <code>dd-mm-yy</code>, <code>dd-mm-yyyy</code>, <code>dd M yy</code>, <code>dd M yyyy</code></td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>dates.hideYearIfCurrent</code>
+        <br />
+        <em>Optional</em> Hide the year, if the todo item year is the current year. <br />Default: <code>true</code>
+    </td>
+    <td><code>true</code>, <code>false</code></td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>dates.switchToInDays</code>
+        <br />
+        <em>Optional</em> The number of days in the future after which the todo item date is displayed as an absolute date. <br />Default: <code>7</code>
+    </td>
+    <td>Any positive integer.</td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>dates.undatedAsDays</code>
+        <br />
+        <em>Optional</em> How many days into the future undated todo items should be considered 'due'. <br />Default: <code>7</code>
+    </td>
+    <td>Any positive integer.</td>
+</tr>
+
+
+
+            <tr>
+    <td>
         <code>filename</code>
         <br />
         The name for the todo file.
     </td>
     <td>Any valid filename, ideally ending in <code>yml</code>.</td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>newPos</code>
+        <br />
+        <em>Optional</em> The position into which new todo items are created. <br />Default: <code>first</code>
+    </td>
+    <td><code>first</code>, <code>last</code></td>
 </tr>
 
     </tbody>
@@ -2066,6 +2143,12 @@
 
 
     <tr>
+    <td><code>Ctrl-f</code></td>
+    <td>Move the selected item to the top of the list</td>
+</tr>
+
+
+    <tr>
     <td><code>Ctrl-j</code></td>
     <td>Move the selected item down the list</td>
 </tr>
@@ -2074,6 +2157,12 @@
     <tr>
     <td><code>Ctrl-k</code></td>
     <td>Move the selected item up the list</td>
+</tr>
+
+
+    <tr>
+    <td><code>Ctrlll</code></td>
+    <td>Move the selected item to the bottom of the list</td>
 </tr>
   </tbody>
 </table>
