@@ -1452,6 +1452,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#keyboard" class="md-nav__link">
+    Keyboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tagging" class="md-nav__link">
+    Tagging
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#source-code" class="md-nav__link">
     Source Code
   </a>
@@ -1867,6 +1881,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#keyboard" class="md-nav__link">
+    Keyboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tagging" class="md-nav__link">
+    Tagging
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#source-code" class="md-nav__link">
     Source Code
   </a>
@@ -1924,7 +1952,7 @@
 
             <tr>
     <td>
-        <code>checked</code>
+        <code>colors.checked</code>
         <br />
         The foreground color for checked rows.
     </td>
@@ -1955,6 +1983,20 @@
         Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a>.
     </td>
 </tr>
+
+
+            <tr>
+    <td>
+        <code>colors.tags</code>
+        <br />
+        The foreground color for tag text. <br />Default: <code>khaki</code>
+    </td>
+    <td>
+        Any <a href="https://en.wikipedia.org/wiki/X11_color_names">X11 color name</a> or long-form hex value (i.e.:
+        <code>#ff0000</code>).
+    </td>
+</tr>
+
 
 
             <tr>
@@ -2054,10 +2096,55 @@
     <td><code>first</code>, <code>last</code></td>
 </tr>
 
+
+
+
+            <tr>
+    <td>
+        <code>tags.enabled</code>
+        <br />
+        <em>Optional</em> Whether or not to enable the tags feature. <br />Default: <code>true</code>
+    </td>
+    <td><code>true</code>, <code>false</code></td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>tags.pos</code>
+        <br />
+        <em>Optional</em> The position in the todo item text at which to display tags. <br />Default: <code>end</code>
+    </td>
+    <td><code>start</code>, <code>end</code></td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>tags.hide</code>
+        <br />
+        <em>Optional</em> A list of tags to hide by default.
+    </td>
+    <td>A comma-separated list of tags.</td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>tags.hiddenInTitle</code>
+        <br />
+        <em>Optional</em> Whether or not to display in the widget title the number of items currently hidden by tag filtering.<br />Default: <code>true</code>
+    </td>
+    <td><code>true</code>, <code>false</code></td>
+</tr>
+
     </tbody>
 </table>
 
-<p>## Keyboard</p>
+<h2 id="keyboard">Keyboard</h2>
 <table>
   <thead>
     <tr>
@@ -2070,6 +2157,12 @@
     <tr>
     <td><code>/</code></td>
     <td>Open/close the widget's help modal</td>
+</tr>
+
+
+    <tr>
+    <td><code>#</code></td>
+    <td>Open the tag-filtering modal dialog</td>
 </tr>
 
 
@@ -2167,6 +2260,14 @@
   </tbody>
 </table>
 
+<h2 id="tagging">Tagging</h2>
+<p>Todo supports tagging todo list items to provide contextual grouping and filtering.</p>
+<p>A tag is a string prefixed by the pound (<code>#</code>) symbol, included somewhere in the todo item text.</p>
+<p>Examples:</p>
+<p>❯ <code>buy groceries #chore</code></p>
+<p>❯ <code>#chore buy groceries</code></p>
+<p>❯ <code>#this also #works</code> (two tags, <code>#this</code> and <code>#works</code>, text <code>also</code>)</p>
+<p>To view only todo items associated with a specific tag, use the <code>#</code> key and enter the tag text in the modal dialog.</p>
 <h2 id="source-code">Source Code</h2>
 <p><a href="https://github.com/wtfutil/wtf/tree/master/modules/todo">https://github.com/wtfutil/wtf/tree/master/modules/todo</a></p>
                 
