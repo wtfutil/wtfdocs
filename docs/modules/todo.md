@@ -83,10 +83,6 @@ todo:
             {% include "attributes/custom.md" %}
         {% endwith %}
 
-        {% with name="tags.pos", desc="<em>Optional</em> The position in the todo item text at which to display tags. <br />Default: <code>end</code>", value="<code>start</code>, <code>end</code>" %}
-            {% include "attributes/custom.md" %}
-        {% endwith %}
-
         {% with name="tags.hide", desc="<em>Optional</em> A list of tags to hide by default.", value="A comma-separated list of tags." %}
             {% include "attributes/custom.md" %}
         {% endwith %}
@@ -94,6 +90,11 @@ todo:
         {% with name="tags.hiddenInTitle", desc="<em>Optional</em> Whether or not to display in the widget title the number of items currently hidden by tag filtering.<br />Default: <code>true</code>", value="<code>true</code>, <code>false</code>" %}
             {% include "attributes/custom.md" %}
         {% endwith %}
+
+        {% with name="tags.pos", desc="<em>Optional</em> The position in the todo item text at which to display tags. <br />Default: <code>end</code>", value="<code>start</code>, <code>end</code>" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+
     </tbody>
 </table>
 
