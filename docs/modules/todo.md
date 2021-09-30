@@ -32,11 +32,15 @@ todo:
     {% include "attributes/table_header.md" %}
 
     <tbody>
-        {% with name="checked", desc="The foreground color for checked rows.", value="" %}
+        {% with name="colors.checked", desc="The foreground color for checked rows.", value="" %}
             {% include "attributes/colors/custom.md" %}
         {% endwith %}
 
         {% include "attributes/colors/highlight.md" %}
+
+        {% with name="colors.tags", desc="The foreground color for tag text. <br />Default: <code>khaki</code>", value="" %}
+            {% include "attributes/colors/custom.md" %}
+        {% endwith %}
 
         {% with name="checkedIcon", desc="<em>Optional</em> The icon used to denote a 'checked' todo item.", value="Any displayable unicode character." %}
             {% include "attributes/custom.md" %}
@@ -73,16 +77,36 @@ todo:
         {% with name="newPos", desc="<em>Optional</em> The position into which new todo items are created. <br />Default: <code>first</code>", value="<code>first</code>, <code>last</code>" %}
             {% include "attributes/custom.md" %}
         {% endwith %}
+
+
+        {% with name="tags.enabled", desc="<em>Optional</em> Whether or not to enable the tags feature. <br />Default: <code>true</code>", value="<code>true</code>, <code>false</code>" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+
+        {% with name="tags.pos", desc="<em>Optional</em> The position in the todo item text at which to display tags. <br />Default: <code>end</code>", value="<code>start</code>, <code>end</code>" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+
+        {% with name="tags.hide", desc="<em>Optional</em> A list of tags to hide by default.", value="A comma-separated list of tags." %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+
+        {% with name="tags.hiddenInTitle", desc="<em>Optional</em> Whether or not to display in the widget title the number of items currently hidden by tag filtering.<br />Default: <code>true</code>", value="<code>true</code>, <code>false</code>" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
     </tbody>
 </table>
 
- ## Keyboard
+## Keyboard
 
 <table>
   {% include "keyboard/table_header.md" %}
 
   <tbody>
     {% include "keyboard/foreslash.md" %}
+
+    {% set pound="Open the tag-filtering modal dialog" %}
+    {% include "keyboard/pound.md" %}
 
     {% set esc="Remove focus from the selected item" %}
     {% include "keyboard/esc.md" %} 
@@ -129,6 +153,22 @@ todo:
     {% include "keyboard/ctrll.md" %}
   </tbody>
 </table>
+
+## Tagging
+
+Todo supports tagging todo list items to provide contextual grouping and filtering.
+
+A tag is a string prefixed by the pound (`#`) symbol, included somewhere in the todo item text.
+
+Examples:
+
+❯ `buy groceries #chore`
+
+❯ `#chore buy groceries`
+
+❯ `#this also #works` (two tags, `#this` and `#works`, text `also`)
+
+To view only todo items associated with a specific tag, use the `#` key and enter the tag text in the modal dialog.
 
 {% set src="todo" %}
 {% include "src_path.md" %}
