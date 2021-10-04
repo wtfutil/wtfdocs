@@ -7,8 +7,9 @@ Connect to the [Healthchecks](https://healthchecks.io) API.
 ```yaml
 healthchecks:
   type: healthchecks
+  enabled: true
   apiKey: "XXXX"
-  apiURL: "https://hc-ping.com/"
+  apiURL: "https://healthchecks.io/"
   tags:
     - backup
   position:
@@ -37,7 +38,7 @@ healthchecks:
             {% include "attributes/custom.md" %}
         {% endwith %}
 
-        {% with name="apiURL", desc="<em>Optional</em> Healthchecks API URL. Default: <code>https://hc-ping.com/</code>", value="string" %}
+        {% with name="apiURL", desc="<em>Optional</em> Healthchecks API URL. Default: <code>https://healthchecks.io/</code>", value="string" %}
             {% include "attributes/custom.md" %}
         {% endwith %}
 
