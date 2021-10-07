@@ -99,7 +99,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#macro-syntax-error" class="md-skip">
+        <a href="#git" class="md-skip">
           Skip to content
         </a>
       
@@ -891,9 +891,88 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Git
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Git
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#branch" class="md-nav__link">
+    Branch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changed-files" class="md-nav__link">
+    Changed Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recent-commits" class="md-nav__link">
+    Recent Commits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    Screenshots
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keyboard" class="md-nav__link">
+    Keyboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-code" class="md-nav__link">
+    Source Code
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1788,6 +1867,70 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#branch" class="md-nav__link">
+    Branch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changed-files" class="md-nav__link">
+    Changed Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recent-commits" class="md-nav__link">
+    Recent Commits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    Screenshots
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keyboard" class="md-nav__link">
+    Keyboard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-code" class="md-nav__link">
+    Source Code
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1803,10 +1946,191 @@
                   </a>
                 
                 
-                <h1 id="macro-syntax-error"><em>Macro Syntax Error</em></h1>
-<p><em>Line 65 in Markdown file:</em> <strong>expected token ',', got 'attributes'</strong> 
-<div class="highlight"><pre><span></span><code>            <span class="p">{</span><span class="o">%</span> <span class="n">include</span> <span class="s2">&quot;attributes/custom.md&quot;</span> <span class="o">%</span><span class="p">}</span>
-</code></pre></div></p>
+                <p><img align="left" alt="git" height="128" src="/assets/services/git.png" width="128" /></p>
+<h1 id="git">Git</h1>
+<p>Displays information about local git repositories: branch, changed
+files, and recent commits.</p>
+<h4 id="branch">Branch</h4>
+<p>The name of the currently-active git branch.</p>
+<h4 id="changed-files">Changed Files</h4>
+<p>A list of all the files that have changed since the last
+commit, and their status.</p>
+<h4 id="recent-commits">Recent Commits</h4>
+<p>A list of <code>n</code> recent commits, who committed it, and when.</p>
+<h2 id="configuration">Configuration</h2>
+<div class="highlight"><pre><span></span><code><span class="nt">git</span><span class="p">:</span>
+  <span class="nt">commitCount</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5</span>
+  <span class="nt">commitFormat</span><span class="p">:</span> <span class="s">&quot;[forestgreen]%h</span><span class="nv"> </span><span class="s">[grey]%cd</span><span class="nv"> </span><span class="s">[white]%s</span><span class="nv"> </span><span class="s">[grey]%an[white]&quot;</span>
+  <span class="nt">dateFormat</span><span class="p">:</span> <span class="s">&quot;%H:%M</span><span class="nv"> </span><span class="s">%d</span><span class="nv"> </span><span class="s">%b</span><span class="nv"> </span><span class="s">%y&quot;</span>
+  <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+  <span class="nt">position</span><span class="p">:</span>
+    <span class="nt">top</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+    <span class="nt">left</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
+    <span class="nt">height</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+    <span class="nt">width</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+  <span class="nt">refreshInterval</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">8</span>
+  <span class="nt">repositories</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;/Users/chris/go/src/github.com/wtfutil/wtf&quot;</span>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;/Users/user/fakeapp&quot;</span>
+</code></pre></div>
+<h2 id="screenshots">Screenshots</h2>
+<p><img class="screenshot" src="/assets/modules/git.png" width="720" height="292" alt="git screenshot" /></p>
+<h2 id="attributes">Attributes</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+</thead>
+
+    <tbody>
+
+            <tr>
+    <td>
+        <code>branchInTitle</code>
+        <br />
+        <code>Optional</code> Whether to show branch name in title. <br />Default: <code>false</code>
+    </td>
+    <td><code>true</code>, <code>false</code></td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>commitCount</code>
+        <br />
+
+    </td>
+    <td>Any positive integer.</td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>commitFormat</code>
+        <br />
+        <code>Optional</code> The string format for the commit message.
+    </td>
+    <td></td>
+</tr>
+
+
+        <tr>
+    <td>
+        <code>dateFormat</code>
+        <br />
+        The format to use when rendering date strings.
+    </td>
+    <td>
+        Any valid Go date layout which is handled by <a href="https://golang.org/pkg/time/#Time.Format">Time.Format</a>.
+        Default: <code>Jan 2</code>.
+    </td>
+</tr>
+
+
+            <tr>
+    <td>
+        <code>lastFolderTitle</code>
+        <br />
+        <code>Optional</code> Whether to show only last part of directory path instead of full path. <br />Default: <code>false</code>
+    </td>
+    <td><code>true</code>, <code>false</code></td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>showFilesIfEmpty</code>
+        <br />
+        <code>Optional</code> Whether to show Changed Files section if no files have changed. <br />Default: <code>false</code>
+    </td>
+    <td><code>true</code>, <code>false</code></td>
+</tr>
+
+
+
+            <tr>
+    <td>
+        <code>showModuleName</code>
+        <br />
+        <code>Optional</code> Whether to show 'Git - ' before information in title. <br />Default: <code>true</code>
+    </td>
+    <td><code>true</code>, <code>false</code></td>
+</tr>
+
+    </tbody>
+</table>
+
+<h2 id="keyboard">Keyboard</h2>
+<table>
+  <thead>
+    <tr>
+        <th>Key</th>
+        <th>Action</th>
+    </tr>
+</thead>
+
+  <tbody>
+    <tr>
+    <td><code>/</code></td>
+    <td>Open/close the widget's help modal</td>
+</tr>
+
+    <tr>
+    <td colspan="2"></td>
+</tr>
+
+
+    <tr>
+    <td><code>h</code></td>
+    <td>Show the previous git repository</td>
+</tr>
+
+
+    <tr>
+    <td><code>l</code></td>
+    <td>Show the next git repository</td>
+</tr>
+
+
+    <tr>
+    <td><code>p</code></td>
+    <td>Pull repo</td>
+</tr>
+
+    <tr>
+    <td><code>r</code></td>
+    <td>Refresh the data</td>
+</tr>
+
+    <tr>
+    <td colspan="2"></td>
+</tr>
+
+
+    <tr>
+        <td>
+            <code>←</code>
+        </td>
+        <td>Show the previous git repository</td>
+    </tr>
+
+
+    <tr>
+        <td>
+            <code>→</code>
+        </td>
+        <td>Show the next git repository</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="source-code">Source Code</h2>
+<p><a href="https://github.com/wtfutil/wtf/tree/master/modules/git">https://github.com/wtfutil/wtf/tree/master/modules/git</a></p>
                 
               
               
