@@ -48,6 +48,10 @@ git:
     {% include "attributes/table_header.md" %}
 
     <tbody>
+        {% with name="branchInTitle", desc="<code>Optional</code> Whether to show branch name in title. <br />Default: <code>false</code>" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+
         {% with name="commitCount", desc="", value="Any positive integer." %}
             {% include "attributes/custom.md" %}
         {% endwith %}
@@ -57,6 +61,18 @@ git:
         {% endwith %}
 
         {% include "attributes/dateFormat.md" %}
+
+        {% with name="lastFolderTitle", desc="<code>Optional</code> Whether to show only last part of directory path instead of full path. <br />Default: <code>false</code>" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+
+        {% with name="showFilesIfEmpty", desc="<code>Optional</code> Whether to show Changed Files section if no files have changed. <br />Default: <code>false</code>" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+
+        {% with name="showModuleName", desc="<code>Optional</code> Whether to show 'Git - ' before information in title. <br />Default: <code>true</code>" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
     </tbody>
 </table>
 
