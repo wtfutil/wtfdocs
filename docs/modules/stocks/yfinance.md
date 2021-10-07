@@ -59,5 +59,5 @@ yfinance:
     </tbody>
 </table>
 
-{% set src="yfinance" %}
+{% set src="stocks/yfinance" %}
 {% include "src_path.md" %}

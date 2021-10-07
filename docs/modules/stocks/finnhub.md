@@ -37,5 +37,5 @@ finnhub:
     </tbody>
 </table>
 
-{% set src="finnhub" %}
+{% set src="stocks/finnhub" %}
 {% include "src_path.md" %}

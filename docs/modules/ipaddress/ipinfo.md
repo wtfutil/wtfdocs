@@ -40,5 +40,5 @@ ipinfo:
     </tbody>
 </table>
 
-{% set src="ipinfo" %}
+{% set src="ipaddresses/ipinfo" %}
 {% include "src_path.md" %}

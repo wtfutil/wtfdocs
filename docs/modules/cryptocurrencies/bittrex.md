@@ -82,5 +82,5 @@ bittrex:
     </tbody>
 </table>
 
-{% set src="cryptocurrencies/bittrex" %}
+{% set src="cryptoexchanges/bittrex" %}
 {% include "src_path.md" %}

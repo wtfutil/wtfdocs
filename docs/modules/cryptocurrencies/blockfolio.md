@@ -66,5 +66,5 @@ blockfolio:
     </tbody>
 </table>
 
-{% set src="cryptocurrencies/blockfolio" %}
+{% set src="cryptoexchanges/blockfolio" %}
 {% include "src_path.md" %}

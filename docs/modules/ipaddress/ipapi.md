@@ -37,5 +37,5 @@ ipinfo:
     </tbody>
 </table>
 
-{% set src="ipapi" %}
+{% set src="ipaddresses/ipapi" %}
 {% include "src_path.md" %}
