@@ -41,6 +41,9 @@ Shows version info.
 
 ## Keyboard Commands
 
+<span class="caption">Key:</span> `Q` or `q` <br />
+<span class="caption">Action:</span> Quit WTF.
+
 <span class="caption">Key:</span> `Ctrl-R` <br />
 <span class="caption">Action:</span> Force-refresh the data for all modules.
 
