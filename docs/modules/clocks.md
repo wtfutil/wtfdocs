@@ -42,9 +42,29 @@ clocks:
     <tbody>
         <tr>
             <td>
+                <code>dateFormat</code>
+                <br />
+                The format of the date strings.
+            </td>
+            <td>Any valid Go date layout which is hadled by <a href="https://golang.org/src/time/format.go">Time.Format.</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>timeFormat</code>
+                <br />
+                The fomat of the time strings.
+            </td>
+            <td>Any valid Go time layout which is handled by <a href="https://golang.org/src/time/format.go">Time.Format.</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <code>locations</code>
                 <br />
-                A list of timezone for the clocks to be displayed.</td><td>Any <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">TZ database timezone.
+                A list of timezone for the clocks to be displayed.
+            </td>
+            <td>Any <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">TZ database timezone.
             </td>
         </tr>
         <tr>
