@@ -5,7 +5,8 @@ site_author: Chris Cummer
 
 # Source code repository
 repo_name: wtfutil/wtf
-repo_url: https://github.com/wtfutil/wtfdocs
+repo_url: https://github.com/wtfutil/wtf
+edit_uri: https://github.com/wtfutil/wtfdocs/edit/master/docs
 
 # Copyright
 copyright: Copyright &copy; 2020 Chris Cummer
