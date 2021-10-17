@@ -103,5 +103,5 @@ cryptolive:
     </tbody>
 </table>
 
-{% set src="cryptocurrencies/cryptolive" %}
+{% set src="cryptoexchanges/cryptolive" %}
 {% include "src_path.md" %}
