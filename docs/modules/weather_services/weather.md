@@ -9,7 +9,7 @@ Displays current weather reports, including current temperature, sunrise time, a
 ```yaml
 weather:
   apiKey: "p0d13*********************************************c3"
-  # From http://openweathermap.org/help/city_list.txt
+  # From http://bulk.openweathermap.org/sample/city.list.json.gz
   cityids:
   - 6173331
   - 3128760
@@ -47,7 +47,7 @@ weather:
         <td>
             <code>cityids</code>
             <br />
-            A list of the <a href="http://openweathermap.org/help/city_list.txt">OpenWeatherMap city IDs</a> for the cities you want to view.
+            A list of the <a href="http://bulk.openweathermap.org/sample/city.list.json.gz">OpenWeatherMap city IDs</a> for the cities you want to view.
         </td>
         <td>A list of positive integers.</td>
     </tr>
