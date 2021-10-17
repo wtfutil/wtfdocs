@@ -20,7 +20,7 @@ ipinfo:
   refreshInterval: 150
 ```
 
-## Screenhots
+## Screenshots
 
 <img class="screenshot" src="/assets/modules/ipinfo.png" width="320" height="199" alt="ipinfo screenshot" />
 
@@ -37,6 +37,16 @@ ipinfo:
         {% with name="colors.value", desc="<em>Optional</em> The default colour for the row values." %}
             {% include "attributes/colors/custom.md" %}
         {% endwith %}
+        <tr>
+            <td>
+                <code>apiToken</code>
+                <br />
+                <em>Optional</em>
+            </td>
+            <td>
+                API token for <a href="https://ipinfo.io/">ipinfo.io</a>.
+            </td>
+        </tr>
     </tbody>
 </table>
 
