@@ -64,7 +64,8 @@ nav:
     - Advanced:             configuration/advanced.md
   - Modules:
     - Home:                 modules/index.md
-    - Asana: modules/asana.md
+    - Airbrake:             modules/airbrake.md
+    - Asana:                modules/asana.md
     - Azure DevOps:         modules/azure_devops.md
     - BambooHR:             modules/bamboohr.md
     - BuildKite:            modules/buildkite.md

@@ -20,7 +20,7 @@ airbrake:
 
 ## Screenshots
 
-<img class="screenshot" src="/assets/modules/airbrake.png" width="578" height="176" alt="airbrake screenshot" />
+<img src="/assets/modules/airbrake.png" class="screenshot"  width="578" height="176" alt="airbrake screenshot" />
 
 ## Attributes
 
@@ -78,7 +78,7 @@ airbrake:
 
     {% include "keyboard/r.md" %}
 
-    {% set t="Switches the display mode between normal and "compare" views" %}
+    {% set t="Switches the display mode between normal and 'compare' views" %}
     {% include "keyboard/t.md" %}
 
     {% include "keyboard/spacer.md" %}
