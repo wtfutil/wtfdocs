@@ -1113,6 +1113,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#args" class="md-nav__link">
+    Args
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#source-code" class="md-nav__link">
     Source Code
   </a>
@@ -1857,6 +1864,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#args" class="md-nav__link">
+    Args
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#source-code" class="md-nav__link">
     Source Code
   </a>
@@ -1885,10 +1899,23 @@
 <p><strong>Note:</strong> IP-API.com has a free-plan rate limit of 120 requests per
 minute.</p>
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><pre><span></span><code><span class="nt">ipinfo</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="nt">ipapi</span><span class="p">:</span>
   <span class="nt">colors</span><span class="p">:</span>
     <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">red</span>
     <span class="nt">value</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">white</span>
+  <span class="c1"># Optional  </span>
+  <span class="nt">args</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;ip&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;isp&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;as&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;city&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;regionName&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;country&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;continent&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;coordinates&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;organization&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;timezone&quot;</span>
+    <span class="p p-Indicator">-</span> <span class="s">&quot;reverseDNS&quot;</span>
   <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
   <span class="nt">position</span><span class="p">:</span>
     <span class="nt">top</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
@@ -1934,11 +1961,232 @@ minute.</p>
     </td>
 </tr>
 
+
+        <tr>
+            <td>
+                <code>args</code>
+                <br />
+                <em>Optional</em> The data to display and the order to display it in.
+            </td>
+            <td>
+                <a href="#args">See args table below.</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="args">Args</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Value</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+    <tbody>
+        <tr>
+            <td>
+                <code>ip</code>
+            </td>
+            <td>
+                IP address
+            </td>
+            <td>
+                <code>173.194.67.94</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>isp</code>
+            </td>
+            <td>
+                ISP name
+            </td>
+            <td>
+                <code>Google</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>as</code>
+            </td>
+            <td>
+                AS number and organization, separated by space (RIR). Empty for IP blocks not being announced in BGP tables.
+            </td>
+            <td>
+                <code>AS15169 Google Inc.</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>asName</code>
+            </td>
+            <td>
+                AS name (RIR). Empty for IP blocks not being announced in BGP tables.
+            </td>
+            <td>
+                <code>GOOGLE</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>district</code>
+            </td>
+            <td>
+                District (subdivision of city)
+            </td>
+            <td>
+                <code>Old Farm District</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>city</code>
+            </td>
+            <td>
+                City
+            </td>
+            <td>
+                <code>Mountain View</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>region</code>
+            </td>
+            <td>
+                Region/state short code (FIPS or ISO)
+            </td>
+            <td>
+                <code>CA</code> or <code>10</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>regionName</code>
+            </td>
+            <td>
+                Region/state
+            </td>
+            <td>
+                <code>California</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>country</code>
+            </td>
+            <td>
+                Country name
+            </td>
+            <td>
+                <code>United States</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>countryCode</code>
+            </td>
+            <td>
+                Two-letter country code <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3166-1 alpha-2</a>
+            </td>
+            <td>
+                <code>US</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>continent</code>
+            </td>
+            <td>
+                Continent name
+            </td>
+            <td>
+                <code>North America</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>continentCode</code>
+            </td>
+            <td>
+                Two-letter continent code
+            </td>
+            <td>
+                <code>NA</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>coordinates</code>
+            </td>
+            <td>
+                Latitude and longitude
+            </td>
+            <td>
+                <code>37.4192, -122.0574</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>postalCode</code>
+            </td>
+            <td>
+                Postal code
+            </td>
+            <td>
+                <code>94043</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>currency</code>
+            </td>
+            <td>
+                National currency
+            </td>
+            <td>
+                <code>USD</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>organization</code>
+            </td>
+            <td>
+                Organization name
+            </td>
+            <td>
+                <code>Google</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>timezone</code>
+            </td>
+            <td>
+                Timezone (tz)
+            </td>
+            <td>
+                <code>America/Los_Angeles</code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>reverseDNS</code>
+            </td>
+            <td>
+                Reverse DNS of the IP
+            </td>
+            <td>
+                <code>wi-in-f94.1e100.net</code>
+            </td>
+        </tr>
     </tbody>
 </table>
 
 <h2 id="source-code">Source Code</h2>
-<p><a href="https://github.com/wtfutil/wtf/tree/master/modules/ipapi">https://github.com/wtfutil/wtf/tree/master/modules/ipapi</a></p>
+<p><a href="https://github.com/wtfutil/wtf/tree/master/modules/ipaddresses/ipapi">https://github.com/wtfutil/wtf/tree/master/modules/ipaddresses/ipapi</a></p>
                 
               
               
