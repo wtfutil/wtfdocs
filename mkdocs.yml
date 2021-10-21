@@ -118,7 +118,6 @@ nav:
     - Resource Usage:       modules/resourceusage.md
     - Rollbar:              modules/rollbar.md
     - Security:             modules/security.md
-    - SpaceX:               modules/spacex.md
     - Sports:
       - Football:           modules/sports/football.md
       - NBA Score:          modules/sports/nbascore.md
