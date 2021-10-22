@@ -226,6 +226,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wtfutil.com/modules/covid/</loc>
+         <lastmod>2021-10-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wtfutil.com/modules/datadog/</loc>
          <lastmod>2021-10-22</lastmod>
          <changefreq>daily</changefreq>
