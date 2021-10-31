@@ -107,6 +107,7 @@ nav:
     - Jira:                 modules/jira.md
     - Krisinformation:      modules/krisinformation.md
     - Kubernetes:           modules/kubernetes.md
+    - Logger:               modules/logger.md
     - Mercurial:            modules/mercurial.md
     - New Relic:            modules/newrelic.md
     - OpsGenie:             modules/opsgenie.md
