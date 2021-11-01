@@ -16,7 +16,7 @@ docker:
     left: 0
     height: 3
     width: 3
-  refreshInterval: 1
+  refreshInterval: 1s
 ```
 
 ## Screenshots

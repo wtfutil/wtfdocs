@@ -24,7 +24,7 @@ weather:
     left: 2
     height: 1
     width: 1
-  refreshInterval: 900
+  refreshInterval: 15m
   tempUnit: "C"
   useEmoji: true
 ```

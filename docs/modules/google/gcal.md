@@ -36,7 +36,7 @@ gcal:
     left: 0
     height: 4
     width: 1
-  refreshInterval: 300
+  refreshInterval: 5m
   secretFile: "~/.config/wtf/gcal/client_secret.json"
   showDeclined: true
   showEndTime: false

@@ -12,7 +12,7 @@ cdsQueue:
     left: 0
     height: 3
     width: 2
-  refreshInterval: 8
+  refreshInterval: 8s
   apiURL: https://api.cds.localhost.local
   token: xxxxxxxxxxxx
 ```

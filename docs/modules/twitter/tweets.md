@@ -32,7 +32,7 @@ twitter:
     left: 1
     height: 1
     width: 1
-  refreshInterval: 20000
+  refreshInterval: 20000s
   screenName: "wtfutil"
 ```
 
@@ -48,7 +48,7 @@ twitter:
     left: 1
     height: 1
     width: 1
-  refreshInterval: 20000
+  refreshInterval: 20000s
   screenNames:
   - "golang"
   - "wtfutil"

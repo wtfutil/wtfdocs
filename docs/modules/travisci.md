@@ -19,7 +19,7 @@ travisci:
     height: 1
     width: 2
   pro: false
-  refreshInterval: 900
+  refreshInterval: 15m
 ```
 
 ## Screenshots

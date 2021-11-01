@@ -17,7 +17,7 @@ transmission:
     left: 3
     width: 2
     height: 1
-  refreshInterval: 3
+  refreshInterval: 3s
   username: "transmission"
 ```
 

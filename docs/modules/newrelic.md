@@ -18,7 +18,7 @@ newrelic:
     left: 3
     height: 1
     width: 2
-  refreshInterval: 900
+  refreshInterval: 15m
 ```
 
 ## Screenshots

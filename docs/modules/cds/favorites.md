@@ -12,7 +12,7 @@ cdsFavorites:
     left: 0
     height: 2
     width: 2
-  refreshInterval: 8
+  refreshInterval: 8s
   apiURL: https://api.cds.localhost.local
   token: xxxxxxxxxxxx
   hideTags:

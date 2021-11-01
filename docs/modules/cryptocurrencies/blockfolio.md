@@ -18,7 +18,7 @@ blockfolio:
     left: 1
     width: 1
     height: 1
-  refreshInterval: 400
+  refreshInterval: 400s
 ```
 
 ## Screenshots

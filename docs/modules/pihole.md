@@ -17,7 +17,7 @@ pihole:
     left: 0
     height: 2
     width: 2
-  refreshInterval: 60
+  refreshInterval: 1m
   showSummary: true
   showTopItems: 5
   showTopClients: 5

@@ -16,7 +16,7 @@ feedreader:
     left: 1
     height: 1
     width: 2
-  refreshInterval: 14400
+  refreshInterval: 4h
 ```
 
 ## Screenshots

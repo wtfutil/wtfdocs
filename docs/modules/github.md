@@ -33,7 +33,7 @@ github:
     left: 3
     height: 2
     width: 2
-  refreshInterval: 300
+  refreshInterval: 5m
   repositories:
     - "wtfutil/wtf"
     - "wtfutil/docs"

@@ -15,7 +15,7 @@ airbrake:
     left: 0
     width: 3
     height: 1
-  refreshInterval: 60
+  refreshInterval: 1m
 ```
 
 ## Screenshots

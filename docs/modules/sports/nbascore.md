@@ -12,7 +12,7 @@ nbascore:
     left: 2
     height: 1
     width: 1
-  refreshInterval: 600
+  refreshInterval: 10m
 ```
 
 ## Keyboard

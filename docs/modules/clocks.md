@@ -25,7 +25,7 @@ clocks:
     left: 0
     height: 1
     width: 1
-  refreshInterval: 15
+  refreshInterval: 15s
   # Valid options are: alphabetical, chronological, natural
   sort: "alphabetical"
 ```

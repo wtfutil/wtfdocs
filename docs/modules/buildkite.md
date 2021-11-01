@@ -11,7 +11,7 @@ buildkite:
   apiKey: "p0d13*********************************************c3"
   enabled: true
   organizationSlug: "acme-corp"
-  refreshInterval: 60
+  refreshInterval: 1m
   position:
     top: 1
     left: 1

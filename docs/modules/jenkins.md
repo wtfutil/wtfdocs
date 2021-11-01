@@ -13,7 +13,7 @@ jenkins:
     left: 3
     height: 2
     width: 3
-  refreshInterval: 300
+  refreshInterval: 5m
   successBallColor: "green"
   jobNameRegex: ^[a-z]+\[[0-9]+\]$
   url: "https://jenkins.domain.com/jenkins/view_url"

@@ -21,7 +21,7 @@ gspreadsheets:
     left: 0
     width: 1
     height: 1
-  refreshInterval: "300"
+  refreshInterval: "5m"
   secretFile: "~/.config/wtf/gspreadsheets/client_secret.json"
   sheetId: "id_of_google_spreadsheet"
 ```

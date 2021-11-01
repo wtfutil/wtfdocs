@@ -15,7 +15,7 @@ gitter:
     height: 1
     width: 4
   roomUri: wtfutil/Lobby
-  refreshInterval: 300
+  refreshInterval: 5m
 ```
 
 ## Screenshots

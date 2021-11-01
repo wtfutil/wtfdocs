@@ -26,7 +26,7 @@ feedreader:
     width: 1
     height: 1
   title: "Hacker News"
-  refreshInterval: 14400
+  refreshInterval: 4h
 ```
 
 ## Attributes

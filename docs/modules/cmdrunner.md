@@ -15,7 +15,7 @@ cmdrunner:
     left: 1
     height: 1
     width: 3
-  refreshInterval: 30
+  refreshInterval: 30s
 ```
 
 ## Attributes
@@ -105,7 +105,7 @@ istats:
     left: 3
     height: 2
     width: 2
-  refreshInterval: 1
+  refreshInterval: 1s
 ```
 
 ### Status Pages
@@ -138,7 +138,7 @@ slack_status:
     left: 0
     height: 3
     width: 4
-  refreshInterval: 30
+  refreshInterval: 30s
 ```
 
 ### wego
@@ -156,7 +156,7 @@ weather:
     left: 0
     height: 1
     width: 2
-  refreshInterval: 100
+  refreshInterval: 100s
 ```
 
 {% set src="cmdrunner" %}

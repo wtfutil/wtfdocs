@@ -28,7 +28,7 @@ mercurial:
     left: 3
     height: 2
     width: 2
-  refreshInterval: 8
+  refreshInterval: 8s
   repositories:
   - "/Users/user/fakelib"
   - "/Users/user/fakeapp"

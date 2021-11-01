@@ -11,7 +11,7 @@ bamboohr:
     left: 1
     height: 2
     width: 1
-  refreshInterval: 900
+  refreshInterval: 15m
   subdomain: "testco"
 ```
 

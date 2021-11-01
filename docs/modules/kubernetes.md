@@ -21,7 +21,7 @@ kubernetes:
     left: 1
     height: 1
     width: 2
-  refreshInterval: 300
+  refreshInterval: 5m
   title: "Build System"
 ```
 

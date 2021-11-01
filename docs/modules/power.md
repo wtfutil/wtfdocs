@@ -14,7 +14,7 @@ power:
     left: 0
     height: 2
     width: 1
-  refreshInterval: 15
+  refreshInterval: 15s
 ```
 
 ## Screenshots

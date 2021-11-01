@@ -17,7 +17,7 @@ textfile:
     left: 4
     height: 2
     width: 1
-  refreshInterval: 15
+  refreshInterval: 15s
   wrapText: true
 ```
 

@@ -14,7 +14,7 @@ hackernews:
     height: 1
     width: 2
   storyType: top
-  refreshInterval: 900
+  refreshInterval: 15m
 ```
 
 ## Screenshots

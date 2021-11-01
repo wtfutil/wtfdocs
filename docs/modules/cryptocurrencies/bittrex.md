@@ -20,7 +20,7 @@ bittrex:
     left: 2
     height: 3
     width: 1
-  refreshInterval: 5
+  refreshInterval: 5s
   summary:
     BTC:
       displayName: Bitcoin

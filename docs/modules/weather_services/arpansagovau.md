@@ -21,7 +21,7 @@ arpansagovau:
         left: 0
         height: 1
         width: 1
-    refreshInterval: 900
+    refreshInterval: 15m
 ```
 
 <img class="screenshot" src="/assets/modules/arpansa.png" width="350" height="150" alt="arpansagovau module screenshot" />
