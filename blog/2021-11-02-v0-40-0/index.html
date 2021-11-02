@@ -11,14 +11,14 @@
         <meta name="author" content="Chris Cummer">
       
       
-        <link rel="canonical" href="https://wtfutil.com/blog/home/">
+        <link rel="canonical" href="https://wtfutil.com/blog/2021-11-02-v0-40-0/">
       
       <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
     
     
       
-        <title>Home - WTF - the terminal dashboard</title>
+        <title>v0.40.0 Released - WTF - the terminal dashboard</title>
       
     
     
@@ -56,9 +56,9 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="WTF - the terminal dashboard - Home">
+<meta property="og:title" content="WTF - the terminal dashboard - v0.40.0 Released">
 <meta property="og:description" content="None">
-<meta property="og:url" content="https://wtfutil.com/blog/home/">
+<meta property="og:url" content="https://wtfutil.com/blog/2021-11-02-v0-40-0/">
 <meta property="og:image" content="https://wtfutil.com/static/card.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
@@ -66,7 +66,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@wtfutil">
 <meta name="twitter:creator" content="@wtfutil">
-<meta name="twitter:title" content="WTF - the terminal dashboard - Home">
+<meta name="twitter:title" content="WTF - the terminal dashboard - v0.40.0 Released">
 <meta name="twitter:description" content="None">
 <meta name="twitter:image" content="https://wtfutil.com/static/card.png">
 
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-wtf-blog" class="md-skip">
+        <a href="#added" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              v0.40.0 Released
             
           </span>
         </div>
@@ -266,15 +266,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../home/" class="md-tabs__link">
         Blog
       </a>
     </li>
@@ -1681,14 +1679,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       <label class="md-nav__link" for="__nav_6">
         Blog
@@ -1704,21 +1700,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../home/" class="md-nav__link">
         Home
       </a>
-      
     </li>
   
 
@@ -1799,8 +1785,28 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    ⚡️ Added
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    🐞 Fixed
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1812,95 +1818,37 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/wtfutil/wtfdocs/edit/master/docs/blog/home.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/wtfutil/wtfdocs/edit/master/docs/blog/2021-11-02-v0-40-0.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="the-wtf-blog">The WTF Blog</h1>
+                  <h1>v0.40.0 Released</h1>
+                
+                <p><small>2021-11-02 10:49:07-08:00</small></p>
+<p>Also known as <a href="https://hacktoberfest.digitalocean.com">The Hacktoberfest Release</a>. Lots of good stuff in this one, including some notable bug fixes and a closed potential security vulnerability.</p>
+<p>Now <a href="https://github.com/wtfutil/wtf/releases/tag/v0.40.0">available here</a>.</p>
+<h3 id="added">⚡️ Added</h3>
 <ul>
-<li><a href="../2021-11-02-v0-40-0">2021-11-02 v0.40.0 Released</a></li>
+<li>Numerous improvements to the display of the Git module, <a href="https://github.com/wtfutil/wtf/pull/1102">#1102</a> by <a href="https://github.com/tadeaspaule">@tadeaspaule</a></li>
+<li>Updated to Go 1.17, by <a href="https://github.com/nontw">nontw</a></li>
+<li><a href="https://github.com/wtfutil/wtf/tree/master/modules/airbrake">Airbrake module</a> added, by <a href="https://github.com/kyrylo">@kyrylo</a></li>
+<li>Displays the battery level of connected devices, if the level can be read by <code>ioreg</code>, on MacOS, <a href="https://github.com/wtfutil/wtf/issues/1108">#1108</a> by <a href="https://github.com/senorprogrammer">@senorprogrammer</a></li>
+<li>Adds an <code>args</code> setting to <a href="https://wtfutil.com/modules/ipaddress/ipapi/">IP API</a> for defining which fields are displayed, by <a href="https://github.com/Choromanski">@Choromanski</a></li>
+<li><a href="https://wtfutil.com/modules/security/">Security module</a> no longer displays wifi info if wifi is missing or disabled, <a href="https://github.com/wtfutil/wtf/issues/1124">#1124</a> by <a href="https://github.com/yosmoc">@yosmoc</a></li>
+<li><code>q</code> now quits WTF. Added as a new global hotkey, by <a href="https://github.com/thuan1412">@thuan1412</a></li>
+<li><a href="https://wtfutil.com/modules/digitalocean/">DigitalOcean module</a> now properly displays the droplet region, <a href="https://github.com/wtfutil/wtf/issues/1053">#1053</a> by <a href="https://github.com/yosmoc">@yosmoc</a></li>
+<li><a href="https://wtfutil.com/modules/google/gcal/">gCal module</a> now supports multiple configurations with different email addresses, <a href="https://github.com/wtfutil/wtf/issues/1016">#1016</a> by <a href="https://github.com/Seanstoppable">@Seanstoppable</a></li>
+<li>All modules now support sub-1 second refresh intervals by specifying an optional time unit (ie: <code>50ms</code>, <code>20s</code>), <a href="https://github.com/wtfutil/wtf/issues/1103">#1103</a> by <a href="https://github.com/ResamVi">@ResamVi</a></li>
 </ul>
-<p></p>
-
+<h3 id="fixed">🐞 Fixed</h3>
 <ul>
-<li><a href="../2021-09-06-v0-39-0">2021-09-06 v0.39.0 Released</a></li>
+<li><a href="https://wtfutil.com/modules/github/">GitHub module</a> no longer crashes when selecting different items across multiple repos, by <a href="https://github.com/Seanstoppable">@Seanstoppable</a></li>
+<li><code>make lint</code> errors fixed, <a href="https://github.com/wtfutil/wtf/issues/1127">#1127</a> by <a href="https://github.com/yosmoc">@yosmoc</a></li>
+<li><code>jwt-go</code> replaced by <code>golang-jwt</code>, because security vulnerabilities, <a href="https://github.com/wtfutil/wtf/issues/1121">#1121</a> by <a href="https://github.com/siddhant94">@siddhant94</a></li>
 </ul>
-<p></p>
-
-<ul>
-<li><a href="../2021-03-23-v0-36-0">2021-01-03 v0.36.0 Released</a></li>
-</ul>
-<p></p>
-
-<ul>
-<li><a href="../2021-01-03-v0-35-0">2021-01-03 v0.35.0 Released</a></li>
-</ul>
-<p></p>
-
-<ul>
-<li><a href="../2020-11-08-v0-34-0">2020-11-08 v0.34.0 Released</a></li>
-</ul>
-<p></p>
-
-<ul>
-<li><a href="../2020-10-13-v0-33-0">2020-10-13 v0.33.0 Released</a></li>
-</ul>
-<p></p>
-
-<ul>
-<li><a href="../2020-09-23-v0-32-0">2020-09-23 v0.32.0 Released</a></li>
-</ul>
-<p></p>
-
-<ul>
-<li><a href="../2020-04-26-v0-29-0">2020-04-26 v0.29.0 Released</a></li>
-</ul>
-<p></p>
-
-<ul>
-<li><a href="../2020-03-15-v0-28-0">2020-03-15 v0.28.0 Released</a></li>
-</ul>
-<p></p>
-
-<ul>
-<li><a href="../2020-02-23-v0-27-0">2020-02-23 v0.27.0 Released</a></li>
-<li><a href="../2020-02-04-v0-26-0">2020-02-04 v0.26.0 Released</a></li>
-</ul>
-<p></p>
-
-<ul>
-<li><a href="../2019-11-10-v0-24-0">2019-11-10 v0.24.0 Released</a></li>
-<li><a href="../monochrome-retro-display">2019-11-10 Monochrome Retro Display</a></li>
-</ul>
-<p></p>
-
-<ul>
-<li><a href="../2019-10-11-v0-23-0">2019-10-11 v0.23.0 Released</a></li>
-</ul>
-<p></p>
-
-<ul>
-<li><a href="../2019-09-12-v0-22-0">2019-09-12 v0.22.0 Released</a></li>
-</ul>
-<p></p>
-
-<ul>
-<li><a href="../2019-08-29-v0-21-0">2019-08-29 v0.21.0 Released</a></li>
-<li><a href="../2019-08-20-v0-20-0">2019-08-20 v0.20.0 Released</a></li>
-</ul>
-<p></p>
-
-<ul>
-<li><a href="../2019-07-31-v0-19-1">2019-07-31 v0.19.1 Released</a></li>
-<li><a href="../2019-07-27-v0-19-0">2019-07-27 v0.19.0 Released</a></li>
-<li><a href="../2019-07-20-v0-18-0">2019-07-20 v0.18.0 Released</a></li>
-<li><a href="../2019-07-16-v0-17-1">2019-07-16 v0.17.1 Released</a></li>
-<li><a href="../2019-07-12-homebrew-installation">2019-07-12 Homebrew Installation</a></li>
-<li><a href="../2019-07-10-wtfutil-release">2019-07-10 WTFUtil Release</a></li>
-<li><a href="../2019-07-09-v0-14-0">2019-07-09 v0.14.0 Released</a></li>
-<li><a href="../2019-07-09-rss-for-releases">2019-07-09 RSS for Releases</a></li>
-</ul>
+                
+                  
                 
               
               
@@ -1916,41 +1864,6 @@
       
         
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../../development/creating_new_modules/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Creating New Modules" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Creating New Modules
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../../sponsors/sponsoring/" class="md-footer__link md-footer__link--next" aria-label="Next: Sponsoring WTF" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Sponsoring WTF
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
