@@ -69,6 +69,7 @@ nav:
     - Asana:                modules/asana.md
     - Azure DevOps:         modules/azure_devops.md
     - BambooHR:             modules/bamboohr.md
+    - Bargraph:             modules/bargraph.md
     - BuildKite:            modules/buildkite.md
     - CDS:
       - CDS Favorites:      modules/cds/favorites.md
