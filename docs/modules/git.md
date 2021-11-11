@@ -32,7 +32,7 @@ git:
     left: 3
     height: 2
     width: 2
-  refreshInterval: 8
+  refreshInterval: 8s
   repositories:
   - "/Users/chris/go/src/github.com/wtfutil/wtf"
   - "/Users/user/fakeapp"

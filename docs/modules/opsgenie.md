@@ -18,7 +18,7 @@ opsgenie:
     left: 1
     height: 2
     width: 1
-  refreshInterval: 21600
+  refreshInterval: 6h
   region: "us"
   schedule: "Primary"
   scheduleIdentifierType: "id"
@@ -36,7 +36,7 @@ opsgenie:
     left: 1
     height: 2
     width: 1
-  refreshInterval: 21600
+  refreshInterval: 6h
   region: "us"
   schedule:
   - "Primary"

@@ -21,7 +21,7 @@ digitalocean:
     left: 2
     width: 2
     height: 2
-  refreshInterval: 15
+  refreshInterval: 15s
   title: "🦈 DigitalOcean"
 ```
 
@@ -43,7 +43,7 @@ digitalocean:
     left: 2
     width: 2
     height: 2
-  refreshInterval: 15
+  refreshInterval: 15s
   title: "🦈 DigitalOcean"
 ```
 

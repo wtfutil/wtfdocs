@@ -23,7 +23,7 @@ jira:
     height: 1
     width: 2
   project: "ProjectA"
-  refreshInterval: 900
+  refreshInterval: 15m
   username: "chris.cummer"
   verifyServerCertificate: true
 ```
@@ -50,7 +50,7 @@ jira:
     height: 1
     width: 2
   project: ["ProjectA", "ProjectB"]
-  refreshInterval: 900
+  refreshInterval: 15m
   username: "chris.cummer"
   verifyServerCertificate: true
 ```

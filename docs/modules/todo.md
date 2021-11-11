@@ -19,7 +19,7 @@ todo:
     left: 2
     height: 2
     width: 1
-  refreshInterval: 3600
+  refreshInterval: 1h
 ```
 
 ## Screenshots

@@ -18,7 +18,7 @@ krisinformation:
   country: true
   maxitems: 5
   maxage: 1000
-  refreshInterval: 3600
+  refreshInterval: 1h
   position:
     top: 0
     left: 0

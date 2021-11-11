@@ -21,7 +21,7 @@ hibp:
     left: 1
     height: 1
     width: 2
-  refreshInterval: 43200
+  refreshInterval: 12h
   since: "2019-06-22"
 ```
 

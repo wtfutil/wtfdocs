@@ -18,7 +18,7 @@ finnhub:
     left: 0
     height: 2
     width: 2
-  refreshInterval: 5
+  refreshInterval: 5s
 ```
 
 ## Attributes

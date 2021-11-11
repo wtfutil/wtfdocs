@@ -14,7 +14,7 @@ uptimerobot:
     left: 1
     height: 2
     width: 1
-  refreshInterval: 3600
+  refreshInterval: 1h
   uptimePeriods: 7-30
 ```
 

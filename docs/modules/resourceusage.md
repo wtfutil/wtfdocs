@@ -13,7 +13,7 @@ resourceusage:
     left: 1
     height: 1
     width: 1
-  refreshInterval: 1
+  refreshInterval: 1s
   showCPU: true
   showMem: true
   showSwp: true

@@ -13,7 +13,7 @@ subreddit:
     left: 1
     height: 1
     width: 2
-  refreshInterval: 900
+  refreshInterval: 15m
   sortOrder: top
   subreddit: "news"
   topTimePeriod: month

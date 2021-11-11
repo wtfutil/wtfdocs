@@ -29,7 +29,7 @@ gerrit:
   projects:
   - org/test-project"
   - dotfiles
-  refreshInterval: 300
+  refreshInterval: 5m
   username: "myname"
   verifyServerCertificate: false
 ```

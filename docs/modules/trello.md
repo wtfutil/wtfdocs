@@ -18,7 +18,7 @@ trello:
     left: 2
     top: 0
     width: 1
-  refreshInterval: 3600
+  refreshInterval: 1h
   username: myname
 ```
 
@@ -39,7 +39,7 @@ trello:
     left: 2
     top: 0
     width: 1
-  refreshInterval: 3600
+  refreshInterval: 1h
   username: myname
 ```
 

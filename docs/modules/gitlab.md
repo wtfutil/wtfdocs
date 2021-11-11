@@ -24,7 +24,7 @@ gitlab:
   projects:
     - "gitlab-org/gitlab-ce"
     - "gitlab-org/release/tasks"
-  refreshInterval: 300
+  refreshInterval: 5m
   username: "wtfutil"
 ```
 

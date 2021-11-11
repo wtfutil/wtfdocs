@@ -50,7 +50,7 @@ football:
     left: 0
     height: 4
     width: 3
-  refreshInterval: 1000
+  refreshInterval: 1000s
   title: "⚽"
 ```
 

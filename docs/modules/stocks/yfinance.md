@@ -24,7 +24,7 @@ yfinance:
   enabled: true
   title: "Stocks 🚀"
   sort: true
-  refreshInterval: 60
+  refreshInterval: 1m
   symbols:
     - "DOCN"
     - "GLE.PA"

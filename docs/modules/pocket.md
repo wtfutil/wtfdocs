@@ -13,7 +13,7 @@ pocket:
         height: 4
         width: 2
     consumerKey: '88*******************'
-    refreshInterval: 1
+    refreshInterval: 1s
 ```
 
 ## Attributes

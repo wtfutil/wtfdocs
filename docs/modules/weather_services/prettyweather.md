@@ -16,7 +16,7 @@ prettyweather:
         left: 5
         height: 1
         width: 1
-    refreshInterval: 300
+    refreshInterval: 5m
     unit: "m"
     view: 0
     language: "en"

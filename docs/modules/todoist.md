@@ -15,7 +15,7 @@ todoist:
     width: 1
   projects:
     - 122247497
-  refreshInterval: 3600
+  refreshInterval: 1h
 ```
 
 ## Screenshots
