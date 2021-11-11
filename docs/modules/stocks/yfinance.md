@@ -22,7 +22,7 @@ The fourth columns will show a different icon depending on the current market ch
 ```yaml
 yfinance:
   enabled: true
-  title: "Stocks 🚀"
+  title: "Stock and exchange rate 🚀"
   sort: true
   refreshInterval: 1m
   symbols:
@@ -32,6 +32,9 @@ yfinance:
     - "ICAD.PA"
     - "ACA.PA"
     - "ORA.PA"
+    - "EURUSD=X"
+    - "USDCAD=X"
+    - "CADJPY=X"
   position:
     top: 1
     left: 0
