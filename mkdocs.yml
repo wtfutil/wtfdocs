@@ -88,7 +88,6 @@ nav:
     - Digital Clock:        modules/digitalclock.md
     - DigitalOcean:         modules/digitalocean.md
     - Docker:               modules/docker.md
-    - Exchange Rates:       modules/exchange_rates.md
     - Feed Reader:          modules/feedreader.md
     - Gerrit:               modules/gerrit.md
     - Git:                  modules/git.md

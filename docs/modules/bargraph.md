@@ -18,7 +18,7 @@ spotify:
   refreshInterval: 0
 ``` 
 
-{## Screenshots
+## Screenshots
 
 <img src="/assets/modules/bargraph.png" class="screenshot" width="320" height="191" alt="baargraph screenshot" />
 
