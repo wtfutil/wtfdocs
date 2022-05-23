@@ -46,7 +46,7 @@ clocks:
                 <br />
                 The format of the date strings.
             </td>
-            <td>Any valid Go date layout which is hadled by <a href="https://golang.org/src/time/format.go">Time.Format.</a>
+            <td>Any valid Go date layout which is handled by <a href="https://golang.org/src/time/format.go">Time.Format.</a>
             </td>
         </tr>
         <tr>
