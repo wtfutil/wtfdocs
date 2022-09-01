@@ -57,7 +57,7 @@ trello:
             {% include "attributes/custom.md" %}
         {% endwith %}
 
-        {% with name="Trello", envvar="WTF_TRELLO_APP_KEY" %}
+        {% with name="Trello", envvar="WTF_TRELLO_API_KEY" %}
             {% include "attributes/apikey.md" %}
         {% endwith %}
 
