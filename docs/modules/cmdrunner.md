@@ -36,7 +36,7 @@ cmdrunner:
     <td>
         <code>cmd</code>
         <br />
-        The terminal command to be run, withouth the arguments. Ie: <code>ping</code>, <code>whoami</code>, <code>curl</code>.
+        The terminal command to be run, without the arguments. Ie: <code>ping</code>, <code>whoami</code>, <code>curl</code>.
     </td>
     <td></td>
 </tr>
