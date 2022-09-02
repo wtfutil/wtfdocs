@@ -37,9 +37,18 @@ theme:
   logo: assets/logo.png
   include_search_page: false
   language: en
-  palette:
-    primary: deep purple
   search_index_only: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 # Customization
 extra:
