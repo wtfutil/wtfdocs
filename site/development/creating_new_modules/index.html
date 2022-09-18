@@ -1933,20 +1933,32 @@
 <li>The source code for WTF (<code>git clone https://github.com/wtfutil/wtf</code>)</li>
 </ul>
 <h2 id="creating-a-new-text-widget">Creating a New Text Widget</h2>
-<p>Use <code>go generate -run=text</code> to create a new widget called <strong>NewTextWidget</strong>. You can change the name of the generated widget by setting an environment variable called <code>WTF_WIDGET_NAME</code>.</p>
+<ol>
+<li>
+<p>Generate a new module using generator<br />
+   Use <code>go run generator/textwidget.go</code> to create a new widget called <strong>NewTextWidget</strong>. You can change the name of the generated widget by setting an environment variable called <code>WTF_WIDGET_NAME</code>.</p>
 <p>For example, to generate a new widget called <em>MyNewWidget</em> on macOs or linux, the command would be:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># as a single line</span>
-❯ <span class="nv">WTF_WIDGET_NAME</span><span class="o">=</span>MyNewWidget go generate -run<span class="o">=</span>text
+❯ <span class="nv">WTF_WIDGET_NAME</span><span class="o">=</span>MyNewWidget go run generator/textwidget.go
 
 <span class="c1"># setting the name separately</span>
 ❯ <span class="nb">export</span> <span class="nv">WTF_WIDGET_NAME</span><span class="o">=</span>MyNewWidget
-❯ go generate -run<span class="o">=</span>text
+❯ go run generator/textwidget.go
 </code></pre></div>
 <p>The equivalent using Windows PowerShell would be</p>
 <div class="highlight"><pre><span></span><code>❯ <span class="nv">$env</span>:WTF_WIDGET_NAME <span class="o">=</span> <span class="s2">&quot;MyNewWidget&quot;</span>
-❯ go generate -run<span class="o">=</span>text
+❯ go run generator<span class="se">\t</span>extwidget.go 
 </code></pre></div>
 <p>The new widget is generated using the template in <code>textwidget.tpl</code></p>
+</li>
+<li>
+<p>Register your newly generated module in app  </p>
+</li>
+</ol>
+<p>The last step is to register your new module in <code>app/widget_maker.go</code>, you will have to import your module and define a new case with your module name.</p>
+<ol>
+<li>Run you app, your module should be present !</li>
+</ol>
 <h2 id="source-code">Source Code</h2>
 <div class="highlight"><pre><span></span><code>wtf/generator/
 </code></pre></div>
