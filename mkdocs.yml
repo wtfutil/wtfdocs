@@ -143,6 +143,7 @@ nav:
     - Transmission:         modules/transmission.md
     - TravisCI:             modules/travisci.md
     - Trello:               modules/trello.md
+    - Twitch:               modules/twitch.md
     - Twitter:
       - Stats:              modules/twitter/stats.md
       - Tweets:             modules/twitter/tweets.md
