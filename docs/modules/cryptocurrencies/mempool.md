@@ -4,6 +4,12 @@ Get the current sat/vB prices to use for Bitcoin transactions using [Mempool](ht
 
 ## Configuration
 
+### Without borders
+`width` x `height`: 18 chars x 4 chars
+
+### With borders
+20 chars x 6 chars
+
 ```yaml
 mempool:
     enabled: true
@@ -11,8 +17,8 @@ mempool:
     position:
     top: 1
     left: 0
-    width: 9 # 18 characters
-    height: 4 # 4 characters
+    width: 9 
+    height: 4
     refreshInterval: 120
 ```
 
