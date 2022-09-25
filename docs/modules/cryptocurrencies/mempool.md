@@ -15,10 +15,10 @@ mempool:
     enabled: true
     border: false
     position:
-    top: 1
-    left: 0
-    width: 9 
-    height: 4
+        top: 1
+        left: 0
+        width: 9 
+        height: 4
     refreshInterval: 120
 ```
 
