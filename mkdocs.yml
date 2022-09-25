@@ -92,6 +92,7 @@ nav:
       - Bittrex:            modules/cryptocurrencies/bittrex.md
       - Blockfolio:         modules/cryptocurrencies/blockfolio.md
       - CryptoLive:         modules/cryptocurrencies/cryptolive.md
+      - Mempool:            modules/cryptocurrencies/mempool.md
     - Datadog:              modules/datadog.md
     - DEV (Dev.to):         modules/devto.md
     - Digital Clock:        modules/digitalclock.md
