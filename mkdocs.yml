@@ -148,6 +148,7 @@ nav:
       - Tweets:             modules/twitter/tweets.md
     - Updown:               modules/updown.md
     - UptimeRobot:          modules/uptimerobot.md
+    - Urlcheck:             modules/urlcheck.md
     - VictorOps:            modules/victorops.md
     - Weather Services:
       - ARPANSA:            modules/weather_services/arpansagovau.md
