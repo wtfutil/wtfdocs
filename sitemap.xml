@@ -496,6 +496,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://wtfutil.com/modules/cryptocurrencies/mempool/</loc>
+         <lastmod>2022-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://wtfutil.com/modules/google/analytics/</loc>
          <lastmod>2022-10-27</lastmod>
          <changefreq>daily</changefreq>
