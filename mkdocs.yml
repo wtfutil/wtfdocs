@@ -121,6 +121,7 @@ nav:
     - Logger:               modules/logger.md
     - Mercurial:            modules/mercurial.md
     - New Relic:            modules/newrelic.md
+    - NextBus:              modules/nextbus.md
     - OpsGenie:             modules/opsgenie.md
     - PagerDuty:            modules/pagerduty.md
     - Pihole:               modules/pihole.md
