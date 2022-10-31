@@ -92,6 +92,7 @@ nav:
       - Bittrex:            modules/cryptocurrencies/bittrex.md
       - Blockfolio:         modules/cryptocurrencies/blockfolio.md
       - CryptoLive:         modules/cryptocurrencies/cryptolive.md
+      - Mempool:            modules/cryptocurrencies/mempool.md
     - Datadog:              modules/datadog.md
     - DEV (Dev.to):         modules/devto.md
     - Digital Clock:        modules/digitalclock.md
@@ -121,6 +122,7 @@ nav:
     - Logger:               modules/logger.md
     - Mercurial:            modules/mercurial.md
     - New Relic:            modules/newrelic.md
+    - NextBus:              modules/nextbus.md
     - OpsGenie:             modules/opsgenie.md
     - PagerDuty:            modules/pagerduty.md
     - Pihole:               modules/pihole.md
@@ -143,6 +145,7 @@ nav:
     - Transmission:         modules/transmission.md
     - TravisCI:             modules/travisci.md
     - Trello:               modules/trello.md
+    - Twitch:               modules/twitch.md
     - Twitter:
       - Stats:              modules/twitter/stats.md
       - Tweets:             modules/twitter/tweets.md

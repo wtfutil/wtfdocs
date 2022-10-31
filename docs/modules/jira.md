@@ -82,7 +82,7 @@ jira:
             {% include "attributes/custom.md" %}
         {% endwith %}
 
-        {% with name="project", desc="Your Jira corporate domain.", value="" %}
+        {% with name="project", desc="An array of projects to get data from", value="" %}
             {% include "attributes/custom.md" %}
         {% endwith %}
 

@@ -10,6 +10,7 @@ Displays current weather reports, including current temperature, sunrise time, a
 weather:
   apiKey: "p0d13*********************************************c3"
   # From http://bulk.openweathermap.org/sample/city.list.json.gz
+  compact: false
   cityids:
   - 6173331
   - 3128760
@@ -30,8 +31,13 @@ weather:
 ```
 
 ## Screenshots
-
+### Default
 ![Weather](/assets/modules/weather.png)
+
+### Compact variant
+`compact: true`
+
+![Weather](/assets/modules/weather-compact.png)
 
 ## Attributes
 
@@ -82,6 +88,14 @@ weather:
             <code>useEmoji</code>
             <br />
             <em>Optional</em> Whether or not to display emoji characters in the title. Default: <code>true</code>.
+        </td>
+        <td><code>true</code>, <code>false</code></td>
+    </tr>
+    <tr>
+        <td>
+            <code>compact</code>
+            <br />
+            <em>Optional</em> Whether or not to be compact mode. This shortens the sunset/sunrise line and also removes the double line breaks under conditions and under the temperatures. Default: <code>false</code>.
         </td>
         <td><code>true</code>, <code>false</code></td>
     </tr>

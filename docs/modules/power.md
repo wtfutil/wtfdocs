@@ -23,3 +23,17 @@ power:
 
 {% set src="power" %}
 {% include "src_path.md" %}
+
+## Dependencies
+
+### Linux
+
+[upower](https://upower.freedesktop.org/)
+
+### FreeBSD
+
+[apm](https://www.freebsd.org/cgi/man.cgi?apm)
+
+### MacOS
+
+[pmset](https://en.wikipedia.org/wiki/Pmset)
