@@ -2,11 +2,7 @@
 
 Checks if your URLs are responding.
 
-This modue will continously request the headers for a given list of URL and then displays theirs status codes. 
-
-## Screenshots
-
-<img class="screenshot" src="/assets/modules/urlcheck.png" width="600" height="273" alt="urlcheck screenshot" />
+This module will continously request the headers for a given list of URLs and then displays theirs status codes. 
 
 ## Configuration
 
@@ -27,6 +23,10 @@ urlcheck:
     width: 1
   refreshInterval: 30
 ```
+
+## Screenshots
+
+<img src="/assets/modules/url_check.png" class="screenshot" width="600" height="273" alt="urlcheck screenshot" />
 
 ## Attributes
 
