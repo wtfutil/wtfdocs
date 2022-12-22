@@ -17,6 +17,9 @@ Easy! Just **click the button below** and following along with GitHub.
 A **special thanks** to our sponsors:
 
 <p>
+    <a href="https://home.robusta.dev/?utm_source=wtfutil&utm_medium=oss-sponsorship&utm_id=wtfutil-sponsorship" target="_blank">
+        <img src="/assets/sponsors/robusta.png" height="60" width="176" title="Robusta.dev" alt="Robusta.dev" />
+    </a>
     <a href="https://airbrake.io/?utm_medium=sponsor&utm_source=WTFutill&utm_content=airbrake-home-page&utm_campaign=2021-sponsorships" target="_blank">
         <img src="/assets/sponsors/airbrake.png" height="60" width="176" title="Airbrake" alt="Airbrake" />
     </a>
