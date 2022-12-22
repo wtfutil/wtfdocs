@@ -120,6 +120,7 @@ nav:
     - Krisinformation:      modules/krisinformation.md
     - Kubernetes:           modules/kubernetes.md
     - Logger:               modules/logger.md
+    - Lunar Phase:          modules/lunarphase.md
     - Mercurial:            modules/mercurial.md
     - New Relic:            modules/newrelic.md
     - NextBus:              modules/nextbus.md
