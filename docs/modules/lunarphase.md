@@ -19,8 +19,8 @@ lunarphase:
 ## Screenshots
 
 <p float="left">
-  <img class="screenshot" src="/assets/modules/lunarphase.png" width="320" height="640" alt="lunarphase screenshot" />
-  <img class="screenshot" src="/assets/modules/lunarphase-fr.png" width="640" height="450" alt="lunarphase french screenshot" />
+  <img class="screenshot" src="/assets/modules/lunarphase.png" width="640" height="448" alt="lunarphase screenshot" />
+  <img class="screenshot" src="/assets/modules/lunarphase-fr.png" width="640" height="448" alt="lunarphase french screenshot" />
 </p>
 
 {% set src="lunarphase" %}
