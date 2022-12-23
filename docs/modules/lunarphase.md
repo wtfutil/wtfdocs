@@ -1,6 +1,6 @@
 # Lunar Phase
 
-Displays the phase of the Moon as ASCII art from [Wttr.in](http://wttr.in).
+Displays the phase of the Moon as ASCII art from [Wttr.in](http://wttr.in). The width of the column in which the lunar phase is displayed needs to be large enough for the ASCII graphic to fit or multiple columns must be allocated.
 
 ## Configuration
 
@@ -11,7 +11,7 @@ lunarphase:
     top: 3
     left: 5
     height: 2
-    width: 1
+    width: 2
   language: 'en'
   refreshInterval: 5h
 ```
@@ -20,7 +20,7 @@ lunarphase:
 
 <p float="left">
   <img class="screenshot" src="/assets/modules/lunarphase.png" width="320" height="640" alt="lunarphase screenshot" />
-  <img class="screenshot" src="/assets/modules/lunarphase-fr.png" width="320" height="640" alt="lunarphase french screenshot" />
+  <img class="screenshot" src="/assets/modules/lunarphase-fr.png" width="640" height="450" alt="lunarphase french screenshot" />
 </p>
 
 {% set src="lunarphase" %}
