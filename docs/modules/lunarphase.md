@@ -50,16 +50,19 @@ openUrlUtil:
 
 ## Keyboard
 
-**[Note:]** When using keyboard controls to change the lunar phase day,
-the `lunarphase` module widget title will be updated to reflect the currently
+To use module keyboard controls, first press the number of the module
+displayed in the title of the module widget to give focus to that module.
+To leave module keyboard control mode, press `Esc`.
+
+When using keyboard controls to change the lunar phase day, the
+`lunarphase` module widget title will be updated to reflect the currently
 configured lunar phase day but the module widget will not automatically refresh.
 After selecting the desired day using keyboard controls, refresh the module
 widget by pressing `r`. For example, to display next week's lunar phase,
 press `Up Arrow` or `N` then press `r`. To view the lunar phase 2 days
 previous to the current day, press `Left Arrow` or `p` twice then press `r`.
 
-To view additional informaton in a browser on the lunar phase of the day
-displayed in the module widget title, press `o` or `Enter`.
+The following keyboard controls are supported in the `lunarphase` module:
 
 <table>
   {% include "keyboard/table_header.md" %}
