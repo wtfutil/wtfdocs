@@ -18,6 +18,19 @@ lunarphase:
   timeout: 30
 ```
 
+**[Note:]** The default `wtf` settings for opening a URL in a browser on Linux
+is to open the URL with `xdg-open`. However, `xdg-open` depends on the KDE
+`konqueror` web browser on many systems. An alternate configuration on Linux
+systems where `xdg-open` fails or is unavailable may be necessary. One such
+configuration uses the Gnome `gio` utility. To use `gio` to open URLs, add
+the following to your `wtf` YAML configuration:
+
+```yaml
+openUrlUtil:
+    - 'gio'
+    - 'open'
+```
+
 ## Screenshots
 
 <p float="left">
@@ -26,6 +39,17 @@ lunarphase:
 </p>
 
 ## Keyboard
+
+**[Note:]** When using keyboard controls to change the lunar phase day,
+the `lunarphase` module widget title will be updated to reflect the currently
+configured lunar phase day but the module widget will not automatically refresh.
+After selecting the desired day using keyboard controls, refresh the module
+widget by pressing `r`. For example, to display next week's lunar phase,
+press `Up Arrow` or `N` then press `r`. To view the lunar phase 2 days
+previous to the current day, press `Left Arrow` or `p` twice then press `r`.
+
+To view additional informaton in a browser on the lunar phase of the day
+displayed in the module widget title, press `o` or `Enter`.
 
 <table>
   {% include "keyboard/table_header.md" %}
