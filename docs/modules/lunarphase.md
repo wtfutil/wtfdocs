@@ -1,6 +1,6 @@
 # Lunar Phase
 
-Displays the phase of the Moon as ASCII art from [Wttr.in](http://wttr.in). The width of the column in which the lunar phase is displayed needs to be large enough for the ASCII graphic to fit or multiple columns must be allocated.
+Displays the phase of the Moon as ASCII art from [Wttr.in](http://wttr.in).
 
 ## Configuration
 
@@ -18,8 +18,18 @@ lunarphase:
   timeout: 30
 ```
 
-**[Note:]** The default `wtf` settings for opening a URL in a browser on Linux
-is to open the URL with `xdg-open`. However, `xdg-open` depends on the KDE
+The width of the column in which the lunar phase is displayed needs to be
+large enough for the ASCII graphic to fit or multiple columns must be allocated.
+For example:
+
+```yaml
+grid:
+    columns: [74, 12]
+    rows: [14, 14]
+```
+
+The default `wtf` settings for opening a URL in a browser on Linux is
+to open the URL with `xdg-open`. However, `xdg-open` depends on the KDE
 `konqueror` web browser on many systems. An alternate configuration on Linux
 systems where `xdg-open` fails or is unavailable may be necessary. One such
 configuration uses the Gnome `gio` utility. To use `gio` to open URLs, add
