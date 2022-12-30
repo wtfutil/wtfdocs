@@ -13,7 +13,6 @@ lunarphase:
     left: 5
     height: 2
     width: 2
-  refreshInterval: 5h
   title: 'Phase of the Moon'
   timeout: 30
 ```
@@ -80,6 +79,9 @@ The following keyboard controls are supported in the `lunarphase` module:
 
     {% set p="Display previous day lunar phase" %}
     {% include "keyboard/p.md" %}
+
+    {% set t="Display today's lunar phase" %}
+    {% include "keyboard/t.md" %}
 
     {% set N="Display next week lunar phase" %}
     {% include "keyboard/N.md" %}
