@@ -74,12 +74,14 @@ clocks:
                 The order in which to sort the clocks.
             </td>
             <td>
-                <code>alphabetical</code>, <code>chronological</code>, or <code>natural</code>. 
+                <code>alphabetical</code>, <code>chronological</code>, <code>reversechronological</code> or <code>natural</code>. 
                 <br />
                 <br />
                 <code>alphabetical</code> will sort in acending order by <code>key</code>.
                 <br />
                 <code>chronological</code> will sort in ascending order by date/time.
+                <br />
+                <code>reversechronological</code> will sort in descending order by date/time.
                 <br />
                 <code>natural</code> will maintain the config file ordering.
             </td>
