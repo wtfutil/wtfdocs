@@ -38,3 +38,10 @@ parameter on launch:
 ```bash
 ❯ wtfutil --config=path/to/custom/config.yml
 ```
+
+You can also specify this configuration using hte `WTF_CONFIG` environment variables:
+
+```bash
+❯ export WTF_CONFIG=path/to/custom/config.yml
+❯ wtfutil
+```
