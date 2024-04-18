@@ -20,7 +20,7 @@ spotify:
 
 ## Screenshots
 
-<img src="/assets/modules/bargraph.png" class="screenshot" width="320" height="191" alt="baargraph screenshot" />
+<img src="/assets/modules/bargraph.png" class="screenshot" width="320" height="191" alt="bargraph screenshot" />
 
 {% set src="bargraph" %}
 {% include "src_path.md" %}
