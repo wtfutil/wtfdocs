@@ -7,7 +7,7 @@ weight: 30
 
 # Creating New Modules
 
-The [widgets](glossary/#widget) that you see on the screen are displayed using [modules](glossary/#module). To make it easier to create new modules there is a generator which creates a stub (an empty module). The Go package _generators_ contains generator scripts for different types of widgets.
+The [widgets](/glossary/#widget) that you see on the screen are displayed using [modules](/glossary/#module). To make it easier to create new modules there is a generator which creates a stub (an empty module). The Go package _generators_ contains generator scripts for different types of widgets.
 
 ## Prerequisites
 
