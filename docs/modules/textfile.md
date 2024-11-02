@@ -1,86 +1,38 @@
-# Textfile
+PORTNAME=	wtf
+PORTVERSION=	0.43.0
+DISTVERSIONPREFIX=	v
+PORTREVISION=	10
+CATEGORIES=	sysutils
+PKGNAMEPREFIX=	go-
 
-Displays the contents of the specified text file in the widget.
+MAINTAINER=	hsw@bitmark.com
+COMMENT=	Personal information dashboard for your terminal
+WWW=		https://wtfutil.com
 
-## Configuration
+LICENSE=	MPL20
+LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-```yaml
-textfile:
-  enabled: true
-  filePaths:
-  - "~/Desktop/notes.md"
-  - "~/.config/wtf/config.yml"
-  format: true
-  formatStyle: "dracula"
-  position:
-    top: 5
-    left: 4
-    height: 2
-    width: 1
-  refreshInterval: 15s
-  wrapText: true
-```
+USES=		cpe go:modules
 
-## Screenshots
+GO_MODULE=      github.com/wtfutil/wtf
+GO_BUILDFLAGS=	-ldflags "-X main.version=${DISTVERSION}"
 
-<img class="screenshot" src="/assets/modules/textfile.png" width="320" height="133" alt="textfile screenshot" />
+CPE_VENDOR=	wtfutil
 
-## Attributes
+CONFLICTS=	wtf
 
-## Attributes
+PORTDOCS=	README.md
 
-<table>
-    {% include "attributes/table_header.md" %}
+OPTIONS_DEFINE=	DOCS EXAMPLES
+OPTIONS_SUB=	yes
 
-    <tbody>
-{% with name="filePaths", desc="An array of paths to the files to be displayed in the widget.", value="" %}
-{% include "attributes/custom.md" %}
-{% endwith %}
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
-{% with name="format", desc="<em>Optional</em> Whether or not to try and format and syntax highlight the displayedtext. Default: <code>false</code>", value="<code>true</code>, <code>false</code>" %}
-{% include "attributes/custom.md" %}
-{% endwith %}
+post-install-EXAMPLES-on:
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+	@${FIND} ${WRKSRC}/_sample_configs -name "*.yml" -exec ${INSTALL_DATA} {} \
+	${STAGEDIR}${EXAMPLESDIR}/ \;
 
-{% with name="formatStyle", desc="<em>Optional</em> The style of syntax highlighting to format the text with. Default: <code>vim</code>", value="See <a href='https://github.com/alecthomas/chroma/tree/master/styles'>Chroma styles</a> for all valid options." %}
-{% include "attributes/custom.md" %}
-{% endwith %}
-
-{% include "attributes/wrapText.md" %}
-    </tbody>
-</table>
-
-## Keyboard
-
-<table>
-  {% include "keyboard/table_header.md" %}
-
-  <tbody>
-    {% include "keyboard/foreslash.md" %}
-    {% set return="Opens the text file in whichever text editor is associated  with that file type" %}
-    {% include "keyboard/return.md" %}
-
-    {% include "keyboard/spacer.md" %}
-
-    {% set h="Select the previous file" %}
-    {% include "keyboard/h.md" %}
-
-    {% set l="Select the next file" %}
-    {% include "keyboard/l.md" %}
-
-    {% set o="Opens the text file in whichever text editor is associated  with that file type" %}
-    {% include "keyboard/o.md" %}
-
-    {% include "keyboard/r.md" %}
-
-    {% include "keyboard/spacer.md" %}
-
-    {% set arrowBack="Select the previous file" %}
-    {% include "keyboard/arrowBack.md" %}
-
-    {% set arrowFore="Select the next file" %}
-    {% include "keyboard/arrowFore.md" %}
-  </tbody>
-</table>
-
-{% set src="textfile" %}
-{% include "src_path.md" %}
+.include <bsd.port.mk>
