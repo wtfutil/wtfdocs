@@ -141,6 +141,7 @@ nav:
       - Yahoo Finance:      modules/stocks/yfinance.md
     - Subreddit:            modules/subreddit.md
     - Textfile:             modules/textfile.md
+    - Tmuxinator:           modules/tmuxinator.md
     - Todo:                 modules/todo.md
     - Todoist:              modules/todoist.md
     - Transmission:         modules/transmission.md
