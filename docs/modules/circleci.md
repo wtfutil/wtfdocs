@@ -8,6 +8,7 @@ Displays build information for your CircleCI account.
 circleci:
   apiKey: "p0d13*********************************************c3"
   enabled: true
+  numberOfBuilds: 10
   position:
     top: 4
     left: 1
@@ -30,7 +31,9 @@ circleci:
             {% include "attributes/apikey.md" %}
         {% endwith %}
 
-        
+        {% with name="numberOfBuilds", desc="How many builds to display", value="Any positive integer." %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
     </tbody>
 </table>
 
