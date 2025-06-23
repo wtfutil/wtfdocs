@@ -21,7 +21,7 @@ docker:
 
 ## Screenshots
 
-<img class="screenshot" src="/assets/modules/docker.png" width="275" height="320" alt="github screenshot" />
+<img class="screenshot" src="/assets/modules/docker.png" width="275" height="320" alt="docker screenshot" />
 
 ## Attributes
 
