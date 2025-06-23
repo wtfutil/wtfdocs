@@ -9,7 +9,7 @@ repo_url: https://github.com/wtfutil/wtf
 edit_uri: https://github.com/wtfutil/wtfdocs/edit/master/docs
 
 # Copyright
-copyright: Copyright &copy; 2023 Chris Cummer
+copyright: Copyright &copy; 2025 Chris Cummer
 
 markdown_extensions:
   - admonition
