@@ -77,6 +77,7 @@ nav:
     - Airbrake:             modules/airbrake.md
     - Asana:                modules/asana.md
     - Azure DevOps:         modules/azure_devops.md
+    - Azure Logs:           modules/azure_logs.md
     - BambooHR:             modules/bamboohr.md
     - Bargraph:             modules/bargraph.md
     - BuildKite:            modules/buildkite.md
