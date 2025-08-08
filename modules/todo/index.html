@@ -2176,15 +2176,16 @@
 <h1 id="macro-rendering-error"><em>Macro Rendering Error</em></h1>
 <p><strong>TemplateNotFound</strong>: keyboard/ctrlf.md</p>
 <div class="highlight"><pre><span></span><code>Traceback (most recent call last):
-  File &quot;/home/felicianotech/Repos/wtfutil/wtfdocs/virtual-env/lib/python3.12/site-packages/mkdocs_macros/plugin.py&quot;, line 480, in render
+  File &quot;/home/felicianotech/.asdf/installs/python/3.13.2/lib/python3.13/site-packages/mkdocs_macros/plugin.py&quot;, line 480, in render
     return md_template.render(**page_variables)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/home/felicianotech/Repos/wtfutil/wtfdocs/virtual-env/lib/python3.12/site-packages/jinja2/environment.py&quot;, line 1301, in render
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File &quot;/home/felicianotech/.asdf/installs/python/3.13.2/lib/python3.13/site-packages/jinja2/environment.py&quot;, line 1301, in render
     self.environment.handle_exception()
-  File &quot;/home/felicianotech/Repos/wtfutil/wtfdocs/virtual-env/lib/python3.12/site-packages/jinja2/environment.py&quot;, line 936, in handle_exception
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File &quot;/home/felicianotech/.asdf/installs/python/3.13.2/lib/python3.13/site-packages/jinja2/environment.py&quot;, line 936, in handle_exception
     raise rewrite_traceback_stack(source=source)
   File &quot;&lt;template&gt;&quot;, line 145, in top-level template code
-  File &quot;/home/felicianotech/Repos/wtfutil/wtfdocs/virtual-env/lib/python3.12/site-packages/jinja2/loaders.py&quot;, line 218, in get_source
+  File &quot;/home/felicianotech/.asdf/installs/python/3.13.2/lib/python3.13/site-packages/jinja2/loaders.py&quot;, line 218, in get_source
     raise TemplateNotFound(template)
 jinja2.exceptions.TemplateNotFound: keyboard/ctrlf.md
 </code></pre></div>
