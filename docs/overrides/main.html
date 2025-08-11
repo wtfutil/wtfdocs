@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+{% block announce %}
+You can now follow us on <a rel="me" href="https://social.linodians.com/@WTFutil">
+	<strong>Mastodon</strong></a> and <a href="https://bsky.app/profile/wtfutil.bsky.social">
+    <strong>Bluesky</strong></a>
+{% endblock %}
 {% block extrahead %}
 {% set title = config.site_name %}
 {% if page and page.title and not page.is_homepage %}
