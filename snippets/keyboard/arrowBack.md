@@ -1,6 +1,6 @@
 <tr>
-        <td>
-            <code>←</code>
-        </td>
-        <td>{{ arrowback }}{{ arrowBack }}</td>
-    </tr>
+    <td>
+        <code>←</code>
+    </td>
+    <td>{{ arrowBack }}</td>
+</tr>
