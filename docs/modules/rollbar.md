@@ -31,7 +31,7 @@ rollbar:
     {% include "attributes/table_header.md" %}
 
     <tbody>
-        {% with name="accessToken", desc="Your Rollbar project access token (only needs read capabilities).", value="" %}
+        {% with name="accessToken", desc="Your Rollbar project access token (only needs read capabilities).", value="Leave it empty to use the <code>WTF_ROLLBAR_ACCESS_TOKEN</code> environment variable." %}
             {% include "attributes/custom.md" %}
         {% endwith %}
 
