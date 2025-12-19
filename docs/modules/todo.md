@@ -142,7 +142,7 @@ todo:
     {% include "keyboard/ctrlD.md" %}
 
     {% set ctrlf="Move the selected item to the top of the list" %}
-    {% include "keyboard/ctrlf.md" %}
+    {% include "keyboard/ctrlF.md" %}
 
     {% set ctrlj="Move the selected item down the list" %}
     {% include "keyboard/ctrlJ.md" %}
