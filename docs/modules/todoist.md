@@ -1,22 +1,28 @@
 # Todoist
 
-Displays all items on specified project.
+Displays open tasks, by project.
+A Todoist API token will be needed as well as the project IDs of each project you'd like to browse.
+
+***note:** One way to get the ID of a Todoist project is to open up the webapp (https://app.todoist.com). Browse a project by clicking on it from the sidebar. You'll see a URL like this: `https://app.todoist.com/app/project/<project-name>-<string-id>`. That last piece will be the project ID.*
+
 
 ## Configuration
 
 ```yaml
 todoist:
-  apiKey: "p0d13*********************************************c3"
   enabled: true
+  apiKey: "p0d13*********************************************c3"
   position:
     top: 0
     left: 2
     height: 1
     width: 1
   projects:
-    - 122247497
+    - d7hhdhudhy7yhd9j
+    - dhdh7huhdudh93j8
   refreshInterval: 1h
 ```
+
 
 ## Screenshots
 
@@ -32,7 +38,7 @@ todoist:
             {% include "attributes/apikey.md" %}
         {% endwith %}
 
-        {% with name="projects", desc="The todoist projects to fetch items from.", value="The integer ID of the project." %}
+        {% with name="projects", desc="An array of Todoist project IDs.", value="The string ID of the project." %}
             {% include "attributes/custom.md" %}
         {% endwith %}
     </tbody>
