@@ -4,14 +4,21 @@ This site is built using [Material for MkDocs](https://squidfunk.github.io/mkdoc
 
 ### Development environment setup
 
-1. Install python 3
-2. Create a virtual-env:
+**1. Install python 3**
+
+**2. Create and activate a virtual-env:**
+ - *Linux/macOS:*
 ```bash
 python -m venv virtual-env
 source virtual-env/bin/activate
 ```
-3. `pip install -r requirements.txt`
-4. `mkdocs serve`
+ - *Windows:*
+```bash
+python -m venv virtual-env
+virtual-env\Scripts\activate
+```
+**3. `pip install -r requirements.txt`**
+**4. `mkdocs serve`**
 
 ### To add documentation for a new module
 
