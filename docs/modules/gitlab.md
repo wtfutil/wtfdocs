@@ -2,13 +2,25 @@
 
 Displays information about your projects hosted on GitLab:
 
-#### Open Approval Requests
+#### Stats
 
-All open merge requests that are requesting your approval.
+Total MRs, Issues, and Stars for the currently shown repo.
 
-#### Open Merge Requests
+#### Open Assigned Merge Requests
 
-All open merge requests created by you.
+All open merge requests for which you are the assignee in the currently shown repo.
+
+#### My Merge Requests
+
+All open merge requests created by you in the currently shown repo.
+
+#### Open Assigned Issues
+
+All open Gitlab issues assigned to you in the currently shown repo.
+
+#### My Issues
+
+All open Gitlab issues created by you in the currently shown repo.
 
 ## Configuration
 
