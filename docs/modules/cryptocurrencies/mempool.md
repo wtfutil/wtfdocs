@@ -26,5 +26,18 @@ mempool:
 
 <img class="screenshot" src="/assets/modules/mempool.png" width="300" height="400" alt="mempool screenshot" />
 
+
+## Attributes
+
+<table>
+    {% include "attributes/table_header.md" %}
+
+    <tbody>
+        {% with name="apiURL", desc="The API to pull data from.", value="https://mempool.space/api/v1/fees/recommended" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
+    </tbody>
+</table>
+
 {% set src="cryptoexchanges/mempool" %}
 {% include "src_path.md" %}
