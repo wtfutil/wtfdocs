@@ -88,7 +88,6 @@ nav:
     - CircleCI:             modules/circleci.md
     - Clocks:               modules/clocks.md
     - CmdRunner:            modules/cmdrunner.md
-    - Covid:                modules/covid.md
     - Crypto Currencies:
       - Bittrex:            modules/cryptocurrencies/bittrex.md
       - Blockfolio:         modules/cryptocurrencies/blockfolio.md
