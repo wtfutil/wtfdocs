@@ -15,7 +15,7 @@ The easiest way to install from Homebrew is of course
 ❯ brew install wtfutil
 ```
 
-Or, to stay up-to-date with the very latest release at all times, tap the cask that is 
+Or, to stay up-to-date with the very latest release at all times, tap the cask that is
 generated on each new release:
 
 ```bash
@@ -23,6 +23,14 @@ generated on each new release:
 ❯ brew install wtfutil
 
 ❯ wtfutil
+```
+
+## `go install`
+
+Simply run
+
+```sh
+go install github.com/wtfutil/wtf@latest
 ```
 
 ## As a Binary
@@ -55,4 +63,3 @@ Download the source code repo and install the dependencies:
 ```
 
 and that should do it.
-
