@@ -2212,6 +2212,7 @@ We're changing our name! Stay tuned to hear more about our new name Tessera!
 <span class="w">    </span><span class="nt">height</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span><span class="w"></span>
 <span class="w">    </span><span class="nt">width</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span><span class="w"></span>
 <span class="w">  </span><span class="nt">refreshInterval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1s</span><span class="w"></span>
+<span class="w">  </span><span class="nt">pidFilePath</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">auto</span><span class="w"></span>
 </code></pre></div>
 <h2 id="screenshots">Screenshots</h2>
 <p><img class="screenshot" src="/assets/modules/docker.png" width="275" height="320" alt="docker screenshot" /></p>
@@ -2233,6 +2234,18 @@ We're changing our name! Stay tuned to hear more about our new name Tessera!
     </td>
     <td></td>
 </tr>
+
+            <tr>
+    <td>
+        <code>pidFilePath</code>
+        <br />
+        <em>Optional</em>. Path to dockerd's pid file, checked before querying the Docker API so a stopped socket-activated daemon isn't started on every refresh.
+        The API is only queried when the pid file shows the daemon is running.
+        If the file is missing, the daemon is shown as not running.
+    </td>
+    <td><code>auto</code> (checks default location next to the Docker socket), a file path, or unset to disable (default behaviour)</td>
+</tr>
+
     </tbody>
 </table>
 
