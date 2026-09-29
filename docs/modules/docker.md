@@ -17,6 +17,7 @@ docker:
     height: 3
     width: 3
   refreshInterval: 1s
+  pidFilePath: auto
 ```
 
 ## Screenshots
@@ -37,6 +38,13 @@ docker:
     </td>
     <td></td>
 </tr>
+        {% with name="pidFilePath",
+        desc="<em>Optional</em>. Path to dockerd's pid file, checked before querying the Docker API so a stopped socket-activated daemon isn't started on every refresh.
+        The API is only queried when the pid file shows the daemon is running.
+        If the file is missing, the daemon is shown as not running.",
+        value="<code>auto</code> (checks default location next to the Docker socket), a file path, or unset to disable (default behaviour)" %}
+            {% include "attributes/custom.md" %}
+        {% endwith %}
     </tbody>
 </table>
 
