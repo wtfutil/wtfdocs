@@ -1,5 +1,7 @@
 # WTF Docs
 
+:rotating_light: :warning: This website is moving. Instead of being built with MKDocs, it will be built with Hugo. Instead of being located at `wtfutil.com`, it will be located at `linodians.com/tessera`. As such, please limit your PRs to small changes until the website is moved. :warning: :rotating_light:
+
 This site is built using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
 ### Development environment setup
