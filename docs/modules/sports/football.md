@@ -1,6 +1,6 @@
 # Football
 
-Displays Football statistics about the specific league. This widget uses [football-data.org](https://www.football-data.org/client/register).
+Displays Football statistics about the specific league. This widget uses [football-data.org](https://www.football-data.org/client/register) (or for a free, keyless JSON football API covering 93 leagues, see [Football Charts API](https://www.football-charts.com/developers)).
 
 #### Standings
 
